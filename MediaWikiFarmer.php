@@ -1,15 +1,13 @@
 <?php
 /**
  * @author Gregory Szorc <gregory.szorc@gmail.com>
- * @package MediaWiki
  */
 
 
 /**
  * This class exposes functionality for a MediaWiki farm
  * 
- * @package MediaWiki
- * @subpackage Extension
+ * @addtogroup Extension
  */
 class MediaWikiFarmer
 {

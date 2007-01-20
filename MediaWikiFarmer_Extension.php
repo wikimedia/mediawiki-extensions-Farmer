@@ -3,7 +3,6 @@
  * Created on Jul 20, 2006
  * 
  * @author Gregory Szorc <gregory.szorc@gmail.com>
- * @package MediaWiki
  * 
  */
 
