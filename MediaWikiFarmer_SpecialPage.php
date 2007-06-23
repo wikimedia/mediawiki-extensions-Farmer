@@ -162,9 +162,9 @@ class SpecialFarmer extends SpecialPage
 
                 $wgOut->addHTML('
 <form id="farmercreate2" method="post">
-    <input type="hidden" name="name" value="'.htmlentities($name).'" />
-<input type="hidden" name="wikititle" value="'.htmlentities($title).'" />
-<input type="hidden" name="description" value="'.htmlentities($description).'" />
+    <input type="hidden" name="name" value="'.htmlspecialchars($name).'" />
+<input type="hidden" name="wikititle" value="'.htmlspecialchars($title).'" />
+<input type="hidden" name="description" value="'.htmlspecialchars($description).'" />
     <input type="submit" name="confirm" value="Confirm" />
 </form>'
 
@@ -195,7 +195,7 @@ class SpecialFarmer extends SpecialPage
         $formSitename = wfMsgHTML('farmercreatesitename');
         $formNextStep = wfMsgHTML('farmercreatenextstep');
 
-        $token = $wgUser->editToken();
+        $token = htmlspecialchars( $wgUser->editToken() );
 
         $wgOut->addHTML( "
 <form id='farmercreate1' method='post' action=\"$action\">
@@ -206,22 +206,22 @@ class SpecialFarmer extends SpecialPage
         </tr>
         <tr>
             <td align='right'>Wiki Name</td>
-            <td align='left'><input tabindex='1' type='text' size='20' name='name' value=\"" . htmlentities($name) . "\" /></td>
+            <td align='left'><input tabindex='1' type='text' size='20' name='name' value=\"" . htmlspecialchars($name) . "\" /></td>
     </tr>
     <tr>
         <td align='right'>Wiki Title</td>
-        <td align='left'><input tabindex='1' type='text' size='20' name='wikititle' value=\"" . htmlentities($title) . "\"/></td>
+        <td align='left'><input tabindex='1' type='text' size='20' name='wikititle' value=\"" . htmlspecialchars($title) . "\"/></td>
     </tr>
     <tr> 
          <td align='right'>Description</td>
-         <td align='left'><textarea tabindex='1' cols=\"40\" rows=\"5\" name='description'>" . htmlentities($description) . "</textarea></td>
+         <td align='left'><textarea tabindex='1' cols=\"40\" rows=\"5\" name='description'>" . htmlspecialchars($description) . "</textarea></td>
         </tr>
         <tr>
             <td>&nbsp;</td>
             <td align='right'><input type='submit' name='submit' value=\"Submit\" /></td>
         </tr>
     </table>
-    <input type='hidden' name='token' value='$token' />
+    <input type='hidden' name='token' value=\"$token\" />
 </form>");
         
     }
@@ -358,7 +358,7 @@ class SpecialFarmer extends SpecialPage
         $wgOut->addWikiText('Set the description of your wiki below');
         
         $wgOut->addHTML('<form method="post" name="wikiDescription" action="'.$action.'">'.
-            '<textarea name="wikiDescription" rows="5" cols="30">'.htmlentities($wiki->description).'</textarea>'.
+            '<textarea name="wikiDescription" rows="5" cols="30">'.htmlspecialchars($wiki->description).'</textarea>'.
             '<input type="submit" name="submit" value="submit" />'.
             '</form>'
             );
@@ -477,7 +477,7 @@ class SpecialFarmer extends SpecialPage
             	$toAdd .= 'checked="checked" ';
             }
             
-            $toAdd .=' /><strong>'.htmlentities($extension->name) . '</strong> - ' . htmlentities($extension->description) . "<br />\n";
+            $toAdd .=' /><strong>'.htmlspecialchars($extension->name) . '</strong> - ' . htmlspecialchars($extension->description) . "<br />\n";
             
             $wgOut->addHTML($toAdd);
         }
@@ -530,7 +530,7 @@ class SpecialFarmer extends SpecialPage
             $wgOut->addWikiText('No extensions are registered');
         } else {   
             foreach ($wgFarmer->getExtensions() as $extension) {
-                $wgOut->addWikiText('; ' . htmlentities($extension->name) . ' : ' . htmlentities($extension->description));
+                $wgOut->addWikiText('; ' . htmlspecialchars($extension->name) . ' : ' . htmlspecialchars($extension->description));
             }
         }
         
