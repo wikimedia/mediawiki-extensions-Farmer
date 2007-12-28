@@ -1,6 +1,6 @@
 <?php
 /**
- * Internationalisation file for extension Purge.
+ * Internationalisation file for Farmer extension.
  *
  * @addtogroup Extensions
 */
@@ -51,7 +51,7 @@ $messages['en'] = array (
 	'farmer-confirmsetting-title' => 'Title: $1',
 	'farmer-confirmsetting-description' => 'Description : $1',
 	'farmer-description' => 'Description',
-	'farmer-confirmsetting-text1' => 'Your wiki, \'\'\'$1\'\'\', will be accessible via http://$1.myfarm. The project namespace will be \'\'\'$2\'\'\'.  Links to this namespace will be of the form \'\'\'<nowiki>[[$2:Page Name]]</nowiki>\'\'\'.  If this is what you want, press the \'\'\'confirm\'\'\' button below.',
+	'farmer-confirmsetting-text' => 'Your wiki, \'\'\'$1\'\'\', will be accessible via http://$1.myfarm. The project namespace will be \'\'\'$2\'\'\'.  Links to this namespace will be of the form \'\'\'<nowiki>[[$2:Page Name]]</nowiki>\'\'\'.  If this is what you want, press the \'\'\'confirm\'\'\' button below.',
 	'farmer-button-confirm' => 'Confirm',
 	'farmer-button-submit' => 'Submit',
 	'farmer-createwiki-form-title' => 'Create a Wiki',
@@ -208,7 +208,7 @@ Le nom de l’espace du projet sera \'\'\'$2\'\'\'.  Les liens vers cet espace a
 	'farmer-basic-permission-visitor-text' => 'Les habilitations suivantes seront applicables pour toutes les personnes qui visiteront ce wiki.',
 	'farmer-basic-permission-view' => 'Visionner toutes les pages ',
 	'farmer-basic-permission-edit' => 'Éditer toutes les pages ',
-	'farmer-basic-permission-create' => 'Créer de nouvelles pages ',
+	'farmer-basic-permission-createpage' => 'Créer de nouvelles pages ',
 	'farmer-basic-permission-createtalk' => 'Créer des pages de discussion ',
 	'farmer-basic-permission-move' => 'Déplacer les pages ',
 	'farmer-basic-permission-upload' => 'Télécharger des fichiers ',
