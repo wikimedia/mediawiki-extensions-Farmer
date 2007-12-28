@@ -63,30 +63,30 @@ class SpecialFarmer extends SpecialPage
         $wgOut = $wgFarmer->getMWVariable('wgOut');
         $wgUser = $wgFarmer->getMWVariable('wgUser');
 
-        $wgOut->addWikiText('== '.wfMsg('farmer-about').' ==');
-        $wgOut->addWikiText(wfMsg('farmer-about-text'));
+        $wgOut->addWikiText( '== ' . wfMsg('farmer-about') . ' ==' );
+        $wgOut->addWikiText( wfMsg( 'farmer-about-text' ) );
 
-        $wgOut->addWikiText('== '.wfMsg('farmer-list-wikis').' ==');
-        $wgOut->addWikiText('*[[Special:Farmer/list|'.wfMsg('farmer-list-wiki-link').']] '.wfMsg('farmer-list-wiki-text'));
+        $wgOut->addWikiText( '== ' . wfMsg( 'farmer-list-wiki' ). ' ==' );
+        $wgOut->addWikiText( '*' . wfMsg( 'farmer-list-wiki-text', 'Special:Farmer/list' ) );
 
         if ($wgFarmer->getActiveWiki()->isDefaultWiki()) {
 
             if (MediaWikiFarmer::userCanCreateWiki($wgUser)) {
-                $wgOut->addWikiText('== '. wfMsg('farmer-createwiki'). ' ==');
-                $wgOut->addWikiText('*[[Special:Farmer/create|'.wfMsg('farmer-createwiki-link').']] '.wfMsg('farmer-createwiki-text'));
+                $wgOut->addWikiText( '== '. wfMsg( 'farmer-createwiki' ). ' ==' );
+                $wgOut->addWikiText( '*' . wfMsg( 'farmer-createwiki-text', 'Special:Farmer/create' ) );
             }
 
             //if the user is a farmer admin, give them a menu of cool admin tools
             if (MediaWikiFarmer::userIsFarmerAdmin($wgUser)) {
--                $wgOut->addWikiText('== '.wfMsg('farmer-administration').' ==');
-                $wgOut->addWikiText('=== '.wfMsg('farmer-administration-extension').' ===');
-                $wgOut->addWikiText('*[[Special:Farmer/manageExtensions|'.wfMsg('farmer-administration-extension-link').']] '.wfMsg('farmer-administration-extension-text'));
+-               $wgOut->addWikiText( '== ' . wfMsg( 'farmer-administration' ).' ==' );
+                $wgOut->addWikiText( '=== ' . wfMsg( 'farmer-administration-extension' ).' ===' );
+                $wgOut->addWikiText( '*' . wfMsg( 'farmer-administration-extension-text', 'Special:Farmer/manageExtensions' ) );
 
-                $wgOut->addWikiText('=== '.wfMsg('farmer-admimistration-listupdate').' ===');
-                $wgOut->addWikiText('*[[Special:Farmer/updateList|'.wfMsg('farmer-admimistration-listupdate-link').']] '.wfMsg('farmer-admimistration-listupdate-text'));
+                $wgOut->addWikiText( '=== ' . wfMsg( 'farmer-admimistration-listupdate' ).' ===' );
+                $wgOut->addWikiText( '*' . wfMsg( 'farmer-admimistration-listupdate-text', 'Special:Farmer/updateList' ) );
 
-                $wgOut->addWikiText('=== '.wfMsg('farmer-administration-delete').' ===');
-                $wgOut->addWikiText('*[[Special:Farmer/delete|'.wfMsg('farmer-administration-delete-link').']] '.wfMsg('farmer-administration-delete-text'));
+                $wgOut->addWikiText( '=== ' . wfMsg( 'farmer-administration-delete' ) . ' ===' );
+                $wgOut->addWikiText( '*' . wfMsg( 'farmer-administration-delete-text', 'Special:Farmer/delete' ) );
 
             }
         }
@@ -94,8 +94,8 @@ class SpecialFarmer extends SpecialPage
         $wiki = MediaWikiFarmer_Wiki::factory($wgFarmer->getActiveWiki());
 
         if (MediaWikiFarmer::userIsFarmerAdmin($wgUser) || $wiki->userIsAdmin($wgUser)) {
-            $wgOut->addWikiText('== '.wfMsg('farmer-administer-thiswiki').' ==');
-            $wgOut->addWikiText('*[[Special:Farmer/admin|'.wfMsg('farmer-administer-thiswiki-link').']] '.wfMsg('farmer-administer-thiswiki-text'));
+            $wgOut->addWikiText( '== ' . wfMsg( 'farmer-administer-thiswiki' ). ' ==' );
+            $wgOut->addWikiText( '*' . wfMsg( 'farmer-administer-thiswiki-text', 'Special:Farmer/admin' ) );
         }
 
 
@@ -137,8 +137,8 @@ class SpecialFarmer extends SpecialPage
                 MediaWikiFarmer_Wiki::create($name, $title, $description, $wgUser->getName());
 
                 $wgOut->addWikiText('== '.wfMsg('farmer-wikicreated').' ==');
-                $wgOut->addWikiText(wfMsg('farmer-wikicreated-text').' '. wfMsg('farmerwikiurl', $name));
-                $wgOut->addWikiText(wfmsg('farmer-default').' [['.$title.':Special:Farmer|Special:Farmer]]');
+                $wgOut->addWikiText( wfMsg( 'farmer-wikicreated-text', wfMsg('farmerwikiurl', $name) ) );
+                $wgOut->addWikiText( wfMsg( 'farmer-default', '[['.$title.':Special:Farmer|Special:Farmer]]' ) );
                 return;
             }
 
