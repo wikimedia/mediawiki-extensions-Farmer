@@ -309,6 +309,7 @@ Si vous lisez ce message, ceci indique que votre wiki a été installé correcte
 	'farmer-confirmsetting-name'             => 'Nom : $1',
 	'farmer-confirmsetting-title'            => 'Titre : $1',
 	'farmer-confirmsetting-description'      => 'Description : $1',
+	'farmer-description'                     => 'Description',
 	'farmer-confirmsetting-text'             => "Votre wiki, '''$1''', sera accessible depuis l’adresse http://$1.monsite.
 
 Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la forme de '''<nowiki>[[$2:Nom de la page]]</nowiki>'''.  Si c’est bien ce que vous voulez,  presser le bouton '''Confirmer''' ci-dessous.",
@@ -323,6 +324,7 @@ Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la
 	'farmer-createwiki-user'                 => 'Nom de l’utilisateur',
 	'farmer-createwiki-name'                 => 'Nom du Wiki',
 	'farmer-createwiki-title'                => 'Titre du Wiki',
+	'farmer-createwiki-description'          => 'Description',
 	'farmer-updatedlist'                     => 'Liste mise à jour',
 	'farmer-notaccessible'                   => 'Non accessible',
 	'farmer-notaccessible-test'              => 'Ce programme est disponible uniquement sur le wiki principal de cet ensemble de projets.',
@@ -339,7 +341,9 @@ Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la
 	'farmer-basic-title'                     => 'Paramètres de base',
 	'farmer-basic-title1'                    => 'Titre',
 	'farmer-basic-title1-text'               => "Votre wiki ne dispose pas de titre. Indiquez en un '''maintenant'''",
+	'farmer-basic-description'               => 'Description',
 	'farmer-basic-description-text'          => 'Indiquez dans le cadre ci-dessous la description de votre wiki.',
+	'farmer-basic-permission'                => 'Habilitations',
 	'farmer-basic-permission-text'           => 'En utilisant le formulaire ci-dessous, il est possible de changer les habilitation des utilisateurs de ce wiki.',
 	'farmer-basic-permission-visitor'        => 'Habilitations pour chaque visiteur',
 	'farmer-basic-permission-visitor-text'   => 'Les habilitations suivantes seront applicables pour toutes les personnes qui visiteront ce wiki.',
