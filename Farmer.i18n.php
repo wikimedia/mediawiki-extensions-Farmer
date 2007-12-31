@@ -262,6 +262,7 @@ $messages['bg'] = array(
 	'farmer-createwiki-user'                => 'Потребителско име',
 	'farmer-createwiki-description'         => 'Описание',
 	'farmer-deleting'                       => 'Изтриване на $1',
+	'farmer-delete-title'                   => 'Изтриване на уики',
 	'farmer-delete-form-submit'             => 'Изтриване',
 	'farmer-listofwikis'                    => 'Списък на уикитата',
 	'farmer-mainpage'                       => 'Начална страница',
@@ -274,6 +275,7 @@ $messages['bg'] = array(
 	'farmer-basic-permission-minoredit'     => 'Позволяване на малки промени',
 	'farmer-yes'                            => 'Да',
 	'farmer-no'                             => 'Не',
+	'farmer-defaultskin'                    => 'Облик по подразбиране',
 	'farmer-extensions-register-name'       => 'Име',
 	'farmer-error-exists'                   => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
 );
