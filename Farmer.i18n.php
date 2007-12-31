@@ -231,11 +231,13 @@ $messages['ar'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Borislav
  */
 $messages['bg'] = array(
 	'farmer'                                => 'Фермер',
 	'farmercreatesitename'                  => 'Име на сайта',
 	'farmercreatenextstep'                  => 'Следваща стъпка',
+	'farmer-about'                          => 'Информация',
 	'farmer-about-text'                     => 'МедияУики Фермер позволява управлението на ферма от МедияУики уикита.',
 	'farmer-list-wiki'                      => 'Списък на уикита',
 	'farmer-list-wiki-text'                 => '[[$1|Списък]] на всички налични уикита',
@@ -247,6 +249,7 @@ $messages['bg'] = array(
 	'farmer-administration-delete'          => 'Изтриване на уики',
 	'farmer-administration-delete-text'     => '[[$1|Изтриване]] на уики от фермата',
 	'farmer-administer-thiswiki'            => 'Администриране на това уики',
+	'farmer-notavailable-text'              => 'Тази възможност е достъпна само на основното уики',
 	'farmer-wikicreated'                    => 'Уикито беше създадено',
 	'farmer-wikicreated-text'               => 'Уикито беше създадено.  Достъпно е на адрес $1',
 	'farmer-wikiexists'                     => 'Уикито съществува',
@@ -259,13 +262,21 @@ $messages['bg'] = array(
 	'farmer-createwiki-form-title'          => 'Създаване на уики',
 	'farmer-createwiki-form-text1'          => 'Формулярът по-долу служи за създаване на ново уики.',
 	'farmer-createwiki-form-help'           => 'Помощ',
+	'farmer-createwiki-form-text3'          => '; Заглавие на уикито: Заглавие на уикито.  Използва се в заглавието на всяка страница на уикито.  Също така е проектно именно пространство и представка за междууики.',
+	'farmer-createwiki-form-text4'          => '; Описание: Описание на уикито.  Текстово описание на уикито.  Показва се в списъка с уикита.',
 	'farmer-createwiki-user'                => 'Потребителско име',
 	'farmer-createwiki-description'         => 'Описание',
+	'farmer-notaccessible'                  => 'Недостъпно',
+	'farmer-notaccessible-test'             => 'Тази възможност е достъпна само на основното уики от фермата',
+	'farmer-permissiondenied-text'          => 'Нямате права да изтривате уики от фермата',
+	'farmer-permissiondenied-text1'         => 'Нямате права да отворите тази страница',
 	'farmer-deleting'                       => 'Изтриване на $1',
 	'farmer-delete-title'                   => 'Изтриване на уики',
+	'farmer-delete-text'                    => 'Изберете уикито, което желаете да изтриете, от списъка по-долу',
 	'farmer-delete-form-submit'             => 'Изтриване',
 	'farmer-listofwikis'                    => 'Списък на уикитата',
 	'farmer-mainpage'                       => 'Начална страница',
+	'farmer-basic-title'                    => 'Основни параметри',
 	'farmer-basic-title1'                   => 'Заглавие',
 	'farmer-basic-description'              => 'Описание',
 	'farmer-basic-permission-createpage'    => 'Създаване на нови страници',
