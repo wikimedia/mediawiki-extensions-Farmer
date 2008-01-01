@@ -502,7 +502,7 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
 	'farmer-extensions-available'            => 'Beschikbare uitbreidingen',
 	'farmer-extensions-noavailable'          => 'Er zijn geen uitbreidingen geregistreerd',
 	'farmer-extensions-register'             => 'Uitbreidingen toevoegen',
-	'farmer-extensions-register-text1'       => "Gebruik het onderstaande formulier om een extensie voor de farm te registreren. Als een extensie is geregistreerd, kunnen alle wiki's er gebruik van maken.",
+	'farmer-extensions-register-text1'       => "Gebruik het onderstaande formulier om een uitbreiding voor de farm te registreren. Als een uitbreiding geregistreerd is, kunnen alle wiki's er gebruik van maken.",
 	'farmer-extensions-register-text2'       => "Voeg voor de parameter ''Includebestand'' de naam van het PHP-bestand in dat u als LocalSettings.php wikt gebruiken.",
 	'farmer-extensions-register-text3'       => "Als de bestandsnaam '''\$root''' bevat, wordt de variabele vervangen door de rootmap van MediaWiki.",
 	'farmer-extensions-register-text4'       => 'De volgende paden worden meegenomen:',
@@ -514,6 +514,6 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
 	'farmer-error-mapnotfound'               => 'Functie om de wikinaam in de farm op te nemen niet aangetroffen:',
 	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer kan het bestand met standaardinstellingen voor de wiki niet wegschrijven.',
 	'farmer-error-funcnotcall'               => 'Kon de volgende functie niet aanroepen:',
-	'farmer-error-noextwrite'                => 'Het extensiebestand kon niet weggeschreven worden:',
+	'farmer-error-noextwrite'                => 'Het uitbreidingsbestand kon niet weggeschreven worden:',
 	'farmer-error-wikicorrupt'               => 'De opgeslagen wiki is corrupt',
 );
