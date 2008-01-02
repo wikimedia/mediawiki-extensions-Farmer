@@ -291,6 +291,21 @@ $messages['bg'] = array(
 	'farmer-error-exists'                   => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
 );
 
+/** Finnish (Suomi)
+ * @author Nike
+ */
+$messages['fi'] = array(
+	'farmer'                => 'Wikipelto',
+	'farmercantcreatewikis' => 'Et voi luoda uusia wikejä, koska sivulla ei ole <tt>createwikis</tt>-oikeutta.',
+	'farmercreatesitename'  => 'Sivuston nimi',
+	'farmercreatenextstep'  => 'Seuraava askel',
+	'farmernewwikimainpage' => '== Tervetuloa wikiisi ==
+Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wikin asetuksia, vieraile [[Special:Farmer|wikipellossa]].',
+	'farmer-about'          => 'Tietoja',
+	'farmer-about-text'     => 'MediaWikin Farmer-laajennus mahdollistaa oman wikipellon hallitsemisen.',
+	'farmer-list-wiki'      => 'Wikilista',
+);
+
 /** French (Français)
  * @author Grondin
  * @author Dereckson
