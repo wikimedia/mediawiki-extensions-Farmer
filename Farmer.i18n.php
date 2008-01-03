@@ -265,6 +265,8 @@ $messages['bg'] = array(
 	'farmer-createwiki-form-text3'          => '; Заглавие на уикито: Заглавие на уикито.  Използва се в заглавието на всяка страница на уикито.  Също така е проектно именно пространство и представка за междууики.',
 	'farmer-createwiki-form-text4'          => '; Описание: Описание на уикито.  Текстово описание на уикито.  Показва се в списъка с уикита.',
 	'farmer-createwiki-user'                => 'Потребителско име',
+	'farmer-createwiki-name'                => 'Име на уикито',
+	'farmer-createwiki-title'               => 'Заглавие на уикито',
 	'farmer-createwiki-description'         => 'Описание',
 	'farmer-notaccessible'                  => 'Недостъпно',
 	'farmer-notaccessible-test'             => 'Тази възможност е достъпна само на основното уики от фермата',
@@ -544,4 +546,22 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
  */
 $messages['stq'] = array(
 	'farmer-createwiki-form-help' => 'Hälpe',
+);
+
+/** Volapük (Volapük)
+ * @author Malafaya
+ */
+$messages['vo'] = array(
+	'farmer-about'                      => 'Tefü',
+	'farmer-confirmsetting-name'        => 'Nem: $1',
+	'farmer-confirmsetting-title'       => 'Tiäd: $1',
+	'farmer-confirmsetting-description' => 'Bepenam: $1',
+	'farmer-description'                => 'Bepenam',
+	'farmer-createwiki-form-help'       => 'Yuf',
+	'farmer-delete-form-submit'         => 'Moükön',
+	'farmer-basic-title1'               => 'Tiäd:',
+	'farmer-basic-description'          => 'Bepenam',
+	'farmer-yes'                        => 'Si',
+	'farmer-no'                         => 'Nö',
+	'farmer-extensions-register-name'   => 'Nem',
 );
