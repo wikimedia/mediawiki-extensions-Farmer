@@ -295,15 +295,21 @@ $messages['bg'] = array(
  * @author Nike
  */
 $messages['fi'] = array(
-	'farmer'                => 'Wikipelto',
-	'farmercantcreatewikis' => 'Et voi luoda uusia wikejä, koska sivulla ei ole <tt>createwikis</tt>-oikeutta.',
-	'farmercreatesitename'  => 'Sivuston nimi',
-	'farmercreatenextstep'  => 'Seuraava askel',
-	'farmernewwikimainpage' => '== Tervetuloa wikiisi ==
+	'farmer'                               => 'Wikipelto',
+	'farmercantcreatewikis'                => 'Et voi luoda uusia wikejä, koska sivulla ei ole <tt>createwikis</tt>-oikeutta.',
+	'farmercreatesitename'                 => 'Sivuston nimi',
+	'farmercreatenextstep'                 => 'Seuraava askel',
+	'farmernewwikimainpage'                => '== Tervetuloa wikiisi ==
 Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wikin asetuksia, vieraile [[Special:Farmer|wikipellossa]].',
-	'farmer-about'          => 'Tietoja',
-	'farmer-about-text'     => 'MediaWikin Farmer-laajennus mahdollistaa oman wikipellon hallitsemisen.',
-	'farmer-list-wiki'      => 'Wikilista',
+	'farmer-about'                         => 'Tietoja',
+	'farmer-about-text'                    => 'MediaWikin Farmer-laajennus mahdollistaa oman wikipellon hallitsemisen.',
+	'farmer-list-wiki'                     => 'Wikilista',
+	'farmer-list-wiki-text'                => '[[$1|Lista]] kaikista tämän sivuston wikeistä',
+	'farmer-createwiki'                    => 'Uusi wiki',
+	'farmer-createwiki-text'               => '[[$1|Luo]] uusi wiki',
+	'farmer-administration'                => 'Pellon ylläpito',
+	'farmer-administration-extension'      => 'Laajennokset',
+	'farmer-administration-extension-text' => '[[$1|Valitse]] käytettävät laajennokset.',
 );
 
 /** French (Français)
