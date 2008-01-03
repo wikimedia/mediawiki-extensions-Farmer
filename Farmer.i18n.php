@@ -538,3 +538,10 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
 	'farmer-error-noextwrite'                => 'Het uitbreidingsbestand kon niet weggeschreven worden:',
 	'farmer-error-wikicorrupt'               => 'De opgeslagen wiki is corrupt',
 );
+
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'farmer-createwiki-form-help' => 'Hälpe',
+);
