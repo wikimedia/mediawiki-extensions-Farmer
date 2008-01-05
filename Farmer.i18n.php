@@ -429,6 +429,13 @@ Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la
 	'farmer-error-wikicorrupt'               => 'Le wiki stocké est corrompu',
 );
 
+/** Hungarian (Magyar)
+ * @author Bdanee
+ */
+$messages['hu'] = array(
+	'farmer-admimistration-listupdate-text' => '{{SITENAME}}-wikik listájának [[$1|frissítése]]',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
