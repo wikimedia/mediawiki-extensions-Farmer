@@ -436,6 +436,15 @@ $messages['hu'] = array(
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}}-wikik listájának [[$1|frissítése]]',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Slomox
+ */
+$messages['nds'] = array(
+	'farmer-yes'                      => 'Jo',
+	'farmer-no'                       => 'Nee',
+	'farmer-extensions-register-name' => 'Naam',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
