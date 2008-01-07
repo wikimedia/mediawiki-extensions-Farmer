@@ -124,6 +124,7 @@ $messages['en'] = array (
 $messages['ar'] = array(
 	'farmer'                                 => 'مزارع',
 	'farmercantcreatewikis'                  => 'أنت غير قادر على إنشاء ويكيات لأنك لا تمتلك الصلاحية createwikis',
+	'farmercreateurl'                        => 'مسار',
 	'farmercreatesitename'                   => 'اسم الموقع',
 	'farmercreatenextstep'                   => 'الخطوة التالية',
 	'farmernewwikimainpage'                  => '== مرحبا في الويكي الخاصة بك ==
