@@ -437,6 +437,25 @@ $messages['hu'] = array(
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}}-wikik listájának [[$1|frissítése]]',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'farmer-confirmsetting-name'        => 'Numm: $1',
+	'farmer-confirmsetting-title'       => 'Iwwerschrëft: $1',
+	'farmer-confirmsetting-description' => 'Beschreiwung: $1',
+	'farmer-description'                => 'Beschreiwung',
+	'farmer-createwiki-form-help'       => 'Hëllef',
+	'farmer-createwiki-user'            => 'Benotzernumm',
+	'farmer-createwiki-description'     => 'Beschreiwung',
+	'farmer-delete-form-submit'         => 'Läschen',
+	'farmer-mainpage'                   => 'Haaptsäit',
+	'farmer-basic-permission-move'      => 'Säite réckelen',
+	'farmer-yes'                        => 'Jo',
+	'farmer-no'                         => 'Neen',
+	'farmer-extensions-register-name'   => 'Numm',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
