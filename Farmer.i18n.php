@@ -294,6 +294,27 @@ $messages['bg'] = array(
 	'farmer-error-exists'                   => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
 );
 
+/** Greek (Ελληνικά)
+ * @author Consta
+ */
+$messages['el'] = array(
+	'farmer-createwiki'                  => 'Δημιουργήστε ένα Wiki',
+	'farmer-createwiki-text'             => '[[$1|Δημιουργήστε]] ένα νέο wiki τώρα!',
+	'farmer-administration-delete'       => 'Διαγράψτε ένα Wiki',
+	'farmer-confirmsetting-name'         => 'Όνομα: $1',
+	'farmer-confirmsetting-title'        => 'Τίτλος: $1',
+	'farmer-createwiki-form-title'       => 'Δημιουργήστε ένα Wiki',
+	'farmer-delete-form'                 => 'Επιλέξτε ένα wiki',
+	'farmer-mainpage'                    => 'Κύρια Σελίδα',
+	'farmer-basic-title'                 => 'Βασικοί Παράμετροι',
+	'farmer-basic-title1'                => 'Τίτλος',
+	'farmer-basic-permission-createpage' => 'Δημιουργήστε νέες σελίδες',
+	'farmer-basic-permission-createtalk' => 'Δημιουργήστε σελίδες συζήτησης',
+	'farmer-yes'                         => 'Ναι',
+	'farmer-no'                          => 'Όχι',
+	'farmer-extensions-register-name'    => 'Όνομα',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  */
@@ -606,3 +627,4 @@ $messages['vo'] = array(
 	'farmer-no'                          => 'Nö',
 	'farmer-extensions-register-name'    => 'Nem',
 );
+
