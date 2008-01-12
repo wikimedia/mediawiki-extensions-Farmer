@@ -17,10 +17,7 @@ $root = dirname(__FILE__);
 require_once $root . '/MediaWikiFarmer.php';
 require_once $root . '/MediaWikiFarmer_Wiki.php';
 require_once $root . '/MediaWikiFarmer_Extension.php';
-
-$dir = dirname(__FILE__) . '/';
-$wgExtensionMessagesFiles['MediaWikiFarmer'] = $dir . 'Farmer.i18n.php';
-
+$wgExtensionMessagesFiles['MediaWikiFarmer'] = $root . '/Farmer.i18n.php';
 
 $wgFarmerSettings = array(
     'configDirectory'           =>  realpath(dirname(__FILE__)) . '/configs/',
