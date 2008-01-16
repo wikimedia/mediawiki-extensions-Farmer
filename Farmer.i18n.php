@@ -333,7 +333,7 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wiki
 	'farmer-about'                         => 'Tietoja',
 	'farmer-about-text'                    => 'MediaWikin Farmer-laajennus mahdollistaa oman wikipellon hallitsemisen.',
 	'farmer-list-wiki'                     => 'Wikilista',
-	'farmer-list-wiki-text'                => '[[$1|Lista]] kaikista {{SITENAME}} sivuston wikeistä',
+	'farmer-list-wiki-text'                => '[[$1|Lista]] kaikista {{SITENAME}}-sivuston wikeistä',
 	'farmer-createwiki'                    => 'Uusi wiki',
 	'farmer-createwiki-text'               => '[[$1|Luo]] uusi wiki',
 	'farmer-administration'                => 'Pellon ylläpito',
