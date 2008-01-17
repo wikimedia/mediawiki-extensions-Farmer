@@ -460,7 +460,11 @@ Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la
  * @author Alma
  */
 $messages['gl'] = array(
+	'farmercantcreatewikis'              => 'Vostede non pode crear wikis porque non ten privilexios de creación de wikis',
+	'farmercreatesitename'               => 'Nome do sitio web',
 	'farmercreatenextstep'               => 'Seguinte paso',
+	'farmernewwikimainpage'              => '== Benvida ao seu Wiki ==
+Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para personalizar o seu wiki, visite [[Special:Farmer]].',
 	'farmer-list-wiki'                   => 'Listaxe de Wikis',
 	'farmer-list-wiki-text'              => '[[$1|Listaxe]] de todos os sitios de {{SITENAME}}',
 	'farmer-createwiki'                  => 'Crear un Wiki',
@@ -484,12 +488,15 @@ $messages['gl'] = array(
 	'farmer-createwiki-name'             => 'Nome do Wiki',
 	'farmer-createwiki-title'            => 'Título do wiki',
 	'farmer-createwiki-description'      => 'Descrición',
+	'farmer-permissiondenied'            => 'Permiso denegado',
+	'farmer-permissiondenied-text1'      => 'Vostede non ten permiso para acceder a esta páxina',
 	'farmer-deleting'                    => 'Eliminando $1',
 	'farmer-delete-title'                => 'Eliminar Wiki',
 	'farmer-delete-form'                 => 'Seleccionar un wiki',
 	'farmer-delete-form-submit'          => 'Eliminar',
 	'farmer-listofwikis'                 => 'Listaxe de Wikis',
 	'farmer-mainpage'                    => 'Páxina Principal',
+	'farmer-basic-title'                 => 'Parámetros básicos',
 	'farmer-basic-title1'                => 'Título',
 	'farmer-basic-description'           => 'Descrición',
 	'farmer-basic-permission'            => 'Permisos',
