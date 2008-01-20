@@ -458,6 +458,13 @@ Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la
 	'farmer-error-wikicorrupt'               => 'Le wiki stocké est corrompu',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'farmercreateurl' => 'l’adrèce',
+);
+
 /** Galician (Galego)
  * @author Alma
  * @author Xosé
@@ -638,10 +645,16 @@ Jeli to čitaš, je so twój nowy wiki korektnje instalował. Zo by swój wiki p
 );
 
 /** Hungarian (Magyar)
+ * @author Dorgan
  * @author Bdanee
  */
 $messages['hu'] = array(
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}}-wikik listájának [[$1|frissítése]]',
+	'farmer-button-confirm'                 => 'Megerősít',
+	'farmer-button-submit'                  => 'Elküld',
+	'farmer-createwiki-form-help'           => 'Segítség',
+	'farmer-yes'                            => 'Igen',
+	'farmer-no'                             => 'Nem',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -995,6 +1008,7 @@ $messages['ru'] = array(
 	'farmer-extensions-register-text1'       => 'Эту форму можно использовать для регистрации нового расширения на ферме. После того, как расширение зарегистрировано, все вики смогут его использовать.',
 	'farmer-extensions-register-text2'       => "Параметр ''Include-файле'' должен содержать имя PHP-файла, в том виде, как оно должно быть указано в LocalSettings.php.",
 	'farmer-extensions-register-text3'       => "Если имя файла содержит '''\$root''', то эта переменная будет заменена на корневую директорию MediaWiki.",
+	'farmer-extensions-register-text4'       => 'Текущие пути include:',
 	'farmer-extensions-register-name'        => 'Имя',
 	'farmer-extensions-register-includefile' => 'Include-файл',
 	'farmer-error-exists'                    => 'Невозможно создать вики. Она уже существует: $1',
