@@ -753,7 +753,7 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
 	'farmer-extensions-noavailable'          => 'Nincsenek kiterjesztések regisztrálva',
 	'farmer-extensions-register'             => 'Kiterjesztés regisztrálása',
 	'farmer-extensions-register-text1'       => 'Az alábbi űrlap használatával új kiterjesztést regisztrálhatsz a farmra.  Miután egy kiterjesztést regisztráltál, minden wikin használható lesz.',
-	'farmer-extensions-register-text2'       => "A ''beillesztett fájl'' paraméterhez add meg az a PHP fájlnevet, amit megadnál a LocalSettings.php-ben.",
+	'farmer-extensions-register-text2'       => "A ''beillesztett fájl'' paraméterhez add meg annak a PHP fájlnak a nevét, amelyet beraknál a LocalSettings.php-be.",
 	'farmer-extensions-register-text3'       => "Ha a fájlnév tartalmazza a '''\$root''' paramétert, akkor az le lesz cserélve a Mediawiki gyökérkönyvtárára.",
 	'farmer-extensions-register-text4'       => 'A jelenleg figyelembe vett könyvtárak:',
 	'farmer-extensions-register-name'        => 'Név',
