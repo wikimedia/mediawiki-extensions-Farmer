@@ -247,6 +247,7 @@ $messages['bg'] = array(
 	'farmer-createwiki'                      => 'Създаване на уики',
 	'farmer-createwiki-text'                 => '[[$1|Създаване]] на ново уики',
 	'farmer-administration'                  => 'Администриране на фермата',
+	'farmer-administration-extension'        => 'Управление на разширенията',
 	'farmer-administration-extension-text'   => '[[$1|Управление]] на инсталираните допълнения.',
 	'farmer-admimistration-listupdate-text'  => '[[$1|Обновяване]] на списъка с уикитата в {{SITENAME}}',
 	'farmer-administration-delete'           => 'Изтриване на уики',
@@ -296,7 +297,11 @@ $messages['bg'] = array(
 	'farmer-no'                              => 'Не',
 	'farmer-defaultskin'                     => 'Облик по подразбиране',
 	'farmer-defaultskin-button'              => 'Настройване на облик по подразбиране',
+	'farmer-extensions-invalid'              => 'Невалидно разширение',
 	'farmer-extensions-available'            => 'Налични разширения',
+	'farmer-extensions-noavailable'          => 'Не са регистрирани разширения',
+	'farmer-extensions-register'             => 'Регистриране на разширение',
+	'farmer-extensions-register-text1'       => 'Формулярът по-долу служи за регистриране на нови разширения за фермата. След като бъде регистрирано ново разширение, всички уикита ще могат да го използват.',
 	'farmer-extensions-register-name'        => 'Име',
 	'farmer-extensions-register-includefile' => 'Включване на файл',
 	'farmer-error-exists'                    => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
@@ -1023,6 +1028,41 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 	'farmer-error-funcnotcall'               => 'La foncion seguenta es introbabla :',
 	'farmer-error-noextwrite'                => 'Impossible d’escriure lo fichièr d’extension seguent :',
 	'farmer-error-wikicorrupt'               => 'Lo wiki estocat es corromput',
+);
+
+/** Portuguese (Português)
+ * @author Malafaya
+ */
+$messages['pt'] = array(
+	'farmercreatenextstep'               => 'Próximo passo',
+	'farmer-about'                       => 'Sobre',
+	'farmer-createwiki'                  => 'Criar um Wiki',
+	'farmer-administration-delete'       => 'Apagar um Wiki',
+	'farmer-administer-thiswiki'         => 'Gerir este Wiki',
+	'farmer-notavailable'                => 'Não disponível',
+	'farmer-wikicreated'                 => 'Wiki criado',
+	'farmer-confirmsetting-name'         => 'Nome: $1',
+	'farmer-confirmsetting-title'        => 'Título: $1',
+	'farmer-confirmsetting-description'  => 'Descrição: $1',
+	'farmer-description'                 => 'Descrição',
+	'farmer-createwiki-form-title'       => 'Criar um Wiki',
+	'farmer-createwiki-form-help'        => 'Ajuda',
+	'farmer-createwiki-name'             => 'Nome do Wiki',
+	'farmer-createwiki-title'            => 'Título do Wiki',
+	'farmer-delete-title'                => 'Apagar Wiki',
+	'farmer-delete-form-submit'          => 'Apagar',
+	'farmer-mainpage'                    => 'Página Principal',
+	'farmer-basic-title1'                => 'Título',
+	'farmer-basic-permission-view'       => 'Ver todas as páginas',
+	'farmer-basic-permission-edit'       => 'Editar todas as páginas',
+	'farmer-basic-permission-createpage' => 'Criar novas páginas',
+	'farmer-basic-permission-createtalk' => 'Criar páginas de discussão',
+	'farmer-basic-permission-move'       => 'Mover páginas',
+	'farmer-basic-permission-upload'     => 'Carregar ficheiros',
+	'farmer-basic-permission-minoredit'  => 'Permitir edições menores',
+	'farmer-yes'                         => 'Sim',
+	'farmer-no'                          => 'Não',
+	'farmer-extensions-register-name'    => 'Nome',
 );
 
 /** Russian (Русский)
