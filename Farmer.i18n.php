@@ -518,6 +518,7 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
 	'farmer-permissiondenied-text1'          => 'Vostede non ten permiso para acceder a esta páxina',
 	'farmer-deleting'                        => 'Eliminando $1',
 	'farmer-delete-title'                    => 'Eliminar Wiki',
+	'farmer-delete-text'                     => 'Seleccione o wiki da listaxe de embaixo que vostede quere eliminar',
 	'farmer-delete-form'                     => 'Seleccionar un wiki',
 	'farmer-delete-form-submit'              => 'Eliminar',
 	'farmer-listofwikis'                     => 'Listaxe de Wikis',
@@ -526,7 +527,9 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
 	'farmer-basic-title1'                    => 'Título',
 	'farmer-basic-title1-text'               => 'O seu wiki non ten un título. Elixa un AGORA',
 	'farmer-basic-description'               => 'Descrición',
+	'farmer-basic-description-text'          => 'Poña a descrición do seu wiki embaixo',
 	'farmer-basic-permission'                => 'Permisos',
+	'farmer-basic-permission-text'           => 'Usando o formulario de embaixo, é posíbel mudar os permisos para os usuarios deste wiki.',
 	'farmer-basic-permission-visitor'        => 'Permisos para Cada Visitante',
 	'farmer-basic-permission-visitor-text'   => 'Os seguintes permisos serán aplicados a calquera persoa que visite este wiki',
 	'farmer-basic-permission-view'           => 'Ver todas as páxinas',
@@ -550,6 +553,7 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
 	'farmer-extensions-register-name'        => 'Nome',
 	'farmer-extensions-register-includefile' => 'Arquivo Incluído',
 	'farmer-error-exists'                    => 'Non pode crear o wiki. Xa existe: $1',
+	'farmer-error-wikicorrupt'               => 'O wiki gardado está corrompido',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1036,6 +1040,7 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 $messages['pt'] = array(
 	'farmercreatenextstep'               => 'Próximo passo',
 	'farmer-about'                       => 'Sobre',
+	'farmer-list-wiki'                   => 'Lista de Wikis',
 	'farmer-createwiki'                  => 'Criar um Wiki',
 	'farmer-administration-delete'       => 'Apagar um Wiki',
 	'farmer-administer-thiswiki'         => 'Gerir este Wiki',
@@ -1051,8 +1056,10 @@ $messages['pt'] = array(
 	'farmer-createwiki-title'            => 'Título do Wiki',
 	'farmer-delete-title'                => 'Apagar Wiki',
 	'farmer-delete-form-submit'          => 'Apagar',
+	'farmer-listofwikis'                 => 'Lista de Wikis',
 	'farmer-mainpage'                    => 'Página Principal',
 	'farmer-basic-title1'                => 'Título',
+	'farmer-basic-permission'            => 'Permissões',
 	'farmer-basic-permission-view'       => 'Ver todas as páginas',
 	'farmer-basic-permission-edit'       => 'Editar todas as páginas',
 	'farmer-basic-permission-createpage' => 'Criar novas páginas',
@@ -1062,7 +1069,9 @@ $messages['pt'] = array(
 	'farmer-basic-permission-minoredit'  => 'Permitir edições menores',
 	'farmer-yes'                         => 'Sim',
 	'farmer-no'                          => 'Não',
+	'farmer-extensions-invalid'          => 'Extensão Inválida',
 	'farmer-extensions-register-name'    => 'Nome',
+	'farmer-error-funcnotcall'           => 'Não foi possível chamar a função:',
 );
 
 /** Russian (Русский)
