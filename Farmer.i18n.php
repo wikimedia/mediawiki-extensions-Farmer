@@ -124,6 +124,7 @@ $messages['en'] = array (
  */
 $messages['ar'] = array(
 	'farmer'                                 => 'مزارع',
+	'farmer-desc'                            => 'التحكم بمزرعة ميدياويكي',
 	'farmercantcreatewikis'                  => 'أنت غير قادر على إنشاء ويكيات لأنك لا تمتلك الصلاحية createwikis',
 	'farmercreateurl'                        => 'مسار',
 	'farmercreatesitename'                   => 'اسم الموقع',
@@ -817,6 +818,7 @@ $messages['nds'] = array(
  */
 $messages['nl'] = array(
 	'farmer'                                 => "Meerdere wiki's beheren",
+	'farmer-desc'                            => 'Een uitbreiding om verschillende MediaWiki-wikis via een hoofdwiki mee te beheren',
 	'farmercantcreatewikis'                  => "U kan geen wiki's aanmaken, omdat u het recht ''createwikis'' niet heeft",
 	'farmercreatesitename'                   => 'Sitenaam',
 	'farmercreatenextstep'                   => 'Volgende stap',
@@ -1040,6 +1042,8 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
  * @author Malafaya
  */
 $messages['pt'] = array(
+	'farmercantcreatewikis'                 => 'Você não pode criar wikis porque não possui o privilégio "createwikis"',
+	'farmercreatesitename'                  => 'Nome do sítio',
 	'farmercreatenextstep'                  => 'Próximo passo',
 	'farmer-about'                          => 'Sobre',
 	'farmer-list-wiki'                      => 'Lista de Wikis',
@@ -1050,26 +1054,40 @@ $messages['pt'] = array(
 	'farmer-administration-delete'          => 'Apagar um Wiki',
 	'farmer-administer-thiswiki'            => 'Gerir este Wiki',
 	'farmer-notavailable'                   => 'Não disponível',
+	'farmer-notavailable-text'              => 'Esta funcionalidade só está disponível no wiki principal',
 	'farmer-wikicreated'                    => 'Wiki criado',
 	'farmer-wikicreated-text'               => 'O seu wiki foi criado. Este está acessível em $1',
+	'farmer-wikiexists'                     => 'O wiki existe',
 	'farmer-wikiexists-text'                => "O wiki que está a tentar criar, '''$1''', já existe. Por favor, volte atrás e introduza um outro nome.",
+	'farmer-confirmsetting'                 => 'Confirmar Configuração do Wiki',
 	'farmer-confirmsetting-name'            => 'Nome: $1',
 	'farmer-confirmsetting-title'           => 'Título: $1',
 	'farmer-confirmsetting-description'     => 'Descrição: $1',
 	'farmer-description'                    => 'Descrição',
+	'farmer-button-confirm'                 => 'Confirmar',
+	'farmer-button-submit'                  => 'Submeter',
 	'farmer-createwiki-form-title'          => 'Criar um Wiki',
+	'farmer-createwiki-form-text1'          => 'Utilize o formulário abaixo para criar um novo wiki.',
 	'farmer-createwiki-form-help'           => 'Ajuda',
+	'farmer-createwiki-user'                => 'Nome de utilizador',
 	'farmer-createwiki-name'                => 'Nome do Wiki',
 	'farmer-createwiki-title'               => 'Título do Wiki',
 	'farmer-createwiki-description'         => 'Descrição',
+	'farmer-updatedlist'                    => 'Lista actualizada',
+	'farmer-notaccessible'                  => 'Não acessível',
+	'farmer-permissiondenied'               => 'Permissão negada',
 	'farmer-delete-title'                   => 'Apagar Wiki',
 	'farmer-delete-form'                    => 'Seleccione um wiki',
 	'farmer-delete-form-submit'             => 'Apagar',
 	'farmer-listofwikis'                    => 'Lista de Wikis',
 	'farmer-mainpage'                       => 'Página Principal',
+	'farmer-basic-title'                    => 'Parâmetros Básicos',
 	'farmer-basic-title1'                   => 'Título',
+	'farmer-basic-title1-text'              => 'O seu wiki não tem um título. Escolha um AGORA',
 	'farmer-basic-description'              => 'Descrição',
+	'farmer-basic-description-text'         => 'Introduza a descrição do seu wiki abaixo',
 	'farmer-basic-permission'               => 'Permissões',
+	'farmer-basic-permission-visitor'       => 'Permissões para Cada Visitante',
 	'farmer-basic-permission-view'          => 'Ver todas as páginas',
 	'farmer-basic-permission-edit'          => 'Editar todas as páginas',
 	'farmer-basic-permission-createpage'    => 'Criar novas páginas',
@@ -1086,6 +1104,7 @@ $messages['pt'] = array(
 	'farmer-extensions-register-name'       => 'Nome',
 	'farmer-error-exists'                   => 'Não é possível criar wiki. Este já existe: $1',
 	'farmer-error-funcnotcall'              => 'Não foi possível chamar a função:',
+	'farmer-error-wikicorrupt'              => 'O wiki armazenado está corrompido',
 );
 
 /** Russian (Русский)
