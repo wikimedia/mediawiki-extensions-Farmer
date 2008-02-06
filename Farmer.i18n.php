@@ -10,6 +10,7 @@ $messages = array();
 # Original messages byGregory Szorc <gregory.szorc@gmail.com>
 $messages['en'] = array (
 	'farmer'=>'Farmer',
+	'farmer-desc' => 'Manage a MediaWiki farm',
 	'farmercantcreatewikis'  => 'You are unable to create wikis because you do not have the createwikis privilege',
 	'farmercreateurl'   => 'URL',
 	'farmercreatesitename'  => 'Site name',
@@ -356,6 +357,7 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wiki
  */
 $messages['fr'] = array(
 	'farmer'                                 => 'Administration Multi Wikis',
+	'farmer-desc'                            => 'Administre plusieurs wikis',
 	'farmercantcreatewikis'                  => 'Vous ne pouvez pas créer des wikis car vous n’avez pas l’habilitation « createwikis » nécessaire pour cela.',
 	'farmercreateurl'                        => 'l’adresse',
 	'farmercreatesitename'                   => 'Nom du site',

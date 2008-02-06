@@ -68,6 +68,7 @@ function MediaWikiFarmer_Initialize()
         'author'=>'Gregory Szorc <gregory.szorc@case.edu>',
         'url'=>'http://wiki.case.edu/User:Gregory.Szorc',
         'description'=>'Manage a MediaWiki farm',
+	'descriptionmsg' => 'farmer-desc',
         'version'=>'0.0.3'
     );
 
