@@ -563,6 +563,7 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
  * @author Michawiki
  */
 $messages['hsb'] = array(
+	'farmer-desc'                            => 'Farmu MediaWiki zrjadować',
 	'farmercantcreatewikis'                  => 'Njemóžeš wikije wutworić, dokelž nimaš prawo za wutworjenje wikijow',
 	'farmercreatesitename'                   => 'Mjeno sydła',
 	'farmercreatenextstep'                   => 'Přichodny krok',
@@ -793,6 +794,7 @@ $messages['lb'] = array(
 	'farmer-createwiki-user'            => 'Benotzernumm',
 	'farmer-createwiki-description'     => 'Beschreiwung',
 	'farmer-updatedlist'                => 'Geännert Lëscht',
+	'farmer-deleting'                   => 'Läsche vun $1',
 	'farmer-delete-form-submit'         => 'Läschen',
 	'farmer-mainpage'                   => 'Haaptsäit',
 	'farmer-basic-permission-edit'      => 'All Säiten änneren',
@@ -1042,21 +1044,33 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
  * @author Malafaya
  */
 $messages['pt'] = array(
+	'farmer'                                => 'Farmer',
+	'farmer-desc'                           => 'Gira uma "farm" MediaWiki',
 	'farmercantcreatewikis'                 => 'Você não pode criar wikis porque não possui o privilégio "createwikis"',
 	'farmercreatesitename'                  => 'Nome do sítio',
 	'farmercreatenextstep'                  => 'Próximo passo',
+	'farmernewwikimainpage'                 => '== Bem-vindo ao Seu Wiki ==
+Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar o seu wiki, por favor, visite [[{{ns:special}}:Farmer]].',
 	'farmer-about'                          => 'Sobre',
+	'farmer-about-text'                     => 'MediaWiki Farmer permite-lhe gerir uma "farm" de wikis MediaWiki.',
 	'farmer-list-wiki'                      => 'Lista de Wikis',
 	'farmer-list-wiki-text'                 => '[[$1|Listar]] todos os wikis em {{SITENAME}}',
 	'farmer-createwiki'                     => 'Criar um Wiki',
 	'farmer-createwiki-text'                => '[[$1|Criar]] um novo wiki já!',
+	'farmer-administration'                 => 'Administração da "Farm"',
+	'farmer-administration-extension'       => 'Gerir Extensões',
+	'farmer-administration-extension-text'  => '[[$1|Gerir]] extensões instaladas.',
+	'farmer-admimistration-listupdate'      => 'Actualização da Lista da "Farm"',
 	'farmer-admimistration-listupdate-text' => '[[$1|Actualize]] a lista de wikis em {{SITENAME}}',
 	'farmer-administration-delete'          => 'Apagar um Wiki',
+	'farmer-administration-delete-text'     => '[[$1|Apagar]] um wiki da "farm"',
 	'farmer-administer-thiswiki'            => 'Gerir este Wiki',
+	'farmer-administer-thiswiki-text'       => '[[$1|Administrar]] alterações a este wiki',
 	'farmer-notavailable'                   => 'Não disponível',
 	'farmer-notavailable-text'              => 'Esta funcionalidade só está disponível no wiki principal',
 	'farmer-wikicreated'                    => 'Wiki criado',
 	'farmer-wikicreated-text'               => 'O seu wiki foi criado. Este está acessível em $1',
+	'farmer-default'                        => 'Por defeito, ninguém tem permissões neste wiki à excepção de você. Pode alterar os privilégios dos utilizadores em $1',
 	'farmer-wikiexists'                     => 'O wiki existe',
 	'farmer-wikiexists-text'                => "O wiki que está a tentar criar, '''$1''', já existe. Por favor, volte atrás e introduza um outro nome.",
 	'farmer-confirmsetting'                 => 'Confirmar Configuração do Wiki',
@@ -1075,8 +1089,13 @@ $messages['pt'] = array(
 	'farmer-createwiki-description'         => 'Descrição',
 	'farmer-updatedlist'                    => 'Lista actualizada',
 	'farmer-notaccessible'                  => 'Não acessível',
+	'farmer-notaccessible-test'             => 'Esta funcionalidade só está disponível no wiki pai da "farm"',
 	'farmer-permissiondenied'               => 'Permissão negada',
+	'farmer-permissiondenied-text'          => 'Não tem permissão para apagar um wiki da "farm"',
+	'farmer-permissiondenied-text1'         => 'Não tem permissão para aceder a esta página',
+	'farmer-deleting'                       => 'Apagando $1',
 	'farmer-delete-title'                   => 'Apagar Wiki',
+	'farmer-delete-text'                    => 'Por favor, seleccione o wiki que deseja apagar na lista abaixo',
 	'farmer-delete-form'                    => 'Seleccione um wiki',
 	'farmer-delete-form-submit'             => 'Apagar',
 	'farmer-listofwikis'                    => 'Lista de Wikis',
@@ -1097,12 +1116,17 @@ $messages['pt'] = array(
 	'farmer-basic-permission-minoredit'     => 'Permitir edições menores',
 	'farmer-yes'                            => 'Sim',
 	'farmer-no'                             => 'Não',
+	'farmer-setpermission'                  => 'Aplicar Permissões',
+	'farmer-extensions'                     => 'Extensões Activas',
+	'farmer-extensions-button'              => 'Aplicar Extensões Activas',
 	'farmer-extensions-invalid'             => 'Extensão Inválida',
 	'farmer-extensions-available'           => 'Extensões Disponíveis',
 	'farmer-extensions-noavailable'         => 'Nenhuma extensão está registada',
 	'farmer-extensions-register'            => 'Registar Extensão',
 	'farmer-extensions-register-name'       => 'Nome',
 	'farmer-error-exists'                   => 'Não é possível criar wiki. Este já existe: $1',
+	'farmer-error-defnotset'                => 'Wiki padrão deverá ser escolhido',
+	'farmer-error-nofileconfwrite'          => 'MediaWikiFarmer não conseguiu escrever no ficheiro padrão de configuração wiki.',
 	'farmer-error-funcnotcall'              => 'Não foi possível chamar a função:',
 	'farmer-error-wikicorrupt'              => 'O wiki armazenado está corrompido',
 );
@@ -1223,6 +1247,7 @@ $messages['ru'] = array(
  */
 $messages['sk'] = array(
 	'farmer'                                 => 'Farmár',
+	'farmer-desc'                            => 'Správa farmy MediaWiki',
 	'farmercantcreatewikis'                  => 'Nemôžete vytvárať wiki, pretože nemáte privilégiá createwikis',
 	'farmercreatesitename'                   => 'Názov lokality',
 	'farmercreatenextstep'                   => 'Ďalší krok',
@@ -1335,6 +1360,42 @@ Odkazy na tento menný priestor budú v tvare '''<nowiki>[[$2:Názov stránky]]<
  */
 $messages['stq'] = array(
 	'farmer-createwiki-form-help' => 'Hälpe',
+);
+
+/** Swedish (Svenska)
+ * @author Max sonnelid
+ * @author Lejonel
+ */
+$messages['sv'] = array(
+	'farmercreatesitename'                  => 'Sajtnamn',
+	'farmercreatenextstep'                  => 'Nästa steg',
+	'farmer-about'                          => 'Om',
+	'farmer-list-wiki'                      => 'Lista över wikier',
+	'farmer-list-wiki-text'                 => '[[$1|Lista]] alla wikier på {{SITENAME}}',
+	'farmer-createwiki'                     => 'Skapa en wiki',
+	'farmer-createwiki-text'                => '[[$1|Skapa]] en ny wiki nu!',
+	'farmer-admimistration-listupdate-text' => '[[$1|Uppdatera]] lista över wikier på {{SITENAME}}',
+	'farmer-administration-delete'          => 'Ta bort en wiki',
+	'farmer-notavailable'                   => 'Inte tillgänglig',
+	'farmer-wikicreated'                    => 'Wiki skapad',
+	'farmer-wikiexists'                     => 'Wiki existerar',
+	'farmer-confirmsetting'                 => 'Bekräfta wiki-inställningar',
+	'farmer-confirmsetting-name'            => 'Namn: $1',
+	'farmer-confirmsetting-title'           => 'Titel: $1',
+	'farmer-button-confirm'                 => 'Bekräfta',
+	'farmer-createwiki-form-title'          => 'Skapa en wiki',
+	'farmer-createwiki-form-help'           => 'Hjälp',
+	'farmer-createwiki-user'                => 'Användarnamn',
+	'farmer-createwiki-name'                => 'Wikins namn',
+	'farmer-createwiki-title'               => 'Wikins titel',
+	'farmer-basic-permission-edit'          => 'Redigera alla sidor',
+	'farmer-basic-permission-createpage'    => 'Skapa nya sidor',
+	'farmer-basic-permission-createtalk'    => 'Skapa diskussionssidor',
+	'farmer-basic-permission-move'          => 'Flytta sidor',
+	'farmer-yes'                            => 'Ja',
+	'farmer-no'                             => 'Nej',
+	'farmer-extensions'                     => 'Aktiva Programtillägg',
+	'farmer-extensions-register-name'       => 'Namn',
 );
 
 /** Volapük (Volapük)
