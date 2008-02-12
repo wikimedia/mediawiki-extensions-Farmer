@@ -320,6 +320,16 @@ $messages['br'] = array(
 	'farmer-createwiki-form-help' => 'Skoazell',
 );
 
+/** Ewe (Eʋegbe)
+ * @author M.M.S.
+ */
+$messages['ee'] = array(
+	'farmer-list-wiki'            => 'Wikiwo ƒe xexlẽme',
+	'farmer-createwiki-form-help' => 'Kpekpeɖeŋu',
+	'farmer-delete-form-submit'   => 'Tutui',
+	'farmer-listofwikis'          => 'Wikiwo ƒe xexlẽme',
+);
+
 /** Greek (Ελληνικά)
  * @author Consta
  */
@@ -574,6 +584,7 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
  * @author Michawiki
  */
 $messages['hsb'] = array(
+	'farmer'                                 => 'Farmar',
 	'farmer-desc'                            => 'Farmu MediaWiki zrjadować',
 	'farmercantcreatewikis'                  => 'Njemóžeš wikije wutworić, dokelž nimaš prawo za wutworjenje wikijow',
 	'farmercreatesitename'                   => 'Mjeno sydła',
@@ -937,6 +948,35 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
 	'farmer-error-funcnotcall'               => 'Kon de volgende functie niet aanroepen:',
 	'farmer-error-noextwrite'                => 'Het uitbreidingsbestand kon niet weggeschreven worden:',
 	'farmer-error-wikicorrupt'               => 'De opgeslagen wiki is corrupt',
+);
+
+/** Northern Sotho (Sesotho sa Leboa)
+ * @author Mohau
+ */
+$messages['nso'] = array(
+	'farmer-list-wiki'                   => 'Lenano la di-Wiki',
+	'farmer-createwiki'                  => 'Hlama Wiki',
+	'farmer-administration-delete'       => 'Phumula Wiki',
+	'farmer-wikicreated'                 => 'Wiki e hlomilwe',
+	'farmer-confirmsetting-name'         => 'Leina: $1',
+	'farmer-confirmsetting-title'        => 'Thaetlele: $1',
+	'farmer-createwiki-form-help'        => 'Thušo',
+	'farmer-createwiki-user'             => 'Leina la mošomiši',
+	'farmer-createwiki-name'             => 'Leina la Wiki',
+	'farmer-createwiki-title'            => 'Thaetlele ya Wiki',
+	'farmer-deleting'                    => 'Phumutše $1',
+	'farmer-delete-form-submit'          => 'Phumula',
+	'farmer-listofwikis'                 => 'Lenano la di-Wiki',
+	'farmer-basic-title1'                => 'Thaetlele',
+	'farmer-basic-permission-view'       => 'Nyakorela matlakala ka moka',
+	'farmer-basic-permission-edit'       => 'Fetola matlakala ka moka',
+	'farmer-basic-permission-createpage' => 'Hloma letlakala le lempsha',
+	'farmer-basic-permission-createtalk' => 'Hloma matlakala a dipoledišano',
+	'farmer-basic-permission-move'       => 'Huduša matlakala',
+	'farmer-basic-permission-minoredit'  => 'Dumella diphetogo tše nnyenyane',
+	'farmer-yes'                         => 'Ee',
+	'farmer-no'                          => 'Aowa',
+	'farmer-extensions-register-name'    => 'Leina',
 );
 
 /** Occitan (Occitan)
@@ -1443,14 +1483,18 @@ $messages['sv'] = array(
 	'farmer-createwiki-description'          => 'Beskrivning',
 	'farmer-deleting'                        => 'Tar bort $1',
 	'farmer-delete-title'                    => 'Ta bort Wiki',
+	'farmer-delete-form'                     => 'Välj en wiki',
 	'farmer-delete-form-submit'              => 'Ta bort',
+	'farmer-listofwikis'                     => 'Lista över wikier',
 	'farmer-mainpage'                        => 'Huvudsida',
 	'farmer-basic-title1'                    => 'Titel',
 	'farmer-basic-description'               => 'Beskrivning',
+	'farmer-basic-permission-view'           => 'Visa alla sidor',
 	'farmer-basic-permission-edit'           => 'Redigera alla sidor',
 	'farmer-basic-permission-createpage'     => 'Skapa nya sidor',
 	'farmer-basic-permission-createtalk'     => 'Skapa diskussionssidor',
 	'farmer-basic-permission-move'           => 'Flytta sidor',
+	'farmer-basic-permission-upload'         => 'Ladda upp filer',
 	'farmer-yes'                             => 'Ja',
 	'farmer-no'                              => 'Nej',
 	'farmer-extensions'                      => 'Aktiva programtillägg',
