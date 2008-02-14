@@ -984,6 +984,7 @@ $messages['nso'] = array(
  */
 $messages['oc'] = array(
 	'farmer'                                 => 'Administracion Multi Wikis',
+	'farmer-desc'                            => 'Administra mantun wiki',
 	'farmercantcreatewikis'                  => 'Podètz pas crear de wikis perque avètz pas l’abilitacion « createwikis » necessària per aquò.',
 	'farmercreatesitename'                   => 'Nom del site',
 	'farmercreatenextstep'                   => 'Etapa seguenta',
@@ -1457,6 +1458,7 @@ $messages['stq'] = array(
  * @author M.M.S.
  */
 $messages['sv'] = array(
+	'farmer'                                 => 'Farmer',
 	'farmercreatesitename'                   => 'Sajtnamn',
 	'farmercreatenextstep'                   => 'Nästa steg',
 	'farmer-about'                           => 'Om',
@@ -1466,6 +1468,7 @@ $messages['sv'] = array(
 	'farmer-createwiki-text'                 => '[[$1|Skapa]] en ny wiki nu!',
 	'farmer-admimistration-listupdate-text'  => '[[$1|Uppdatera]] lista över wikier på {{SITENAME}}',
 	'farmer-administration-delete'           => 'Ta bort en wiki',
+	'farmer-administer-thiswiki'             => 'Administratera denna wiki',
 	'farmer-notavailable'                    => 'Inte tillgänglig',
 	'farmer-wikicreated'                     => 'Wiki skapad',
 	'farmer-wikiexists'                      => 'Wiki existerar',
@@ -1488,6 +1491,7 @@ $messages['sv'] = array(
 	'farmer-listofwikis'                     => 'Lista över wikier',
 	'farmer-mainpage'                        => 'Huvudsida',
 	'farmer-basic-title1'                    => 'Titel',
+	'farmer-basic-title1-text'               => 'Din wiki har inte en titel.  Välj en NU',
 	'farmer-basic-description'               => 'Beskrivning',
 	'farmer-basic-permission-view'           => 'Visa alla sidor',
 	'farmer-basic-permission-edit'           => 'Redigera alla sidor',
