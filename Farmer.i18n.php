@@ -1454,20 +1454,30 @@ $messages['stq'] = array(
 
 /** Swedish (Svenska)
  * @author Max sonnelid
- * @author Lejonel
  * @author M.M.S.
+ * @author Lejonel
  */
 $messages['sv'] = array(
 	'farmer'                                 => 'Farmer',
+	'farmer-desc'                            => 'Sköt en MediaWiki farm',
+	'farmercantcreatewikis'                  => 'Du är oförmögen till att skapa wikier för att du inte har skapa wikier privilegierna',
 	'farmercreatesitename'                   => 'Sajtnamn',
 	'farmercreatenextstep'                   => 'Nästa steg',
+	'farmernewwikimainpage'                  => '== Välkommen till Din Wiki ==
+Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skräddarsy din wiki, var god att gå till [[Special:Farmer]].',
 	'farmer-about'                           => 'Om',
+	'farmer-about-text'                      => 'MediaWiki Farmer tillåter dig att sköta en farm av MediaWiki wikier.',
 	'farmer-list-wiki'                       => 'Lista över wikier',
 	'farmer-list-wiki-text'                  => '[[$1|Lista]] alla wikier på {{SITENAME}}',
 	'farmer-createwiki'                      => 'Skapa en wiki',
 	'farmer-createwiki-text'                 => '[[$1|Skapa]] en ny wiki nu!',
+	'farmer-administration'                  => 'Farm Administration',
+	'farmer-administration-extension'        => 'Sköt tilläggsprogram',
+	'farmer-administration-extension-text'   => '[[$1|Sköt]] installerade tilläggsprogram.',
+	'farmer-admimistration-listupdate'       => 'Uppdatera farm lista',
 	'farmer-admimistration-listupdate-text'  => '[[$1|Uppdatera]] lista över wikier på {{SITENAME}}',
 	'farmer-administration-delete'           => 'Ta bort en wiki',
+	'farmer-administration-delete-text'      => '[[$1|Radera]] en wiki från farmen',
 	'farmer-administer-thiswiki'             => 'Administratera denna wiki',
 	'farmer-notavailable'                    => 'Inte tillgänglig',
 	'farmer-wikicreated'                     => 'Wiki skapad',
