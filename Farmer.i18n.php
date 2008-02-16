@@ -1480,6 +1480,7 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-administration-delete-text'      => '[[$1|Radera]] en wiki från farmen',
 	'farmer-administer-thiswiki'             => 'Administratera denna wiki',
 	'farmer-notavailable'                    => 'Inte tillgänglig',
+	'farmer-notavailable-text'               => 'Denna egenskap är endast tillgänglig på huvudwikin',
 	'farmer-wikicreated'                     => 'Wiki skapad',
 	'farmer-wikiexists'                      => 'Wiki existerar',
 	'farmer-confirmsetting'                  => 'Bekräfta wiki-inställningar',
