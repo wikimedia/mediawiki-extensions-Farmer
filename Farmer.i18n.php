@@ -950,6 +950,121 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
 	'farmer-error-wikicorrupt'               => 'De opgeslagen wiki is corrupt',
 );
 
+/** Norwegian (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['no'] = array(
+	'farmer'                                 => 'Farmer',
+	'farmer-desc'                            => 'Hold en MediaWiki-farm ved like',
+	'farmercantcreatewikis'                  => 'Du kan ikke opprette wikier fordi du ikke har de riktige rettighetene',
+	'farmercreatesitename'                   => 'Sidenavn',
+	'farmercreatenextstep'                   => 'Neste steg',
+	'farmernewwikimainpage'                  => '== Velkommen til din wiki ==
+Om du leser dette, har din nye wiki blitt installert korrekt. For å skreddersy wikien din, gå til [[Special:Farmer]].',
+	'farmer-about'                           => '{{int:About}}',
+	'farmer-about-text'                      => 'MediaWiki Farmer lar deg holde en hel farm av MediaWiki-wikier ved like.',
+	'farmer-list-wiki'                       => 'Liste over wikier',
+	'farmer-list-wiki-text'                  => '[[$1|Liste]] over alle wikiene på {{SITENAME}}',
+	'farmer-createwiki'                      => 'Opprett en wiki',
+	'farmer-createwiki-text'                 => '[[$1|Opprett]] en ny wiki nå!',
+	'farmer-administration'                  => 'Farmadministrasjon',
+	'farmer-administration-extension'        => 'Hold utvidelser vedlike',
+	'farmer-administration-extension-text'   => 'Hold installerte utvidelser [[$1|ved like]].',
+	'farmer-admimistration-listupdate'       => 'Oppdater farmliste',
+	'farmer-admimistration-listupdate-text'  => '[[$1|Oppdater]] liste over wikier på {{SITENAME}}',
+	'farmer-administration-delete'           => 'Fjern en wiki',
+	'farmer-administration-delete-text'      => '[[$1|Fjern]] en wiki fra farmen',
+	'farmer-administer-thiswiki'             => 'Administer denne wikien',
+	'farmer-administer-thiswiki-text'        => '[[$1|Administrer]] endringer i denne wikien',
+	'farmer-notavailable'                    => 'Ikke tilgjengelig',
+	'farmer-notavailable-text'               => 'Denne egenskapen er bare tilgjengelig på hovedwikien',
+	'farmer-wikicreated'                     => 'Wiki opprettet',
+	'farmer-wikicreated-text'                => 'Wikien din har blitt opprettet. Den er tilgjengelig på $1',
+	'farmer-default'                         => 'Som utgangspunkt er det ingen andre enn deg som har rettigheter på denne wikien. Du kan endre brukerrettigheter via $1',
+	'farmer-wikiexists'                      => 'Wikien finnes',
+	'farmer-wikiexists-text'                 => "Wikien du prøver å opprettet, '''$1''', finnes allerede. Gå tilbake og prøv med et annet navn.",
+	'farmer-confirmsetting'                  => 'Bekreft wikiens innstillinger',
+	'farmer-confirmsetting-name'             => 'Navn: $1',
+	'farmer-confirmsetting-title'            => 'Tittel: $1',
+	'farmer-confirmsetting-description'      => 'Beskrivelse: $1',
+	'farmer-description'                     => 'Beskrivelse',
+	'farmer-confirmsetting-text'             => "Wikien din, '''$1''', vil være tilgjengelig via http://$1.myfarm. Prosjektnavnerommet vil være '''$2'''. Lenker til dette navnerommet vil være på formen '''<nowiki>[[$2:Sidenavn]]</nowiki>'''. Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedenunder.",
+	'farmer-button-confirm'                  => 'Bekreft',
+	'farmer-button-submit'                   => 'Lagre',
+	'farmer-createwiki-form-title'           => 'Opprett en wiki',
+	'farmer-createwiki-form-text1'           => 'Bruk skjemaet nedenfor for å opprette en ny wiki.',
+	'farmer-createwiki-form-help'            => '{{int:Help}}',
+	'farmer-createwiki-form-text2'           => "; Wikiens navn
+: Navnet på wikien. Inneholder kun bokstaver og tall. Wikiens navn vil brukes i URL-en for å identifisere wikien. Om du for eksempel skriver inn ''tittel'', vil wikien din være tilgjengelig via <nowiki>http://</nowiki>''tittel''.mydomain.",
+	'farmer-createwiki-form-text3'           => '; Wikiens tittel
+: Tittelen på wikien. Vil bli brukt i tittelen på enhver side på wikien din. Vil også brukes som navn på prosjektnavnerommet og som interwikiprefiks.',
+	'farmer-createwiki-form-text4'           => '; Bekskrivelse
+: Beskrivelse av wikien. Denne vil vises i listen over wikier.',
+	'farmer-createwiki-user'                 => 'Brukernavn',
+	'farmer-createwiki-name'                 => 'Wikiens navn',
+	'farmer-createwiki-title'                => 'Wikiens tittel',
+	'farmer-createwiki-description'          => 'Beskrivelse',
+	'farmer-updatedlist'                     => 'Oppdatert liste',
+	'farmer-notaccessible'                   => 'Utilgjengelig',
+	'farmer-notaccessible-test'              => 'Dette er kun tilgjengelig på farmens opphavswiki',
+	'farmer-permissiondenied'                => 'Tilgang nektet',
+	'farmer-permissiondenied-text'           => 'Du har ikke tillatelse til å fjerne wikier',
+	'farmer-permissiondenied-text1'          => 'Du har ikke tillatelse til å gå inn på denne siden',
+	'farmer-deleting'                        => 'Fjerner $1',
+	'farmer-delete-title'                    => 'Fjern wiki',
+	'farmer-delete-text'                     => 'Vennligst velg hvilken wiki du vil fjerne fra listen nedenunder',
+	'farmer-delete-form'                     => 'Velg en wiki',
+	'farmer-delete-form-submit'              => 'Fjern',
+	'farmer-listofwikis'                     => 'Liste over wikier',
+	'farmer-mainpage'                        => '{{int:Mainpage}}',
+	'farmer-basic-title'                     => 'Grunnparametere',
+	'farmer-basic-title1'                    => 'Tittel',
+	'farmer-basic-title1-text'               => 'Wikien din har ikke en tittel. Velg en NÅ',
+	'farmer-basic-description'               => 'Beskrivelse',
+	'farmer-basic-description-text'          => 'Sett en beskrivelse for wikien din nedenfor',
+	'farmer-basic-permission'                => 'Tillatelser',
+	'farmer-basic-permission-text'           => 'Ved å bruke skjemaet under kan du endre brukeres rettigheter på denne wikien.',
+	'farmer-basic-permission-visitor'        => 'Rettigheter for alle besøkende',
+	'farmer-basic-permission-visitor-text'   => 'Følgende rettigheter vil bli gitt til alle som besøker wikien',
+	'farmer-basic-permission-view'           => 'Vis alle sider',
+	'farmer-basic-permission-edit'           => 'Rediger alle sider',
+	'farmer-basic-permission-createpage'     => 'Opprett nye sider',
+	'farmer-basic-permission-createtalk'     => 'Opprett diskusjonssider',
+	'farmer-basic-permission-move'           => 'Flytt sider',
+	'farmer-basic-permission-upload'         => 'Last opp filer',
+	'farmer-basic-permission-reupload'       => 'Gjenopplast filer (skriv over eksisterende filer)',
+	'farmer-basic-permission-minoredit'      => 'Tillat mindre endringer',
+	'farmer-yes'                             => 'Ja',
+	'farmer-no'                              => 'Nei',
+	'farmer-basic-permission-user'           => 'Rettigheter for innloggede brukere',
+	'farmer-basic-permission-user-text'      => 'Følgende rettigheter vil gis til alle innloggede brukere',
+	'farmer-setpermission'                   => 'Sett rettigheter',
+	'farmer-defaultskin'                     => 'Standardutseende',
+	'farmer-defaultskin-button'              => 'Sett standardutseende',
+	'farmer-extensions'                      => 'Aktive utvidelser',
+	'farmer-extensions-button'               => 'Sett aktive utvidelser',
+	'farmer-extensions-extension-denied'     => 'Du har ikke tillatelse til å bruke denne funksjonen. Du må være medlem av brukergruppa farmeradmin',
+	'farmer-extensions-invalid'              => 'Ugyldig utvidelse',
+	'farmer-extensions-invalid-text'         => 'Vi kunne ikke legge til utvidelsen fordi filen som var valgt for inkludering ikke kunne bli funnet',
+	'farmer-extensions-available'            => 'Tilgjengelige utvidelser',
+	'farmer-extensions-noavailable'          => 'Ingen utvidelser er registrert',
+	'farmer-extensions-register'             => 'Registrer utvidelser',
+	'farmer-extensions-register-text1'       => 'Bruk skjemaet nedenfor for å registrere en ny utvidelse hos farmen. Når en utvidelse er registrert vil alle wikiene kunne bruke den.',
+	'farmer-extensions-register-text2'       => "For parameteret ''Inkluder fil'', skriv inn navnet på PHP-filen slik du ville gjort det i LocalSettings.php.",
+	'farmer-extensions-register-text3'       => "Dersom filnavnet inneholder '''\$root''', vil den variabelen erstattes med rotmappen til MediaWiki.",
+	'farmer-extensions-register-text4'       => 'De nåværende inkluderte stiene er:',
+	'farmer-extensions-register-name'        => 'Navn',
+	'farmer-extensions-register-includefile' => 'Inkluder fil',
+	'farmer-error-exists'                    => 'Kan ikke opprette wikien. Den finnes allerede: $1',
+	'farmer-error-nodirconfig'               => 'configDirectory ikke funnet:',
+	'farmer-error-defnotset'                 => 'Må sette standardwiki',
+	'farmer-error-mapnotfound'               => 'Funksjonen for å sette inn wikiens navn i farmen ikke funnet:',
+	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer kunne ikke skrive standardkonfigurasjonsfilen.',
+	'farmer-error-funcnotcall'               => 'Kunne ikke rope opp funksjon:',
+	'farmer-error-noextwrite'                => 'Kunne ikke skrive ut utvidelsesfil:',
+	'farmer-error-wikicorrupt'               => 'Den lagrede wikien er ødelagt',
+);
+
 /** Northern Sotho (Sesotho sa Leboa)
  * @author Mohau
  */
@@ -1456,6 +1571,7 @@ $messages['stq'] = array(
  * @author Max sonnelid
  * @author M.M.S.
  * @author Lejonel
+ * @author Jon Harald Søby
  */
 $messages['sv'] = array(
 	'farmer'                                 => 'Farmer',
@@ -1491,10 +1607,12 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-button-confirm'                  => 'Bekräfta',
 	'farmer-createwiki-form-title'           => 'Skapa en wiki',
 	'farmer-createwiki-form-help'            => 'Hjälp',
+	'farmer-createwiki-form-text4'           => '; Beskrivning: Beskrivning av wikin. Den kommer att visas in wiki listan.',
 	'farmer-createwiki-user'                 => 'Användarnamn',
 	'farmer-createwiki-name'                 => 'Wikins namn',
 	'farmer-createwiki-title'                => 'Wikins titel',
 	'farmer-createwiki-description'          => 'Beskrivning',
+	'farmer-updatedlist'                     => 'Uppdaterad lista',
 	'farmer-deleting'                        => 'Tar bort $1',
 	'farmer-delete-title'                    => 'Ta bort Wiki',
 	'farmer-delete-form'                     => 'Välj en wiki',
@@ -1510,6 +1628,7 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-basic-permission-createtalk'     => 'Skapa diskussionssidor',
 	'farmer-basic-permission-move'           => 'Flytta sidor',
 	'farmer-basic-permission-upload'         => 'Ladda upp filer',
+	'farmer-basic-permission-minoredit'      => 'Tillåt mindre redigeringar',
 	'farmer-yes'                             => 'Ja',
 	'farmer-no'                              => 'Nej',
 	'farmer-extensions'                      => 'Aktiva programtillägg',
@@ -1520,6 +1639,25 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-extensions-register-name'        => 'Namn',
 	'farmer-extensions-register-includefile' => 'Inkludera fil',
 	'farmer-error-exists'                    => 'Kan inte skapa wikin.  Den existerar redan: $1',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'farmer-confirmsetting-name'        => 'పేరు: $1',
+	'farmer-confirmsetting-description' => 'వివరణ: $1',
+	'farmer-description'                => 'వివరణ',
+	'farmer-createwiki-form-help'       => 'సహాయం',
+	'farmer-createwiki-name'            => 'వికీ పేరు',
+	'farmer-createwiki-title'           => 'వికీ శీర్షిక',
+	'farmer-createwiki-description'     => 'వివరణ',
+	'farmer-listofwikis'                => 'వికీల యొక్క జాబితా',
+	'farmer-basic-title1'               => 'శీర్షిక',
+	'farmer-basic-description'          => 'వివరణ',
+	'farmer-yes'                        => 'అవును',
+	'farmer-no'                         => 'కాదు',
+	'farmer-extensions-register-name'   => 'పేరు',
 );
 
 /** Volapük (Volapük)
