@@ -320,6 +320,21 @@ $messages['br'] = array(
 	'farmer-createwiki-form-help' => 'Skoazell',
 );
 
+/** Czech (Česky)
+ * @author Matěj Grabovský
+ */
+$messages['cs'] = array(
+	'farmer-desc'            => 'Správa farmy MediaWiki',
+	'farmercreatesitename'   => 'Název lokality',
+	'farmercreatenextstep'   => 'Další krok',
+	'farmer-about'           => 'O stránce',
+	'farmer-list-wiki'       => 'Seznam wiki',
+	'farmer-list-wiki-text'  => '[[$1|Seznam]] všech wiki na {{GRAMMAR:local|{{SITENAME}}}}',
+	'farmer-createwiki'      => 'Vytvořit wiki',
+	'farmer-createwiki-text' => '[[$1|Vytvořte]] novou wiki teď!',
+	'farmer-administration'  => 'Správa farmy',
+);
+
 /** Ewe (Eʋegbe)
  * @author M.M.S.
  */
@@ -808,6 +823,10 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
  */
 $messages['lb'] = array(
 	'farmercreatesitename'              => 'Numm vum Site',
+	'farmercreatenextstep'              => 'Nächste Schrëtt',
+	'farmer-about'                      => 'Iwwer',
+	'farmer-list-wiki'                  => 'Lëscht vun de Wikien',
+	'farmer-administration-delete'      => 'E Wiki läschen',
 	'farmer-confirmsetting-name'        => 'Numm: $1',
 	'farmer-confirmsetting-title'       => 'Iwwerschrëft: $1',
 	'farmer-confirmsetting-description' => 'Beschreiwung: $1',
@@ -825,6 +844,7 @@ $messages['lb'] = array(
 	'farmer-basic-permission-minoredit' => 'Kleng Ännerungen erlaben',
 	'farmer-yes'                        => 'Jo',
 	'farmer-no'                         => 'Neen',
+	'farmer-extensions-invalid'         => 'Ongëlteg Erweiderung',
 	'farmer-extensions-register-name'   => 'Numm',
 );
 
