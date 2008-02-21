@@ -1473,11 +1473,11 @@ $messages['ru'] = array(
 $messages['sk'] = array(
 	'farmer'                                 => 'Farmár',
 	'farmer-desc'                            => 'Správa farmy MediaWiki',
-	'farmercantcreatewikis'                  => 'Nemôžete vytvárať wiki, pretože nemáte privilégiá createwikis',
+	'farmercantcreatewikis'                  => 'Nemôžete vytvárať wiki, pretože nemáte oprávnenie createwikis',
 	'farmercreatesitename'                   => 'Názov lokality',
 	'farmercreatenextstep'                   => 'Ďalší krok',
 	'farmernewwikimainpage'                  => '== Vitajte vo vašej wiki ==
-Ak čítate tento text, vaša nová wiki bola správne nainštalovaná. Svoju wiki môžete prospôsobiť pomocou [[Special:Farmer]].',
+Ak čítate tento text, vaša nová wiki bola správne nainštalovaná. Svoju wiki môžete prispôsobiť pomocou [[Special:Farmer]].',
 	'farmer-about'                           => 'O stránke',
 	'farmer-about-text'                      => 'MediaWiki Farmár vám umožňuje spravovať farmu wiki systému MediaWiki.',
 	'farmer-list-wiki'                       => 'Zoznam wiki',
@@ -1681,6 +1681,7 @@ $messages['te'] = array(
 	'farmer-createwiki-description'     => 'వివరణ',
 	'farmer-delete-form-submit'         => 'తొలగించు',
 	'farmer-listofwikis'                => 'వికీల యొక్క జాబితా',
+	'farmer-mainpage'                   => 'మొదటి పేజీ',
 	'farmer-basic-title1'               => 'శీర్షిక',
 	'farmer-basic-description'          => 'వివరణ',
 	'farmer-basic-permission'           => 'అనుమతులు',
