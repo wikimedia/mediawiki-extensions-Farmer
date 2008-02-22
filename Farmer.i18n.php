@@ -1361,6 +1361,7 @@ Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar 
  */
 $messages['ru'] = array(
 	'farmer'                                 => 'Фермер',
+	'farmer-desc'                            => 'Управление фермой MediaWiki',
 	'farmercantcreatewikis'                  => 'Вы не можете создать вики, так как не имеете соответствующих прав.',
 	'farmercreatesitename'                   => 'Имя сайта',
 	'farmercreatenextstep'                   => 'Следующий шаг',
@@ -1669,6 +1670,7 @@ $messages['te'] = array(
 	'farmercreatenextstep'              => 'తర్వాతి మెట్టు',
 	'farmer-about'                      => 'గురించి',
 	'farmer-list-wiki'                  => 'వికీల యొక్క జాబితా',
+	'farmer-notavailable'               => 'అందుబాటులో లేదు',
 	'farmer-confirmsetting-name'        => 'పేరు: $1',
 	'farmer-confirmsetting-title'       => 'శీర్షిక: $1',
 	'farmer-confirmsetting-description' => 'వివరణ: $1',
@@ -1679,6 +1681,8 @@ $messages['te'] = array(
 	'farmer-createwiki-name'            => 'వికీ పేరు',
 	'farmer-createwiki-title'           => 'వికీ శీర్షిక',
 	'farmer-createwiki-description'     => 'వివరణ',
+	'farmer-permissiondenied'           => 'అనుమతి నిరాకరించారు',
+	'farmer-deleting'                   => '$1ని తొలగిస్తున్నాం',
 	'farmer-delete-form-submit'         => 'తొలగించు',
 	'farmer-listofwikis'                => 'వికీల యొక్క జాబితా',
 	'farmer-mainpage'                   => 'మొదటి పేజీ',
