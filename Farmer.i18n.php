@@ -390,8 +390,8 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wiki
 );
 
 /** French (Français)
- * @author Grondin
  * @author Urhixidur
+ * @author Grondin
  * @author Dereckson
  */
 $messages['fr'] = array(
@@ -491,15 +491,15 @@ Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la
 	'farmer-extensions-noavailable'          => 'Aucune extension n’est enregistrée.',
 	'farmer-extensions-register'             => 'Enregistrer une extension',
 	'farmer-extensions-register-text1'       => 'Utilisez le formulaire ci-dessous pour enregistrer une nouvelle extension avec cette fonctionnalité. Une fois l’extension enregistrée, tous les wikis pourront l’utiliser.',
-	'farmer-extensions-register-text2'       => "En ce qui concerne le paramètre ''Fichier Include'', indiquer le nom du fichier PHP que voudriez dans LocalSettings.php.",
+	'farmer-extensions-register-text2'       => "En ce qui concerne le paramètre ''Fichier Include'', indiquez le nom du fichier PHP que vous voulez dans LocalSettings.php.",
 	'farmer-extensions-register-text3'       => "Si le nom du fichier contient '''\$root''', cette variable sera remplacée par le répertoire racine de Mediawiki.",
 	'farmer-extensions-register-text4'       => 'Les chemins actuels des fichiers include sont :',
 	'farmer-extensions-register-name'        => 'Nom',
 	'farmer-extensions-register-includefile' => 'Fichier Include',
 	'farmer-error-exists'                    => 'L’interface ne peut créer le Wiki.  Il existe déjà : $1',
 	'farmer-error-nodirconfig'               => 'configDirectory introuvable : ',
-	'farmer-error-defnotset'                 => 'Le Wiki par défaut doit être défini.',
-	'farmer-error-mapnotfound'               => 'La fonction planifiant le nom du wiki est introuvable : ',
+	'farmer-error-defnotset'                 => 'Le wiki par défaut doit être défini.',
+	'farmer-error-mapnotfound'               => 'La fonction inscrivant le nom du wiki dans la « ferme » est introuvable :',
 	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer ne peut écrire le fichier de configuration du wiki par défaut.',
 	'farmer-error-funcnotcall'               => 'La fonction suivante est introuvable : ',
 	'farmer-error-noextwrite'                => 'Impossible d’écrire le fichier d’extension suivant : ',
