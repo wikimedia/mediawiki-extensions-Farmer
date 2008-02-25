@@ -820,6 +820,23 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
 	'farmer-error-wikicorrupt'               => 'A tárolt wiki sérült',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'farmercreatesitename'            => 'ឈ្មោះសៃថ៍',
+	'farmer-administration-delete'    => 'លុបចេញ មួយវិគី',
+	'farmer-confirmsetting'           => 'បញ្ជាក់ទទួលស្គាល់ ការកំណត់ វិគី',
+	'farmer-confirmsetting-name'      => 'ឈ្មោះ ៖ $1',
+	'farmer-button-confirm'           => 'បញ្ជាក់ទទួលស្គាល់',
+	'farmer-createwiki-user'          => 'ឈ្មោះអ្នកប្រើប្រាស់',
+	'farmer-createwiki-name'          => 'ឈ្មោះ វិគី',
+	'farmer-delete-title'             => 'លុបចេញ វិគី',
+	'farmer-delete-text'              => 'ចូរ ជ្រើសយក វិគី ពីបញ្ជីខាងក្រោម ដែលអ្នកប្រាថ្នា លុបចេញ',
+	'farmer-delete-form-submit'       => 'លុបចេញ',
+	'farmer-extensions-register-name' => 'ឈ្មោះ',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -1674,6 +1691,7 @@ $messages['te'] = array(
 	'farmer-list-wiki'                   => 'వికీల యొక్క జాబితా',
 	'farmer-administration-delete'       => 'ఓ వికీని తొలగించండి',
 	'farmer-notavailable'                => 'అందుబాటులో లేదు',
+	'farmer-notavailable-text'           => 'ఈ సౌలభ్యం ప్రధాన వికీలో మాత్రమే అందుబాటులో ఉంటుంది.',
 	'farmer-confirmsetting'              => 'వికీ అమరికలను నిర్ధారించండి',
 	'farmer-confirmsetting-name'         => 'పేరు: $1',
 	'farmer-confirmsetting-title'        => 'శీర్షిక: $1',
@@ -1693,6 +1711,7 @@ $messages['te'] = array(
 	'farmer-listofwikis'                 => 'వికీల యొక్క జాబితా',
 	'farmer-mainpage'                    => 'మొదటి పేజీ',
 	'farmer-basic-title1'                => 'శీర్షిక',
+	'farmer-basic-title1-text'           => 'మీ వికీకి శీర్షిక లేదు. ఇప్పుడే పెట్టండి.',
 	'farmer-basic-description'           => 'వివరణ',
 	'farmer-basic-permission'            => 'అనుమతులు',
 	'farmer-basic-permission-view'       => 'అన్ని పేజీలను చూడండి',
@@ -1703,6 +1722,7 @@ $messages['te'] = array(
 	'farmer-basic-permission-minoredit'  => 'చిన్న మార్పులు అనుమతించడం',
 	'farmer-yes'                         => 'అవును',
 	'farmer-no'                          => 'కాదు',
+	'farmer-extensions-available'        => 'అందుబాటులో ఉన్న పొడగింతలు',
 	'farmer-extensions-register-name'    => 'పేరు',
 );
 
