@@ -850,6 +850,7 @@ $messages['ja'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
 	'farmercreatesitename'                  => 'ឈ្មោះសៃថ៍',
@@ -863,6 +864,7 @@ $messages['km'] = array(
 	'farmer-wikicreated'                    => 'វិគី ត្រូវបានបង្កើត',
 	'farmer-confirmsetting'                 => 'បញ្ជាក់ទទួលស្គាល់ ការកំណត់ វិគី',
 	'farmer-confirmsetting-name'            => 'ឈ្មោះ ៖ $1',
+	'farmer-confirmsetting-title'           => "ចំណងជើង៖'''$1'''",
 	'farmer-confirmsetting-description'     => 'ការពិពណ៌នា ៖ $1',
 	'farmer-description'                    => 'ការពិពណ៌នា',
 	'farmer-button-confirm'                 => 'បញ្ជាក់ទទួលស្គាល់',
@@ -882,6 +884,7 @@ $messages['km'] = array(
 	'farmer-delete-form-submit'             => 'លុបចេញ',
 	'farmer-listofwikis'                    => 'បញ្ជី នៃ វិគី',
 	'farmer-mainpage'                       => 'ទំព័រដើម',
+	'farmer-basic-title1'                   => 'ចំនងជើង',
 	'farmer-basic-description'              => 'ការពិពណ៌នា',
 	'farmer-basic-permission'               => 'ការអនុញ្ញាតិ នានា',
 	'farmer-basic-permission-view'          => 'មើល គ្រប់ទំព័រ',
@@ -1322,6 +1325,27 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 	'farmer-error-funcnotcall'               => 'La foncion seguenta es introbabla :',
 	'farmer-error-noextwrite'                => 'Impossible d’escriure lo fichièr d’extension seguent :',
 	'farmer-error-wikicorrupt'               => 'Lo wiki estocat es corromput',
+);
+
+/** Polish (Polski)
+ * @author McMonster
+ */
+$messages['pl'] = array(
+	'farmer-createwiki-text'             => '[[$1|Stwórz]] nową wiki teraz!',
+	'farmer-createwiki-form-help'        => 'Pomoc',
+	'farmer-delete-form-submit'          => 'Usuń',
+	'farmer-basic-title1-text'           => 'Twoja wiki nie posiada tytułu. Ustaw go TERAZ',
+	'farmer-basic-description'           => 'Opis',
+	'farmer-basic-permission-createtalk' => 'Utwórz strony dyskusji',
+	'farmer-basic-permission-move'       => 'Przenieś strony',
+	'farmer-basic-permission-upload'     => 'Załaduj pliki',
+	'farmer-basic-permission-minoredit'  => 'Dopuść drobne edycje',
+	'farmer-yes'                         => 'Tak',
+	'farmer-no'                          => 'Nie',
+	'farmer-extensions-available'        => 'Dostępne rozszerzenia',
+	'farmer-extensions-noavailable'      => 'Brak zarejestrowanych rozszerzeń',
+	'farmer-extensions-register'         => 'Zarejestruj rozszerzenie',
+	'farmer-extensions-register-name'    => 'Nazwa',
 );
 
 /** Pashto (پښتو)
