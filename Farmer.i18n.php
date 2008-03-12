@@ -375,6 +375,36 @@ $messages['el'] = array(
 	'farmer-extensions-register-name'    => 'Όνομα',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'farmercreatesitename'              => 'Nomo de retejo',
+	'farmer-list-wiki'                  => 'Listo de Vikioj',
+	'farmer-createwiki-text'            => '[[$1|Kreu]] novan vikion nun!',
+	'farmer-administration-delete'      => 'Forigu Vikion',
+	'farmer-administration-delete-text' => '[[$1|Delete]] vikion de the vikiaro.',
+	'farmer-administer-thiswiki'        => 'Administru ĉi vikion',
+	'farmer-wikicreated'                => 'Vikio estas kreita',
+	'farmer-wikicreated-text'           => 'Via vikio estis kreita. Ĝi estas havebla ĉe $1',
+	'farmer-wikiexists'                 => 'Vikio ekzistas',
+	'farmer-confirmsetting-name'        => 'Nomo: $1',
+	'farmer-confirmsetting-title'       => 'Titolo: $1',
+	'farmer-confirmsetting-description' => 'Priskribo: $1',
+	'farmer-description'                => 'Priskribo',
+	'farmer-createwiki-form-title'      => 'Kreu Vikion',
+	'farmer-createwiki-form-help'       => 'Helpo',
+	'farmer-createwiki-user'            => 'Salutnomo',
+	'farmer-delete-form'                => 'Elektu vikion',
+	'farmer-mainpage'                   => 'Ĉefpaĝo',
+	'farmer-basic-title'                => 'Bazaj Parametroj',
+	'farmer-basic-title1'               => 'Titolo',
+	'farmer-basic-title1-text'          => 'Via vikio ne havas titolon. Faru titolon NUN',
+	'farmer-basic-permission'           => 'Permesoj',
+	'farmer-basic-permission-view'      => 'Okulumu ĉiujn paĝojn',
+	'farmer-basic-permission-edit'      => 'Redaktu ĉiujn paĝojn',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  * @author Cimon Avaro
@@ -853,15 +883,17 @@ $messages['ja'] = array(
  * @author Lovekhmer
  */
 $messages['km'] = array(
-	'farmercreatesitename'                  => 'ឈ្មោះសៃថ៍',
-	'farmercreatenextstep'                  => 'ជំហាន បន្ទាប់',
+	'farmercreatesitename'                  => 'ឈ្មោះគេហទំព័រ',
+	'farmercreatenextstep'                  => 'ជំហានបន្ទាប់',
+	'farmernewwikimainpage'                 => '== សូមស្វាគមន៍ការមកកាន់វិគីរបស់លោកអ្នក ==
+ប្រសិនបើអ្នកកំពុងតែអាន មានន័យថាវិគីថ្មីរបស់លោកអ្នកត្រូវបានតំឡើងត្រឹមត្រូវហើយ។ ដើម្បីប្តូររបស់អ្នកតាមបំណង សូមមើល[[ពិសេស:Farmer]]។',
 	'farmer-about'                          => 'អំពី',
-	'farmer-list-wiki'                      => 'បញ្ជី នៃ វិគី',
-	'farmer-createwiki'                     => 'បង្កើត មួយវិគី',
+	'farmer-list-wiki'                      => 'បញ្ជីវិគី',
+	'farmer-createwiki'                     => 'បង្កើតវិគី',
 	'farmer-createwiki-text'                => '[[$1|បង្កើត]] មួយវិគី ទៅ!',
 	'farmer-admimistration-listupdate-text' => '[[$1|បន្ទាន់សម័យ]] បញ្ជី នៃ វិគី លើ {{SITENAME}}',
-	'farmer-administration-delete'          => 'លុបចេញ មួយវិគី',
-	'farmer-wikicreated'                    => 'វិគី ត្រូវបានបង្កើត',
+	'farmer-administration-delete'          => 'លុបវិគីចេញ',
+	'farmer-wikicreated'                    => 'វិគីត្រូវបានបង្កើតហើយ',
 	'farmer-confirmsetting'                 => 'បញ្ជាក់ទទួលស្គាល់ ការកំណត់ វិគី',
 	'farmer-confirmsetting-name'            => 'ឈ្មោះ ៖ $1',
 	'farmer-confirmsetting-title'           => "ចំណងជើង៖'''$1'''",
@@ -869,29 +901,30 @@ $messages['km'] = array(
 	'farmer-description'                    => 'ការពិពណ៌នា',
 	'farmer-button-confirm'                 => 'បញ្ជាក់ទទួលស្គាល់',
 	'farmer-button-submit'                  => 'ដាក់ស្នើ',
-	'farmer-createwiki-form-title'          => 'បង្កើត វិគី',
+	'farmer-createwiki-form-title'          => 'បង្កើតវិគី',
 	'farmer-createwiki-form-text1'          => 'ប្រើប្រាស់ បែបបទ ខាងក្រោម ដើម្បីបង្កើត មួយ វិគី ថ្មី ។',
 	'farmer-createwiki-form-help'           => 'ជំនួយ',
 	'farmer-createwiki-user'                => 'ឈ្មោះអ្នកប្រើប្រាស់',
-	'farmer-createwiki-name'                => 'ឈ្មោះ វិគី',
-	'farmer-createwiki-title'               => 'ចំណងជើង វិគី',
+	'farmer-createwiki-name'                => 'ឈ្មោះវិគី',
+	'farmer-createwiki-title'               => 'ចំណងជើងវិគី',
 	'farmer-createwiki-description'         => 'ការពិពណ៌នា',
-	'farmer-updatedlist'                    => 'បញ្ជី ត្រូវបាន បន្ទាន់សម័យ',
-	'farmer-deleting'                       => 'លុបចេញ $1',
+	'farmer-updatedlist'                    => 'បញ្ជីត្រូវបានធ្វើឱ្យទាន់សម័យហើយ',
+	'farmer-deleting'                       => 'លុប$1ចេញ',
 	'farmer-delete-title'                   => 'លុបចេញ វិគី',
 	'farmer-delete-text'                    => 'ចូរ ជ្រើសយក វិគី ពីបញ្ជីខាងក្រោម ដែលអ្នកប្រាថ្នា លុបចេញ',
-	'farmer-delete-form'                    => 'ជ្រើសយក មួយវិគី',
+	'farmer-delete-form'                    => 'ជ្រើសរើសវិគី',
 	'farmer-delete-form-submit'             => 'លុបចេញ',
-	'farmer-listofwikis'                    => 'បញ្ជី នៃ វិគី',
+	'farmer-listofwikis'                    => 'បញ្ជីវិគី',
 	'farmer-mainpage'                       => 'ទំព័រដើម',
-	'farmer-basic-title1'                   => 'ចំនងជើង',
+	'farmer-basic-title1'                   => 'ចំណងជើង',
+	'farmer-basic-title1-text'              => 'វិគីរបស់លោកអ្នកមិនទាន់មានចំណងជើងទេ។ សូមដាក់ចំណងជើងឱ្យវាពេលនេះ!',
 	'farmer-basic-description'              => 'ការពិពណ៌នា',
 	'farmer-basic-permission'               => 'ការអនុញ្ញាតិ នានា',
-	'farmer-basic-permission-view'          => 'មើល គ្រប់ទំព័រ',
-	'farmer-basic-permission-edit'          => 'កែប្រែ គ្រប់ទំព័រ',
+	'farmer-basic-permission-view'          => 'មើលគ្រប់ទំព័រ',
+	'farmer-basic-permission-edit'          => 'កែប្រែគ្រប់ទំព័រ',
 	'farmer-basic-permission-createpage'    => 'បង្កើត ទំព័រ ថ្មីៗ',
-	'farmer-basic-permission-createtalk'    => 'បង្កើត ទំព័រ ពិភាក្សា',
-	'farmer-basic-permission-move'          => 'ប្តូរទីតាំង ទំព័រ',
+	'farmer-basic-permission-createtalk'    => 'បង្កើតទំព័រពិភាក្សា',
+	'farmer-basic-permission-move'          => 'ប្តូរទីតាំងទំព័រ',
 	'farmer-basic-permission-upload'        => 'ផ្ទុកឡើង ឯកសារ',
 	'farmer-basic-permission-minoredit'     => 'អនុញ្ញាតិ កំណែប្រែ តិចតួច',
 	'farmer-yes'                            => 'បាទ / ចាស',
@@ -899,7 +932,7 @@ $messages['km'] = array(
 	'farmer-defaultskin'                    => 'សំបក លំនាំដើម',
 	'farmer-defaultskin-button'             => 'កំណត់ សំបក លំនាំដើម',
 	'farmer-extensions-register-name'       => 'ឈ្មោះ',
-	'farmer-error-exists'                   => 'មិនអាច បង្កើត វិគី ។ វា មានហើយ ៖ $1',
+	'farmer-error-exists'                   => 'មិនអាចបង្កើតវិគីបានទេ។ វាមានរួចជាស្រេចហើយ៖$1',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -970,7 +1003,7 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
 	'farmer-about'                           => 'Over',
 	'farmer-about-text'                      => "Met MediaWikiFarmer kunt u een farm van MediaWiki wiki's beheren.",
 	'farmer-list-wiki'                       => "Lijst van wiki's",
-	'farmer-list-wiki-text'                  => "Alle wiki's op {{SITENAME}} [[$1|tonen]]",
+	'farmer-list-wiki-text'                  => "Alle wiki's op {{SITENAME}} [[$1|bekijken]]",
 	'farmer-createwiki'                      => 'Een wiki maken',
 	'farmer-createwiki-text'                 => '[[$1|Maak]] nu een nieuwe wiki!',
 	'farmer-administration'                  => 'Farm beheren',
@@ -1329,8 +1362,11 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 
 /** Polish (Polski)
  * @author McMonster
+ * @author Derbeth
+ * @author Masti
  */
 $messages['pl'] = array(
+	'farmercreatenextstep'               => 'Następny etap',
 	'farmer-createwiki-text'             => '[[$1|Stwórz]] nową wiki teraz!',
 	'farmer-createwiki-form-help'        => 'Pomoc',
 	'farmer-delete-form-submit'          => 'Usuń',
@@ -1346,6 +1382,7 @@ $messages['pl'] = array(
 	'farmer-extensions-noavailable'      => 'Brak zarejestrowanych rozszerzeń',
 	'farmer-extensions-register'         => 'Zarejestruj rozszerzenie',
 	'farmer-extensions-register-name'    => 'Nazwa',
+	'farmer-error-exists'                => 'Nie można utworzyć wiki. Już istnieje: $1',
 );
 
 /** Pashto (پښتو)
@@ -1710,7 +1747,7 @@ $messages['stq'] = array(
 
 /** Swedish (Svenska)
  * @author M.M.S.
- * @author Max sonnelid
+ * @author M.M.S.
  * @author Lejonel
  * @author Jon Harald Søby
  */
@@ -1796,6 +1833,7 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
  * @author Veeven
  */
 $messages['te'] = array(
+	'farmercantcreatewikis'                 => 'మీరు వికీలను సృష్టించలేకున్నారు ఎందుకంటే మీరు వికీలను సృష్టించే అధికారం లేదు.',
 	'farmercreatesitename'                  => 'సైటు పేరు',
 	'farmercreatenextstep'                  => 'తర్వాతి మెట్టు',
 	'farmernewwikimainpage'                 => '== మీ వికీకి స్వాగతం ==
@@ -1803,25 +1841,31 @@ $messages['te'] = array(
 	'farmer-about'                          => 'గురించి',
 	'farmer-list-wiki'                      => 'వికీల యొక్క జాబితా',
 	'farmer-list-wiki-text'                 => '{{SITENAME}}లోని అన్ని వికీల [[$1|జాబితా]]',
+	'farmer-createwiki'                     => 'ఓ వికీని సృష్టించండి',
 	'farmer-createwiki-text'                => 'ఇప్పుడే ఓ కొత్త వికీని [[$1|సృష్టించండి]]!',
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}}లో నికీల జాబితాని [[$1|తాజాకరించండి]]',
 	'farmer-administration-delete'          => 'ఓ వికీని తొలగించండి',
 	'farmer-administer-thiswiki'            => 'ఈ వికీని నిర్వహించండి',
+	'farmer-administer-thiswiki-text'       => 'ఈ వికీలో జరిగిన మార్పులను [[$1|పర్యవేక్షించండి]]',
 	'farmer-notavailable'                   => 'అందుబాటులో లేదు',
 	'farmer-notavailable-text'              => 'ఈ సౌలభ్యం ప్రధాన వికీలో మాత్రమే అందుబాటులో ఉంటుంది.',
 	'farmer-wikicreated'                    => 'వికీ తయారయ్యింది',
 	'farmer-wikicreated-text'               => 'మీ వికీ తయారయ్యింది.  ఇది $1 వద్ద అందుబాటులో ఉంటుంది',
 	'farmer-default'                        => 'మామూలుగా, మీకు తప్ప ఈ వికీలో ఇంకెవరికీ అనుమతులు ఉండవు. $1 ద్వారా మీరు వాడుకరి హక్కులని మార్చవచ్చు',
 	'farmer-wikiexists'                     => 'వికీ ఉంది',
+	'farmer-wikiexists-text'                => "మీరు సృష్టించడానికి ప్రయత్నిస్తున్న '''$1''' అనే వికీ ఇప్పటికే ఉంది. వెనక్కి వెళ్ళి మరో పేరుతో ప్రయత్నించండి.",
 	'farmer-confirmsetting'                 => 'వికీ అమరికలను నిర్ధారించండి',
 	'farmer-confirmsetting-name'            => 'పేరు: $1',
 	'farmer-confirmsetting-title'           => 'శీర్షిక: $1',
 	'farmer-confirmsetting-description'     => 'వివరణ: $1',
 	'farmer-description'                    => 'వివరణ',
 	'farmer-button-confirm'                 => 'నిర్ధారించు',
+	'farmer-button-submit'                  => 'దాఖలుచెయ్యి',
 	'farmer-createwiki-form-title'          => 'ఓ వికీని సృష్టించండి',
 	'farmer-createwiki-form-text1'          => 'కొత్త వికీని సృష్టించడానికి క్రింది ఫారాన్ని ఉపయోగించండి.',
 	'farmer-createwiki-form-help'           => 'సహాయం',
+	'farmer-createwiki-form-text3'          => '; వికీ శీర్షిక: వికీ యొక్క శీర్షిక.  మీ వికీలోని ప్రతీ పేజీ యొక్క శీర్షికలోనూ కనబడుతుంది.  ఇది ప్రాజెక్టు యొక్క పేరుబరి మరియు అంతర్వికీ ఉపసర్గ కూడా.',
+	'farmer-createwiki-form-text4'          => '; వివరణ: వికీ యొక్క వివరణ.  ఇది వికీ గురించిన పాఠ్య వివరణ.  దీన్ని వికీల జాబితాలో చూపిస్తాం.',
 	'farmer-createwiki-user'                => 'వాడుకరిపేరు',
 	'farmer-createwiki-name'                => 'వికీ పేరు',
 	'farmer-createwiki-title'               => 'వికీ శీర్షిక',
@@ -1832,6 +1876,8 @@ $messages['te'] = array(
 	'farmer-permissiondenied-text1'         => 'ఈ పేజీని చూడడానికి మీకు అనుమతి లేదు',
 	'farmer-deleting'                       => '$1ని తొలగిస్తున్నాం',
 	'farmer-delete-title'                   => 'వికీ తొలగింపు',
+	'farmer-delete-text'                    => 'మీరు తొలగించాలనుకుంటున్న వికీని ఈ క్రింది జాబితానుండి ఎంచుకోండి',
+	'farmer-delete-form'                    => 'ఓ వికీని ఎంచుకోండి',
 	'farmer-delete-form-submit'             => 'తొలగించు',
 	'farmer-listofwikis'                    => 'వికీల యొక్క జాబితా',
 	'farmer-mainpage'                       => 'మొదటి పేజీ',
@@ -1840,7 +1886,9 @@ $messages['te'] = array(
 	'farmer-basic-description'              => 'వివరణ',
 	'farmer-basic-description-text'         => 'మీ వికీ యొక్క వివరణని క్రింద ఇవ్వండి',
 	'farmer-basic-permission'               => 'అనుమతులు',
+	'farmer-basic-permission-text'          => 'ఈ వికీలోని వాడుకర్ల అనుమతులను ఈ క్రింది ఫారం ఉపయోగించి మార్చవచ్చు.',
 	'farmer-basic-permission-visitor'       => 'ప్రతీ సందర్శకునికి అనుమతులు',
+	'farmer-basic-permission-visitor-text'  => 'ఈ వికీని సందర్శించే ప్రతీ వ్యక్తికీ ఈ క్రింది అనుమతులు వర్తిస్తాయి',
 	'farmer-basic-permission-view'          => 'అన్ని పేజీలను చూడండి',
 	'farmer-basic-permission-edit'          => 'అన్ని పేజీలు మార్చడం',
 	'farmer-basic-permission-createpage'    => 'కొత్త పేజీలు సృష్టించడం',
@@ -1853,8 +1901,12 @@ $messages['te'] = array(
 	'farmer-basic-permission-user'          => 'ప్రవేశించిన వాడుకరులకు అనుమతులు',
 	'farmer-basic-permission-user-text'     => 'ఈ వికీలో ప్రవేశించిన ప్రతీ ఒక్కరికీ ఈ క్రింది అనుమతులు ఆపాదిస్తాం',
 	'farmer-extensions-available'           => 'అందుబాటులో ఉన్న పొడగింతలు',
+	'farmer-extensions-noavailable'         => 'పొడగింతలు ఏవీ నమోదుకాలేదు',
+	'farmer-extensions-register'            => 'పొడగింతను నమోదుచెయ్యండి',
+	'farmer-extensions-register-text3'      => "పైలుపేరులో '''\$root''' అనే చరరాశి ఉంటే, దాన్ని మీడియావికీ యొక్క రూట్ డైరెక్టరీతో ప్రతిక్షేపిస్తాం.",
 	'farmer-extensions-register-name'       => 'పేరు',
 	'farmer-error-exists'                   => 'వికీని సృష్టించలేము. అది ఈపాటికే ఉంది: $1',
+	'farmer-error-noextwrite'               => 'పొడగింత ఫైలుని వ్రాయలేకున్నాం:',
 );
 
 /** Volapük (Volapük)
