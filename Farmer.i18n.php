@@ -1790,6 +1790,7 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-button-confirm'                  => 'Bekräfta',
 	'farmer-button-submit'                   => 'Lagra',
 	'farmer-createwiki-form-title'           => 'Skapa en wiki',
+	'farmer-createwiki-form-text1'           => 'Använd formuläret nedan för att skapa en ny wiki.',
 	'farmer-createwiki-form-help'            => 'Hjälp',
 	'farmer-createwiki-form-text4'           => '; Beskrivning: Beskrivning av wikin. Den kommer att visas in wiki listan.',
 	'farmer-createwiki-user'                 => 'Användarnamn',
@@ -1819,7 +1820,11 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-basic-permission-minoredit'      => 'Tillåt mindre redigeringar',
 	'farmer-yes'                             => 'Ja',
 	'farmer-no'                              => 'Nej',
+	'farmer-setpermission'                   => 'Ange rättigheter',
+	'farmer-defaultskin'                     => 'Standardutseende',
+	'farmer-defaultskin-button'              => 'Ange standardutseende',
 	'farmer-extensions'                      => 'Aktiva programtillägg',
+	'farmer-extensions-button'               => 'Ange aktiva programtillägg',
 	'farmer-extensions-invalid'              => 'Ogiltigt programtillägg',
 	'farmer-extensions-available'            => 'Tillgängliga programtillägg',
 	'farmer-extensions-noavailable'          => 'Inga programtillägg är registrerade',
@@ -1907,6 +1912,17 @@ $messages['te'] = array(
 	'farmer-extensions-register-name'       => 'పేరు',
 	'farmer-error-exists'                   => 'వికీని సృష్టించలేము. అది ఈపాటికే ఉంది: $1',
 	'farmer-error-noextwrite'               => 'పొడగింత ఫైలుని వ్రాయలేకున్నాం:',
+);
+
+/** Tajik (Тоҷикӣ)
+ * @author Ibrahim
+ */
+$messages['tg'] = array(
+	'farmer-about'                => 'Дар бораи',
+	'farmer-confirmsetting-name'  => 'Ном: $1',
+	'farmer-confirmsetting-title' => 'Унвон: $1',
+	'farmer-createwiki-user'      => 'Номи корбарӣ',
+	'farmer-basic-title1'         => 'Унвон',
 );
 
 /** Volapük (Volapük)
