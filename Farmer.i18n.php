@@ -881,19 +881,24 @@ $messages['ja'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author គីមស៊្រុន
  */
 $messages['km'] = array(
+	'farmercantcreatewikis'                 => 'អ្នក​មិន​អាច​បង្កើត​វិគី​ទេ ពីព្រោះ​អ្នក​គ្មាន​អភ័យឯកសិទ្ឋិ​ក្នុង​ការបង្កើតវិគីទេ។',
 	'farmercreatesitename'                  => 'ឈ្មោះគេហទំព័រ',
 	'farmercreatenextstep'                  => 'ជំហានបន្ទាប់',
 	'farmernewwikimainpage'                 => '== សូមស្វាគមន៍ការមកកាន់វិគីរបស់លោកអ្នក ==
 ប្រសិនបើអ្នកកំពុងតែអាន មានន័យថាវិគីថ្មីរបស់លោកអ្នកត្រូវបានតំឡើងត្រឹមត្រូវហើយ។ ដើម្បីប្តូររបស់អ្នកតាមបំណង សូមមើល[[ពិសេស:Farmer]]។',
 	'farmer-about'                          => 'អំពី',
 	'farmer-list-wiki'                      => 'បញ្ជីវិគី',
+	'farmer-list-wiki-text'                 => '[[$1|បញ្ជី]]នៃរាល់វិគី​នៅលើ {{SITENAME}}',
 	'farmer-createwiki'                     => 'បង្កើតវិគី',
-	'farmer-createwiki-text'                => '[[$1|បង្កើត]] មួយវិគី ទៅ!',
+	'farmer-createwiki-text'                => '[[$1|បង្កើត]]វិគីថ្មីមួយទៅ!',
 	'farmer-admimistration-listupdate-text' => '[[$1|បន្ទាន់សម័យ]] បញ្ជី នៃ វិគី លើ {{SITENAME}}',
 	'farmer-administration-delete'          => 'លុបវិគីចេញ',
 	'farmer-wikicreated'                    => 'វិគីត្រូវបានបង្កើតហើយ',
+	'farmer-wikiexists'                     => 'វិគីមានរូចហើយ',
+	'farmer-wikiexists-text'                => "វិគី​ដែលអ្នក​កំពុងព្យាយាមបង្កើត ('''$1''') មានរួចហើយ។ សូម​ត្រលប់ក្រោយ​ហើយ​ព្យាយាម​ប្រើឈ្មោះផ្សេងទៀត។",
 	'farmer-confirmsetting'                 => 'បញ្ជាក់ទទួលស្គាល់ ការកំណត់ វិគី',
 	'farmer-confirmsetting-name'            => 'ឈ្មោះ ៖ $1',
 	'farmer-confirmsetting-title'           => "ចំណងជើង៖'''$1'''",
@@ -1747,7 +1752,6 @@ $messages['stq'] = array(
 
 /** Swedish (Svenska)
  * @author M.M.S.
- * @author M.M.S.
  * @author Lejonel
  * @author Jon Harald Søby
  */
@@ -1832,6 +1836,10 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-extensions-register-name'        => 'Namn',
 	'farmer-extensions-register-includefile' => 'Inkludera fil',
 	'farmer-error-exists'                    => 'Kan inte skapa wikin.  Den existerar redan: $1',
+	'farmer-error-mapnotfound'               => 'Funktionen för att sätta in wikins namn i farmen hittades inte:',
+	'farmer-error-funcnotcall'               => 'Kunde inte kalla på funktion:',
+	'farmer-error-noextwrite'                => 'Kunde inte skriva ut programtilläggsfil:',
+	'farmer-error-wikicorrupt'               => 'Den sparade wikin är fördärvad',
 );
 
 /** Telugu (తెలుగు)
