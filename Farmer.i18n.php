@@ -555,6 +555,7 @@ $messages['frp'] = array(
 /** Galician (Galego)
  * @author Alma
  * @author Xosé
+ * @author Toliño
  */
 $messages['gl'] = array(
 	'farmercantcreatewikis'                  => 'Vostede non pode crear wikis porque non ten privilexios de creación de wikis',
@@ -578,11 +579,13 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
 	'farmer-wikicreated-text'                => 'O seu wiki foi creado. É accesíbel a $1',
 	'farmer-default'                         => 'Por omisión, ninguén dispón de permisos neste wiki a excepción de vostede. Pode modificar os privilexios de usuario mediante $1',
 	'farmer-wikiexists'                      => 'O Wiki existe',
+	'farmer-wikiexists-text'                 => "O wiki que está intentando crear, '''$1''', xa existe.  Por favor volva atrás e ténteo con outro nome.",
 	'farmer-confirmsetting'                  => 'Confirmar as configuracións do wiki',
 	'farmer-confirmsetting-name'             => 'Nome: $1',
 	'farmer-confirmsetting-title'            => 'Título: $1',
 	'farmer-confirmsetting-description'      => 'Descrición: $1',
 	'farmer-description'                     => 'Descrición',
+	'farmer-confirmsetting-text'             => "O seu wiki, '''$1''', será accesible via http://$1.myfarm. O espazo de nomes do proxecto será '''$2'''.  As ligazóns cara a este espazo de nomes serán da seginte forma: '''<nowiki>[[$2:Nome da páxina]]</nowiki>'''.  Se isto é o que quere, prema no botón '''confirmar''' de máis embaixo.",
 	'farmer-button-confirm'                  => 'Confirmar',
 	'farmer-button-submit'                   => 'Enviar',
 	'farmer-createwiki-form-title'           => 'Crear un Wiki',
@@ -626,9 +629,11 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
 	'farmer-basic-permission-user'           => 'Permisos para Usuarios rexistrados',
 	'farmer-basic-permission-user-text'      => 'Os seguintes permisos serán aplicados a cada persoa que esté rexistrada neste wiki.',
 	'farmer-setpermission'                   => 'Elexir Permisos',
+	'farmer-defaultskin'                     => 'Apariencia por defecto',
 	'farmer-extensions'                      => 'Extensións activas',
 	'farmer-extensions-button'               => 'Elexir Extensións Activas',
 	'farmer-extensions-invalid'              => 'Extensión non válida',
+	'farmer-extensions-invalid-text'         => 'Non podemos engadir a extensión porque o arquivo seleccionado para incluír non se pode atopar',
 	'farmer-extensions-available'            => 'Extensións Disponíbeis',
 	'farmer-extensions-noavailable'          => 'Non hai extensións rexistradas',
 	'farmer-extensions-register'             => 'Rexistrar Extensión',
@@ -949,17 +954,21 @@ $messages['lb'] = array(
 	'farmer-about'                      => 'Iwwer',
 	'farmer-list-wiki'                  => 'Lëscht vun de Wikien',
 	'farmer-administration-delete'      => 'E Wiki läschen',
+	'farmer-wikicreated'                => 'Wiki gemaach',
 	'farmer-confirmsetting-name'        => 'Numm: $1',
 	'farmer-confirmsetting-title'       => 'Iwwerschrëft: $1',
 	'farmer-confirmsetting-description' => 'Beschreiwung: $1',
 	'farmer-description'                => 'Beschreiwung',
 	'farmer-createwiki-form-help'       => 'Hëllef',
 	'farmer-createwiki-user'            => 'Benotzernumm',
+	'farmer-createwiki-title'           => 'Titel vun der Wiki',
 	'farmer-createwiki-description'     => 'Beschreiwung',
 	'farmer-updatedlist'                => 'Geännert Lëscht',
 	'farmer-deleting'                   => 'Läsche vun $1',
 	'farmer-delete-form-submit'         => 'Läschen',
 	'farmer-mainpage'                   => 'Haaptsäit',
+	'farmer-basic-title1'               => 'Titel',
+	'farmer-basic-description'          => 'Beschreiwung',
 	'farmer-basic-permission-view'      => 'All Säite weisen',
 	'farmer-basic-permission-edit'      => 'All Säiten änneren',
 	'farmer-basic-permission-move'      => 'Säite réckelen',
@@ -1394,13 +1403,17 @@ $messages['pl'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'farmercreatesitename'            => 'د ويبځي نوم',
 	'farmer-about'                    => 'په اړه',
+	'farmer-list-wiki'                => 'د ويکي ګانو لړليک',
 	'farmer-confirmsetting-name'      => 'نوم: $1',
 	'farmer-confirmsetting-title'     => 'سرليک: $1',
 	'farmer-createwiki-user'          => 'کارن-نوم',
 	'farmer-delete-form-submit'       => 'ړنګول',
 	'farmer-mainpage'                 => 'لومړی مخ',
 	'farmer-basic-title1'             => 'سرليک',
+	'farmer-basic-permission-view'    => 'ټول مخونه ښکاره کول',
+	'farmer-basic-permission-upload'  => 'دوتنې پورته کول',
 	'farmer-yes'                      => 'هو',
 	'farmer-no'                       => 'نه',
 	'farmer-extensions-register-name' => 'نوم',
