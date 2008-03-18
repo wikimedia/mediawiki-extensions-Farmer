@@ -485,7 +485,7 @@ Si vous lisez ce message, ceci indique que votre wiki a été installé correcte
 	'farmer-notavailable-text'               => 'Ce programme n’est disponible que sur le site principal',
 	'farmer-wikicreated'                     => 'Wiki créé',
 	'farmer-wikicreated-text'                => 'Votre wiki a été créé. Il est disponible sur',
-	'farmer-default'                         => 'Par défaut, personne ne dispose de permissions sur ce wiki à part vous. Vous pouvez changer les privilèges utilisateur sur',
+	'farmer-default'                         => 'Personne ne dispose, par défaut, de permissions sur ce wiki à part vous. Vous pouvez changer les privilèges utilisateur via $1',
 	'farmer-wikiexists'                      => 'Le Wiki existe',
 	'farmer-wikiexists-text'                 => "Le wiki intitulé '''$1''' et que vous vouliez créer, existe déjà.  Nous vous invitons à retourner en arrière et d’essayer un nouveau nom.",
 	'farmer-confirmsetting'                  => 'Confirmer les paramètres du Wiki',
