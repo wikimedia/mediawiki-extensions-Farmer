@@ -1102,9 +1102,19 @@ $messages['mr'] = array(
 	'farmer-extensions-noavailable'          => 'कोणत्याही विस्ताराची नोंदणी झालेली नाही',
 	'farmer-extensions-register'             => 'विस्ताराची नोंद्णी करा',
 	'farmer-extensions-register-text1'       => 'नवीन एक्स्टेंशन वाढविण्यासाठी खालील अर्ज वापरा. एकदा का एक्स्टेंशन वाढले की या फार्म मधील सर्व विकि ते वापरू शकतील.',
+	'farmer-extensions-register-text2'       => "''संचिका मिळवा'' पॅरॅमीटरसाठी PHP संचिकेचे नाव LocalSettings.php मध्ये जसे दिले तसे द्या.",
+	'farmer-extensions-register-text3'       => "जर संचिका नावात '''\$root''' असेल, तर ते मीडियाविकिच्या मूळ डिरेक्टरीने बदलले जाईल.",
+	'farmer-extensions-register-text4'       => 'सध्याचे मिळवायचे मार्ग (include path) असे आहेत:',
 	'farmer-extensions-register-name'        => 'नाव',
 	'farmer-extensions-register-includefile' => 'संचिका मिळवा',
 	'farmer-error-exists'                    => 'विकि तयार करू शकत नाही. तो अगोदरच अस्तित्वात आहे: $1',
+	'farmer-error-nodirconfig'               => 'configDirectory सापडली नाही:',
+	'farmer-error-defnotset'                 => 'मुख्य विकि दिला पाहिजे',
+	'farmer-error-mapnotfound'               => 'फार्म मध्ये विकिनावांचा नकाशा बनविणारे कार्य सापडले नाही:',
+	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer मुख्य विकिच्या कॉन्फिगरेशन संचिका लिहू शकत नाही',
+	'farmer-error-funcnotcall'               => 'कार्य बोलावू शकलेलो नाही:',
+	'farmer-error-noextwrite'                => 'एक्स्टेंशन संचिका लिहू शकलेलो नाही:',
+	'farmer-error-wikicorrupt'               => 'जतन केलेला विकि खराब झालेला आहे',
 );
 
 /** Low German (Plattdüütsch)
@@ -1230,7 +1240,7 @@ U moet lid zijn van de groep ''farmeradmin''.",
 	'farmer-error-wikicorrupt'               => 'De opgeslagen wiki is corrupt',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -1241,7 +1251,7 @@ $messages['no'] = array(
 	'farmercreatenextstep'                   => 'Neste steg',
 	'farmernewwikimainpage'                  => '== Velkommen til din wiki ==
 Om du leser dette, har din nye wiki blitt installert korrekt. For å skreddersy wikien din, gå til [[Special:Farmer]].',
-	'farmer-about'                           => '{{int:About}}',
+	'farmer-about'                           => 'Om',
 	'farmer-about-text'                      => 'MediaWiki Farmer lar deg holde en hel farm av MediaWiki-wikier ved like.',
 	'farmer-list-wiki'                       => 'Liste over wikier',
 	'farmer-list-wiki-text'                  => '[[$1|Liste]] over alle wikiene på {{SITENAME}}',
@@ -1404,7 +1414,7 @@ Se legissètz aqueste messatge, aquò indica que vòtre wiki es estat installat 
 	'farmer-notavailable-text'               => 'Aqueste programa es pas disponible que sul sit principal',
 	'farmer-wikicreated'                     => 'Wiki creat',
 	'farmer-wikicreated-text'                => 'Vòstre wiki es estat creat. Es disponible sus',
-	'farmer-default'                         => "Per defaut, degun dispausa pas de permissions sus aqueste wiki a despart de vos. Podètz cambiar los privilègis d'utilizaire sus",
+	'farmer-default'                         => "Per defaut, degun dispausa pas de permissions sus aqueste wiki a despart de vos. Podètz cambiar los privilègis d'utilizaire via $1",
 	'farmer-wikiexists'                      => 'Lo Wiki existís',
 	'farmer-wikiexists-text'                 => "Lo wiki intitolat '''$1''' que voliatz crear, existís ja.  Vos convidam a tornar en rière e a ensajar un nom novèl.",
 	'farmer-confirmsetting'                  => 'Confirmar los paramètres del Wiki',
