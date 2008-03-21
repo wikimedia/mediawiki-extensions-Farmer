@@ -782,7 +782,7 @@ Jeli to čitaš, je so twój nowy wiki korektnje instalował. Zo by swój wiki p
 );
 
 /** Hungarian (Magyar)
- * @author Bdanee
+ * @author Dani
  * @author Dorgan
  */
 $messages['hu'] = array(
