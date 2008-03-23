@@ -336,6 +336,13 @@ $messages['bg'] = array(
 	'farmer-error-exists'                    => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
 );
 
+/** Bengali (বাংলা)
+ * @author Zaheen
+ */
+$messages['bn'] = array(
+	'farmer-delete-form-submit' => 'মুছে ফেলা হোক',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
@@ -398,8 +405,11 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'farmercreatesitename'                   => 'Nomo de retejo',
+	'farmer-about'                           => 'Pri',
 	'farmer-list-wiki'                       => 'Listo de Vikioj',
+	'farmer-createwiki'                      => 'Kreu Vikion',
 	'farmer-createwiki-text'                 => '[[$1|Kreu]] novan vikion nun!',
+	'farmer-administration-extension-text'   => '[[$1|Administru]] instalitajn etendilojn.',
 	'farmer-administration-delete'           => 'Forigu Vikion',
 	'farmer-administration-delete-text'      => '[[$1|Delete]] vikion de the vikiaro.',
 	'farmer-administer-thiswiki'             => 'Administru ĉi vikion',
@@ -420,7 +430,9 @@ $messages['eo'] = array(
 	'farmer-createwiki-name'                 => 'Vikia nomo',
 	'farmer-createwiki-title'                => 'Vikia titolo',
 	'farmer-createwiki-description'          => 'Priskribo',
+	'farmer-updatedlist'                     => 'Ĝisdatigu liston',
 	'farmer-notaccessible'                   => 'Ne atingebla',
+	'farmer-permissiondenied'                => 'Permeso neita',
 	'farmer-deleting'                        => 'Forigante $1',
 	'farmer-delete-title'                    => 'Forigu Vikion',
 	'farmer-delete-form'                     => 'Elektu vikion',
@@ -430,10 +442,12 @@ $messages['eo'] = array(
 	'farmer-basic-title'                     => 'Bazaj Parametroj',
 	'farmer-basic-title1'                    => 'Titolo',
 	'farmer-basic-title1-text'               => 'Via vikio ne havas titolon. Faru titolon NUN',
+	'farmer-basic-description'               => 'Priskribo',
 	'farmer-basic-permission'                => 'Permesoj',
 	'farmer-basic-permission-view'           => 'Okulumu ĉiujn paĝojn',
 	'farmer-basic-permission-edit'           => 'Redaktu ĉiujn paĝojn',
 	'farmer-basic-permission-createpage'     => 'Kreu novajn paĝojn',
+	'farmer-basic-permission-createtalk'     => 'Kreu diskuto-paĝojn',
 	'farmer-basic-permission-move'           => 'Movu paĝojn',
 	'farmer-basic-permission-upload'         => 'Alŝutu dosierojn',
 	'farmer-basic-permission-minoredit'      => 'Permesu etajn redaktojn',
@@ -1001,6 +1015,7 @@ $messages['lb'] = array(
 	'farmer-confirmsetting-title'       => 'Iwwerschrëft: $1',
 	'farmer-confirmsetting-description' => 'Beschreiwung: $1',
 	'farmer-description'                => 'Beschreiwung',
+	'farmer-button-submit'              => 'Späicheren',
 	'farmer-createwiki-form-help'       => 'Hëllef',
 	'farmer-createwiki-user'            => 'Benotzernumm',
 	'farmer-createwiki-title'           => 'Titel vun der Wiki',
