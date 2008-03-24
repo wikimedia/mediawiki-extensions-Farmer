@@ -667,6 +667,9 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
 	'farmer-createwiki-form-help'            => 'Axuda',
 	'farmer-createwiki-form-text2'           => "; Wiki nome: O nome do wiki. Contén só letras e números. O nome do wiki pode ser usado como parte da URL para identificar o wiki. Por exemplo, se introduces '''título''', pode acceder ao seu wiki vía <nowiki>http://</nowiki>'''título'''.mydomain.",
 	'farmer-createwiki-form-text3'           => '; Wiki título: Título do wiki. Pode ser usado no título de cada páxina no seu wiki. Tamén pode ser o proxecto do espazo de nomes e o prefixo interwiki.',
+	'farmer-createwiki-form-text4'           => '; Descrición: Descrición do wiki.
+Este é un texto descritivo sobre o wiki.
+Isto será amosado na listaxe dos wikis.',
 	'farmer-createwiki-user'                 => 'Nome do usuario',
 	'farmer-createwiki-name'                 => 'Nome do Wiki',
 	'farmer-createwiki-title'                => 'Título do wiki',
@@ -697,6 +700,7 @@ Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para p
 	'farmer-basic-permission-createtalk'     => 'Crear páxinas de conversa',
 	'farmer-basic-permission-move'           => 'Mover páxinas',
 	'farmer-basic-permission-upload'         => 'Cargar arquivos',
+	'farmer-basic-permission-reupload'       => 'Volver cargar ficheiros (sobreescribe o que xa está cargado)',
 	'farmer-basic-permission-minoredit'      => 'Permitir edicións menores',
 	'farmer-yes'                             => 'Si',
 	'farmer-no'                              => 'Non',
@@ -1017,6 +1021,13 @@ $messages['km'] = array(
 	'farmer-defaultskin-button'             => 'កំណត់ សំបក លំនាំដើម',
 	'farmer-extensions-register-name'       => 'ឈ្មោះ',
 	'farmer-error-exists'                   => 'មិនអាចបង្កើតវិគីបានទេ។ វាមានរួចជាស្រេចហើយ៖$1',
+);
+
+/** Kurdish (Kurdî / كوردی)
+ * @author Bangin
+ */
+$messages['ku'] = array(
+	'farmer-basic-permission-upload' => "Wêneyan ya data'yan barbike",
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -2133,6 +2144,10 @@ $messages['te'] = array(
  */
 $messages['tet'] = array(
 	'farmer-about'                    => 'Kona-ba',
+	'farmer-deleting'                 => 'Halakon $1',
+	'farmer-delete-form-submit'       => 'Halakon',
+	'farmer-yes'                      => 'Sin',
+	'farmer-no'                       => 'Lae',
 	'farmer-extensions-register-name' => 'Naran',
 );
 
