@@ -368,6 +368,24 @@ $messages['cs'] = array(
 	'farmer-administration'  => 'Správa farmy',
 );
 
+/** Danish (Dansk)
+ * @author Jon Harald Søby
+ */
+$messages['da'] = array(
+	'farmer-description'              => 'Beskrivelse',
+	'farmer-button-confirm'           => 'Bekræft',
+	'farmer-createwiki-form-help'     => 'Hjælp',
+	'farmer-createwiki-user'          => 'Brugernavn',
+	'farmer-createwiki-description'   => 'Beskrivelse',
+	'farmer-delete-form-submit'       => 'Slet',
+	'farmer-mainpage'                 => 'Forside',
+	'farmer-basic-title1'             => 'Titel',
+	'farmer-basic-description'        => 'Beskrivelse',
+	'farmer-yes'                      => 'Ja',
+	'farmer-no'                       => 'Nej',
+	'farmer-extensions-register-name' => 'Navn',
+);
+
 /** Ewe (Eʋegbe)
  * @author M.M.S.
  */
@@ -1272,6 +1290,25 @@ U moet lid zijn van de groep ''farmeradmin''.",
 	'farmer-error-wikicorrupt'               => 'De opgeslagen wiki is corrupt',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nn'] = array(
+	'farmer-description'              => 'Beskriving',
+	'farmer-button-confirm'           => 'Stadfest',
+	'farmer-createwiki-form-help'     => 'Hjelp',
+	'farmer-createwiki-user'          => 'Brukarnamn',
+	'farmer-createwiki-description'   => 'Beskriving',
+	'farmer-delete-form-submit'       => 'Slett',
+	'farmer-mainpage'                 => 'Hovudside',
+	'farmer-basic-title1'             => 'Tittel',
+	'farmer-basic-description'        => 'Beskriving',
+	'farmer-basic-permission-upload'  => 'Last opp filer',
+	'farmer-yes'                      => 'Ja',
+	'farmer-no'                       => 'Nei',
+	'farmer-extensions-register-name' => 'Namn',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
@@ -1315,7 +1352,7 @@ Om du leser dette, har din nye wiki blitt installert korrekt. For å skreddersy 
 	'farmer-button-submit'                   => 'Lagre',
 	'farmer-createwiki-form-title'           => 'Opprett en wiki',
 	'farmer-createwiki-form-text1'           => 'Bruk skjemaet nedenfor for å opprette en ny wiki.',
-	'farmer-createwiki-form-help'            => '{{int:Help}}',
+	'farmer-createwiki-form-help'            => 'Hjelp',
 	'farmer-createwiki-form-text2'           => "; Wikiens navn
 : Navnet på wikien. Inneholder kun bokstaver og tall. Wikiens navn vil brukes i URL-en for å identifisere wikien. Om du for eksempel skriver inn ''tittel'', vil wikien din være tilgjengelig via <nowiki>http://</nowiki>''tittel''.mydomain.",
 	'farmer-createwiki-form-text3'           => '; Wikiens tittel
@@ -1332,13 +1369,13 @@ Om du leser dette, har din nye wiki blitt installert korrekt. For å skreddersy 
 	'farmer-permissiondenied'                => 'Tilgang nektet',
 	'farmer-permissiondenied-text'           => 'Du har ikke tillatelse til å fjerne wikier',
 	'farmer-permissiondenied-text1'          => 'Du har ikke tillatelse til å gå inn på denne siden',
-	'farmer-deleting'                        => 'Fjerner $1',
+	'farmer-deleting'                        => 'Sletter $1',
 	'farmer-delete-title'                    => 'Fjern wiki',
 	'farmer-delete-text'                     => 'Vennligst velg hvilken wiki du vil fjerne fra listen nedenunder',
 	'farmer-delete-form'                     => 'Velg en wiki',
-	'farmer-delete-form-submit'              => 'Fjern',
+	'farmer-delete-form-submit'              => 'Slett',
 	'farmer-listofwikis'                     => 'Liste over wikier',
-	'farmer-mainpage'                        => '{{int:Mainpage}}',
+	'farmer-mainpage'                        => 'Hovedside',
 	'farmer-basic-title'                     => 'Grunnparametere',
 	'farmer-basic-title1'                    => 'Tittel',
 	'farmer-basic-title1-text'               => 'Wikien din har ikke en tittel. Velg en NÅ',
@@ -1976,7 +2013,7 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-deleting'                        => 'Tar bort $1',
 	'farmer-delete-title'                    => 'Ta bort Wiki',
 	'farmer-delete-form'                     => 'Välj en wiki',
-	'farmer-delete-form-submit'              => 'Ta bort',
+	'farmer-delete-form-submit'              => 'Radera',
 	'farmer-listofwikis'                     => 'Lista över wikier',
 	'farmer-mainpage'                        => 'Huvudsida',
 	'farmer-basic-title'                     => 'Grundparametrar',
@@ -2089,6 +2126,14 @@ $messages['te'] = array(
 	'farmer-extensions-register-name'       => 'పేరు',
 	'farmer-error-exists'                   => 'వికీని సృష్టించలేము. అది ఈపాటికే ఉంది: $1',
 	'farmer-error-noextwrite'               => 'పొడగింత ఫైలుని వ్రాయలేకున్నాం:',
+);
+
+/** Tetum (Tetun)
+ * @author MF-Warburg
+ */
+$messages['tet'] = array(
+	'farmer-about'                    => 'Kona-ba',
+	'farmer-extensions-register-name' => 'Naran',
 );
 
 /** Tajik (Тоҷикӣ)
