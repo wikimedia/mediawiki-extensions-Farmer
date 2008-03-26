@@ -353,6 +353,15 @@ $messages['br'] = array(
 	'farmer-createwiki-form-help' => 'Skoazell',
 );
 
+/** Catalan (Català)
+ * @author SMP
+ */
+$messages['ca'] = array(
+	'farmer-about' => 'Quant a',
+	'farmer-yes'   => 'S&iacute;',
+	'farmer-no'    => 'No',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
