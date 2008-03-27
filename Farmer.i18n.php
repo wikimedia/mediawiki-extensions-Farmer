@@ -1074,6 +1074,13 @@ $messages['lb'] = array(
 	'farmer-extensions-register-name'   => 'Numm',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Shijualex
+ */
+$messages['ml'] = array(
+	'farmer-yes' => 'ശരി',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
@@ -1339,7 +1346,7 @@ $messages['no'] = array(
 	'farmercreatesitename'                   => 'Sidenavn',
 	'farmercreatenextstep'                   => 'Neste steg',
 	'farmernewwikimainpage'                  => '== Velkommen til din wiki ==
-Om du leser dette, har din nye wiki blitt installert korrekt. For å skreddersy wikien din, gå til [[Special:Farmer]].',
+Om du leser dette, har din nye wiki blitt installert korrekt. Gå til [[Special:Farmer]] for å skreddersy wikien din.',
 	'farmer-about'                           => 'Om',
 	'farmer-about-text'                      => 'MediaWiki Farmer lar deg holde en hel farm av MediaWiki-wikier ved like.',
 	'farmer-list-wiki'                       => 'Liste over wikier',
@@ -2169,6 +2176,14 @@ $messages['tg'] = array(
 	'farmer-confirmsetting-title' => 'Унвон: $1',
 	'farmer-createwiki-user'      => 'Номи корбарӣ',
 	'farmer-basic-title1'         => 'Унвон',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'farmer-about'    => 'Giới thiệu',
+	'farmer-mainpage' => 'Trang Chính',
 );
 
 /** Volapük (Volapük)
