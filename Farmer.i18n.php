@@ -2210,3 +2210,10 @@ $messages['vo'] = array(
 	'farmer-extensions-register-name'    => 'Nem',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Alexsh
+ */
+$messages['zh-hant'] = array(
+	'farmer-deleting' => '正在刪除"$1"',
+);
+
