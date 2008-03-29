@@ -1043,10 +1043,13 @@ $messages['ku'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'farmer'                            => 'Administratioun vu méi Wikien',
+	'farmer-desc'                       => 'Méi Wikien organiséieren',
 	'farmercreatesitename'              => 'Numm vum Site',
 	'farmercreatenextstep'              => 'Nächste Schrëtt',
 	'farmer-about'                      => 'Iwwer',
 	'farmer-list-wiki'                  => 'Lëscht vun de Wikien',
+	'farmer-administration-extension'   => 'Erweiderungen organiséieren',
 	'farmer-administration-delete'      => 'E Wiki läschen',
 	'farmer-wikicreated'                => 'Wiki gemaach',
 	'farmer-confirmsetting-name'        => 'Numm: $1',
@@ -1056,29 +1059,35 @@ $messages['lb'] = array(
 	'farmer-button-submit'              => 'Späicheren',
 	'farmer-createwiki-form-help'       => 'Hëllef',
 	'farmer-createwiki-user'            => 'Benotzernumm',
+	'farmer-createwiki-name'            => 'Numm vun der Wiki',
 	'farmer-createwiki-title'           => 'Titel vun der Wiki',
 	'farmer-createwiki-description'     => 'Beschreiwung',
 	'farmer-updatedlist'                => 'Geännert Lëscht',
 	'farmer-deleting'                   => 'Läsche vun $1',
+	'farmer-delete-title'               => 'Eng Wiki läschen',
 	'farmer-delete-form-submit'         => 'Läschen',
+	'farmer-listofwikis'                => 'Lëscht vun de Wikien',
 	'farmer-mainpage'                   => 'Haaptsäit',
 	'farmer-basic-title1'               => 'Titel',
 	'farmer-basic-description'          => 'Beschreiwung',
 	'farmer-basic-permission-view'      => 'All Säite weisen',
 	'farmer-basic-permission-edit'      => 'All Säiten änneren',
 	'farmer-basic-permission-move'      => 'Säite réckelen',
+	'farmer-basic-permission-upload'    => 'Fichieren eroplueden',
 	'farmer-basic-permission-minoredit' => 'Kleng Ännerungen erlaben',
 	'farmer-yes'                        => 'Jo',
 	'farmer-no'                         => 'Neen',
 	'farmer-extensions-invalid'         => 'Ongëlteg Erweiderung',
 	'farmer-extensions-register-name'   => 'Numm',
+	'farmer-error-exists'               => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
 );
 
 /** Malayalam (മലയാളം)
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'farmer-yes' => 'ശരി',
+	'farmer-button-submit' => 'സമര്‍പ്പിക്കുക',
+	'farmer-yes'           => 'ശരി',
 );
 
 /** Marathi (मराठी)
@@ -2029,6 +2038,10 @@ Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skr�
 	'farmer-createwiki-form-title'           => 'Skapa en wiki',
 	'farmer-createwiki-form-text1'           => 'Använd formuläret nedan för att skapa en ny wiki.',
 	'farmer-createwiki-form-help'            => 'Hjälp',
+	'farmer-createwiki-form-text2'           => "; Wikins namn: Namnet på wikin.
+Innehåller endast bokstäver och siffror. Wikins namn kommer användas i URL-en för att identifiera wikin. Om du för exempel skriver in ''titel'', kommer din wiki vara tillgänglig via <nowiki>http://</nowiki>''tittel''.mydomain.",
+	'farmer-createwiki-form-text3'           => '; Wikins titel: Titeln på wikin.
+Kommer bli använd i titeln på varje sida på din wiki. Kommer också användas som namn på projektnamnrymden och som interwikiprefix.',
 	'farmer-createwiki-form-text4'           => '; Beskrivning: Beskrivning av wikin. Den kommer att visas in wiki listan.',
 	'farmer-createwiki-user'                 => 'Användarnamn',
 	'farmer-createwiki-name'                 => 'Wikins namn',
