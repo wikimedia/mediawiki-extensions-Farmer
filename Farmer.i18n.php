@@ -2187,7 +2187,7 @@ $messages['tet'] = array(
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
-$messages['tg'] = array(
+$messages['tg-cyrl'] = array(
 	'farmer-about'                => 'Дар бораи',
 	'farmer-confirmsetting-name'  => 'Ном: $1',
 	'farmer-confirmsetting-title' => 'Унвон: $1',
