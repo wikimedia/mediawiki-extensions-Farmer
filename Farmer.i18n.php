@@ -1505,7 +1505,7 @@ $messages['oc'] = array(
 	'farmernewwikimainpage'                  => '== Benvenguda dins vòtre Wiki ==
 Se legissètz aqueste messatge, aquò indica que vòtre wiki es estat installat corrèctament. Per individualizar vòstre wiki, sètz convidat(ada) a visitar [[Special:Farmer]].',
 	'farmer-about'                           => 'A prepaus',
-	'farmer-about-text'                      => 'L’extension MediaWiki Farmer vos permet, en permanéncia, d’organizar un ensemble de wikis eissit del logicial MediaWiki.',
+	'farmer-about-text'                      => 'L’extension Mediawiki Farmer vos permet, en permanéncia, d’organizar un ensemble de wikis eissit del logicial Mediawiki.',
 	'farmer-list-wiki'                       => 'Lista dels wikis',
 	'farmer-list-wiki-text'                  => '[[$1|Lista]] totes los wikis sus aqueste sit.',
 	'farmer-createwiki'                      => 'Crear un Wiki',
@@ -1522,7 +1522,8 @@ Se legissètz aqueste messatge, aquò indica que vòtre wiki es estat installat 
 	'farmer-notavailable'                    => 'Pas disponible',
 	'farmer-notavailable-text'               => 'Aqueste programa es pas disponible que sul sit principal',
 	'farmer-wikicreated'                     => 'Wiki creat',
-	'farmer-wikicreated-text'                => 'Vòstre wiki es estat creat. Es disponible sus',
+	'farmer-wikicreated-text'                => 'Vòstre wiki es estat creat.
+Es accessible sus $1',
 	'farmer-default'                         => "Per defaut, degun dispausa pas de permissions sus aqueste wiki a despart de vos. Podètz cambiar los privilègis d'utilizaire via $1",
 	'farmer-wikiexists'                      => 'Lo Wiki existís',
 	'farmer-wikiexists-text'                 => "Lo wiki intitolat '''$1''' que voliatz crear, existís ja.  Vos convidam a tornar en rière e a ensajar un nom novèl.",
@@ -1593,7 +1594,7 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 	'farmer-extensions-register'             => 'Enregistrar una extension',
 	'farmer-extensions-register-text1'       => 'Utilizatz lo formulari çaijós per enregistrar una extension novèla amb aquesta foncionalitat. Un còp l’extension enregistrada, totes los wikis la poiràn utilizar.',
 	'farmer-extensions-register-text2'       => "Per çò que concernís lo paramètre ''Fichier Include'', indicatz lo nom del fichièr PHP que voldretz dins LocalSettings.php.",
-	'farmer-extensions-register-text3'       => "Se lo nom del fichièr conten '''\$root''', aquesta variabla serà remplaçada pel repertòri raiç de MediaWiki.",
+	'farmer-extensions-register-text3'       => "Se lo nom del fichièr conten '''\$root''', aquesta variabla serà remplaçada pel repertòri raiç de Mediawiki.",
 	'farmer-extensions-register-text4'       => 'Los camins actuals dels fichièrs include son :',
 	'farmer-extensions-register-name'        => 'Nom',
 	'farmer-extensions-register-includefile' => 'Fichièr Include',
