@@ -1211,6 +1211,7 @@ $messages['mr'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
+	'farmer-mainpage'                 => 'Hööftsiet',
 	'farmer-yes'                      => 'Jo',
 	'farmer-no'                       => 'Nee',
 	'farmer-extensions-register-name' => 'Naam',
@@ -1588,7 +1589,7 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 	'farmer-extensions-button'               => 'Configurar las extensions activas',
 	'farmer-extensions-extension-denied'     => "Sètz pas abilitat per l’utilizacion d'aquesta foncionalitat. Devètz èsser membre dels administrators de l’administracion multi wikis.",
 	'farmer-extensions-invalid'              => 'Extension invalida',
-	'farmer-extensions-invalid-text'         => 'Podèm pas ajustar aquesta extension perque lo fichièr seleccionat per l’inclusion es introbable.',
+	'farmer-extensions-invalid-text'         => 'Podèm pas apondre aquesta extension perque lo fichièr seleccionat per l’inclusion es introbable.',
 	'farmer-extensions-available'            => 'Extensions disponiblas',
 	'farmer-extensions-noavailable'          => "Cap d'extension es pas enregistrada.",
 	'farmer-extensions-register'             => 'Enregistrar una extension',
@@ -1990,6 +1991,16 @@ Odkazy na tento menný priestor budú v tvare '''<nowiki>[[$2:Názov stránky]]<
 	'farmer-error-wikicorrupt'               => 'Uložená wiki je poškodená',
 );
 
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Sasa Stefanovic
+ */
+$messages['sr-ec'] = array(
+	'farmer-button-submit' => 'Прихвати',
+	'farmer-basic-title1'  => 'Наслов',
+	'farmer-yes'           => 'Да',
+	'farmer-no'            => 'Не',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
@@ -2183,6 +2194,14 @@ $messages['tet'] = array(
 	'farmer-yes'                      => 'Sin',
 	'farmer-no'                       => 'Lae',
 	'farmer-extensions-register-name' => 'Naran',
+);
+
+/** Tajik (Тоҷикӣ/tojikī)
+ * @author Ibrahim
+ */
+$messages['tg'] = array(
+	'farmer-button-confirm'     => 'Таъйид',
+	'farmer-delete-form-submit' => 'Ҳафз',
 );
 
 /** Tajik (Тоҷикӣ)
