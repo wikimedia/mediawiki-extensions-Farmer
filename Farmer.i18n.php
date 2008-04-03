@@ -1612,11 +1612,12 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 /** Polish (Polski)
  * @author McMonster
  * @author Derbeth
+ * @author Sp5uhe
  * @author Masti
  */
 $messages['pl'] = array(
 	'farmercreatenextstep'               => 'Następny etap',
-	'farmer-createwiki-text'             => '[[$1|Stwórz]] nową wiki teraz!',
+	'farmer-createwiki-text'             => '[[$1|Stwórz]] teraz nową wiki!',
 	'farmer-createwiki-form-help'        => 'Pomoc',
 	'farmer-delete-form-submit'          => 'Usuń',
 	'farmer-basic-title1-text'           => 'Twoja wiki nie posiada tytułu. Ustaw go TERAZ',
@@ -1644,6 +1645,7 @@ $messages['ps'] = array(
 	'farmer-confirmsetting-name'      => 'نوم: $1',
 	'farmer-confirmsetting-title'     => 'سرليک: $1',
 	'farmer-createwiki-user'          => 'کارن-نوم',
+	'farmer-permissiondenied'         => 'د اجازې غوښتنه مو رد شوه',
 	'farmer-delete-form-submit'       => 'ړنګول',
 	'farmer-mainpage'                 => 'لومړی مخ',
 	'farmer-basic-title1'             => 'سرليک',
@@ -2196,18 +2198,12 @@ $messages['tet'] = array(
 	'farmer-extensions-register-name' => 'Naran',
 );
 
-/** Tajik (Тоҷикӣ/tojikī)
- * @author Ibrahim
- */
-$messages['tg'] = array(
-	'farmer-button-confirm'     => 'Таъйид',
-	'farmer-delete-form-submit' => 'Ҳафз',
-);
-
 /** Tajik (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
+	'farmer-button-confirm'       => 'Таъйид',
+	'farmer-delete-form-submit'   => 'Ҳафз',
 	'farmer-about'                => 'Дар бораи',
 	'farmer-confirmsetting-name'  => 'Ном: $1',
 	'farmer-confirmsetting-title' => 'Унвон: $1',
