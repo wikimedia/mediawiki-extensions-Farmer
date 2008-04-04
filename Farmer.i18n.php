@@ -732,6 +732,17 @@ Isto será amosado na listaxe dos wikis.',
 	'farmer-error-wikicorrupt'               => 'O wiki gardado está corrompido',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'farmer-about'                    => 'के बारे में',
+	'farmer-basic-title1'             => 'शीर्षक',
+	'farmer-yes'                      => 'हां',
+	'farmer-no'                       => 'नहीं',
+	'farmer-extensions-register-name' => 'नाम',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -2213,10 +2224,12 @@ $messages['tg-cyrl'] = array(
 
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
+ * @author Vinhtantran
  */
 $messages['vi'] = array(
-	'farmer-about'    => 'Giới thiệu',
-	'farmer-mainpage' => 'Trang Chính',
+	'farmer-about'           => 'Giới thiệu',
+	'farmer-createwiki-user' => 'Tên người dùng',
+	'farmer-mainpage'        => 'Trang Chính',
 );
 
 /** Volapük (Volapük)
