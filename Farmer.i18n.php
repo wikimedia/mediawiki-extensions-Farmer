@@ -136,6 +136,13 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'farmer-button-submit' => 'Nimbiar',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -2209,17 +2216,53 @@ $messages['tet'] = array(
 	'farmer-extensions-register-name' => 'Naran',
 );
 
-/** Tajik (Тоҷикӣ)
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
+ * @author Siebrand
  */
 $messages['tg-cyrl'] = array(
-	'farmer-button-confirm'       => 'Таъйид',
-	'farmer-delete-form-submit'   => 'Ҳафз',
-	'farmer-about'                => 'Дар бораи',
-	'farmer-confirmsetting-name'  => 'Ном: $1',
-	'farmer-confirmsetting-title' => 'Унвон: $1',
-	'farmer-createwiki-user'      => 'Номи корбарӣ',
-	'farmer-basic-title1'         => 'Унвон',
+	'farmer-about'                       => 'Дар бораи',
+	'farmer-list-wiki'                   => 'Феҳристи Викиҳо',
+	'farmer-createwiki'                  => 'Эҷод кардани Вики',
+	'farmer-wikicreated'                 => 'Вики эҷод шуд',
+	'farmer-wikicreated-text'            => 'Викии шумо эҷод шуд.
+Он дар $1 дастрас аст',
+	'farmer-wikiexists'                  => 'Вики вуҷуд дорад',
+	'farmer-confirmsetting-name'         => 'Ном: $1',
+	'farmer-confirmsetting-title'        => 'Унвон: $1',
+	'farmer-confirmsetting-description'  => 'Тавсиф: $1',
+	'farmer-description'                 => 'Тавсифот',
+	'farmer-button-confirm'              => 'Таъйид',
+	'farmer-createwiki-form-title'       => 'Эҷод кардани Вики',
+	'farmer-createwiki-form-text1'       => 'Барои эҷоди викии ҷадид аз форми зерин истифода баред.',
+	'farmer-createwiki-form-help'        => 'Роҳнамо',
+	'farmer-createwiki-user'             => 'Номи корбарӣ',
+	'farmer-createwiki-name'             => 'Номи Вики',
+	'farmer-createwiki-title'            => 'Унвони Вики',
+	'farmer-createwiki-description'      => 'Тавсифот',
+	'farmer-deleting'                    => 'Дар ҳоли ҳазфи "$1"',
+	'farmer-delete-title'                => 'Ҳазф кардани Вики',
+	'farmer-delete-text'                 => 'Лутфан викиеро, ки шумо майли ҳазф кардан доред, аз феҳристи зерин интихоб кунед',
+	'farmer-delete-form'                 => 'Интихоб кардани вики',
+	'farmer-delete-form-submit'          => 'Ҳафз',
+	'farmer-listofwikis'                 => 'Феҳристи Викиҳо',
+	'farmer-mainpage'                    => 'Саҳифаи Аслӣ',
+	'farmer-basic-title'                 => 'Параметерҳои асосӣ',
+	'farmer-basic-title1'                => 'Унвон',
+	'farmer-basic-title1-text'           => 'Викии шумо унвон надорад. ҲОЗИР як унвон гузоред',
+	'farmer-basic-description'           => 'Тавсифот',
+	'farmer-basic-permission-edit'       => 'Вироиши ҳамаи саҳифаҳо',
+	'farmer-basic-permission-createpage' => 'Эҷоди саҳифаҳои ҷадид',
+	'farmer-basic-permission-createtalk' => 'Эҷоди саҳифаҳои баҳс',
+	'farmer-basic-permission-move'       => 'Кӯчонидани саҳифаҳо',
+	'farmer-basic-permission-upload'     => 'Фиристодани парвандаҳо',
+	'farmer-yes'                         => 'Бале',
+	'farmer-no'                          => 'Не',
+	'farmer-basic-permission-user'       => 'Иҷозаҳо барои Корбарони Вурудшуда',
+	'farmer-setpermission'               => 'Гузоштани Иҷозаҳо',
+	'farmer-defaultskin'                 => 'Пӯстаи Пешфарз',
+	'farmer-defaultskin-button'          => 'Гузоштани Пӯстаи Пешфарз',
+	'farmer-extensions-register-name'    => 'Ном',
 );
 
 /** Vietnamese (Tiếng Việt)
