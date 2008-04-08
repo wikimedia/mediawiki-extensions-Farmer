@@ -989,6 +989,13 @@ $messages['ja'] = array(
 	'farmercreatenextstep'  => '次の手順',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'farmer-button-submit' => 'Kirim',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
@@ -1630,12 +1637,14 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 /** Polish (Polski)
  * @author McMonster
  * @author Derbeth
+ * @author Equadus
  * @author Sp5uhe
  * @author Masti
  */
 $messages['pl'] = array(
 	'farmercreatenextstep'               => 'Następny etap',
 	'farmer-createwiki-text'             => '[[$1|Stwórz]] teraz nową wiki!',
+	'farmer-confirmsetting-title'        => 'Tytuł: $1',
 	'farmer-createwiki-form-help'        => 'Pomoc',
 	'farmer-delete-form-submit'          => 'Usuń',
 	'farmer-basic-title1-text'           => 'Twoja wiki nie posiada tytułu. Ustaw go TERAZ',
@@ -2085,9 +2094,13 @@ Kommer bli använd i titeln på varje sida på din wiki. Kommer också användas
 	'farmer-createwiki-description'          => 'Beskrivning',
 	'farmer-updatedlist'                     => 'Uppdaterad lista',
 	'farmer-notaccessible'                   => 'Otillgänglig',
+	'farmer-notaccessible-test'              => 'Detta är endast tillgängligt på farmens upphovswiki',
 	'farmer-permissiondenied'                => 'Tillgång nekad',
+	'farmer-permissiondenied-text'           => 'Du har inte tillåtelse att ta bort wikier',
+	'farmer-permissiondenied-text1'          => 'Du har inte tillåtelse att gå in på denna sida',
 	'farmer-deleting'                        => 'Tar bort $1',
 	'farmer-delete-title'                    => 'Ta bort Wiki',
+	'farmer-delete-text'                     => 'Var god välj vilken wiki du vill ta bort från listan nedan',
 	'farmer-delete-form'                     => 'Välj en wiki',
 	'farmer-delete-form-submit'              => 'Radera',
 	'farmer-listofwikis'                     => 'Lista över wikier',
@@ -2096,29 +2109,46 @@ Kommer bli använd i titeln på varje sida på din wiki. Kommer också användas
 	'farmer-basic-title1'                    => 'Titel',
 	'farmer-basic-title1-text'               => 'Din wiki har inte en titel.  Välj en NU',
 	'farmer-basic-description'               => 'Beskrivning',
+	'farmer-basic-description-text'          => 'Ange en beskrivning för din wiki nedan',
 	'farmer-basic-permission'                => 'Tillåtelser',
+	'farmer-basic-permission-text'           => 'Vid användning av formuläret nedan kan du ändra användares rättigheter på denna wiki.',
+	'farmer-basic-permission-visitor'        => 'Rättigheter för alla besökare',
+	'farmer-basic-permission-visitor-text'   => 'Följande rättigheter kommer bli givna till alla som besöker wikin',
 	'farmer-basic-permission-view'           => 'Visa alla sidor',
 	'farmer-basic-permission-edit'           => 'Redigera alla sidor',
 	'farmer-basic-permission-createpage'     => 'Skapa nya sidor',
 	'farmer-basic-permission-createtalk'     => 'Skapa diskussionssidor',
 	'farmer-basic-permission-move'           => 'Flytta sidor',
 	'farmer-basic-permission-upload'         => 'Ladda upp filer',
+	'farmer-basic-permission-reupload'       => 'Omuppladda filer (skriv över existerande filer)',
 	'farmer-basic-permission-minoredit'      => 'Tillåt mindre redigeringar',
 	'farmer-yes'                             => 'Ja',
 	'farmer-no'                              => 'Nej',
+	'farmer-basic-permission-user'           => 'Rättigheter för inloggade användare',
+	'farmer-basic-permission-user-text'      => 'Följande rättigheter kommer ges till alla inloggade användare',
 	'farmer-setpermission'                   => 'Ange rättigheter',
 	'farmer-defaultskin'                     => 'Standardutseende',
 	'farmer-defaultskin-button'              => 'Ange standardutseende',
 	'farmer-extensions'                      => 'Aktiva programtillägg',
 	'farmer-extensions-button'               => 'Ange aktiva programtillägg',
+	'farmer-extensions-extension-denied'     => 'Du har inte tillåtelse att använda denna funktion.
+Du måste vara medlem av användargruppen farmeradmin',
 	'farmer-extensions-invalid'              => 'Ogiltigt programtillägg',
+	'farmer-extensions-invalid-text'         => 'Vi kunde inte lägga till programtillägget för filen som valdes för inkludering inte hittades',
 	'farmer-extensions-available'            => 'Tillgängliga programtillägg',
 	'farmer-extensions-noavailable'          => 'Inga programtillägg är registrerade',
 	'farmer-extensions-register'             => 'Registrera programtillägg',
+	'farmer-extensions-register-text1'       => 'Använd formuläret nedan för och registrera ett nytt programtillägg hos farmen. När ett programtillägg är registrerat kommer alla wikier kunna använda den.',
+	'farmer-extensions-register-text2'       => "För ''Inkludera fil''-parametern, skriv in namnet på PHP-filen som du ville gjort det i LocalSettings.php.",
+	'farmer-extensions-register-text3'       => "Om filnamnet innehåller '''\$root''', kommer den variabeln ersättas med rotmappen till MediaWiki.",
+	'farmer-extensions-register-text4'       => 'Dom nuvarande inkluderade vägarna är:',
 	'farmer-extensions-register-name'        => 'Namn',
 	'farmer-extensions-register-includefile' => 'Inkludera fil',
 	'farmer-error-exists'                    => 'Kan inte skapa wikin.  Den existerar redan: $1',
+	'farmer-error-nodirconfig'               => 'configDirectory inte funnen:',
+	'farmer-error-defnotset'                 => 'Måste ange standardwiki',
 	'farmer-error-mapnotfound'               => 'Funktionen för att sätta in wikins namn i farmen hittades inte:',
+	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer kunde inte skriva standardkonfigurationsfilen.',
 	'farmer-error-funcnotcall'               => 'Kunde inte kalla på funktion:',
 	'farmer-error-noextwrite'                => 'Kunde inte skriva ut programtilläggsfil:',
 	'farmer-error-wikicorrupt'               => 'Den sparade wikin är fördärvad',
