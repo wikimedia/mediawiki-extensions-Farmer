@@ -1736,9 +1736,9 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 
 /** Polish (Polski)
  * @author McMonster
+ * @author Sp5uhe
  * @author Derbeth
  * @author Equadus
- * @author Sp5uhe
  * @author Masti
  */
 $messages['pl'] = array(
@@ -1751,7 +1751,7 @@ $messages['pl'] = array(
 	'farmer-basic-description'           => 'Opis',
 	'farmer-basic-permission-createtalk' => 'Utwórz strony dyskusji',
 	'farmer-basic-permission-move'       => 'Przenieś strony',
-	'farmer-basic-permission-upload'     => 'Załaduj pliki',
+	'farmer-basic-permission-upload'     => 'Prześlij pliki',
 	'farmer-basic-permission-minoredit'  => 'Dopuść drobne edycje',
 	'farmer-yes'                         => 'Tak',
 	'farmer-no'                          => 'Nie',
@@ -2252,6 +2252,13 @@ Du måste vara medlem av användargruppen farmeradmin',
 	'farmer-error-funcnotcall'               => 'Kunde inte kalla på funktion:',
 	'farmer-error-noextwrite'                => 'Kunde inte skriva ut programtilläggsfil:',
 	'farmer-error-wikicorrupt'               => 'Den sparade wikin är fördärvad',
+);
+
+/** Tamil (தமிழ்)
+ * @author Trengarasu
+ */
+$messages['ta'] = array(
+	'farmer-createwiki-user' => 'பயனர் பெயர்',
 );
 
 /** Telugu (తెలుగు)
