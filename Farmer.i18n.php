@@ -2459,12 +2459,13 @@ $messages['tg-cyrl'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
- * @author Minh Nguyen
  * @author Vinhtantran
+ * @author Minh Nguyen
  */
 $messages['vi'] = array(
 	'farmer-about'           => 'Giới thiệu',
 	'farmer-createwiki-user' => 'Tên người dùng',
+	'farmer-deleting'        => 'Xóa $1',
 	'farmer-mainpage'        => 'Trang Chính',
 );
 
