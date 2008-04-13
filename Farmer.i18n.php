@@ -2254,6 +2254,14 @@ Du måste vara medlem av användargruppen farmeradmin',
 	'farmer-error-wikicorrupt'               => 'Den sparade wikin är fördärvad',
 );
 
+/** Silesian (ślůnski)
+ * @author Herr Kriss
+ */
+$messages['szl'] = array(
+	'farmer-mainpage'                 => 'Přodńo zajta',
+	'farmer-extensions-register-name' => 'Mjano',
+);
+
 /** Tamil (தமிழ்)
  * @author Trengarasu
  */
