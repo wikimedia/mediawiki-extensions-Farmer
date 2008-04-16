@@ -341,6 +341,8 @@ $messages['bg'] = array(
 	'farmer-extensions-register-name'        => 'Име',
 	'farmer-extensions-register-includefile' => 'Включване на файл',
 	'farmer-error-exists'                    => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
+	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer не може да запише конфигурационния файл по подразбиране на уикито.',
+	'farmer-error-funcnotcall'               => 'Не може да бъде извикана функцията:',
 );
 
 /** Bengali (বাংলা)
