@@ -136,6 +136,13 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Arnobarnard
+ */
+$messages['af'] = array(
+	'farmer-confirmsetting' => 'Bevestig Wiki Opstelling',
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
@@ -442,6 +449,7 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'farmercreatesitename'                   => 'Nomo de retejo',
+	'farmercreatenextstep'                   => 'Posta ŝtupo',
 	'farmer-about'                           => 'Pri',
 	'farmer-list-wiki'                       => 'Listo de Vikioj',
 	'farmer-createwiki'                      => 'Kreu Vikion',
@@ -481,6 +489,7 @@ $messages['eo'] = array(
 	'farmer-basic-title1-text'               => 'Via vikio ne havas titolon. Faru titolon NUN',
 	'farmer-basic-description'               => 'Priskribo',
 	'farmer-basic-permission'                => 'Permesoj',
+	'farmer-basic-permission-visitor'        => 'Permesoj por Ĉiu Vizitanto',
 	'farmer-basic-permission-view'           => 'Okulumu ĉiujn paĝojn',
 	'farmer-basic-permission-edit'           => 'Redaktu ĉiujn paĝojn',
 	'farmer-basic-permission-createpage'     => 'Kreu novajn paĝojn',
@@ -490,8 +499,16 @@ $messages['eo'] = array(
 	'farmer-basic-permission-minoredit'      => 'Permesu etajn redaktojn',
 	'farmer-yes'                             => 'Jes',
 	'farmer-no'                              => 'Ne',
+	'farmer-setpermission'                   => 'Faru Permesojn',
 	'farmer-defaultskin'                     => 'Defaŭlta Veston',
 	'farmer-defaultskin-button'              => 'Konfiguru Defaŭltan Veston',
+	'farmer-extensions'                      => 'Aktivaj Etendiloj',
+	'farmer-extensions-button'               => 'Faru Aktivajn Etendilojn',
+	'farmer-extensions-extension-denied'     => "Vi ne havas permeson por uzi ĉi tiu ilon.
+Vi nepre estu membro de la ''farmeradmin'' grupo.",
+	'farmer-extensions-invalid'              => 'Nevalida Etendilo',
+	'farmer-extensions-available'            => 'Atingeblaj Etendiloj',
+	'farmer-extensions-noavailable'          => 'Neniuj etendiloj estas registritaj',
 	'farmer-extensions-register-name'        => 'Nomo',
 	'farmer-extensions-register-includefile' => 'Inkluzivu Dosieron',
 	'farmer-error-exists'                    => 'Ne povas krei vikion. Ĝi jam ekzistas: $1',
@@ -740,6 +757,51 @@ Isto será amosado na listaxe dos wikis.',
 	'farmer-error-exists'                    => 'Non pode crear o wiki. Xa existe: $1',
 	'farmer-error-funcnotcall'               => 'Non se puido chamar a función:',
 	'farmer-error-wikicorrupt'               => 'O wiki gardado está corrompido',
+);
+
+/** Manx (Gaelg)
+ * @author MacTire02
+ */
+$messages['gv'] = array(
+	'farmer'                             => 'Eirinagh',
+	'farmer-desc'                        => 'Gowaltys MediaWiki y reirey',
+	'farmercreatenextstep'               => 'Yn chied keim elley',
+	'farmer-about'                       => 'Mychione',
+	'farmer-list-wiki'                   => 'Rolley dagh ooilley Wiki',
+	'farmer-list-wiki-text'              => '[[$1|Rolley]] dagh ooilley wiki er {{SITENAME}}',
+	'farmer-createwiki'                  => 'Croo Wiki',
+	'farmer-createwiki-text'             => '[[$1|Croo]] wiki noa nish!',
+	'farmer-administration'              => 'Reirey gowaltys',
+	'farmer-administration-delete'       => 'Wiki y scryssey',
+	'farmer-administration-delete-text'  => '[[$1|Scryss]] wiki ass y gowaltys',
+	'farmer-administer-thiswiki'         => 'Yn Wiki shoh y reirey',
+	'farmer-wikicreated'                 => "Ta'n Wiki crooit",
+	'farmer-confirmsetting-name'         => 'Ennym: $1',
+	'farmer-confirmsetting-title'        => 'Ard-ennym: $1',
+	'farmer-confirmsetting-description'  => 'Tuarastyl: $1',
+	'farmer-description'                 => 'Tuarastyl',
+	'farmer-createwiki-form-title'       => 'Croo Wiki',
+	'farmer-createwiki-form-help'        => 'Cooney',
+	'farmer-createwiki-user'             => 'Ennym yn ymmydeyr',
+	'farmer-createwiki-name'             => 'Ennym y Wiki',
+	'farmer-createwiki-title'            => 'Ard-ennym y Wiki',
+	'farmer-createwiki-description'      => 'Tuarastyl',
+	'farmer-deleting'                    => 'Scryssey magh $1',
+	'farmer-delete-title'                => 'Scryss Wiki',
+	'farmer-delete-form'                 => 'Gow wiki',
+	'farmer-delete-form-submit'          => 'Scryssey',
+	'farmer-listofwikis'                 => 'Rolley dagh ooilley Wiki',
+	'farmer-mainpage'                    => 'Ard-ghuillag',
+	'farmer-basic-title1'                => 'Ard-ennym',
+	'farmer-basic-title1-text'           => 'Cha nel ard-ennym ec dty wiki. Cur ard-ennym da NISH',
+	'farmer-basic-description'           => 'Tuarastyl',
+	'farmer-basic-permission-view'       => 'Jeeagh er dagh ooilley ghuillag',
+	'farmer-basic-permission-edit'       => 'Reaghey dagh ooilley ghuillag',
+	'farmer-basic-permission-createpage' => 'Croo duillagyn noa',
+	'farmer-basic-permission-createtalk' => 'Croo duillagyn resoonaght',
+	'farmer-basic-permission-move'       => 'Scughey duillagyn',
+	'farmer-basic-permission-upload'     => 'Coadanyn dy lughtaghey seose',
+	'farmer-extensions-register-name'    => 'Ennym',
 );
 
 /** Hindi (हिन्दी)
