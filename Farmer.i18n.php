@@ -1275,6 +1275,7 @@ $messages['lb'] = array(
 	'farmer-basic-permission-minoredit' => 'Kleng Ännerungen erlaben',
 	'farmer-yes'                        => 'Jo',
 	'farmer-no'                         => 'Neen',
+	'farmer-extensions'                 => 'Aktiv Erweiderungen',
 	'farmer-extensions-invalid'         => 'Ongëlteg Erweiderung',
 	'farmer-extensions-register-name'   => 'Numm',
 	'farmer-error-exists'               => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
@@ -2281,6 +2282,13 @@ $messages['sr-ec'] = array(
 	'farmer-basic-title1'  => 'Наслов',
 	'farmer-yes'           => 'Да',
 	'farmer-no'            => 'Не',
+);
+
+/** Swati (SiSwati)
+ * @author Jatrobat
+ */
+$messages['ss'] = array(
+	'farmer-mainpage' => 'Likhasi Lelikhulu',
 );
 
 /** Seeltersk (Seeltersk)
