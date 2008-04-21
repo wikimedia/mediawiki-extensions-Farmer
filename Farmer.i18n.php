@@ -1808,6 +1808,15 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
 	'farmer-error-wikicorrupt'               => 'Lo wiki estocat es corromput',
 );
 
+/** Ossetic (Иронау)
+ * @author Amikeco
+ */
+$messages['os'] = array(
+	'farmer-delete-form-submit' => 'Аппар',
+	'farmer-yes'                => 'О',
+	'farmer-no'                 => 'Нæ',
+);
+
 /** Polish (Polski)
  * @author Sp5uhe
  * @author McMonster
