@@ -1165,7 +1165,8 @@ $messages['ja'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
-	'farmer-button-submit' => 'Kirim',
+	'farmer-button-submit'     => 'Kirim',
+	'farmer-basic-description' => 'Dèskripsi',
 );
 
 /** Khmer (ភាសាខ្មែរ)
