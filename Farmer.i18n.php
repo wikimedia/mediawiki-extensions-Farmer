@@ -270,6 +270,7 @@ $messages['ar'] = array(
 $messages['bg'] = array(
 	'farmer'                                 => 'Фермер',
 	'farmer-desc'                            => 'Управление на МедияУики ферма',
+	'farmercantcreatewikis'                  => 'Не можете да създавате уикита, тъй като нямате необходимите права („createwikis“)',
 	'farmercreateurl'                        => 'Адрес',
 	'farmercreatesitename'                   => 'Име на сайта',
 	'farmercreatenextstep'                   => 'Следваща стъпка',
@@ -342,6 +343,7 @@ $messages['bg'] = array(
 	'farmer-defaultskin'                     => 'Облик по подразбиране',
 	'farmer-defaultskin-button'              => 'Настройване на облик по подразбиране',
 	'farmer-extensions-invalid'              => 'Невалидно разширение',
+	'farmer-extensions-invalid-text'         => 'Разширението не може да бъде добавено, тъуй като избраният файл за включване не може да бъде открит',
 	'farmer-extensions-available'            => 'Налични разширения',
 	'farmer-extensions-noavailable'          => 'Не са регистрирани разширения',
 	'farmer-extensions-register'             => 'Регистриране на разширение',
@@ -447,10 +449,14 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Yekrats
+ * @author Amikeco
  */
 $messages['eo'] = array(
 	'farmercreatesitename'                   => 'Nomo de retejo',
 	'farmercreatenextstep'                   => 'Posta ŝtupo',
+	'farmernewwikimainpage'                  => '== Bonvenon en via vikio ==
+Se vi legas tion ĉi, via vikio estas sukcese instalita.
+Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-about'                           => 'Pri',
 	'farmer-list-wiki'                       => 'Listo de Vikioj',
 	'farmer-createwiki'                      => 'Kreu Vikion',
@@ -479,6 +485,7 @@ $messages['eo'] = array(
 	'farmer-updatedlist'                     => 'Ĝisdatigu liston',
 	'farmer-notaccessible'                   => 'Ne atingebla',
 	'farmer-permissiondenied'                => 'Permeso neita',
+	'farmer-permissiondenied-text1'          => 'Vi ne havas rajtojn por vidi tiun ĉi paĝon',
 	'farmer-deleting'                        => 'Forigante $1',
 	'farmer-delete-title'                    => 'Forigu Vikion',
 	'farmer-delete-form'                     => 'Elektu vikion',
@@ -517,6 +524,13 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 	'farmer-error-defnotset'                 => 'Defaŭlta vikio devas esti konfigurita',
 	'farmer-error-funcnotcall'               => 'Ne eblis voki funkcion:',
 	'farmer-error-wikicorrupt'               => 'Konservita vikio estas korupta',
+);
+
+/** Spanish (Español)
+ * @author Jatrobat
+ */
+$messages['es'] = array(
+	'farmer-yes' => 'Sí',
 );
 
 /** Finnish (Suomi)
@@ -1813,6 +1827,7 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espa
  * @author Amikeco
  */
 $messages['os'] = array(
+	'farmer-createwiki-user'    => 'Архайæджы ном',
 	'farmer-delete-form-submit' => 'Аппар',
 	'farmer-yes'                => 'О',
 	'farmer-no'                 => 'Нæ',
