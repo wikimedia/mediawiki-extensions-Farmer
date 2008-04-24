@@ -381,6 +381,14 @@ $messages['ca'] = array(
 	'farmer-no'    => 'No',
 );
 
+/** Chamorro (Chamoru)
+ * @author Jatrobat
+ */
+$messages['ch'] = array(
+	'farmer-mainpage'                => 'Fanhaluman',
+	'farmer-basic-permission-upload' => "Na'kåtga hulu' atkibu",
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
@@ -2659,6 +2667,14 @@ $messages['tg-cyrl'] = array(
 	'farmer-error-nofileconfwrite'          => 'ДеҳқониМедиаВики натавонист парвандаи пайкарбандии викии пешфарзро навишт',
 	'farmer-error-noextwrite'               => 'Қобили навиштани парвандаи афзуна нест:',
 	'farmer-error-wikicorrupt'              => 'Викии захирашуда хароб аст',
+);
+
+/** Turkish (Türkçe)
+ * @author Suelnur
+ */
+$messages['tr'] = array(
+	'farmer-yes' => 'Evet',
+	'farmer-no'  => 'Hayır',
 );
 
 /** Vietnamese (Tiếng Việt)
