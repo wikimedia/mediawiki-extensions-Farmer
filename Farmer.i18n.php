@@ -136,6 +136,14 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
+/** Karelian (Karjala)
+ * @author Flrn
+ */
+$messages['krl'] = array(
+	'farmer-mainpage'                => 'Piälehyt',
+	'farmer-basic-permission-upload' => 'Panna fajlit',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  */
@@ -942,6 +950,14 @@ $messages['hi'] = array(
 	'farmer-error-funcnotcall'               => 'कार्य को कॉल नहीं कर पायें:',
 	'farmer-error-noextwrite'                => 'एक्स्टेंशन फ़ाईल लिख नहीं पायें:',
 	'farmer-error-wikicorrupt'               => 'संजोया हुआ विकि खराब हो गया हैं',
+);
+
+/** Hiligaynon (Ilonggo)
+ * @author Jose77
+ */
+$messages['hil'] = array(
+	'farmer-createwiki-form-help' => 'Bulig',
+	'farmer-mainpage'             => 'Mayor nga Panid',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
