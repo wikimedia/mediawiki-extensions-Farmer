@@ -493,6 +493,7 @@ Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-button-confirm'                  => 'Konfirmu',
 	'farmer-button-submit'                   => 'Enigu',
 	'farmer-createwiki-form-title'           => 'Kreu Vikion',
+	'farmer-createwiki-form-text1'           => 'Uzu la jenan kamparon por krei novan vikion.',
 	'farmer-createwiki-form-help'            => 'Helpo',
 	'farmer-createwiki-user'                 => 'Salutnomo',
 	'farmer-createwiki-name'                 => 'Vikia nomo',
@@ -524,6 +525,7 @@ Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-basic-permission-minoredit'      => 'Permesu etajn redaktojn',
 	'farmer-yes'                             => 'Jes',
 	'farmer-no'                              => 'Ne',
+	'farmer-basic-permission-user'           => 'Rajtoj por Ensalutitaj Uzantoj',
 	'farmer-setpermission'                   => 'Faru Permesojn',
 	'farmer-defaultskin'                     => 'Defaŭlta Veston',
 	'farmer-defaultskin-button'              => 'Konfiguru Defaŭltan Veston',
@@ -1203,8 +1205,34 @@ $messages['ja'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
-	'farmer-button-submit'     => 'Kirim',
-	'farmer-basic-description' => 'Dèskripsi',
+	'farmercreatesitename'               => 'Jeneng situs',
+	'farmercreatenextstep'               => 'Tahap sabanjuré',
+	'farmernewwikimainpage'              => '== Sugeng rawuh ing Wiki Panjenengan ==
+Menawa panjenengan maca iki, wiki anyar panjenengan wis diinstalasi sacara bener.
+Kanggo nata wiki panjenengan, mangga nuwèni [[Special:Farmer]].',
+	'farmer-about'                       => 'Perkara',
+	'farmer-createwiki-text'             => '[[$1|Nggawé]] wiki anyar saiki!',
+	'farmer-administration-delete'       => 'Mbusak sawijining Wiki',
+	'farmer-notavailable'                => 'Ora ana',
+	'farmer-wikicreated'                 => 'Wikiné wis digawé',
+	'farmer-wikicreated-text'            => 'Wiki panjenengan wis digawé.
+Iku bisa diaksès ing $1',
+	'farmer-button-confirm'              => 'Konfirmasi',
+	'farmer-button-submit'               => 'Kirim',
+	'farmer-createwiki-form-text1'       => 'Enggonen formulir ing ngisor iki kanggo nggawé wiki anyar.',
+	'farmer-createwiki-form-help'        => 'Pitulung',
+	'farmer-createwiki-name'             => 'Jeneng wiki',
+	'farmer-createwiki-description'      => 'Dèskripsi',
+	'farmer-deleting'                    => 'Mbusak $1',
+	'farmer-delete-title'                => 'Busak Wiki',
+	'farmer-delete-form-submit'          => 'Busak',
+	'farmer-basic-title1'                => 'Irah-irahan (judhul):',
+	'farmer-basic-description'           => 'Dèskripsi',
+	'farmer-basic-permission-createpage' => 'Nggawé kaca-kaca anyar',
+	'farmer-basic-permission-upload'     => 'Ngunggahaké berkas-berkas',
+	'farmer-yes'                         => 'Iya',
+	'farmer-no'                          => 'Ora',
+	'farmer-extensions-register-name'    => 'Jeneng',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -1289,6 +1317,7 @@ $messages['lb'] = array(
 	'farmer-administration-extension'   => 'Erweiderungen organiséieren',
 	'farmer-administration-delete'      => 'E Wiki läschen',
 	'farmer-wikicreated'                => 'Wiki gemaach',
+	'farmer-wikiexists'                 => "D'Wiki gëtt et",
 	'farmer-confirmsetting-name'        => 'Numm: $1',
 	'farmer-confirmsetting-title'       => 'Iwwerschrëft: $1',
 	'farmer-confirmsetting-description' => 'Beschreiwung: $1',
@@ -1327,8 +1356,31 @@ $messages['lb'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'farmer-button-submit' => 'സമര്‍പ്പിക്കുക',
-	'farmer-yes'           => 'ശരി',
+	'farmer-about'                    => 'വിവരണം',
+	'farmer-list-wiki'                => 'വിക്കികളുടെ പട്ടിക',
+	'farmer-createwiki'               => 'ഒരു വിക്കി സൃഷ്ടിക്കുക',
+	'farmer-administration-delete'    => 'വിക്കി മായ്ക്കുക',
+	'farmer-administer-thiswiki'      => 'ഈ വിക്കിയെ പരിപാലിക്കുക',
+	'farmer-wikicreated'              => 'വിക്കി സൃഷ്ടിക്കപ്പെട്ടിരിക്കുന്നു',
+	'farmer-wikicreated-text'         => 'നിങ്ങളുടെ വിക്കി സൃഷ്ടിക്കപ്പെട്ടിരിക്കുന്നു.
+അത് $1 എന്ന വിലാസത്തില്‍ ലഭ്യമാണ്‌.',
+	'farmer-wikiexists'               => 'വിക്കി നിലവിലുണ്ട്',
+	'farmer-description'              => 'വിവരണം',
+	'farmer-button-submit'            => 'സമര്‍പ്പിക്കുക',
+	'farmer-createwiki-form-title'    => 'ഒരു വിക്കി സൃഷ്ടിക്കുക',
+	'farmer-createwiki-form-help'     => 'സഹായം',
+	'farmer-createwiki-user'          => 'ഉപയോക്തൃനാമം',
+	'farmer-createwiki-description'   => 'വിവരണം',
+	'farmer-delete-title'             => 'വിക്കി മായ്ക്കുക',
+	'farmer-delete-form'              => 'ഒരു വിക്കി തിരഞ്ഞെടുക്കുക',
+	'farmer-delete-form-submit'       => 'മായ്ക്കുക',
+	'farmer-listofwikis'              => 'വിക്കികളുടെ പട്ടിക',
+	'farmer-mainpage'                 => 'പ്രധാന താള്‍',
+	'farmer-basic-description'        => 'വിവരണം',
+	'farmer-yes'                      => 'ശരി',
+	'farmer-defaultskin'              => 'സ്വതവേയുള്ള രൂപം',
+	'farmer-defaultskin-button'       => 'സ്വതവെ പ്രദര്‍ശിപ്പിക്കേണ്ട രൂപം സജ്ജീകരിക്കുക',
+	'farmer-extensions-register-name' => 'പേര്‌',
 );
 
 /** Marathi (मराठी)
