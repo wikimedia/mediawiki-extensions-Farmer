@@ -356,6 +356,7 @@ $messages['bg'] = array(
 	'farmer-extensions-noavailable'          => 'Не са регистрирани разширения',
 	'farmer-extensions-register'             => 'Регистриране на разширение',
 	'farmer-extensions-register-text1'       => 'Формулярът по-долу служи за регистриране на нови разширения за фермата. След като бъде регистрирано ново разширение, всички уикита ще могат да го използват.',
+	'farmer-extensions-register-text4'       => 'Текущите пътища за включване са:',
 	'farmer-extensions-register-name'        => 'Име',
 	'farmer-extensions-register-includefile' => 'Включване на файл',
 	'farmer-error-exists'                    => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
@@ -452,6 +453,7 @@ $messages['el'] = array(
 	'farmer-confirmsetting-name'         => 'Όνομα: $1',
 	'farmer-confirmsetting-title'        => 'Τίτλος: $1',
 	'farmer-createwiki-form-title'       => 'Δημιουργήστε ένα Wiki',
+	'farmer-createwiki-user'             => 'Όνομα χρήστη',
 	'farmer-delete-form'                 => 'Επιλέξτε ένα wiki',
 	'farmer-mainpage'                    => 'Κύρια Σελίδα',
 	'farmer-basic-title'                 => 'Βασικοί Παράμετροι',
@@ -959,6 +961,7 @@ $messages['hi'] = array(
  */
 $messages['hil'] = array(
 	'farmer-createwiki-form-help' => 'Bulig',
+	'farmer-delete-form-submit'   => 'Panason',
 	'farmer-mainpage'             => 'Mayor nga Panid',
 );
 
@@ -1211,28 +1214,47 @@ $messages['jv'] = array(
 Menawa panjenengan maca iki, wiki anyar panjenengan wis diinstalasi sacara bener.
 Kanggo nata wiki panjenengan, mangga nuwèni [[Special:Farmer]].',
 	'farmer-about'                       => 'Perkara',
+	'farmer-createwiki'                  => 'Nggawé sawijining Wiki',
 	'farmer-createwiki-text'             => '[[$1|Nggawé]] wiki anyar saiki!',
 	'farmer-administration-delete'       => 'Mbusak sawijining Wiki',
 	'farmer-notavailable'                => 'Ora ana',
 	'farmer-wikicreated'                 => 'Wikiné wis digawé',
 	'farmer-wikicreated-text'            => 'Wiki panjenengan wis digawé.
 Iku bisa diaksès ing $1',
+	'farmer-wikiexists'                  => 'Wikiné èksis',
+	'farmer-confirmsetting'              => 'Konfirmasi Sètting Wiki',
+	'farmer-confirmsetting-name'         => 'Jeneng: $1',
+	'farmer-confirmsetting-title'        => 'Irah-irahan: $1',
+	'farmer-confirmsetting-description'  => 'Dèskripsi: $1',
+	'farmer-description'                 => 'Dèskripsi',
 	'farmer-button-confirm'              => 'Konfirmasi',
 	'farmer-button-submit'               => 'Kirim',
+	'farmer-createwiki-form-title'       => 'Nggawé sawijining Wiki',
 	'farmer-createwiki-form-text1'       => 'Enggonen formulir ing ngisor iki kanggo nggawé wiki anyar.',
 	'farmer-createwiki-form-help'        => 'Pitulung',
 	'farmer-createwiki-name'             => 'Jeneng wiki',
 	'farmer-createwiki-description'      => 'Dèskripsi',
+	'farmer-notaccessible'               => 'Ora bisa diaksès',
+	'farmer-permissiondenied'            => 'Idin ditolak',
+	'farmer-permissiondenied-text1'      => 'Panjenengan ora duwé idin kanggo ngaksès kaca iki',
 	'farmer-deleting'                    => 'Mbusak $1',
 	'farmer-delete-title'                => 'Busak Wiki',
 	'farmer-delete-form-submit'          => 'Busak',
+	'farmer-mainpage'                    => 'Kaca Utama',
 	'farmer-basic-title1'                => 'Irah-irahan (judhul):',
 	'farmer-basic-description'           => 'Dèskripsi',
 	'farmer-basic-permission-createpage' => 'Nggawé kaca-kaca anyar',
 	'farmer-basic-permission-upload'     => 'Ngunggahaké berkas-berkas',
 	'farmer-yes'                         => 'Iya',
 	'farmer-no'                          => 'Ora',
+	'farmer-defaultskin'                 => 'Kulit Baku',
+	'farmer-defaultskin-button'          => 'Sèt Kulit Baku',
+	'farmer-extensions-invalid'          => 'Èkstènsi Ora Absah',
+	'farmer-extensions-available'        => 'Èkstènsi sing Ana',
 	'farmer-extensions-register-name'    => 'Jeneng',
+	'farmer-error-exists'                => 'Ora bisa nggawé wiki. Sebabé wis ana: $1',
+	'farmer-error-funcnotcall'           => 'Ora bisa nyeluk fungsi:',
+	'farmer-error-wikicorrupt'           => 'Wiki sing disimpen iku rusak',
 );
 
 /** Khmer (ភាសាខ្មែរ)
@@ -1376,6 +1398,7 @@ $messages['ml'] = array(
 	'farmer-delete-form-submit'       => 'മായ്ക്കുക',
 	'farmer-listofwikis'              => 'വിക്കികളുടെ പട്ടിക',
 	'farmer-mainpage'                 => 'പ്രധാന താള്‍',
+	'farmer-basic-title1'             => 'ശീര്‍ഷകം',
 	'farmer-basic-description'        => 'വിവരണം',
 	'farmer-yes'                      => 'ശരി',
 	'farmer-defaultskin'              => 'സ്വതവേയുള്ള രൂപം',
@@ -2754,6 +2777,9 @@ $messages['vi'] = array(
 	'farmer-createwiki-user' => 'Tên người dùng',
 	'farmer-deleting'        => 'Xóa $1',
 	'farmer-mainpage'        => 'Trang Chính',
+	'farmer-basic-title1'    => 'Tựa đề',
+	'farmer-yes'             => 'Có',
+	'farmer-no'              => 'Không',
 );
 
 /** Volapük (Volapük)
