@@ -148,7 +148,15 @@ $messages['krl'] = array(
  * @author Arnobarnard
  */
 $messages['af'] = array(
-	'farmer-confirmsetting' => 'Bevestig Wiki Opstelling',
+	'farmer-confirmsetting'           => 'Bevestig Wiki Opstelling',
+	'farmer-confirmsetting-name'      => 'Naam: $1',
+	'farmer-confirmsetting-title'     => 'Titel: $1',
+	'farmer-createwiki-form-help'     => 'Hulp',
+	'farmer-createwiki-user'          => 'Gebruikersnaam',
+	'farmer-basic-title1'             => 'Titel',
+	'farmer-yes'                      => 'Ja',
+	'farmer-no'                       => 'Nee',
+	'farmer-extensions-register-name' => 'Naam',
 );
 
 /** Aragonese (Aragonés)
@@ -960,9 +968,11 @@ $messages['hi'] = array(
  * @author Jose77
  */
 $messages['hil'] = array(
-	'farmer-createwiki-form-help' => 'Bulig',
-	'farmer-delete-form-submit'   => 'Panason',
-	'farmer-mainpage'             => 'Mayor nga Panid',
+	'farmer-createwiki-form-help'    => 'Bulig',
+	'farmer-createwiki-user'         => 'Ngalan sang Manog-gamit',
+	'farmer-delete-form-submit'      => 'Panason',
+	'farmer-mainpage'                => 'Mayor nga Panid',
+	'farmer-basic-permission-upload' => 'Mag karga mga files',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -1214,6 +1224,7 @@ $messages['jv'] = array(
 Menawa panjenengan maca iki, wiki anyar panjenengan wis diinstalasi sacara bener.
 Kanggo nata wiki panjenengan, mangga nuwèni [[Special:Farmer]].',
 	'farmer-about'                       => 'Perkara',
+	'farmer-list-wiki'                   => 'Daftar Wiki',
 	'farmer-createwiki'                  => 'Nggawé sawijining Wiki',
 	'farmer-createwiki-text'             => '[[$1|Nggawé]] wiki anyar saiki!',
 	'farmer-administration-delete'       => 'Mbusak sawijining Wiki',
@@ -1232,6 +1243,7 @@ Iku bisa diaksès ing $1',
 	'farmer-createwiki-form-title'       => 'Nggawé sawijining Wiki',
 	'farmer-createwiki-form-text1'       => 'Enggonen formulir ing ngisor iki kanggo nggawé wiki anyar.',
 	'farmer-createwiki-form-help'        => 'Pitulung',
+	'farmer-createwiki-user'             => 'Jeneng panganggo',
 	'farmer-createwiki-name'             => 'Jeneng wiki',
 	'farmer-createwiki-title'            => 'Irah-irahan wiki',
 	'farmer-createwiki-description'      => 'Dèskripsi',
@@ -1244,6 +1256,7 @@ Iku bisa diaksès ing $1',
 	'farmer-delete-form-submit'          => 'Busak',
 	'farmer-mainpage'                    => 'Kaca Utama',
 	'farmer-basic-title1'                => 'Irah-irahan (judhul):',
+	'farmer-basic-title1-text'           => 'Wiki panjenengan ora duwé irah-irahan. Wènèhana SAIKI',
 	'farmer-basic-description'           => 'Dèskripsi',
 	'farmer-basic-permission'            => 'Kabèh idin',
 	'farmer-basic-permission-createpage' => 'Nggawé kaca-kaca anyar',
@@ -1320,6 +1333,16 @@ $messages['km'] = array(
 	'farmer-defaultskin-button'             => 'កំណត់ សំបក លំនាំដើម',
 	'farmer-extensions-register-name'       => 'ឈ្មោះ',
 	'farmer-error-exists'                   => 'មិនអាចបង្កើតវិគីបានទេ។ វាមានរួចជាស្រេចហើយ៖$1',
+);
+
+/** Kinaray-a (Kinaray-a)
+ * @author Jose77
+ */
+$messages['krj'] = array(
+	'farmer-about'                => 'Angut sa Iwan',
+	'farmer-createwiki-form-help' => 'Bolig',
+	'farmer-delete-form-submit'   => 'Para',
+	'farmer-mainpage'             => 'Pono nga Pahina',
 );
 
 /** Kurdish (Kurdî / كوردی)
