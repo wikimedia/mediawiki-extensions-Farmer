@@ -283,7 +283,7 @@ class SpecialFarmer extends SpecialPage
             }
         }
 
-        $wgOut->addHTML('<input type="submit" name="submit" value="'.wfMsg('farmer-delete-form-submit').'" /></form>');
+        $wgOut->addHTML('</select><input type="submit" name="submit" value="'.wfMsg('farmer-delete-form-submit').'" /></form>');
 
     }
 
@@ -552,15 +552,15 @@ class SpecialFarmer extends SpecialPage
     <table>
         <tr>
             <td align=\"right\">".wfMsg('farmer-extensions-register-name')."</td>
-            <td align=\"left\"><input type=\"text\" size=\"20\" name=\"name\" value=\"\" />
+            <td align=\"left\"><input type=\"text\" size=\"20\" name=\"name\" value=\"\" /></td>
         </tr>
         <tr>
             <td align=\"right\">".wfMsg('farmer-description')."</td>
-            <td align=\"left\"><input type=\"text\" size=\"50\" name=\"description\" value=\"\" />
+            <td align=\"left\"><input type=\"text\" size=\"50\" name=\"description\" value=\"\" /></td>
         </tr>
         <tr>.
             <td align=\"right\">".wfMsg('farmer-extensions-register-includefile')."</td>
-            <td align=\"left\"><input type=\"text\" size=\"50\" name=\"include\" value=\"\" />
+            <td align=\"left\"><input type=\"text\" size=\"50\" name=\"include\" value=\"\" /></td>
         </tr>
         <tr>
             <td>&nbsp;</td>
