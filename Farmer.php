@@ -55,6 +55,8 @@ $wgGroupPermissions['*']['farmeradmin'] = false;
 $wgGroupPermissions['sysop']['farmeradmin'] = true;
 $wgGroupPermissions['*']['createwiki'] = false;
 $wgGroupPermissions['sysop']['createwiki'] = true;
+$wgAvailableRights[] = 'farmeradmin';
+$wgAvailableRights[] = 'createwiki';
 
 function MediaWikiFarmer_Initialize()
 {
