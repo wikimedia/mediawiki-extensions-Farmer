@@ -504,7 +504,7 @@ Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-confirmsetting-description'      => 'Priskribo: $1',
 	'farmer-description'                     => 'Priskribo',
 	'farmer-button-confirm'                  => 'Konfirmu',
-	'farmer-button-submit'                   => 'Enigu',
+	'farmer-button-submit'                   => 'Ek',
 	'farmer-createwiki-form-title'           => 'Kreu Vikion',
 	'farmer-createwiki-form-text1'           => 'Uzu la jenan kamparon por krei novan vikion.',
 	'farmer-createwiki-form-help'            => 'Helpo',
@@ -519,7 +519,7 @@ Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-deleting'                        => 'Forigante $1',
 	'farmer-delete-title'                    => 'Forigu Vikion',
 	'farmer-delete-form'                     => 'Elektu vikion',
-	'farmer-delete-form-submit'              => 'Forigu',
+	'farmer-delete-form-submit'              => 'Forigi',
 	'farmer-listofwikis'                     => 'Listo de Vikioj',
 	'farmer-mainpage'                        => 'Ĉefpaĝo',
 	'farmer-basic-title'                     => 'Bazaj Parametroj',
@@ -534,7 +534,7 @@ Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-basic-permission-createpage'     => 'Kreu novajn paĝojn',
 	'farmer-basic-permission-createtalk'     => 'Kreu diskuto-paĝojn',
 	'farmer-basic-permission-move'           => 'Movu paĝojn',
-	'farmer-basic-permission-upload'         => 'Alŝutu dosierojn',
+	'farmer-basic-permission-upload'         => 'Alŝuti dosierojn',
 	'farmer-basic-permission-minoredit'      => 'Permesu etajn redaktojn',
 	'farmer-yes'                             => 'Jes',
 	'farmer-no'                              => 'Ne',
@@ -855,6 +855,13 @@ $messages['gv'] = array(
 	'farmer-no'                              => 'Cha',
 	'farmer-extensions-register-name'        => 'Ennym',
 	'farmer-extensions-register-includefile' => 'Goaill stiagh y coadan',
+);
+
+/** Hawaiian (Hawai`i)
+ * @author Singularity
+ */
+$messages['haw'] = array(
+	'farmer-about' => 'E pili ana',
 );
 
 /** Hindi (हिन्दी)
