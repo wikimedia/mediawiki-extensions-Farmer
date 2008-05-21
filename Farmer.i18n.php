@@ -2314,7 +2314,7 @@ Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar 
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'farmer'                                 => 'Фермер',
