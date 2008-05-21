@@ -2696,8 +2696,10 @@ $messages['ta'] = array(
 
 /** Telugu (తెలుగు)
  * @author Veeven
+ * @author వైజాసత్య
  */
 $messages['te'] = array(
+	'farmer'                                => 'రైతు',
 	'farmercantcreatewikis'                 => 'మీరు వికీలను సృష్టించలేకున్నారు ఎందుకంటే మీరు వికీలను సృష్టించే అధికారం లేదు.',
 	'farmercreatesitename'                  => 'సైటు పేరు',
 	'farmercreatenextstep'                  => 'తర్వాతి మెట్టు',
