@@ -154,6 +154,7 @@ $messages['af'] = array(
 	'farmer-button-confirm'           => 'Bevestig',
 	'farmer-createwiki-form-help'     => 'Hulp',
 	'farmer-createwiki-user'          => 'Gebruikersnaam',
+	'farmer-delete-form-submit'       => 'Skrap',
 	'farmer-mainpage'                 => 'Tuisblad',
 	'farmer-basic-title1'             => 'Titel',
 	'farmer-yes'                      => 'Ja',
@@ -1425,6 +1426,7 @@ $messages['lb'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
+	'farmer'                                => 'കാര്യസ്ഥന്‍',
 	'farmer-desc'                           => 'മീഡിയാവിക്കി പാടം പരിപാലിക്കുക',
 	'farmercantcreatewikis'                 => 'വിക്കി സൃഷ്ടിക്കുവാനുള്ള അവകാശം താങ്കള്‍ക്ക് നല്‍കിയിട്ടില്ലാത്തതിനാല്‍ വിക്കി സൃഷ്ടിക്കുവാന്‍ താങ്കള്‍ക്ക് സാധിക്കില്ല',
 	'farmercreatesitename'                  => 'സൈറ്റിന്റെ പേര്‌',
@@ -1432,12 +1434,15 @@ $messages['ml'] = array(
 	'farmernewwikimainpage'                 => '== താങ്കളുടെ വിക്കിയിലേക്ക് സ്വാഗതം ==
 താങ്കള്‍ക്ക് ഇതു വായിക്കുവാന്‍ സാധിക്കുന്നെണ്ടെങ്കില്‍ താങ്കളുടെ പുതിയ വിക്കി വിജയകരമായി ഇന്‍സ്റ്റാള്‍ ചെയ്തിരിക്കുന്നു. താങ്കളുടെ വിക്കി പരിപാലിക്കുവാന്‍ [[Special:Farmer]] സന്ദര്‍ശിക്കുക.',
 	'farmer-about'                          => 'വിവരണം',
+	'farmer-about-text'                     => 'മീഡിയാവിക്കി കാര്യസ്ഥന്‍ എന്ന പദവി മീഡിയാവിക്കി വിക്കികളുടെ പാടം പരിപാലിക്കുന്നതിനു താങ്കളെ സഹായിക്കും.',
 	'farmer-list-wiki'                      => 'വിക്കികളുടെ പട്ടിക',
 	'farmer-list-wiki-text'                 => '{{SITENAME}} സം‌രംഭത്തിലുള്ള [[$1|വിക്കികളുടെ പട്ടിക]]',
 	'farmer-createwiki'                     => 'ഒരു വിക്കി സൃഷ്ടിക്കുക',
 	'farmer-createwiki-text'                => 'പുതിയൊരു വിക്കി [[$1|സൃഷ്ടിക്കുക]]!',
 	'farmer-administration'                 => 'പാടത്തിന്റെ കാര്യനിര്‍‌വഹണം',
 	'farmer-administration-extension'       => 'എക്സ്റ്റെന്‍ഷന്‍ പരിപാലിക്കുക',
+	'farmer-administration-extension-text'  => 'ഇന്‍സ്റ്റാള്‍ ചെയ്ത എക്സ്റ്റന്‍ഷനുകള്‍  [[$1|പരിപാലിക്കുക]].',
+	'farmer-admimistration-listupdate'      => 'വിക്കിപാടത്തിന്റെ പട്ടികയുടെ പുതുക്കല്‍',
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}} സം‌രംഭത്തില്‍ വിക്കികളുടെ [[$1|പട്ടിക]] പുതുക്കുക',
 	'farmer-administration-delete'          => 'വിക്കി മായ്ക്കുക',
 	'farmer-administration-delete-text'     => 'പാടത്തു നിന്നു ഒരു വിക്കി [[$1|ഒഴിവാക്കുക]]',
@@ -1481,6 +1486,7 @@ $messages['ml'] = array(
 	'farmer-createwiki-description'         => 'വിവരണം',
 	'farmer-updatedlist'                    => 'പുതുക്കിയ പട്ടിക',
 	'farmer-notaccessible'                  => 'എത്തിപ്പെടാന്‍ പറ്റിയില്ല',
+	'farmer-notaccessible-test'             => 'ഈ സവിശേഷത വിക്കിപാടത്തുള്ള പേരന്റ് വിക്കിക്കു മാത്രമേ ബാധകമാവൂ.',
 	'farmer-permissiondenied'               => 'പ്രവേശനം നിഷേധിച്ചിരിക്കുന്നു',
 	'farmer-permissiondenied-text'          => 'പാടത്തു നിന്നു ഒരു വിക്കി ഒഴിവാക്കാനുള്ള അനുവാദം നിങ്ങള്‍ക്കില്ല',
 	'farmer-permissiondenied-text1'         => 'ഈ താളില്‍ പ്രവേശിക്കുവാന്‍ താങ്കള്‍ക്ക് അനുമതിയില്ല',
@@ -1496,6 +1502,7 @@ $messages['ml'] = array(
 	'farmer-basic-description'              => 'വിവരണം',
 	'farmer-basic-description-text'         => 'താങ്കളുടെ വിക്കിയെ കുറിച്ചുള്ള വിവരണം താഴെ ചേര്‍ക്കൂ',
 	'farmer-basic-permission'               => 'അനുമതികള്‍',
+	'farmer-basic-permission-text'          => 'ഈ വിക്കിയിലെ ഉപയോക്താക്കളുടെ അവകാശങ്ങളില്‍ മാറ്റം വരുത്താന്‍ താങ്കള്‍ക്ക്  താഴെയുള്ള ഫോം ഉപയോഗികാവുന്നതാണ്‌.',
 	'farmer-basic-permission-visitor'       => 'എല്ലാ സന്ദര്‍ശകര്‍ക്കുമുള്ള അവകാശങ്ങള്‍',
 	'farmer-basic-permission-visitor-text'  => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന അവകാശങ്ങള്‍ വിക്കിയിലെ ഓരോ ഉപയോക്താവിനും ബാധകമായിരിക്കും.',
 	'farmer-basic-permission-view'          => 'എല്ലാ താളുകളും കാണുക',
@@ -1513,7 +1520,19 @@ $messages['ml'] = array(
 	'farmer-setpermission'                  => 'അവകാശങ്ങള്‍ ക്രമീകരിക്കുക',
 	'farmer-defaultskin'                    => 'സ്വതവേയുള്ള രൂപം',
 	'farmer-defaultskin-button'             => 'സ്വതവെ പ്രദര്‍ശിപ്പിക്കേണ്ട രൂപം സജ്ജീകരിക്കുക',
+	'farmer-extensions'                     => 'സജീവമായ എക്സ്റ്റെന്‍ഷനുകള്‍',
+	'farmer-extensions-button'              => 'സജീവമായ എക്സ്റ്റെന്‍ഷനുകള്‍ ക്രമീകരിക്കുക',
+	'farmer-extensions-extension-denied'    => 'ഈ സവിശേഷത ഉപയോഗിക്കുവാനുള്ള അനുമതി താങ്കള്‍ക്കില്ല.
+താങ്കള്‍ അതിനു  farmeradmin ഗ്രൂപ്പിലെ അം‌ഗമായിരിക്കണം',
+	'farmer-extensions-invalid'             => 'അസാധുവായ എക്സ്റ്റെന്‍ഷന്‍',
+	'farmer-extensions-available'           => 'ലഭ്യമായ എക്സ്റ്റെന്‍ഷനുകള്‍',
+	'farmer-extensions-noavailable'         => 'എക്സ്റ്റെഷനുകള്‍ ഒന്നും രജിസ്റ്റര്‍ ചെയ്തിട്ടില്ല',
+	'farmer-extensions-register'            => 'എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്യുക',
+	'farmer-extensions-register-text1'      => 'ഈ വിക്കി പാടത്ത് പുതിയൊരു എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്യുവാന്‍ താഴെയുള്ള ഫോം ഉപയോഗിക്കുക.
+എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്തതിനു ശെഷം ഈ വിക്കിപാടത്തുള്ള എല്ലാ വിക്കികള്‍ക്കും അതുപയോഗിക്കാം.',
 	'farmer-extensions-register-name'       => 'പേര്‌',
+	'farmer-error-exists'                   => 'വിക്കി സൃഷ്ടിക്കുന്നതിനു കഴിഞ്ഞില്ല. അതു ഇപ്പോഴെ നിലവിലുണ്ട്: $1',
+	'farmer-error-defnotset'                => 'സ്വതവെയുള്ള ഒരു വിക്കി നിര്‍ബന്ധമായും സജ്ജീകരിക്കണം.',
 );
 
 /** Marathi (मराठी)
