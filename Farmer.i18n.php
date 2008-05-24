@@ -491,11 +491,11 @@ Se vi legas tion ĉi, via vikio estas sukcese instalita.
 Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-about'                           => 'Pri',
 	'farmer-list-wiki'                       => 'Listo de Vikioj',
-	'farmer-createwiki'                      => 'Kreu Vikion',
+	'farmer-createwiki'                      => 'Krei Vikion',
 	'farmer-createwiki-text'                 => '[[$1|Kreu]] novan vikion nun!',
 	'farmer-administration-extension-text'   => '[[$1|Administru]] instalitajn etendilojn.',
 	'farmer-administration-delete'           => 'Forigu Vikion',
-	'farmer-administration-delete-text'      => '[[$1|Delete]] vikion de the vikiaro.',
+	'farmer-administration-delete-text'      => '[[$1|Forigi]] vikion de the vikiaro.',
 	'farmer-administer-thiswiki'             => 'Administru ĉi vikion',
 	'farmer-notavailable'                    => 'Ne atingebla',
 	'farmer-wikicreated'                     => 'Vikio estas kreita',
@@ -506,9 +506,9 @@ Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-confirmsetting-title'            => 'Titolo: $1',
 	'farmer-confirmsetting-description'      => 'Priskribo: $1',
 	'farmer-description'                     => 'Priskribo',
-	'farmer-button-confirm'                  => 'Konfirmu',
+	'farmer-button-confirm'                  => 'Konfirmi',
 	'farmer-button-submit'                   => 'Ek',
-	'farmer-createwiki-form-title'           => 'Kreu Vikion',
+	'farmer-createwiki-form-title'           => 'Krei Vikion',
 	'farmer-createwiki-form-text1'           => 'Uzu la jenan kamparon por krei novan vikion.',
 	'farmer-createwiki-form-help'            => 'Helpo',
 	'farmer-createwiki-user'                 => 'Salutnomo',
@@ -1365,6 +1365,13 @@ $messages['krj'] = array(
 	'farmer-mainpage'             => 'Pono nga Pahina',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'farmer-deleting' => '„$1“ weed fottjeschmeße',
+);
+
 /** Kurdish (Kurdî / كوردی)
  * @author Bangin
  */
@@ -1384,6 +1391,8 @@ $messages['lb'] = array(
 	'farmer-list-wiki'                  => 'Lëscht vun de Wikien',
 	'farmer-administration-extension'   => 'Erweiderungen organiséieren',
 	'farmer-administration-delete'      => 'E Wiki läschen',
+	'farmer-administer-thiswiki'        => 'Dës Wiki administréieren',
+	'farmer-notavailable'               => 'Net disponibel',
 	'farmer-wikicreated'                => 'Wiki gemaach',
 	'farmer-wikiexists'                 => "D'Wiki gëtt et",
 	'farmer-confirmsetting-name'        => 'Numm: $1',
@@ -1398,6 +1407,7 @@ $messages['lb'] = array(
 	'farmer-createwiki-title'           => 'Titel vun der Wiki',
 	'farmer-createwiki-description'     => 'Beschreiwung',
 	'farmer-updatedlist'                => 'Geännert Lëscht',
+	'farmer-permissiondenied'           => 'Erlaabnis refuséiert',
 	'farmer-deleting'                   => 'Läsche vun $1',
 	'farmer-delete-title'               => 'Eng Wiki läschen',
 	'farmer-delete-form'                => 'Wielt eng Wiki eraus',
@@ -1407,6 +1417,7 @@ $messages['lb'] = array(
 	'farmer-basic-title1'               => 'Titel',
 	'farmer-basic-description'          => 'Beschreiwung',
 	'farmer-basic-description-text'     => "Gitt d'Beschreiwung vun ärer Wiki hei ënnedrënner an",
+	'farmer-basic-permission'           => 'Rechter',
 	'farmer-basic-permission-view'      => 'All Säite weisen',
 	'farmer-basic-permission-edit'      => 'All Säiten änneren',
 	'farmer-basic-permission-move'      => 'Säite réckelen',
