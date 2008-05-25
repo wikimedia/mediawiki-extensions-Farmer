@@ -1369,7 +1369,8 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'farmer-deleting' => '„$1“ weed fottjeschmeße',
+	'farmer-createwiki-user' => 'Metmaacher',
+	'farmer-deleting'        => '„$1“ weed fottjeschmeße',
 );
 
 /** Kurdish (Kurdî / كوردی)
@@ -1389,6 +1390,7 @@ $messages['lb'] = array(
 	'farmercreatenextstep'              => 'Nächste Schrëtt',
 	'farmer-about'                      => 'Iwwer',
 	'farmer-list-wiki'                  => 'Lëscht vun de Wikien',
+	'farmer-createwiki'                 => 'Eng Wiki ufänken',
 	'farmer-administration-extension'   => 'Erweiderungen organiséieren',
 	'farmer-administration-delete'      => 'E Wiki läschen',
 	'farmer-administer-thiswiki'        => 'Dës Wiki administréieren',
@@ -1401,6 +1403,7 @@ $messages['lb'] = array(
 	'farmer-description'                => 'Beschreiwung',
 	'farmer-button-confirm'             => 'Confirméieren',
 	'farmer-button-submit'              => 'Späicheren',
+	'farmer-createwiki-form-title'      => 'Eng Wiki ufänken',
 	'farmer-createwiki-form-help'       => 'Hëllef',
 	'farmer-createwiki-user'            => 'Benotzernumm',
 	'farmer-createwiki-name'            => 'Numm vun der Wiki',
