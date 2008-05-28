@@ -428,6 +428,14 @@ $messages['cs'] = array(
 	'farmer-createwiki-user' => 'Uživatelské jméno',
 );
 
+/** Church Slavic (Словѣньскъ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'farmer-createwiki-form-help' => 'по́мощь',
+	'farmer-delete-form-submit'   => 'поничьжє́ниѥ',
+);
+
 /** Danish (Dansk)
  * @author Jon Harald Søby
  */
@@ -1215,6 +1223,14 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
 	'farmer-error-wikicorrupt'               => 'A tárolt wiki sérült',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Rex
+ */
+$messages['id'] = array(
+	'farmer-createwiki-user' => 'Nama pengguna',
+	'farmer-no'              => 'Tidak',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  * @author SPQRobin
@@ -1376,6 +1392,7 @@ $messages['ksh'] = array(
 	'farmer-button-submit'            => 'Loß Jonn!',
 	'farmer-createwiki-user'          => 'Metmaacher',
 	'farmer-deleting'                 => '„$1“ weed fottjeschmeße',
+	'farmer-delete-form-submit'       => 'Fott domet!',
 	'farmer-extensions-register-name' => 'Name',
 );
 
