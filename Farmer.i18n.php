@@ -397,11 +397,13 @@ $messages['br'] = array(
 
 /** Catalan (Català)
  * @author SMP
+ * @author Jordi Roqué
  */
 $messages['ca'] = array(
-	'farmer-about' => 'Quant a',
-	'farmer-yes'   => 'S&iacute;',
-	'farmer-no'    => 'No',
+	'farmer-about'        => 'Quant a',
+	'farmer-basic-title1' => 'Títol',
+	'farmer-yes'          => 'S&iacute;',
+	'farmer-no'           => 'No',
 );
 
 /** Chamorro (Chamoru)
@@ -727,64 +729,85 @@ $messages['frp'] = array(
 );
 
 /** Galician (Galego)
+ * @author Toliño
  * @author Alma
  * @author Xosé
- * @author Toliño
  */
 $messages['gl'] = array(
-	'farmercantcreatewikis'                  => 'Vostede non pode crear wikis porque non ten privilexios de creación de wikis',
+	'farmer'                                 => 'Granxeiro',
+	'farmer-desc'                            => 'Xestionar unha granxa MediaWiki',
+	'farmercantcreatewikis'                  => 'Non pode crear wikis porque non ten os privilexios de creación de wikis',
 	'farmercreatesitename'                   => 'Nome do sitio web',
 	'farmercreatenextstep'                   => 'Seguinte paso',
-	'farmernewwikimainpage'                  => '== Benvida ao seu Wiki ==
-Se vostede está a ler isto, o seu novo wiki foi instalado correctamente. Para personalizar o seu wiki, visite [[Special:Farmer]].',
+	'farmernewwikimainpage'                  => '== Dámoslle a benvida ao seu wiki ==
+Se está a ler isto, o seu novo wiki foi instalado correctamente.
+Para personalizar o seu wiki, por favor, visite [[Special:Farmer]].',
 	'farmer-about'                           => 'Acerca de',
-	'farmer-list-wiki'                       => 'Listaxe de Wikis',
+	'farmer-about-text'                      => 'O granxeiro MediaWiki permítelle xestionar unha granxa de wikis MediaWiki.',
+	'farmer-list-wiki'                       => 'Listaxe dos wikis',
 	'farmer-list-wiki-text'                  => '[[$1|Listaxe]] de todos os sitios de {{SITENAME}}',
-	'farmer-createwiki'                      => 'Crear un Wiki',
-	'farmer-createwiki-text'                 => '[[$1|Crear]] un novo wiki xa!',
-	'farmer-administration-extension'        => 'Xestionar Extensións',
-	'farmer-administration-extension-text'   => '[[$1|Administrar]] extensións instaladas.',
+	'farmer-createwiki'                      => 'Crear un wiki',
+	'farmer-createwiki-text'                 => '[[$1|Crear]] xa un novo wiki!',
+	'farmer-administration'                  => 'Administración da granxa',
+	'farmer-administration-extension'        => 'Xestionar as extensións',
+	'farmer-administration-extension-text'   => '[[$1|Administrar]] as extensións instaladas.',
+	'farmer-admimistration-listupdate'       => 'Actualización da listaxe da granxa',
 	'farmer-admimistration-listupdate-text'  => '[[$1|Actualizar]] a listaxe de wikis en {{SITENAME}}',
-	'farmer-administration-delete'           => 'Eliminar un Wiki',
-	'farmer-administer-thiswiki'             => 'Administrar este Wiki',
-	'farmer-administer-thiswiki-text'        => '[[$1|Administrar]] cambios deste wiki',
-	'farmer-notavailable'                    => 'Non disponíbel',
+	'farmer-administration-delete'           => 'Eliminar un wiki',
+	'farmer-administration-delete-text'      => '[[$1|Borrar]] un wiki da granxa',
+	'farmer-administer-thiswiki'             => 'Administrar este wiki',
+	'farmer-administer-thiswiki-text'        => '[[$1|Administrar]] os cambios deste wiki',
+	'farmer-notavailable'                    => 'Non dispoñíbel',
+	'farmer-notavailable-text'               => 'Esta característica só está dispoñible no wiki principal',
 	'farmer-wikicreated'                     => 'Wiki creado',
-	'farmer-wikicreated-text'                => 'O seu wiki foi creado. É accesíbel a $1',
-	'farmer-default'                         => 'Por omisión, ninguén dispón de permisos neste wiki a excepción de vostede. Pode modificar os privilexios de usuario mediante $1',
-	'farmer-wikiexists'                      => 'O Wiki existe',
-	'farmer-wikiexists-text'                 => "O wiki que está intentando crear, '''$1''', xa existe.  Por favor volva atrás e ténteo con outro nome.",
+	'farmer-wikicreated-text'                => 'O seu wiki foi creado.
+É accesíbel en $1',
+	'farmer-default'                         => 'Por omisión, ninguén dispón de permisos neste wiki a excepción de vostede.
+Pode modificar os privilexios de usuario mediante $1',
+	'farmer-wikiexists'                      => 'O wiki existe',
+	'farmer-wikiexists-text'                 => "O wiki que está intentando crear, '''$1''', xa existe.
+Por favor volva atrás e ténteo con outro nome.",
 	'farmer-confirmsetting'                  => 'Confirmar as configuracións do wiki',
 	'farmer-confirmsetting-name'             => 'Nome: $1',
 	'farmer-confirmsetting-title'            => 'Título: $1',
 	'farmer-confirmsetting-description'      => 'Descrición: $1',
 	'farmer-description'                     => 'Descrición',
-	'farmer-confirmsetting-text'             => "O seu wiki, '''$1''', será accesible via http://$1.myfarm. O espazo de nomes do proxecto será '''$2'''.  As ligazóns cara a este espazo de nomes serán da seginte forma: '''<nowiki>[[$2:Nome da páxina]]</nowiki>'''.  Se isto é o que quere, prema no botón '''confirmar''' de máis embaixo.",
+	'farmer-confirmsetting-text'             => "O seu wiki, '''$1''', será accesible desde http://$1.myfarm.
+O espazo de nomes do proxecto será '''$2'''.
+As ligazóns cara a este espazo de nomes serán da seginte forma: '''<nowiki>[[$2:Nome da páxina]]</nowiki>'''.
+Se isto é o que quere, prema no botón '''Confirmar''' de embaixo.",
 	'farmer-button-confirm'                  => 'Confirmar',
 	'farmer-button-submit'                   => 'Enviar',
-	'farmer-createwiki-form-title'           => 'Crear un Wiki',
+	'farmer-createwiki-form-title'           => 'Crear un wiki',
 	'farmer-createwiki-form-text1'           => 'Use el formulario de embaixo para crear un novo wiki.',
 	'farmer-createwiki-form-help'            => 'Axuda',
-	'farmer-createwiki-form-text2'           => "; Wiki nome: O nome do wiki. Contén só letras e números. O nome do wiki pode ser usado como parte da URL para identificar o wiki. Por exemplo, se introduces '''título''', pode acceder ao seu wiki vía <nowiki>http://</nowiki>'''título'''.mydomain.",
-	'farmer-createwiki-form-text3'           => '; Wiki título: Título do wiki. Pode ser usado no título de cada páxina no seu wiki. Tamén pode ser o proxecto do espazo de nomes e o prefixo interwiki.',
-	'farmer-createwiki-form-text4'           => '; Descrición: Descrición do wiki.
+	'farmer-createwiki-form-text2'           => "; Nome do wiki: o nome do wiki.
+Contén só letras e números.
+O nome do wiki será usado como parte da URL para identificar o seu wiki.
+Por exemplo, se introduce '''título''', poderá acceder ao seu wiki desde <nowiki>http://</nowiki>'''título'''.mydomain.",
+	'farmer-createwiki-form-text3'           => '; Título do wiki: título do wiki.
+Será usado no título de cada páxina no seu wiki.
+Tamén será o espazo de nomes e o prefixo do interwiki do proxecto.',
+	'farmer-createwiki-form-text4'           => '; Descrición: descrición do wiki.
 Este é un texto descritivo sobre o wiki.
 Isto será amosado na listaxe dos wikis.',
 	'farmer-createwiki-user'                 => 'Nome do usuario',
-	'farmer-createwiki-name'                 => 'Nome do Wiki',
+	'farmer-createwiki-name'                 => 'Nome do wiki',
 	'farmer-createwiki-title'                => 'Título do wiki',
 	'farmer-createwiki-description'          => 'Descrición',
 	'farmer-updatedlist'                     => 'Lista actualizada',
 	'farmer-notaccessible'                   => 'Inaccesíbel',
+	'farmer-notaccessible-test'              => 'Esta característica só está dispoñible no wiki pai da granxa',
 	'farmer-permissiondenied'                => 'Permiso denegado',
-	'farmer-permissiondenied-text1'          => 'Vostede non ten permiso para acceder a esta páxina',
+	'farmer-permissiondenied-text'           => 'Non ten permiso para borrar un wiki da granxa',
+	'farmer-permissiondenied-text1'          => 'Non ten permiso para acceder a esta páxina',
 	'farmer-deleting'                        => 'Eliminando $1',
-	'farmer-delete-title'                    => 'Eliminar Wiki',
-	'farmer-delete-text'                     => 'Seleccione o wiki da listaxe de embaixo que vostede quere eliminar',
+	'farmer-delete-title'                    => 'Eliminar o wiki',
+	'farmer-delete-text'                     => 'Por favor, seleccione o wiki que quere eliminar na listaxe de embaixo',
 	'farmer-delete-form'                     => 'Seleccionar un wiki',
 	'farmer-delete-form-submit'              => 'Eliminar',
-	'farmer-listofwikis'                     => 'Listaxe de Wikis',
-	'farmer-mainpage'                        => 'Páxina Principal',
+	'farmer-listofwikis'                     => 'Listaxe dos wikis',
+	'farmer-mainpage'                        => 'Portada',
 	'farmer-basic-title'                     => 'Parámetros básicos',
 	'farmer-basic-title1'                    => 'Título',
 	'farmer-basic-title1-text'               => 'O seu wiki non ten un título. Elixa un AGORA',
@@ -792,7 +815,7 @@ Isto será amosado na listaxe dos wikis.',
 	'farmer-basic-description-text'          => 'Poña a descrición do seu wiki embaixo',
 	'farmer-basic-permission'                => 'Permisos',
 	'farmer-basic-permission-text'           => 'Usando o formulario de embaixo, é posíbel mudar os permisos para os usuarios deste wiki.',
-	'farmer-basic-permission-visitor'        => 'Permisos para Cada Visitante',
+	'farmer-basic-permission-visitor'        => 'Permisos para cada visitante',
 	'farmer-basic-permission-visitor-text'   => 'Os seguintes permisos serán aplicados a calquera persoa que visite este wiki',
 	'farmer-basic-permission-view'           => 'Ver todas as páxinas',
 	'farmer-basic-permission-edit'           => 'Editar todas as páxinas',
@@ -805,20 +828,33 @@ Isto será amosado na listaxe dos wikis.',
 	'farmer-yes'                             => 'Si',
 	'farmer-no'                              => 'Non',
 	'farmer-basic-permission-user'           => 'Permisos para os usuarios rexistrados',
-	'farmer-basic-permission-user-text'      => 'Os seguintes permisos serán aplicados a cada persoa que esté rexistrada neste wiki.',
+	'farmer-basic-permission-user-text'      => 'Os seguintes permisos serán aplicados a cada persoa que estea rexistrada neste wiki',
 	'farmer-setpermission'                   => 'Elixir permisos',
 	'farmer-defaultskin'                     => 'Apariencia por defecto',
+	'farmer-defaultskin-button'              => 'Fixar a apariencia por defecto',
 	'farmer-extensions'                      => 'Extensións activas',
 	'farmer-extensions-button'               => 'Elixir extensións activas',
+	'farmer-extensions-extension-denied'     => 'Non ten permiso para usar esta característica.
+Debe ser un membro do grupo da administración da granxa',
 	'farmer-extensions-invalid'              => 'Extensión non válida',
 	'farmer-extensions-invalid-text'         => 'Non podemos engadir a extensión porque o arquivo seleccionado para incluír non se pode atopar',
-	'farmer-extensions-available'            => 'Extensións Disponíbeis',
+	'farmer-extensions-available'            => 'Extensións dispoñíbeis',
 	'farmer-extensions-noavailable'          => 'Non hai extensións rexistradas',
-	'farmer-extensions-register'             => 'Rexistrar Extensión',
+	'farmer-extensions-register'             => 'Rexistrar a extensión',
+	'farmer-extensions-register-text1'       => 'Use o formulario de embaixo para rexistrar unha nova extención coa granxa.
+Unha vez que a extensión estea rexistrada, todos os wikis poderana usar.',
+	'farmer-extensions-register-text2'       => "Para o parámetro ''Incluír o ficheiro'' insira o nome do ficheiro PHP como o quere en LocalSettings.php.",
+	'farmer-extensions-register-text3'       => "Se o nome do ficheiro contén '''\$root''', esa variable será reemprazada coa raíz do directorio MediaWiki.",
+	'farmer-extensions-register-text4'       => 'Os camiños incluídos actualmente son:',
 	'farmer-extensions-register-name'        => 'Nome',
-	'farmer-extensions-register-includefile' => 'Arquivo Incluído',
+	'farmer-extensions-register-includefile' => 'Incluír o ficheiro',
 	'farmer-error-exists'                    => 'Non pode crear o wiki. Xa existe: $1',
+	'farmer-error-nodirconfig'               => 'configDirectory non foi atopado:',
+	'farmer-error-defnotset'                 => 'A apariencia por defecto do wiki debe ser fixada',
+	'farmer-error-mapnotfound'               => 'Non foi atopada a función para "mapear" o nome do wiki na granxa:',
+	'farmer-error-nofileconfwrite'           => 'O granxeiro MediaWiki non pode escribir o ficheiro de configuración por defecto do wiki.',
 	'farmer-error-funcnotcall'               => 'Non se puido chamar a función:',
+	'farmer-error-noextwrite'                => 'Non pode escribir a extensión do ficheiro:',
 	'farmer-error-wikicorrupt'               => 'O wiki gardado está corrompido',
 );
 
@@ -865,7 +901,7 @@ $messages['gv'] = array(
 	'farmer-basic-permission-createpage'     => 'Croo duillagyn noa',
 	'farmer-basic-permission-createtalk'     => 'Croo duillagyn resoonaght',
 	'farmer-basic-permission-move'           => 'Scughey duillagyn',
-	'farmer-basic-permission-upload'         => 'Coadanyn dy lughtaghey seose',
+	'farmer-basic-permission-upload'         => 'Cur neese coadanyn',
 	'farmer-yes'                             => 'Ta',
 	'farmer-no'                              => 'Cha',
 	'farmer-extensions-register-name'        => 'Ennym',
@@ -1689,6 +1725,9 @@ $messages['mr'] = array(
  * @author Slomox
  */
 $messages['nds'] = array(
+	'farmer-about'                    => 'Över',
+	'farmer-createwiki'               => 'Wiki nee opstellen',
+	'farmer-createwiki-text'          => '[[$1|Stell]] nu en nee Wiki op!',
 	'farmer-mainpage'                 => 'Hööftsiet',
 	'farmer-yes'                      => 'Jo',
 	'farmer-no'                       => 'Nee',
