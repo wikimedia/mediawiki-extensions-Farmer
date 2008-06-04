@@ -1435,7 +1435,7 @@ $messages['ksh'] = array(
 /** Kurdish (Kurdî / كوردی)
  * @author Bangin
  */
-$messages['ku'] = array(
+$messages['ku-latn'] = array(
 	'farmer-basic-permission-upload' => "Wêneyan ya data'yan barbike",
 );
 
