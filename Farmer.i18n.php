@@ -1471,6 +1471,7 @@ $messages['lb'] = array(
 	'farmer-createwiki-title'            => 'Titel vun der Wiki',
 	'farmer-createwiki-description'      => 'Beschreiwung',
 	'farmer-updatedlist'                 => 'Geännert Lëscht',
+	'farmer-notaccessible'               => 'Net zougänglech',
 	'farmer-permissiondenied'            => 'Erlaabnis refuséiert',
 	'farmer-deleting'                    => 'Läsche vun $1',
 	'farmer-delete-title'                => 'Eng Wiki läschen',
@@ -1478,6 +1479,7 @@ $messages['lb'] = array(
 	'farmer-delete-form-submit'          => 'Läschen',
 	'farmer-listofwikis'                 => 'Lëscht vun de Wikien',
 	'farmer-mainpage'                    => 'Haaptsäit',
+	'farmer-basic-title'                 => 'Basisparameteren',
 	'farmer-basic-title1'                => 'Titel',
 	'farmer-basic-description'           => 'Beschreiwung',
 	'farmer-basic-description-text'      => "Gitt d'Beschreiwung vun ärer Wiki hei ënnedrënner an",
@@ -2283,7 +2285,9 @@ $messages['ps'] = array(
 	'farmer-list-wiki'                => 'د ويکي ګانو لړليک',
 	'farmer-confirmsetting-name'      => 'نوم: $1',
 	'farmer-confirmsetting-title'     => 'سرليک: $1',
+	'farmer-description'              => 'څرګندونه',
 	'farmer-createwiki-user'          => 'کارن-نوم',
+	'farmer-createwiki-description'   => 'څرګندونه',
 	'farmer-permissiondenied'         => 'د اجازې غوښتنه مو رد شوه',
 	'farmer-permissiondenied-text1'   => 'تاسو همدې مخ ته د لاسرسۍ اجازه نه لرۍ',
 	'farmer-deleting'                 => '$1 د ړنګولو په حال کې',
@@ -2294,6 +2298,7 @@ $messages['ps'] = array(
 	'farmer-mainpage'                 => 'لومړی مخ',
 	'farmer-basic-title1'             => 'سرليک',
 	'farmer-basic-title1-text'        => 'ستاسو ويکي هېڅ يو سرليک هم نه لري. يو ورته وټاکۍ',
+	'farmer-basic-description'        => 'څرګندونه',
 	'farmer-basic-permission-view'    => 'ټول مخونه ښکاره کول',
 	'farmer-basic-permission-upload'  => 'دوتنې پورته کول',
 	'farmer-yes'                      => 'هو',
@@ -2525,6 +2530,11 @@ $messages['ru'] = array(
 	'farmer-error-wikicorrupt'               => 'Хранящаяся вики повреждена',
 );
 
+/** Sassaresu (Sassaresu) */
+$messages['sdc'] = array(
+	'farmer-basic-permission-upload' => 'Carrigga file mùrthimediari',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
@@ -2660,6 +2670,13 @@ $messages['ss'] = array(
  */
 $messages['stq'] = array(
 	'farmer-createwiki-form-help' => 'Hälpe',
+);
+
+/** Sundanese (Basa Sunda) */
+$messages['su'] = array(
+	'farmer-about'                => 'Ngeunaan',
+	'farmer-confirmsetting-name'  => 'Ngaran: $1',
+	'farmer-confirmsetting-title' => 'Judul: $1',
 );
 
 /** Swedish (Svenska)
