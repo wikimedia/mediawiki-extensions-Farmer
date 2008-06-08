@@ -2530,7 +2530,9 @@ $messages['ru'] = array(
 	'farmer-error-wikicorrupt'               => 'Хранящаяся вики повреждена',
 );
 
-/** Sassaresu (Sassaresu) */
+/** Sassaresu (Sassaresu)
+ * @author Felis
+ */
 $messages['sdc'] = array(
 	'farmer-basic-permission-upload' => 'Carrigga file mùrthimediari',
 );
@@ -2672,7 +2674,9 @@ $messages['stq'] = array(
 	'farmer-createwiki-form-help' => 'Hälpe',
 );
 
-/** Sundanese (Basa Sunda) */
+/** Sundanese (Basa Sunda)
+ * @author Irwangatot
+ */
 $messages['su'] = array(
 	'farmer-about'                => 'Ngeunaan',
 	'farmer-confirmsetting-name'  => 'Ngaran: $1',
