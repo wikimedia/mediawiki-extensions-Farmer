@@ -1425,6 +1425,7 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'farmer-about'                    => 'Üvver',
 	'farmer-button-submit'            => 'Loß Jonn!',
 	'farmer-createwiki-user'          => 'Metmaacher',
 	'farmer-deleting'                 => '„$1“ weed fottjeschmeße',
@@ -2681,6 +2682,8 @@ $messages['su'] = array(
 	'farmer-about'                => 'Ngeunaan',
 	'farmer-confirmsetting-name'  => 'Ngaran: $1',
 	'farmer-confirmsetting-title' => 'Judul: $1',
+	'farmer-basic-title1'         => 'Judul',
+	'farmer-basic-description'    => 'Pedaran',
 );
 
 /** Swedish (Svenska)
