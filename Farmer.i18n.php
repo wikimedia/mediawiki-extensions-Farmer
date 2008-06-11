@@ -608,12 +608,13 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wiki
  * @author Urhixidur
  * @author Grondin
  * @author Dereckson
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'farmer'                                 => 'Administration Multi Wikis',
 	'farmer-desc'                            => 'Administre plusieurs wikis',
 	'farmercantcreatewikis'                  => 'Vous ne pouvez pas créer des wikis car vous n’avez pas l’habilitation « createwikis » nécessaire pour cela.',
-	'farmercreateurl'                        => 'l’adresse',
+	'farmercreateurl'                        => 'adresse URL',
 	'farmercreatesitename'                   => 'Nom du site',
 	'farmercreatenextstep'                   => 'Étape suivante',
 	'farmernewwikimainpage'                  => '== Bienvenue dans votre Wiki ==
@@ -2680,8 +2681,10 @@ $messages['stq'] = array(
  */
 $messages['su'] = array(
 	'farmer-about'                => 'Ngeunaan',
+	'farmer-createwiki'           => 'Jieun hiji Wiki',
 	'farmer-confirmsetting-name'  => 'Ngaran: $1',
 	'farmer-confirmsetting-title' => 'Judul: $1',
+	'farmer-createwiki-user'      => 'Landihan',
 	'farmer-basic-title1'         => 'Judul',
 	'farmer-basic-description'    => 'Pedaran',
 );
