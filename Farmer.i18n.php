@@ -1262,10 +1262,12 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
 
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
+ * @author Irwangatot
  */
 $messages['id'] = array(
-	'farmer-createwiki-user' => 'Nama pengguna',
-	'farmer-no'              => 'Tidak',
+	'farmer-createwiki-user'          => 'Nama pengguna',
+	'farmer-no'                       => 'Tidak',
+	'farmer-extensions-register-name' => 'Nama',
 );
 
 /** Icelandic (Íslenska)
