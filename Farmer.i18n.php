@@ -729,6 +729,13 @@ $messages['frp'] = array(
 	'farmercreateurl' => 'l’adrèce',
 );
 
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'farmer-yes' => 'Ja',
+);
+
 /** Galician (Galego)
  * @author Toliño
  * @author Alma
@@ -913,7 +920,8 @@ $messages['gv'] = array(
  * @author Singularity
  */
 $messages['haw'] = array(
-	'farmer-about' => 'E pili ana',
+	'farmer-about'                    => 'E pili ana',
+	'farmer-extensions-register-name' => 'Inoa',
 );
 
 /** Hindi (हिन्दी)
@@ -1447,63 +1455,65 @@ $messages['ku-latn'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'farmer'                             => 'Administratioun vu méi Wikien',
-	'farmer-desc'                        => 'Méi Wikien organiséieren',
-	'farmercantcreatewikis'              => 'Dir kënnt keng nei Wiki opmaachen well dir keng "cratewiki"-Rechter hutt',
-	'farmercreatesitename'               => 'Numm vum Site',
-	'farmercreatenextstep'               => 'Nächste Schrëtt',
-	'farmer-about'                       => 'Iwwer',
-	'farmer-list-wiki'                   => 'Lëscht vun de Wikien',
-	'farmer-list-wiki-text'              => '[[$1|Lëscht]] vun alle Wikien op {{SITENAME}}',
-	'farmer-createwiki'                  => 'Eng Wiki ufänken',
-	'farmer-administration-extension'    => 'Erweiderungen organiséieren',
-	'farmer-administration-delete'       => 'E Wiki läschen',
-	'farmer-administer-thiswiki'         => 'Dës Wiki administréieren',
-	'farmer-notavailable'                => 'Net disponibel',
-	'farmer-wikicreated'                 => 'Wiki gemaach',
-	'farmer-wikiexists'                  => "D'Wiki gëtt et",
-	'farmer-confirmsetting-name'         => 'Numm: $1',
-	'farmer-confirmsetting-title'        => 'Iwwerschrëft: $1',
-	'farmer-confirmsetting-description'  => 'Beschreiwung: $1',
-	'farmer-description'                 => 'Beschreiwung',
-	'farmer-button-confirm'              => 'Confirméieren',
-	'farmer-button-submit'               => 'Späicheren',
-	'farmer-createwiki-form-title'       => 'Eng Wiki ufänken',
-	'farmer-createwiki-form-help'        => 'Hëllef',
-	'farmer-createwiki-user'             => 'Benotzernumm',
-	'farmer-createwiki-name'             => 'Numm vun der Wiki',
-	'farmer-createwiki-title'            => 'Titel vun der Wiki',
-	'farmer-createwiki-description'      => 'Beschreiwung',
-	'farmer-updatedlist'                 => 'Geännert Lëscht',
-	'farmer-notaccessible'               => 'Net zougänglech',
-	'farmer-permissiondenied'            => 'Erlaabnis refuséiert',
-	'farmer-deleting'                    => 'Läsche vun $1',
-	'farmer-delete-title'                => 'Eng Wiki läschen',
-	'farmer-delete-form'                 => 'Wielt eng Wiki eraus',
-	'farmer-delete-form-submit'          => 'Läschen',
-	'farmer-listofwikis'                 => 'Lëscht vun de Wikien',
-	'farmer-mainpage'                    => 'Haaptsäit',
-	'farmer-basic-title'                 => 'Basisparameteren',
-	'farmer-basic-title1'                => 'Titel',
-	'farmer-basic-description'           => 'Beschreiwung',
-	'farmer-basic-description-text'      => "Gitt d'Beschreiwung vun ärer Wiki hei ënnedrënner an",
-	'farmer-basic-permission'            => 'Rechter',
-	'farmer-basic-permission-view'       => 'All Säite weisen',
-	'farmer-basic-permission-edit'       => 'All Säiten änneren',
-	'farmer-basic-permission-createpage' => 'Nei Säite maachen',
-	'farmer-basic-permission-createtalk' => 'Nei Diskussiounssäite maachen',
-	'farmer-basic-permission-move'       => 'Säite réckelen',
-	'farmer-basic-permission-upload'     => 'Fichieren eroplueden',
-	'farmer-basic-permission-minoredit'  => 'Kleng Ännerungen erlaben',
-	'farmer-yes'                         => 'Jo',
-	'farmer-no'                          => 'Neen',
-	'farmer-setpermission'               => 'Rechter configuréieren',
-	'farmer-extensions'                  => 'Aktiv Erweiderungen',
-	'farmer-extensions-invalid'          => 'Ongëlteg Erweiderung',
-	'farmer-extensions-available'        => 'Disponibel Erweiderungen',
-	'farmer-extensions-register'         => 'Erweiderung ofspäicheren',
-	'farmer-extensions-register-name'    => 'Numm',
-	'farmer-error-exists'                => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
+	'farmer'                               => 'Administratioun vu méi Wikien',
+	'farmer-desc'                          => 'Méi Wikien organiséieren',
+	'farmercantcreatewikis'                => 'Dir kënnt keng nei Wiki opmaachen well dir keng "cratewiki"-Rechter hutt',
+	'farmercreatesitename'                 => 'Numm vum Site',
+	'farmercreatenextstep'                 => 'Nächste Schrëtt',
+	'farmer-about'                         => 'Iwwer',
+	'farmer-list-wiki'                     => 'Lëscht vun de Wikien',
+	'farmer-list-wiki-text'                => '[[$1|Lëscht]] vun alle Wikien op {{SITENAME}}',
+	'farmer-createwiki'                    => 'Eng Wiki ufänken',
+	'farmer-administration-extension'      => 'Erweiderungen organiséieren',
+	'farmer-administration-extension-text' => '[[$1|Organiséiert]] déi installeiert Erweiderungen.',
+	'farmer-administration-delete'         => 'E Wiki läschen',
+	'farmer-administer-thiswiki'           => 'Dës Wiki administréieren',
+	'farmer-notavailable'                  => 'Net disponibel',
+	'farmer-wikicreated'                   => 'Wiki gemaach',
+	'farmer-wikiexists'                    => "D'Wiki gëtt et",
+	'farmer-confirmsetting'                => "Confirméiert d'Astellunge vun der Wiki",
+	'farmer-confirmsetting-name'           => 'Numm: $1',
+	'farmer-confirmsetting-title'          => 'Iwwerschrëft: $1',
+	'farmer-confirmsetting-description'    => 'Beschreiwung: $1',
+	'farmer-description'                   => 'Beschreiwung',
+	'farmer-button-confirm'                => 'Confirméieren',
+	'farmer-button-submit'                 => 'Späicheren',
+	'farmer-createwiki-form-title'         => 'Eng Wiki ufänken',
+	'farmer-createwiki-form-help'          => 'Hëllef',
+	'farmer-createwiki-user'               => 'Benotzernumm',
+	'farmer-createwiki-name'               => 'Numm vun der Wiki',
+	'farmer-createwiki-title'              => 'Titel vun der Wiki',
+	'farmer-createwiki-description'        => 'Beschreiwung',
+	'farmer-updatedlist'                   => 'Geännert Lëscht',
+	'farmer-notaccessible'                 => 'Net zougänglech',
+	'farmer-permissiondenied'              => 'Erlaabnis refuséiert',
+	'farmer-deleting'                      => 'Läsche vun $1',
+	'farmer-delete-title'                  => 'Eng Wiki läschen',
+	'farmer-delete-form'                   => 'Wielt eng Wiki eraus',
+	'farmer-delete-form-submit'            => 'Läschen',
+	'farmer-listofwikis'                   => 'Lëscht vun de Wikien',
+	'farmer-mainpage'                      => 'Haaptsäit',
+	'farmer-basic-title'                   => 'Basisparameteren',
+	'farmer-basic-title1'                  => 'Titel',
+	'farmer-basic-description'             => 'Beschreiwung',
+	'farmer-basic-description-text'        => "Gitt d'Beschreiwung vun ärer Wiki hei ënnedrënner an",
+	'farmer-basic-permission'              => 'Rechter',
+	'farmer-basic-permission-view'         => 'All Säite weisen',
+	'farmer-basic-permission-edit'         => 'All Säiten änneren',
+	'farmer-basic-permission-createpage'   => 'Nei Säite maachen',
+	'farmer-basic-permission-createtalk'   => 'Nei Diskussiounssäite maachen',
+	'farmer-basic-permission-move'         => 'Säite réckelen',
+	'farmer-basic-permission-upload'       => 'Fichieren eroplueden',
+	'farmer-basic-permission-minoredit'    => 'Kleng Ännerungen erlaben',
+	'farmer-yes'                           => 'Jo',
+	'farmer-no'                            => 'Neen',
+	'farmer-setpermission'                 => 'Rechter configuréieren',
+	'farmer-extensions'                    => 'Aktiv Erweiderungen',
+	'farmer-extensions-invalid'            => 'Ongëlteg Erweiderung',
+	'farmer-extensions-available'          => 'Disponibel Erweiderungen',
+	'farmer-extensions-register'           => 'Erweiderung ofspäicheren',
+	'farmer-extensions-register-name'      => 'Numm',
+	'farmer-error-exists'                  => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
 );
 
 /** Malayalam (മലയാളം)
@@ -3024,10 +3034,13 @@ $messages['tg-cyrl'] = array(
 
 /** Turkish (Türkçe)
  * @author Suelnur
+ * @author Karduelis
  */
 $messages['tr'] = array(
-	'farmer-yes' => 'Evet',
-	'farmer-no'  => 'Hayır',
+	'farmer-delete-form-submit' => 'Sil',
+	'farmer-basic-title1'       => 'Başlık',
+	'farmer-yes'                => 'Evet',
+	'farmer-no'                 => 'Hayır',
 );
 
 /** Vietnamese (Tiếng Việt)
