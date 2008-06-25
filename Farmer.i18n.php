@@ -144,6 +144,14 @@ $messages['krl'] = array(
 	'farmer-basic-permission-upload' => 'Panna fajlit',
 );
 
+/** Eastern Mari (Олык Марий йылме)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'farmer-delete-form-submit' => 'Шӧраш',
+	'farmer-mainpage'           => 'Тӱҥ лаштык',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  */
@@ -607,6 +615,7 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wiki
 /** French (Français)
  * @author Urhixidur
  * @author Grondin
+ * @author IAlex
  * @author Dereckson
  * @author Verdy p
  */
@@ -637,7 +646,7 @@ Si vous lisez ce message, ceci indique que votre wiki a été installé correcte
 	'farmer-notavailable'                    => 'Non disponible',
 	'farmer-notavailable-text'               => 'Ce programme n’est disponible que sur le site principal',
 	'farmer-wikicreated'                     => 'Wiki créé',
-	'farmer-wikicreated-text'                => 'Votre wiki a été créé. Il est disponible sur',
+	'farmer-wikicreated-text'                => 'Votre wiki a été créé. Il est disponible sur $1',
 	'farmer-default'                         => 'Personne ne dispose, par défaut, de permissions sur ce wiki à part vous. Vous pouvez changer les privilèges utilisateur via $1',
 	'farmer-wikiexists'                      => 'Le Wiki existe',
 	'farmer-wikiexists-text'                 => "Le wiki intitulé '''$1''' et que vous vouliez créer, existe déjà.  Nous vous invitons à retourner en arrière et d’essayer un nouveau nom.",
@@ -921,6 +930,7 @@ $messages['gv'] = array(
  */
 $messages['haw'] = array(
 	'farmer-about'                    => 'E pili ana',
+	'farmer-basic-permission-upload'  => 'Ho‘ouka i nā waihona',
 	'farmer-extensions-register-name' => 'Inoa',
 );
 
@@ -1507,10 +1517,12 @@ $messages['lb'] = array(
 	'farmer-basic-permission-minoredit'    => 'Kleng Ännerungen erlaben',
 	'farmer-yes'                           => 'Jo',
 	'farmer-no'                            => 'Neen',
+	'farmer-basic-permission-user-text'    => 'Dës Rechter kréien all déi Persounen déi op dëser Wiki ageloggt sinn',
 	'farmer-setpermission'                 => 'Rechter configuréieren',
 	'farmer-extensions'                    => 'Aktiv Erweiderungen',
 	'farmer-extensions-invalid'            => 'Ongëlteg Erweiderung',
 	'farmer-extensions-available'          => 'Disponibel Erweiderungen',
+	'farmer-extensions-noavailable'        => 'Et ass keng Erweiderung registréiert',
 	'farmer-extensions-register'           => 'Erweiderung ofspäicheren',
 	'farmer-extensions-register-name'      => 'Numm',
 	'farmer-error-exists'                  => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
