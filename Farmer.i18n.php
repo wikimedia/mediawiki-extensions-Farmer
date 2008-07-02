@@ -136,6 +136,13 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'farmer-delete-form-submit' => 'Sfaḍ',
+);
+
 /** Karelian (Karjala)
  * @author Flrn
  */
@@ -150,6 +157,16 @@ $messages['krl'] = array(
 $messages['mhr'] = array(
 	'farmer-delete-form-submit' => 'Шӧраш',
 	'farmer-mainpage'           => 'Тӱҥ лаштык',
+);
+
+/** Niuean (native name missing)
+ * @author Jose77
+ */
+$messages['niu'] = array(
+	'farmer-createwiki-form-help' => 'Lagomatai',
+	'farmer-createwiki-user'      => 'Matahigoa he tagata',
+	'farmer-delete-form-submit'   => 'Tamate',
+	'farmer-mainpage'             => 'Matapatu Lau',
 );
 
 /** Afrikaans (Afrikaans)
@@ -574,6 +591,7 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 	'farmer-extensions-invalid'              => 'Nevalida Etendilo',
 	'farmer-extensions-available'            => 'Atingeblaj Etendiloj',
 	'farmer-extensions-noavailable'          => 'Neniuj etendiloj estas registritaj',
+	'farmer-extensions-register'             => 'Registri Etendilon',
 	'farmer-extensions-register-name'        => 'Nomo',
 	'farmer-extensions-register-includefile' => 'Inkluzivu Dosieron',
 	'farmer-error-exists'                    => 'Ne povas krei vikion. Ĝi jam ekzistas: $1',
@@ -923,6 +941,14 @@ $messages['gv'] = array(
 	'farmer-no'                              => 'Cha',
 	'farmer-extensions-register-name'        => 'Ennym',
 	'farmer-extensions-register-includefile' => 'Goaill stiagh y coadan',
+);
+
+/** Hakka (Hak-kâ-fa)
+ * @author Hakka
+ */
+$messages['hak'] = array(
+	'farmer-delete-form-submit' => 'Chhù-thet',
+	'farmer-mainpage'           => 'Thèu-chông',
 );
 
 /** Hawaiian (Hawai`i)
@@ -1278,6 +1304,13 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
 	'farmer-error-wikicorrupt'               => 'A tárolt wiki sérült',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'farmer-createwiki-user' => 'Nomine de usator',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
  * @author Irwangatot
@@ -1526,6 +1559,13 @@ $messages['lb'] = array(
 	'farmer-extensions-register'           => 'Erweiderung ofspäicheren',
 	'farmer-extensions-register-name'      => 'Numm',
 	'farmer-error-exists'                  => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
+);
+
+/** Lithuanian (Lietuvių)
+ * @author Tomasdd
+ */
+$messages['lt'] = array(
+	'farmer-delete-form-submit' => 'Ištrinti',
 );
 
 /** Malayalam (മലയാളം)
