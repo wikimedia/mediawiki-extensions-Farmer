@@ -136,11 +136,22 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
+/** Faeag Rotuma (Faeag Rotuma)
+ * @author Jose77
+ */
+$messages['rtm'] = array(
+	'farmer-about'           => 'Hün se',
+	'farmer-createwiki-user' => 'Asa',
+	'farmer-mainpage'        => 'Pej Maha',
+);
+
 /** Tarifit (Tarifit)
  * @author Jose77
  */
 $messages['rif'] = array(
-	'farmer-delete-form-submit' => 'Sfaḍ',
+	'farmer-createwiki-form-help' => 'AƐawn',
+	'farmer-delete-form-submit'   => 'Sfaḍ',
+	'farmer-mainpage'             => 'Tasbtirt Tamzwarut',
 );
 
 /** Karelian (Karjala)
@@ -151,12 +162,14 @@ $messages['krl'] = array(
 	'farmer-basic-permission-upload' => 'Panna fajlit',
 );
 
-/** Eastern Mari (Олык Марий йылме)
+/** Eastern Mari (Олык Марий)
  * @author Сай
  */
 $messages['mhr'] = array(
-	'farmer-delete-form-submit' => 'Шӧраш',
-	'farmer-mainpage'           => 'Тӱҥ лаштык',
+	'farmer-createwiki-form-help'    => 'Полшык',
+	'farmer-delete-form-submit'      => 'Шӧраш',
+	'farmer-mainpage'                => 'Тӱҥ лаштык',
+	'farmer-basic-permission-upload' => 'Файлым пурташ',
 );
 
 /** Niuean (native name missing)
@@ -191,7 +204,8 @@ $messages['af'] = array(
  * @author Juanpabl
  */
 $messages['an'] = array(
-	'farmer-button-submit' => 'Nimbiar',
+	'farmer-button-confirm' => 'Confirmar',
+	'farmer-button-submit'  => 'Nimbiar',
 );
 
 /** Arabic (العربية)
