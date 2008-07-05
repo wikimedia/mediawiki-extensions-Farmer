@@ -358,6 +358,10 @@ $messages['bg'] = array(
 	'farmer-confirmsetting-title'            => 'Заглавие: $1',
 	'farmer-confirmsetting-description'      => 'Описание: $1',
 	'farmer-description'                     => 'Описание',
+	'farmer-confirmsetting-text'             => "Вашето уики '''$1''' ще бъде достъпно на адрес http://$1.myfarm.
+Проектното именно пространство е '''$2'''.
+Препратките към това именно пространство ще са от вида '''<nowiki>[[$2:Page Name]]</nowiki>'''.
+Ако това е желанието ви, натиснете бутона '''потвърждаване''' по-долу.",
 	'farmer-button-confirm'                  => 'Потвърждаване',
 	'farmer-button-submit'                   => 'Изпращане',
 	'farmer-createwiki-form-title'           => 'Създаване на уики',
@@ -372,6 +376,7 @@ $messages['bg'] = array(
 	'farmer-createwiki-description'          => 'Описание',
 	'farmer-notaccessible'                   => 'Недостъпно',
 	'farmer-notaccessible-test'              => 'Тази възможност е достъпна само на основното уики от фермата',
+	'farmer-permissiondenied'                => 'Достъпът е отказан',
 	'farmer-permissiondenied-text'           => 'Нямате права да изтривате уики от фермата',
 	'farmer-permissiondenied-text1'          => 'Нямате права да отворите тази страница',
 	'farmer-deleting'                        => 'Изтриване на $1',
