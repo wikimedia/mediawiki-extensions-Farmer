@@ -466,7 +466,7 @@ $messages['cs'] = array(
 	'farmer-createwiki-user' => 'Uživatelské jméno',
 );
 
-/** Church Slavic (Словѣньскъ)
+/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
