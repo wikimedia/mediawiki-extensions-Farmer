@@ -1498,12 +1498,35 @@ $messages['krj'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'farmer-about'                    => 'Üvver',
-	'farmer-button-submit'            => 'Loß Jonn!',
-	'farmer-createwiki-user'          => 'Metmaacher',
-	'farmer-deleting'                 => '„$1“ weed fottjeschmeße',
-	'farmer-delete-form-submit'       => 'Fott domet!',
-	'farmer-extensions-register-name' => 'Name',
+	'farmer'                            => 'Farmer',
+	'farmercreatenextstep'              => 'Der näkßte Schrett',
+	'farmernewwikimainpage'             => '== Wellkumme op Dingem Wiki ==
+Wann De dat heh lësse kannß, dann eß Ding Wiki öhndlesch opjesaz.
+Öm Dingem Wiki sing Ėnshtëllonge zerääsch ze maache, doh jangk op di Sigk [[{{#special:Farmer}}]].',
+	'farmer-about'                      => 'Üvver',
+	'farmer-list-wiki'                  => 'Lėßß met_te Wikiiß',
+	'farmer-createwiki'                 => 'E Wikki aanlääje',
+	'farmer-administration-delete'      => 'E Wikki fott maache',
+	'farmer-notavailable'               => 'Ham_mer nit',
+	'farmer-wikicreated'                => 'Wikki aanjelaat',
+	'farmer-wikiexists'                 => 'Dat Wikki jidd_et alldt',
+	'farmer-button-confirm'             => 'Beshtätije',
+	'farmer-button-submit'              => 'Loß Jonn!',
+	'farmer-createwiki-form-title'      => 'E nöü Wikki opmaache',
+	'farmer-createwiki-form-help'       => 'Hölp',
+	'farmer-createwiki-user'            => 'Metmaacher',
+	'farmer-createwiki-name'            => 'Däm Wiki singe Name',
+	'farmer-createwiki-title'           => 'Däm Wiki singe Tittel',
+	'farmer-deleting'                   => '„$1“ weed fottjeschmeße',
+	'farmer-delete-title'               => 'E Wikki fott maache',
+	'farmer-delete-form-submit'         => 'Fott domet!',
+	'farmer-basic-permission-minoredit' => 'Klein Mini-Änderonge zohlohße',
+	'farmer-yes'                        => 'Joh',
+	'farmer-no'                         => 'Nää',
+	'farmer-extensions-register-text3'  => 'Wann en däm Name fun dä Dattëj <code>$root</code> dren shtish, dann shtëjt dat för dat Aanfangß_Fo\'zëjshnėß fun_de MedijaWikki ßofwäe.',
+	'farmer-extensions-register-name'   => 'Name',
+	'farmer-error-exists'               => 'Dat Wikki „$1“ jidd_et alldt. Dat kan_nid_norr_enß nöü aanjelaat wääde.',
+	'farmer-error-wikicorrupt'          => 'Wat doh als_e Wikki jesėschot wohr eß kappott.',
 );
 
 /** Kurdish (Kurdî / كوردی)
