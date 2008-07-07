@@ -145,15 +145,6 @@ $messages['rtm'] = array(
 	'farmer-mainpage'        => 'Pej Maha',
 );
 
-/** Tarifit (Tarifit)
- * @author Jose77
- */
-$messages['rif'] = array(
-	'farmer-createwiki-form-help' => 'AƐawn',
-	'farmer-delete-form-submit'   => 'Sfaḍ',
-	'farmer-mainpage'             => 'Tasbtirt Tamzwarut',
-);
-
 /** Karelian (Karjala)
  * @author Flrn
  */
@@ -167,12 +158,13 @@ $messages['krl'] = array(
  */
 $messages['mhr'] = array(
 	'farmer-createwiki-form-help'    => 'Полшык',
+	'farmer-createwiki-user'         => 'Пайдаланышын лӱмжӧ',
 	'farmer-delete-form-submit'      => 'Шӧраш',
 	'farmer-mainpage'                => 'Тӱҥ лаштык',
 	'farmer-basic-permission-upload' => 'Файлым пурташ',
 );
 
-/** Niuean (native name missing)
+/** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
 $messages['niu'] = array(
@@ -2524,6 +2516,15 @@ Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar 
 	'farmer-error-funcnotcall'               => 'Não foi possível chamar a função:',
 	'farmer-error-noextwrite'                => 'Não foi possível escrever para ficheiro de extensão:',
 	'farmer-error-wikicorrupt'               => 'O wiki armazenado está corrompido',
+);
+
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'farmer-createwiki-form-help' => 'AƐawn',
+	'farmer-delete-form-submit'   => 'Sfaḍ',
+	'farmer-mainpage'             => 'Tasbtirt Tamzwarut',
 );
 
 /** Russian (Русский)
