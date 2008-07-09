@@ -537,6 +537,7 @@ Se vi legas tion ĉi, via vikio estas sukcese instalita.
 Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-about'                           => 'Pri',
 	'farmer-list-wiki'                       => 'Listo de Vikioj',
+	'farmer-list-wiki-text'                  => '[[$1|Listigi]] ĉiujn vikiojn en {{SITENAME}}',
 	'farmer-createwiki'                      => 'Krei Vikion',
 	'farmer-createwiki-text'                 => '[[$1|Kreu]] novan vikion nun!',
 	'farmer-administration-extension'        => 'Kontroli Etendilojn',
@@ -1432,6 +1433,7 @@ $messages['km'] = array(
 	'farmer-createwiki-text'                => '[[$1|បង្កើត]]វិគីថ្មីមួយទៅ!',
 	'farmer-admimistration-listupdate-text' => '[[$1|បន្ទាន់សម័យ]] បញ្ជី នៃ វិគី លើ {{SITENAME}}',
 	'farmer-administration-delete'          => 'លុបវិគីចេញ',
+	'farmer-administer-thiswiki'            => 'អភិរក្សវិគីនេះ',
 	'farmer-wikicreated'                    => 'វិគីត្រូវបានបង្កើតហើយ',
 	'farmer-wikiexists'                     => 'វិគីមានរូចហើយ',
 	'farmer-wikiexists-text'                => "វិគី​ដែលអ្នក​កំពុងព្យាយាមបង្កើត ('''$1''') មានរួចហើយ។ សូម​ត្រលប់ក្រោយ​ហើយ​ព្យាយាម​ប្រើឈ្មោះផ្សេងទៀត។",
@@ -1460,17 +1462,17 @@ $messages['km'] = array(
 	'farmer-basic-title1'                   => 'ចំណងជើង',
 	'farmer-basic-title1-text'              => 'វិគីរបស់លោកអ្នកមិនទាន់មានចំណងជើងទេ។ សូមដាក់ចំណងជើងឱ្យវាពេលនេះ!',
 	'farmer-basic-description'              => 'ការពិពណ៌នា',
-	'farmer-basic-permission'               => 'ការអនុញ្ញាតិ នានា',
+	'farmer-basic-permission'               => 'ការអនុញ្ញាត',
 	'farmer-basic-permission-view'          => 'មើលគ្រប់ទំព័រ',
 	'farmer-basic-permission-edit'          => 'កែប្រែគ្រប់ទំព័រ',
-	'farmer-basic-permission-createpage'    => 'បង្កើត ទំព័រ ថ្មីៗ',
+	'farmer-basic-permission-createpage'    => 'បង្កើតទំព័រថ្មីៗ',
 	'farmer-basic-permission-createtalk'    => 'បង្កើតទំព័រពិភាក្សា',
 	'farmer-basic-permission-move'          => 'ប្តូរទីតាំងទំព័រ',
 	'farmer-basic-permission-upload'        => 'ផ្ទុកឡើង ឯកសារ',
-	'farmer-basic-permission-minoredit'     => 'អនុញ្ញាតិ កំណែប្រែ តិចតួច',
+	'farmer-basic-permission-minoredit'     => 'អនុញ្ញាតកំនែប្រែតិចតួច',
 	'farmer-yes'                            => 'បាទ / ចាស',
 	'farmer-no'                             => 'ទេ',
-	'farmer-defaultskin'                    => 'សំបក លំនាំដើម',
+	'farmer-defaultskin'                    => 'សំបកលំនាំដើម',
 	'farmer-defaultskin-button'             => 'កំណត់ សំបក លំនាំដើម',
 	'farmer-extensions-register-name'       => 'ឈ្មោះ',
 	'farmer-error-exists'                   => 'មិនអាចបង្កើតវិគីបានទេ។ វាមានរួចជាស្រេចហើយ៖$1',
@@ -1521,7 +1523,7 @@ Wann De dat heh lësse kannß, dann eß Ding Wiki öhndlesch opjesaz.
 	'farmer-error-wikicorrupt'          => 'Wat doh als_e Wikki jesėschot wohr eß kappott.',
 );
 
-/** Kurdish (Kurdî / كوردی)
+/** Kurdish (Latin) (Kurdî / كوردی (Latin))
  * @author Bangin
  */
 $messages['ku-latn'] = array(
@@ -2913,7 +2915,7 @@ Du måste vara medlem av användargruppen farmeradmin',
 	'farmer-error-wikicorrupt'               => 'Den sparade wikin är fördärvad',
 );
 
-/** Silesian (ślůnski)
+/** Silesian (Ślůnski)
  * @author Herr Kriss
  */
 $messages['szl'] = array(
