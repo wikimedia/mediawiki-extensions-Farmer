@@ -1320,7 +1320,8 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'farmer-createwiki-user' => 'Nomine de usator',
+	'farmer-createwiki-user'    => 'Nomine de usator',
+	'farmer-delete-form-submit' => 'Deler',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -3138,6 +3139,13 @@ $messages['tr'] = array(
 	'farmer-basic-title1'       => 'Başlık',
 	'farmer-yes'                => 'Evet',
 	'farmer-no'                 => 'Hayır',
+);
+
+/** Ukrainian (Українська)
+ * @author AS
+ */
+$messages['uk'] = array(
+	'farmer-basic-title1' => 'Заголовок',
 );
 
 /** Vietnamese (Tiếng Việt)
