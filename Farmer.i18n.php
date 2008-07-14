@@ -1343,6 +1343,13 @@ $messages['is'] = array(
 	'farmer-createwiki-user'     => 'Notandanafn',
 );
 
+/** Italian (Italiano)
+ * @author Pietrodn
+ */
+$messages['it'] = array(
+	'farmer-createwiki-user' => 'Nome utente',
+);
+
 /** Japanese (日本語)
  * @author JtFuruhata
  */
