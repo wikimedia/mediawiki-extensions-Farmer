@@ -1894,7 +1894,10 @@ Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wik
 	'farmer-confirmsetting-title'            => 'Titel: $1',
 	'farmer-confirmsetting-description'      => 'Beschrijving: $1',
 	'farmer-description'                     => 'Beschrijving',
-	'farmer-confirmsetting-text'             => "Uw wiki, '''$1''', zal bereikbaar zijn via http://$1.myfarm. De projectnaamruimte zal '''$2''' zijn. Links naar deze naamruimte zal zoals '''<nowiki>[[$2:Paginanaam]]</nowiki>''' zijn. Als dit is zoals u het wil, druk op de knop '''bevestigen'''.",
+	'farmer-confirmsetting-text'             => "Uw wiki, '''$1''', zal bereikbaar zijn via http://$1.myfarm.
+De projectnaamruimte wordt '''$2'''.
+Een link naar deze naamruimte wordt '''<nowiki>[[$2:Paginanaam]]</nowiki>'''.
+Als dit in orde is, druk dan op de knop '''bevestigen'''.",
 	'farmer-button-confirm'                  => 'Bevestigen',
 	'farmer-button-submit'                   => 'Opslaan',
 	'farmer-createwiki-form-title'           => 'Een wiki maken',
@@ -2422,6 +2425,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author Malafaya
+ * @author Siebrand
  */
 $messages['pt'] = array(
 	'farmer'                                 => 'Farmer',
@@ -2430,7 +2434,7 @@ $messages['pt'] = array(
 	'farmercreatesitename'                   => 'Nome do sítio',
 	'farmercreatenextstep'                   => 'Próximo passo',
 	'farmernewwikimainpage'                  => '== Bem-vindo ao Seu Wiki ==
-Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar o seu wiki, por favor, visite [[{{ns:special}}:Farmer]].',
+Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar o seu wiki, por favor, visite [[Special:Farmer]].',
 	'farmer-about'                           => 'Sobre',
 	'farmer-about-text'                      => 'MediaWiki Farmer permite-lhe gerir uma "farm" de wikis MediaWiki.',
 	'farmer-list-wiki'                       => 'Lista de Wikis',
@@ -2458,7 +2462,10 @@ Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar 
 	'farmer-confirmsetting-title'            => 'Título: $1',
 	'farmer-confirmsetting-description'      => 'Descrição: $1',
 	'farmer-description'                     => 'Descrição',
-	'farmer-confirmsetting-text'             => "O seu wiki, '''$1''', será acessível através de http://$1.myfarm. O espaço nominal do projecto será '''$2'''.  Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da Página]]</nowiki>'''. Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
+	'farmer-confirmsetting-text'             => "O seu wiki, '''$1''', será acessível através de http://$1.myfarm.
+O espaço nominal do projecto será '''$2'''.
+Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da Página]]</nowiki>'''.
+Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-button-confirm'                  => 'Confirmar',
 	'farmer-button-submit'                   => 'Submeter',
 	'farmer-createwiki-form-title'           => 'Criar um Wiki',
