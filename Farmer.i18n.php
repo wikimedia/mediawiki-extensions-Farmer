@@ -1842,6 +1842,13 @@ $messages['mr'] = array(
 	'farmer-error-wikicorrupt'               => 'जतन केलेला विकि खराब झालेला आहे',
 );
 
+/** Nahuatl (Nahuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'farmer-extensions-register-name' => 'Tōcāitl',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -2546,6 +2553,13 @@ $messages['rif'] = array(
 	'farmer-createwiki-form-help' => 'AƐawn',
 	'farmer-delete-form-submit'   => 'Sfaḍ',
 	'farmer-mainpage'             => 'Tasbtirt Tamzwarut',
+);
+
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'farmer-delete-form-submit' => 'Şterge',
 );
 
 /** Russian (Русский)
