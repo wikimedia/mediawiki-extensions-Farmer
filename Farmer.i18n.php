@@ -1589,6 +1589,7 @@ $messages['lb'] = array(
 	'farmer-basic-description'             => 'Beschreiwung',
 	'farmer-basic-description-text'        => "Gitt d'Beschreiwung vun ärer Wiki hei ënnedrënner an",
 	'farmer-basic-permission'              => 'Rechter',
+	'farmer-basic-permission-visitor'      => 'Rechter fir jidfereen',
 	'farmer-basic-permission-view'         => 'All Säite weisen',
 	'farmer-basic-permission-edit'         => 'All Säiten änneren',
 	'farmer-basic-permission-createpage'   => 'Nei Säite maachen',
@@ -1598,6 +1599,7 @@ $messages['lb'] = array(
 	'farmer-basic-permission-minoredit'    => 'Kleng Ännerungen erlaben',
 	'farmer-yes'                           => 'Jo',
 	'farmer-no'                            => 'Neen',
+	'farmer-basic-permission-user'         => 'Rechter fir ageloggte Benotzer',
 	'farmer-basic-permission-user-text'    => 'Dës Rechter kréien all déi Persounen déi op dëser Wiki ageloggt sinn',
 	'farmer-setpermission'                 => 'Rechter configuréieren',
 	'farmer-extensions'                    => 'Aktiv Erweiderungen',
@@ -1607,6 +1609,7 @@ $messages['lb'] = array(
 	'farmer-extensions-register'           => 'Erweiderung ofspäicheren',
 	'farmer-extensions-register-name'      => 'Numm',
 	'farmer-error-exists'                  => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
+	'farmer-error-wikicorrupt'             => 'Déi gespäichert Wiki ass futti',
 );
 
 /** Lithuanian (Lietuvių)
@@ -1846,6 +1849,11 @@ $messages['mr'] = array(
  * @author Fluence
  */
 $messages['nah'] = array(
+	'farmer-createwiki-user'          => 'Tlatēquitiltilīltōcāitl',
+	'farmer-delete-form-submit'       => 'Ticpoloāz',
+	'farmer-basic-title1'             => 'Tōcāitl',
+	'farmer-yes'                      => 'Quēmah',
+	'farmer-no'                       => 'Ahmo',
 	'farmer-extensions-register-name' => 'Tōcāitl',
 );
 
@@ -2559,7 +2567,51 @@ $messages['rif'] = array(
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
-	'farmer-delete-form-submit' => 'Şterge',
+	'farmer-about'                           => 'Despre',
+	'farmer-list-wiki'                       => 'Listă de wiki',
+	'farmer-createwiki'                      => 'Creează wiki',
+	'farmer-createwiki-text'                 => '[[$1|Creează]] wiki nou acum!',
+	'farmer-administration-extension'        => 'Administrează extensiile',
+	'farmer-administration-delete'           => 'Şterge wiki',
+	'farmer-wikicreated'                     => 'Wiki creat',
+	'farmer-wikiexists'                      => 'Wiki există',
+	'farmer-confirmsetting-name'             => 'Nume: $1',
+	'farmer-confirmsetting-title'            => 'Titlu: $1',
+	'farmer-confirmsetting-description'      => 'Descriere: $1',
+	'farmer-description'                     => 'Descriere',
+	'farmer-button-confirm'                  => 'Confirmă',
+	'farmer-createwiki-form-title'           => 'Creează wiki',
+	'farmer-createwiki-form-help'            => 'Ajutor',
+	'farmer-createwiki-user'                 => 'Nume de utilizator',
+	'farmer-createwiki-name'                 => 'Nume wiki',
+	'farmer-createwiki-title'                => 'Titlu wiki',
+	'farmer-createwiki-description'          => 'Descriere',
+	'farmer-delete-title'                    => 'Şterge wiki',
+	'farmer-delete-form-submit'              => 'Şterge',
+	'farmer-listofwikis'                     => 'Listă de wiki',
+	'farmer-mainpage'                        => 'Pagina principală',
+	'farmer-basic-title1'                    => 'Titlu',
+	'farmer-basic-description'               => 'Descriere',
+	'farmer-basic-permission'                => 'Permisiuni',
+	'farmer-basic-permission-view'           => 'Vizualizează toate paginile',
+	'farmer-basic-permission-edit'           => 'Modifică toate paginile',
+	'farmer-basic-permission-createpage'     => 'Creează pagini noi',
+	'farmer-basic-permission-createtalk'     => 'Creează pagini de discuţie',
+	'farmer-basic-permission-move'           => 'Mută pagini',
+	'farmer-basic-permission-upload'         => 'Încarcă fişiere',
+	'farmer-basic-permission-reupload'       => 'Reîncarcă fişiere (suprascrie fişierele existente)',
+	'farmer-basic-permission-minoredit'      => 'Permite modificări minore',
+	'farmer-yes'                             => 'Da',
+	'farmer-no'                              => 'Nu',
+	'farmer-basic-permission-user'           => 'Permisiuni pentru utilizatori autentificaţi',
+	'farmer-extensions'                      => 'Extensii active',
+	'farmer-extensions-button'               => 'Setează exteniile active',
+	'farmer-extensions-invalid'              => 'Extensie incorectă',
+	'farmer-extensions-available'            => 'Extensii disponibile',
+	'farmer-extensions-noavailable'          => 'Nici o extensie înregistrată',
+	'farmer-extensions-register'             => 'Înregistrează extensie',
+	'farmer-extensions-register-name'        => 'Nume',
+	'farmer-extensions-register-includefile' => 'Include fişier',
 );
 
 /** Russian (Русский)
