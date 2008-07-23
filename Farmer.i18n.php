@@ -1849,8 +1849,9 @@ $messages['mr'] = array(
  * @author Fluence
  */
 $messages['nah'] = array(
+	'farmer-button-submit'            => 'Tiquihuāz',
 	'farmer-createwiki-user'          => 'Tlatēquitiltilīltōcāitl',
-	'farmer-delete-form-submit'       => 'Ticpoloāz',
+	'farmer-delete-form-submit'       => 'Ticpolōz',
 	'farmer-basic-title1'             => 'Tōcāitl',
 	'farmer-yes'                      => 'Quēmah',
 	'farmer-no'                       => 'Ahmo',
