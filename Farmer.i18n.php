@@ -176,17 +176,20 @@ $messages['niu'] = array(
 
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
+ * @author Naudefj
  */
 $messages['af'] = array(
 	'farmer-confirmsetting'           => 'Bevestig Wiki Opstelling',
 	'farmer-confirmsetting-name'      => 'Naam: $1',
 	'farmer-confirmsetting-title'     => 'Titel: $1',
+	'farmer-description'              => 'Beskrywing',
 	'farmer-button-confirm'           => 'Bevestig',
 	'farmer-createwiki-form-help'     => 'Hulp',
 	'farmer-createwiki-user'          => 'Gebruikersnaam',
 	'farmer-delete-form-submit'       => 'Skrap',
 	'farmer-mainpage'                 => 'Tuisblad',
 	'farmer-basic-title1'             => 'Titel',
+	'farmer-basic-description'        => 'Beskrywing',
 	'farmer-yes'                      => 'Ja',
 	'farmer-no'                       => 'Nee',
 	'farmer-extensions-register-name' => 'Naam',
@@ -239,7 +242,10 @@ $messages['ar'] = array(
 	'farmer-confirmsetting-title'            => 'العنوان: $1',
 	'farmer-confirmsetting-description'      => 'الوصف : $1',
 	'farmer-description'                     => 'وصف',
-	'farmer-confirmsetting-text'             => "الويكي الخاصة بك، '''$1'''، سيمكن الوصول إليها من خلال http://$1.myfarm. نطاق المشروع سيصبح '''$2'''.  الوصلات إلى هذا النطاق ستصبح بالشكل '''<nowiki>[[$2:Page Name]]</nowiki>'''.  لو أن هذا ما تريده، اضغط على زر '''تأكيد''' بالأسفل.",
+	'farmer-confirmsetting-text'             => "الويكي الخاص بك، '''$1'''، سيمكن الوصول إليه من خلال http://$1.myfarm.
+نطاق المشروع سيصبح '''$2'''.
+الوصلات إلى هذا النطاق ستكون من الشكل '''<nowiki>[[$2:Page name]]</nowiki>'''.
+لو أن هذا ما تريده، اضغط زر '''تأكيد''' بالأسفل.",
 	'farmer-button-confirm'                  => 'تأكيد',
 	'farmer-button-submit'                   => 'تنفيذ',
 	'farmer-createwiki-form-title'           => 'إنشاء ويكي',
@@ -1850,7 +1856,7 @@ $messages['mr'] = array(
  */
 $messages['nah'] = array(
 	'farmer-button-submit'            => 'Tiquihuāz',
-	'farmer-createwiki-user'          => 'Tlatēquitiltilīltōcāitl',
+	'farmer-createwiki-user'          => 'Tlatequitiltilīltōcāitl',
 	'farmer-delete-form-submit'       => 'Ticpolōz',
 	'farmer-basic-title1'             => 'Tōcāitl',
 	'farmer-yes'                      => 'Quēmah',
