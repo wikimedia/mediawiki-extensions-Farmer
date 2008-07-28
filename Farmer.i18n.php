@@ -795,7 +795,10 @@ $messages['frp'] = array(
  * @author Snakesteuben
  */
 $messages['fy'] = array(
-	'farmer-yes' => 'Ja',
+	'farmer-delete-form-submit'      => 'Wiskje',
+	'farmer-mainpage'                => 'Haadside',
+	'farmer-basic-permission-upload' => 'Triemmen oplade',
+	'farmer-yes'                     => 'Ja',
 );
 
 /** Galician (Galego)
