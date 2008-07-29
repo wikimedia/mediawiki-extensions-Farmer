@@ -795,6 +795,7 @@ $messages['frp'] = array(
  * @author Snakesteuben
  */
 $messages['fy'] = array(
+	'farmer-createwiki-user'         => 'Meidoggernamme',
 	'farmer-delete-form-submit'      => 'Wiskje',
 	'farmer-mainpage'                => 'Haadside',
 	'farmer-basic-permission-upload' => 'Triemmen oplade',
