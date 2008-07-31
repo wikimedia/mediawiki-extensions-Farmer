@@ -511,6 +511,20 @@ $messages['da'] = array(
 	'farmer-extensions-register-name' => 'Navn',
 );
 
+/** German (Deutsch)
+ * @author Leithian
+ */
+$messages['de'] = array(
+	'farmer-description'            => 'Beschreibung',
+	'farmer-button-confirm'         => 'Bestätigen',
+	'farmer-createwiki-form-help'   => 'Hilfe',
+	'farmer-createwiki-user'        => 'Benutzername',
+	'farmer-createwiki-description' => 'Beschreibung',
+	'farmer-basic-description'      => 'Beschreibung',
+	'farmer-yes'                    => 'Ja',
+	'farmer-no'                     => 'Nein',
+);
+
 /** Ewe (Eʋegbe)
  * @author M.M.S.
  */
@@ -1372,9 +1386,15 @@ $messages['is'] = array(
 
 /** Italian (Italiano)
  * @author Pietrodn
+ * @author Darth Kule
  */
 $messages['it'] = array(
-	'farmer-createwiki-user' => 'Nome utente',
+	'farmer-description'            => 'Descrizione',
+	'farmer-button-submit'          => 'Invia',
+	'farmer-createwiki-user'        => 'Nome utente',
+	'farmer-createwiki-description' => 'Descrizione',
+	'farmer-delete-form-submit'     => 'Cancella',
+	'farmer-basic-description'      => 'Descrizione',
 );
 
 /** Japanese (日本語)
