@@ -17,7 +17,7 @@ $messages['en'] = array (
 	'farmercreatenextstep'                   => 'Next step',
 	'farmernewwikimainpage'                  =>  "== Welcome to your wiki ==
 If you are reading this, your new wiki has been installed  correctly.
-To customize your wiki, please visit [[Special:Farmer]].",
+You can [[Special:Farmer|customize your wiki]].",
 	'farmerwikiurl'                          =>  'http://$1.myfarm',
 	'farmerinterwikiurl'                     => 'http://$1.myfarm/$2',
 	'farmer-about'                           => 'About',
