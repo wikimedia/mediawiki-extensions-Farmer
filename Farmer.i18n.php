@@ -213,9 +213,9 @@ $messages['ar'] = array(
 	'farmercreateurl'                        => 'مسار',
 	'farmercreatesitename'                   => 'اسم الموقع',
 	'farmercreatenextstep'                   => 'الخطوة التالية',
-	'farmernewwikimainpage'                  => '== مرحبا في الويكي الخاصة بك ==
-لو أنك تقرأ هذا، فالويكي الجديدة الخاصة بك تم تنصيبها بشكل صحيح.
-لتغيير إعدادات الويكي الخاصة بك، من فضلك زر [[Special:Farmer]].',
+	'farmernewwikimainpage'                  => '== مرحبا في الويكي الخاص بك ==
+لو أنك تقرأ هذا، فالويكي الجديد الخاص بك تم تنصيبه بشكل صحيح.
+يمكنك [[Special:Farmer|تخصيص الويكي الخاص بك]].',
 	'farmer-about'                           => 'حول',
 	'farmer-about-text'                      => 'مزارع ميدياويكي يسمح لك بإدارة مزرعة من ويكيات ميدياويكي.',
 	'farmer-list-wiki'                       => 'قائمة الويكيات',
@@ -520,6 +520,7 @@ $messages['de'] = array(
 	'farmer-createwiki-form-help'   => 'Hilfe',
 	'farmer-createwiki-user'        => 'Benutzername',
 	'farmer-createwiki-description' => 'Beschreibung',
+	'farmer-mainpage'               => 'Hauptseite',
 	'farmer-basic-description'      => 'Beschreibung',
 	'farmer-yes'                    => 'Ja',
 	'farmer-no'                     => 'Nein',
@@ -1240,7 +1241,7 @@ Jeli to čitaš, je so twój nowy wiki korektnje instalował. Zo by swój wiki p
 	'farmer-error-nodirconfig'               => 'Konfiguraciski zapis njenamakany:',
 	'farmer-error-defnotset'                 => 'Standardny wiki dyrbi so nastajić',
 	'farmer-error-mapnotfound'               => 'Funkcija za zwobraznjenje wikijoweho mjena we farmje njenamakana:',
-	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer njemóžeše standardnu konfiguracisku dataju wikija pisać.',
+	'farmer-error-nofileconfwrite'           => 'MediawikiFarmer njemóžeše standardnu konfiguracisku dataju wikija pisać.',
 	'farmer-error-funcnotcall'               => 'Funkcija njeda so wołać:',
 	'farmer-error-noextwrite'                => 'Rozšěrjenska dataja njeda so wupisać:',
 	'farmer-error-wikicorrupt'               => 'Składowany wiki je poškodźeny',
@@ -1343,7 +1344,7 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
 	'farmer-extensions-register'             => 'Kiterjesztés regisztrálása',
 	'farmer-extensions-register-text1'       => 'Az alábbi űrlap használatával új kiterjesztést regisztrálhatsz a farmra.  Miután egy kiterjesztést regisztráltál, minden wikin használható lesz.',
 	'farmer-extensions-register-text2'       => "A ''beillesztett fájl'' paraméterhez add meg annak a PHP fájlnak a nevét, amelyet beraknál a LocalSettings.php-be.",
-	'farmer-extensions-register-text3'       => "Ha a fájlnév tartalmazza a '''\$root''' paramétert, akkor az le lesz cserélve a MediaWiki gyökérkönyvtárára.",
+	'farmer-extensions-register-text3'       => "Ha a fájlnév tartalmazza a '''\$root''' paramétert, akkor az le lesz cserélve a Mediawiki gyökérkönyvtárára.",
 	'farmer-extensions-register-text4'       => 'A jelenleg figyelembe vett könyvtárak:',
 	'farmer-extensions-register-name'        => 'Név',
 	'farmer-extensions-register-includefile' => 'Beillesztett fájl',
@@ -1389,12 +1390,13 @@ $messages['is'] = array(
  * @author Darth Kule
  */
 $messages['it'] = array(
-	'farmer-description'            => 'Descrizione',
-	'farmer-button-submit'          => 'Invia',
-	'farmer-createwiki-user'        => 'Nome utente',
-	'farmer-createwiki-description' => 'Descrizione',
-	'farmer-delete-form-submit'     => 'Cancella',
-	'farmer-basic-description'      => 'Descrizione',
+	'farmer-description'             => 'Descrizione',
+	'farmer-button-submit'           => 'Invia',
+	'farmer-createwiki-user'         => 'Nome utente',
+	'farmer-createwiki-description'  => 'Descrizione',
+	'farmer-delete-form-submit'      => 'Cancella',
+	'farmer-basic-description'       => 'Descrizione',
+	'farmer-basic-permission-upload' => 'Carica file multimediali',
 );
 
 /** Japanese (日本語)
@@ -1926,7 +1928,8 @@ $messages['nl'] = array(
 	'farmercreatesitename'                   => 'Sitenaam',
 	'farmercreatenextstep'                   => 'Volgende stap',
 	'farmernewwikimainpage'                  => '== Welkom bij uw wiki ==
-Als u dit leest, is uw wiki geïnstalleerd. Ga naar [[Special:Farmer]] om uw wiki aan te passen.',
+Als u dit leest, is uw wiki geïnstalleerd.
+U kunt uw [[Special:Farmer|wiki aanpassen]].',
 	'farmer-about'                           => 'Over',
 	'farmer-about-text'                      => "Met MediaWikiFarmer kunt u een farm van MediaWiki wiki's beheren.",
 	'farmer-list-wiki'                       => "Lijst van wiki's",
@@ -2060,8 +2063,8 @@ $messages['no'] = array(
 	'farmercantcreatewikis'                  => 'Du kan ikke opprette wikier fordi du ikke har de riktige rettighetene',
 	'farmercreatesitename'                   => 'Sidenavn',
 	'farmercreatenextstep'                   => 'Neste steg',
-	'farmernewwikimainpage'                  => '== Velkommen til din wiki ==
-Om du leser dette, har din nye wiki blitt installert korrekt. Gå til [[Special:Farmer]] for å skreddersy wikien din.',
+	'farmernewwikimainpage'                  => '== Velkommen til wikien din ==
+Om du leser dette, har din nye wiki blitt installert korrekt. Du kan [[Special:Farmer|skreddersy wikien din]].',
 	'farmer-about'                           => 'Om',
 	'farmer-about-text'                      => 'MediaWiki Farmer lar deg holde en hel farm av MediaWiki-wikier ved like.',
 	'farmer-list-wiki'                       => 'Liste over wikier',
@@ -2939,7 +2942,7 @@ $messages['sv'] = array(
 	'farmercantcreatewikis'                  => 'Du är oförmögen till att skapa wikier för att du inte har skapa wikier privilegierna',
 	'farmercreatesitename'                   => 'Sajtnamn',
 	'farmercreatenextstep'                   => 'Nästa steg',
-	'farmernewwikimainpage'                  => '== Välkommen till Din Wiki ==
+	'farmernewwikimainpage'                  => '== Välkommen till din wiki ==
 Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skräddarsy din wiki, var god att gå till [[Special:Farmer]].',
 	'farmer-about'                           => 'Om',
 	'farmer-about-text'                      => 'MediaWiki Farmer tillåter dig att sköta en farm av MediaWiki wikier.',
