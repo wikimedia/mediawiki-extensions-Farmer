@@ -515,15 +515,17 @@ $messages['da'] = array(
  * @author Leithian
  */
 $messages['de'] = array(
-	'farmer-description'            => 'Beschreibung',
-	'farmer-button-confirm'         => 'Bestätigen',
-	'farmer-createwiki-form-help'   => 'Hilfe',
-	'farmer-createwiki-user'        => 'Benutzername',
-	'farmer-createwiki-description' => 'Beschreibung',
-	'farmer-mainpage'               => 'Hauptseite',
-	'farmer-basic-description'      => 'Beschreibung',
-	'farmer-yes'                    => 'Ja',
-	'farmer-no'                     => 'Nein',
+	'farmer-confirmsetting-description' => 'Beschreibung: $1',
+	'farmer-description'                => 'Beschreibung',
+	'farmer-button-confirm'             => 'Bestätigen',
+	'farmer-createwiki-form-help'       => 'Hilfe',
+	'farmer-createwiki-user'            => 'Benutzername',
+	'farmer-createwiki-description'     => 'Beschreibung',
+	'farmer-delete-form-submit'         => 'Löschen',
+	'farmer-mainpage'                   => 'Hauptseite',
+	'farmer-basic-description'          => 'Beschreibung',
+	'farmer-yes'                        => 'Ja',
+	'farmer-no'                         => 'Nein',
 );
 
 /** Ewe (Eʋegbe)
@@ -695,7 +697,8 @@ $messages['fr'] = array(
 	'farmercreatesitename'                   => 'Nom du site',
 	'farmercreatenextstep'                   => 'Étape suivante',
 	'farmernewwikimainpage'                  => '== Bienvenue dans votre Wiki ==
-Si vous lisez ce message, ceci indique que votre wiki a été installé correctement.  Pour individualiser votre wiki, vous êtes invité à visiter [[Special:Farmer]].',
+Si vous lisez ce message, ceci indique que votre wiki a été installé correctement.
+Vous pouvez [[Special:Farmer|individualiser votre wiki]].',
 	'farmer-about'                           => 'À propos',
 	'farmer-about-text'                      => 'L’extension MediaWiki Farmer vous permet, en permanence, d’organiser un ensemble de wikis issu du logiciel MediaWiki.',
 	'farmer-list-wiki'                       => 'Liste des wikis',
