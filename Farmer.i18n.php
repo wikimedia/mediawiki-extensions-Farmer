@@ -654,9 +654,11 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 
 /** Spanish (Español)
  * @author Jatrobat
+ * @author Sanbec
  */
 $messages['es'] = array(
-	'farmer-yes' => 'Sí',
+	'farmer-delete-form-submit' => 'Borrar',
+	'farmer-yes'                => 'Sí',
 );
 
 /** Finnish (Suomi)
@@ -1891,6 +1893,13 @@ $messages['mr'] = array(
 	'farmer-error-funcnotcall'               => 'कार्य बोलावू शकलेलो नाही:',
 	'farmer-error-noextwrite'                => 'एक्स्टेंशन संचिका लिहू शकलेलो नाही:',
 	'farmer-error-wikicorrupt'               => 'जतन केलेला विकि खराब झालेला आहे',
+);
+
+/** Maltese (Malti)
+ * @author Roderick Mallia
+ */
+$messages['mt'] = array(
+	'farmer-createwiki-user' => 'Isem l-utent',
 );
 
 /** Nahuatl (Nahuatl)
