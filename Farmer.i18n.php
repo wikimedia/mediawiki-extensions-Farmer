@@ -1396,6 +1396,7 @@ $messages['is'] = array(
  */
 $messages['it'] = array(
 	'farmer-description'             => 'Descrizione',
+	'farmer-button-confirm'          => 'Conferma',
 	'farmer-button-submit'           => 'Invia',
 	'farmer-createwiki-user'         => 'Nome utente',
 	'farmer-createwiki-description'  => 'Descrizione',
