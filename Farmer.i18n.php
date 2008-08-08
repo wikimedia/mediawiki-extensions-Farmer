@@ -2803,8 +2803,9 @@ $messages['sk'] = array(
 	'farmercantcreatewikis'                  => 'Nemôžete vytvárať wiki, pretože nemáte oprávnenie createwikis',
 	'farmercreatesitename'                   => 'Názov lokality',
 	'farmercreatenextstep'                   => 'Ďalší krok',
-	'farmernewwikimainpage'                  => '== Vitajte vo vašej wiki ==
-Ak čítate tento text, vaša nová wiki bola správne nainštalovaná. Svoju wiki môžete prispôsobiť pomocou [[Special:Farmer]].',
+	'farmernewwikimainpage'                  => '== Vitajte vo svojej wiki ==
+Ak čítate tento text, vaša nová wiki bola správne nainštalovaná.
+Svoju wiki môžete [[Special:Farmer|prispôsobiť]].',
 	'farmer-about'                           => 'O stránke',
 	'farmer-about-text'                      => 'MediaWiki Farmár vám umožňuje spravovať farmu wiki systému MediaWiki.',
 	'farmer-list-wiki'                       => 'Zoznam wiki',
