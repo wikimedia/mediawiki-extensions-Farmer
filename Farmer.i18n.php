@@ -136,7 +136,9 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
-/** Message documentation (Message documentation) */
+/** Message documentation (Message documentation)
+ * @author Jon Harald Søby
+ */
 $messages['qqq'] = array(
 	'farmer-about' => '{{Identical|About}}',
 	'farmer-list-wiki' => '{{Identical|List of wikis}}',
@@ -2979,7 +2981,7 @@ $messages['sv'] = array(
 	'farmercreatesitename' => 'Sajtnamn',
 	'farmercreatenextstep' => 'Nästa steg',
 	'farmernewwikimainpage' => '== Välkommen till din wiki ==
-Om du läser detta, har din nya wiki blivigt installerad korrekt.  För att skräddarsy din wiki, var god att gå till [[Special:Farmer]].',
+Om du läser det här, har din nya wiki blivit korrekt installerad. Du kan [[Special:Farmer|skräddarsy din wiki]].',
 	'farmer-about' => 'Om',
 	'farmer-about-text' => 'MediaWiki Farmer tillåter dig att sköta en farm av MediaWiki wikier.',
 	'farmer-list-wiki' => 'Lista över wikier',
