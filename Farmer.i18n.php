@@ -1392,6 +1392,62 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
  * @author McDutchie
  */
 $messages['ia'] = array(
+	'farmer' => 'Fermero',
+	'farmercantcreatewikis' => 'Tu non pote crear wikis proque tu non ha le privilegio "createwikis"',
+	'farmercreatesitename' => 'Nomine del sito',
+	'farmercreatenextstep' => 'Proxime passo',
+	'farmernewwikimainpage' => '== Benvenite a tu wiki ==
+Si tu lege isto, tu nove wiki ha essite installate correctemente.
+Tu pote [[Special:Farmer|personalisar tu wiki]].',
+	'farmer-about' => 'A proposito',
+	'farmer-about-text' => 'Le extension MediaWiki Farmer te permitte gerer un "ferma" de wikis MediaWiki.',
+	'farmer-list-wiki' => 'Lista de wikis',
+	'farmer-list-wiki-text' => '[[$1|Lista]] de tote le wikis in {{SITENAME}}',
+	'farmer-createwiki' => 'Crear un wiki',
+	'farmer-createwiki-text' => '[[$1|Crear]] un nove wiki ora!',
+	'farmer-administration' => 'Administration del ferma',
+	'farmer-administration-extension' => 'Gerer extensiones',
+	'farmer-administration-extension-text' => '[[$1|Gerer]] le extensiones installate.',
+	'farmer-admimistration-listupdate' => 'Actusliation del lista de fermas',
+	'farmer-admimistration-listupdate-text' => '[[$1|Actualisar]] le lista de wikis in {{SITENAME}}',
+	'farmer-administration-delete' => 'Deler un wiki',
+	'farmer-administration-delete-text' => '[[$1|Deler]] un wiki del ferma',
+	'farmer-administer-thiswiki' => 'Administrar iste wiki',
+	'farmer-administer-thiswiki-text' => '[[$1|Administrar]] cambios in iste wiki',
+	'farmer-notavailable' => 'Non disponibile',
+	'farmer-notavailable-text' => 'Iste function es solmente disponibile in le wiki principal',
+	'farmer-wikicreated' => 'Wiki create',
+	'farmer-wikicreated-text' => 'Tu wiki ha essite create.
+Illo es accessibile a $1',
+	'farmer-default' => 'Per predefinition, necuno ha permissiones in iste wiki a exception de te.
+Tu pote cambiar le privilegios del usatores via $1',
+	'farmer-wikiexists' => 'Le wiki existe',
+	'farmer-wikiexists-text' => "Le wiki que tu tenta crear, '''$1''', existe ja.
+Per favor retorna e prova un altere nomine.",
+	'farmer-confirmsetting' => 'Confirmar configurationes del wiki',
+	'farmer-confirmsetting-name' => 'Nomine: $1',
+	'farmer-confirmsetting-title' => 'Titulo: $1',
+	'farmer-confirmsetting-description' => 'Description: $1',
+	'farmer-description' => 'Description',
+	'farmer-confirmsetting-text' => "Tu wiki, '''$1''', essera accessibile via http://$1.myfarm.
+Le spatio de nomines del projecto essera '''$2'''.
+Omne ligamines verso iste spatio de nomines habera le forma '''<nowiki>[[$2:Nomine de pagina]]</nowiki>'''.
+Si isto es lo que tu vole, preme le button '''confirmar''' infra.",
+	'farmer-button-confirm' => 'Confirmar',
+	'farmer-button-submit' => 'Submitter',
+	'farmer-createwiki-form-title' => 'Crear un wiki',
+	'farmer-createwiki-form-text1' => 'Usa le formulario infra pro crear un nove wiki.',
+	'farmer-createwiki-form-help' => 'Adjuta',
+	'farmer-createwiki-form-text2' => "; Nomine del wiki: Le nomine del wiki.
+Contine solmente litteras e numeros.
+Le nomine del wiki facera parte del adresse URL pro identificar tu wiki.
+Per exemplo, si tu entra '''titulo''', alora tu wiki essera accessibile via <nowiki>http://</nowiki>'''titulo'''.midominio.",
+	'farmer-createwiki-form-text3' => '; Titulo del wiki: Le titulo del wiki.
+Essera usate in le titulo de cata pagina in tu wiki.
+Essera etiam le spatio de nomines e prefixo interwiki del projecto.',
+	'farmer-createwiki-form-text4' => '; Description: Le description del wiki.
+Isto es un texto explicative super le wiki,
+pro figurar in le lista de wikis.',
 	'farmer-createwiki-user' => 'Nomine de usator',
 	'farmer-delete-form-submit' => 'Deler',
 );
