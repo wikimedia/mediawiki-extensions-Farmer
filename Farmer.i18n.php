@@ -1393,6 +1393,7 @@ Ha ezt olvasod, akkor az új wikid helyesen lett feltelepítve.  A wiki testresz
  */
 $messages['ia'] = array(
 	'farmer' => 'Fermero',
+	'farmer-desc' => 'Gerer un ferma MediaWiki',
 	'farmercantcreatewikis' => 'Tu non pote crear wikis proque tu non ha le privilegio "createwikis"',
 	'farmercreatesitename' => 'Nomine del sito',
 	'farmercreatenextstep' => 'Proxime passo',
@@ -1449,7 +1450,70 @@ Essera etiam le spatio de nomines e prefixo interwiki del projecto.',
 Isto es un texto explicative super le wiki,
 pro figurar in le lista de wikis.',
 	'farmer-createwiki-user' => 'Nomine de usator',
+	'farmer-createwiki-name' => 'Nomine del wiki',
+	'farmer-createwiki-title' => 'Titulo del wiki',
+	'farmer-createwiki-description' => 'Description',
+	'farmer-updatedlist' => 'Lista actualisate',
+	'farmer-notaccessible' => 'Non accessibile',
+	'farmer-notaccessible-test' => 'Iste function es solmente disponibile in le wiki principal del ferma',
+	'farmer-permissiondenied' => 'Permission refusate',
+	'farmer-permissiondenied-text' => 'Tu non ha le permission de deler un wiki del ferma',
+	'farmer-permissiondenied-text1' => 'Tu non ha le permission de acceder a iste pagina',
+	'farmer-deleting' => 'Deletion de $1',
+	'farmer-delete-title' => 'Deler wiki',
+	'farmer-delete-text' => 'Per favor selige le wiki que tu vole deler del lista infra',
+	'farmer-delete-form' => 'Selige un wiki',
 	'farmer-delete-form-submit' => 'Deler',
+	'farmer-listofwikis' => 'Lista de wikis',
+	'farmer-mainpage' => 'Pagina principal',
+	'farmer-basic-title' => 'Parametros de base',
+	'farmer-basic-title1' => 'Titulo',
+	'farmer-basic-title1-text' => 'Tu wiki non ha un titulo. Defini un titulo <b>ora</b>',
+	'farmer-basic-description' => 'Description',
+	'farmer-basic-description-text' => 'Defini a basso le description de tu wiki',
+	'farmer-basic-permission' => 'Permissiones',
+	'farmer-basic-permission-text' => 'Con le formulario infra, es possibile alterar permissiones pro usatores de iste wiki.',
+	'farmer-basic-permission-visitor' => 'Permissiones pro omne visitator',
+	'farmer-basic-permission-visitor-text' => 'Le sequente permissiones se applicara a omne persona qui visita iste wiki',
+	'farmer-basic-permission-view' => 'Vider tote le paginas',
+	'farmer-basic-permission-edit' => 'Modificar tote le paginas',
+	'farmer-basic-permission-createpage' => 'Crear nove paginas',
+	'farmer-basic-permission-createtalk' => 'Crear paginas de discussion',
+	'farmer-basic-permission-move' => 'Renominar paginas',
+	'farmer-basic-permission-upload' => 'Cargar files',
+	'farmer-basic-permission-reupload' => 'Recargar files (superscriber files ja existente)',
+	'farmer-basic-permission-minoredit' => 'Permitter modificationes minor',
+	'farmer-yes' => 'Si',
+	'farmer-no' => 'No',
+	'farmer-basic-permission-user' => 'Permissiones pro usatores identificate',
+	'farmer-basic-permission-user-text' => 'Le sequente permissiones se applicara a omne persona qui ha aperite un session in iste wiki',
+	'farmer-setpermission' => 'Definir permissiones',
+	'farmer-defaultskin' => 'Stilo predefinite',
+	'farmer-defaultskin-button' => 'Predefinir un stilo',
+	'farmer-extensions' => 'Extensiones active',
+	'farmer-extensions-button' => 'Definir extensiones active',
+	'farmer-extensions-extension-denied' => 'Tu non ha le permission de usar iste function.
+Tu debe esser un membro del gruppo "farmeradmin"',
+	'farmer-extensions-invalid' => 'Extension invalide',
+	'farmer-extensions-invalid-text' => 'Nos non poteva adder le extension proque le file seligite pro inclusion non poteva esser trovate',
+	'farmer-extensions-available' => 'Extensiones disponibile',
+	'farmer-extensions-noavailable' => 'Nulle extension es registrate',
+	'farmer-extensions-register' => 'Registrar extension',
+	'farmer-extensions-register-text1' => 'Usa le formulario infra pro registrar un nove extension in le ferma.
+Quando un extension es registrate, tote le wikis potera usar lo.',
+	'farmer-extensions-register-text2' => "Pro le parametro ''Includer file'', entra le nomine del file PHP como tu lo facerea in le file LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Si le nomine del file contine '''\$root''', ille variable se reimplaciara per le directorio radice de MediaWiki.",
+	'farmer-extensions-register-text4' => 'Le camminos de inclusion actual es:',
+	'farmer-extensions-register-name' => 'Nomine',
+	'farmer-extensions-register-includefile' => 'File de inclusion',
+	'farmer-error-exists' => 'Non pote crear wiki. Illo existe ja: $1',
+	'farmer-error-nodirconfig' => 'configDirectory non trovate:',
+	'farmer-error-defnotset' => 'Es necessari predefinir un wiki',
+	'farmer-error-mapnotfound' => 'Le function pro mappar le nomine del wiki in le ferma non es trovate:',
+	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer non poteva scriber le file de configuration wiki predefinite.',
+	'farmer-error-funcnotcall' => 'Non poteva appellar function:',
+	'farmer-error-noextwrite' => 'Impossibile scriber al file de extension:',
+	'farmer-error-wikicorrupt' => 'Le wiki immagazinate es corrumpite',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -2416,6 +2480,13 @@ $messages['os'] = array(
 	'farmer-delete-form-submit' => 'Аппар',
 	'farmer-yes' => 'О',
 	'farmer-no' => 'Нæ',
+);
+
+/** Plautdietsch (Plautdietsch)
+ * @author Slomox
+ */
+$messages['pdt'] = array(
+	'farmer-createwiki-user' => 'Bruckernome',
 );
 
 /** Polish (Polski)
