@@ -1165,6 +1165,13 @@ $messages['hil'] = array(
 	'farmer-basic-permission-upload' => 'Mag karga mga files',
 );
 
+/** Croatian (Hrvatski)
+ * @author Dalibor Bosits
+ */
+$messages['hr'] = array(
+	'farmer-delete-form-submit' => 'Izbriši',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
