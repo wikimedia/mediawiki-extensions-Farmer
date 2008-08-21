@@ -138,8 +138,10 @@ Once an extension is registered, all wikis will be able to use it.',
 
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
+ * @author Purodha
  */
 $messages['qqq'] = array(
+	'farmernewwikimainpage' => 'Short description of the extension, shown on [[Special:Version]]. Do not translate or change links.',
 	'farmer-about' => '{{Identical|About}}',
 	'farmer-list-wiki' => '{{Identical|List of wikis}}',
 	'farmer-createwiki' => '{{Identical|Create a wiki}}',
@@ -597,9 +599,9 @@ $messages['el'] = array(
 $messages['eo'] = array(
 	'farmercreatesitename' => 'Nomo de retejo',
 	'farmercreatenextstep' => 'Posta ŝtupo',
-	'farmernewwikimainpage' => '== Bonvenon en via vikio ==
+	'farmernewwikimainpage' => '== Bonvenon al via vikio ==
 Se vi legas tion ĉi, via vikio estas sukcese instalita.
-Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
+Vi povas [[Special:Farmer|agordi vian vikion]].',
 	'farmer-about' => 'Pri',
 	'farmer-list-wiki' => 'Listo de Vikioj',
 	'farmer-list-wiki-text' => '[[$1|Listigi]] ĉiujn vikiojn en {{SITENAME}}',
@@ -627,6 +629,9 @@ Por agordi la vikion, vizitu paĝon [[Special:Farmer]].',
 	'farmer-createwiki-form-title' => 'Krei Vikion',
 	'farmer-createwiki-form-text1' => 'Uzu la jenan kamparon por krei novan vikion.',
 	'farmer-createwiki-form-help' => 'Helpo',
+	'farmer-createwiki-form-text4' => '; Priskribo: Priskribo de vikio.
+Ĉi tiu estas teksta priskribo pri la vikio.
+Ĉi tiu estos montrita en la vikia listo.',
 	'farmer-createwiki-user' => 'Salutnomo',
 	'farmer-createwiki-name' => 'Vikia nomo',
 	'farmer-createwiki-title' => 'Vikia titolo',
@@ -860,7 +865,7 @@ $messages['gl'] = array(
 	'farmercreatenextstep' => 'Seguinte paso',
 	'farmernewwikimainpage' => '== Dámoslle a benvida ao seu wiki ==
 Se está a ler isto, o seu novo wiki foi instalado correctamente.
-Para personalizar o seu wiki, por favor, visite [[Special:Farmer]].',
+Pode [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-about' => 'Acerca de',
 	'farmer-about-text' => 'O granxeiro MediaWiki permítelle xestionar unha granxa de wikis MediaWiki.',
 	'farmer-list-wiki' => 'Listaxe dos wikis',
@@ -1710,7 +1715,7 @@ $messages['ksh'] = array(
 	'farmercreatenextstep' => 'Der näkßte Schrett',
 	'farmernewwikimainpage' => '== Wellkumme op Dingem Wiki ==
 Wann De dat heh lësse kannß, dann eß Ding Wiki öhndlesch opjesaz.
-Öm Dingem Wiki sing Ėnshtëllonge zerääsch ze maache, doh jangk op di Sigk [[{{#special:Farmer}}]].',
+Öm Dingem Wiki sing Ėnshtëllonge zerääsch ze maache, doh jangk op di Sigk [[Special:Farmer]].',
 	'farmer-about' => 'Üvver',
 	'farmer-list-wiki' => 'Lėßß met_te Wikiiß',
 	'farmer-createwiki' => 'E Wikki aanlääje',
@@ -2374,7 +2379,8 @@ $messages['oc'] = array(
 	'farmercreatesitename' => 'Nom del sit',
 	'farmercreatenextstep' => 'Etapa seguenta',
 	'farmernewwikimainpage' => '== Benvenguda dins vòtre Wiki ==
-Se legissètz aqueste messatge, aquò indica que vòtre wiki es estat installat corrèctament. Per individualizar vòstre wiki, sètz convidat(ada) a visitar [[Special:Farmer]].',
+Se legissètz aqueste messatge, aquò indica que vòstre wiki es estat installat corrèctament.
+Podètz [[Special:Farmer|individualizar vòstre wiki]].',
 	'farmer-about' => 'A prepaus',
 	'farmer-about-text' => 'L’extension Mediawiki Farmer vos permet, en permanéncia, d’organizar un ensemble de wikis eissit del logicial Mediawiki.',
 	'farmer-list-wiki' => 'Lista dels wikis',
