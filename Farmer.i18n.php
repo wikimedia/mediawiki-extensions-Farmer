@@ -250,7 +250,7 @@ $messages['ar'] = array(
 	'farmer-list-wiki' => 'قائمة الويكيات',
 	'farmer-list-wiki-text' => '[[$1|عرض]] كل الويكيات في {{SITENAME}}',
 	'farmer-createwiki' => 'إنشاء ويكي',
-	'farmer-createwiki-text' => '[[$1|إنشاء]] ويكي جديدة الآن!',
+	'farmer-createwiki-text' => '[[$1|إنشاء]] ويكي جديد الآن!',
 	'farmer-administration' => 'إدارة المزرعة',
 	'farmer-administration-extension' => 'التحكم بالامتدادات',
 	'farmer-administration-extension-text' => '[[$1|التحكم]] بالامتدادات المنصبة.',
@@ -261,14 +261,14 @@ $messages['ar'] = array(
 	'farmer-administer-thiswiki' => 'إدارة هذه الويكي',
 	'farmer-administer-thiswiki-text' => '[[$1|إدارة]] التغييرات إلى هذه الويكي',
 	'farmer-notavailable' => 'غير متوفرة',
-	'farmer-notavailable-text' => 'هذه الخاصية متوفرة فقط في الويكي الرئيسية',
-	'farmer-wikicreated' => 'الويكي تم إنشاؤها',
-	'farmer-wikicreated-text' => 'الويكي الخاصة بك تم إنشاؤها.
-يمكن الوصول إليها في $1',
-	'farmer-default' => 'افتراضيا، لا أحد لديه سماحات في هذه الويكي فيماعداك.
+	'farmer-notavailable-text' => 'هذه الخاصية متوفرة فقط في الويكي الرئيسي',
+	'farmer-wikicreated' => 'الويكي تم إنشاؤه',
+	'farmer-wikicreated-text' => 'الويكي الخاص بك تم إنشاؤه.
+يمكن الوصول إليه في $1',
+	'farmer-default' => 'افتراضيا، لا أحد لديه سماحات في هذا الويكي فيماعداك.
 يمكنك تغيير صلاحيات المستخدم من خلال $1',
-	'farmer-wikiexists' => 'الويكي موجودة',
-	'farmer-wikiexists-text' => "الويكي التي تحاول إنشاءها، '''$1'''، موجودة بالفعل.
+	'farmer-wikiexists' => 'الويكي موجود',
+	'farmer-wikiexists-text' => "الويكي التي تحاول إنشاءه، '''$1'''، موجود بالفعل.
 من فضلك عد وجرب اسما آخر.",
 	'farmer-confirmsetting' => 'تأكيد إعدادات الويكي',
 	'farmer-confirmsetting-name' => 'الاسم: $1',
@@ -284,7 +284,7 @@ $messages['ar'] = array(
 	'farmer-createwiki-form-title' => 'إنشاء ويكي',
 	'farmer-createwiki-form-text1' => 'استخدم الاستمارة بالأسفل لإنشاء ويكي جديدة.',
 	'farmer-createwiki-form-help' => 'مساعدة',
-	'farmer-createwiki-form-text2' => "; اسم الويكي: اسم الويكي.
+	'farmer-createwiki-form-text2' => "; اسم الويكي: الاسم الخاص بالويكي.
 يحتوي فقط على حروف وأرقام.
 اسم الويكي سيستخدم كجزء من المسار للتعرف على الويكي الخاصة بك.
 على سبيل المثال، لو أنك أدخلت '''title'''، فسيصبح الويكي الخاص بك متاحا للوصول إليها من خلال <nowiki>http://</nowiki>'''title'''.mydomain.",
@@ -299,14 +299,14 @@ $messages['ar'] = array(
 	'farmer-createwiki-title' => 'عنوان الويكي',
 	'farmer-createwiki-description' => 'الوصف',
 	'farmer-updatedlist' => 'قائمة محدثة',
-	'farmer-notaccessible' => 'لا يمكن الوصول إليها',
+	'farmer-notaccessible' => 'لا يمكن الوصول إليه',
 	'farmer-notaccessible-test' => 'هذه الخاصية متوفرة فقط في الويكي الأساسي في المزرعة',
 	'farmer-permissiondenied' => 'السماح مرفوض',
 	'farmer-permissiondenied-text' => 'أنت لا تمتلك السماح لحذف ويكي من المزرعة',
 	'farmer-permissiondenied-text1' => 'أنت لا تمتلك السماح لرؤية هذه الصفحة',
 	'farmer-deleting' => 'حذف $1',
 	'farmer-delete-title' => 'حذف الويكي',
-	'farmer-delete-text' => 'من فضلك اختر الويكي من القائمة بالأسفل التي ترغب في حذفها',
+	'farmer-delete-text' => 'من فضلك اختر الويكي من القائمة بالأسفل الذي ترغب في حذفه',
 	'farmer-delete-form' => 'اختر ويكي',
 	'farmer-delete-form-submit' => 'حذف',
 	'farmer-listofwikis' => 'قائمة الويكيات',
@@ -317,7 +317,7 @@ $messages['ar'] = array(
 	'farmer-basic-description' => 'وصف',
 	'farmer-basic-description-text' => 'ضع وصف الويكي الخاصة بك بالأسفل',
 	'farmer-basic-permission' => 'سماحات',
-	'farmer-basic-permission-text' => 'باستخدام الاستمارة بالأسفل، من الممكن تعديل السماحات لمستخدمي هذه الويكي.',
+	'farmer-basic-permission-text' => 'باستخدام الاستمارة بالأسفل، من الممكن تعديل السماحات لمستخدمي هذا الويكي.',
 	'farmer-basic-permission-visitor' => 'السماحات لكل زائر',
 	'farmer-basic-permission-visitor-text' => 'السماحات التالية سيتم تطبيقها على كل شخص يزور هذه الويكي',
 	'farmer-basic-permission-view' => 'رؤية كل الصفحات',
@@ -331,7 +331,7 @@ $messages['ar'] = array(
 	'farmer-yes' => 'نعم',
 	'farmer-no' => 'لا',
 	'farmer-basic-permission-user' => 'السماحات للمستخدمين المسجلين',
-	'farmer-basic-permission-user-text' => 'السماحات التالية سيتم تطبيقها على كل شخص مسجل للدخول إلى هذه الويكي',
+	'farmer-basic-permission-user-text' => 'السماحات التالية سيتم تطبيقها على كل شخص مسجل للدخول إلى هذا الويكي',
 	'farmer-setpermission' => 'ضبط السماحات',
 	'farmer-defaultskin' => 'الواجهة الافتراضية',
 	'farmer-defaultskin-button' => 'ضبط الواجهة الافتراضية',
@@ -351,14 +351,14 @@ $messages['ar'] = array(
 	'farmer-extensions-register-text4' => 'مسارات التضمين الحالية هي:',
 	'farmer-extensions-register-name' => 'الاسم',
 	'farmer-extensions-register-includefile' => 'ضمن الملف',
-	'farmer-error-exists' => 'لم يمكن إنشاء الويكي.  هي موجودة بالفعل: $1',
+	'farmer-error-exists' => 'لم يمكن إنشاء الويكي.  هو موجود بالفعل: $1',
 	'farmer-error-nodirconfig' => 'configDirectory لم يتم العثور عليها:',
 	'farmer-error-defnotset' => 'الويكي الافتراضي يجب ضبطه',
 	'farmer-error-mapnotfound' => 'الدالة لعمل خريطة لاسم الويكي في المزرعة لم يتم العثور عليها:',
 	'farmer-error-nofileconfwrite' => 'مزارع ميدياويكي لم يمكنه كتابة ملف إعدادات الويكي الافتراضي.',
 	'farmer-error-funcnotcall' => 'لم يمكن استدعاء الدالة:',
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
-	'farmer-error-wikicorrupt' => 'الويكي المخزنة فاسدة',
+	'farmer-error-wikicorrupt' => 'الويكي المخزن فاسد',
 );
 
 /** Bulgarian (Български)
