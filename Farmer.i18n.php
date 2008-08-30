@@ -542,8 +542,14 @@ $messages['da'] = array(
 
 /** German (Deutsch)
  * @author Leithian
+ * @author Pill
  */
 $messages['de'] = array(
+	'farmer-administration-delete' => 'Ein Wiki lÃ¶schen',
+	'farmer-notavailable' => 'Nicht verfÃ¼gbar.',
+	'farmer-wikicreated' => 'Wiki erstellt',
+	'farmer-wikicreated-text' => 'Dein Wiki wurde erstellt.
+Es befindet sich hier: $1',
 	'farmer-confirmsetting-description' => 'Beschreibung: $1',
 	'farmer-description' => 'Beschreibung',
 	'farmer-button-confirm' => 'BestÃ¤tigen',
@@ -795,14 +801,14 @@ Le nom de lâ€™espace du projet sera '''$2'''.  Les liens vers cet espace aura la
 	'farmer-basic-permission-text' => 'En utilisant le formulaire ci-dessous, il est possible de changer les habilitations des utilisateurs de ce wiki.',
 	'farmer-basic-permission-visitor' => 'Habilitations pour chaque visiteur',
 	'farmer-basic-permission-visitor-text' => 'Les habilitations suivantes seront applicables pour toutes les personnes qui visiteront ce wiki.',
-	'farmer-basic-permission-view' => 'Visionner toutes les pages ',
-	'farmer-basic-permission-edit' => 'Ã‰diter toutes les pages ',
-	'farmer-basic-permission-createpage' => 'CrÃ©er de nouvelles pages ',
-	'farmer-basic-permission-createtalk' => 'CrÃ©er des pages de discussion ',
-	'farmer-basic-permission-move' => 'DÃ©placer les pages ',
+	'farmer-basic-permission-view' => 'Visionner toutes les pages',
+	'farmer-basic-permission-edit' => 'Ã‰diter toutes les pages',
+	'farmer-basic-permission-createpage' => 'CrÃ©er de nouvelles pages',
+	'farmer-basic-permission-createtalk' => 'CrÃ©er des pages de discussion',
+	'farmer-basic-permission-move' => 'DÃ©placer les pages',
 	'farmer-basic-permission-upload' => 'Importer (tÃ©lÃ©verser) des fichiers',
 	'farmer-basic-permission-reupload' => 'RÃ©-importer (retÃ©lÃ©verser) les fichiers (Ã©crase les versions prÃ©cÃ©dentes)',
-	'farmer-basic-permission-minoredit' => 'Autorise les corrections mineures ',
+	'farmer-basic-permission-minoredit' => 'Autorise les corrections mineures',
 	'farmer-yes' => 'Oui',
 	'farmer-no' => 'Non',
 	'farmer-basic-permission-user' => 'Habilitations pour les utilisateurs enregistrÃ©s',
@@ -825,12 +831,12 @@ Le nom de lâ€™espace du projet sera '''$2'''.  Les liens vers cet espace aura la
 	'farmer-extensions-register-name' => 'Nom',
 	'farmer-extensions-register-includefile' => 'Fichier Include',
 	'farmer-error-exists' => 'Lâ€™interface ne peut crÃ©er le Wiki.  Il existe dÃ©jÃ  : $1',
-	'farmer-error-nodirconfig' => 'configDirectory introuvable : ',
+	'farmer-error-nodirconfig' => 'configDirectory introuvable :',
 	'farmer-error-defnotset' => 'Le wiki par dÃ©faut doit Ãªtre dÃ©fini.',
 	'farmer-error-mapnotfound' => 'La fonction inscrivant le nom du wiki dans la Â« ferme Â» est introuvable :',
 	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer ne peut Ã©crire le fichier de configuration du wiki par dÃ©faut.',
-	'farmer-error-funcnotcall' => 'La fonction suivante est introuvable : ',
-	'farmer-error-noextwrite' => 'Impossible dâ€™Ã©crire le fichier dâ€™extension suivant : ',
+	'farmer-error-funcnotcall' => 'La fonction suivante est introuvable :',
+	'farmer-error-noextwrite' => 'Impossible dâ€™Ã©crire le fichier dâ€™extension suivant :',
 	'farmer-error-wikicorrupt' => 'Le wiki stockÃ© est corrompu',
 );
 
@@ -845,9 +851,12 @@ $messages['frp'] = array(
  * @author Snakesteuben
  */
 $messages['fy'] = array(
+	'farmer-description' => 'Beskriuwing',
 	'farmer-createwiki-user' => 'Meidoggernamme',
+	'farmer-createwiki-description' => 'Beskriuwing',
 	'farmer-delete-form-submit' => 'Wiskje',
 	'farmer-mainpage' => 'Haadside',
+	'farmer-basic-description' => 'Beskriuwing',
 	'farmer-basic-permission-upload' => 'Triemmen oplade',
 	'farmer-yes' => 'Ja',
 );
@@ -980,6 +989,13 @@ Unha vez que a extensiÃ³n estea rexistrada, todos os wikis poderana usar.',
 	'farmer-error-funcnotcall' => 'Non se puido chamar a funciÃ³n:',
 	'farmer-error-noextwrite' => 'Non pode escribir a extensiÃ³n do ficheiro:',
 	'farmer-error-wikicorrupt' => 'O wiki gardado estÃ¡ corrompido',
+);
+
+/** Gothic (í €í¼²í €í¼¿í €í½„í €í¼¹í €í½ƒí €í¼º)
+ * @author Jocke Pirat
+ */
+$messages['got'] = array(
+	'farmer-delete-form-submit' => 'TaÃ­ran',
 );
 
 /** Manx (Gaelg)
