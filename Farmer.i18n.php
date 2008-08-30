@@ -1650,6 +1650,7 @@ $messages['km'] = array(
 	'farmer-list-wiki-text' => '[[$1|បញ្ជី]]នៃរាល់វិគី​នៅលើ {{SITENAME}}',
 	'farmer-createwiki' => 'បង្កើតវិគី',
 	'farmer-createwiki-text' => '[[$1|បង្កើត]]វិគីថ្មីមួយទៅ!',
+	'farmer-administration-extension-text' => '[[$1|គ្រប់គ្រង]]ផ្នែកបន្ថែមដែលបានដំឡើង។',
 	'farmer-admimistration-listupdate-text' => '[[$1|បន្ទាន់សម័យ]] បញ្ជី នៃ វិគី លើ {{SITENAME}}',
 	'farmer-administration-delete' => 'លុបវិគីចេញ',
 	'farmer-administer-thiswiki' => 'អភិរក្សវិគីនេះ',
