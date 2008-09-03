@@ -137,6 +137,7 @@ Once an extension is registered, all wikis will be able to use it.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Darth Kule
  * @author Jon Harald Søby
  * @author Purodha
  */
@@ -145,6 +146,9 @@ $messages['qqq'] = array(
 	'farmer-about' => '{{Identical|About}}',
 	'farmer-list-wiki' => '{{Identical|List of wikis}}',
 	'farmer-createwiki' => '{{Identical|Create a wiki}}',
+	'farmer-confirmsetting-name' => '{{Identical|Name}}',
+	'farmer-confirmsetting-title' => '{{Identical|Title}}',
+	'farmer-confirmsetting-description' => '{{Identical|Description}}',
 	'farmer-description' => '{{Identical|Description}}',
 	'farmer-button-confirm' => '{{Identical|Confirm}}',
 	'farmer-button-submit' => '{{Identical|Submit}}',
@@ -991,7 +995,7 @@ Unha vez que a extensión estea rexistrada, todos os wikis poderana usar.',
 	'farmer-error-wikicorrupt' => 'O wiki gardado está corrompido',
 );
 
-/** Gothic (������������������������������������)
+/** Gothic
  * @author Jocke Pirat
  */
 $messages['got'] = array(
@@ -1203,7 +1207,8 @@ $messages['hsb'] = array(
 	'farmercreatesitename' => 'Mjeno sydła',
 	'farmercreatenextstep' => 'Přichodny krok',
 	'farmernewwikimainpage' => '== Witaj do twojeho Wikija ==
-Jeli to čitaš, je so twój nowy wiki korektnje instalował. Zo by swój wiki přiměrił, wopytaj prošu [[Special:Farmer]].',
+Jeli to čitaš, je so twój nowy wiki korektnje instalował. 
+Móžeš [[Special:Farmer|swój wiki přiměrić]].',
 	'farmer-about' => 'Wo',
 	'farmer-about-text' => 'MediaWiki Farmer ći dowola farmu wikijow MediaWiki zrjadować.',
 	'farmer-list-wiki' => 'Lisćina Wikijow',
@@ -1567,14 +1572,113 @@ $messages['is'] = array(
  * @author Pietrodn
  */
 $messages['it'] = array(
+	'farmercantcreatewikis' => "Non puoi creare wiki perché non possiedi i privilegi ''createwikis''",
+	'farmercreatesitename' => 'Nome sito',
+	'farmercreatenextstep' => 'Passo successivo',
+	'farmernewwikimainpage' => '== Benvenuto nella tua nuova wiki ==
+Se stai leggendo questo messaggio, la tua wiki è stata installata correttamente.
+Puoi [[Special:Farm|personalizzare la tua wiki]].',
+	'farmer-about' => 'Informazioni',
+	'farmer-list-wiki' => 'Elenco di wiki',
+	'farmer-list-wiki-text' => '[[$1|Elenca]] tutte le wiki su {{SITENAME}}',
+	'farmer-createwiki' => 'Crea una wiki',
+	'farmer-createwiki-text' => '[[$1|Crea]] una nuova wiki ora!',
+	'farmer-administration-extension' => 'Gestisci estensioni',
+	'farmer-administration-extension-text' => '[[$1|Gestisci]] estensioni installate.',
+	'farmer-admimistration-listupdate-text' => "[[$1|Aggiorna]] l'elenco delle wiki su {{SITENAME}}",
+	'farmer-administration-delete' => 'Cancella una wiki',
+	'farmer-administer-thiswiki' => 'Amministra questa wiki',
+	'farmer-administer-thiswiki-text' => '[[$1|Amministra]] i cambiamenti a questa wiki',
+	'farmer-notavailable' => 'Non disponibile',
+	'farmer-notavailable-text' => 'Questa caratteristica è disponibile solo sulla wiki principale',
+	'farmer-wikicreated' => 'Wiki creata',
+	'farmer-wikicreated-text' => 'La tua wiki è stata creata.
+È accessibile a $1',
+	'farmer-default' => 'Per default, nessuno ha permessi su questa wiki eccetto te.
+Puoi cambiare i privilegi degli utenti attraverso $1',
+	'farmer-wikiexists' => 'La wiki esiste',
+	'farmer-wikiexists-text' => "La wiki che stai provando a creare, '''$1''', esiste già.
+Torna indietro e prova a inserire un altro nome.",
+	'farmer-confirmsetting' => 'Conferma le impostazioni della wiki',
+	'farmer-confirmsetting-name' => 'Nome: $1',
+	'farmer-confirmsetting-title' => 'Titolo: $1',
+	'farmer-confirmsetting-description' => 'Descrizione: $1',
 	'farmer-description' => 'Descrizione',
+	'farmer-confirmsetting-text' => "La tua wiki, '''$1''', sarà accessibile attraverso http://$1.myfarm.
+Il namespace progetto sarà '''$2'''.
+I collegamenti a questo namespace saranno del tipo '''<nowiki>[[$2:Page name]]</nowiki>'''.
+Se è questo quello che vuoi, premi il pulstante '''conferma''' di seguito.",
 	'farmer-button-confirm' => 'Conferma',
 	'farmer-button-submit' => 'Invia',
+	'farmer-createwiki-form-title' => 'Crea una wiki',
+	'farmer-createwiki-form-text1' => 'Usa il modulo di seguito per creare una nuova wiki.',
+	'farmer-createwiki-form-help' => 'Aiuto',
+	'farmer-createwiki-form-text2' => "; Nome wiki: Il nome della wiki
+Contiene solo lettere e numeri.
+Il nome della wiki sarà usato come parte dell'URL per identificare la tua wiki.
+Per esempio, se inserisci '''titolo''', allora la tua wiki sarà accessibile attraverso <nowiki>http://</nowiki>'''titolo'''.miodominio.",
+	'farmer-createwiki-form-text3' => '; Titolo wiki: Titolo della wiki.
+Sarà usato nel titolo di ogni pagina della tua wiki.
+Sarà anche il nome del namespace progetto e dei prefissi degli interwiki.',
+	'farmer-createwiki-form-text4' => "; Descrizione: Descrizione della wiki.
+Questa è una descrizione della wiki.
+Sarà mostrato nell'elenco delle wiki.",
 	'farmer-createwiki-user' => 'Nome utente',
+	'farmer-createwiki-name' => 'Nome wiki',
+	'farmer-createwiki-title' => 'Titolo wiki',
 	'farmer-createwiki-description' => 'Descrizione',
+	'farmer-updatedlist' => 'Elenco aggiornato',
+	'farmer-notaccessible' => 'Non accessibile',
+	'farmer-permissiondenied' => 'Permesso negato',
+	'farmer-permissiondenied-text1' => 'Non hai il permesso di accedere a questa pagina',
+	'farmer-deleting' => 'Cancellazione $1',
+	'farmer-delete-title' => 'Cancella wiki',
+	'farmer-delete-text' => "Seleziona nell'elenco la wiki che desideri cancellare",
+	'farmer-delete-form' => 'Seleziona una wiki',
 	'farmer-delete-form-submit' => 'Cancella',
+	'farmer-listofwikis' => 'Elenco di wiki',
+	'farmer-mainpage' => 'Pagina principale',
+	'farmer-basic-title' => 'Parametri base',
+	'farmer-basic-title1' => 'Titolo',
+	'farmer-basic-title1-text' => 'La tua wiki non ha un titolo. Impostane uno <b>ora</b>',
 	'farmer-basic-description' => 'Descrizione',
+	'farmer-basic-description-text' => 'Imposta la descrizione della tua wiki di seguito',
+	'farmer-basic-permission' => 'Permessi',
+	'farmer-basic-permission-text' => 'Utilizzando il modulo seguente è possibile modificare i permessi degli utenti di questa wiki.',
+	'farmer-basic-permission-visitor' => 'Permessi per tutti i visitatori',
+	'farmer-basic-permission-visitor-text' => 'I permessi seguenti saranno applicati a tutte le persone che visiteranno questa wiki',
+	'farmer-basic-permission-view' => 'Visualizza tutte le pagine',
+	'farmer-basic-permission-edit' => 'Edita tutte le pagine',
+	'farmer-basic-permission-createpage' => 'Crea nuove pagine',
+	'farmer-basic-permission-createtalk' => 'Crea pagine di discussione',
+	'farmer-basic-permission-move' => 'Sposta pagine',
 	'farmer-basic-permission-upload' => 'Carica file multimediali',
+	'farmer-basic-permission-reupload' => 'Ri-carica file multimediali (sovrascrivendo le versioni precedenti)',
+	'farmer-basic-permission-minoredit' => 'Permette modifiche minori',
+	'farmer-yes' => 'Sì',
+	'farmer-no' => 'No',
+	'farmer-basic-permission-user' => 'Permessi per gli utenti registrati',
+	'farmer-basic-permission-user-text' => 'I permessi seguenti saranno applicati a tutti gli utenti registrati su questa wiki che avranno effettuato il login',
+	'farmer-setpermission' => 'Imposta permessi',
+	'farmer-defaultskin' => 'Skin di default',
+	'farmer-defaultskin-button' => 'Imposta skin di default',
+	'farmer-extensions' => 'Attiva estensioni',
+	'farmer-extensions-button' => 'Imposta estensioni attive',
+	'farmer-extensions-invalid' => 'Estensione non valida',
+	'farmer-extensions-invalid-text' => "Non possiamo aggiungere l'estensione perché il file selezionato per l'inclusione non può essere trovato",
+	'farmer-extensions-available' => 'Estensioni disponibile',
+	'farmer-extensions-noavailable' => 'Nessuna estensione è stata registrata',
+	'farmer-extensions-register' => 'Registra estensione',
+	'farmer-extensions-register-text2' => "Per il parametro ''Include file'', inserisci il nome del file PHP come desideri in LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Se il nome del file contiene '''\$root''', quella variabile sarà sostituita con la cartella principale di MediaWiki.",
+	'farmer-extensions-register-text4' => 'I percorsi attuali inclusi sono:',
+	'farmer-extensions-register-name' => 'Nome',
+	'farmer-extensions-register-includefile' => 'Includi file',
+	'farmer-error-exists' => 'Impossibile creare wiki. Esiste già :$1',
+	'farmer-error-nodirconfig' => 'configDirectory non trovata:',
+	'farmer-error-defnotset' => 'La wiki di default deve essere impostata',
+	'farmer-error-funcnotcall' => 'Impossibile richiamare funzione:',
+	'farmer-error-noextwrite' => 'Impossibile scrivere file estensione:',
 );
 
 /** Japanese (日本語)
@@ -2075,6 +2179,14 @@ $messages['mr'] = array(
  */
 $messages['mt'] = array(
 	'farmer-createwiki-user' => 'Isem l-utent',
+);
+
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'farmer-confirmsetting-name' => 'Лемезэ: $1',
+	'farmer-extensions-register-name' => 'Лемезэ',
 );
 
 /** Nahuatl (Nāhuatl)
@@ -2690,8 +2802,9 @@ $messages['pt'] = array(
 	'farmercantcreatewikis' => 'Você não pode criar wikis porque não possui o privilégio "createwikis"',
 	'farmercreatesitename' => 'Nome do sítio',
 	'farmercreatenextstep' => 'Próximo passo',
-	'farmernewwikimainpage' => '== Bem-vindo ao Seu Wiki ==
-Se está a ler isto, o seu wiki foi correctamente instalado.  Para personalizar o seu wiki, por favor, visite [[Special:Farmer]].',
+	'farmernewwikimainpage' => '== Bem-vindo ao seu Wiki ==
+Se está a ler isto, o seu wiki foi correctamente instalado.
+Pode agora [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-about' => 'Sobre',
 	'farmer-about-text' => 'MediaWiki Farmer permite-lhe gerir uma "farm" de wikis MediaWiki.',
 	'farmer-list-wiki' => 'Lista de Wikis',
