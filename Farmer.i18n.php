@@ -1754,6 +1754,13 @@ Iku bisa diaksès ing $1',
 	'farmer-error-wikicorrupt' => 'Wiki sing disimpen iku rusak',
 );
 
+/** Georgian (ქართული)
+ * @author Malafaya
+ */
+$messages['ka'] = array(
+	'farmer-confirmsetting-name' => 'სახელი: $1',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
