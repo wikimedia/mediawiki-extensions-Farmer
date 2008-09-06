@@ -365,6 +365,135 @@ $messages['ar'] = array(
 	'farmer-error-wikicorrupt' => 'الويكي المخزن فاسد',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
+$messages['arz'] = array(
+	'farmer' => 'مزارع',
+	'farmer-desc' => 'التحكم بمزرعة ميدياويكي',
+	'farmercantcreatewikis' => 'أنت غير قادر على إنشاء ويكيات لأنك لا تمتلك الصلاحية createwikis',
+	'farmercreateurl' => 'مسار',
+	'farmercreatesitename' => 'اسم الموقع',
+	'farmercreatenextstep' => 'الخطوة التالية',
+	'farmernewwikimainpage' => '== مرحبا فى الويكى الخاص بك ==
+لو أنك تقرأ هذا، فالويكى الجديد الخاص بك تم تنصيبه بشكل صحيح.
+يمكنك [[Special:Farmer|تخصيص الويكى الخاص بك]].',
+	'farmer-about' => 'حول',
+	'farmer-about-text' => 'مزارع ميدياويكى يسمح لك بإدارة مزرعة من ويكيات ميدياويكي.',
+	'farmer-list-wiki' => 'قائمة الويكيات',
+	'farmer-list-wiki-text' => '[[$1|عرض]] كل الويكيات فى {{SITENAME}}',
+	'farmer-createwiki' => 'إنشاء ويكي',
+	'farmer-createwiki-text' => '[[$1|إنشاء]] ويكى جديد الآن!',
+	'farmer-administration' => 'إدارة المزرعة',
+	'farmer-administration-extension' => 'التحكم بالامتدادات',
+	'farmer-administration-extension-text' => '[[$1|التحكم]] بالامتدادات المنصبة.',
+	'farmer-admimistration-listupdate' => 'تحديث قائمة المزرعة',
+	'farmer-admimistration-listupdate-text' => '[[$1|تحديث]] قائمة الويكيات فى {{SITENAME}}',
+	'farmer-administration-delete' => 'حذف ويكي',
+	'farmer-administration-delete-text' => '[[$1|حذف]] ويكى من المزرعة',
+	'farmer-administer-thiswiki' => 'إدارة هذه الويكي',
+	'farmer-administer-thiswiki-text' => '[[$1|إدارة]] التغييرات إلى هذه الويكي',
+	'farmer-notavailable' => 'غير متوفرة',
+	'farmer-notavailable-text' => 'هذه الخاصية متوفرة فقط فى الويكى الرئيسي',
+	'farmer-wikicreated' => 'الويكى تم إنشاؤه',
+	'farmer-wikicreated-text' => 'الويكى الخاص بك تم إنشاؤه.
+يمكن الوصول إليه فى $1',
+	'farmer-default' => 'افتراضيا، لا أحد لديه سماحات فى هذا الويكى فيماعداك.
+يمكنك تغيير صلاحيات المستخدم من خلال $1',
+	'farmer-wikiexists' => 'الويكى موجود',
+	'farmer-wikiexists-text' => "الويكى التى تحاول إنشاءه، '''$1'''، موجود بالفعل.
+من فضلك عد وجرب اسما آخر.",
+	'farmer-confirmsetting' => 'تأكيد إعدادات الويكي',
+	'farmer-confirmsetting-name' => 'الاسم: $1',
+	'farmer-confirmsetting-title' => 'العنوان: $1',
+	'farmer-confirmsetting-description' => 'الوصف : $1',
+	'farmer-description' => 'وصف',
+	'farmer-confirmsetting-text' => "الويكى الخاص بك، '''$1'''، سيمكن الوصول إليه من خلال http://$1.myfarm.
+نطاق المشروع سيصبح '''$2'''.
+الوصلات إلى هذا النطاق ستكون من الشكل '''<nowiki>[[$2:Page name]]</nowiki>'''.
+لو أن هذا ما تريده، اضغط زر '''تأكيد''' بالأسفل.",
+	'farmer-button-confirm' => 'تأكيد',
+	'farmer-button-submit' => 'تنفيذ',
+	'farmer-createwiki-form-title' => 'إنشاء ويكي',
+	'farmer-createwiki-form-text1' => 'استخدم الاستمارة بالأسفل لإنشاء ويكى جديدة.',
+	'farmer-createwiki-form-help' => 'مساعدة',
+	'farmer-createwiki-form-text2' => "; اسم الويكي: الاسم الخاص بالويكي.
+يحتوى فقط على حروف وأرقام.
+اسم الويكى سيستخدم كجزء من المسار للتعرف على الويكى الخاصة بك.
+على سبيل المثال، لو أنك أدخلت '''title'''، فسيصبح الويكى الخاص بك متاحا للوصول إليها من خلال <nowiki>http://</nowiki>'''title'''.mydomain.",
+	'farmer-createwiki-form-text3' => '; عنوان الويكي: العنوان الخاص بالويكي.
+سيستخدم فى عنوان كل صفحة فى الويكى الخاصة بك.
+سيصبح أيضا نطاق المشروع وبادئة الإنترويكي.',
+	'farmer-createwiki-form-text4' => '; الوصف: وصف الويكي.
+هذا نص لوصف الويكي.
+هذا سيعرض فى قائمة الويكي.',
+	'farmer-createwiki-user' => 'اسم المستخدم',
+	'farmer-createwiki-name' => 'اسم الويكي',
+	'farmer-createwiki-title' => 'عنوان الويكي',
+	'farmer-createwiki-description' => 'الوصف',
+	'farmer-updatedlist' => 'قائمة محدثة',
+	'farmer-notaccessible' => 'لا يمكن الوصول إليه',
+	'farmer-notaccessible-test' => 'هذه الخاصية متوفرة فقط فى الويكى الأساسى فى المزرعة',
+	'farmer-permissiondenied' => 'السماح مرفوض',
+	'farmer-permissiondenied-text' => 'أنت لا تمتلك السماح لحذف ويكى من المزرعة',
+	'farmer-permissiondenied-text1' => 'أنت لا تمتلك السماح لرؤية هذه الصفحة',
+	'farmer-deleting' => 'حذف $1',
+	'farmer-delete-title' => 'حذف الويكي',
+	'farmer-delete-text' => 'من فضلك اختر الويكى من القائمة بالأسفل الذى ترغب فى حذفه',
+	'farmer-delete-form' => 'اختر ويكي',
+	'farmer-delete-form-submit' => 'حذف',
+	'farmer-listofwikis' => 'قائمة الويكيات',
+	'farmer-mainpage' => 'الصفحة الرئيسية',
+	'farmer-basic-title' => 'المحددات الأساسية',
+	'farmer-basic-title1' => 'عنوان',
+	'farmer-basic-title1-text' => 'الويكى الخاص بك لا يمتلك عنوانا.  حدد واحدا <b>الآن</b>',
+	'farmer-basic-description' => 'وصف',
+	'farmer-basic-description-text' => 'ضع وصف الويكى الخاصة بك بالأسفل',
+	'farmer-basic-permission' => 'سماحات',
+	'farmer-basic-permission-text' => 'باستخدام الاستمارة بالأسفل، من الممكن تعديل السماحات لمستخدمى هذا الويكي.',
+	'farmer-basic-permission-visitor' => 'السماحات لكل زائر',
+	'farmer-basic-permission-visitor-text' => 'السماحات التالية سيتم تطبيقها على كل شخص يزور هذه الويكي',
+	'farmer-basic-permission-view' => 'رؤية كل الصفحات',
+	'farmer-basic-permission-edit' => 'تعديل كل الصفحات',
+	'farmer-basic-permission-createpage' => 'إنشاء صفحات جديدة',
+	'farmer-basic-permission-createtalk' => 'إنشاء صفحات نقاش',
+	'farmer-basic-permission-move' => 'نقل الصفحات',
+	'farmer-basic-permission-upload' => 'رفع ملفات',
+	'farmer-basic-permission-reupload' => 'إعادة رفع الملفات (على الملفات الموجودة)',
+	'farmer-basic-permission-minoredit' => 'السماح بالتعديلات الطفيفة',
+	'farmer-yes' => 'نعم',
+	'farmer-no' => 'لا',
+	'farmer-basic-permission-user' => 'السماحات للمستخدمين المسجلين',
+	'farmer-basic-permission-user-text' => 'السماحات التالية سيتم تطبيقها على كل شخص مسجل للدخول إلى هذا الويكي',
+	'farmer-setpermission' => 'ضبط السماحات',
+	'farmer-defaultskin' => 'الواجهة الافتراضية',
+	'farmer-defaultskin-button' => 'ضبط الواجهة الافتراضية',
+	'farmer-extensions' => 'الامتدادات النشطة',
+	'farmer-extensions-button' => 'ضبط الامتدادات النشطة',
+	'farmer-extensions-extension-denied' => 'أنت لا تمتلك السماح لاستخدام هذه الخاصية.
+يجب أن تكون عضوا فى مجموعة إداريى المزرعة',
+	'farmer-extensions-invalid' => 'امتداد غير صحيح',
+	'farmer-extensions-invalid-text' => 'لم يمكننا إضافة الامتداد لأن الملف المختار للتضمين لم يمكن إيجاده',
+	'farmer-extensions-available' => 'الامتدادات المتوفرة',
+	'farmer-extensions-noavailable' => 'لا امتدادات مسجلة',
+	'farmer-extensions-register' => 'تسجيل امتداد',
+	'farmer-extensions-register-text1' => 'استخدم الاستمارة بالأسفل لتسجيل امتداد جديد للمزرعة.
+متى تم تسجيل امتداد ما، كل الويكيات ستصبح قادرة على استخدامه.',
+	'farmer-extensions-register-text2' => "لمحدد ''Include File''، أدخل اسم ملف PHP كما كنت ستفعل فى LocalSettings.php.",
+	'farmer-extensions-register-text3' => "لو أن اسم الملف يحتوى على '''\$root'''، هذا المتغير سيتم استبداله بمجلد الجذر للميدياويكي.",
+	'farmer-extensions-register-text4' => 'مسارات التضمين الحالية هي:',
+	'farmer-extensions-register-name' => 'الاسم',
+	'farmer-extensions-register-includefile' => 'ضمن الملف',
+	'farmer-error-exists' => 'لم يمكن إنشاء الويكي.  هو موجود بالفعل: $1',
+	'farmer-error-nodirconfig' => 'configDirectory لم يتم العثور عليها:',
+	'farmer-error-defnotset' => 'الويكى الافتراضى يجب ضبطه',
+	'farmer-error-mapnotfound' => 'الدالة لعمل خريطة لاسم الويكى فى المزرعة لم يتم العثور عليها:',
+	'farmer-error-nofileconfwrite' => 'مزارع ميدياويكى لم يمكنه كتابة ملف إعدادات الويكى الافتراضي.',
+	'farmer-error-funcnotcall' => 'لم يمكن استدعاء الدالة:',
+	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
+	'farmer-error-wikicorrupt' => 'الويكى المخزن فاسد',
+);
+
 /** Bulgarian (Български)
  * @author Borislav
  * @author DCLXVI
@@ -1665,7 +1794,7 @@ Sarà mostrato nell'elenco delle wiki.",
 	'farmer-extensions' => 'Attiva estensioni',
 	'farmer-extensions-button' => 'Imposta estensioni attive',
 	'farmer-extensions-invalid' => 'Estensione non valida',
-	'farmer-extensions-invalid-text' => "Non possiamo aggiungere l'estensione perché il file selezionato per l'inclusione non può essere trovato",
+	'farmer-extensions-invalid-text' => "Non è stato possibile aggiungere l'estensione perché il file selezionato per l'inclusione non può essere trovato",
 	'farmer-extensions-available' => 'Estensioni disponibile',
 	'farmer-extensions-noavailable' => 'Nessuna estensione è stata registrata',
 	'farmer-extensions-register' => 'Registra estensione',
@@ -2839,9 +2968,9 @@ Pode agora [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-confirmsetting-title' => 'Título: $1',
 	'farmer-confirmsetting-description' => 'Descrição: $1',
 	'farmer-description' => 'Descrição',
-	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', será acessível através de http://$1.myfarm.
+	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', estará acessível através de http://$1.myfarm.
 O espaço nominal do projecto será '''$2'''.
-Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da Página]]</nowiki>'''.
+Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
 Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Submeter',
