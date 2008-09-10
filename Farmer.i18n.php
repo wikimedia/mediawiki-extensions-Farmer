@@ -1131,6 +1131,13 @@ $messages['got'] = array(
 	'farmer-delete-form-submit' => 'Taíran',
 );
 
+/** Swiss German (Alemannisch)
+ * @author J. 'mach' wust
+ */
+$messages['gsw'] = array(
+	'farmer-basic-title1' => 'Titel',
+);
+
 /** Manx (Gaelg)
  * @author MacTire02
  */
@@ -1365,7 +1372,7 @@ Móžeš [[Special:Farmer|swój wiki přiměrić]].',
 	'farmer-confirmsetting-title' => 'Titul: $1',
 	'farmer-confirmsetting-description' => 'Wopisanje: $1',
 	'farmer-description' => 'Wopisanje',
-	'farmer-confirmsetting-text' => "Twój wiki, '''$1''', budźe přez http://$1.mojafarma přistupny być. Projektoy mjenowy rum budźe '''$2'''. Wotkazy k tutomu mjenowemu rumej změja formu '''<nowiki>[[$2:Mjeno strony]]</nowiki>'''. Jeli to je to, štož chceš, stłóč deleka na tłóčatko '''potwjerdźić'''.",
+	'farmer-confirmsetting-text' => "Twój wiki, '''$1''', budźe přez http://$1.myfarm přistupny być. Projektowy mjenowy rum budźe '''$2'''. Wotkazy k tutomu mjenowemu rumej změja formu '''<nowiki>[[$2:Page name]]</nowiki>'''. Jeli to je to, štož chceš, stłóč deleka na tłóčatko '''potwjerdźić'''.",
 	'farmer-button-confirm' => 'Potwjerdźić',
 	'farmer-button-submit' => 'Wotesłać',
 	'farmer-createwiki-form-title' => 'Wiki wutworić',
