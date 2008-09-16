@@ -1131,6 +1131,13 @@ $messages['got'] = array(
 	'farmer-delete-form-submit' => 'Taíran',
 );
 
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Crazymadlover
+ */
+$messages['grc'] = array(
+	'farmer-createwiki-form-help' => 'Βοήθεια',
+);
+
 /** Swiss German (Alemannisch)
  * @author J. 'mach' wust
  */
