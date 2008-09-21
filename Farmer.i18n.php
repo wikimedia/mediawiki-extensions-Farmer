@@ -676,20 +676,66 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Leithian
  * @author Pill
+ * @author Revolus
  */
 $messages['de'] = array(
+	'farmer' => 'Farmer',
+	'farmer-desc' => 'Verwalte eine MediaWiki-Farm',
+	'farmercantcreatewikis' => 'Du kannst kein Wiki anlegen, da dir die Rechte („createwikis“) dazu fehlen.',
+	'farmercreatenextstep' => 'Nächster Schritt',
+	'farmernewwikimainpage' => '== Willkommen in deinem Wiki ==
+
+Wenn du diesen Text liest, hast du dein neues Wiki korrekt installiert.
+Du kannst es nach deinen Wünschen [[Special:Farmer|anpassen]].',
+	'farmer-about' => 'Über',
+	'farmer-about-text' => 'MediaWiki-Farmer erlaubt es dir, MediaWiki-Farmes zu betreiben.',
+	'farmer-list-wiki' => 'Liste Wikis auf',
+	'farmer-list-wiki-text' => '[[$1|Liste]] aller Wikis auf {{SITENAME}}',
+	'farmer-createwiki' => 'Ein Wiki anlegen',
+	'farmer-createwiki-text' => '[[$1|Erstelle]] jetzt ein neues Wiki.',
+	'farmer-administration' => 'Farm-Administration',
+	'farmer-administration-extension' => 'Erweiterungen verwalten',
+	'farmer-administration-extension-text' => '[[$1|Verwalte]] installierte Erweiterungen.',
+	'farmer-admimistration-listupdate' => 'Farmenliste aktualisieren',
+	'farmer-admimistration-listupdate-text' => '[[$1|Aktualisiere]] die Liste der Wikis auf {{SITENAME}}',
 	'farmer-administration-delete' => 'Ein Wiki löschen',
+	'farmer-administration-delete-text' => '[[$1|Lösche]] ein Wiki von der Farm',
+	'farmer-administer-thiswiki' => 'Administriere dieses Wiki',
 	'farmer-notavailable' => 'Nicht verfügbar.',
 	'farmer-wikicreated' => 'Wiki erstellt',
 	'farmer-wikicreated-text' => 'Dein Wiki wurde erstellt.
 Es befindet sich hier: $1',
+	'farmer-wikiexists' => 'Wiki existiert',
+	'farmer-confirmsetting' => 'Wiki-Einstellungen bestätigen',
+	'farmer-confirmsetting-name' => 'Name: $1',
+	'farmer-confirmsetting-title' => 'Titel: $1',
 	'farmer-confirmsetting-description' => 'Beschreibung: $1',
 	'farmer-description' => 'Beschreibung',
+	'farmer-confirmsetting-text' => "Dein Wiki – '''$1''' – wird über http://$1.meineWikiFarm/ erreichbar sein.
+Der Projektnamensraum wird '''$2''' heißen.
+Links zu diesem Namensraum werden die Gestallt '''<nowiki>[[$2:Seitenname]]</nowiki>''' haben.
+Wenn alles korrekt ist, so bestätige dies mit einem Druck auf '''Bestätigen'''.",
 	'farmer-button-confirm' => 'Bestätigen',
+	'farmer-button-submit' => 'Absenden',
+	'farmer-createwiki-form-title' => 'Ein Wiki erstellen',
+	'farmer-createwiki-form-text1' => 'Benutze das folgende Formular, um ein neues Wiki anzulegen.',
 	'farmer-createwiki-form-help' => 'Hilfe',
+	'farmer-createwiki-form-text2' => "; Wikiname: Der Name des Wikis.
+Es darf nur die Buchstaben A–Z und Zahlen enthalten.
+Der Wikiname wird als Teil der URL zum Wiki verwendet.
+Wenn du zum Beispiel '''Name''' angibst, wird die URL zum Wiki <nowiki>http://</nowiki>'''name'''.example.com/ heißen.",
+	'farmer-createwiki-form-text3' => '; Wikiname: Name des Wiki.
+Er wird auf jeder Seite des Wikis verwendet.
+Er wird ebenfalls der Titel des Projektnamensraumes und der Interwiki-Präfix sein.',
+	'farmer-createwiki-form-text4' => '; Beschreibung: Beschreibung des Wikis.
+Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-createwiki-user' => 'Benutzername',
+	'farmer-createwiki-name' => 'Wikiname',
+	'farmer-createwiki-title' => 'Wikititel',
 	'farmer-createwiki-description' => 'Beschreibung',
+	'farmer-updatedlist' => 'Liste aktualisieren',
 	'farmer-delete-form-submit' => 'Löschen',
+	'farmer-listofwikis' => 'Liste der Wikis',
 	'farmer-mainpage' => 'Hauptseite',
 	'farmer-basic-description' => 'Beschreibung',
 	'farmer-yes' => 'Ja',
@@ -2029,6 +2075,9 @@ $messages['lb'] = array(
 	'farmercantcreatewikis' => 'Dir kënnt keng nei Wiki opmaachen well dir keng "cratewiki"-Rechter hutt',
 	'farmercreatesitename' => 'Numm vum Site',
 	'farmercreatenextstep' => 'Nächste Schrëtt',
+	'farmernewwikimainpage' => '==Wëllkomm op ärer Wiki ==
+Wann Dir dëst liest, gouf är Wiki korrekt installéiert.
+Dir kënnt [[Special:Farmer|är Wiki elo astellen]].',
 	'farmer-about' => 'Iwwer',
 	'farmer-list-wiki' => 'Lëscht vun de Wikien',
 	'farmer-list-wiki-text' => '[[$1|Lëscht]] vun alle Wikien op {{SITENAME}}',
@@ -2059,6 +2108,7 @@ $messages['lb'] = array(
 	'farmer-updatedlist' => 'Geännert Lëscht',
 	'farmer-notaccessible' => 'Net zougänglech',
 	'farmer-permissiondenied' => 'Erlaabnis refuséiert',
+	'farmer-permissiondenied-text1' => 'Dir hut net déi néideg Rechter fir op dës Säit ze goen',
 	'farmer-deleting' => 'Läsche vun $1',
 	'farmer-delete-title' => 'Eng Wiki läschen',
 	'farmer-delete-form' => 'Wielt eng Wiki eraus',
@@ -2067,6 +2117,7 @@ $messages['lb'] = array(
 	'farmer-mainpage' => 'Haaptsäit',
 	'farmer-basic-title' => 'Basisparameteren',
 	'farmer-basic-title1' => 'Titel',
+	'farmer-basic-title1-text' => "Är Wiki huet keen Titel. Gitt '''elo''' een un.",
 	'farmer-basic-description' => 'Beschreiwung',
 	'farmer-basic-description-text' => "Gitt d'Beschreiwung vun ärer Wiki hei ënnedrënner an",
 	'farmer-basic-permission' => 'Rechter',
@@ -2084,6 +2135,8 @@ $messages['lb'] = array(
 	'farmer-basic-permission-user-text' => 'Dës Rechter kréien all déi Persounen déi op dëser Wiki ageloggt sinn',
 	'farmer-setpermission' => 'Rechter configuréieren',
 	'farmer-extensions' => 'Aktiv Erweiderungen',
+	'farmer-extensions-extension-denied' => 'Dir kënnt dës Fonctionalitéit net benotzen.
+Dir musst dofir Member vum Grupp vun den Administrateure sinn.',
 	'farmer-extensions-invalid' => 'Ongëlteg Erweiderung',
 	'farmer-extensions-available' => 'Disponibel Erweiderungen',
 	'farmer-extensions-noavailable' => 'Et ass keng Erweiderung registréiert',
@@ -3724,13 +3777,28 @@ $messages['tg-cyrl'] = array(
 
 /** Turkish (Türkçe)
  * @author Karduelis
+ * @author Mach
  * @author Suelnur
  */
 $messages['tr'] = array(
+	'farmercreatesitename' => 'Site adı',
+	'farmercreatenextstep' => 'Sonraki adım',
+	'farmer-about' => 'Hakkında',
+	'farmer-list-wiki' => 'Wikilerin listesi',
+	'farmer-confirmsetting-name' => 'İsim: $1',
+	'farmer-createwiki-form-help' => 'Yardım',
+	'farmer-createwiki-user' => 'Kullanıcı adı',
+	'farmer-createwiki-name' => 'Wiki adı',
 	'farmer-delete-form-submit' => 'Sil',
+	'farmer-listofwikis' => 'Wikilerin listesi',
+	'farmer-mainpage' => 'Ana Sayfa',
 	'farmer-basic-title1' => 'Başlık',
+	'farmer-basic-permission-view' => 'Bütün sayfaları izle',
+	'farmer-basic-permission-edit' => 'Bütün sayfaları değiştir',
+	'farmer-basic-permission-upload' => 'Dosya yükle',
 	'farmer-yes' => 'Evet',
 	'farmer-no' => 'Hayır',
+	'farmer-extensions-register-name' => 'İsim',
 );
 
 /** Ukrainian (Українська)
