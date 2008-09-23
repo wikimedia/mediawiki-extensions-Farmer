@@ -142,6 +142,7 @@ Once an extension is registered, all wikis will be able to use it.',
  * @author Purodha
  */
 $messages['qqq'] = array(
+	'farmer-desc' => 'Shown in [[Special:Version]] as a short description of this extension. Do not translate links.',
 	'farmernewwikimainpage' => 'Short description of the extension, shown on [[Special:Version]]. Do not translate or change links.',
 	'farmer-about' => '{{Identical|About}}',
 	'farmer-list-wiki' => '{{Identical|List of wikis}}',
@@ -2029,6 +2030,7 @@ $messages['krj'] = array(
  */
 $messages['ksh'] = array(
 	'farmer' => 'Farmer',
+	'farmer-desc' => 'Donn en MediaWiki Farm verwallde.',
 	'farmercreatenextstep' => 'Der näkßte Schrett',
 	'farmernewwikimainpage' => '== Wellkumme op Dingem Wiki ==
 Wann De dat heh lësse kannß, dann eß Ding Wiki öhndlesch opjesaz.
