@@ -208,6 +208,13 @@ $messages['niu'] = array(
 	'farmer-mainpage' => 'Matapatu Lau',
 );
 
+/** Goanese Konkani (Latin) (कोंकणी/Konknni  (Latin))
+ * @author Deepak D'Souza
+ */
+$messages['gom-latn'] = array(
+	'farmer-basic-permission-upload' => 'fileo dhadd',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Arnobarnard
  * @author Naudefj
