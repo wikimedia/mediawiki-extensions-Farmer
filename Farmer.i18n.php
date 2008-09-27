@@ -2022,6 +2022,14 @@ $messages['km'] = array(
 	'farmer-error-exists' => 'មិនអាចបង្កើតវិគីបានទេ។ វាមានរួចជាស្រេចហើយ៖$1',
 );
 
+/** Krio (Krio)
+ * @author Jose77
+ */
+$messages['kri'] = array(
+	'farmer-delete-form-submit' => 'Dilit',
+	'farmer-mainpage' => 'Men Pej',
+);
+
 /** Kinaray-a (Kinaray-a)
  * @author Jose77
  */
