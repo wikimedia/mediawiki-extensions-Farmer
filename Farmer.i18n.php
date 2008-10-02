@@ -2763,7 +2763,7 @@ Es accessible sus $1',
 	'farmer-description' => 'Descripcion',
 	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible dempuèi l’adreça http://$1.monsite.
 
-Lo nom de l’espaci del projècte serà '''$2'''. Los ligams vèrs aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''. S’es plan çò que volètz, picatz lo boton '''Confirmar''' çaijós.",
+Lo nom de l’espaci del projècte serà '''$2'''. Los ligams cap a aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''. S’es plan çò que volètz, picatz lo boton '''Confirmar''' çaijós.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Sometre',
 	'farmer-createwiki-form-title' => 'Crear un Wiki',
