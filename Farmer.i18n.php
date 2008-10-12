@@ -683,20 +683,21 @@ $messages['da'] = array(
 
 /** German (Deutsch)
  * @author Leithian
+ * @author MichaelFrey
  * @author Pill
  * @author Revolus
  */
 $messages['de'] = array(
 	'farmer' => 'Farmer',
 	'farmer-desc' => 'Verwalte eine MediaWiki-Farm',
-	'farmercantcreatewikis' => 'Du kannst kein Wiki anlegen, da dir die Rechte („createwikis“) dazu fehlen.',
+	'farmercantcreatewikis' => 'Du kannst kein Wiki anlegen, da dir das Recht („createwikis“) dazu fehlt.',
 	'farmercreatenextstep' => 'Nächster Schritt',
 	'farmernewwikimainpage' => '== Willkommen in deinem Wiki ==
 
 Wenn du diesen Text liest, hast du dein neues Wiki korrekt installiert.
 Du kannst es nach deinen Wünschen [[Special:Farmer|anpassen]].',
 	'farmer-about' => 'Über',
-	'farmer-about-text' => 'MediaWiki-Farmer erlaubt es dir, MediaWiki-Farmes zu betreiben.',
+	'farmer-about-text' => 'MediaWiki-Farmer ermöglicht es dir mehre MediaWikis zu verwalten.',
 	'farmer-list-wiki' => 'Liste Wikis auf',
 	'farmer-list-wiki-text' => '[[$1|Liste]] aller Wikis auf {{SITENAME}}',
 	'farmer-createwiki' => 'Ein Wiki anlegen',
@@ -709,11 +710,17 @@ Du kannst es nach deinen Wünschen [[Special:Farmer|anpassen]].',
 	'farmer-administration-delete' => 'Ein Wiki löschen',
 	'farmer-administration-delete-text' => '[[$1|Lösche]] ein Wiki von der Farm',
 	'farmer-administer-thiswiki' => 'Administriere dieses Wiki',
+	'farmer-administer-thiswiki-text' => '[[$1|Verwalte]] dieses Wiki',
 	'farmer-notavailable' => 'Nicht verfügbar.',
+	'farmer-notavailable-text' => 'Dieses Feature ist nur im Hauptwiki verfügbar',
 	'farmer-wikicreated' => 'Wiki erstellt',
 	'farmer-wikicreated-text' => 'Dein Wiki wurde erstellt.
 Es befindet sich hier: $1',
+	'farmer-default' => 'Am Anfang hat keiner außer dir irgendwelche Rechte in diesem Wiki.
+Mittels $1 kannst du die Benutzerrechte verwalten',
 	'farmer-wikiexists' => 'Wiki existiert',
+	'farmer-wikiexists-text' => "Das Wiki – '''$1''' –, das du versuchst anzulegen, existiert bereits.
+Bitte kehre zurück und versuche es mit einem anderen Namen",
 	'farmer-confirmsetting' => 'Wiki-Einstellungen bestätigen',
 	'farmer-confirmsetting-name' => 'Name: $1',
 	'farmer-confirmsetting-title' => 'Titel: $1',
@@ -742,12 +749,62 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-createwiki-title' => 'Wikititel',
 	'farmer-createwiki-description' => 'Beschreibung',
 	'farmer-updatedlist' => 'Liste aktualisieren',
+	'farmer-notaccessible' => 'Nicht verfügbar',
+	'farmer-notaccessible-test' => 'Dieses Feature ist nur im Elternwiki der Farm verfügbar',
+	'farmer-permissiondenied' => 'Zugriff verweigert',
+	'farmer-permissiondenied-text' => 'Es ist dir nicht gestattet, ein Wiki von der Farm zu löschen',
+	'farmer-permissiondenied-text1' => 'Es ist dir nicht gestattet, auf diese Seite zuzugreifen',
+	'farmer-deleting' => 'Lösche $1',
+	'farmer-delete-title' => 'Wiki löschen',
+	'farmer-delete-text' => 'Bitte wähle das Wiki das du löschen willst aus der Liste aus',
+	'farmer-delete-form' => 'Wähle ein Wiki',
 	'farmer-delete-form-submit' => 'Löschen',
 	'farmer-listofwikis' => 'Liste der Wikis',
 	'farmer-mainpage' => 'Hauptseite',
+	'farmer-basic-title1' => 'Titel',
+	'farmer-basic-title1-text' => 'Dein Wiki hat keinen Titel. Bitte setzte ihn <b>jetzt</b>',
 	'farmer-basic-description' => 'Beschreibung',
+	'farmer-basic-description-text' => 'Füge unten die Beschreibung deines Wikis ein',
+	'farmer-basic-permission' => 'Rechte',
+	'farmer-basic-permission-text' => 'Mit dem folgenden Formular ist es möglich, die Benutzerrechte des Wikis zu verändern.',
+	'farmer-basic-permission-visitor' => 'Gastrechte',
+	'farmer-basic-permission-visitor-text' => 'Die folgenden Rechte gelten für Gäste im Wiki',
+	'farmer-basic-permission-view' => 'Alle Seiten betrachten',
+	'farmer-basic-permission-edit' => 'Alle Seiten bearbeiten',
+	'farmer-basic-permission-createpage' => 'Neue Seiten erstellen',
+	'farmer-basic-permission-createtalk' => 'Diskussionsseiten erstellen',
+	'farmer-basic-permission-move' => 'Seiten verschieben',
+	'farmer-basic-permission-upload' => 'Dateien hochzuladen',
+	'farmer-basic-permission-reupload' => 'Dateien überschreiben',
+	'farmer-basic-permission-minoredit' => 'Kleine Änderungen vorzunehmen',
 	'farmer-yes' => 'Ja',
 	'farmer-no' => 'Nein',
+	'farmer-basic-permission-user' => 'Rechte angemeldeter Benutzer',
+	'farmer-basic-permission-user-text' => 'Die folgenden Rechte gelten für angemeldete Benutzer',
+	'farmer-setpermission' => 'Rechte setzen',
+	'farmer-defaultskin' => 'Standardskin',
+	'farmer-defaultskin-button' => 'Standardskin setzen',
+	'farmer-extensions' => 'Aktive Erweiterungen',
+	'farmer-extensions-button' => 'Aktive Erweiterungen setzen',
+	'farmer-extensions-extension-denied' => 'Es ist dir nicht gestattet, dieses Feature zu benutzen, denn dafür müsstest du der Admingruppe dieser Farm angehören',
+	'farmer-extensions-invalid' => 'Ungültige Erweiterung',
+	'farmer-extensions-available' => 'Verfügbare Erweiterungen',
+	'farmer-extensions-noavailable' => 'Es wurden keine Erweiterungen registriert',
+	'farmer-extensions-register' => 'Erweiterung anmelden',
+	'farmer-extensions-register-name' => 'Name',
+	'farmer-error-exists' => 'Das Wiki kann nicht angelegt werden, weil es bereits existiert: $1',
+	'farmer-error-nodirconfig' => 'configDirectory nicht gefunden:',
+	'farmer-error-defnotset' => 'Es muss ein Standardwiki gesetzt werden',
+	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer konnte nicht schreibend auf die Standardkonfigurationsdatei des Wikis zugreifen.',
+	'farmer-error-wikicorrupt' => 'Gespeichertes Wiki ist defekt',
+);
+
+/** German (formal address) (Deutsch (Sie-Form))
+ * @author MichaelFrey
+ */
+$messages['de-formal'] = array(
+	'farmer-default' => 'Am Anfang hat keiner außer ihnen irgendwelche Rechte in diesem Wiki.
+Mittels $1 können Sie die Benutzerrechte verwalten',
 );
 
 /** Ewe (Eʋegbe) */
