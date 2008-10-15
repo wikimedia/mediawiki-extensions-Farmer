@@ -1808,7 +1808,10 @@ Quando un extension es registrate, tote le wikis potera usar lo.',
  * @author Rex
  */
 $messages['id'] = array(
+	'farmer-confirmsetting-title' => 'Judul: $1',
 	'farmer-createwiki-user' => 'Nama pengguna',
+	'farmer-basic-title1' => 'Judul',
+	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Tidak',
 	'farmer-extensions-register-name' => 'Nama',
 );
@@ -2465,7 +2468,20 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'farmer' => 'Хермер',
+	'farmer-notavailable' => 'Кедь маласо арась',
 	'farmer-confirmsetting-name' => 'Лемезэ: $1',
+	'farmer-confirmsetting-title' => 'Коняксозо: $1',
+	'farmer-button-confirm' => 'Кемекстамс',
+	'farmer-createwiki-description' => 'Йовтнемазо',
+	'farmer-delete-form-submit' => 'Нардамс',
+	'farmer-basic-title1' => 'Конякс',
+	'farmer-basic-permission-view' => 'Ванномс весе лопатнень',
+	'farmer-basic-permission-createpage' => 'Шкамс од лопат',
+	'farmer-basic-permission-move' => 'Печтевтемс лопатнень',
+	'farmer-basic-permission-upload' => 'Йовкстань хвайлат',
+	'farmer-yes' => 'Истя',
+	'farmer-no' => 'Арась',
 	'farmer-extensions-register-name' => 'Лемезэ',
 );
 
