@@ -187,17 +187,6 @@ $messages['krl'] = array(
 	'farmer-basic-permission-upload' => 'Panna fajlit',
 );
 
-/** Eastern Mari (Олык Марий)
- * @author Сай
- */
-$messages['mhr'] = array(
-	'farmer-createwiki-form-help' => 'Полшык',
-	'farmer-createwiki-user' => 'Пайдаланышын лӱмжӧ',
-	'farmer-delete-form-submit' => 'Шӧраш',
-	'farmer-mainpage' => 'Тӱҥ лаштык',
-	'farmer-basic-permission-upload' => 'Файлым пурташ',
-);
-
 /** Niuean (ko e vagahau Niuē)
  * @author Jose77
  */
@@ -847,6 +836,7 @@ $messages['el'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'farmer-desc' => 'Administri MediaWiki-vikiaron',
 	'farmercreatesitename' => 'Nomo de retejo',
 	'farmercreatenextstep' => 'Posta ŝtupo',
 	'farmernewwikimainpage' => '== Bonvenon al via vikio ==
@@ -1244,9 +1234,19 @@ $messages['got'] = array(
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
  * @author Crazymadlover
+ * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'farmercreatesitename' => 'Ὄνομα ἱστοτόπου',
+	'farmercreatenextstep' => 'Ἑπόμενον βῆμα',
+	'farmer-about' => 'Περί',
+	'farmer-createwiki' => 'Ποιεῖν ϝίκι τι',
+	'farmer-administration-delete' => 'Διαγράφειν ϝίκι τι',
+	'farmer-notavailable' => 'Μὴ διαθέσιμος',
 	'farmer-createwiki-form-help' => 'Βοήθεια',
+	'farmer-createwiki-user' => 'Ὄνομα χρωμένου',
+	'farmer-yes' => 'Ναί',
+	'farmer-no' => 'Οὐ',
 );
 
 /** Swiss German (Alemannisch)
@@ -2228,6 +2228,17 @@ Dir musst dofir Member vum Grupp vun den Administrateure sinn.',
  */
 $messages['lt'] = array(
 	'farmer-delete-form-submit' => 'Ištrinti',
+);
+
+/** Eastern Mari (Олык Марий)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'farmer-createwiki-form-help' => 'Полшык',
+	'farmer-createwiki-user' => 'Пайдаланышын лӱмжӧ',
+	'farmer-delete-form-submit' => 'Шӧраш',
+	'farmer-mainpage' => 'Тӱҥ лаштык',
+	'farmer-basic-permission-upload' => 'Файлым пурташ',
 );
 
 /** Malayalam (മലയാളം)
