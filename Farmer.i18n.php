@@ -1323,6 +1323,27 @@ $messages['haw'] = array(
 	'farmer-extensions-register-name' => 'Inoa',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'farmer' => 'חוואי',
+	'farmer-desc' => 'נהל חוות מדיה־ויקי',
+	'farmercantcreatewikis' => 'לא תוכל ליצור ויקים כיוון שאין לך את הרשאות יצירת הוויקי',
+	'farmercreateurl' => 'כתובת',
+	'farmercreatesitename' => 'שם האתר',
+	'farmercreatenextstep' => 'הצעד הבא',
+	'farmernewwikimainpage' => '== ברוכים הבאים לוויקי שלכם ==
+אם אתם קוראים זאת, הוויקי החדש שלכם מותקן כראוי.
+תוכלו [[Special:Farmer|להתאים את הוויקי שלכם]].',
+	'farmer-about' => 'אודות',
+	'farmer-about-text' => 'החוואי של מדיה־ויקי מאפשר לך לנהל חווה של ויקים במדיה־ויקי',
+	'farmer-list-wiki' => 'רשימת ויקים',
+	'farmer-list-wiki-text' => '[[$1|הצג]] את כל הוויקים ב־{{SITENAME}}',
+	'farmer-createwiki' => 'צור ויקי',
+	'farmer-createwiki-text' => '[[$1|צור]] ויקי חדש כעת!',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
