@@ -1324,12 +1324,13 @@ $messages['haw'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Rotemliss
  * @author YaronSh
  */
 $messages['he'] = array(
 	'farmer' => 'חוואי',
-	'farmer-desc' => 'נהל חוות מדיה־ויקי',
-	'farmercantcreatewikis' => 'לא תוכל ליצור ויקים כיוון שאין לך את הרשאות יצירת הוויקי',
+	'farmer-desc' => 'ניהול חוות מדיה־ויקי',
+	'farmercantcreatewikis' => 'אין באפשרותכם ליצור אתרי ויקי כיוון שאין לכם את ההרשאה createwikis',
 	'farmercreateurl' => 'כתובת',
 	'farmercreatesitename' => 'שם האתר',
 	'farmercreatenextstep' => 'הצעד הבא',
@@ -1337,11 +1338,119 @@ $messages['he'] = array(
 אם אתם קוראים זאת, הוויקי החדש שלכם מותקן כראוי.
 תוכלו [[Special:Farmer|להתאים את הוויקי שלכם]].',
 	'farmer-about' => 'אודות',
-	'farmer-about-text' => 'החוואי של מדיה־ויקי מאפשר לך לנהל חווה של ויקים במדיה־ויקי',
-	'farmer-list-wiki' => 'רשימת ויקים',
-	'farmer-list-wiki-text' => '[[$1|הצג]] את כל הוויקים ב־{{SITENAME}}',
-	'farmer-createwiki' => 'צור ויקי',
-	'farmer-createwiki-text' => '[[$1|צור]] ויקי חדש כעת!',
+	'farmer-about-text' => 'החוואי של מדיה־ויקי מאפשר לכם לנהל חווה של אתרי ויקי במדיה־ויקי',
+	'farmer-list-wiki' => 'רשימת אתרי ויקי',
+	'farmer-list-wiki-text' => '[[$1|הצגת]] כל אתרי הוויקי ב־{{SITENAME}}',
+	'farmer-createwiki' => 'יצירת אתר ויקי',
+	'farmer-createwiki-text' => '[[$1|יצירת]] אתר ויקי חדש כעת!',
+	'farmer-administration' => 'ניהול חווה',
+	'farmer-administration-extension' => 'ניהול הרחבות',
+	'farmer-administration-extension-text' => '[[$1|ניהול]] הרחבות מותקנות.',
+	'farmer-admimistration-listupdate' => 'עדכון רשימת החווה',
+	'farmer-admimistration-listupdate-text' => '[[$1|עדכון]] רשימת אתרי הוויקי ב{{grammar:תחילית|{{SITENAME}}}}',
+	'farmer-administration-delete' => 'מחיקת ויקי',
+	'farmer-administration-delete-text' => '[[$1|מחיקת]] ויקי מהחווה',
+	'farmer-administer-thiswiki' => 'ניהול ויקי זה',
+	'farmer-administer-thiswiki-text' => '[[$1|ניהול]] השינויים לוויקי זה',
+	'farmer-notavailable' => 'לא זמין',
+	'farmer-notavailable-text' => 'תכונה זו זמינה עבור הוויקי הראשי בלבד',
+	'farmer-wikicreated' => 'הוויקי נוצר',
+	'farmer-wikicreated-text' => 'הוויקי שלכם נוצר.
+ניתן לגשת אליו ב־$1',
+	'farmer-default' => 'כברירת מחדל, לאף אחד אין הרשאות לוויקי זה מלבדך.
+ניתן לשנות את הרשאות המשתמש דרך $1',
+	'farmer-wikiexists' => 'הוויקי קיים',
+	'farmer-wikiexists-text' => "הוויקי שהנכם מנסים ליצור '''$1''', כבר קיים.
+יש לחזור ולנסות שם אחר.",
+	'farmer-confirmsetting' => 'אישור הגדרות הוויקי',
+	'farmer-confirmsetting-name' => 'שם: $1',
+	'farmer-confirmsetting-title' => 'כותרת: $1',
+	'farmer-confirmsetting-description' => 'תיאור: $1',
+	'farmer-description' => 'תיאור',
+	'farmer-confirmsetting-text' => "הוויקי שלכם , '''$1''', יהיה נגיש דרך http://$1.myfarm.
+מרחב השם של המיזם יהיה '''$2'''.
+קישורים למרחב שם זה יהיו מהצורה  '''<nowiki>[[$2:שם העמוד]]</nowiki>'''.
+אם זהו רצונכם, לחצו על כפתור ה'''אישור''' שלהלן.",
+	'farmer-button-confirm' => 'אישור',
+	'farmer-button-submit' => 'שליחה',
+	'farmer-createwiki-form-title' => 'יצירת ויקי',
+	'farmer-createwiki-form-text1' => 'השתמשו בטופס שלהלן ליצירת ויקי חדש.',
+	'farmer-createwiki-form-help' => 'עזרה',
+	'farmer-createwiki-form-text2' => "; שם הוויקי: השם של הוויקי.
+מכיל אותיות ומספרים בלבד.
+שם הוויקי ישמש כחלק מהכתובת ה־URL של הוויקי שלכם.
+לדוגמה, במידה ותזינו '''title''', אזי ניתן יהיה לגשת אל הוויקי שלכם דרך <nowiki>http://</nowiki>'''title'''.mydomain.",
+	'farmer-createwiki-form-text3' => '; כותרת הוויקי: הכותרת של הוויקי.
+ישמש בכותרת של כל דף בוויקי שלכם.
+כמו כן, ישמש כמרחב השם של המיזם וכקידומת הבינוויקי.',
+	'farmer-createwiki-form-text4' => '; תיאור: התיאור של הוויקי.
+זהו תיאור מילולי של הוויקי.
+תיאור זה יוצג ברשימת אתרי הוויקי.',
+	'farmer-createwiki-user' => 'שם המשתמש',
+	'farmer-createwiki-name' => 'שם הוויקי',
+	'farmer-createwiki-title' => 'כותרת הוויקי',
+	'farmer-createwiki-description' => 'תיאור',
+	'farmer-updatedlist' => 'רשימה מעודכנת',
+	'farmer-notaccessible' => 'לא נגיש',
+	'farmer-notaccessible-test' => 'תכונה זו זמינה עבור הוויקי הראשי בחווה בלבד',
+	'farmer-permissiondenied' => 'הגישה נדחתה',
+	'farmer-permissiondenied-text' => 'אין לכם הרשאה למחוק ויקי מהחווה',
+	'farmer-permissiondenied-text1' => 'אין לכם הרשאות גישה לדף זה',
+	'farmer-deleting' => 'מחיקת $1',
+	'farmer-delete-title' => 'מחיקת הוויקי',
+	'farmer-delete-text' => 'אנא בחרו מהרשימה שלהלן את הוויקי שברצונכם למחוק',
+	'farmer-delete-form' => 'בחירת ויקי',
+	'farmer-delete-form-submit' => 'מחיקה',
+	'farmer-listofwikis' => 'רשימת אתרי הוויקי',
+	'farmer-mainpage' => 'עמוד ראשי',
+	'farmer-basic-title' => 'פרמטרים בסיסיים',
+	'farmer-basic-title1' => 'כותרת',
+	'farmer-basic-title1-text' => 'לוויקי שלכם אין כותרת.  הגדירו אחת <b>כעת</b>',
+	'farmer-basic-description' => 'תיאור',
+	'farmer-basic-description-text' => 'הגדירו את תיאור הוויקי שלכם להלן',
+	'farmer-basic-permission' => 'הרשאות',
+	'farmer-basic-permission-text' => 'באמצעות הטופס שלהלן, ניתן לשנות את הרשאות המשתמשים בוויקי זה',
+	'farmer-basic-permission-visitor' => 'ההרשאות של כל אורח',
+	'farmer-basic-permission-visitor-text' => 'ההרשאות הבאות יחולו על כל אחד המבקר בוויקי זה',
+	'farmer-basic-permission-view' => 'הצגת כל הדפים',
+	'farmer-basic-permission-edit' => 'עריכת כל הדפים',
+	'farmer-basic-permission-createpage' => 'יצירת דפים חדשים',
+	'farmer-basic-permission-createtalk' => 'יצירת עמודי שיחה',
+	'farmer-basic-permission-move' => 'העברת דפים',
+	'farmer-basic-permission-upload' => 'העלאת קבצים',
+	'farmer-basic-permission-reupload' => 'העלאת קבצים מחדש (תוך דריסת העלאה קיימת)',
+	'farmer-basic-permission-minoredit' => 'ביצוע שינויים משניים',
+	'farmer-yes' => 'כן',
+	'farmer-no' => 'לא',
+	'farmer-basic-permission-user' => 'הרשאות למשתמשים מחוברים',
+	'farmer-basic-permission-user-text' => 'ההרשאות הבאות יחולו על כל אחד המחובר לוויקי זה',
+	'farmer-setpermission' => 'הגדר הרשאות',
+	'farmer-defaultskin' => 'עיצוב ברירת המחדל',
+	'farmer-defaultskin-button' => 'הגדרת עיצוב ברירת המחדל',
+	'farmer-extensions' => 'הרחבות פעילות',
+	'farmer-extensions-button' => 'הגדרת ההרחבות הפעילות',
+	'farmer-extensions-extension-denied' => 'אין לכם הרשאות לשנות תכונה זו.
+עליכם להיות חברים בקבוצת ה־farmeradmin',
+	'farmer-extensions-invalid' => 'הרחבה שגויה',
+	'farmer-extensions-invalid-text' => 'לא ניתן להוסיף את ההרחבה שלך כיוון שלא ניתן למצוא את הקובץ שנבחר להכללה',
+	'farmer-extensions-available' => 'הרחבות זמינות',
+	'farmer-extensions-noavailable' => 'לא נרשמו כל הרחבות',
+	'farmer-extensions-register' => 'רשום הרחבה',
+	'farmer-extensions-register-text1' => 'השתמש בטופס שלהלן כדי לרשום הרחבה חדשה בחווה.
+לאחר שההרחבה נרשמה, כל הוויקים יוכלו להשתמש בו.',
+	'farmer-extensions-register-text2' => "עבור הפרמטר ''Include file'', הזן את שם קובץ ה־PHP כפי שהיית מזין אותו ב־LocalSettings.php.",
+	'farmer-extensions-register-text3' => "אם שם הקובץ מכיל '''\$root''', משתנה זה יוחלף בתיקייה הראשית של מדיה־ויקי.",
+	'farmer-extensions-register-text4' => 'נתיבי ההכללה הנוכחיים הינם:',
+	'farmer-extensions-register-name' => 'שם',
+	'farmer-extensions-register-includefile' => 'קובץ להכללה',
+	'farmer-error-exists' => 'לא ניתן ליצור ויקי.  הוויקי כבר קיים: $1',
+	'farmer-error-nodirconfig' => 'configDirectory לא נמצאה:',
+	'farmer-error-defnotset' => 'יש להגדיר את ויקי ברירת המחדל',
+	'farmer-error-mapnotfound' => 'הפונקציה למיפוי שם הוויקי בחווה לא נמצאה:',
+	'farmer-error-nofileconfwrite' => 'החוואי של מדיה־ויקי לא יכול לכתוב אל קובץ תצורת הוויקי המוגדר כברירת המחדל.',
+	'farmer-error-funcnotcall' => 'לא ניתן לקרוא לפונקציה:',
+	'farmer-error-noextwrite' => 'לא ניתן לכתוב קובץ הרחבה:',
+	'farmer-error-wikicorrupt' => 'הוויקי המאוחסן פגום',
 );
 
 /** Hindi (हिन्दी)
