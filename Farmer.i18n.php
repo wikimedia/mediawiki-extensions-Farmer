@@ -609,6 +609,13 @@ $messages['br'] = array(
 	'farmer-createwiki-form-help' => 'Skoazell',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'farmer-yes' => 'Da',
+);
+
 /** Catalan (Català)
  * @author Jordi Roqué
  * @author SMP
