@@ -1586,6 +1586,8 @@ $messages['hil'] = array(
  */
 $messages['hr'] = array(
 	'farmer-delete-form-submit' => 'Izbriši',
+	'farmer-yes' => 'Da',
+	'farmer-no' => 'Ne',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
