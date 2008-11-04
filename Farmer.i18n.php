@@ -613,7 +613,9 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'farmer-confirmsetting-name' => 'Ime: $1',
 	'farmer-yes' => 'Da',
+	'farmer-extensions-register-name' => 'Ime',
 );
 
 /** Catalan (Català)
