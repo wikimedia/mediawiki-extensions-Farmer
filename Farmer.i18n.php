@@ -614,6 +614,7 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'farmer-confirmsetting-name' => 'Ime: $1',
+	'farmer-delete-form-submit' => 'Obriši',
 	'farmer-yes' => 'Da',
 	'farmer-extensions-register-name' => 'Ime',
 );
@@ -2955,7 +2956,7 @@ $messages['oc'] = array(
 	'farmercreateurl' => "L'adreça",
 	'farmercreatesitename' => 'Nom del sit',
 	'farmercreatenextstep' => 'Etapa seguenta',
-	'farmernewwikimainpage' => '== Benvenguda dins vòtre Wiki ==
+	'farmernewwikimainpage' => '== Benvenguda dins vòstre Wiki ==
 Se legissètz aqueste messatge, aquò indica que vòstre wiki es estat installat corrèctament.
 Podètz [[Special:Farmer|individualizar vòstre wiki]].',
 	'farmer-about' => 'A prepaus',
