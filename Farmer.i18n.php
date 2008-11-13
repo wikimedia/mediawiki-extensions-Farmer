@@ -1320,6 +1320,7 @@ $messages['gv'] = array(
  * @author Hakka
  */
 $messages['hak'] = array(
+	'farmer-createwiki-user' => 'Yung-fu-miàng',
 	'farmer-delete-form-submit' => 'Chhù-thet',
 	'farmer-mainpage' => 'Thèu-chông',
 );
