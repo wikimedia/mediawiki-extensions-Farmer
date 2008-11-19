@@ -1256,10 +1256,12 @@ $messages['grc'] = array(
 	'farmer-createwiki' => 'Ποιεῖν ϝίκι τι',
 	'farmer-administration-delete' => 'Διαγράφειν ϝίκι τι',
 	'farmer-notavailable' => 'Μὴ διαθέσιμος',
+	'farmer-confirmsetting-name' => 'Ὄνομα: $1',
 	'farmer-createwiki-form-help' => 'Βοήθεια',
 	'farmer-createwiki-user' => 'Ὄνομα χρωμένου',
 	'farmer-yes' => 'Ναί',
 	'farmer-no' => 'Οὐ',
+	'farmer-extensions-register-name' => 'Ὄνομα',
 );
 
 /** Swiss German (Alemannisch)
