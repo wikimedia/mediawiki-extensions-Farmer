@@ -614,7 +614,10 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'farmer-confirmsetting-name' => 'Ime: $1',
+	'farmer-confirmsetting-title' => 'Naslov: $1',
+	'farmer-button-submit' => 'Pošalji',
 	'farmer-delete-form-submit' => 'Obriši',
+	'farmer-basic-title1' => 'Naslov',
 	'farmer-yes' => 'Da',
 	'farmer-extensions-register-name' => 'Ime',
 );
