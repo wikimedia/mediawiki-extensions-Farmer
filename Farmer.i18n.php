@@ -3075,8 +3075,10 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams cap a aqueste espa
  * @author Amikeco
  */
 $messages['os'] = array(
+	'farmer-confirmsetting-title' => 'Сæргонд: $1',
 	'farmer-createwiki-user' => 'Архайæджы ном',
 	'farmer-delete-form-submit' => 'Аппар',
+	'farmer-basic-title1' => 'Сæргонд',
 	'farmer-yes' => 'О',
 	'farmer-no' => 'Нæ',
 );
