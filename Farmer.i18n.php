@@ -619,6 +619,7 @@ $messages['bs'] = array(
 	'farmer-delete-form-submit' => 'Obriši',
 	'farmer-basic-title1' => 'Naslov',
 	'farmer-yes' => 'Da',
+	'farmer-no' => 'Ne',
 	'farmer-extensions-register-name' => 'Ime',
 );
 
@@ -1257,6 +1258,8 @@ $messages['grc'] = array(
 	'farmer-administration-delete' => 'Διαγράφειν ϝίκι τι',
 	'farmer-notavailable' => 'Μὴ διαθέσιμος',
 	'farmer-confirmsetting-name' => 'Ὄνομα: $1',
+	'farmer-button-confirm' => 'Κυροῦν',
+	'farmer-button-submit' => 'Ὑποβάλλειν',
 	'farmer-createwiki-form-help' => 'Βοήθεια',
 	'farmer-createwiki-user' => 'Ὄνομα χρωμένου',
 	'farmer-delete-form-submit' => 'Σβεννύναι',
