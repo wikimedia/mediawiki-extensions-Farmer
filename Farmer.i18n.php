@@ -613,10 +613,20 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'farmercreatenextstep' => 'slijedeći korak',
+	'farmer-about' => 'O',
+	'farmer-createwiki' => 'Napravi wiki',
+	'farmer-administration-delete' => 'Obriši wiki',
+	'farmer-notavailable' => 'Nije dostupno',
 	'farmer-confirmsetting-name' => 'Ime: $1',
 	'farmer-confirmsetting-title' => 'Naslov: $1',
+	'farmer-description' => 'Opis',
+	'farmer-button-confirm' => 'Potvrdi',
 	'farmer-button-submit' => 'Pošalji',
+	'farmer-createwiki-form-help' => 'Pomoć',
+	'farmer-createwiki-user' => 'Korisničko ime',
 	'farmer-delete-form-submit' => 'Obriši',
+	'farmer-mainpage' => 'Početna stranica',
 	'farmer-basic-title1' => 'Naslov',
 	'farmer-yes' => 'Da',
 	'farmer-no' => 'Ne',
