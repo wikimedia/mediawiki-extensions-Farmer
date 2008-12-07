@@ -229,8 +229,10 @@ $messages['af'] = array(
  * @author Juanpabl
  */
 $messages['an'] = array(
+	'farmer-confirmsetting-name' => 'Nombre: $1',
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Nimbiar',
+	'farmer-extensions-register-name' => 'Nombre',
 );
 
 /** Arabic (العربية)
