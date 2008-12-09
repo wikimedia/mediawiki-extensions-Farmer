@@ -2186,6 +2186,7 @@ $messages['ka'] = array(
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  * @author គីមស៊្រុន
  */
 $messages['km'] = array(
@@ -2205,7 +2206,7 @@ $messages['km'] = array(
 	'farmer-administer-thiswiki' => 'អភិរក្សវិគីនេះ',
 	'farmer-wikicreated' => 'វិគីត្រូវបានបង្កើតហើយ',
 	'farmer-wikiexists' => 'វិគីមានរូចហើយ',
-	'farmer-wikiexists-text' => "វិគី​ដែលអ្នក​កំពុងព្យាយាមបង្កើត ('''$1''') មានរួចហើយ។ សូម​ត្រលប់ក្រោយ​ហើយ​ព្យាយាម​ប្រើឈ្មោះផ្សេងទៀត។",
+	'farmer-wikiexists-text' => "វិគី​ដែលអ្នក​កំពុងព្យាយាមបង្កើត ('''$1''') មានរួចហើយ។ សូម​ត្រឡប់ក្រោយ​ហើយ​ព្យាយាម​ប្រើឈ្មោះផ្សេងទៀត។",
 	'farmer-confirmsetting' => 'បញ្ជាក់ទទួលស្គាល់ ការកំណត់ វិគី',
 	'farmer-confirmsetting-name' => 'ឈ្មោះ ៖ $1',
 	'farmer-confirmsetting-title' => "ចំណងជើង៖'''$1'''",
@@ -2238,7 +2239,7 @@ $messages['km'] = array(
 	'farmer-basic-permission-createtalk' => 'បង្កើតទំព័រពិភាក្សា',
 	'farmer-basic-permission-move' => 'ប្តូរទីតាំងទំព័រ',
 	'farmer-basic-permission-upload' => 'ផ្ទុកឡើង ឯកសារ',
-	'farmer-basic-permission-minoredit' => 'អនុញ្ញាតកំនែប្រែតិចតួច',
+	'farmer-basic-permission-minoredit' => 'អនុញ្ញាតកំណែប្រែតិចតួច',
 	'farmer-yes' => 'បាទ / ចាស',
 	'farmer-no' => 'ទេ',
 	'farmer-defaultskin' => 'សំបកលំនាំដើម',
