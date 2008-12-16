@@ -1025,8 +1025,9 @@ Vous pouvez [[Special:Farmer|individualiser votre wiki]].',
 	'farmer-confirmsetting-description' => 'Description : $1',
 	'farmer-description' => 'Description',
 	'farmer-confirmsetting-text' => "Votre wiki, '''$1''', sera accessible depuis l’adresse http://$1.monsite.
-
-Le nom de l’espace du projet sera '''$2'''.  Les liens vers cet espace aura la forme de '''<nowiki>[[$2:Nom de la page]]</nowiki>'''.  Si c’est bien ce que vous voulez,  presser le bouton '''Confirmer''' ci-dessous.",
+Le nom de l’espace du projet sera '''$2'''.
+Les liens vers cet espace aura la forme de '''<nowiki>[[$2:Nom de la page]]</nowiki>'''.
+Si c’est bien ce que vous voulez,  presser le bouton '''Confirmer''' ci-dessous.",
 	'farmer-button-confirm' => 'Confirmer',
 	'farmer-button-submit' => 'Soumettre',
 	'farmer-createwiki-form-title' => 'Créer un Wiki',
@@ -2197,7 +2198,7 @@ $messages['km'] = array(
 	'farmercreatesitename' => 'ឈ្មោះគេហទំព័រ',
 	'farmercreatenextstep' => 'ជំហានបន្ទាប់',
 	'farmernewwikimainpage' => '== សូមស្វាគមន៍ការមកកាន់វិគីរបស់លោកអ្នក ==
-ប្រសិនបើអ្នកកំពុងតែអាន មានន័យថាវិគីថ្មីរបស់លោកអ្នកត្រូវបានតំឡើងត្រឹមត្រូវហើយ។ ដើម្បីប្តូររបស់អ្នកតាមបំណង សូមមើល[[ពិសេស:Farmer]]។',
+ប្រសិនបើអ្នកកំពុងតែអាន មានន័យថាវិគីថ្មីរបស់លោកអ្នកត្រូវបានដំឡើងត្រឹមត្រូវហើយ។ ដើម្បីប្តូររបស់អ្នកតាមបំណង សូមមើល[[ពិសេស:Farmer]]។',
 	'farmer-about' => 'អំពី',
 	'farmer-list-wiki' => 'បញ្ជីវិគី',
 	'farmer-list-wiki-text' => '[[$1|បញ្ជី]]នៃរាល់វិគី​នៅលើ {{SITENAME}}',
