@@ -2108,12 +2108,14 @@ Sarà mostrato nell'elenco delle wiki.",
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author JtFuruhata
  */
 $messages['ja'] = array(
 	'farmercantcreatewikis' => '新規ウィキ作成(createwikis)権限がないため、ウィキを作成できません',
 	'farmercreatesitename' => 'サイト名',
 	'farmercreatenextstep' => '次の手順',
+	'farmer-about' => '解説',
 );
 
 /** Javanese (Basa Jawa)
