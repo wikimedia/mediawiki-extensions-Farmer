@@ -2116,6 +2116,8 @@ $messages['ja'] = array(
 	'farmercreatesitename' => 'サイト名',
 	'farmercreatenextstep' => '次の手順',
 	'farmer-about' => '解説',
+	'farmer-confirmsetting-title' => 'タイトル: $1',
+	'farmer-basic-title1' => 'タイトル',
 );
 
 /** Javanese (Basa Jawa)
