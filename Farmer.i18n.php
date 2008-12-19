@@ -2118,6 +2118,7 @@ $messages['ja'] = array(
 	'farmer-about' => '解説',
 	'farmer-confirmsetting-title' => 'タイトル: $1',
 	'farmer-basic-title1' => 'タイトル',
+	'farmer-basic-permission-upload' => 'ファイルをアップロード',
 );
 
 /** Javanese (Basa Jawa)
