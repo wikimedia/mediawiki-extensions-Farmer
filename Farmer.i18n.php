@@ -3432,6 +3432,7 @@ $messages['ro'] = array(
 	'farmer-createwiki-name' => 'Nume wiki',
 	'farmer-createwiki-title' => 'Titlu wiki',
 	'farmer-createwiki-description' => 'Descriere',
+	'farmer-permissiondenied' => 'Permisiune refuzată',
 	'farmer-delete-title' => 'Şterge wiki',
 	'farmer-delete-form-submit' => 'Şterge',
 	'farmer-listofwikis' => 'Listă de wiki',
@@ -3772,7 +3773,10 @@ Om du läser det här, har din nya wiki blivit korrekt installerad. Du kan [[Spe
 	'farmer-confirmsetting-title' => 'Titel: $1',
 	'farmer-confirmsetting-description' => 'Beskrivning: $1',
 	'farmer-description' => 'Beskrivning',
-	'farmer-confirmsetting-text' => "Din wiki, '''$1''', vill bli tillgänglig via http://$1.myfarm. Projektnamnrymden ska vara '''$2'''. Länkar till denna namnrymd ska vara på sättet '''<nowiki>[[$2:Sidenavn]]</nowiki>'''. Om detta är det du vill, tryck på knappen ''{{int:Farmer-button-confirm}}'' nedan.",
+	'farmer-confirmsetting-text' => "Din wiki, '''$1''', vill bli tillgänglig via http://$1.myfarm.
+Projektnamnrymden ska vara '''$2'''.
+Länkar till denna namnrymd ska vara på sättet '''<nowiki>[[$2:Sidenavn]]</nowiki>'''.
+Om detta är det du vill, tryck på knappen ''{{int:Farmer-button-confirm}}'' nedan.",
 	'farmer-button-confirm' => 'Bekräfta',
 	'farmer-button-submit' => 'Lagra',
 	'farmer-createwiki-form-title' => 'Skapa en wiki',
@@ -4140,7 +4144,7 @@ Xin hãy quay lại và thử một tên khác.",
 	'farmer-description' => 'Miêu tả',
 	'farmer-confirmsetting-text' => "Wiki của bạn, '''$1''', sẽ vào được thông qua trang http://$1.myfarm.
 Không gian tên dự án sẽ là '''$2'''.
-Liên kết đến không gian tên này sẽ có dạng '''<nowiki>[[$2:Page Name]]</nowiki>'''.
+Liên kết đến không gian tên này sẽ có dạng '''<nowiki>[[$2:Page name]]</nowiki>'''.
 Nếu đây là điều bạn muốn, hãy nhấn nút '''xác nhận''' ở dưới.",
 	'farmer-button-confirm' => 'Xác nhận',
 	'farmer-button-submit' => 'Chấp nhận',
