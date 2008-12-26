@@ -225,6 +225,13 @@ $messages['af'] = array(
 	'farmer-extensions-register-name' => 'Naam',
 );
 
+/** Amharic (አማርኛ)
+ * @author Codex Sinaiticus
+ */
+$messages['am'] = array(
+	'farmer-yes' => 'አዎ',
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
@@ -698,6 +705,7 @@ $messages['da'] = array(
 
 /** German (Deutsch)
  * @author Leithian
+ * @author Melancholie
  * @author MichaelFrey
  * @author Pill
  * @author Revolus
@@ -776,6 +784,7 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-delete-form-submit' => 'Löschen',
 	'farmer-listofwikis' => 'Liste der Wikis',
 	'farmer-mainpage' => 'Hauptseite',
+	'farmer-basic-title' => 'Grundsätzliche Parameter',
 	'farmer-basic-title1' => 'Titel',
 	'farmer-basic-title1-text' => 'Dein Wiki hat keinen Titel. Bitte setzte ihn <b>jetzt</b>',
 	'farmer-basic-description' => 'Beschreibung',
@@ -806,11 +815,15 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-extensions-available' => 'Verfügbare Erweiterungen',
 	'farmer-extensions-noavailable' => 'Es wurden keine Erweiterungen registriert',
 	'farmer-extensions-register' => 'Erweiterung anmelden',
+	'farmer-extensions-register-text4' => 'Die aktuell beinhalteten Pfade sind:',
 	'farmer-extensions-register-name' => 'Name',
+	'farmer-extensions-register-includefile' => 'Datei einbinden',
 	'farmer-error-exists' => 'Das Wiki kann nicht angelegt werden, weil es bereits existiert: $1',
 	'farmer-error-nodirconfig' => 'configDirectory nicht gefunden:',
 	'farmer-error-defnotset' => 'Es muss ein Standardwiki gesetzt werden',
 	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer konnte nicht schreibend auf die Standardkonfigurationsdatei des Wikis zugreifen.',
+	'farmer-error-funcnotcall' => 'Funktion konnte nicht aufgerufen werden:',
+	'farmer-error-noextwrite' => 'Schreiben der Erweiterungsdatei nicht möglich:',
 	'farmer-error-wikicorrupt' => 'Gespeichertes Wiki ist defekt',
 );
 
@@ -960,6 +973,7 @@ $messages['es'] = array(
 
 /** Finnish (Suomi)
  * @author Cimon Avaro
+ * @author Crt
  * @author Nike
  */
 $messages['fi'] = array(
@@ -968,7 +982,7 @@ $messages['fi'] = array(
 	'farmercreatesitename' => 'Sivuston nimi',
 	'farmercreatenextstep' => 'Seuraava askel',
 	'farmernewwikimainpage' => '== Tervetuloa wikiisi ==
-Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Jos haluat muuttaa wikin asetuksia, vieraile [[Special:Farmer|wikipellossa]].',
+Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Special:Farmer|muuttaa wikin asetuksia]].',
 	'farmer-about' => 'Tietoja',
 	'farmer-about-text' => 'MediaWikin Farmer-laajennus mahdollistaa oman wikipellon hallitsemisen.',
 	'farmer-list-wiki' => 'Wikilista',
@@ -3127,6 +3141,7 @@ $messages['pdt'] = array(
 /** Polish (Polski)
  * @author Derbeth
  * @author Equadus
+ * @author Leinad
  * @author Masti
  * @author McMonster
  * @author Sp5uhe
@@ -3137,9 +3152,9 @@ $messages['pl'] = array(
 	'farmercantcreatewikis' => 'Nie możesz utworzyć nowej wiki, ponieważ nie masz uprawnienia createwiki.',
 	'farmercreatesitename' => 'Nazwa witryny',
 	'farmercreatenextstep' => 'Następny etap',
-	'farmernewwikimainpage' => '== Witamy w nowej Wiki ==
-Jeżeli czytasz ten tekst, oznacza to, że nowa wiki została zainstalowana prawidłowo.
-Dostosowanie wiki do indywidualnych potrzeb jest możliwe na stronie [[Special:Farmer]].',
+	'farmernewwikimainpage' => '== Witamy w swojej Wiki ==
+Jeżeli czytasz ten tekst, oznacza to, że Twoja nowa wiki została zainstalowana prawidłowo.
+Możesz [[Special:Farmer|dostosować wiki do swoich potrzeb]].',
 	'farmer-about' => 'O farmie',
 	'farmer-about-text' => 'Farmer MediaWiki pozwala na zarządzanie farmą wiki.',
 	'farmer-list-wiki' => 'Spis Wiki',
@@ -4260,8 +4275,38 @@ $messages['vo'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
+ * @author Wrightbus
  */
 $messages['zh-hant'] = array(
+	'farmercreatesitename' => '網站名稱',
+	'farmercreatenextstep' => '下一步',
+	'farmer-about' => '關於',
+	'farmer-list-wiki' => 'Wiki清單',
+	'farmer-createwiki' => '建立一個wiki',
+	'farmer-wikicreated' => '已建立wiki',
+	'farmer-wikiexists' => 'Wiki存在',
+	'farmer-button-confirm' => '確認',
+	'farmer-createwiki-form-help' => '說明',
+	'farmer-createwiki-user' => '使用者名稱',
+	'farmer-createwiki-name' => 'Wiki名稱',
+	'farmer-createwiki-title' => 'Wiki標題',
+	'farmer-updatedlist' => '已更新的清單',
 	'farmer-deleting' => '正在刪除"$1"',
+	'farmer-delete-title' => '刪除wiki',
+	'farmer-delete-form' => '選擇一個wiki',
+	'farmer-delete-form-submit' => '刪除',
+	'farmer-mainpage' => '首頁',
+	'farmer-basic-title1' => '標題',
+	'farmer-basic-permission-view' => '檢視所有頁面',
+	'farmer-basic-permission-edit' => '編輯所有頁面',
+	'farmer-basic-permission-createpage' => '建立新頁面',
+	'farmer-basic-permission-createtalk' => '建立討論頁面',
+	'farmer-basic-permission-upload' => '上載檔案',
+	'farmer-yes' => '是',
+	'farmer-no' => '否',
+	'farmer-defaultskin' => '預設外觀',
+	'farmer-defaultskin-button' => '設為預設外觀',
+	'farmer-extensions-register-name' => '名稱',
+	'farmer-extensions-register-includefile' => '包含檔案',
 );
 
