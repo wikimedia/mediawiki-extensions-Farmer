@@ -229,6 +229,8 @@ $messages['af'] = array(
  * @author Codex Sinaiticus
  */
 $messages['am'] = array(
+	'farmer-confirmsetting-title' => 'አርዕስት፡ $1',
+	'farmer-basic-title1' => 'አርዕስት',
 	'farmer-yes' => 'አዎ',
 );
 
@@ -500,6 +502,14 @@ $messages['arz'] = array(
 	'farmer-error-wikicorrupt' => 'الويكى المخزن فاسد',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ */
+$messages['be-tarask'] = array(
+	'farmer-confirmsetting-title' => 'Назва: $1',
+	'farmer-basic-title1' => 'Назва',
+);
+
 /** Bulgarian (Български)
  * @author Borislav
  * @author DCLXVI
@@ -704,6 +714,7 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author ChrisiPK
  * @author Leithian
  * @author Melancholie
  * @author MichaelFrey
@@ -714,6 +725,7 @@ $messages['de'] = array(
 	'farmer' => 'Farmer',
 	'farmer-desc' => 'Verwalte eine MediaWiki-Farm',
 	'farmercantcreatewikis' => 'Du kannst kein Wiki anlegen, da dir das Recht („createwikis“) dazu fehlt.',
+	'farmercreatesitename' => 'Name der Website',
 	'farmercreatenextstep' => 'Nächster Schritt',
 	'farmernewwikimainpage' => '== Willkommen in deinem Wiki ==
 
@@ -812,15 +824,21 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-extensions-button' => 'Aktive Erweiterungen setzen',
 	'farmer-extensions-extension-denied' => 'Es ist dir nicht gestattet, dieses Feature zu benutzen, denn dafür müsstest du der Admingruppe dieser Farm angehören',
 	'farmer-extensions-invalid' => 'Ungültige Erweiterung',
+	'farmer-extensions-invalid-text' => 'Die Erweiterung konnte nicht hinzugefügt werden, weil die zur Einbindung ausgewählte Datei nicht gefunden werden konnte',
 	'farmer-extensions-available' => 'Verfügbare Erweiterungen',
 	'farmer-extensions-noavailable' => 'Es wurden keine Erweiterungen registriert',
 	'farmer-extensions-register' => 'Erweiterung anmelden',
+	'farmer-extensions-register-text1' => 'Verwende die untenstehende Maske, um eine neue Erweiterung für die Farm zu registrieren.
+Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
+	'farmer-extensions-register-text2' => "Gib den Namen der PHP-Datei im ''Include file''-Parameter so an, wie du ihn in LocalSettings.php angeben würdest.",
+	'farmer-extensions-register-text3' => "Wenn der Dateiname '''\$root''' enthält, wird diese Variable durch das MediaWiki-Wurzelverzeichnis ersetzt.",
 	'farmer-extensions-register-text4' => 'Die aktuell beinhalteten Pfade sind:',
 	'farmer-extensions-register-name' => 'Name',
 	'farmer-extensions-register-includefile' => 'Datei einbinden',
 	'farmer-error-exists' => 'Das Wiki kann nicht angelegt werden, weil es bereits existiert: $1',
 	'farmer-error-nodirconfig' => 'configDirectory nicht gefunden:',
 	'farmer-error-defnotset' => 'Es muss ein Standardwiki gesetzt werden',
+	'farmer-error-mapnotfound' => 'Funktion, um den Wikinamen in der Farm einzutragen, nicht gefunden:',
 	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer konnte nicht schreibend auf die Standardkonfigurationsdatei des Wikis zugreifen.',
 	'farmer-error-funcnotcall' => 'Funktion konnte nicht aufgerufen werden:',
 	'farmer-error-noextwrite' => 'Schreiben der Erweiterungsdatei nicht möglich:',
@@ -828,11 +846,15 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
+ * @author ChrisiPK
  * @author MichaelFrey
  */
 $messages['de-formal'] = array(
 	'farmer-default' => 'Am Anfang hat keiner außer ihnen irgendwelche Rechte in diesem Wiki.
 Mittels $1 können Sie die Benutzerrechte verwalten',
+	'farmer-extensions-register-text1' => 'Verwenden Sie die untenstehende Maske, um eine neue Erweiterung für die Farm zu registrieren.
+Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
+	'farmer-extensions-register-text2' => "Geben Sie den Namen der PHP-Datei im ''Include file''-Parameter so an, wie Sie ihn in LocalSettings.php angeben würden.",
 );
 
 /** Ewe (Eʋegbe) */
@@ -975,6 +997,7 @@ $messages['es'] = array(
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
+ * @author Str4nd
  */
 $messages['fi'] = array(
 	'farmer' => 'Wikipelto',
@@ -992,7 +1015,53 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-administration' => 'Pellon ylläpito',
 	'farmer-administration-extension' => 'Laajennokset',
 	'farmer-administration-extension-text' => '[[$1|Valitse]] käytettävät laajennokset.',
+	'farmer-administration-delete' => 'Poista wiki',
+	'farmer-notavailable' => 'Ei saatavilla',
 	'farmer-wikicreated' => 'Wiki luotu',
+	'farmer-confirmsetting' => 'Vahvista wikin asetukset',
+	'farmer-description' => 'Kuvaus',
+	'farmer-button-confirm' => 'Vahvista',
+	'farmer-button-submit' => 'Lähetä',
+	'farmer-createwiki-form-title' => 'Luo wiki',
+	'farmer-createwiki-form-text1' => 'Luo uusi wiki alla olevalla lomakkeella.',
+	'farmer-createwiki-form-help' => 'Ohje',
+	'farmer-createwiki-user' => 'Käyttäjätunnus',
+	'farmer-createwiki-name' => 'Wikin nimi',
+	'farmer-createwiki-title' => 'Wikin otsikko',
+	'farmer-createwiki-description' => 'Kuvaus',
+	'farmer-updatedlist' => 'Päivitetty lista',
+	'farmer-permissiondenied' => 'Käyttö estetty',
+	'farmer-delete-title' => 'Poista wiki',
+	'farmer-delete-form' => 'Valitse wiki',
+	'farmer-delete-form-submit' => 'Poista',
+	'farmer-listofwikis' => 'Lista wikeistä',
+	'farmer-mainpage' => 'Etusivu',
+	'farmer-basic-title1' => 'Otsikko',
+	'farmer-basic-title1-text' => 'Wikilläsi ei ole otsikkoa.  Aseta se <b>nyt</b>',
+	'farmer-basic-description' => 'Kuvaus',
+	'farmer-basic-description-text' => 'Lisää kuvaus wikistäsi alle',
+	'farmer-basic-permission' => 'Käyttöoikeudet',
+	'farmer-basic-permission-view' => 'Näytä kaikki sivut',
+	'farmer-basic-permission-edit' => 'Muokkaa kaikkia sivuja',
+	'farmer-basic-permission-createpage' => 'Luo uusia sivuja',
+	'farmer-basic-permission-createtalk' => 'Luo keskustelusivuja',
+	'farmer-basic-permission-move' => 'Siirrä sivuja',
+	'farmer-basic-permission-upload' => 'Tallenna tiedostoja',
+	'farmer-basic-permission-minoredit' => 'Salli pienet muokkaukset',
+	'farmer-yes' => 'Kyllä',
+	'farmer-no' => 'Ei',
+	'farmer-defaultskin' => 'Oletusulkoasu',
+	'farmer-defaultskin-button' => 'Aseta oletusulkoasu',
+	'farmer-extensions' => 'Käytössä olevat laajennukset',
+	'farmer-extensions-button' => 'Muuta käytössä olevia laajennuksia',
+	'farmer-extensions-invalid' => 'Virheellinen laajennus',
+	'farmer-extensions-available' => 'Saatavilla olevat laajennukset',
+	'farmer-extensions-noavailable' => 'Yhtään laajennusta ei ole rekisteröity',
+	'farmer-extensions-register' => 'Rekisteröi laajennus',
+	'farmer-extensions-register-name' => 'Nimi',
+	'farmer-extensions-register-includefile' => 'Sisällytä tiedosto',
+	'farmer-error-exists' => 'Wikiä ei voitu luoda.  Se on jo olemassa: $1',
+	'farmer-error-defnotset' => 'Oletuswiki täytyy olla asetettuna',
 );
 
 /** French (Français)
