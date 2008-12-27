@@ -230,6 +230,7 @@ $messages['af'] = array(
  */
 $messages['am'] = array(
 	'farmer-confirmsetting-title' => 'አርዕስት፡ $1',
+	'farmer-mainpage' => 'ዋና ገጽ',
 	'farmer-basic-title1' => 'አርዕስት',
 	'farmer-yes' => 'አዎ',
 );
@@ -508,6 +509,8 @@ $messages['arz'] = array(
 $messages['be-tarask'] = array(
 	'farmer-confirmsetting-title' => 'Назва: $1',
 	'farmer-basic-title1' => 'Назва',
+	'farmer-yes' => 'Так',
+	'farmer-no' => 'Не',
 );
 
 /** Bulgarian (Български)
@@ -984,13 +987,28 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 );
 
 /** Spanish (Español)
+ * @author Imre
  * @author Jatrobat
  * @author Sanbec
  */
 $messages['es'] = array(
+	'farmercreatesitename' => 'Nombre de la página',
+	'farmer-confirmsetting-name' => 'Nombre: $1',
+	'farmer-confirmsetting-title' => 'Título: $1',
+	'farmer-confirmsetting-description' => 'Descripción: $1',
+	'farmer-description' => 'Descripción',
+	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Enviar',
+	'farmer-createwiki-form-help' => 'Ayuda',
+	'farmer-createwiki-user' => 'Nombre de usuario',
+	'farmer-createwiki-description' => 'Descripción',
 	'farmer-delete-form-submit' => 'Borrar',
+	'farmer-basic-title1' => 'Título',
+	'farmer-basic-description' => 'Descripción',
+	'farmer-basic-permission-upload' => 'Subir archivos',
 	'farmer-yes' => 'Sí',
+	'farmer-no' => 'No',
+	'farmer-extensions-register-name' => 'Nombre',
 );
 
 /** Finnish (Suomi)
@@ -2196,6 +2214,7 @@ Sarà mostrato nell'elenco delle wiki.",
 
 /** Japanese (日本語)
  * @author Fryed-peach
+ * @author Hosiryuhosi
  * @author JtFuruhata
  */
 $messages['ja'] = array(
@@ -2206,7 +2225,9 @@ $messages['ja'] = array(
 	'farmer-confirmsetting-title' => 'タイトル: $1',
 	'farmer-button-confirm' => '確認',
 	'farmer-createwiki-user' => '利用者名',
+	'farmer-delete-form-submit' => '削除',
 	'farmer-basic-title1' => 'タイトル',
+	'farmer-basic-permission-move' => 'ページの移動',
 	'farmer-basic-permission-upload' => 'ファイルをアップロード',
 );
 
@@ -2767,10 +2788,22 @@ $messages['myv'] = array(
  * @author Fluence
  */
 $messages['nah'] = array(
+	'farmer-confirmsetting-name' => 'Tōcāitl: $1',
 	'farmer-button-submit' => 'Tiquihuāz',
+	'farmer-createwiki-form-title' => 'Ticchīhuāz cē huiqui',
 	'farmer-createwiki-user' => 'Tlatequitiltilīltōcāitl',
+	'farmer-createwiki-name' => 'Huiqui tōcāitl',
+	'farmer-deleting' => 'Mopolocah $1',
+	'farmer-delete-title' => 'Ticpolōz huiqui',
 	'farmer-delete-form-submit' => 'Ticpolōz',
+	'farmer-listofwikis' => 'Mochi huiqui',
+	'farmer-mainpage' => 'Calīxatl',
 	'farmer-basic-title1' => 'Tōcāitl',
+	'farmer-basic-permission-view' => 'Tiquinttāz mochi zāzanilli',
+	'farmer-basic-permission-edit' => 'Tiquimpatlāz mochi zāzanilli',
+	'farmer-basic-permission-createpage' => 'Tiquinchīhuāz mochi zāzanilli',
+	'farmer-basic-permission-createtalk' => 'Tiquinchīhuāz tēixnāmiquiliztli zāzanilli',
+	'farmer-basic-permission-move' => 'Tiquimpatlāz zāzanilli',
 	'farmer-basic-permission-upload' => 'Tiquinquetzāz tlahcuilōlli',
 	'farmer-yes' => 'Quēmah',
 	'farmer-no' => 'Ahmo',
@@ -3506,11 +3539,13 @@ $messages['rif'] = array(
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
+	'farmercreatenextstep' => 'Pasul următor',
 	'farmer-about' => 'Despre',
 	'farmer-list-wiki' => 'Listă de wiki',
 	'farmer-createwiki' => 'Creează wiki',
 	'farmer-createwiki-text' => '[[$1|Creează]] wiki nou acum!',
 	'farmer-administration-extension' => 'Administrează extensiile',
+	'farmer-administration-extension-text' => '[[$1|Administrează]] extensiile instalate.',
 	'farmer-administration-delete' => 'Şterge wiki',
 	'farmer-wikicreated' => 'Wiki creat',
 	'farmer-wikiexists' => 'Wiki există',
@@ -3530,9 +3565,12 @@ $messages['ro'] = array(
 	'farmer-delete-form-submit' => 'Şterge',
 	'farmer-listofwikis' => 'Listă de wiki',
 	'farmer-mainpage' => 'Pagina principală',
+	'farmer-basic-title' => 'Parametri de bază',
 	'farmer-basic-title1' => 'Titlu',
 	'farmer-basic-description' => 'Descriere',
 	'farmer-basic-permission' => 'Permisiuni',
+	'farmer-basic-permission-visitor' => 'Permisiuni pentru fiecare utilizator',
+	'farmer-basic-permission-visitor-text' => 'Următoarele permisiuni vor fi aplicate fiecărui utilizator care vizitează acest wiki',
 	'farmer-basic-permission-view' => 'Vizualizează toate paginile',
 	'farmer-basic-permission-edit' => 'Modifică toate paginile',
 	'farmer-basic-permission-createpage' => 'Creează pagini noi',
@@ -3544,6 +3582,7 @@ $messages['ro'] = array(
 	'farmer-yes' => 'Da',
 	'farmer-no' => 'Nu',
 	'farmer-basic-permission-user' => 'Permisiuni pentru utilizatori autentificaţi',
+	'farmer-basic-permission-user-text' => 'Următoarele permisiuni vor fi aplicate fiecărei persoane care se autentifică în acest wiki',
 	'farmer-extensions' => 'Extensii active',
 	'farmer-extensions-button' => 'Setează exteniile active',
 	'farmer-extensions-invalid' => 'Extensie incorectă',
@@ -4354,11 +4393,15 @@ $messages['zh-hant'] = array(
 	'farmer-createwiki' => '建立一個wiki',
 	'farmer-wikicreated' => '已建立wiki',
 	'farmer-wikiexists' => 'Wiki存在',
+	'farmer-confirmsetting-description' => '描述：$1',
+	'farmer-description' => '描述',
 	'farmer-button-confirm' => '確認',
+	'farmer-button-submit' => '提交',
 	'farmer-createwiki-form-help' => '說明',
 	'farmer-createwiki-user' => '使用者名稱',
 	'farmer-createwiki-name' => 'Wiki名稱',
 	'farmer-createwiki-title' => 'Wiki標題',
+	'farmer-createwiki-description' => '描述',
 	'farmer-updatedlist' => '已更新的清單',
 	'farmer-deleting' => '正在刪除"$1"',
 	'farmer-delete-title' => '刪除wiki',
@@ -4366,6 +4409,7 @@ $messages['zh-hant'] = array(
 	'farmer-delete-form-submit' => '刪除',
 	'farmer-mainpage' => '首頁',
 	'farmer-basic-title1' => '標題',
+	'farmer-basic-description' => '描述',
 	'farmer-basic-permission-view' => '檢視所有頁面',
 	'farmer-basic-permission-edit' => '編輯所有頁面',
 	'farmer-basic-permission-createpage' => '建立新頁面',
