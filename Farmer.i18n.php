@@ -992,7 +992,7 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
  * @author Sanbec
  */
 $messages['es'] = array(
-	'farmercreatesitename' => 'Nombre de la página',
+	'farmercreatesitename' => 'Nombre del sitio',
 	'farmer-confirmsetting-name' => 'Nombre: $1',
 	'farmer-confirmsetting-title' => 'Título: $1',
 	'farmer-confirmsetting-description' => 'Descripción: $1',
@@ -1002,6 +1002,7 @@ $messages['es'] = array(
 	'farmer-createwiki-form-help' => 'Ayuda',
 	'farmer-createwiki-user' => 'Nombre de usuario',
 	'farmer-createwiki-description' => 'Descripción',
+	'farmer-deleting' => 'Borrando $1',
 	'farmer-delete-form-submit' => 'Borrar',
 	'farmer-basic-title1' => 'Título',
 	'farmer-basic-description' => 'Descripción',
@@ -2225,6 +2226,7 @@ $messages['ja'] = array(
 	'farmer-confirmsetting-title' => 'タイトル: $1',
 	'farmer-button-confirm' => '確認',
 	'farmer-createwiki-user' => '利用者名',
+	'farmer-permissiondenied' => '不許可',
 	'farmer-delete-form-submit' => '削除',
 	'farmer-basic-title1' => 'タイトル',
 	'farmer-basic-permission-move' => 'ページの移動',
