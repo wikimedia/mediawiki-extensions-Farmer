@@ -1038,6 +1038,8 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-notavailable' => 'Ei saatavilla',
 	'farmer-wikicreated' => 'Wiki luotu',
 	'farmer-confirmsetting' => 'Vahvista wikin asetukset',
+	'farmer-confirmsetting-name' => 'Nimi: $1',
+	'farmer-confirmsetting-description' => 'Kuvaus: $1',
 	'farmer-description' => 'Kuvaus',
 	'farmer-button-confirm' => 'Vahvista',
 	'farmer-button-submit' => 'Lähetä',
