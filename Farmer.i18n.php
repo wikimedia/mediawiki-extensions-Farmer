@@ -229,10 +229,12 @@ $messages['af'] = array(
  * @author Codex Sinaiticus
  */
 $messages['am'] = array(
+	'farmer-confirmsetting-name' => 'ስም: $1',
 	'farmer-confirmsetting-title' => 'አርዕስት፡ $1',
 	'farmer-mainpage' => 'ዋና ገጽ',
 	'farmer-basic-title1' => 'አርዕስት',
 	'farmer-yes' => 'አዎ',
+	'farmer-extensions-register-name' => 'ስም',
 );
 
 /** Aragonese (Aragonés)
@@ -508,7 +510,11 @@ $messages['arz'] = array(
  */
 $messages['be-tarask'] = array(
 	'farmer-confirmsetting-title' => 'Назва: $1',
+	'farmer-confirmsetting-description' => 'Апісаньне: $1',
+	'farmer-description' => 'Апісаньне',
+	'farmer-createwiki-description' => 'Апісаньне',
 	'farmer-basic-title1' => 'Назва',
+	'farmer-basic-description' => 'Апісаньне',
 	'farmer-yes' => 'Так',
 	'farmer-no' => 'Не',
 );
@@ -1010,6 +1016,21 @@ $messages['es'] = array(
 	'farmer-yes' => 'Sí',
 	'farmer-no' => 'No',
 	'farmer-extensions-register-name' => 'Nombre',
+);
+
+/** Basque (Euskara)
+ * @author Theklan
+ */
+$messages['eu'] = array(
+	'farmer' => 'Nekazaria',
+	'farmer-desc' => 'MediaWiki basetxe bat kudeatu',
+	'farmercantcreatewikis' => 'Ezin dituzu wikiak sortu ez daukazulako createwikis eskumenik',
+	'farmercreateurl' => 'URL',
+	'farmercreatesitename' => 'Lekuaren izena',
+	'farmercreatenextstep' => 'Hurrengo pausoa',
+	'farmernewwikimainpage' => '== Ongietorria zure wikira ==
+Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
+[[Berezi:Nekazaria|Zure wikia aldatu]] ahal duzu.',
 );
 
 /** Finnish (Suomi)
@@ -4133,6 +4154,7 @@ $messages['tet'] = array(
 	'farmer-createwiki-form-help' => 'Ajuda',
 	'farmer-deleting' => 'Halakon $1',
 	'farmer-delete-form-submit' => 'Halakon',
+	'farmer-mainpage' => 'Pájina Mahuluk',
 	'farmer-basic-title1' => 'Títulu',
 	'farmer-yes' => 'Sin',
 	'farmer-no' => 'Lae',
@@ -4424,6 +4446,42 @@ $messages['vo'] = array(
 	'farmer-yes' => 'Si',
 	'farmer-no' => 'Nö',
 	'farmer-extensions-register-name' => 'Nem',
+);
+
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Gzdavidwong
+ */
+$messages['zh-hans'] = array(
+	'farmercreatesitename' => '网站名称',
+	'farmercreatenextstep' => '下一步',
+	'farmer-about' => '关于',
+	'farmer-list-wiki' => 'Wiki列表',
+	'farmer-createwiki' => '建立一个Wiki',
+	'farmer-wikicreated' => 'Wiki已被建立',
+	'farmer-wikiexists' => 'Wiki存在',
+	'farmer-button-confirm' => '确认',
+	'farmer-button-submit' => '提交',
+	'farmer-createwiki-form-help' => '帮助',
+	'farmer-createwiki-user' => '用户名',
+	'farmer-createwiki-name' => 'Wiki名称',
+	'farmer-createwiki-title' => 'Wiki标题',
+	'farmer-updatedlist' => '已更新的列表',
+	'farmer-delete-title' => '删除Wiki',
+	'farmer-delete-form' => '选择一个Wiki',
+	'farmer-delete-form-submit' => '删除',
+	'farmer-mainpage' => '首页',
+	'farmer-basic-title1' => '标题',
+	'farmer-basic-permission-view' => '查看所有页面',
+	'farmer-basic-permission-edit' => '编辑所有页面',
+	'farmer-basic-permission-createpage' => '建立新页面',
+	'farmer-basic-permission-createtalk' => '建立讨论页',
+	'farmer-basic-permission-upload' => '上传文件',
+	'farmer-yes' => '是',
+	'farmer-no' => '否',
+	'farmer-defaultskin' => '默认皮肤',
+	'farmer-defaultskin-button' => '设为默认皮肤',
+	'farmer-extensions-register-name' => '名称',
+	'farmer-extensions-register-includefile' => '包括文件',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
