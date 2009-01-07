@@ -578,7 +578,7 @@ class SpecialFarmer extends SpecialPage
     {
     	$value = $wiki->getPermission($group, $permission);
 
-        $wgOut->addHTML('<p>' . $description . ': ');
+        $wgOut->addHTML('<p>' . $description . wfMsg( 'colon-separator' ) );
 
         $input = "<input type=\"radio\" name=\"permission[$group][$permission]\" value=\"1\" ";
 
