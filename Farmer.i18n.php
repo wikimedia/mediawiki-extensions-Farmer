@@ -2342,7 +2342,16 @@ $messages['ja'] = array(
 	'farmer-extensions-register-text2' => 'パラメータ「インクルードファイル」には、LocalSettings.php に記述するPHPファイルの名前を入力してください。',
 	'farmer-extensions-register-text3' => "ファイル名が '''\$root''' を含んでいる場合は、その変数が MediaWiki のルートディレクトリに置換されます。",
 	'farmer-extensions-register-text4' => '現在のインクルードパス:',
+	'farmer-extensions-register-name' => '名前',
 	'farmer-extensions-register-includefile' => 'インクルードファイル',
+	'farmer-error-exists' => 'ウィキを作成できません。既に存在しています: $1',
+	'farmer-error-nodirconfig' => 'configDirectory が見つかりません:',
+	'farmer-error-defnotset' => 'デフォルトのウィキを設定しなければなりません',
+	'farmer-error-mapnotfound' => 'ファーム内のウィキ名の対応付けをする関数が見つかりません:',
+	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer はデフォルトウィキの設定ファイルに書き込むことができませんでした。',
+	'farmer-error-funcnotcall' => '関数の呼び出しに失敗しました:',
+	'farmer-error-noextwrite' => '拡張機能ファイルへの書き出しができません:',
+	'farmer-error-wikicorrupt' => '保存したウィキは破損しています',
 );
 
 /** Javanese (Basa Jawa)
@@ -3535,6 +3544,14 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams cap a aqueste espa
 	'farmer-error-funcnotcall' => 'La foncion seguenta es introbabla :',
 	'farmer-error-noextwrite' => 'Impossible d’escriure lo fichièr d’extension seguent :',
 	'farmer-error-wikicorrupt' => 'Lo wiki estocat es corromput',
+);
+
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Jose77
+ */
+$messages['or'] = array(
+	'farmer-createwiki-form-help' => 'ସାହାଜ୍ଯ',
+	'farmer-mainpage' => 'ପ୍ରଧାନ ପ୍ରୁଷ୍ଟ୍ଆ',
 );
 
 /** Ossetic (Иронау)
