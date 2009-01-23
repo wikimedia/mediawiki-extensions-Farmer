@@ -515,6 +515,7 @@ $messages['be-tarask'] = array(
 	'farmer-description' => 'Апісаньне',
 	'farmer-createwiki-description' => 'Апісаньне',
 	'farmer-delete-form-submit' => 'Выдаліць',
+	'farmer-mainpage' => 'Галоўная старонка',
 	'farmer-basic-title1' => 'Назва',
 	'farmer-basic-description' => 'Апісаньне',
 	'farmer-yes' => 'Так',
@@ -3084,9 +3085,9 @@ U kunt uw [[Special:Farmer|wiki aanpassen]].',
 	'farmer-confirmsetting-title' => 'Titel: $1',
 	'farmer-confirmsetting-description' => 'Beschrijving: $1',
 	'farmer-description' => 'Beschrijving',
-	'farmer-confirmsetting-text' => "Uw wiki, '''$1''', zal bereikbaar zijn via http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Uw wiki '''$1''' wordt bereikbaar via http://$1.myfarm.
 De projectnaamruimte wordt '''$2'''.
-Een link naar deze naamruimte wordt '''<nowiki>[[$2:Paginanaam]]</nowiki>'''.
+Een verwijzing naar deze naamruimte wordt '''<nowiki>[[$2:Paginanaam]]</nowiki>'''.
 Als dit in orde is, druk dan op de knop '''bevestigen'''.",
 	'farmer-button-confirm' => 'Bevestigen',
 	'farmer-button-submit' => 'Opslaan',
