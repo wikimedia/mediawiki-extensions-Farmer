@@ -109,7 +109,7 @@ class MediaWikiFarmer
         }
 
         if (!is_dir($this->_configDirectory)) {
-        	throw new MWException(wfMsgHtml('farmer-error-nodirconfig'). $this->_configDirectory);
+        	throw new MWException(wfMsgHtml('farmer-error-nodirconfig') . wfMsgHtml( 'word-separator' ) . $this->_configDirectory);
         } else {
         	if (!is_dir($this->_configDirectory . '/wikis/')) {
         		mkdir($this->_configDirectory . '/wikis');
@@ -168,7 +168,7 @@ class MediaWikiFarmer
             return $this->_doWiki($wiki);
 
         } else {
-            throw new MWException(wfMsgHtml('farmer-error-mapnotfound') . print_r($this->_matchFunction, true));
+            throw new MWException( wfMsgHtml('farmer-error-mapnotfound') . wfMsgHtml( 'word-separator' ) . print_r($this->_matchFunction, true));
         }
     }
 
@@ -221,7 +221,7 @@ class MediaWikiFarmer
                 if (is_callable($this->_onUnknownWikiFunction)) {
                     call_user_func($this->_onUnknownWikiFunction, $wiki);
                 } else {
-                    throw new MWException(wfMsgHtml('farmer-error-funcnotcall') . print_r($this->_onUnknownFunction, true));
+                    throw new MWException( wfMsgHtml('farmer-error-funcnotcall') . wfMsgHtml( 'word-separator' ) . print_r($this->_onUnknownFunction, true));
                 }
             }
         } else {
@@ -602,7 +602,7 @@ class MediaWikiFarmer
         $content = serialize($this->_extensions);
 
         if (file_put_contents($file, $content, LOCK_EX) != strlen($content)) {
-            throw new MWException(wfMsgHtml('farmer-error-noextwrite') . $file);
+            throw new MWException( wfMsgHtml('farmer-error-noextwrite') . wfMsgHtml( 'word-separator' ) . $file);
         }
     }
 

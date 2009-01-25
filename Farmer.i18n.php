@@ -127,12 +127,12 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-extensions-register-name'        => 'Name',
 	'farmer-extensions-register-includefile' => 'Include file',
 	'farmer-error-exists'                    => 'Cannot create wiki.  It already exists: $1',
-	'farmer-error-nodirconfig'               => 'configDirectory not found: ',
+	'farmer-error-nodirconfig'               => 'configDirectory not found:',
 	'farmer-error-defnotset'                 => 'Default wiki must be set',
-	'farmer-error-mapnotfound'               => 'Function to map wiki name in farm not found: ',
+	'farmer-error-mapnotfound'               => 'Function to map wiki name in farm not found:',
 	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer could not write the default wiki configuration file.',
-	'farmer-error-funcnotcall'               => 'Could not call function: ',
-	'farmer-error-noextwrite'                => 'Unable to write out extension file: ',
+	'farmer-error-funcnotcall'               => 'Could not call function:',
+	'farmer-error-noextwrite'                => 'Unable to write out extension file:',
 	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
@@ -1760,7 +1760,7 @@ $messages['hsb'] = array(
 	'farmercreatesitename' => 'Mjeno sydła',
 	'farmercreatenextstep' => 'Přichodny krok',
 	'farmernewwikimainpage' => '== Witaj do twojeho Wikija ==
-Jeli to čitaš, je so twój nowy wiki korektnje instalował. 
+Jeli to čitaš, je so twój nowy wiki korektnje instalował.
 Móžeš [[Special:Farmer|swój wiki přiměrić]].',
 	'farmer-about' => 'Wo',
 	'farmer-about-text' => 'MediaWiki Farmer ći dowola farmu wikijow MediaWiki zrjadować.',
@@ -2439,7 +2439,7 @@ $messages['km'] = array(
 	'farmercreatesitename' => 'ឈ្មោះតំបន់បណ្ដាញ',
 	'farmercreatenextstep' => 'ជំហានបន្ទាប់',
 	'farmernewwikimainpage' => '== សូមស្វាគមន៍ការមកកាន់វិគីរបស់លោកអ្នក ==
-ប្រសិនបើអ្នកកំពុងតែអាន មានន័យថាវិគីថ្មីរបស់លោកអ្នកត្រូវបានដំឡើងត្រឹមត្រូវហើយ។ 
+ប្រសិនបើអ្នកកំពុងតែអាន មានន័យថាវិគីថ្មីរបស់លោកអ្នកត្រូវបានដំឡើងត្រឹមត្រូវហើយ។
 
 អ្នក​អាច​[[Special:Farmer|ប្ដូរ​វិគី​របស់​អ្នក​តាមបំណង]]។',
 	'farmer-about' => 'អំពី',
@@ -2570,7 +2570,7 @@ Wann dat dat es, wat De wells, dann klecks De dä Knopp „'''{{int:farmer-butto
 	'farmer-createwiki-form-title' => 'E nöü Wikki opmaache',
 	'farmer-createwiki-form-text1' => 'Övver dat Fommulaa hee kanns De e neu Wiki opmaache.',
 	'farmer-createwiki-form-help' => 'Hölp',
-	'farmer-createwiki-form-text2' => "; Däm Wiki singe Name : 
+	'farmer-createwiki-form-text2' => "; Däm Wiki singe Name :
 Do dren sin eckersch Bochshtave un Zeffere, sönß nix.
 Dä Name weed jebruch, öm als ene Deil en däm singe URL, op Ding Wiki ze zeije.
 Wann De hee zem Beishpell '''tittel''' enndräähß, dann weed Ding Wiki met däm URL <nowiki>http://</nowiki>'''tittel'''.mydomain/ ze fenge sin.",
@@ -3940,7 +3940,7 @@ $messages['ru'] = array(
 	'farmercreatesitename' => 'Имя сайта',
 	'farmercreatenextstep' => 'Следующий шаг',
 	'farmernewwikimainpage' => '== Добро пожаловать в свой вики-проект ==
-Если вы читаете это сообщение, значит ваш новый вики-проект успешно и правильно установлен. 
+Если вы читаете это сообщение, значит ваш новый вики-проект успешно и правильно установлен.
 Теперь можно заняться [[Special:Farmer|дальнейшей настройкой]].',
 	'farmer-about' => 'О расширении',
 	'farmer-about-text' => 'Расширение «Фермер» (MediaWiki Farmer) позволяет вам управлять фермой (группой серверов) вики.',
