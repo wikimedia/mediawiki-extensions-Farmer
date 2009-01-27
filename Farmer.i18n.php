@@ -4538,6 +4538,134 @@ $messages['tg-cyrl'] = array(
 	'farmer-error-wikicorrupt' => 'Викии захирашуда хароб аст',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'farmer' => 'Magsasaka (tagapaglinang)',
+	'farmer-desc' => 'Pamahalaan ang isang linangan o "bukid" ng MediaWiki',
+	'farmercantcreatewikis' => 'Hindi mo nakayanang lumikha ng mga wiki kasi wala kang pribilehiyong lumikha ng mga wiki',
+	'farmercreatesitename' => 'Pangalan ng sityo',
+	'farmercreatenextstep' => 'Susunod na hakbang',
+	'farmernewwikimainpage' => '== Maligayang pagdating sa iyong wiki ==
+Kapag nababasa mo ito, nailuklok ng tama ang iyong bagong wiki.
+Maaari mong [[Special:Farmer|iayon sa nais mong disenyo ang iyong wiki]].',
+	'farmer-about' => 'Patungkol',
+	'farmer-about-text' => "Nagpapahintulot ang Magsasaka ng Mediawiki (''MediaWiki Farmer'') na mapamahalaan mo ang isang linangan ng mga wiki ng MediaWiki.",
+	'farmer-list-wiki' => 'Talaan ng mga wiki',
+	'farmer-list-wiki-text' => '[[$1|Itala]] ang lahat ng mga wiking nasa {{SITENAME}}',
+	'farmer-createwiki' => 'Lumikha ng isang wiki',
+	'farmer-createwiki-text' => '[[$1|Lumikha]] na ngayon ng isang bagong wiki!',
+	'farmer-administration' => 'Pangangasiwa ng linangan',
+	'farmer-administration-extension' => 'Pamahalaan ang mga karugtong',
+	'farmer-administration-extension-text' => '[[$1|Pamahalaan]] ang nakaluklok na mga karugtong.',
+	'farmer-admimistration-listupdate' => 'Pagsasapanahon ng talaan ng linangan',
+	'farmer-admimistration-listupdate-text' => '[[$1|Isapanahon]] ang talaan ng mga wiking nasa {{SITENAME}}',
+	'farmer-administration-delete' => 'Burahin ang isang wiki',
+	'farmer-administration-delete-text' => '[[$1|Burahin]] ang isang wiki mula sa linangan',
+	'farmer-administer-thiswiki' => 'Pangasiwaan ang wiking ito',
+	'farmer-administer-thiswiki-text' => '[[$1|Pangasiwaan]] ang mga pagbabago sa wiking ito',
+	'farmer-notavailable' => 'Hindi makukuha',
+	'farmer-notavailable-text' => 'Makukuha lamang ang kasangkapang-katangiang ito mula sa pangunahing wiki',
+	'farmer-wikicreated' => 'Nalikha na ang wiki',
+	'farmer-wikicreated-text' => 'Nalikha na ang iyong wiki.
+Mapupuntahan ito sa $1',
+	'farmer-default' => 'Bilang likas na katakdaan, walang ibang may mga kapahintulutan sa wiking ito maliban sa iyo.
+Mababago mo ang mga pribilehiyo ng tagagamit sa pamamagitan ng $1',
+	'farmer-wikiexists' => 'Umiiral na ang wiki',
+	'farmer-wikiexists-text' => "Umiiral na ang wiking '''$1''' na sinusubok mong likhain.
+Bumalik po lamang at sumubok ng iba pang pangalan.",
+	'farmer-confirmsetting' => 'Tiyakin ang mga katakdaan ng wiki',
+	'farmer-confirmsetting-name' => 'Pangalan: $1',
+	'farmer-confirmsetting-title' => 'Pamagat: $1',
+	'farmer-confirmsetting-description' => 'Paglalarawan: $1',
+	'farmer-description' => 'Paglalarawan',
+	'farmer-confirmsetting-text' => "Ang wiki mong '''$1''' ay mapupuntahan sa pamamagitan ng http://$1.myfarm.
+Ang espasyo ng pangalan ng proyekto ay magiging '''$2'''.
+Ang mga kawing papunta sa espasyo ng pangalang ito ay magiging nasa anyong '''<nowiki>[[$2:Page name]]</nowiki>'''.
+Kung ito ang nais mo, pindutin ang pindutang '''tiyakin''' na nasa ibaba.",
+	'farmer-button-confirm' => 'Tiyakin',
+	'farmer-button-submit' => 'Ipasa',
+	'farmer-createwiki-form-title' => 'Lumikha ng isang wiki',
+	'farmer-createwiki-form-text1' => 'Gamitin ang pormularyong nasa ibaba upang makalikha ng isang bagong wiki.',
+	'farmer-createwiki-form-help' => 'Tulong',
+	'farmer-createwiki-form-text2' => "; Pangalan ng wiki: Ang pangalan ng wiki.
+Naglalaman lamang ng mga titik at mga bilang.
+Gagamitin ang pangalan ng wiki bilang bahagi ng URL upang makilala ang iyong wiki.
+Halimbawa na, kapag pinasok mo ang '''pamagat''', mapupuntahan pagdaka ang wiki mo sa pamamagitan ng <nowiki>http://</nowiki>'''pamagat'''.mydomain.",
+	'farmer-createwiki-form-text3' => '; Pamagat ng wiki: Ang pamagat ng wiki.
+Gagamitin sa loob ng pamagat ng bawat isang pahinang nasa ibabaw ng iyong wiki.
+Magiging espasyo ng pangalan rin ng proyekto at unlapi ng ugnayang-wiki.',
+	'farmer-createwiki-form-text4' => '; Paglalarawan: Paglalarawan ng wiki.
+Isa itong teksto ng paglalarawan hinggil sa wiki.
+Ipapakita ito sa loob ng talaan ng wiki.',
+	'farmer-createwiki-user' => 'Pangalan ng tagagamit',
+	'farmer-createwiki-name' => 'Pangalan ng wiki',
+	'farmer-createwiki-title' => 'Pamagat ng wiki',
+	'farmer-createwiki-description' => 'Paglalarawan',
+	'farmer-updatedlist' => 'Naisapanahong talaan',
+	'farmer-notaccessible' => 'Hindi mapupuntahan',
+	'farmer-notaccessible-test' => 'Makukuha lamang ang kasangkapang-katangiang ito mula sa magulang na wiki na nasa loob ng linangan',
+	'farmer-permissiondenied' => 'Ipinagkait ang pahintulot',
+	'farmer-permissiondenied-text' => 'Walang kang pahintulot na burahin ang isang wiki mula sa linangan',
+	'farmer-permissiondenied-text1' => 'Wala kang pahintulot na mapuntahan ang pahinang ito',
+	'farmer-deleting' => 'Binubura ang $1',
+	'farmer-delete-title' => 'Burahin ang wiki',
+	'farmer-delete-text' => 'Pakipili ang wiking nais mong burahin mula sa talaang nasa ibaba',
+	'farmer-delete-form' => 'Pumili ng isang wiki',
+	'farmer-delete-form-submit' => 'Burahin',
+	'farmer-listofwikis' => 'Talaan ng mga wiki',
+	'farmer-mainpage' => 'Unang Pahina',
+	'farmer-basic-title' => 'Payak na mga parametro',
+	'farmer-basic-title1' => 'Pamagat',
+	'farmer-basic-title1-text' => 'Wala pang pamagat ang wiki mo. Magtakda ng isa <b>ngayon</b>',
+	'farmer-basic-description' => 'Paglalarawan',
+	'farmer-basic-description-text' => 'Itakda sa ibaba ang paglalarawan ng iyong wiki',
+	'farmer-basic-permission' => 'Mga kapahintulutan',
+	'farmer-basic-permission-text' => 'Sa pamamagitan ng pormularyong nasa ibaba, maaaring mangyaring baguhin ang mga pahintulot para sa mga tagagamit ng wiking ito.',
+	'farmer-basic-permission-visitor' => 'Mga kapahintulutan para sa bawat isang panauhin',
+	'farmer-basic-permission-visitor-text' => 'Ang sumusunod na mga kapahintulutan ay ihahain sa bawat isang taong dadalaw sa wiking ito',
+	'farmer-basic-permission-view' => 'Tingnan ang lahat ng mga pahina',
+	'farmer-basic-permission-edit' => 'Baguhin ang lahat ng mga pahina',
+	'farmer-basic-permission-createpage' => 'Lumikha ng bagong mga pahina',
+	'farmer-basic-permission-createtalk' => 'Lumikha ng mga pahina ng usapan',
+	'farmer-basic-permission-move' => 'Maglipat ng mga pahina',
+	'farmer-basic-permission-upload' => 'Magkarga ng mga talaksan',
+	'farmer-basic-permission-reupload' => 'Muling ikarga ang mga talaksan (patungan ang umiiral na pagkarga)',
+	'farmer-basic-permission-minoredit' => 'Payagan ang maliliit na mga pagbabago',
+	'farmer-yes' => 'Oo',
+	'farmer-no' => 'Hindi',
+	'farmer-basic-permission-user' => 'Mga kapahintulutan para sa nakalagdang mga tagagamit',
+	'farmer-basic-permission-user-text' => 'Ang sumusunod na mga kapahintulutan ay ihahain sa bawat isang taong lumagdang papasok sa wiking ito',
+	'farmer-setpermission' => 'Itakda ang mga pahintulot',
+	'farmer-defaultskin' => 'Likas na nakatakdang pabalat',
+	'farmer-defaultskin-button' => 'Itakda ang likas na nakatakdang pabalat',
+	'farmer-extensions' => 'Masisiglang mga karugtong',
+	'farmer-extensions-button' => 'Itakda ang masisiglang mga karugtong',
+	'farmer-extensions-extension-denied' => 'Wala kang pahintulot na gamitin ang kasangkapang-katangiang ito.
+Dapat na isa kang kasapi ng pangkat ng tagapangasiwa ng linangan.',
+	'farmer-extensions-invalid' => 'Hindi tanggap na karugtong',
+	'farmer-extensions-invalid-text' => 'Hindi namin maidagdag ang karugtong dahil hindi matagpuan ang talaksang napili para isama',
+	'farmer-extensions-available' => 'Mga makukuhang karugtong',
+	'farmer-extensions-noavailable' => 'Walang nakatalang mga karugtong',
+	'farmer-extensions-register' => 'Ipatala ang karugtong',
+	'farmer-extensions-register-text1' => 'Gamitin ang pormularyong nasa ibaba upang maipatala sa linangan ang bagong karugtong.
+Kapag naipatala na ang isang karugtong, magagamit na ito ng lahat ng mga wiki.',
+	'farmer-extensions-register-text2' => "Para sa parametrong ''Isama ang talaksan'', ipasok ang pangalan ng talaksang PHP na katulad ng sa ginagawa mo sa loob ng LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Kapag naglalaman ang pangalan ng talaksan ng '''\$root''', ang pabagu-bagong halagang iyan ay mapapalitan ng ugat na direktoryo ng MediaWiki.",
+	'farmer-extensions-register-text4' => 'Ang pangkasalukuyang pansamang mga daanan ay:',
+	'farmer-extensions-register-name' => 'Pangalan',
+	'farmer-extensions-register-includefile' => 'Isama ang talaksan',
+	'farmer-error-exists' => 'Hindi malikha ang wiki. Umiiral na ito: $1',
+	'farmer-error-nodirconfig' => 'Hindi natagpuan ang configDirectory:',
+	'farmer-error-defnotset' => 'Dapat na itakda ang likas na nakatakdang wiki',
+	'farmer-error-mapnotfound' => 'Hindi natagpuan ang tungkulin upang maimapa ang pangalan ng wiki sa loob ng linangan:',
+	'farmer-error-nofileconfwrite' => 'Hindi maisulat ng MediaWikiFarmer ang talaksan ng pagkakaayos na para sa likas na nakatakdang wiki.',
+	'farmer-error-funcnotcall' => 'Hindi matawag ang tungkulin:',
+	'farmer-error-noextwrite' => 'Hindi nagawang maisulat palabas ang talaksan ng karugtong:',
+	'farmer-error-wikicorrupt' => 'Tiwali ang nakatabing wiki',
+);
+
 /** Turkish (Türkçe)
  * @author Karduelis
  * @author Mach
