@@ -513,6 +513,7 @@ $messages['be-tarask'] = array(
 	'farmer-confirmsetting-title' => 'Назва: $1',
 	'farmer-confirmsetting-description' => 'Апісаньне: $1',
 	'farmer-description' => 'Апісаньне',
+	'farmer-button-confirm' => 'Пацьвердзіць',
 	'farmer-createwiki-user' => 'Імя ўдзельніка',
 	'farmer-createwiki-description' => 'Апісаньне',
 	'farmer-delete-form-submit' => 'Выдаліць',
