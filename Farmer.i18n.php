@@ -1024,6 +1024,7 @@ $messages['es'] = array(
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Theklan
  */
 $messages['eu'] = array(
@@ -1035,7 +1036,7 @@ $messages['eu'] = array(
 	'farmercreatenextstep' => 'Hurrengo pausoa',
 	'farmernewwikimainpage' => '== Ongietorria zure wikira ==
 Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
-[[Berezi:Nekazaria|Zure wikia aldatu]] ahal duzu.',
+[[Special:Farmer|Zure wikia aldatu]] ahal duzu.',
 );
 
 /** Finnish (Suomi)
