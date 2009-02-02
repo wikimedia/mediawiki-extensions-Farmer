@@ -288,7 +288,7 @@ class MediaWikiFarmer {
 	 * @param string $wiki Unknown wiki that was accessed
 	 */
 	protected static function _redirectTo( MediaWikiFarmer $farmer, $wiki ) {
-		$urlTo = str_replace( '$1', $wiki->name, $this->_redirectToURL );
+		$urlTo = str_replace( '$1', $wiki->name, $farmer->_redirectToURL );
 
 		header( 'Location: ' . $urlTo );
 		exit;
