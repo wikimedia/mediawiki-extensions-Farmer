@@ -70,6 +70,8 @@ $root = dirname( __FILE__ ) . '/';
 
 $wgExtensionMessagesFiles['MediaWikiFarmer'] = $root . 'Farmer.i18n.php';
 
+$wgExtensionAliasesFiles['MediaWikiFarmer'] = $root . 'Farmer.alias.php';
+
 $wgAutoloadClasses['MediaWikiFarmer'] = $root . 'MediaWikiFarmer.php';
 $wgAutoloadClasses['MediaWikiFarmer_Extension'] = $root . 'MediaWikiFarmer_Extension.php';
 $wgAutoloadClasses['MediaWikiFarmer_Wiki'] = $root . 'MediaWikiFarmer_Wiki.php';
