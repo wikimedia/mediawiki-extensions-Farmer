@@ -282,7 +282,7 @@ class SpecialFarmer extends SpecialPage {
 		$list = $wgFarmer->getFarmList();
 
 		$wgOut->wrapWikiMsg( "== $1 ==", 'farmer-listofwikis' );
-		$current = MediaWikiFarmer::getActiveWiki()->name;
+		$current = $wgFarmer->getActiveWiki()->name;
 
 		foreach ( $list as $wiki ) {
 			$link = ( $current == $wiki['name'] ? wfMsgForContent( 'mainpage' ) : $wiki['name'] . ':' );

@@ -52,19 +52,15 @@ class MediaWikiFarmer {
 	protected $_sharedGroups = false;
 	protected $_extensionsLoaded = false;
 
+	/** Instance of MediaWikiFarmer_Wiki */
+	protected $_activeWiki = null;
+	
 	/** Instance of this class */
 	protected static $_instance = null;
-
-	/** Instance of MediaWikiFarmer_Wiki */
-	protected static $_activeWiki = null;
 
 
 	public static function getInstance() {
 		return self::$_instance;
-	}
-
-	public static function getActiveWiki() {
-		return self::$_activeWiki;
 	}
 
 	/**
@@ -126,6 +122,13 @@ class MediaWikiFarmer {
 	}
 
 	/**
+	 * Get the active wiki for this MediaWikiFarmer instance
+	 */
+	public function getActiveWiki() {
+		return $this->_activeWiki;
+	}
+
+	/**
 	 * Runs MediaWikiFarmer
 	 *
 	 * This function does all the fun stuff
@@ -164,8 +167,7 @@ class MediaWikiFarmer {
 	 */
 	protected function _doWiki( $wiki ){
 		$wiki = MediaWikiFarmer_Wiki::factory( $wiki );
-
-		self::$_activeWiki = $wiki;
+		$this->_activeWiki = $wiki;
 
 		if( !$wiki->exists() ){
 			// if the default wiki doesn't exist (probably first-time user)
