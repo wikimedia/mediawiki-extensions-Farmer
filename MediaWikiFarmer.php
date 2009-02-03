@@ -106,7 +106,7 @@ class MediaWikiFarmer {
 		}
 
 		if( !is_dir( $this->_configDirectory ) ){
-			throw new MWException( wfMsgHtml( 'farmer-error-nodirconfig' ) . wfMsgHtml( 'word-separator' ) . $this->_configDirectory );
+			throw new MWException( 'configDirectory not found: ' . $this->_configDirectory );
 		} else {
 			if ( !is_dir( $this->_configDirectory . '/wikis/' ) ){
 				mkdir( $this->_configDirectory . '/wikis' );
@@ -132,7 +132,7 @@ class MediaWikiFarmer {
 	 */
 	public function run() {
 		if( !$this->_defaultWiki ) {
-			throw new MWException( wfMsgHtml( 'farmer-error-defnotset' ) );
+			throw new MWException( 'Default wiki must be set' );
 		}
 
 		// first we try to find the wiki name that was accessed by calling the appropriate function
@@ -153,7 +153,7 @@ class MediaWikiFarmer {
 			return $this->_doWiki( $wiki );
 
 		} else {
-			throw new MWException( wfMsgHtml('farmer-error-mapnotfound') . wfMsgHtml( 'word-separator' ) . print_r( $this->_matchFunction, true ) );
+			throw new MWException( 'Function to map wiki name in farm not found: ' . print_r( $this->_matchFunction, true ) );
 		}
 	}
 
@@ -177,7 +177,7 @@ class MediaWikiFarmer {
 				$wiki->save();
 
 				if( !$wiki->exists() ){
-					throw new MWException( wfMsgHtml( 'farmer-error-nofileconfwrite' ) );
+					throw new MWException( 'MediaWikiFarmer could not write the default wiki configuration file.' );
 				} else {
 					$this->updateFarmList();
 					$wiki->initialize();
@@ -189,7 +189,7 @@ class MediaWikiFarmer {
 				if( is_callable( $this->_onUnknownWikiFunction ) ){
 					call_user_func( $this->_onUnknownWikiFunction, $this, $wiki );
 				} else {
-					throw new MWException( wfMsgHtml( 'farmer-error-funcnotcall' ) . wfMsgHtml( 'word-separator' ) . print_r( $this->_onUnknownFunction, true ) );
+					throw new MWException( 'Could not call function: ' . print_r( $this->_onUnknownFunction, true ) );
 				}
 			}
 		} else {

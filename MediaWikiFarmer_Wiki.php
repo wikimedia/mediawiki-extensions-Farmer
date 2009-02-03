@@ -73,7 +73,7 @@ class MediaWikiFarmer_Wiki {
             if( $obj instanceof MediaWikiFarmer_Wiki ){
                 return $obj;
             } else {
-                throw new MWException( wfMsgHtml( 'farmer-error-wikicorrupt' ) );
+                throw new MWException( 'Stored wiki is corrupt.' );
             }
         } else {
             return new MediaWikiFarmer_Wiki( $wiki, $variables );

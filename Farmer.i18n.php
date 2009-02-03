@@ -127,13 +127,7 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-extensions-register-name'        => 'Name',
 	'farmer-extensions-register-includefile' => 'Include file',
 	'farmer-error-exists'                    => 'Cannot create wiki.  It already exists: $1',
-	'farmer-error-nodirconfig'               => 'configDirectory not found:',
-	'farmer-error-defnotset'                 => 'Default wiki must be set',
-	'farmer-error-mapnotfound'               => 'Function to map wiki name in farm not found:',
-	'farmer-error-nofileconfwrite'           => 'MediaWikiFarmer could not write the default wiki configuration file.',
-	'farmer-error-funcnotcall'               => 'Could not call function:',
 	'farmer-error-noextwrite'                => 'Unable to write out extension file:',
-	'farmer-error-wikicorrupt'               => 'Stored wiki is corrupt',
 );
 
 /** Message documentation (Message documentation)
