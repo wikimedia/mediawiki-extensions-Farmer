@@ -14,3 +14,9 @@ $aliases = array();
 $aliases['en'] = array(
 	'Farmer' => array( 'Farmer' ),
 );
+
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'Farmer' => array( 'ウィキファーム管理' ),
+);
+
