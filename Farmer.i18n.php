@@ -1107,6 +1107,7 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 );
 
 /** French (Français)
+ * @author Crochet.david
  * @author Dereckson
  * @author Grondin
  * @author IAlex
@@ -1205,7 +1206,7 @@ Si c’est bien ce que vous voulez,  presser le bouton '''Confirmer''' ci-dessou
 	'farmer-defaultskin-button' => 'Configurer l’apparence par défaut',
 	'farmer-extensions' => 'Extensions actives',
 	'farmer-extensions-button' => 'Configurer les extensions actives',
-	'farmer-extensions-extension-denied' => 'Vous n’êtes pas habilité pour l’utilisation de cette fonctionnalité. Vous devez être membre des administrateurs de l’administration multi wikis.',
+	'farmer-extensions-extension-denied' => 'Vous n’êtes pas habilité{{GENDER:||e|(e)}} pour l’utilisation de cette fonctionnalité. Vous devez être membre des administrateurs de l’administration multi wikis.',
 	'farmer-extensions-invalid' => 'Extension invalide',
 	'farmer-extensions-invalid-text' => 'Nous ne pouvons ajouter cette extension car le fichier sélectionné pour l’inclusion est introuvable.',
 	'farmer-extensions-available' => 'Extensions disponibles',
@@ -1218,13 +1219,7 @@ Si c’est bien ce que vous voulez,  presser le bouton '''Confirmer''' ci-dessou
 	'farmer-extensions-register-name' => 'Nom',
 	'farmer-extensions-register-includefile' => 'Fichier à inclure',
 	'farmer-error-exists' => 'L’interface ne peut créer le Wiki.  Il existe déjà : $1',
-	'farmer-error-nodirconfig' => 'configDirectory introuvable :',
-	'farmer-error-defnotset' => 'Le wiki par défaut doit être défini.',
-	'farmer-error-mapnotfound' => 'La fonction inscrivant le nom du wiki dans la « ferme » est introuvable :',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer ne peut écrire le fichier de configuration du wiki par défaut.',
-	'farmer-error-funcnotcall' => 'La fonction suivante est introuvable :',
 	'farmer-error-noextwrite' => 'Impossible d’écrire le fichier d’extension suivant :',
-	'farmer-error-wikicorrupt' => 'Le wiki stocké est corrompu',
 );
 
 /** Franco-Provençal (Arpetan)
