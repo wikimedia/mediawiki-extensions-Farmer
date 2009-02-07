@@ -722,6 +722,7 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Als-Holder
  * @author ChrisiPK
  * @author Leithian
  * @author Melancholie
@@ -806,7 +807,7 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-mainpage' => 'Hauptseite',
 	'farmer-basic-title' => 'Grundsätzliche Parameter',
 	'farmer-basic-title1' => 'Titel',
-	'farmer-basic-title1-text' => 'Dein Wiki hat keinen Titel. Bitte setzte ihn <b>jetzt</b>',
+	'farmer-basic-title1-text' => 'Dein Wiki hat keinen Titel. Bitte setze ihn <b>jetzt</b>',
 	'farmer-basic-description' => 'Beschreibung',
 	'farmer-basic-description-text' => 'Füge unten die Beschreibung deines Wikis ein',
 	'farmer-basic-permission' => 'Rechte',
@@ -844,13 +845,7 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 	'farmer-extensions-register-name' => 'Name',
 	'farmer-extensions-register-includefile' => 'Datei einbinden',
 	'farmer-error-exists' => 'Das Wiki kann nicht angelegt werden, weil es bereits existiert: $1',
-	'farmer-error-nodirconfig' => 'configDirectory nicht gefunden:',
-	'farmer-error-defnotset' => 'Es muss ein Standardwiki gesetzt werden',
-	'farmer-error-mapnotfound' => 'Funktion, um den Wikinamen in der Farm einzutragen, nicht gefunden:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer konnte nicht schreibend auf die Standardkonfigurationsdatei des Wikis zugreifen.',
-	'farmer-error-funcnotcall' => 'Funktion konnte nicht aufgerufen werden:',
 	'farmer-error-noextwrite' => 'Schreiben der Erweiterungsdatei nicht möglich:',
-	'farmer-error-wikicorrupt' => 'Gespeichertes Wiki ist defekt',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -1407,10 +1402,125 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Holder
  * @author J. 'mach' wust
  */
 $messages['gsw'] = array(
+	'farmer' => 'Wiki-Buur',
+	'farmer-desc' => 'E MediaWiki-Hof verwalte',
+	'farmercantcreatewikis' => 'Du chasch kei Wiki aalege, wel Dir s Rächt („createwikis“) dezue fählt.',
+	'farmercreatesitename' => 'Name vu dr Website',
+	'farmercreatenextstep' => 'Nechschte Schritt',
+	'farmernewwikimainpage' => '== Willchu in Dyynem Wiki ==
+
+Wänn Du dää Täxt liisesch, no hesch Dyy nej Wiki inschtalliert.
+Du chasch s no Dyyne Winsch [[Special:Farmer|aapasse]].',
+	'farmer-about' => 'Iber',
+	'farmer-about-text' => 'MediaWiki-Farmer macht s Dir megli, mehreri MediaWiki z verwalte.',
+	'farmer-list-wiki' => 'Wiki uflischte',
+	'farmer-list-wiki-text' => '[[$1|Lischt]] vu allene Wiki uf {{SITENAME}}',
+	'farmer-createwiki' => 'E Wiki aalege',
+	'farmer-createwiki-text' => '[[$1|Leg]] jetz e nej Wiki aa.',
+	'farmer-administration' => 'Hof-Verwaltig',
+	'farmer-administration-extension' => 'Erwyterige verwalte',
+	'farmer-administration-extension-text' => '[[$1|Verwalt]] inschtallierti Erwyterige.',
+	'farmer-admimistration-listupdate' => 'Heflischt aktualisiere',
+	'farmer-admimistration-listupdate-text' => '[[$1|Aktualisier]] d Lischt vu dr Wiki uf {{SITENAME}}',
+	'farmer-administration-delete' => 'E Wiki lesche',
+	'farmer-administration-delete-text' => '[[$1|Lesch]] e Wiki vum Hof',
+	'farmer-administer-thiswiki' => 'Des Wiki verwalte',
+	'farmer-administer-thiswiki-text' => 'Des Wiki [[$1|verwalte]]',
+	'farmer-notavailable' => 'Nit verfiegbar',
+	'farmer-notavailable-text' => 'Des Feature isch numen im Hauptwiki verfiegbar',
+	'farmer-wikicreated' => 'Wiki aagleit',
+	'farmer-wikicreated-text' => 'Dyy Wiki isch aagleit wore.
+S isch doo: $1',
+	'farmer-default' => 'Am Aafang het nieme ußer Dir irgedweleni Rächt in däm Wiki.
+Mit $1 chasch d Benutzerrächt ändere',
+	'farmer-wikiexists' => 'Wiki git s',
+	'farmer-wikiexists-text' => "S Wiki – '''$1''' –, wu Du versuechsch aazlege, git s scho.
+Bitte gang zrugg un versuech s mit eme andere Name",
+	'farmer-confirmsetting' => 'Wiki-Yystellige bstätige',
+	'farmer-confirmsetting-name' => 'Name: $1',
+	'farmer-confirmsetting-title' => 'Titel: $1',
+	'farmer-confirmsetting-description' => 'Bschryybig: $1',
+	'farmer-description' => 'Bschryybig',
+	'farmer-confirmsetting-text' => "Dyy Wiki – '''$1''' – wird iber http://$1.meineWikiFarm/ erreichbar syy.
+Dr Projektnamensruum wird '''$2''' heiße.
+Gleicher zue däm Namensruum wäre d Gstalt '''<nowiki>[[$2:Sytename]]</nowiki>''' haa.
+Wänn alles korräkt isch, no bstätig des mit eme Druck uf '''Bstätige'''.",
+	'farmer-button-confirm' => 'Bstätige',
+	'farmer-button-submit' => 'Abschicke',
+	'farmer-createwiki-form-title' => 'E Wiki aalege',
+	'farmer-createwiki-form-text1' => 'Bruuch des Formular go ne nej Wiki aalege.',
+	'farmer-createwiki-form-help' => 'Hilf',
+	'farmer-createwiki-form-text2' => "; Wikiname: Dr Name vum Wiki.
+S derfe nume d Buechstaben A–Z un Zahle din syy.
+Dr Wikiname wird as Teil vu dr URL zum Wiki bruucht.
+Wänn Du zum Byypil '''Name''' aagisch, no wird d URL zum Wiki <nowiki>http://</nowiki>'''name'''.example.com/ heiße.",
+	'farmer-createwiki-form-text3' => '; Wikiname: Name vum Wiki.
+Er wird uf jedere Syte vum Wiki bruucht.
+Er wird au dr Titel vum Projäktnamensruum un vum Interwiki-Präfix syy.',
+	'farmer-createwiki-form-text4' => '; Bschryybig: Bschryybig vum Wiki.
+Dää Täxt bschrybt s Wiki un wird uf dr Lischt vu dr Wiki aazeigt.',
+	'farmer-createwiki-user' => 'Benutzername',
+	'farmer-createwiki-name' => 'Wikiname',
+	'farmer-createwiki-title' => 'Wikititel',
+	'farmer-createwiki-description' => 'Bschryybig',
+	'farmer-updatedlist' => 'Lischt aktualisiere',
+	'farmer-notaccessible' => 'Nit verfiegbar',
+	'farmer-notaccessible-test' => 'Des Feature isch numen im Elterewiki vum Hof verfiegbar',
+	'farmer-permissiondenied' => 'Zuegriff verweigeret',
+	'farmer-permissiondenied-text' => 'Du derfsch kei Wiki vum Hof lesche',
+	'farmer-permissiondenied-text1' => 'Du derfsch uf die Syte nit zuegryfe',
+	'farmer-deleting' => 'Am $1 lesche',
+	'farmer-delete-title' => 'Wiki lesche',
+	'farmer-delete-text' => 'Bitte wehl s Wiki, wu Du witt leschen, us dr Lischt uus',
+	'farmer-delete-form' => 'Wehl e Wiki',
+	'farmer-delete-form-submit' => 'Lesche',
+	'farmer-listofwikis' => 'Lischt vu dr Wiki',
+	'farmer-mainpage' => 'Hauptsyte',
+	'farmer-basic-title' => 'Grundsätzligi Parameter',
 	'farmer-basic-title1' => 'Titel',
+	'farmer-basic-title1-text' => 'Dyy Wiki het no kei Titel. Bitte setz en <b>jetz</b>',
+	'farmer-basic-description' => 'Bschryybig',
+	'farmer-basic-description-text' => 'Fieg unte d Bschryybig vu Dyynem Wiki yy',
+	'farmer-basic-permission' => 'Rächt',
+	'farmer-basic-permission-text' => 'Mit däm Formular isch s megli, d Benutzerrächt vum Wiki s ändere.',
+	'farmer-basic-permission-visitor' => 'Gaschträcht',
+	'farmer-basic-permission-visitor-text' => 'Die Rächt gälte fir Gescht im Wiki',
+	'farmer-basic-permission-view' => 'Alli Syten aaluege',
+	'farmer-basic-permission-edit' => 'Alli Syte bearbeite',
+	'farmer-basic-permission-createpage' => 'Neji Syten aalege',
+	'farmer-basic-permission-createtalk' => 'Diskussionssyten aalege',
+	'farmer-basic-permission-move' => 'Syte verschiebe',
+	'farmer-basic-permission-upload' => 'Dateie uffelade',
+	'farmer-basic-permission-reupload' => 'Dateien iberschryybe',
+	'farmer-basic-permission-minoredit' => 'Chleini Änderige mache',
+	'farmer-yes' => 'Jo',
+	'farmer-no' => 'Nei',
+	'farmer-basic-permission-user' => 'Rächt vu aagmäldete Benutzer',
+	'farmer-basic-permission-user-text' => 'Die Rächt gälte fir aagmäldeti Benutzer',
+	'farmer-setpermission' => 'Rächt setze',
+	'farmer-defaultskin' => 'Standardoberflächi',
+	'farmer-defaultskin-button' => 'Standardoberflächi setze',
+	'farmer-extensions' => 'Alli Erwyterige',
+	'farmer-extensions-button' => 'Aktivi Erwyterige setze',
+	'farmer-extensions-extension-denied' => 'Du derfsch des Feature nit verwände, wel dodefir mießtsch zu dr Ammanne vu däm Hof ghere',
+	'farmer-extensions-invalid' => 'Nit giltigi Erwyterig',
+	'farmer-extensions-invalid-text' => 'D Erwyterig het nit chenne zuegfiegt wäre, wel d Datei, wu zue dr Yybindig uusgwehlt woren isch, isch nit gfunde wore',
+	'farmer-extensions-available' => 'Verfiegbari Erwyterige',
+	'farmer-extensions-noavailable' => 'S sin kei Erwyterige regischtriert wore',
+	'farmer-extensions-register' => 'Erwyterig aamälde',
+	'farmer-extensions-register-text1' => 'Bruuch die Maschke unte go ne neji Erwyterig fir dr Hof regischtriere.
+Wänn e Erwyterig regischtriert isch, chenne alli Wiki si bruuche.',
+	'farmer-extensions-register-text2' => "Gib dr Name vu dr PHP-Datei im ''Include file''-Parameter eso aa, wie Du ne in LocalSettings.php tetsch aagee.",
+	'farmer-extensions-register-text3' => "Wänn s im Dateiname '''\$root''' din het, wird die Variable dur s MediaWiki-Wurzelverzeichnis ersetzt.",
+	'farmer-extensions-register-text4' => 'D Pfad, wu s aktuäll din het, sin:',
+	'farmer-extensions-register-name' => 'Name',
+	'farmer-extensions-register-includefile' => 'Datei yybinde',
+	'farmer-error-exists' => 'S Wiki cha nit aagleit wäre, wel s es scho git: $1',
+	'farmer-error-noextwrite' => 'D Erwyterigsdatei schryybe isch nit megli:',
 );
 
 /** Manx (Gaelg)
