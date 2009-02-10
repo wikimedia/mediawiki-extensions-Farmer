@@ -134,10 +134,12 @@ Once an extension is registered, all wikis will be able to use it.',
  * @author Darth Kule
  * @author Fryed-peach
  * @author Jon Harald Søby
+ * @author Meno25
  * @author Purodha
  */
 $messages['qqq'] = array(
 	'farmer-desc' => 'Shown in [[Special:Version]] as a short description of this extension. Do not translate links.',
+	'farmercreateurl' => '{{optional}}',
 	'farmernewwikimainpage' => 'Do not translate or change links.',
 	'farmer-about' => '{{Identical|About}}',
 	'farmer-list-wiki' => '{{Identical|List of wikis}}',
