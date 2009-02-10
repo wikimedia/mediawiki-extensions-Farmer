@@ -177,6 +177,9 @@ class MediaWikiFarmer_Wiki {
 			$wgUploadPath = $wikiPath . 'uploads';
 			$wgMathPath = $wikiPath . 'math';
 			$wgTmpPath = $wikiPath . 'tmp';
+
+			// DB settings
+			list( $wgDBname, $wgDBprefix ) = $farmer->splitWikiDB( $this->name );
 		}
 
         //we allocate permissions to the necessary groups
