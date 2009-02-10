@@ -2221,6 +2221,13 @@ $messages['id'] = array(
 	'farmer-extensions-register-name' => 'Nama',
 );
 
+/** Ido (Ido)
+ * @author Malafaya
+ */
+$messages['io'] = array(
+	'farmer-yes' => 'Yes',
+);
+
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
  */

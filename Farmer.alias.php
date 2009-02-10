@@ -30,3 +30,8 @@ $aliases['ja'] = array(
 	'Farmer' => array( 'ウィキファーム管理' ),
 );
 
+/** Macedonian (Македонски) */
+$aliases['mk'] = array(
+	'Farmer' => array( 'Фармер' ),
+);
+
