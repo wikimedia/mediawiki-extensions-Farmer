@@ -3098,6 +3098,7 @@ $messages['mt'] = array(
 
 /** Erzya (Эрзянь)
  * @author Botuzhaleny-sodamo
+ * @author Sura
  */
 $messages['myv'] = array(
 	'farmer' => 'Хермер',
@@ -3111,7 +3112,7 @@ $messages['myv'] = array(
 	'farmer-basic-permission-view' => 'Ванномс весе лопатнень',
 	'farmer-basic-permission-createpage' => 'Шкамс од лопат',
 	'farmer-basic-permission-move' => 'Печтевтемс лопатнень',
-	'farmer-basic-permission-upload' => 'Йовкстань хвайлат',
+	'farmer-basic-permission-upload' => 'Файлань ёвкстамо',
 	'farmer-yes' => 'Истя',
 	'farmer-no' => 'Арась',
 	'farmer-extensions-register-name' => 'Лемезэ',
