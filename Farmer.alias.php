@@ -25,6 +25,11 @@ $aliases['arz'] = array(
 	'Farmer' => array( 'مزارع' ),
 );
 
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'Farmer' => array( 'Fermero' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'Farmer' => array( 'ウィキファーム管理' ),
@@ -33,5 +38,10 @@ $aliases['ja'] = array(
 /** Macedonian (Македонски) */
 $aliases['mk'] = array(
 	'Farmer' => array( 'Фармер' ),
+);
+
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'Farmer' => array( 'Magsasaka' ),
 );
 
