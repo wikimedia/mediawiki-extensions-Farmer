@@ -2273,6 +2273,8 @@ $messages['id'] = array(
  * @author Malafaya
  */
 $messages['io'] = array(
+	'farmer-confirmsetting-title' => 'Titulo: $1',
+	'farmer-basic-title1' => 'Titulo',
 	'farmer-yes' => 'Yes',
 );
 
@@ -4868,9 +4870,9 @@ $messages['vi'] = array(
 	'farmercantcreatewikis' => 'Bạn không thể tạo wiki vì bạn không có quyền createwikis',
 	'farmercreatesitename' => 'Tên trang',
 	'farmercreatenextstep' => 'Bước tiếp theo',
-	'farmernewwikimainpage' => '== Hoan nghênh bạn đến với Wiki của mình ==
+	'farmernewwikimainpage' => '== Hoan nghênh đã đến với Wiki của bạn ==
 Nếu bạn đang đọc câu này, wiki mới của bạn đã được cài đặt đúng đắn.
-Để điều chỉnh wiki của bạn, xin hãy vào [[Special:Farmer]].',
+Bạn có thể [[Special:Farmer|điều chỉnh wiki của mình]].',
 	'farmer-about' => 'Giới thiệu',
 	'farmer-about-text' => 'Nông trại MediaWiki cho phép bạn quản lý một nông trại gồm các wiki MediaWiki.',
 	'farmer-list-wiki' => 'Danh sách các Wiki',
@@ -4975,13 +4977,7 @@ Sau khi đã đăng ký một gói mở rộng, tất cả các wiki sẽ có th
 	'farmer-extensions-register-name' => 'Tên',
 	'farmer-extensions-register-includefile' => 'Nhúng tập tin',
 	'farmer-error-exists' => 'Không thể khởi tạo wiki.  Nó đã tồn tại: $1',
-	'farmer-error-nodirconfig' => 'Không tìm thấy configDirectory:',
-	'farmer-error-defnotset' => 'Wiki mặc định phải được thiết lập',
-	'farmer-error-mapnotfound' => 'Không tìm thấy hàm để chiếu các tên wiki:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer không thể viết vào tập tin cấu hình của wiki mặc định.',
-	'farmer-error-funcnotcall' => 'Không thể gọi hàm:',
 	'farmer-error-noextwrite' => 'Không thể ghi ra tập tin mở rộng:',
-	'farmer-error-wikicorrupt' => 'Wiki lưu trữ bị hư',
 );
 
 /** Volapük (Volapük)
