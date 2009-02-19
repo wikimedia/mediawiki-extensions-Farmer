@@ -4853,6 +4853,13 @@ $messages['tr'] = array(
 	'farmer-extensions-register-name' => 'İsim',
 );
 
+/** ئۇيغۇرچە (ئۇيغۇرچە)
+ * @author Alfredie
+ */
+$messages['ug-arab'] = array(
+	'farmer-createwiki-user' => 'ئىشلەتكۇچى ئىسمى',
+);
+
 /** Ukrainian (Українська)
  * @author AS
  */
