@@ -731,6 +731,7 @@ $messages['da'] = array(
  * @author MichaelFrey
  * @author Pill
  * @author Revolus
+ * @author Umherirrender
  */
 $messages['de'] = array(
 	'farmer' => 'Farmer',
@@ -775,7 +776,7 @@ Bitte kehre zurück und versuche es mit einem anderen Namen",
 	'farmer-confirmsetting-text' => "Dein Wiki – '''$1''' – wird über http://$1.meineWikiFarm/ erreichbar sein.
 Der Projektnamensraum wird '''$2''' heißen.
 Links zu diesem Namensraum werden die Gestallt '''<nowiki>[[$2:Seitenname]]</nowiki>''' haben.
-Wenn alles korrekt ist, so bestätige dies mit einem Druck auf '''Bestätigen'''.",
+Wenn alles korrekt ist, so bestätige dies mit einem Klick auf '''Bestätigen'''.",
 	'farmer-button-confirm' => 'Bestätigen',
 	'farmer-button-submit' => 'Absenden',
 	'farmer-createwiki-form-title' => 'Ein Wiki erstellen',
@@ -1304,15 +1305,15 @@ Se está a ler isto, o seu novo wiki foi instalado correctamente.
 Pode [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-about' => 'Acerca de',
 	'farmer-about-text' => 'O granxeiro MediaWiki permítelle xestionar unha granxa de wikis MediaWiki.',
-	'farmer-list-wiki' => 'Listaxe dos wikis',
-	'farmer-list-wiki-text' => '[[$1|Listaxe]] de todos os sitios de {{SITENAME}}',
+	'farmer-list-wiki' => 'Lista dos wikis',
+	'farmer-list-wiki-text' => '[[$1|Lista]] de todos os sitios de {{SITENAME}}',
 	'farmer-createwiki' => 'Crear un wiki',
 	'farmer-createwiki-text' => '[[$1|Crear]] xa un novo wiki!',
 	'farmer-administration' => 'Administración da granxa',
 	'farmer-administration-extension' => 'Xestionar as extensións',
 	'farmer-administration-extension-text' => '[[$1|Administrar]] as extensións instaladas.',
-	'farmer-admimistration-listupdate' => 'Actualización da listaxe da granxa',
-	'farmer-admimistration-listupdate-text' => '[[$1|Actualizar]] a listaxe de wikis en {{SITENAME}}',
+	'farmer-admimistration-listupdate' => 'Actualización da lista da granxa',
+	'farmer-admimistration-listupdate-text' => '[[$1|Actualizar]] a lista de wikis en {{SITENAME}}',
 	'farmer-administration-delete' => 'Eliminar un wiki',
 	'farmer-administration-delete-text' => '[[$1|Borrar]] un wiki da granxa',
 	'farmer-administer-thiswiki' => 'Administrar este wiki',
@@ -1350,7 +1351,7 @@ Será usado no título de cada páxina no seu wiki.
 Tamén será o espazo de nomes e o prefixo do interwiki do proxecto.',
 	'farmer-createwiki-form-text4' => '; Descrición: descrición do wiki.
 Este é un texto descritivo sobre o wiki.
-Isto será amosado na listaxe dos wikis.',
+Isto será amosado na lista dos wikis.',
 	'farmer-createwiki-user' => 'Nome do usuario',
 	'farmer-createwiki-name' => 'Nome do wiki',
 	'farmer-createwiki-title' => 'Título do wiki',
@@ -1363,10 +1364,10 @@ Isto será amosado na listaxe dos wikis.',
 	'farmer-permissiondenied-text1' => 'Non ten permiso para acceder a esta páxina',
 	'farmer-deleting' => 'Eliminando $1',
 	'farmer-delete-title' => 'Eliminar o wiki',
-	'farmer-delete-text' => 'Por favor, seleccione o wiki que quere eliminar na listaxe de embaixo',
+	'farmer-delete-text' => 'Por favor, seleccione o wiki que quere eliminar na lista de embaixo',
 	'farmer-delete-form' => 'Seleccionar un wiki',
 	'farmer-delete-form-submit' => 'Eliminar',
-	'farmer-listofwikis' => 'Listaxe dos wikis',
+	'farmer-listofwikis' => 'Lista dos wikis',
 	'farmer-mainpage' => 'Portada',
 	'farmer-basic-title' => 'Parámetros básicos',
 	'farmer-basic-title1' => 'Título',
@@ -1409,13 +1410,7 @@ Unha vez que a extensión estea rexistrada, todos os wikis poderana usar.',
 	'farmer-extensions-register-name' => 'Nome',
 	'farmer-extensions-register-includefile' => 'Incluír o ficheiro',
 	'farmer-error-exists' => 'Non pode crear o wiki. Xa existe: $1',
-	'farmer-error-nodirconfig' => 'configDirectory non foi atopado:',
-	'farmer-error-defnotset' => 'A apariencia por defecto do wiki debe ser fixada',
-	'farmer-error-mapnotfound' => 'Non foi atopada a función para "mapear" o nome do wiki na granxa:',
-	'farmer-error-nofileconfwrite' => 'O granxeiro MediaWiki non pode escribir o ficheiro de configuración por defecto do wiki.',
-	'farmer-error-funcnotcall' => 'Non se puido chamar a función:',
 	'farmer-error-noextwrite' => 'Non pode escribir a extensión do ficheiro:',
-	'farmer-error-wikicorrupt' => 'O wiki gardado está corrompido',
 );
 
 /** Gothic
@@ -4860,6 +4855,13 @@ $messages['ug-arab'] = array(
 	'farmer-createwiki-user' => 'ئىشلەتكۇچى ئىسمى',
 );
 
+/** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
+ * @author Jose77
+ */
+$messages['ug-latn'] = array(
+	'farmer-createwiki-user' => 'Ishletkuchi ismi',
+);
+
 /** Ukrainian (Українська)
  * @author AS
  */
@@ -5059,6 +5061,7 @@ Atos pajonon su vükalised.',
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
+ * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
 	'farmercreatesitename' => '网站名称',
@@ -5068,6 +5071,7 @@ $messages['zh-hans'] = array(
 	'farmer-createwiki' => '建立一个Wiki',
 	'farmer-wikicreated' => 'Wiki已被建立',
 	'farmer-wikiexists' => 'Wiki存在',
+	'farmer-confirmsetting-title' => '标题： $1',
 	'farmer-button-confirm' => '确认',
 	'farmer-button-submit' => '提交',
 	'farmer-createwiki-form-help' => '帮助',
