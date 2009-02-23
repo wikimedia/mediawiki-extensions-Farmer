@@ -905,17 +905,32 @@ Pšosym źi slědk a wopytaj druge mě.",
 	'farmer-confirmsetting-title' => 'Titel: $1',
 	'farmer-confirmsetting-description' => 'Wopisanje: $1',
 	'farmer-description' => 'Wopisanje',
+	'farmer-confirmsetting-text' => "Twój wiki - '''$1''' - buźo pśistupny pśez http://$1.mójafarma.
+Projektowy mjenjowy rum buźo '''$2'''.
+Wótkaze k toś tomu mjenjowemu rumoju změju formu '''<nowiki>[[$2:Mě boka]]</nowiki>'''.
+Jolic to coš, tłoc na slědujucy tłocašk '''wobkšuśiś'''.",
 	'farmer-button-confirm' => 'Wobkšuśiś',
 	'farmer-button-submit' => 'Wótpósłaś',
 	'farmer-createwiki-form-title' => 'Wiki napóraś',
 	'farmer-createwiki-form-text1' => 'Wužyj slědujucy formular, aby napórał nowy wiki.',
 	'farmer-createwiki-form-help' => 'Pomoc',
+	'farmer-createwiki-form-text2' => "; Wiki name: Mě wikija.
+Wopśimujo jano pismiki a cyfry.
+Mě wikija buźo se ako źěl URL wužywaś, aby identificěrował twój wiki.
+Na pśikład, jolic zapódawaš '''titel''', ga twój wiki buźo pśistupny pśez <nowiki>http://</nowiki>'''titel'''.mójadomena.",
+	'farmer-createwiki-form-text3' => '; Wiki title: Titel wikija.
+Buźo se w titelu kuždego boka w twójom wikiju wužywaś.
+Buźo teke mjenjowy rum projekta a prefiks interwiki.',
+	'farmer-createwiki-form-text4' => '; Wopisanje: Wopisanje wikija.
+To jo tekstowe wopisanje wikija.
+To buźo se w lisćinje wikijow zwobraznjowaś.',
 	'farmer-createwiki-user' => 'Wužywarske mě',
 	'farmer-createwiki-name' => 'Mě wikija',
 	'farmer-createwiki-title' => 'Titel wikija',
 	'farmer-createwiki-description' => 'Wopisanje',
 	'farmer-updatedlist' => 'Lisćina zaktualizěrowana',
 	'farmer-notaccessible' => 'Njepśistupny',
+	'farmer-notaccessible-test' => 'Toś ta funkcija stoj jano w głownem wikiju farmy k dispoziciji',
 	'farmer-permissiondenied' => 'Pšawo wótpokazane',
 	'farmer-permissiondenied-text' => 'Njamaš pšawo wiki z farmy lašowaś',
 	'farmer-permissiondenied-text1' => 'Njamaš pšawo, aby měł pśistup na toś ten bok',
@@ -932,6 +947,7 @@ Pšosym źi slědk a wopytaj druge mě.",
 	'farmer-basic-description' => 'Wopisanje',
 	'farmer-basic-description-text' => 'Zapódaj dołojce wopisanje swójogo wikija',
 	'farmer-basic-permission' => 'Pšawa',
+	'farmer-basic-permission-text' => 'Z pomocu slědujucego formulara jo móžno pšawa za wužywarjow toś togo wikija změniś.',
 	'farmer-basic-permission-visitor' => 'Pšawa za kuždego woglědowarja',
 	'farmer-basic-permission-visitor-text' => 'Slědujuce pšawa płaśe za kuždu wósobu, kótaraž woglědujo k toś tomu wikijoju',
 	'farmer-basic-permission-view' => 'Wšykne boki se woglědaś',
@@ -940,12 +956,15 @@ Pšosym źi slědk a wopytaj druge mě.",
 	'farmer-basic-permission-createtalk' => 'Diskusijne boki napóraś',
 	'farmer-basic-permission-move' => 'Boki pśesunuś',
 	'farmer-basic-permission-upload' => 'Dataje nagraś',
+	'farmer-basic-permission-reupload' => 'Dataje znowego nagraś (eksistěrujuce nagraśe pśepisaś)',
 	'farmer-basic-permission-minoredit' => 'Snadne změny dowóliś',
 	'farmer-yes' => 'Jo',
 	'farmer-no' => 'Ně',
 	'farmer-basic-permission-user' => 'Pšawa za pśizjawjonych wužywarjow',
 	'farmer-basic-permission-user-text' => 'Slědujuce pšawa płaśe za kuždu wósobu, kótaraž jo w toś tom wikiju pśizjawjona',
 	'farmer-setpermission' => 'Pšawa stajiś',
+	'farmer-defaultskin' => 'Standardna drastwa',
+	'farmer-defaultskin-button' => 'Standardnu drastwu nastajiś',
 	'farmer-extensions' => 'Aktiwne rozšyrjenja',
 	'farmer-extensions-button' => 'Aktiwne rozšyrjenja stajiś',
 	'farmer-extensions-extension-denied' => 'Njamaš pšawo toś tu funkciju wužywaś.
@@ -959,9 +978,11 @@ Musyš cłonk kupki farmarskich administratorow byś.',
 Gaž rozšyrjenje je zregistrěrowane, wše wikije mógu jo wužywaś.',
 	'farmer-extensions-register-text2' => "Za parameter ''Include file'' zapódaj mě PHP-dataje, ako by było w dataji LocalSettings.php.",
 	'farmer-extensions-register-text3' => "Jolic datajowe mě wopśimujo '''\$root''', ta wariabla buźo se pśez kórjenjowy zapis MediaWiki wuměnjaś.",
+	'farmer-extensions-register-text4' => 'Aktualne sćažki include su:',
 	'farmer-extensions-register-name' => 'Mě',
 	'farmer-extensions-register-includefile' => 'Dataju zapśěgnuś',
 	'farmer-error-exists' => 'Wiki njedajo se napóraś, eksistěrujo južo: $1',
+	'farmer-error-noextwrite' => 'Njemóžno dataju rozšyrjenja pisaś:',
 );
 
 /** Ewe (Eʋegbe) */

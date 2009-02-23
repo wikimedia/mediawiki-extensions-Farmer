@@ -40,6 +40,11 @@ $aliases['mk'] = array(
 	'Farmer' => array( 'Фармер' ),
 );
 
+/** Dutch (Nederlands) */
+$aliases['nl'] = array(
+	'Farmer' => array( 'Wikifarm' ),
+);
+
 /** Tagalog (Tagalog) */
 $aliases['tl'] = array(
 	'Farmer' => array( 'Magsasaka' ),
