@@ -1282,6 +1282,7 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
  * @author Dereckson
  * @author Grondin
  * @author IAlex
+ * @author PieRRoMaN
  * @author Urhixidur
  * @author Verdy p
  */
@@ -1364,7 +1365,7 @@ Si c’est bien ce que vous voulez,  presser le bouton '''Confirmer''' ci-dessou
 	'farmer-basic-permission-edit' => 'Éditer toutes les pages',
 	'farmer-basic-permission-createpage' => 'Créer de nouvelles pages',
 	'farmer-basic-permission-createtalk' => 'Créer des pages de discussion',
-	'farmer-basic-permission-move' => 'Déplacer les pages',
+	'farmer-basic-permission-move' => 'Renommer les pages',
 	'farmer-basic-permission-upload' => 'Importer (téléverser) des fichiers',
 	'farmer-basic-permission-reupload' => 'Ré-importer (retéléverser) les fichiers (écrase les versions précédentes)',
 	'farmer-basic-permission-minoredit' => 'Autorise les corrections mineures',
