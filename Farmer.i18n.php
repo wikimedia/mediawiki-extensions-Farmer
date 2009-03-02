@@ -2368,13 +2368,7 @@ Quando un extension es registrate, tote le wikis potera usar lo.',
 	'farmer-extensions-register-name' => 'Nomine',
 	'farmer-extensions-register-includefile' => 'File de inclusion',
 	'farmer-error-exists' => 'Non pote crear wiki. Illo existe ja: $1',
-	'farmer-error-nodirconfig' => 'configDirectory non trovate:',
-	'farmer-error-defnotset' => 'Es necessari predefinir un wiki',
-	'farmer-error-mapnotfound' => 'Le function pro mappar le nomine del wiki in le ferma non es trovate:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer non poteva scriber le file de configuration wiki predefinite.',
-	'farmer-error-funcnotcall' => 'Non poteva appellar function:',
 	'farmer-error-noextwrite' => 'Impossibile scriber al file de extension:',
-	'farmer-error-wikicorrupt' => 'Le wiki immagazinate es corrumpite',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -3265,6 +3259,13 @@ $messages['mr'] = array(
  */
 $messages['mt'] = array(
 	'farmer-createwiki-user' => 'Isem l-utent',
+);
+
+/** Mirandese (Mirandés)
+ * @author Malafaya
+ */
+$messages['mwl'] = array(
+	'farmer-mainpage' => 'Páigina Percipal',
 );
 
 /** Erzya (Эрзянь)
