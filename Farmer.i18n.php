@@ -642,12 +642,16 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'farmercreatesitename' => 'Ime sajta',
 	'farmercreatenextstep' => 'slijedeći korak',
 	'farmer-about' => 'O',
 	'farmer-list-wiki' => 'Spisak wikija',
 	'farmer-createwiki' => 'Napravi wiki',
+	'farmer-createwiki-text' => '[[$1|Napravite]] novi wiki sad!',
 	'farmer-administration-delete' => 'Obriši wiki',
 	'farmer-notavailable' => 'Nije dostupno',
+	'farmer-wikicreated-text' => 'Vaš wiki je napravljen.
+Dostupan je na $1',
 	'farmer-wikiexists' => 'Wiki postoji',
 	'farmer-confirmsetting-name' => 'Ime: $1',
 	'farmer-confirmsetting-title' => 'Naslov: $1',
@@ -656,10 +660,14 @@ $messages['bs'] = array(
 	'farmer-button-submit' => 'Pošalji',
 	'farmer-createwiki-form-help' => 'Pomoć',
 	'farmer-createwiki-user' => 'Korisničko ime',
+	'farmer-createwiki-name' => 'Ime wikija',
 	'farmer-createwiki-description' => 'Opis',
+	'farmer-delete-title' => 'Obriši wiki',
 	'farmer-delete-form-submit' => 'Obriši',
 	'farmer-mainpage' => 'Početna stranica',
 	'farmer-basic-title1' => 'Naslov',
+	'farmer-basic-permission' => 'Dopuštenja',
+	'farmer-basic-permission-upload' => 'Postavi datoteke',
 	'farmer-yes' => 'Da',
 	'farmer-no' => 'Ne',
 	'farmer-extensions-register-name' => 'Ime',
@@ -4210,6 +4218,19 @@ $messages['ro'] = array(
 	'farmer-extensions-register' => 'Înregistrează extensie',
 	'farmer-extensions-register-name' => 'Nume',
 	'farmer-extensions-register-includefile' => 'Include fişier',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'farmercreatesitename' => "Nome d'u site",
+	'farmer-notavailable' => 'Non disponibbile',
+	'farmer-wikicreated' => 'Uicchi ccrejate',
+	'farmer-confirmsetting-name' => 'Nome: $1',
+	'farmer-confirmsetting-title' => 'Titele: $1',
+	'farmer-confirmsetting-description' => 'Descrizione: $1',
+	'farmer-description' => 'Descrizione',
 );
 
 /** Russian (Русский)
