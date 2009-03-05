@@ -642,6 +642,7 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'farmer-desc' => 'Upravljanje MediaWiki farmom',
 	'farmercreatesitename' => 'Ime sajta',
 	'farmercreatenextstep' => 'slijedeći korak',
 	'farmer-about' => 'O',
@@ -650,6 +651,7 @@ $messages['bs'] = array(
 	'farmer-createwiki-text' => '[[$1|Napravite]] novi wiki sad!',
 	'farmer-administration-delete' => 'Obriši wiki',
 	'farmer-notavailable' => 'Nije dostupno',
+	'farmer-wikicreated' => 'Wiki je napravljen',
 	'farmer-wikicreated-text' => 'Vaš wiki je napravljen.
 Dostupan je na $1',
 	'farmer-wikiexists' => 'Wiki postoji',
@@ -1332,9 +1334,9 @@ Vous pouvez [[Special:Farmer|individualiser votre wiki]].',
 	'farmer-confirmsetting-description' => 'Description : $1',
 	'farmer-description' => 'Description',
 	'farmer-confirmsetting-text' => "Votre wiki, '''$1''', sera accessible depuis l’adresse http://$1.monsite.
-Le nom de l’espace du projet sera '''$2'''.
-Les liens vers cet espace aura la forme de '''<nowiki>[[$2:Nom de la page]]</nowiki>'''.
-Si c’est bien ce que vous voulez,  presser le bouton '''Confirmer''' ci-dessous.",
+L'espace de noms du projet sera '''$2'''.
+Les liens vers cet espace de noms seront de la forme '''<nowiki>[[$2:Nom de la page]]</nowiki>'''.
+Si c’est bien ce que vous voulez, cliquez sur le bouton '''Confirmer''' ci-dessous.",
 	'farmer-button-confirm' => 'Confirmer',
 	'farmer-button-submit' => 'Soumettre',
 	'farmer-createwiki-form-title' => 'Créer un Wiki',
@@ -3498,7 +3500,10 @@ Gå tilbake og freist med eit anna namn.",
 	'farmer-confirmsetting-title' => 'Tittel: $1',
 	'farmer-confirmsetting-description' => 'Skildring: $1',
 	'farmer-description' => 'Skildring',
-	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil vera tilgjengeleg gjennom http://$1.myfarm. Prosjektnamnerommet vil vera '''$2'''. Lenkjer til namnerommet vil vera på forma '''<nowiki>[[$2:Sidenamn]]</nowiki>'''. Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedanfor.",
+	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil vera tilgjengeleg gjennom http://$1.myfarm.
+Prosjektnamnerommet vil vera '''$2'''.
+Lenkjer til namnerommet vil vera på forma '''<nowiki>[[$2:Sidenamn]]</nowiki>'''.
+Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedanfor.",
 	'farmer-button-confirm' => 'Stadfest',
 	'farmer-button-submit' => 'Lagra',
 	'farmer-createwiki-form-title' => 'Opprett ein wiki',
@@ -3569,13 +3574,7 @@ Når ei utviding er registrert, vil alle wikiane kunna nytta seg av ho.',
 	'farmer-extensions-register-name' => 'Namn',
 	'farmer-extensions-register-includefile' => 'Inkluder fil',
 	'farmer-error-exists' => 'Kan ikkje oppretta wikien. Han finst frå før: $1',
-	'farmer-error-nodirconfig' => 'fann ikkje configDirectory:',
-	'farmer-error-defnotset' => 'Må setja standardwiki',
-	'farmer-error-mapnotfound' => 'Funksjonen for å setja inn namnet på wikien i wikisamlinga vart ikkje funnen:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer kunne ikkje skriva standardkonfigurasjonsfila.',
-	'farmer-error-funcnotcall' => 'Kunne ikkje ropa opp funksjon:',
 	'farmer-error-noextwrite' => 'Kunne ikkje skriva ut utvidingsfil:',
-	'farmer-error-wikicorrupt' => 'Den lagra wikien er øydelagd',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -3617,7 +3616,10 @@ Om du leser dette, har din nye wiki blitt installert korrekt. Du kan [[Special:F
 	'farmer-confirmsetting-title' => 'Tittel: $1',
 	'farmer-confirmsetting-description' => 'Beskrivelse: $1',
 	'farmer-description' => 'Beskrivelse',
-	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil være tilgjengelig via http://$1.myfarm. Prosjektnavnerommet vil være '''$2'''. Lenker til dette navnerommet vil være på formen '''<nowiki>[[$2:Sidenavn]]</nowiki>'''. Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedenunder.",
+	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil være tilgjengelig via http://$1.myfarm.
+Prosjektnavnerommet vil være '''$2'''.
+Lenker til dette navnerommet vil være på formen '''<nowiki>[[$2:Sidenavn]]</nowiki>'''.
+Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedenunder.",
 	'farmer-button-confirm' => 'Bekreft',
 	'farmer-button-submit' => 'Lagre',
 	'farmer-createwiki-form-title' => 'Opprett en wiki',
@@ -3685,13 +3687,7 @@ Om du leser dette, har din nye wiki blitt installert korrekt. Du kan [[Special:F
 	'farmer-extensions-register-name' => 'Navn',
 	'farmer-extensions-register-includefile' => 'Inkluder fil',
 	'farmer-error-exists' => 'Kan ikke opprette wikien. Den finnes allerede: $1',
-	'farmer-error-nodirconfig' => 'configDirectory ikke funnet:',
-	'farmer-error-defnotset' => 'Må sette standardwiki',
-	'farmer-error-mapnotfound' => 'Funksjonen for å sette inn wikiens navn i farmen ikke funnet:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer kunne ikke skrive standardkonfigurasjonsfilen.',
-	'farmer-error-funcnotcall' => 'Kunne ikke rope opp funksjon:',
 	'farmer-error-noextwrite' => 'Kunne ikke skrive ut utvidelsesfil:',
-	'farmer-error-wikicorrupt' => 'Den lagrede wikien er ødelagt',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -3765,8 +3761,9 @@ Es accessible sus $1',
 	'farmer-confirmsetting-description' => 'Descripcion : $1',
 	'farmer-description' => 'Descripcion',
 	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible dempuèi l’adreça http://$1.monsite.
-
-Lo nom de l’espaci del projècte serà '''$2'''. Los ligams cap a aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''. S’es plan çò que volètz, picatz lo boton '''Confirmar''' çaijós.",
+Lo nom de l’espaci del projècte serà '''$2'''.
+Los ligams cap a aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''.
+S’es plan çò que volètz, picatz lo boton '''Confirmar''' çaijós.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Sometre',
 	'farmer-createwiki-form-title' => 'Crear un Wiki',
@@ -3831,13 +3828,7 @@ Lo nom de l’espaci del projècte serà '''$2'''. Los ligams cap a aqueste espa
 	'farmer-extensions-register-name' => 'Nom',
 	'farmer-extensions-register-includefile' => 'Fichièr Include',
 	'farmer-error-exists' => 'L’interfàcia pòt pas crear lo Wiki. Existís ja : $1',
-	'farmer-error-nodirconfig' => 'configDirectory introbable :',
-	'farmer-error-defnotset' => 'Lo Wiki per defaut deu èsser definit.',
-	'farmer-error-mapnotfound' => 'La foncion planificant lo nom del wiki es introbabla :',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer pòt pas escriure lo fichièr de configuracion del wiki per defaut.',
-	'farmer-error-funcnotcall' => 'La foncion seguenta es introbabla :',
 	'farmer-error-noextwrite' => 'Impossible d’escriure lo fichièr d’extension seguent :',
-	'farmer-error-wikicorrupt' => 'Lo wiki estocat es corromput',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
@@ -4393,8 +4384,10 @@ Svoju wiki môžete [[Special:Farmer|prispôsobiť]].',
 	'farmer-confirmsetting-title' => 'Nadpis: $1',
 	'farmer-confirmsetting-description' => 'Popis: $1',
 	'farmer-description' => 'Popis',
-	'farmer-confirmsetting-text' => "Vaša wiki, '''$1''', bude prístupná na http://$1.myfarm. Menný priestor projekt bude '''$2'''.
-Odkazy na tento menný priestor budú v tvare '''<nowiki>[[$2:Názov stránky]]</nowiki>'''. Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
+	'farmer-confirmsetting-text' => "Vaša wiki, '''$1''', bude prístupná na http://$1.myfarm.
+Menný priestor projekt bude '''$2'''.
+Odkazy na tento menný priestor budú v tvare '''<nowiki>[[$2:Názov stránky]]</nowiki>'''.
+Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
 	'farmer-button-confirm' => 'Potvrdiť',
 	'farmer-button-submit' => 'Odoslať',
 	'farmer-createwiki-form-title' => 'Vytvoriť wiki',
@@ -4459,13 +4452,7 @@ Odkazy na tento menný priestor budú v tvare '''<nowiki>[[$2:Názov stránky]]<
 	'farmer-extensions-register-name' => 'Názov',
 	'farmer-extensions-register-includefile' => 'Include súbor',
 	'farmer-error-exists' => 'Nie je možné vytvoriť wiki. Už existuje: $1',
-	'farmer-error-nodirconfig' => 'configDirectory nebol nájdený:',
-	'farmer-error-defnotset' => 'Štandardná wiki musí byť nastavená',
-	'farmer-error-mapnotfound' => 'Funkcia na mapovanie názvu wiki vo farme nebola nájdená:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer nemohol zapísať konfiguračný súbor štandardnej wiki.',
-	'farmer-error-funcnotcall' => 'Nebolo možné zavolať funkciu:',
 	'farmer-error-noextwrite' => 'Nebolo možné zapísať súbor rozšírenia:',
-	'farmer-error-wikicorrupt' => 'Uložená wiki je poškodená',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
