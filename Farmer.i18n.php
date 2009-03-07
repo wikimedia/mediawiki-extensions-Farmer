@@ -3949,7 +3949,7 @@ Opis będzie wyświetlany w spisie wiki.',
 	'farmer-basic-permission' => 'Uprawnienia',
 	'farmer-basic-permission-text' => 'Używając poniższego formularza, można zmienić uprawnienia dla użytkowników tej wiki.',
 	'farmer-basic-permission-visitor' => 'Uprawnienia dla wszystkich gości',
-	'farmer-basic-permission-visitor-text' => 'Poniższe uprawnienia zostaną użyte dla każdej osoby, która odwiedzi tą wiki',
+	'farmer-basic-permission-visitor-text' => 'Poniższe uprawnienia zostaną użyte dla każdej osoby, która odwiedzi tę wiki',
 	'farmer-basic-permission-view' => 'Widoczne wszystkie strony',
 	'farmer-basic-permission-edit' => 'Edycja dowolnej strony',
 	'farmer-basic-permission-createpage' => 'Tworzenie nowych stron',
@@ -3982,13 +3982,7 @@ Po zarejestrowaniu wszystkie wiki będą mogły korzystać z tego rozszerzenia.'
 	'farmer-extensions-register-name' => 'Nazwa',
 	'farmer-extensions-register-includefile' => 'Załącz plik',
 	'farmer-error-exists' => 'Nie można utworzyć wiki. Już istnieje: $1',
-	'farmer-error-nodirconfig' => 'Nie odnaleziono „configDirectory”:',
-	'farmer-error-defnotset' => 'Musi być ustawiona domyślna wiki',
-	'farmer-error-mapnotfound' => 'Nie odnaleziono funkcji do odwzorowania nazwy wiki:',
-	'farmer-error-nofileconfwrite' => 'Farmer MediaWiki nie może zapisać pliku z domyślną konfiguracją wiki.',
-	'farmer-error-funcnotcall' => 'Nie można wywołać funkcji:',
 	'farmer-error-noextwrite' => 'Nie można zapisać pliku rozszerzenia:',
-	'farmer-error-wikicorrupt' => 'Zapamiętana wiki jest uszkodzona',
 );
 
 /** Pashto (پښتو)
