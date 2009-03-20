@@ -516,6 +516,7 @@ $messages['be-tarask'] = array(
 	'farmer-mainpage' => 'Галоўная старонка',
 	'farmer-basic-title1' => 'Назва',
 	'farmer-basic-description' => 'Апісаньне',
+	'farmer-basic-permission-upload' => 'Загрузка файлаў',
 	'farmer-yes' => 'Так',
 	'farmer-no' => 'Не',
 );
@@ -4145,6 +4146,34 @@ Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-error-funcnotcall' => 'Não foi possível chamar a função:',
 	'farmer-error-noextwrite' => 'Não foi possível escrever para ficheiro de extensão:',
 	'farmer-error-wikicorrupt' => 'O wiki armazenado está corrompido',
+);
+
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'farmer' => 'Farmer',
+	'farmer-desc' => 'Gerencie uma "farm" MediaWiki',
+	'farmercantcreatewikis' => 'Você não pode criar wikis porque não possui o privilégio "createwikis"',
+	'farmercreatesitename' => 'Nome do sítio',
+	'farmercreatenextstep' => 'Próximo passo',
+	'farmernewwikimainpage' => '== Bem-vindo ao seu Wiki ==
+Se está a ler isto, o seu wiki foi corretamente instalado.
+Pode agora [[Special:Farmer|personalizar o seu wiki]].',
+	'farmer-about' => 'Sobre',
+	'farmer-about-text' => 'MediaWiki Farmer permite-lhe gerenciar uma "farm" de wikis MediaWiki.',
+	'farmer-list-wiki' => 'Lista de Wikis',
+	'farmer-list-wiki-text' => '[[$1|Listar]] todos os wikis em {{SITENAME}}',
+	'farmer-createwiki' => 'Criar um Wiki',
+	'farmer-createwiki-text' => '[[$1|Criar]] um novo wiki já!',
+	'farmer-administration' => 'Administração da "Farm"',
+	'farmer-administration-extension' => 'Gerenciar Extensões',
+	'farmer-administration-extension-text' => '[[$1|Gerenciar]] extensões instaladas.',
+	'farmer-admimistration-listupdate' => 'Atualização da Lista da "Farm"',
+	'farmer-admimistration-listupdate-text' => '[[$1|Atualize]] a lista de wikis em {{SITENAME}}',
+	'farmer-administration-delete' => 'Apagar um Wiki',
+	'farmer-administration-delete-text' => '[[$1|Apagar]] um wiki da "farm"',
+	'farmer-administer-thiswiki' => 'Gerenciar este Wiki',
 );
 
 /** Tarifit (Tarifit)
