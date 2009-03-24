@@ -650,6 +650,7 @@ $messages['bs'] = array(
 	'farmer-list-wiki' => 'Spisak wikija',
 	'farmer-createwiki' => 'Napravi wiki',
 	'farmer-createwiki-text' => '[[$1|Napravite]] novi wiki sad!',
+	'farmer-admimistration-listupdate' => 'Ažuriranje spiska farme',
 	'farmer-administration-delete' => 'Obriši wiki',
 	'farmer-notavailable' => 'Nije dostupno',
 	'farmer-wikicreated' => 'Wiki je napravljen',
