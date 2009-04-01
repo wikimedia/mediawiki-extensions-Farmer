@@ -643,22 +643,33 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'farmer' => 'Farmer',
 	'farmer-desc' => 'Upravljanje MediaWiki farmom',
+	'farmercantcreatewikis' => 'Vi niste u mogućnosti da napravite wiki jer nemate privilegije za pravljenje (createwikis)',
 	'farmercreatesitename' => 'Ime sajta',
 	'farmercreatenextstep' => 'slijedeći korak',
+	'farmernewwikimainpage' => '== Dobrodošli na Vaš wiki ==
+Ako čitate ovo, Vaš novi wiki je pravilno instaliran.
+Možete [[Special:Farmer|prilagoditi Vaš wiki]].',
 	'farmer-about' => 'O',
 	'farmer-list-wiki' => 'Spisak wikija',
+	'farmer-list-wiki-text' => '[[$1|Spisak]] svih wikija na {{SITENAME}}',
 	'farmer-createwiki' => 'Napravi wiki',
 	'farmer-createwiki-text' => '[[$1|Napravite]] novi wiki sad!',
+	'farmer-administration' => 'Upravljanje farmom',
+	'farmer-administration-extension' => 'Upravljanje proširenjima',
+	'farmer-administration-extension-text' => '[[$1|Upravljaj]] instaliranim proširenjima.',
 	'farmer-admimistration-listupdate' => 'Ažuriranje spiska farme',
 	'farmer-administration-delete' => 'Obriši wiki',
 	'farmer-notavailable' => 'Nije dostupno',
+	'farmer-notavailable-text' => 'Ova mogućnost je dostupna samo na glavnoj wiki',
 	'farmer-wikicreated' => 'Wiki je napravljen',
 	'farmer-wikicreated-text' => 'Vaš wiki je napravljen.
 Dostupan je na $1',
 	'farmer-wikiexists' => 'Wiki postoji',
 	'farmer-confirmsetting-name' => 'Ime: $1',
 	'farmer-confirmsetting-title' => 'Naslov: $1',
+	'farmer-confirmsetting-description' => 'Opis: $1',
 	'farmer-description' => 'Opis',
 	'farmer-button-confirm' => 'Potvrdi',
 	'farmer-button-submit' => 'Pošalji',
@@ -1010,6 +1021,7 @@ $messages['ee'] = array(
 
 /** Greek (Ελληνικά)
  * @author Consta
+ * @author Crazymadlover
  */
 $messages['el'] = array(
 	'farmercreatenextstep' => 'Επόμενο βήμα',
@@ -1020,6 +1032,7 @@ $messages['el'] = array(
 	'farmer-confirmsetting-title' => 'Τίτλος: $1',
 	'farmer-confirmsetting-description' => 'Περιγραφή: $1',
 	'farmer-description' => 'Περιγραφή',
+	'farmer-button-confirm' => 'Επιβεβαίωση',
 	'farmer-createwiki-form-title' => 'Δημιουργήστε ένα Wiki',
 	'farmer-createwiki-user' => 'Όνομα χρήστη',
 	'farmer-createwiki-description' => 'Περιγραφή',
@@ -5123,6 +5136,46 @@ $messages['ug-latn'] = array(
  */
 $messages['uk'] = array(
 	'farmer-basic-title1' => 'Заголовок',
+);
+
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'farmercreatesitename' => 'Saitan nimi',
+	'farmercreatenextstep' => "Jäl'ghine haškuz",
+	'farmer-confirmsetting-name' => 'Nimi: $1',
+	'farmer-confirmsetting-title' => 'Pälkirjutez: $1',
+	'farmer-button-submit' => 'Oigeta',
+	'farmer-createwiki-form-title' => 'Säta wiki',
+	'farmer-createwiki-form-text1' => "Kävutagat form alahan, miše säta uz' wiki.",
+	'farmer-createwiki-form-help' => 'Abu',
+	'farmer-createwiki-user' => 'Kävutajan nimi',
+	'farmer-createwiki-name' => 'Wikin nimi',
+	'farmer-createwiki-title' => 'Wikin pälkirjutez',
+	'farmer-createwiki-description' => 'Ümbrikirjutand',
+	'farmer-updatedlist' => 'Udištadud nimikirjutez',
+	'farmer-notaccessible' => 'Ei voi nähta',
+	'farmer-deleting' => 'Čudam $1',
+	'farmer-delete-title' => 'Čuta wiki poiš',
+	'farmer-delete-form' => 'Valita wiki',
+	'farmer-delete-form-submit' => 'Čuta poiš',
+	'farmer-listofwikis' => 'Wikiden nimikirjutez',
+	'farmer-mainpage' => "Pälehtpol'",
+	'farmer-basic-title' => 'Päparametrad',
+	'farmer-basic-title1' => 'Pälkirjutez',
+	'farmer-basic-title1-text' => "Teiden wikil ei ole pälkirjutest. Tehkat se <b>nügüd'</b>",
+	'farmer-basic-description' => 'Ümbrikirjutand',
+	'farmer-basic-permission' => 'Oiktused',
+	'farmer-basic-permission-view' => 'Nähta kaik lehtpoled',
+	'farmer-basic-permission-edit' => 'Redaktiruida kaik lehtpoled',
+	'farmer-basic-permission-createpage' => 'Säta uzid lehtpolid',
+	'farmer-basic-permission-upload' => 'Jügutoitta failad',
+	'farmer-yes' => 'Ka',
+	'farmer-no' => 'Ei',
+	'farmer-basic-permission-user' => 'Registriruidud kävutajiden oiktused',
+	'farmer-extensions-invalid' => 'Vär liža',
+	'farmer-extensions-register-name' => 'Nimi',
 );
 
 /** Vietnamese (Tiếng Việt)
