@@ -510,6 +510,7 @@ $messages['be-tarask'] = array(
 	'farmer-confirmsetting-description' => 'Апісаньне: $1',
 	'farmer-description' => 'Апісаньне',
 	'farmer-button-confirm' => 'Пацьвердзіць',
+	'farmer-createwiki-form-help' => 'Дапамога',
 	'farmer-createwiki-user' => 'Імя ўдзельніка',
 	'farmer-createwiki-description' => 'Апісаньне',
 	'farmer-delete-form-submit' => 'Выдаліць',
@@ -4960,6 +4961,13 @@ $messages['tg-cyrl'] = array(
 	'farmer-error-nofileconfwrite' => 'ДеҳқониМедиаВики натавонист парвандаи пайкарбандии викии пешфарзро навишт',
 	'farmer-error-noextwrite' => 'Қобили навиштани парвандаи афзуна нест:',
 	'farmer-error-wikicorrupt' => 'Викии захирашуда хароб аст',
+);
+
+/** Thai (ไทย)
+ * @author Octahedron80
+ */
+$messages['th'] = array(
+	'farmer-delete-form-submit' => 'ลบ',
 );
 
 /** Tagalog (Tagalog)
