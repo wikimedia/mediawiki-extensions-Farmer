@@ -364,13 +364,7 @@ $messages['ar'] = array(
 	'farmer-extensions-register-name' => 'الاسم',
 	'farmer-extensions-register-includefile' => 'ضمن الملف',
 	'farmer-error-exists' => 'لم يمكن إنشاء الويكي.  هو موجود بالفعل: $1',
-	'farmer-error-nodirconfig' => 'configDirectory لم يتم العثور عليها:',
-	'farmer-error-defnotset' => 'الويكي الافتراضي يجب ضبطه',
-	'farmer-error-mapnotfound' => 'الدالة لعمل خريطة لاسم الويكي في المزرعة لم يتم العثور عليها:',
-	'farmer-error-nofileconfwrite' => 'مزارع ميدياويكي لم يمكنه كتابة ملف إعدادات الويكي الافتراضي.',
-	'farmer-error-funcnotcall' => 'لم يمكن استدعاء الدالة:',
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
-	'farmer-error-wikicorrupt' => 'الويكي المخزن فاسد',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -493,13 +487,7 @@ $messages['arz'] = array(
 	'farmer-extensions-register-name' => 'الاسم',
 	'farmer-extensions-register-includefile' => 'ضمن الملف',
 	'farmer-error-exists' => 'لم يمكن إنشاء الويكي.  هو موجود بالفعل: $1',
-	'farmer-error-nodirconfig' => 'configDirectory لم يتم العثور عليها:',
-	'farmer-error-defnotset' => 'الويكى الافتراضى يجب ضبطه',
-	'farmer-error-mapnotfound' => 'الدالة لعمل خريطة لاسم الويكى فى المزرعة لم يتم العثور عليها:',
-	'farmer-error-nofileconfwrite' => 'مزارع ميدياويكى لم يمكنه كتابة ملف إعدادات الويكى الافتراضي.',
-	'farmer-error-funcnotcall' => 'لم يمكن استدعاء الدالة:',
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
-	'farmer-error-wikicorrupt' => 'الويكى المخزن فاسد',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -619,8 +607,6 @@ $messages['bg'] = array(
 	'farmer-extensions-register-name' => 'Име',
 	'farmer-extensions-register-includefile' => 'Включване на файл',
 	'farmer-error-exists' => 'Уикито не може да бъде създадено, тъй като вече съществува: $1',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer не може да запише конфигурационния файл по подразбиране на уикито.',
-	'farmer-error-funcnotcall' => 'Не може да бъде извикана функцията:',
 );
 
 /** Bengali (বাংলা)
@@ -1135,9 +1121,6 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 	'farmer-extensions-register-name' => 'Nomo',
 	'farmer-extensions-register-includefile' => 'Inkluzivi dosieron',
 	'farmer-error-exists' => 'Ne povas krei vikion. Ĝi jam ekzistas: $1',
-	'farmer-error-defnotset' => 'Defaŭlta vikio devas esti konfigurita',
-	'farmer-error-funcnotcall' => 'Ne eblis voki funkcion:',
-	'farmer-error-wikicorrupt' => 'Konservita vikio estas korupta',
 );
 
 /** Spanish (Español)
@@ -1300,7 +1283,6 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-extensions-register-name' => 'Nimi',
 	'farmer-extensions-register-includefile' => 'Sisällytä tiedosto',
 	'farmer-error-exists' => 'Wikiä ei voitu luoda.  Se on jo olemassa: $1',
-	'farmer-error-defnotset' => 'Oletuswiki täytyy olla asetettuna',
 );
 
 /** French (Français)
@@ -1565,7 +1547,7 @@ Unha vez que a extensión estea rexistrada, todos os wikis poderana usar.',
 	'farmer-error-noextwrite' => 'Non pode escribir a extensión do ficheiro:',
 );
 
-/** Gothic
+/** Gothic (Gothic)
  * @author Jocke Pirat
  */
 $messages['got'] = array(
@@ -1913,13 +1895,7 @@ $messages['he'] = array(
 	'farmer-extensions-register-name' => 'שם',
 	'farmer-extensions-register-includefile' => 'קובץ להכללה',
 	'farmer-error-exists' => 'לא ניתן ליצור ויקי.  הוויקי כבר קיים: $1',
-	'farmer-error-nodirconfig' => 'לא נמצאה configDirectory:',
-	'farmer-error-defnotset' => 'יש להגדיר את ויקי ברירת המחדל',
-	'farmer-error-mapnotfound' => 'הפונקציה למיפוי שם הוויקי בחווה לא נמצאה:',
-	'farmer-error-nofileconfwrite' => 'החוואי של מדיה־ויקי לא יכול לכתוב אל קובץ תצורת הוויקי המוגדר כברירת המחדל.',
-	'farmer-error-funcnotcall' => 'לא ניתן לקרוא לפונקציה:',
 	'farmer-error-noextwrite' => 'לא ניתן לכתוב קובץ הרחבה:',
-	'farmer-error-wikicorrupt' => 'הוויקי המאוחסן פגום',
 );
 
 /** Hindi (हिन्दी)
@@ -2023,13 +1999,7 @@ $messages['hi'] = array(
 	'farmer-extensions-register-name' => 'नाम',
 	'farmer-extensions-register-includefile' => 'फ़ाईल मिलायें',
 	'farmer-error-exists' => 'विकि बना नहीं सकते। वह पहले से अस्तित्वमें हैं: $1',
-	'farmer-error-nodirconfig' => 'configDirectory मिली नहीं:',
-	'farmer-error-defnotset' => 'मुख्य विकि देना आवश्यक हैं',
-	'farmer-error-mapnotfound' => 'फ़ार्ममें विकिनामोंका नक्शा बनाने वाला कार्य मिला नहीं:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer मुख्य विकिकी कॉन्फिगरेशन फ़ाईलें लिख नहीं पा रहा हैं',
-	'farmer-error-funcnotcall' => 'कार्य को कॉल नहीं कर पायें:',
 	'farmer-error-noextwrite' => 'एक्स्टेंशन फ़ाईल लिख नहीं पायें:',
-	'farmer-error-wikicorrupt' => 'संजोया हुआ विकि खराब हो गया हैं',
 );
 
 /** Hiligaynon (Ilonggo)
@@ -2156,13 +2126,7 @@ Móžeš [[Special:Farmer|swój wiki přiměrić]].',
 	'farmer-extensions-register-name' => 'Mjeno',
 	'farmer-extensions-register-includefile' => 'Dataju zapřijeć',
 	'farmer-error-exists' => 'Wiki njeda so wutowrić. Eksistuje hižo: $1',
-	'farmer-error-nodirconfig' => 'Konfiguraciski zapis njenamakany:',
-	'farmer-error-defnotset' => 'Standardny wiki dyrbi so nastajić',
-	'farmer-error-mapnotfound' => 'Funkcija za zwobraznjenje wikijoweho mjena we farmje njenamakana:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer njemóžeše standardnu konfiguracisku dataju wikija pisać.',
-	'farmer-error-funcnotcall' => 'Funkcija njeda so wołać:',
 	'farmer-error-noextwrite' => 'Rozšěrjenska dataja njeda so wupisać:',
-	'farmer-error-wikicorrupt' => 'Składowany wiki je poškodźeny',
 );
 
 /** Hungarian (Magyar)
@@ -2270,13 +2234,7 @@ A wiki testreszabásához látogasd meg a [[Special:Farmer]] lapot.',
 	'farmer-extensions-register-name' => 'Név',
 	'farmer-extensions-register-includefile' => 'Beillesztett fájl',
 	'farmer-error-exists' => 'A wiki nem hozható létre.  Már létezik: $1',
-	'farmer-error-nodirconfig' => 'configDirectory nem található:',
-	'farmer-error-defnotset' => 'Be kell állítani az alapértelmezett wikit',
-	'farmer-error-mapnotfound' => 'A wiki nevének térképezéséhez használt függvény nem található:',
-	'farmer-error-nofileconfwrite' => 'A MediaWikiFarmer nem tudott írni az alapértelmezett wiki konfigurációs fájlba.',
-	'farmer-error-funcnotcall' => 'Nem sikerült meghívni a függvényt:',
 	'farmer-error-noextwrite' => 'Nem sikerült írni a kiterjesztés fájlába:',
-	'farmer-error-wikicorrupt' => 'A tárolt wiki sérült',
 );
 
 /** Interlingua (Interlingua)
@@ -2662,13 +2620,7 @@ $messages['ja'] = array(
 	'farmer-extensions-register-name' => '名前',
 	'farmer-extensions-register-includefile' => 'インクルードファイル',
 	'farmer-error-exists' => 'ウィキを作成できません。既に存在しています: $1',
-	'farmer-error-nodirconfig' => 'configDirectory が見つかりません:',
-	'farmer-error-defnotset' => 'デフォルトのウィキを設定しなければなりません',
-	'farmer-error-mapnotfound' => 'ファーム内のウィキ名の対応付けをする関数が見つかりません:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer はデフォルトウィキの設定ファイルに書き込むことができませんでした。',
-	'farmer-error-funcnotcall' => '関数の呼び出しに失敗しました:',
 	'farmer-error-noextwrite' => '拡張機能ファイルへの書き出しができません:',
-	'farmer-error-wikicorrupt' => '保存したウィキは破損しています',
 );
 
 /** Javanese (Basa Jawa)
@@ -2731,8 +2683,6 @@ Iku bisa diaksès ing $1',
 	'farmer-extensions-register-name' => 'Jeneng',
 	'farmer-extensions-register-includefile' => 'Mèlu Lebokna Berkas',
 	'farmer-error-exists' => 'Ora bisa nggawé wiki. Sebabé wis ana: $1',
-	'farmer-error-funcnotcall' => 'Ora bisa nyeluk fungsi:',
-	'farmer-error-wikicorrupt' => 'Wiki sing disimpen iku rusak',
 );
 
 /** Georgian (ქართული)
@@ -2952,13 +2902,7 @@ Mer han die Datei nit jefonge, die enjefööch wäde mööt.',
 	'farmer-extensions-register-name' => 'Name',
 	'farmer-extensions-register-includefile' => '<i lang="en">include file</i>',
 	'farmer-error-exists' => 'Dat Wikki „$1“ jidd_et alldt. Dat kan_nid_norr_enß nöü aanjelaat wääde.',
-	'farmer-error-nodirconfig' => 'Han et Verzeichnis för de Kunfijurazjun (<code lang="en">configDirectory</code>) nit jefonge:',
-	'farmer-error-defnotset' => 'Et Standatt-Wiki moß jesaz sin',
-	'farmer-error-mapnotfound' => 'De Funxjohn, öm de Name vun de Wikis afzebellde, wood nit jefonge:',
-	'farmer-error-nofileconfwrite' => 'Mer kunnte nit en de Shtandadt_Kunfijjurazjuhns_Dattei för dat Wiki erin schriive.',
-	'farmer-error-funcnotcall' => 'Kunnt en Funxjohn nit oprohfe:',
 	'farmer-error-noextwrite' => 'Mer kunnte de Datei met dä Zosätz nit schriive:',
-	'farmer-error-wikicorrupt' => 'Wat doh als_e Wikki jesėschot wohr eß kappott.',
 );
 
 /** Kurdish (Latin) (Kurdî / كوردی (Latin))
@@ -3045,7 +2989,6 @@ Dir musst dofir Member vum Grupp vun den Administrateure sinn.',
 	'farmer-extensions-register' => 'Erweiderung ofspäicheren',
 	'farmer-extensions-register-name' => 'Numm',
 	'farmer-error-exists' => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
-	'farmer-error-wikicorrupt' => 'Déi gespäichert Wiki ass futti',
 );
 
 /** Lithuanian (Lietuvių)
@@ -3176,7 +3119,6 @@ $messages['ml'] = array(
 എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്തതിനു ശെഷം ഈ വിക്കിപാടത്തുള്ള എല്ലാ വിക്കികള്‍ക്കും അതുപയോഗിക്കാം.',
 	'farmer-extensions-register-name' => 'പേര്‌',
 	'farmer-error-exists' => 'വിക്കി സൃഷ്ടിക്കുന്നതിനു കഴിഞ്ഞില്ല. അതു ഇപ്പോഴെ നിലവിലുണ്ട്: $1',
-	'farmer-error-defnotset' => 'സ്വതവെയുള്ള ഒരു വിക്കി നിര്‍ബന്ധമായും സജ്ജീകരിക്കണം.',
 );
 
 /** Marathi (मराठी)
@@ -3284,13 +3226,7 @@ $messages['mr'] = array(
 	'farmer-extensions-register-name' => 'नाव',
 	'farmer-extensions-register-includefile' => 'संचिका मिळवा',
 	'farmer-error-exists' => 'विकि तयार करू शकत नाही. तो अगोदरच अस्तित्वात आहे: $1',
-	'farmer-error-nodirconfig' => 'configDirectory सापडली नाही:',
-	'farmer-error-defnotset' => 'मुख्य विकि दिला पाहिजे',
-	'farmer-error-mapnotfound' => 'फार्म मध्ये विकिनावांचा नकाशा बनविणारे कार्य सापडले नाही:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer मुख्य विकिच्या कॉन्फिगरेशन संचिका लिहू शकत नाही',
-	'farmer-error-funcnotcall' => 'कार्य बोलावू शकलेलो नाही:',
 	'farmer-error-noextwrite' => 'एक्स्टेंशन संचिका लिहू शकलेलो नाही:',
-	'farmer-error-wikicorrupt' => 'जतन केलेला विकि खराब झालेला आहे',
 );
 
 /** Maltese (Malti)
@@ -3477,13 +3413,7 @@ U moet lid zijn van de groep ''farmeradmin''.",
 	'farmer-extensions-register-name' => 'Naam',
 	'farmer-extensions-register-includefile' => 'Bestand opnemen',
 	'farmer-error-exists' => 'De wiki kan niet aangemaakt worden. Deze bestaat al: $1',
-	'farmer-error-nodirconfig' => 'configDirectory niet aangetroffen:',
-	'farmer-error-defnotset' => 'standaard wiki moet ingesteld worden',
-	'farmer-error-mapnotfound' => 'Functie om de wikinaam in de farm op te nemen niet aangetroffen:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer kan het bestand met standaardinstellingen voor de wiki niet wegschrijven.',
-	'farmer-error-funcnotcall' => 'Kon de volgende functie niet aanroepen:',
 	'farmer-error-noextwrite' => 'Het uitbreidingsbestand kon niet weggeschreven worden:',
-	'farmer-error-wikicorrupt' => 'De opgeslagen wiki is corrupt',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -4158,13 +4088,7 @@ Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-extensions-register-name' => 'Nome',
 	'farmer-extensions-register-includefile' => 'Ficheiro de Inclusão',
 	'farmer-error-exists' => 'Não é possível criar wiki. Este já existe: $1',
-	'farmer-error-nodirconfig' => 'configDirectory não encontrado:',
-	'farmer-error-defnotset' => 'Wiki padrão deverá ser escolhido',
-	'farmer-error-mapnotfound' => 'Função para mapear o nome do wiki na "farm" não encontrada:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer não conseguiu escrever no ficheiro padrão de configuração wiki.',
-	'farmer-error-funcnotcall' => 'Não foi possível chamar a função:',
 	'farmer-error-noextwrite' => 'Não foi possível escrever para ficheiro de extensão:',
-	'farmer-error-wikicorrupt' => 'O wiki armazenado está corrompido',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -4463,13 +4387,7 @@ $messages['ru'] = array(
 	'farmer-extensions-register-name' => 'Имя',
 	'farmer-extensions-register-includefile' => 'Include-файл',
 	'farmer-error-exists' => 'Невозможно создать вики. Она уже существует: $1',
-	'farmer-error-nodirconfig' => 'configDirectory не найден:',
-	'farmer-error-defnotset' => 'Должна быть установлена вики по умолчанию',
-	'farmer-error-mapnotfound' => 'Функция определения соответствия имени вики на ферме не найдена:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer не может произвести запись в файл настройки вики по умолчанию.',
-	'farmer-error-funcnotcall' => 'Невозможно вызвать функцию:',
 	'farmer-error-noextwrite' => 'Невозможно выписать файл расширения:',
-	'farmer-error-wikicorrupt' => 'Хранящаяся вики повреждена',
 );
 
 /** Sassaresu (Sassaresu)
@@ -4737,13 +4655,7 @@ Du måste vara medlem av användargruppen farmeradmin',
 	'farmer-extensions-register-name' => 'Namn',
 	'farmer-extensions-register-includefile' => 'Inkludera fil',
 	'farmer-error-exists' => 'Kan inte skapa wikin.  Den existerar redan: $1',
-	'farmer-error-nodirconfig' => 'configDirectory inte funnen:',
-	'farmer-error-defnotset' => 'Måste ange standardwiki',
-	'farmer-error-mapnotfound' => 'Funktionen för att sätta in wikins namn i farmen hittades inte:',
-	'farmer-error-nofileconfwrite' => 'MediaWikiFarmer kunde inte skriva standardkonfigurationsfilen.',
-	'farmer-error-funcnotcall' => 'Kunde inte kalla på funktion:',
 	'farmer-error-noextwrite' => 'Kunde inte skriva ut programtilläggsfil:',
-	'farmer-error-wikicorrupt' => 'Den sparade wikin är fördärvad',
 );
 
 /** Silesian (Ślůnski)
@@ -4957,10 +4869,7 @@ $messages['tg-cyrl'] = array(
 Дар ҳолати сабт шудани афзуна, ҳамаи викиҳо қобили истифода аз он хоҳанд шуд.',
 	'farmer-extensions-register-name' => 'Ном',
 	'farmer-error-exists' => 'Наметавон вики эҷод кард.  Он аллакай вуҷуд дорад: $1',
-	'farmer-error-defnotset' => 'Викии пешфарз бояд насб шавад',
-	'farmer-error-nofileconfwrite' => 'ДеҳқониМедиаВики натавонист парвандаи пайкарбандии викии пешфарзро навишт',
 	'farmer-error-noextwrite' => 'Қобили навиштани парвандаи афзуна нест:',
-	'farmer-error-wikicorrupt' => 'Викии захирашуда хароб аст',
 );
 
 /** Thai (ไทย)
@@ -5091,13 +5000,7 @@ Kapag naipatala na ang isang karugtong, magagamit na ito ng lahat ng mga wiki.',
 	'farmer-extensions-register-name' => 'Pangalan',
 	'farmer-extensions-register-includefile' => 'Isama ang talaksan',
 	'farmer-error-exists' => 'Hindi malikha ang wiki. Umiiral na ito: $1',
-	'farmer-error-nodirconfig' => 'Hindi natagpuan ang configDirectory:',
-	'farmer-error-defnotset' => 'Dapat na itakda ang likas na nakatakdang wiki',
-	'farmer-error-mapnotfound' => 'Hindi natagpuan ang tungkulin upang maimapa ang pangalan ng wiki sa loob ng linangan:',
-	'farmer-error-nofileconfwrite' => 'Hindi maisulat ng MediaWikiFarmer ang talaksan ng pagkakaayos na para sa likas na nakatakdang wiki.',
-	'farmer-error-funcnotcall' => 'Hindi matawag ang tungkulin:',
 	'farmer-error-noextwrite' => 'Hindi nagawang maisulat palabas ang talaksan ng karugtong:',
-	'farmer-error-wikicorrupt' => 'Tiwali ang nakatabing wiki',
 );
 
 /** Turkish (Türkçe)
