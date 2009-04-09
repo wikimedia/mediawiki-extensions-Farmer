@@ -4965,8 +4965,10 @@ $messages['tg-cyrl'] = array(
 
 /** Thai (ไทย)
  * @author Octahedron80
+ * @author Passawuth
  */
 $messages['th'] = array(
+	'farmer-button-confirm' => 'ยืนยัน',
 	'farmer-delete-form-submit' => 'ลบ',
 );
 
