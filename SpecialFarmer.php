@@ -105,7 +105,7 @@ class SpecialFarmer extends SpecialPage {
 	 * Displays form to create wiki
 	 */
 	protected function _executeCreate( $wgFarmer, $wiki ){
-		global $wgOut, $wgUser, $wgTitle, $wgRequest;
+		global $wgOut, $wgUser, $wgRequest;
 
 		$confirmaccount = wfMsg( 'farmer-button-confirm' );
 
