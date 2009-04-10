@@ -11,7 +11,7 @@ CREATE TABLE farmer_wiki (
 	fw_creator VARCHAR(255),
 	fw_parameters BLOB,
 	fw_permissions BLOB
-) ENGINE=INOODB, DEFAULT CHARSET=binary;
+) /*$wgDBTableOptions*/;
 
 -- Store information about each extension availabe in the farm
 CREATE TABLE farmer_extension (
@@ -19,13 +19,13 @@ CREATE TABLE farmer_extension (
 	fe_name VARCHAR(255) UNIQUE,
 	fe_description BLOB,
 	fe_path VARCHAR(255)
-) ENGINE=INOODB, DEFAULT CHARSET=binary;
+) /*$wgDBTableOptions*/;
 
 -- Store relation beetween wiki and extensions
 CREATE TABLE farmer_wiki_extension (
 	fwe_wiki INT NOT NULL,
 	fwe_extension INT NOT NULL
-) ENGINE=INOODB, DEFAULT CHARSET=binary;
+) /*$wgDBTableOptions*/;
 
 CREATE INDEX farmer_wiki_extension_wiki ON farmer_wiki_extension ( fwe_wiki );
 CREATE INDEX farmer_wiki_extension_extension ON farmer_wiki_extension ( fwe_extension );
