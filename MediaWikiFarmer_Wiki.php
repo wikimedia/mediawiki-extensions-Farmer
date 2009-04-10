@@ -65,19 +65,31 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	public static function factory( $wiki, $variables = array() ) {
-        $file = self::_getWikiConfigFile( $wiki );
+		$farmer = MediaWikiFarmer::getInstance();
+		
+		if( $farmer->useDatabase() ) {
+			$dbr = $farmer->getDB( DB_SLAVE );
+			$row = $dbr->selectRow( 'farmer_wiki', '*', array( 'fw_name' => $wiki ), __METHOD__ );
+			if( $row === false ) {
+				return new MediaWikiFarmer_Wiki( $wiki, $variables );
+			} else {
+				return self::newFromRow( $row );
+			}
+		} else {
+			$file = self::_getWikiConfigFile( $wiki );
 
-        if( is_readable( $file ) ){
-            $content = file_get_contents( $file );
-            $obj = unserialize( $content );
-            if( $obj instanceof MediaWikiFarmer_Wiki ){
-                return $obj;
-            } else {
-                throw new MWException( 'Stored wiki is corrupt.' );
-            }
-        } else {
-            return new MediaWikiFarmer_Wiki( $wiki, $variables );
-        }
+			if( is_readable( $file ) ){
+				$content = file_get_contents( $file );
+				$obj = unserialize( $content );
+				if( $obj instanceof MediaWikiFarmer_Wiki ){
+					return $obj;
+				} else {
+					throw new MWException( 'Stored wiki is corrupt.' );
+				}
+			} else {
+				return new MediaWikiFarmer_Wiki( $wiki, $variables );
+			}
+		}
     }
 
     /**
@@ -92,7 +104,32 @@ class MediaWikiFarmer_Wiki {
         
         return $wiki;
     }
-    
+
+	public static function newFromRow( $row ) {
+		$wiki = new self( $row->fw_name );
+		$wiki->_title = $row->fw_title;
+		$wiki->_description = $row->fw_description;
+		$wiki->_creator = $row->fw_creator;
+		$wiki->_variables = unserialize( $row->fw_parameters );
+		$wiki->_permissions = unserialize( $row->fw_permissions );
+
+		$dbr = MediaWikiFarmer::getInstance()->getDB( DB_SLAVE );
+		$res = $dbr->select(
+			array( 'farmer_extension', 'farmer_wiki_extension' ),
+			'*',
+			array( 'fwe_wiki' => $row->fw_id ),
+			__METHOD__,
+			array(),
+			array( 'farmer_wiki_extension' => array( 'LEFT JOIN', 'fwe_extension = fe_id' ) )
+		);
+		$wiki->_extensions = array();
+		foreach( $res as $row ) {
+			$wiki->_extensions[$row->fe_name] = MediaWikiFarmer_Extension::newFromRow( $row );
+		}
+
+		return $wiki;
+	}
+
     public function create() {
         $farmer = MediaWikiFarmer::getInstance();
 
@@ -117,16 +154,62 @@ class MediaWikiFarmer_Wiki {
 	 * because if a file doesn't exist, this isn't stored in the stat cache
 	 */
 	public function exists() {
-		return file_exists( self::_getWikiConfigFile( $this->_name ) );
+		$farmer = MediaWikiFarmer::getInstance();
+		
+		if( $farmer->useDatabase() ) {
+			return (bool)$farmer->getDB( DB_SLAVE )->selectField( 'farmer_wiki', 1, array( 'fw_name' => $this->_name ), __METHOD__ );
+		} else {
+			return file_exists( self::_getWikiConfigFile( $this->_name ) );
+		}
 	}
 
 	public function save() {
-		$content = serialize( $this );
-		return( file_put_contents( self::_getWikiConfigFile( $this->_name ), $content, LOCK_EX ) == strlen( $content ) );
+		$farmer = MediaWikiFarmer::getInstance();
+		
+		if( $farmer->useDatabase() ) {
+			$dbw = $farmer->getDB( DB_MASTER );
+			$new = array(
+				'fw_name' => $this->_name,
+				'fw_title' => $this->_title,
+				'fw_description' => $this->_description,
+				'fw_creator' => $this->_creator,
+				'fw_parameters' => serialize( $this->_variables ),
+				'fw_permissions' => serialize( $this->_permissions ),
+			);
+
+			$curId = $dbw->selectField( 'farmer_wiki', 'fw_id', array( 'fw_name' => $this->_name ), __METHOD__ );
+			if( $curId == null ) {
+				$dbw->insert( 'farmer_wiki', $new, __METHOD__ );
+				$curId = $dbw->insertId();
+			} else {
+				$dbw->update( 'farmer_wiki', $new, array( 'fw_id' => $curId ), __METHOD__ );
+			}
+
+			$insert = array();
+			foreach( $this->_extensions as $ext ) {
+				$insert[] = array( 'fwe_wiki' => $curId, 'fwe_extension' => $ext->id );
+			}
+			$dbw->delete( 'farmer_wiki_extension', array( 'fwe_wiki' => $curId ), __METHOD__ );
+			$dbw->insert( 'farmer_wiki_extension', $insert, __METHOD__ );
+
+			return true;
+		} else {
+			$content = serialize( $this );
+			return( file_put_contents( self::_getWikiConfigFile( $this->_name ), $content, LOCK_EX ) == strlen( $content ) );
+		}
 	}
 
     public function delete() {
-		if( $this->exists() ) {
+		if( !$this->exists() )
+			return;
+
+		$farmer = MediaWikiFarmer::getInstance();
+		
+		if( $farmer->useDatabase() ) {
+			$dbw = $farmer->getDB( DB_MASTER );
+			$dbw->deleteJoin( 'farmer_wiki_extension', 'farmer_wiki', 'fwe_wiki', 'fw_id', array( 'fw_name' => $this->_name ), __METHOD__ );
+			$dbw->delete( 'farmer_wiki', array( 'fw_name' => $this->_name ), __METHOD__ );
+		} else {
 			unlink( self::_getWikiConfigFile( $this->_name ) );
 		}
 	}
@@ -202,6 +285,15 @@ class MediaWikiFarmer_Wiki {
 		foreach ( $grantToWikiAdmins as $v ) {
 			$wgGroupPermissions[$group][$v] = true;
 		}
+
+		if( $callback = $farmer->initCallback() ) {
+			if( is_callable( $callback ) ) {
+				call_user_func( $callback, $this );
+			} else {
+				trigger_error( '$wgFarmerSettings[\'initCallback\'] is not callable', E_USER_WARNING );
+			}
+		}
+
 	}
 
     protected static function _getWikiConfigPath() {

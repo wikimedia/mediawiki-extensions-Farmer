@@ -155,7 +155,7 @@ class SpecialFarmer extends SpecialPage {
 					array( 'farmer-confirmsetting-description', $description ),
 					array( 'farmer-confirmsetting-text', $name, $title, $url )
 				);
-				
+
 				$nameaccount = htmlspecialchars( $name );
 				$nametitle = htmlspecialchars( $title );
 				$namedescript = htmlspecialchars( $description );
@@ -319,18 +319,6 @@ class SpecialFarmer extends SpecialPage {
 			$wgFarmer->updateFarmList();
 		}
 
-		if ( $permissions = $wgRequest->getArray( 'permission' ) ) {
-			foreach ( $permissions['*'] as $k => $v ) {
-				$wiki->setPermissionForAll( $k, $v );
-			}
-
-			foreach ($permissions['user'] as $k => $v) {
-				$wiki->setPermissionForUsers( $k, $v );
-			}
-
-			$wiki->save();
-		}
-
 		if ( !$wiki->title ) {
 			$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-basic-title1' );
 			$wgOut->addWikiMsg( 'farmer-basic-title1-text' );
@@ -353,118 +341,141 @@ class SpecialFarmer extends SpecialPage {
 			'</form>'
 		);
 
-		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-basic-permission' );
-		$wgOut->addWikiMsg( 'farmer-basic-permission-text' );
+		# Permissions stuff
+		if ( wfRunHooks( 'FarmerAdminPermissions', array( $wgFarmer ) ) ) {
 
-		$wgOut->addHTML( '<form method="post" name="permissions" action="'.$action.'">' );
+			# Import 
+			if ( $wgRequest->wasPosted() && $permissions = $wgRequest->getArray( 'permission' ) ) {
+				foreach ( $permissions['*'] as $k => $v ) {
+					$wiki->setPermissionForAll( $k, $v );
+				}
 
-		$wgOut->wrapWikiMsg('=== $1 ===', 'farmer-basic-permission-visitor' );
-		$wgOut->addWikiMsg( 'farmer-basic-permission-visitor-text' );
+				foreach ($permissions['user'] as $k => $v) {
+					$wiki->setPermissionForUsers( $k, $v );
+				}
 
-		$doArray = array(
-			array( 'read', wfMsg( 'farmer-basic-permission-view' ) ),
-			array( 'edit', wfMsg( 'farmer-basic-permission-edit' ) ),
-			array( 'createpage', wfMsg( 'farmer-basic-permission-createpage' ) ),
-			array( 'createtalk', wfMsg( 'farmer-basic-permission-createtalk' ) )
-		);
-
-		foreach ( $doArray as $arr ) {
-			$this->_doPermissionInput( $wgOut, $wiki, '*', $arr[0], $arr[1] );
-		}
-
-		$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-basic-permission-user' );
-		$wgOut->addWikiMsg( 'farmer-basic-permission-user-text' );
-
-		$doArray = array(
-			array( 'read', wfMsg( 'farmer-basic-permission-view' ) ),
-			array( 'edit', wfMsg( 'farmer-basic-permission-edit' ) ),
-			array( 'createpage', wfMsg( 'farmer-basic-permission-createpage' ) ),
-			array( 'createtalk', wfMsg( 'farmer-basic-permission-createtalk' ) ),
-			array( 'move', wfMsg( 'farmer-basic-permission-move' ) ),
-			array( 'upload', wfMsg( 'farmer-basic-permission-upload' ) ),
-			array( 'reupload', wfMsg( 'farmer-basic-permission-reupload' ) ),
-			array( 'minoredit', wfMsg( 'farmer-basic-permission-minoredit' ) )
-		);
-
-		foreach( $doArray as $arr ) {
-			$this->_doPermissionInput( $wgOut, $wiki, 'user', $arr[0], $arr[1] );
-		}
-
-		$wgOut->addHTML('<input type="submit" name="setPermissions" value="'.wfMsg( 'farmer-setpermission' ).'" />');
-		$wgOut->addHTML( "</form>\n\n\n" );
-
-
-		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-defaultskin' );
-
-		if ( $newSkin = $wgRequest->getVal( 'defaultSkin' ) ) {
-			$wiki->wgDefaultSkin = $newSkin;
-			$wiki->save();
-		}
-
-		$defaultSkin = $wgFarmer->getActiveWiki()->wgDefaultSkin;
-
-		if ( !$defaultSkin ) {
-			$defaultSkin = 'MonoBook';
-		}
-
-		$skins = Skin::getSkinNames();
-		global $wgSkipSkins;
-
-		foreach( $wgSkipSkins as $skin ) {
-			if ( array_key_exists( $skin, $skins ) ) {
-				unset( $skins[$skin] );
+				$wiki->save();
 			}
-		}
 
-		$wgOut->addHTML( '<form method="post" name="formDefaultSkin" action="'.$action.'">' );
+			# Form
+			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-basic-permission' );
+			$wgOut->addWikiMsg( 'farmer-basic-permission-text' );
 
-		foreach ( $skins as $k => $skin ) {
-			$toAdd = '<input type="radio" name="defaultSkin" value="'.$k.'"';
-			if ($k == $defaultSkin) {
-				$toAdd .= ' checked="checked" ';
+			$wgOut->addHTML( '<form method="post" name="permissions" action="'.$action.'">' );
+
+			$wgOut->wrapWikiMsg('=== $1 ===', 'farmer-basic-permission-visitor' );
+			$wgOut->addWikiMsg( 'farmer-basic-permission-visitor-text' );
+
+			$doArray = array(
+				array( 'read', wfMsg( 'farmer-basic-permission-view' ) ),
+				array( 'edit', wfMsg( 'farmer-basic-permission-edit' ) ),
+				array( 'createpage', wfMsg( 'farmer-basic-permission-createpage' ) ),
+				array( 'createtalk', wfMsg( 'farmer-basic-permission-createtalk' ) )
+			);
+
+			foreach ( $doArray as $arr ) {
+				$this->_doPermissionInput( $wgOut, $wiki, '*', $arr[0], $arr[1] );
 			}
-			$toAdd .= '/>' . $skin;
-			$wgOut->addHTML( $toAdd . "<br />\n" );
+
+			$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-basic-permission-user' );
+			$wgOut->addWikiMsg( 'farmer-basic-permission-user-text' );
+
+			$doArray = array(
+				array( 'read', wfMsg( 'farmer-basic-permission-view' ) ),
+				array( 'edit', wfMsg( 'farmer-basic-permission-edit' ) ),
+				array( 'createpage', wfMsg( 'farmer-basic-permission-createpage' ) ),
+				array( 'createtalk', wfMsg( 'farmer-basic-permission-createtalk' ) ),
+				array( 'move', wfMsg( 'farmer-basic-permission-move' ) ),
+				array( 'upload', wfMsg( 'farmer-basic-permission-upload' ) ),
+				array( 'reupload', wfMsg( 'farmer-basic-permission-reupload' ) ),
+				array( 'minoredit', wfMsg( 'farmer-basic-permission-minoredit' ) )
+			);
+
+			foreach( $doArray as $arr ) {
+				$this->_doPermissionInput( $wgOut, $wiki, 'user', $arr[0], $arr[1] );
+			}
+
+			$wgOut->addHTML('<input type="submit" name="setPermissions" value="'.wfMsg( 'farmer-setpermission' ).'" />');
+			$wgOut->addHTML( "</form>\n\n\n" );
 		}
 
-		$wgOut->addHTML( '<input type="submit" name="submitDefaultSkin" value="' . wfMsgHtml( 'farmer-defaultskin-button' ) . '" />' );
-		$wgOut->addHTML( '</form>' );
+		# Default skin
+		if ( wfRunHooks( 'FarmerAdminSkin', array( $wgFarmer ) ) ) {
 
-		/**
-		 * Manage active extensions
-		 */
-		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-extensions' );
+			# Import
+			if ( $wgRequest->wasPosted() && $newSkin = $wgRequest->getVal( 'defaultSkin' ) ) {
+				$wiki->wgDefaultSkin = $newSkin;
+				$wiki->save();
+			}
 
-		$extensions = $wgFarmer->getExtensions();
+			# Form
+			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-defaultskin' );
 
-		//if we post a list of new extensions, wipe the old list from the wiki
-		if ( $wgRequest->getCheck( 'submitExtension' ) ) {
-			$wiki->extensions = array();
+			$defaultSkin = $wgFarmer->getActiveWiki()->wgDefaultSkin;
 
-			//go through all posted extensions and add the appropriate ones
-			foreach( $wgRequest->getArray('extension') as $k=>$e ) {
-				if ( array_key_exists( $k, $extensions ) ) {
-					$wiki->addExtension( $extensions[$k] );
+			if ( !$defaultSkin ) {
+				$defaultSkin = 'MonoBook';
+			}
+
+			$skins = Skin::getSkinNames();
+			global $wgSkipSkins;
+
+			foreach( $wgSkipSkins as $skin ) {
+				if ( array_key_exists( $skin, $skins ) ) {
+					unset( $skins[$skin] );
 				}
 			}
 
-			$wiki->save();
-		}
+			$wgOut->addHTML( '<form method="post" name="formDefaultSkin" action="'.$action.'">' );
 
-		$wgOut->addHTML( '<form method="post" name="formActiveExtensions" action="'.$action.'">' );
-
-		foreach ( $extensions as $extension ) {
-			$toAdd = '<input type="checkbox" name="extension['.$extension->name.']" ';
-			if ( $wiki->hasExtension( $extension ) ) {
-				$toAdd .= 'checked="checked" ';
+			foreach ( $skins as $k => $skin ) {
+				$toAdd = '<input type="radio" name="defaultSkin" value="'.$k.'"';
+				if ($k == $defaultSkin) {
+					$toAdd .= ' checked="checked" ';
+				}
+				$toAdd .= '/>' . $skin;
+				$wgOut->addHTML( $toAdd . "<br />\n" );
 			}
-			$toAdd .=' /><strong>'.htmlspecialchars( $extension->name ) . '</strong> - ' . htmlspecialchars( $extension->description ) . "<br />\n";
-			$wgOut->addHTML( $toAdd );
+
+			$wgOut->addHTML( '<input type="submit" name="submitDefaultSkin" value="' . wfMsgHtml( 'farmer-defaultskin-button' ) . '" />' );
+			$wgOut->addHTML( '</form>' );
 		}
 
-		$wgOut->addHTML( '<input type="submit" name="submitExtension" value="' . wfMsgHtml( 'farmer-extensions-button' ) . '" />' );
-		$wgOut->addHTML( '</form>' );
+		# Manage active extensions
+		if ( wfRunHooks( 'FarmerAdminExtensions', array( $wgFarmer ) ) ) {
 
+			$extensions = $wgFarmer->getExtensions();
+
+			//if we post a list of new extensions, wipe the old list from the wiki
+			if ( $wgRequest->wasPosted() && $wgRequest->getCheck( 'submitExtension' ) ) {
+				$wiki->extensions = array();
+	
+				//go through all posted extensions and add the appropriate ones
+				foreach( (array)$wgRequest->getArray( 'extension' ) as $k => $e ) {
+					if ( array_key_exists( $k, $extensions ) ) {
+						$wiki->addExtension( $extensions[$k] );
+					}
+				}
+	
+				$wiki->save();
+			}
+
+			# Form
+			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-extensions' );
+			$wgOut->addHTML( '<form method="post" name="formActiveExtensions" action="'.$action.'">' );
+
+			foreach ( $extensions as $extension ) {
+				$toAdd = '<input type="checkbox" name="extension['.$extension->name.']" ';
+				if ( $wiki->hasExtension( $extension ) ) {
+					$toAdd .= 'checked="checked" ';
+				}
+				$toAdd .=' /><strong>'.htmlspecialchars( $extension->name ) . '</strong> - ' . htmlspecialchars( $extension->description ) . "<br />\n";
+				$wgOut->addHTML( $toAdd );
+			}
+
+			$wgOut->addHTML( '<input type="submit" name="submitExtension" value="' . wfMsgHtml( 'farmer-extensions-button' ) . '" />' );
+			$wgOut->addHTML( '</form>' );
+		}
 	}
 
 	/**
@@ -472,6 +483,10 @@ class SpecialFarmer extends SpecialPage {
 	 */
 	protected function _executeManageExtensions( $wgFarmer ) {
 		global $wgOut, $wgUser, $wgRequest;
+
+		if ( !wfRunHooks( 'FarmerManageExtensions', array( $wgFarmer ) ) ) {
+			return;
+		}
 
 		// quick security check
 		if ( !MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) ) {

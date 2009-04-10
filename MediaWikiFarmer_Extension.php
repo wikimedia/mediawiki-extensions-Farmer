@@ -8,13 +8,19 @@
  */
 class MediaWikiFarmer_Extension {
     protected $_name;
-
     protected $_description;
+	protected $_id;
 
     /**
      * List of files that need to be included for this extension to work
      */
     protected $_includeFiles = array();
+
+	public static function newFromRow( $row ) {
+		$ext = new self( $row->fe_name, $row->fe_description, $row->fe_path );
+		$ext->_id = $row->fe_id;
+		return $ext;
+	}
 
     public function __construct( $name, $description, $include ) {
         $this->_name = $name;

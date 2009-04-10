@@ -14,11 +14,11 @@
 
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Farmer',
-	'author' => 'Gregory Szorc <gregory.szorc@case.edu>',
+	'author' => array( 'Gregory Szorc <gregory.szorc@case.edu>', 'Alexandre Emsenhuber' ),
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Farmer',
 	'description' => 'Manage a MediaWiki farm',
 	'descriptionmsg' => 'farmer-desc',
-	'version' => '0.0.4'
+	'version' => '0.0.5',
 );
 
 /**
@@ -27,6 +27,9 @@ $wgExtensionCredits['specialpage'][] = array(
 $wgFarmerSettings = array(
 	//Path to the directory that holds settings for wikis
 	'configDirectory'           =>  realpath( dirname( __FILE__ ) ) . '/configs/',
+
+	//Or use a database
+	'databaseName'              => null,
 
 	// Default wiki
 	'defaultWiki'               =>  '',
@@ -42,8 +45,12 @@ $wgFarmerSettings = array(
 	// If onUnknownWiki calls MediaWikiFarmer::_redirectTo (default), url to redirect to
 	'redirectToURL'             =>  '',
 
-	// Wheter to use $wgConf to get some settings
+	// Whether to use $wgConf to get some settings
 	'useWgConf'                 => false,
+
+	// Callback function that is called when a wiki is initialized and will
+	// recieve the MediaWikiFarmer_Wiki object in first parameter
+	'initCallback'              => null,
 
 	// File used to create tables for new wikis
 	'newDbSourceFile'           =>  "$IP/maintenance/tables.sql",

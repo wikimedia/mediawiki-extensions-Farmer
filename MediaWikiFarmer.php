@@ -15,6 +15,10 @@ class MediaWikiFarmer {
 
 	protected $_parameters = array();
 
+	/** Database name to use, null means use file storage */
+	protected $_databaseName;
+	protected $useDatabase;
+
 	/** Directory where config files are stored */
 	protected $_configDirectory;
 	protected $_storageRoot;
@@ -31,6 +35,9 @@ class MediaWikiFarmer {
 
 	/** Whether to use $wgConf */
 	protected $_useWgConf;
+
+	/** Callback to call when a wiki is initialized */
+	protected $_initCallback;
 
 	/** Database settings */
 	protected $_dbFromWikiFunction;
@@ -58,7 +65,6 @@ class MediaWikiFarmer {
 	/** Instance of this class */
 	protected static $_instance = null;
 
-
 	public static function getInstance() {
 		return self::$_instance;
 	}
@@ -71,6 +77,9 @@ class MediaWikiFarmer {
 	 * @todo Load up special page
 	 */
 	public function __construct( $params ) {
+		global $wgSharedTables;
+
+		$this->_databaseName = $params['databaseName'];
 		$this->_configDirectory = $params['configDirectory'];
 		$this->_matchFunction = $params['wikiIdentifierFunction'];
 		$this->_matchRegExp = $params['matchRegExp'];
@@ -80,6 +89,7 @@ class MediaWikiFarmer {
 		$this->_onUnknownWikiFunction = $params['onUnknownWiki'];
 		$this->_redirectToURL = $params['redirectToURL'];
 		$this->_useWgConf = $params['useWgConf'];
+		$this->_initCallback = $params['initCallback'];
 		$this->_dbAdminUser = $params['dbAdminUser'];
 		$this->_dbAdminPassword = $params['dbAdminPassword'];
 		$this->_dbSourceFile = $params['newDbSourceFile'];
@@ -95,20 +105,25 @@ class MediaWikiFarmer {
 		//register this object as the static instance
 		self::$_instance = $this;
 
-		global $wgSharedTables;
 		//if the groups table is being shared
 		if( in_array( 'user_groups', $wgSharedTables ) ){
 			$this->_sharedGroups = true;
 		}
 
-		if( !is_dir( $this->_configDirectory ) ){
-			throw new MWException( 'configDirectory not found: ' . $this->_configDirectory );
+		$this->_useDatabase = ( $this->_databaseName !== null );
+
+		if( $this->_useDatabase ) {
+			global $IP;
+			require_once( "$IP/includes/GlobalFunctions.php" );
 		} else {
-			if ( !is_dir( $this->_configDirectory . '/wikis/' ) ){
-				mkdir( $this->_configDirectory . '/wikis' );
+			if( !is_dir( $this->_configDirectory ) ){
+				throw new MWException( 'configDirectory not found: ' . $this->_configDirectory );
+			} else {
+				if ( !is_dir( $this->_configDirectory . '/wikis/' ) ){
+					mkdir( $this->_configDirectory . '/wikis' );
+				}
 			}
 		}
-
 	}
 
 	public function __get( $key ) {
@@ -201,6 +216,9 @@ class MediaWikiFarmer {
 		}
 
 	}
+
+	# Callback functions
+	# ------------------
 
 	/**
 	 * Matches a URL to a wiki by comparing a URL to a regular expression
@@ -296,6 +314,9 @@ class MediaWikiFarmer {
 		exit;
 	}
 
+	# Database stuff
+	# --------------
+
 	/**
 	 * Returns the database table prefix, as suitable for $wgDBprefix
 	 */
@@ -305,6 +326,14 @@ class MediaWikiFarmer {
 		
 	}
 
+	/**
+	 * Default callback function to get an database name and prefix for a wiki
+	 * in the farm
+	 *
+	 * @param $farmer MediaWikiFarmer
+	 * @param $wiki String
+	 * @return Array
+	 */
 	protected static function _prefixTable( MediaWikiFarmer $farmer, $wiki ){
 		if( $farmer->useWgConf() ){
 			global $wgConf;
@@ -317,7 +346,28 @@ class MediaWikiFarmer {
 	}
 
 	/**
-	 * Determines whether use can create a wiki
+	 * Get a database object
+	 *
+	 * @param $type integer: either DB_SLAVE for DB_MASTER
+	 * @return Database object
+	 */
+	public function getDB( $type ) {
+		if( !$this->useDatabase() )
+			throw new MWException( __METHOD__ . ' called when not using database backend.' );
+
+		try {
+			$db = wfGetDB( $type, array(), $this->_databaseName );
+		} catch( DBConnectionError $e ) {
+			throw new MWException( __METHOD__ . ": impossible to connect to {$this->_databaseName} to get farm configuration." );
+		}
+		return $db;
+	}
+
+	# Permission stuff
+	# ----------------
+
+	/**
+	 * Determines whether the user can create a wiki
 	 *
 	 * @param $user User object
 	 * @param $wiki String: wiki name (optional)
@@ -328,12 +378,23 @@ class MediaWikiFarmer {
 		return $user->isAllowed( 'createwiki' );
 	}
 
+	/**
+	 * Determines whether manage the wiki farm
+	 *
+	 * @param $user User object
+	 * @return Boolean
+	 */
 	public static function userIsFarmerAdmin( $user ) {
 		return $user->isAllowed( 'farmeradmin' );
 	}
 
+	# Extensions stuff
+	# ----------------
+
 	/**
 	 * Gets file holding extensions definitions
+	 *
+	 * @return String
 	 */
 	protected function _getExtensionFile() {
 		return $this->_configDirectory . '/extensions';
@@ -341,41 +402,66 @@ class MediaWikiFarmer {
 
 	/**
 	 * Gets extensions objects
+	 *
+	 * @return Array
 	 */
 	public function getExtensions( $forceReload = false ) {
 		if ( $this->_extensionsLoaded && !$forceReload ) {
 			return $this->_extensions;
 		}
 
-		if( is_readable( $this->_getExtensionFile() ) ) {
-			$contents = file_get_contents( $this->_getExtensionFile() );
-
-			$extensions = unserialize( $contents );
-
-			if( is_array( $extensions ) ) {
-				$this->_extensions = $extensions;
+		if ( $this->useDatabase() ) {
+			$dbr = $this->getDB( DB_SLAVE );
+			$res = $dbr->select( 'farmer_extension', '*', array(), __METHOD__ );
+			$this->_extensions = array();
+			foreach( $res as $row ) {
+				$this->_extensions[$row->fe_name] = MediaWikiFarmer_Extension::newFromRow( $row );
 			}
 		} else {
-			//perhaps we should throw an error or something?
+			if( is_readable( $this->_getExtensionFile() ) ) {
+				$contents = file_get_contents( $this->_getExtensionFile() );
+
+				$extensions = unserialize( $contents );
+
+				if( is_array( $extensions ) ) {
+					$this->_extensions = $extensions;
+				}
+			} else {
+				//perhaps we should throw an error or something?
+			}
 		}
 
 		$extensionsLoaded = true;
 		return $this->_extensions;
 	}
 
+	/**
+	 * Register an extension so that it's available for all wikis in the farm
+	 */
 	public function registerExtension( MediaWikiFarmer_Extension $e ) {
-		//force reload of file
-		$this->getExtensions( true );
-
-		$this->_extensions[$e->name] = $e;
-
-		$this->_writeExtensions();
+		if ( $this->useDatabase() ) {
+			$dbw = $this->getDB( DB_MASTER );
+			$dbw->insert( 'farmer_extension', array(
+				'fe_name' => $e->name,
+				'fe_description' => $e->description,
+				'fe_path' => $e->includeFiles[0],
+			), __METHOD__ );
+		} else {
+			//force reload of file
+			$this->getExtensions( true );
+			$this->_extensions[$e->name] = $e;
+			$this->_writeExtensions();
+		}
 	}
 
 	/**
 	 * Writes out extension definitions to file
+	 * No utility when using database
 	 */
 	protected function _writeExtensions() {
+		if ( $this->useDatabase() )
+			return false;
+
 		$file = $this->_getExtensionFile();
 
 		$content = serialize( $this->_extensions );
@@ -385,22 +471,49 @@ class MediaWikiFarmer {
 		}
 	}
 
-	public function getConfigPath() {
-		return $this->_configDirectory;
+	# Farm list stuff
+	# ---------------
+
+	/**
+	 * Get the file to store the list of wikis in the farm
+	 *
+	 * @retrun String
+	 */
+	protected function _getFarmListFile() {
+		return $this->_configDirectory . '/farmlist';
 	}
 
-	public function getStorageRoot() {
-		return $this->_storageRoot;
-	}
-
-	public function getStorageUrl() {
-		return $this->_storageUrl;
+	/**
+	 * Get the list of wikis in the farm
+	 *
+	 * @return Array
+	 */
+	public function getFarmList() {
+		if ( $this->useDatabase() ) {
+			$dbr = $this->getDB( DB_SLAVE );
+			$res = $dbr->select( 'farmer_wiki', array( 'fw_name', 'fw_title', 'fw_description' ), array(), __METHOD__ );
+			$arr = array();
+			foreach( $res as $row ) {
+				$arr[$row->fw_name] = array(
+					'name' => $row->fw_name,
+					'title' => $row->fw_title,
+					'description' => $row->fw_description 
+				);
+			}
+			return $arr;
+		} else {
+			return unserialize( file_get_contents( $this->_getFarmListFile() ) );
+		}
 	}
 
 	/**
 	 * Looks for wiki configuration files and updates the farm digest file
+	 * No utility when using database
 	 */
 	public function updateFarmList() {
+		if ( $this->useDatabase() )
+			return;
+	
 		$directory = new DirectoryIterator( $this->_configDirectory . '/wikis/' );
 		$wikis = array();
 
@@ -415,7 +528,7 @@ class MediaWikiFarmer {
 
 		$farmList = array();
 
-		foreach( $wikis as $k=>$v ) {
+		foreach( $wikis as $k => $v ) {
 			$arr = array();
 			$arr['name'] = $v->name;
 			$arr['title'] = $v->title;
@@ -428,6 +541,9 @@ class MediaWikiFarmer {
 		file_put_contents( $this->_getFarmListFile(), serialize( $farmList ), LOCK_EX );
 	}
 
+	/**
+	 * Update the interwiki table for links to the wikis in the farm
+	 */
 	public function updateInterwikiTable() {
 		$wikis = $this->getFarmList();
 		$dbw = wfGetDB( DB_MASTER );
@@ -443,12 +559,19 @@ class MediaWikiFarmer {
 		$dbw->replace( 'interwiki', 'iw_prefix', $replacements, __METHOD__ );
 	}
 
-	public function getFarmList() {
-		return unserialize( file_get_contents( $this->_getFarmListFile() ) );
+	# Acessors
+	# --------
+
+	public function getConfigPath() {
+		return $this->_configDirectory;
 	}
 
-	protected function _getFarmListFile() {
-		return $this->_configDirectory . '/farmlist';
+	public function getStorageRoot() {
+		return $this->_storageRoot;
+	}
+
+	public function getStorageUrl() {
+		return $this->_storageUrl;
 	}
 
 	public function getDefaultWiki() {
@@ -459,7 +582,15 @@ class MediaWikiFarmer {
 		return $this->_sharedGroups;
 	}
 
+	public function useDatabase() {
+		return $this->_useDatabase;
+	}
+
 	public function useWgConf() {
 		return $this->_useWgConf;
+	}
+
+	public function initCallback() {
+		return $this->_initCallback;
 	}
 }
