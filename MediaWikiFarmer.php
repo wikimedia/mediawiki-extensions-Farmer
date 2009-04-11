@@ -149,22 +149,33 @@ class MediaWikiFarmer {
 	 * This function does all the fun stuff
 	 */
 	public function run() {
+		global $wgCommandLineMode;
+
 		if( !$this->_defaultWiki ) {
 			throw new MWException( 'Default wiki must be set' );
 		}
 
-		// first we try to find the wiki name that was accessed by calling the appropriate function
+		// first we try to find the wiki name that was accessed by calling the
+		// appropriate function
 		if( is_callable( $this->_matchFunction ) ){
 			$wiki = call_user_func( $this->_matchFunction, $this );
 
 			// if our function coudln't identify the wiki from the environment
 			if ( !$wiki ) {
-				$wiki = $this->_defaultWiki;
+				// if the admin passed the --wiki option in command line mode
+				// then use it to get the wiki
+				if( $wgCommandLineMode && defined( 'MW_DB' ) ) {
+					$wiki = MW_DB;
+					if( defined( 'MW_PREFIX' ) && MW_PREFIX )
+						$wiki .= '-' . MW_PREFIX;
+				} else {
+					$wiki = $this->_defaultWiki;
+				}
 			}
 
 			// sanitize wiki name
-			// we force to lcase b/c having all types of case combos would just be confusing to end-user
-			// besides, hostnames are not case sensitive
+			// we force to lcase b/c having all types of case combos would just
+			// be confusing to end-user besides, hostnames are not case sensitive
 			$wiki = strtolower( preg_replace( '/[^[:alnum:_\-]]/', '', $wiki ) );
 
 			// now we have a valid wiki name

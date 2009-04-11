@@ -277,12 +277,14 @@ class MediaWikiFarmer_Wiki {
 		$wgGroupPermissions['sysop']['read'] = true;
 
 		//assign permissions to administrators of this wiki
-		$group = '[farmer]['.$this->_name.'][admin]';
+		if( $farmer->sharingGroups() ){
+			$group = '[farmer]['.$this->_name.'][admin]';
 
-		$grantToWikiAdmins = array( 'read', 'edit' );
+			$grantToWikiAdmins = array( 'read', 'edit' );
 
-		foreach ( $grantToWikiAdmins as $v ) {
-			$wgGroupPermissions[$group][$v] = true;
+			foreach ( $grantToWikiAdmins as $v ) {
+				$wgGroupPermissions[$group][$v] = true;
+			}
 		}
 
 		if( $callback = $farmer->initCallback() ) {
@@ -504,11 +506,22 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	protected function _populateUserGroups() {
-		$db = $this->getDatabase();
 		if ( $this->creator ) {
-			$user = User::newFromname( $this->creator );
-			$group = '[farmer]['.$this->name.'][admin]';
-			$user->addGroup( $group );
+			if( MediaWikiFarmer::getInstance()->sharingGroups() ){
+				$user = User::newFromname( $this->creator );
+				$group = '[farmer]['.$this->name.'][admin]';
+				$user->addGroup( $group );
+			} else {
+				$userId = User::idFromName( $this->creator );
+				if( $userId ) {
+					$insert = array(
+						array( 'ug_user' => $userId, 'ug_group' => 'sysop' ),
+						array( 'ug_user' => $userId, 'ug_group' => 'bureaucrat' ),
+					);
+					$db = $this->getDatabase();
+					$db->insert( 'user_groups', $insert, __METHOD__ );
+				}
+			}
 		}
 	}
 
@@ -527,7 +540,7 @@ class MediaWikiFarmer_Wiki {
 		$prefix = $db->getProperty( 'mTablePrefix' );
 
 		while( $row = $result->fetchRow() ) {
-			if( strpos( $row[0], $prefix ) === 0 ) {
+			if( $prefix == '' || strpos( $row[0], $prefix ) === 0 ) {
 				$query = 'DROP TABLE `'. $row[0] . '`';
 				$db->query( $query, __METHOD__ );
 			}
@@ -535,11 +548,12 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	protected function _deleteWikiGroups() {
-		$db = $this->getDatabase();
-		$query = 'DELETE FROM ' . $db->tableName( 'user_groups' ) . ' WHERE ug_group LIKE ';
-		$query .= '\'[farmer]['.$this->_name.']%\'';
-
-		$db->query( $query, __METHOD__ );
+		if( MediaWikiFarmer::getInstance()->sharingGroups() ){
+			$db = $this->getDatabase();
+			$query = 'DELETE FROM ' . $db->tableName( 'user_groups' ) . ' WHERE ug_group LIKE ';
+			$query .= '\'[farmer]['.$this->_name.']%\'';
+			$db->query( $query, __METHOD__ );
+		}
 	}
 
 	protected function _deleteInterwiki() {
