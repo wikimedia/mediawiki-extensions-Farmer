@@ -36,7 +36,7 @@ class MediaWikiFarmer_Wiki {
 	public function __construct( $wiki, $variables = array() ){
 		$this->_name = $wiki;
 		$this->_variables = $variables;
-    }
+	}
 
 	public function __get( $key ) {
 		if( substr( $key, 0, 2 ) == 'wg' ) {
@@ -46,7 +46,7 @@ class MediaWikiFarmer_Wiki {
 		$property = '_' . $key;
 
 		return isset( $this->$property ) ? $this->$property : null;
-    }
+	}
 
 	public function __set( $k, $v ) {
 		if( in_array( $k, array( 'name', 'title', 'description', 'creator', 'extensions' ) ) ){
@@ -55,7 +55,7 @@ class MediaWikiFarmer_Wiki {
 		} else if ( substr( $k, 0, 2 ) == 'wg' ) {
 			$this->_variables[$k] = $v;
 		}
-    }
+	}
 
 	/**
 	 * How to represent this object as a string
@@ -66,7 +66,7 @@ class MediaWikiFarmer_Wiki {
 
 	public static function factory( $wiki, $variables = array() ) {
 		$farmer = MediaWikiFarmer::getInstance();
-		
+
 		if( $farmer->useDatabase() ) {
 			$dbr = $farmer->getDB( DB_SLAVE );
 			$row = $dbr->selectRow( 'farmer_wiki', '*', array( 'fw_name' => $wiki ), __METHOD__ );
@@ -90,20 +90,20 @@ class MediaWikiFarmer_Wiki {
 				return new MediaWikiFarmer_Wiki( $wiki, $variables );
 			}
 		}
-    }
+	}
 
-    /**
-     * Create a new wiki from settings
-     */
-    public static function newFromParams( $name, $title, $description, $creator, $variables = array() ) {
-        $wiki = self::factory( $name, $variables );
+	/**
+	 * Create a new wiki from settings
+	 */
+	public static function newFromParams( $name, $title, $description, $creator, $variables = array() ) {
+		$wiki = self::factory( $name, $variables );
 
-        $wiki->title = $title;
-        $wiki->description = $description;
-        $wiki->creator = $creator;
-        
-        return $wiki;
-    }
+		$wiki->title = $title;
+		$wiki->description = $description;
+		$wiki->creator = $creator;
+
+		return $wiki;
+	}
 
 	public static function newFromRow( $row ) {
 		$wiki = new self( $row->fw_name );
@@ -130,22 +130,21 @@ class MediaWikiFarmer_Wiki {
 		return $wiki;
 	}
 
-    public function create() {
-        $farmer = MediaWikiFarmer::getInstance();
+	public function create() {
+		$farmer = MediaWikiFarmer::getInstance();
 
-        // save the database prefix accordingly
-        $this->wgDefaultSkin = $farmer->defaultSkin;
+		// save the database prefix accordingly
+		$this->wgDefaultSkin = $farmer->defaultSkin;
 
-        // before we create the database, make sure this database doesn't really exist yet
-        if( !$this->exists() && !$this->databaseExists() ){
-        	$this->save();
-            $this->createDatabase();
-            $farmer->updateFarmList();
-        } else {
-            throw new MWException( wfMsgHtml( 'farmer-error-exists', $this->_name ) );
-        }
-
-    }
+		// before we create the database, make sure this database doesn't really exist yet
+		if( !$this->exists() && !$this->databaseExists() ){
+			$this->save();
+			$this->createDatabase();
+			$farmer->updateFarmList();
+		} else {
+			throw new MWException( wfMsgHtml( 'farmer-error-exists', $this->_name ) );
+		}
+	}
 
 	/**
 	 * Returns whether this wiki exists
@@ -155,7 +154,7 @@ class MediaWikiFarmer_Wiki {
 	 */
 	public function exists() {
 		$farmer = MediaWikiFarmer::getInstance();
-		
+
 		if( $farmer->useDatabase() ) {
 			return (bool)$farmer->getDB( DB_SLAVE )->selectField( 'farmer_wiki', 1, array( 'fw_name' => $this->_name ), __METHOD__ );
 		} else {
@@ -165,7 +164,7 @@ class MediaWikiFarmer_Wiki {
 
 	public function save() {
 		$farmer = MediaWikiFarmer::getInstance();
-		
+
 		if( $farmer->useDatabase() ) {
 			$dbw = $farmer->getDB( DB_MASTER );
 			$new = array(
@@ -199,7 +198,7 @@ class MediaWikiFarmer_Wiki {
 		}
 	}
 
-    public function delete() {
+	public function delete() {
 		if( !$this->exists() )
 			return;
 
@@ -214,20 +213,20 @@ class MediaWikiFarmer_Wiki {
 		}
 	}
 
-    public function databaseExists() {
+	public function databaseExists() {
     	try {
 			$db = $this->getDatabase();
 			return $db->tableExists( 'page' );
-    	} catch( Exception $e ){
-    		return false;	
-    	}
-    }
+		} catch( Exception $e ){
+			return false;	
+		}
+	}
 
-    /**
-     * Performs actions necessary to initialize the environment so MediaWiki can
-     * use this wiki
-     */
-    public function initialize() {
+	/**
+	 * Performs actions necessary to initialize the environment so MediaWiki can
+	 * use this wiki
+	 */
+	public function initialize() {
 		//loop over defined variables and set them in the global scope
 		foreach( $this->_variables as $k => $v ) {
 			$GLOBALS[$k] = $v;
@@ -265,7 +264,7 @@ class MediaWikiFarmer_Wiki {
 			list( $wgDBname, $wgDBprefix ) = $farmer->splitWikiDB( $this->name );
 		}
 
-        //we allocate permissions to the necessary groups
+		//we allocate permissions to the necessary groups
 
 		foreach ( $this->_permissions['*'] as $k=>$v ) {
 			$wgGroupPermissions['*'][$k] = $v;
@@ -293,23 +292,22 @@ class MediaWikiFarmer_Wiki {
 				trigger_error( '$wgFarmerSettings[\'initCallback\'] is not callable', E_USER_WARNING );
 			}
 		}
-
 	}
 
-    protected static function _getWikiConfigPath() {
+	protected static function _getWikiConfigPath() {
 		$farmer = MediaWikiFarmer::getInstance();
 		return $farmer->getConfigPath() . '/wikis/';
-    }
+	}
 
-    protected static function _getWikiConfigFile( $wiki ) {
+	protected static function _getWikiConfigFile( $wiki ) {
 		return self::_getWikiConfigPath() . $wiki . '.farmer';
 	}
 
-    public static function sanitizeName( $name ) {
+	public static function sanitizeName( $name ) {
 		return strtolower( preg_replace( '/[^[:alnum:]]/', '', $name ) );
 	}
 
-    public static function sanitizeTitle( $title ) {
+	public static function sanitizeTitle( $title ) {
 		return preg_replace( '/[^[:alnum:]]/', '', $title );
 	}
 
@@ -335,7 +333,7 @@ class MediaWikiFarmer_Wiki {
 		return $url;
 	}
 
-    public function isDefaultWiki(){
+	public function isDefaultWiki(){
 		return $this->_name == MediaWikiFarmer::getInstance()->getDefaultWiki();
 	}
 
@@ -343,35 +341,35 @@ class MediaWikiFarmer_Wiki {
 	# Permission stuff
 	# ----------------
 
-    public function setPermission( $group, $permission, $value ) {
-		if (!array_key_exists($group, $this->_permissions)) {
+	public function setPermission( $group, $permission, $value ) {
+		if( !array_key_exists( $group, $this->_permissions ) ) {
 			$this->_permissions[$group] = array();
 		}
 
 		$this->_permissions[$group][$permission] = $value ? true : false;
-    }
+	}
 
-    public function setPermissionForAll( $permission, $value ) {
+	public function setPermissionForAll( $permission, $value ) {
 		$this->setPermission( '*', $permission, $value );
 	}
 
-    public function setPermissionForUsers( $permission, $value ) {
+	public function setPermissionForUsers( $permission, $value ) {
 		$this->setPermission( 'user', $permission, $value );
 	}
 
-    public function getPermission( $group, $permission ) {
+	public function getPermission( $group, $permission ) {
 		return isset( $this->_permissions[$group][$permission] ) ? $this->_permissions[$group][$permission] : false;
 	}
 
-    public function getPermissionForAll( $permission ) {
+	public function getPermissionForAll( $permission ) {
 		return $this->getPermission( '*', $permission );
 	}
 
-    public function getPermissionForUsers( $permission ) {
+	public function getPermissionForUsers( $permission ) {
 		return $this->getPermission( 'user', $permission );
 	}
 
-    public function userIsAdmin( $user ){
+	public function userIsAdmin( $user ){
 		$adminGroup = '[farmer]['.$this->_name.'][admin]';
 
 		return in_array( $adminGroup, $user->getGroups() );
@@ -478,12 +476,12 @@ class MediaWikiFarmer_Wiki {
 		$article->updateRevisionOn( $db, $revision );
 
 		//site_stats table entry
-		$db->insert( 'site_stats',
-				array( 'ss_row_id'		=> 1,
-					   'ss_total_views'   => 0,
-					   'ss_total_edits'   => 0,
-					   'ss_good_articles' => 0 ) );
-
+		$db->insert( 'site_stats', array(
+			'ss_row_id' => 1,
+			'ss_total_views' => 0,
+			'ss_total_edits' => 0,
+			'ss_good_articles' => 0
+		) );
 	}
 
 	/**
