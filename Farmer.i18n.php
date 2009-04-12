@@ -3810,6 +3810,14 @@ $messages['os'] = array(
 	'farmer-no' => 'Нæ',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'farmer-about' => 'Iwwer',
+	'farmer-mainpage' => 'Haaptblatt',
+);
+
 /** Plautdietsch (Plautdietsch)
  * @author Slomox
  */
