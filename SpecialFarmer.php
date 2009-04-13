@@ -107,8 +107,6 @@ class SpecialFarmer extends SpecialPage {
 	protected function _executeCreate( $wgFarmer, $wiki ){
 		global $wgOut, $wgUser, $wgRequest;
 
-		$confirmaccount = wfMsg( 'farmer-button-confirm' );
-
 		if( !$wgFarmer->getActiveWiki()->isDefaultWiki() ) {
 			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-notavailable' );
 			$wgOut->addWikiMsg( 'farmer-notavailable-text' );
@@ -120,17 +118,21 @@ class SpecialFarmer extends SpecialPage {
 			return;
 		}
 
-		$name = MediaWikiFarmer_Wiki::sanitizeName( $wgRequest->getVal( 'name', $wiki ) );
-		$title = MediaWikiFarmer_Wiki::sanitizeTitle( $wgRequest->getVal( 'wikititle' ) );
-		$description = $wgRequest->getVal( 'description' );
+		$name = MediaWikiFarmer_Wiki::sanitizeName( $wgRequest->getVal( 'wpName', $wiki ) );
+		$title = MediaWikiFarmer_Wiki::sanitizeTitle( $wgRequest->getVal( 'wpTitle' ) );
+		$description = $wgRequest->getVal( 'wpDescription', '' );
+		$reason = $wgRequest->getVal( 'wpReason' );
 		$action = $this->getTitle( 'create' )->escapeLocalURL();
 
 		//if something was POST'd
 		if( $wgRequest->wasPosted() ){
 			//we create the wiki if the user pressed 'Confirm'
-			if( $wgRequest->getCheck( 'confirm' ) ) {
+			if( $wgRequest->getCheck( 'wpConfirm' ) ) {
 				$wikiObj = MediaWikiFarmer_Wiki::newFromParams( $name, $title, $description, $wgUser->getName() );
 				$wikiObj->create();
+
+				$log = new LogPage( 'farmer' );
+				$log->addEntry( 'create', $this->getTitle(), $reason, array( $name ) );
 
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-wikicreated' );
 				$wgOut->addWikiMsg( 'farmer-wikicreated-text', $wikiObj->getUrl( wfUrlencode( wfMsgNoDB( 'mainpage' ) ) ) );
@@ -147,25 +149,33 @@ class SpecialFarmer extends SpecialPage {
 				}
 
 				$url = $wiki->getUrl( '' );
-				$wgOut->wrapWikiMsg(
-					"== $1 ==\n; $2\n; $3\n; $4\n$5",
-					'farmer-confirmsetting',
-					array( 'farmer-confirmsetting-name', $name ),
-					array( 'farmer-confirmsetting-title', $title ),
-					array( 'farmer-confirmsetting-description', $description ),
-					array( 'farmer-confirmsetting-text', $name, $title, $url )
+				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-confirmsetting' );
+
+				$wgOut->addHtml( Xml::openElement( 'table', array( 'class' => 'wikitable' ) ) . "\n" .
+					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+						wfMsgExt( 'farmer-confirmsetting-name', 'parseinline' ) ) . Xml::element( 'td', array(), $name ) ) . "\n" .
+					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+						wfMsgExt( 'farmer-confirmsetting-title', 'parseinline' ) ) . Xml::element( 'td', array(), $title ) ) . "\n" .
+					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+						wfMsgExt( 'farmer-confirmsetting-description', 'parseinline' ) ) . Xml::element( 'td', array(), $description ) ) . "\n" .
+					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+						wfMsgExt( 'farmer-confirmsetting-reason', 'parseinline' ) ) . Xml::element( 'td', array(), $reason ) ) . "\n" .
+					Xml::closeElement( 'table' )
 				);
+				$wgOut->addWikiMsg( 'farmer-confirmsetting-text', $name, $title, $url );
 
 				$nameaccount = htmlspecialchars( $name );
 				$nametitle = htmlspecialchars( $title );
 				$namedescript = htmlspecialchars( $description );
+				$confirmaccount = wfMsgHtml( 'farmer-button-confirm' );
 				$wgOut->addHTML("
 
 <form id=\"farmercreate2\" method=\"post\" action=\"$action\">
-<input type=\"hidden\" name=\"name\" value=\"{$nameaccount}\" />
-<input type=\"hidden\" name=\"wikititle\" value=\"{$nametitle}\" />
-<input type=\"hidden\" name=\"description\" value=\"{$namedescript}\" />
-<input type=\"submit\" name=\"confirm\" value=\"{$confirmaccount}\" />
+<input type=\"hidden\" name=\"wpName\" value=\"{$nameaccount}\" />
+<input type=\"hidden\" name=\"wpTitle\" value=\"{$nametitle}\" />
+<input type=\"hidden\" name=\"wpDescription\" value=\"{$namedescript}\" />
+<input type=\"hidden\" name=\"wpReason\" value=\"{$reason}\" />
+<input type=\"submit\" name=\"wpConfirm\" value=\"{$confirmaccount}\" />
 </form>"
 				);
 
@@ -194,33 +204,20 @@ class SpecialFarmer extends SpecialPage {
 
 		$token = htmlspecialchars( $wgUser->editToken() );
 
-		$wgOut->addHTML( "
-<form id='farmercreate1' method='post' action=\"$action\">
-	<table>
-		<tr>
-			<td align=\"right\">". wfMsg( 'farmer-createwiki-user' ) . "</td>
-			<td align=\"left\"><b>{$wgUser->getName()}</b></td>
-		</tr>
-		<tr>
-			<td align='right'>". wfMsg( 'farmer-createwiki-name' ) . "</td>
-			<td align='left'><input tabindex='1' type='text' size='20' name='name' value=\"" . htmlspecialchars( $name ) . "\" /></td>
-	</tr>
-	<tr>
-		<td align='right'>". wfMsg( 'farmer-createwiki-title' ) ."</td>
-		<td align='left'><input tabindex='1' type='text' size='20' name='wikititle' value=\"" . htmlspecialchars( $title ) . "\"/></td>
-	</tr>
-	<tr>
-		 <td align='right'>". wfMsg( 'farmer-createwiki-description' ) ."</td>
-		 <td align='left'><textarea tabindex='1' cols=\"40\" rows=\"5\" name='description'>" . htmlspecialchars( $description ) . "</textarea></td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td align='right'><input type='submit' name='submit' value=\"". wfMsgHtml( 'farmer-button-submit' ) . "\" /></td>
-		</tr>
-	</table>
-	<input type='hidden' name='token' value=\"$token\" />
-</form>");
-
+		$wgOut->addHTML( 
+			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $action ) ) . "\n" .
+			Xml::buildForm(
+				array(
+					'farmer-createwiki-user' => Xml::element( 'b', array(), $wgUser->getName() ),
+					'farmer-createwiki-name' => Xml::input( 'wpName', 20, $name ),
+					'farmer-createwiki-title' => Xml::input( 'wpTitle', 20, $title ),
+					'farmer-createwiki-description' => Xml::textarea( 'wpDescription', $description ),
+					'farmer-createwiki-reason' => Xml::input( 'wpReason', 20, $reason ),
+				), 'farmer-button-submit'
+			) . "\n" .
+			Xml::hidden( 'token', $token ) . "\n" .
+			Xml::closeElement( 'form' )
+		);
 	}
 
 	protected function _executeUpdateList( $wgFarmer ) {
@@ -233,7 +230,7 @@ class SpecialFarmer extends SpecialPage {
 
 		$wgFarmer->updateFarmList();
 		$wgFarmer->updateInterwikiTable();
-		$wgOut->wrapWikiMsg( '<div class="successbox">$1</div>', 'farmer-updatedlist' );
+		$wgOut->wrapWikiMsg( '<div class="successbox">$1</div><br clear="all" />', 'farmer-updatedlist' );
 		$wgOut->returnToMain( null, $this->getTitle() );
 	}
 
@@ -250,29 +247,50 @@ class SpecialFarmer extends SpecialPage {
 			return;
 		}
 
-		if( ( $wiki = $wgRequest->getVal( 'wiki' ) ) && $wiki != '-1' ) {
-			$wgOut->wrapWikiMsg( "== $1 ==", array( 'farmer-deleting', $wiki ) );
+		if( $wgRequest->wasPosted() && ( $wiki = $wgRequest->getVal( 'wpWiki' ) ) && $wiki != '-1' ) {
+			if( $wgRequest->getCheck( 'wpConfirm' ) ) {
+				$wgOut->wrapWikiMsg( '== $1 ==', array( 'farmer-deleting', $wiki ) );
 
-			$deleteWiki = MediaWikiFarmer_Wiki::factory( $wiki );
+				$log = new LogPage( 'farmer' );
+				$log->addEntry( 'delete', $this->getTitle(), $wgRequest->getVal( 'wpReason' ), array( $wiki ) );
 
-			$deleteWiki->deleteWiki();
+				$deleteWiki = MediaWikiFarmer_Wiki::factory( $wiki );
+				$deleteWiki->deleteWiki();
+			} else {
+				$wgOut->addWikiMsg( 'farmer-delete-confirm-wiki', $wiki );
+				$wgOut->addHTML(
+					Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'deleteWiki' ) ) . "\n" .
+					Xml::buildForm( array(
+							'farmer-delete-reason' => Xml::input( 'wpReason', false, $wgRequest->getVal( 'wpReason' ) ),
+							'farmer-delete-confirm' => Xml::check( 'wpConfirm' )
+						), 'farmer-delete-form-submit' ) . "\n" .
+					Xml::hidden( 'wpWiki', $wiki ) . "\n" .
+					Xml::closeElement( 'form' )
+				);
+			}
+			return;
 		}
 
 		$list = $wgFarmer->getFarmList();
 
 		$wgOut->wrapWikiMsg( "== $1 ==\n$2", 'farmer-delete-title', 'farmer-delete-text' );
 
-		$wgOut->addHTML('<form method="post" name="deleteWiki"><select name="wiki"><option value="-1">'.wfMsgExt( 'farmer-delete-form', 'parseinline' )."</option>\n" );
-
+		$select = new XmlSelect( 'wpWiki', false, $wgRequest->getVal( 'wpWiki' ) );
+		$select->addOption( wfMsg( 'farmer-delete-form' ), '-1' );
 		foreach ( $list as $wiki ) {
 			if( $wiki['name'] != $wgFarmer->getDefaultWiki() ) {
-				$name = htmlspecialchars( $wiki['name'] );
-				$title = htmlspecialchars( $wiki['title'] );
-				$wgOut->addHTML("<option value=\"$name\">$name - $title</option>\n" );
+				$name = $wiki['name'];
+				$title = $wiki['title'];
+				$select->addOption( "$name - $title", $name );
 			}
 		}
 
-		$wgOut->addHTML('</select><input type="submit" name="submit" value="'. wfMsgExt( 'farmer-delete-form-submit', 'parseinline' ).'" /></form>');
+		$wgOut->addHTML(
+			Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'deleteWiki' ) ) . "\n" .
+			$select->getHTML() . "\n" .
+			Xml::submitButton( wfMsg( 'farmer-delete-form-submit' ) ) . "\n" .
+			Xml::closeElement( 'form' )
+		);
 
 	}
 

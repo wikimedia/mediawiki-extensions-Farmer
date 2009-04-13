@@ -18,7 +18,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Farmer',
 	'description' => 'Manage a MediaWiki farm',
 	'descriptionmsg' => 'farmer-desc',
-	'version' => '0.0.5',
+	'version' => '0.0.6',
 );
 
 /**
@@ -95,3 +95,10 @@ $wgGroupPermissions['*']['farmeradmin'] = false;
 $wgGroupPermissions['sysop']['farmeradmin'] = true;
 $wgGroupPermissions['*']['createwiki'] = false;
 $wgGroupPermissions['sysop']['createwiki'] = true;
+
+# New log
+$wgLogTypes[] = 'farmer';
+$wgLogNames['farmer'] = 'farmer-log-name';
+$wgLogHeaders['farmer'] = 'farmer-log-header';
+$wgLogActions['farmer/create'] = 'farmer-log-create';
+$wgLogActions['farmer/delete'] = 'farmer-log-delete';
