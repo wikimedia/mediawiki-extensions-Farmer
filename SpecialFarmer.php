@@ -249,7 +249,7 @@ class SpecialFarmer extends SpecialPage {
 
 		if( $wgRequest->wasPosted() && ( $wiki = $wgRequest->getVal( 'wpWiki' ) ) && $wiki != '-1' ) {
 			if( $wgRequest->getCheck( 'wpConfirm' ) ) {
-				$wgOut->wrapWikiMsg( '== $1 ==', array( 'farmer-deleting', $wiki ) );
+				$wgOut->wrapWikiMsg( '<div class="successbox">$1</div>', array( 'farmer-deleting', $wiki ) );
 
 				$log = new LogPage( 'farmer' );
 				$log->addEntry( 'delete', $this->getTitle(), $wgRequest->getVal( 'wpReason' ), array( $wiki ) );
