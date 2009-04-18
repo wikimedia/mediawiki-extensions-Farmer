@@ -16,9 +16,9 @@ $messages['en'] = array (
 	'farmercreatesitename'                   => 'Site name',
 	'farmercreatenextstep'                   => 'Next step',
 	'farmernewwikimainpage'                  =>  "== Welcome to your wiki ==
-If you are reading this, your new wiki has been installed  correctly.
+If you are reading this, your new wiki has been installed correctly.
 You can [[Special:Farmer|customize your wiki]].",
-	'farmerwikiurl'                          =>  'http://$1.myfarm',
+	'farmerwikiurl'                          => 'http://$1.myfarm',
 	'farmerinterwikiurl'                     => 'http://$1.myfarm/$2',
 	'farmer-about'                           => 'About',
 	'farmer-about-text'                      => 'MediaWiki Farmer allows you to manage a farm of MediaWiki wikis.',
