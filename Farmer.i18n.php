@@ -4211,7 +4211,7 @@ Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-permissiondenied' => 'Permissão negada',
 	'farmer-permissiondenied-text' => 'Não tem permissão para apagar um wiki da "farm"',
 	'farmer-permissiondenied-text1' => 'Não tem permissão para aceder a esta página',
-	'farmer-deleting' => 'Apagando $1',
+	'farmer-deleting' => 'O wiki "$1" foi eliminado',
 	'farmer-delete-confirm' => 'Confirmo que pretendo eliminar este wiki',
 	'farmer-delete-confirm-wiki' => "Wiki a apagar: '''$1'''.",
 	'farmer-delete-reason' => 'Motivo da eliminação:',
@@ -4467,6 +4467,7 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Innv
  * @author Kaganer
  * @author Александр Сигачёв
  */
@@ -4505,6 +4506,7 @@ $messages['ru'] = array(
 	'farmer-confirmsetting-name' => 'Имя',
 	'farmer-confirmsetting-title' => 'Заголовок',
 	'farmer-confirmsetting-description' => 'Описание',
+	'farmer-confirmsetting-reason' => 'Причина',
 	'farmer-description' => 'Описание',
 	'farmer-confirmsetting-text' => "Ваша вики '''$1''' будет доступна по http://$1.myfarm. Пространство имён проекта будет '''$2'''.  Ссылки на это пространство имён будут вида '''<nowiki>[[$2:Название страницы]]</nowiki>'''. Если это, чего вы хотите, нажмите кнопку «подтвердить» ниже.",
 	'farmer-button-confirm' => 'Подтвердить',
@@ -4519,6 +4521,7 @@ $messages['ru'] = array(
 	'farmer-createwiki-name' => 'Имя вики',
 	'farmer-createwiki-title' => 'Заголовок вики',
 	'farmer-createwiki-description' => 'Описание',
+	'farmer-createwiki-reason' => 'Причина',
 	'farmer-updatedlist' => 'Обновлённый список',
 	'farmer-notaccessible' => 'не доступна',
 	'farmer-notaccessible-test' => 'Эта функция доступна только на родительской вике фермы',
@@ -4526,6 +4529,8 @@ $messages['ru'] = array(
 	'farmer-permissiondenied-text' => 'У вас нет разрешения удалять вики с фермы',
 	'farmer-permissiondenied-text1' => 'У вас нет разрешения на доступ к этой странице',
 	'farmer-deleting' => 'Удаление $1',
+	'farmer-delete-confirm-wiki' => "Вики для удаления: '''$1'''.",
+	'farmer-delete-reason' => 'Причина удаления:',
 	'farmer-delete-title' => 'Удаление вики',
 	'farmer-delete-text' => 'Пожалуйста, выберите из списка вики, которую вы хотите удалить',
 	'farmer-delete-form' => 'Выбор вики',
@@ -4572,6 +4577,8 @@ $messages['ru'] = array(
 	'farmer-extensions-register-includefile' => 'Include-файл',
 	'farmer-error-exists' => 'Невозможно создать вики. Она уже существует: $1',
 	'farmer-error-noextwrite' => 'Невозможно выписать файл расширения:',
+	'farmer-log-create' => 'создана вики «$2»',
+	'farmer-log-delete' => 'удалена вики «$2»',
 );
 
 /** Sassaresu (Sassaresu)
