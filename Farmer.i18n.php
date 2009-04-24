@@ -1854,10 +1854,12 @@ $messages['hak'] = array(
 );
 
 /** Hawaiian (Hawai`i)
+ * @author Kalani
  * @author Singularity
  */
 $messages['haw'] = array(
 	'farmer-about' => 'E pili ana',
+	'farmer-mainpage' => 'Papa kinohi',
 	'farmer-basic-permission-upload' => 'Ho‘ouka i nā waihona',
 	'farmer-extensions-register-name' => 'Inoa',
 );
@@ -1905,6 +1907,7 @@ $messages['he'] = array(
 	'farmer-confirmsetting-name' => 'שם',
 	'farmer-confirmsetting-title' => 'כותרת',
 	'farmer-confirmsetting-description' => 'תיאור',
+	'farmer-confirmsetting-reason' => 'סיבה',
 	'farmer-description' => 'תיאור',
 	'farmer-confirmsetting-text' => "הוויקי שלכם , '''$1''', יהיה נגיש דרך http://$1.myfarm.
 מרחב השם של המיזם יהיה '''$2'''.
@@ -1929,13 +1932,17 @@ $messages['he'] = array(
 	'farmer-createwiki-name' => 'שם הוויקי',
 	'farmer-createwiki-title' => 'כותרת הוויקי',
 	'farmer-createwiki-description' => 'תיאור',
+	'farmer-createwiki-reason' => 'סיבה',
 	'farmer-updatedlist' => 'רשימה מעודכנת',
 	'farmer-notaccessible' => 'לא נגיש',
 	'farmer-notaccessible-test' => 'תכונה זו זמינה עבור הוויקי הראשי בחווה בלבד',
 	'farmer-permissiondenied' => 'הגישה נדחתה',
 	'farmer-permissiondenied-text' => 'אין לכם הרשאה למחוק ויקי מהחווה',
 	'farmer-permissiondenied-text1' => 'אין לכם הרשאות גישה לדף זה',
-	'farmer-deleting' => 'מחיקת $1',
+	'farmer-deleting' => 'הוויקי "$1" נמחק',
+	'farmer-delete-confirm' => 'אנו מאשרים כי ברצוננו למחוק את הוויקי הזה',
+	'farmer-delete-confirm-wiki' => "ויקי למחיקה: '''$1'''.",
+	'farmer-delete-reason' => 'סיבת המחיקה:',
 	'farmer-delete-title' => 'מחיקת הוויקי',
 	'farmer-delete-text' => 'אנא בחרו מהרשימה שלהלן את הוויקי שברצונכם למחוק',
 	'farmer-delete-form' => 'בחירת ויקי',
@@ -1984,6 +1991,10 @@ $messages['he'] = array(
 	'farmer-extensions-register-includefile' => 'קובץ להכללה',
 	'farmer-error-exists' => 'לא ניתן ליצור ויקי.  הוויקי כבר קיים: $1',
 	'farmer-error-noextwrite' => 'לא ניתן לכתוב קובץ הרחבה:',
+	'farmer-log-name' => 'יומן חוות אתרי הוויקי',
+	'farmer-log-header' => 'זהו יומן השינויים שנערכו בחוות אתרי הוויקי.',
+	'farmer-log-create' => 'יצר את הוויקי "$2"',
+	'farmer-log-delete' => 'מחק את הוויקי "$2"',
 );
 
 /** Hindi (हिन्दी)
