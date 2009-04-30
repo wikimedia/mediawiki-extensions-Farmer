@@ -3121,6 +3121,7 @@ Dir kënnt [[Special:Farmer|är Wiki elo astellen]].',
 	'farmer-basic-permission-user-text' => 'Dës Rechter kréien all déi Persounen déi op dëser Wiki ageloggt sinn',
 	'farmer-setpermission' => 'Rechter configuréieren',
 	'farmer-extensions' => 'Aktiv Erweiderungen',
+	'farmer-extensions-button' => 'Aktiv Erweiderungen astellen',
 	'farmer-extensions-extension-denied' => 'Dir kënnt dës Fonctionalitéit net benotzen.
 Dir musst dofir Member vum Grupp vun den Administrateure sinn.',
 	'farmer-extensions-invalid' => 'Ongëlteg Erweiderung',
@@ -3129,6 +3130,7 @@ Dir musst dofir Member vum Grupp vun den Administrateure sinn.',
 	'farmer-extensions-register' => 'Erweiderung ofspäicheren',
 	'farmer-extensions-register-name' => 'Numm',
 	'farmer-error-exists' => "D'Wiki kann net gemaach ginn. Et gëtt se schonn: $1",
+	'farmer-log-create' => 'huet d\'Wiki "$2" ugeluecht',
 	'farmer-log-delete' => 'huet d\'Wiki "$2" geläscht',
 );
 
