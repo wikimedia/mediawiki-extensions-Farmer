@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Internationalisation file for Farmer extension.
  *
@@ -766,6 +766,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Als-Holder
  * @author ChrisiPK
+ * @author Jan Luca
  * @author Leithian
  * @author Melancholie
  * @author MichaelFrey
@@ -813,6 +814,7 @@ Bitte kehre zurück und versuche es mit einem anderen Namen",
 	'farmer-confirmsetting-name' => 'Name',
 	'farmer-confirmsetting-title' => 'Titel',
 	'farmer-confirmsetting-description' => 'Beschreibung',
+	'farmer-confirmsetting-reason' => 'Grund',
 	'farmer-description' => 'Beschreibung',
 	'farmer-confirmsetting-text' => "Dein Wiki – '''$1''' – wird über http://$1.meineWikiFarm/ erreichbar sein.
 Der Projektnamensraum wird '''$2''' heißen.
@@ -836,6 +838,7 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-createwiki-name' => 'Wikiname',
 	'farmer-createwiki-title' => 'Wikititel',
 	'farmer-createwiki-description' => 'Beschreibung',
+	'farmer-createwiki-reason' => 'Grund',
 	'farmer-updatedlist' => 'Liste aktualisieren',
 	'farmer-notaccessible' => 'Nicht verfügbar',
 	'farmer-notaccessible-test' => 'Dieses Feature ist nur im Elternwiki der Farm verfügbar',
@@ -843,6 +846,9 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-permissiondenied-text' => 'Es ist dir nicht gestattet, ein Wiki von der Farm zu löschen',
 	'farmer-permissiondenied-text1' => 'Es ist dir nicht gestattet, auf diese Seite zuzugreifen',
 	'farmer-deleting' => 'Das Wiki $1 wurde gelöscht',
+	'farmer-delete-confirm' => 'Ich bestätige, dass dieses Wiki gelöscht wird',
+	'farmer-delete-confirm-wiki' => "Dieses Wiki wird gelöscht: '''$1'''.",
+	'farmer-delete-reason' => 'Grund der Löschung:',
 	'farmer-delete-title' => 'Wiki löschen',
 	'farmer-delete-text' => 'Bitte wähle das Wiki das du löschen willst aus der Liste aus',
 	'farmer-delete-form' => 'Wähle ein Wiki',
@@ -890,6 +896,10 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 	'farmer-extensions-register-includefile' => 'Datei einbinden',
 	'farmer-error-exists' => 'Das Wiki kann nicht angelegt werden, weil es bereits existiert: $1',
 	'farmer-error-noextwrite' => 'Schreiben der Erweiterungsdatei nicht möglich:',
+	'farmer-log-name' => 'Wiki-Farm Logbuch',
+	'farmer-log-header' => 'Dieses Logbuch zeigt die Änderung an der Wiki-Farm.',
+	'farmer-log-create' => 'Wiki "$2" erstellt',
+	'farmer-log-delete' => 'Wiki "$2" gelöscht',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
