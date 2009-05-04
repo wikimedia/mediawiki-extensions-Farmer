@@ -276,7 +276,7 @@ class MediaWikiFarmer {
 		if( is_null( $url ) )
 			$url = $_SERVER['REQUEST_URI'];
 			
-		if ( $result = parse_url( $url ) ) {
+		if ( $result = parse_url( $url, PHP_URL_HOST ) ) {
 			if ( $host = $result['host'] ) {
 				if ( preg_match( $farmer->_matchRegExp, $host, $matches ) === 1 ) {
 					if ( array_key_exists( $farmer->_matchOffset, $matches ) ) {
