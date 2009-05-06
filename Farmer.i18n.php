@@ -4291,6 +4291,8 @@ Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-extensions-register-includefile' => 'Ficheiro de Inclusão',
 	'farmer-error-exists' => 'Não é possível criar wiki. Este já existe: $1',
 	'farmer-error-noextwrite' => 'Não foi possível escrever para ficheiro de extensão:',
+	'farmer-log-name' => 'Registo do aglomerado de wikis',
+	'farmer-log-header' => 'Este é um registo de alterações feitas no aglomerado de wikis.',
 	'farmer-log-create' => 'criou o wiki "$2"',
 	'farmer-log-delete' => 'eliminou o wiki "$2"',
 );
