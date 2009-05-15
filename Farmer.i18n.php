@@ -1812,6 +1812,13 @@ Wänn e Erwyterig regischtriert isch, chenne alli Wiki si bruuche.',
 	'farmer-log-delete' => 'het s Wiki „$2“ glescht',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Dineshjk
+ */
+$messages['gu'] = array(
+	'farmer-createwiki-user' => 'સભ્ય નામ:',
+);
+
 /** Manx (Gaelg)
  * @author MacTire02
  */

@@ -25,6 +25,11 @@ $aliases['arz'] = array(
 	'Farmer' => array( 'مزارع' ),
 );
 
+/** Gujarati (ગુજરાતી) */
+$aliases['gu'] = array(
+	'Farmer' => array( 'ખેડુત' ),
+);
+
 /** Interlingua (Interlingua) */
 $aliases['ia'] = array(
 	'Farmer' => array( 'Fermero' ),
