@@ -4498,12 +4498,19 @@ $messages['ro'] = array(
  */
 $messages['roa-tara'] = array(
 	'farmercreatesitename' => "Nome d'u site",
+	'farmer-list-wiki' => 'Elenghe de le Uicchi',
 	'farmer-notavailable' => 'Non disponibbile',
 	'farmer-wikicreated' => 'Uicchi ccrejate',
 	'farmer-confirmsetting-name' => 'Nome',
 	'farmer-confirmsetting-title' => 'Titele',
 	'farmer-confirmsetting-description' => 'Descrizione',
 	'farmer-description' => 'Descrizione',
+	'farmer-createwiki-form-help' => 'Ajiute',
+	'farmer-createwiki-description' => 'Descrizione',
+	'farmer-createwiki-reason' => 'Mutive',
+	'farmer-delete-form-submit' => 'Scangille',
+	'farmer-basic-title1' => 'Titele',
+	'farmer-basic-description' => 'Descrizione',
 );
 
 /** Russian (Русский)
