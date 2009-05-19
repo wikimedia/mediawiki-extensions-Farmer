@@ -710,13 +710,27 @@ Dostupan je na $1',
 /** Catalan (Català)
  * @author Jordi Roqué
  * @author SMP
+ * @author Solde
  */
 $messages['ca'] = array(
+	'farmercreatesitename' => 'Nom del lloc',
+	'farmercreatenextstep' => 'Següent pas',
 	'farmer-about' => 'Quant a',
+	'farmer-createwiki' => 'Crea una wiki',
+	'farmer-confirmsetting-name' => 'Nom',
+	'farmer-confirmsetting-title' => 'Títol',
+	'farmer-confirmsetting-description' => 'Descripció',
+	'farmer-confirmsetting-reason' => 'Raó',
+	'farmer-description' => 'Descripció',
 	'farmer-button-submit' => 'Tramet',
+	'farmer-createwiki-form-title' => 'Crea una wiki',
+	'farmer-createwiki-description' => 'Descripció',
+	'farmer-createwiki-reason' => 'Motiu',
 	'farmer-basic-title1' => 'Títol',
+	'farmer-basic-description' => 'Descripció',
 	'farmer-yes' => 'S&iacute;',
 	'farmer-no' => 'No',
+	'farmer-extensions-register-name' => 'Nom',
 );
 
 /** Chamorro (Chamoru)
