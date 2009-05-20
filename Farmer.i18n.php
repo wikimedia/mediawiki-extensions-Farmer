@@ -137,6 +137,8 @@ Once an extension is registered, all wikis will be able to use it.',
 	'farmer-log-header'                      => 'This is a log of changes made to the wiki farm.',
 	'farmer-log-create'                      => 'created the wiki "$2"',
 	'farmer-log-delete'                      => 'deleted the wiki "$2"',
+	'right-farmeradmin'                      => 'Manage the wiki farm',
+	'right-createwiki'                       => 'Create wikis in the wiki farm',
 );
 
 /** Message documentation (Message documentation)

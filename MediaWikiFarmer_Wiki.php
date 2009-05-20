@@ -33,13 +33,13 @@ class MediaWikiFarmer_Wiki {
 	/**
 	 * Creates a wiki instance from a wiki name
 	 */
-	public function __construct( $wiki, $variables = array() ){
+	public function __construct( $wiki, $variables = array() ) {
 		$this->_name = $wiki;
 		$this->_variables = $variables;
 	}
 
 	public function __get( $key ) {
-		if( substr( $key, 0, 2 ) == 'wg' ) {
+		if ( substr( $key, 0, 2 ) == 'wg' ) {
 			return isset( $this->_variables[$key] ) ? $this->_variables[$key] : null;
 		}
 
@@ -49,7 +49,7 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	public function __set( $k, $v ) {
-		if( in_array( $k, array( 'name', 'title', 'description', 'creator', 'extensions' ) ) ){
+		if ( in_array( $k, array( 'name', 'title', 'description', 'creator', 'extensions' ) ) ) {
 			$property = '_' . $k;
 			$this->$property = $v;
 		} else if ( substr( $k, 0, 2 ) == 'wg' ) {
@@ -67,10 +67,10 @@ class MediaWikiFarmer_Wiki {
 	public static function factory( $wiki, $variables = array() ) {
 		$farmer = MediaWikiFarmer::getInstance();
 
-		if( $farmer->useDatabase() ) {
+		if ( $farmer->useDatabase() ) {
 			$dbr = $farmer->getDB( DB_SLAVE );
 			$row = $dbr->selectRow( 'farmer_wiki', '*', array( 'fw_name' => $wiki ), __METHOD__ );
-			if( $row === false ) {
+			if ( $row === false ) {
 				return new MediaWikiFarmer_Wiki( $wiki, $variables );
 			} else {
 				return self::newFromRow( $row );
@@ -78,10 +78,10 @@ class MediaWikiFarmer_Wiki {
 		} else {
 			$file = self::_getWikiConfigFile( $wiki );
 
-			if( is_readable( $file ) ){
+			if ( is_readable( $file ) ) {
 				$content = file_get_contents( $file );
 				$obj = unserialize( $content );
-				if( $obj instanceof MediaWikiFarmer_Wiki ){
+				if ( $obj instanceof MediaWikiFarmer_Wiki ) {
 					return $obj;
 				} else {
 					throw new MWException( 'Stored wiki is corrupt.' );
@@ -123,7 +123,7 @@ class MediaWikiFarmer_Wiki {
 			array( 'farmer_wiki_extension' => array( 'LEFT JOIN', 'fwe_extension = fe_id' ) )
 		);
 		$wiki->_extensions = array();
-		foreach( $res as $row ) {
+		foreach ( $res as $row ) {
 			$wiki->_extensions[$row->fe_name] = MediaWikiFarmer_Extension::newFromRow( $row );
 		}
 
@@ -137,7 +137,7 @@ class MediaWikiFarmer_Wiki {
 		$this->wgDefaultSkin = $farmer->defaultSkin;
 
 		// before we create the database, make sure this database doesn't really exist yet
-		if( !$this->exists() && !$this->databaseExists() ){
+		if ( !$this->exists() && !$this->databaseExists() ) {
 			$this->save();
 			$this->createDatabase();
 			$farmer->updateFarmList();
@@ -155,7 +155,7 @@ class MediaWikiFarmer_Wiki {
 	public function exists() {
 		$farmer = MediaWikiFarmer::getInstance();
 
-		if( $farmer->useDatabase() ) {
+		if ( $farmer->useDatabase() ) {
 			return (bool)$farmer->getDB( DB_SLAVE )->selectField( 'farmer_wiki', 1, array( 'fw_name' => $this->_name ), __METHOD__ );
 		} else {
 			return file_exists( self::_getWikiConfigFile( $this->_name ) );
@@ -165,7 +165,7 @@ class MediaWikiFarmer_Wiki {
 	public function save() {
 		$farmer = MediaWikiFarmer::getInstance();
 
-		if( $farmer->useDatabase() ) {
+		if ( $farmer->useDatabase() ) {
 			$dbw = $farmer->getDB( DB_MASTER );
 			$new = array(
 				'fw_name' => $this->_name,
@@ -177,7 +177,7 @@ class MediaWikiFarmer_Wiki {
 			);
 
 			$curId = $dbw->selectField( 'farmer_wiki', 'fw_id', array( 'fw_name' => $this->_name ), __METHOD__ );
-			if( $curId == null ) {
+			if ( $curId == null ) {
 				$dbw->insert( 'farmer_wiki', $new, __METHOD__ );
 				$curId = $dbw->insertId();
 			} else {
@@ -185,7 +185,7 @@ class MediaWikiFarmer_Wiki {
 			}
 
 			$insert = array();
-			foreach( $this->_extensions as $ext ) {
+			foreach ( $this->_extensions as $ext ) {
 				$insert[] = array( 'fwe_wiki' => $curId, 'fwe_extension' => $ext->id );
 			}
 			$dbw->delete( 'farmer_wiki_extension', array( 'fwe_wiki' => $curId ), __METHOD__ );
@@ -199,12 +199,12 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	public function delete() {
-		if( !$this->exists() )
+		if ( !$this->exists() )
 			return;
 
 		$farmer = MediaWikiFarmer::getInstance();
-		
-		if( $farmer->useDatabase() ) {
+
+		if ( $farmer->useDatabase() ) {
 			$dbw = $farmer->getDB( DB_MASTER );
 			$dbw->deleteJoin( 'farmer_wiki_extension', 'farmer_wiki', 'fwe_wiki', 'fw_id', array( 'fw_name' => $this->_name ), __METHOD__ );
 			$dbw->delete( 'farmer_wiki', array( 'fw_name' => $this->_name ), __METHOD__ );
@@ -217,8 +217,8 @@ class MediaWikiFarmer_Wiki {
     	try {
 			$db = $this->getDatabase();
 			return $db->tableExists( 'page' );
-		} catch( Exception $e ){
-			return false;	
+		} catch ( Exception $e ) {
+			return false;
 		}
 	}
 
@@ -227,15 +227,15 @@ class MediaWikiFarmer_Wiki {
 	 * use this wiki
 	 */
 	public function initialize() {
-		//loop over defined variables and set them in the global scope
-		foreach( $this->_variables as $k => $v ) {
+		// loop over defined variables and set them in the global scope
+		foreach ( $this->_variables as $k => $v ) {
 			$GLOBALS[$k] = $v;
 		}
 
-		//we need to bring some global variables into scope so we can load extensions properly
+		// we need to bring some global variables into scope so we can load extensions properly
 		extract( $GLOBALS, EXTR_REFS );
 
-		//register all the extensions
+		// register all the extensions
 		foreach ( $this->_extensions as $extension ) {
 			foreach ( $extension->includeFiles as $file ) {
 				require_once $file;
@@ -243,7 +243,7 @@ class MediaWikiFarmer_Wiki {
 		}
 
 		$farmer = MediaWikiFarmer::getInstance();
-		if( $farmer->useWgConf() ){
+		if ( $farmer->useWgConf() ) {
 			// Nothing for now
 		} else {
 			$wgSitename = $this->_title;
@@ -264,21 +264,21 @@ class MediaWikiFarmer_Wiki {
 			list( $wgDBname, $wgDBprefix ) = $farmer->splitWikiDB( $this->name );
 		}
 
-		//we allocate permissions to the necessary groups
+		// we allocate permissions to the necessary groups
 
-		foreach ( $this->_permissions['*'] as $k=>$v ) {
+		foreach ( $this->_permissions['*'] as $k => $v ) {
 			$wgGroupPermissions['*'][$k] = $v;
 		}
 
-		foreach ( $this->_permissions['user'] as $k=>$v ) {
+		foreach ( $this->_permissions['user'] as $k => $v ) {
 			$wgGroupPermissions['user'][$k] = $v;
 		}
 
 		$wgGroupPermissions['sysop']['read'] = true;
 
-		//assign permissions to administrators of this wiki
-		if( $farmer->sharingGroups() ){
-			$group = '[farmer]['.$this->_name.'][admin]';
+		// assign permissions to administrators of this wiki
+		if ( $farmer->sharingGroups() ) {
+			$group = '[farmer][' . $this->_name . '][admin]';
 
 			$grantToWikiAdmins = array( 'read', 'edit' );
 
@@ -287,8 +287,8 @@ class MediaWikiFarmer_Wiki {
 			}
 		}
 
-		if( $callback = $farmer->initCallback() ) {
-			if( is_callable( $callback ) ) {
+		if ( $callback = $farmer->initCallback() ) {
+			if ( is_callable( $callback ) ) {
 				call_user_func( $callback, $this );
 			} else {
 				trigger_error( '$wgFarmerSettings[\'initCallback\'] is not callable', E_USER_WARNING );
@@ -314,28 +314,28 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	public function getUrl( $article = null ) {
-		if( MediaWikiFarmer::getInstance()->useWgConf() ){
+		if ( MediaWikiFarmer::getInstance()->useWgConf() ) {
 			global $wgConf;
 			$server = $wgConf->get( 'wgServer', $this->name );
 			$articlePath = $wgConf->get( 'wgArticlePath', $this->name );
-			if( !$articlePath ){
+			if ( !$articlePath ) {
 				$usePathInfo = $wgConf->get( 'wgUsePathInfo', $this->name );
-				if( is_null( $usePathInfo ) ){
+				if ( is_null( $usePathInfo ) ) {
 					global $wgUsePathInfo;
 					$usePathInfo = $wgUsePathInfo;
 				}
 				$articlePath = $wgConf->get( 'wgScriptPath', $this->name ) . ( $usePathInfo ? '/$1' : '?title=$1' );
 			}
-			$url = $server . $articlePath;	
+			$url = $server . $articlePath;
 		} else {
 			$url = wfMsgForContent( 'farmerinterwikiurl', $this->name, '$1' );
 		}
-		if( !is_null( $article ) )
+		if ( !is_null( $article ) )
 			$url = str_replace( '$1', $article, $url );
 		return $url;
 	}
 
-	public function isDefaultWiki(){
+	public function isDefaultWiki() {
 		return $this->_name == MediaWikiFarmer::getInstance()->getDefaultWiki();
 	}
 
@@ -344,7 +344,7 @@ class MediaWikiFarmer_Wiki {
 	# ----------------
 
 	public function setPermission( $group, $permission, $value ) {
-		if( !array_key_exists( $group, $this->_permissions ) ) {
+		if ( !array_key_exists( $group, $this->_permissions ) ) {
 			$this->_permissions[$group] = array();
 		}
 
@@ -371,8 +371,8 @@ class MediaWikiFarmer_Wiki {
 		return $this->getPermission( 'user', $permission );
 	}
 
-	public function userIsAdmin( $user ){
-		$adminGroup = '[farmer]['.$this->_name.'][admin]';
+	public function userIsAdmin( $user ) {
+		$adminGroup = '[farmer][' . $this->_name . '][admin]';
 
 		return in_array( $adminGroup, $user->getGroups() );
 	}
@@ -388,7 +388,7 @@ class MediaWikiFarmer_Wiki {
 	public function hasExtension( MediaWikiFarmer_Extension $e ) {
 		return array_key_exists( $e->name, $this->_extensions );
 	}
-	
+
 	# --------------
 	# Database stuff
 	# --------------
@@ -401,8 +401,8 @@ class MediaWikiFarmer_Wiki {
 	public function getDatabase( $selectDB = true ) {
 		global $wgDBserver, $wgDBtype;
 		$farmer = MediaWikiFarmer::getInstance();
-		if( $selectDB ){
-			if( isset( $this->_db ) && is_object( $this->_db ) )
+		if ( $selectDB ) {
+			if ( isset( $this->_db ) && is_object( $this->_db ) )
 				return $this->_db;
 			list( $db, $prefix ) = $farmer->splitWikiDB( $this->name );
 		} else {
@@ -413,7 +413,7 @@ class MediaWikiFarmer_Wiki {
 		$password = $farmer->dbAdminPassword;
 		$class = 'Database' . ucfirst( $wgDBtype );
 		$object = new $class( $wgDBserver, $user, $password, $db, false, 0, $prefix );
-		if( $selectDB )
+		if ( $selectDB )
 			$this->_db = $object;
 		return $object;
 	}
@@ -444,11 +444,11 @@ class MediaWikiFarmer_Wiki {
 		$db = false;
 		try {
 			$db = $this->getDatabase();
-		} catch( DBConnectionError $e ) {
+		} catch ( DBConnectionError $e ) {
 			$db = false;
 		}
 
-		if( !$db ){
+		if ( !$db ) {
 			list( $dbname, $prefix ) = $farmer->splitWikiDB( $this->name );
 			$db = $this->getDatabase( false );
 			$db->query( "CREATE DATABASE `{$dbname}`", __METHOD__ );
@@ -477,7 +477,7 @@ class MediaWikiFarmer_Wiki {
 		$revid = $revision->insertOn( $db );
 		$article->updateRevisionOn( $db, $revision );
 
-		//site_stats table entry
+		// site_stats table entry
 		$db->insert( 'site_stats', array(
 			'ss_row_id' => 1,
 			'ss_total_views' => 0,
@@ -507,13 +507,13 @@ class MediaWikiFarmer_Wiki {
 
 	protected function _populateUserGroups() {
 		if ( $this->creator ) {
-			if( MediaWikiFarmer::getInstance()->sharingGroups() ){
+			if ( MediaWikiFarmer::getInstance()->sharingGroups() ) {
 				$user = User::newFromname( $this->creator );
-				$group = '[farmer]['.$this->name.'][admin]';
+				$group = '[farmer][' . $this->name . '][admin]';
 				$user->addGroup( $group );
 			} else {
 				$userId = User::idFromName( $this->creator );
-				if( $userId ) {
+				if ( $userId ) {
 					$insert = array(
 						array( 'ug_user' => $userId, 'ug_group' => 'sysop' ),
 						array( 'ug_user' => $userId, 'ug_group' => 'bureaucrat' ),
@@ -539,19 +539,19 @@ class MediaWikiFarmer_Wiki {
 
 		$prefix = $db->getProperty( 'mTablePrefix' );
 
-		while( $row = $result->fetchRow() ) {
-			if( $prefix == '' || strpos( $row[0], $prefix ) === 0 ) {
-				$query = 'DROP TABLE `'. $row[0] . '`';
+		while ( $row = $result->fetchRow() ) {
+			if ( $prefix == '' || strpos( $row[0], $prefix ) === 0 ) {
+				$query = 'DROP TABLE `' . $row[0] . '`';
 				$db->query( $query, __METHOD__ );
 			}
 		}
 	}
 
 	protected function _deleteWikiGroups() {
-		if( MediaWikiFarmer::getInstance()->sharingGroups() ){
+		if ( MediaWikiFarmer::getInstance()->sharingGroups() ) {
 			$db = $this->getDatabase();
 			$query = 'DELETE FROM ' . $db->tableName( 'user_groups' ) . ' WHERE ug_group LIKE ';
-			$query .= '\'[farmer]['.$this->_name.']%\'';
+			$query .= '\'[farmer][' . $this->_name . ']%\'';
 			$db->query( $query, __METHOD__ );
 		}
 	}

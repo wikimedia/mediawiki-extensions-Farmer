@@ -19,17 +19,17 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Farmer',
 	'description' => 'Manage a MediaWiki farm',
 	'descriptionmsg' => 'farmer-desc',
-	'version' => '0.0.6',
+	'version' => '0.0.7',
 );
 
 /**
  * Extension's configuration
  */
 $wgFarmerSettings = array(
-	//Path to the directory that holds settings for wikis
+	// Path to the directory that holds settings for wikis
 	'configDirectory'           =>  realpath( dirname( __FILE__ ) ) . '/configs/',
 
-	//Or use a database
+	// Or use a database
 	'databaseName'              => null,
 
 	// Default wiki

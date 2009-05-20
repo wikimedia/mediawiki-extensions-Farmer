@@ -5,7 +5,6 @@
  * @author Gregory Szorc <gregory.szorc@gmail.com>
  */
 
-
 /**
  * This class exposes functionality for a MediaWiki farm
  *
@@ -61,7 +60,7 @@ class MediaWikiFarmer {
 
 	/** Instance of MediaWikiFarmer_Wiki */
 	protected $_activeWiki = null;
-	
+
 	/** Instance of this class */
 	protected static $_instance = null;
 
@@ -102,24 +101,24 @@ class MediaWikiFarmer {
 
 		$this->_parameters = $params;
 
-		//register this object as the static instance
+		// register this object as the static instance
 		self::$_instance = $this;
 
-		//if the groups table is being shared
-		if( in_array( 'user_groups', $wgSharedTables ) ){
+		// if the groups table is being shared
+		if ( in_array( 'user_groups', $wgSharedTables ) ) {
 			$this->_sharedGroups = true;
 		}
 
 		$this->_useDatabase = ( $this->_databaseName !== null );
 
-		if( $this->_useDatabase ) {
+		if ( $this->_useDatabase ) {
 			global $IP;
 			require_once( "$IP/includes/GlobalFunctions.php" );
 		} else {
-			if( !is_dir( $this->_configDirectory ) ){
+			if ( !is_dir( $this->_configDirectory ) ) {
 				throw new MWException( 'configDirectory not found: ' . $this->_configDirectory );
 			} else {
-				if ( !is_dir( $this->_configDirectory . '/wikis/' ) ){
+				if ( !is_dir( $this->_configDirectory . '/wikis/' ) ) {
 					mkdir( $this->_configDirectory . '/wikis' );
 				}
 			}
@@ -127,7 +126,7 @@ class MediaWikiFarmer {
 	}
 
 	public function __get( $key ) {
-		if( array_key_exists( $key, $this->_parameters ) ){
+		if ( array_key_exists( $key, $this->_parameters ) ) {
 			return $this->_parameters[$key];
 		}
 
@@ -151,22 +150,22 @@ class MediaWikiFarmer {
 	public function run() {
 		global $wgCommandLineMode;
 
-		if( !$this->_defaultWiki ) {
+		if ( !$this->_defaultWiki ) {
 			throw new MWException( 'Default wiki must be set' );
 		}
 
 		// first we try to find the wiki name that was accessed by calling the
 		// appropriate function
-		if( is_callable( $this->_matchFunction ) ){
+		if ( is_callable( $this->_matchFunction ) ) {
 			$wiki = call_user_func( $this->_matchFunction, $this );
 
 			// if our function coudln't identify the wiki from the environment
 			if ( !$wiki ) {
 				// if the admin passed the --wiki option in command line mode
 				// then use it to get the wiki
-				if( $wgCommandLineMode && defined( 'MW_DB' ) ) {
+				if ( $wgCommandLineMode && defined( 'MW_DB' ) ) {
 					$wiki = MW_DB;
-					if( defined( 'MW_PREFIX' ) && MW_PREFIX )
+					if ( defined( 'MW_PREFIX' ) && MW_PREFIX )
 						$wiki .= '-' . MW_PREFIX;
 				} else {
 					$wiki = $this->_defaultWiki;
@@ -191,11 +190,11 @@ class MediaWikiFarmer {
 	 *
 	 * @param string $wiki Wiki to load
 	 */
-	protected function _doWiki( $wiki ){
+	protected function _doWiki( $wiki ) {
 		$wiki = MediaWikiFarmer_Wiki::factory( $wiki );
 		$this->_activeWiki = $wiki;
 
-		if( !$wiki->exists() ){
+		if ( !$wiki->exists() ) {
 			// if the default wiki doesn't exist (probably first-time user)
 			if ( $wiki->isDefaultWiki() ) {
 
@@ -204,7 +203,7 @@ class MediaWikiFarmer {
 
 				$wiki->save();
 
-				if( !$wiki->exists() ){
+				if ( !$wiki->exists() ) {
 					throw new MWException( 'MediaWikiFarmer could not write the default wiki configuration file.' );
 				} else {
 					$this->updateFarmList();
@@ -214,7 +213,7 @@ class MediaWikiFarmer {
 				// we are not dealing with the default wiki
 
 				// we invoke the function to be called when an unknown wiki is accessed
-				if( is_callable( $this->_onUnknownWikiFunction ) ){
+				if ( is_callable( $this->_onUnknownWikiFunction ) ) {
 					call_user_func( $this->_onUnknownWikiFunction, $this, $wiki );
 				} else {
 					throw new MWException( 'Could not call function: ' . print_r( $this->_onUnknownFunction, true ) );
@@ -225,7 +224,6 @@ class MediaWikiFarmer {
 			// we initialize this wiki
 			$wiki->initialize();
 		}
-
 	}
 
 	# Callback functions
@@ -248,12 +246,12 @@ class MediaWikiFarmer {
 	 * want to use the default wiki, as specified by the 'defaultWiki'
 	 * parameter.
 	 */
-	protected static function _matchByURLRegExp( MediaWikiFarmer $farmer, $url = null ){
-		if( is_null( $url ) )
+	protected static function _matchByURLRegExp( MediaWikiFarmer $farmer, $url = null ) {
+		if ( is_null( $url ) )
 			$url = $_SERVER['REQUEST_URI'];
 
-		if( preg_match( $farmer->_matchRegExp, $url, $matches ) === 1 ){
-			if( array_key_exists( $farmer->_matchOffset, $matches ) ) {
+		if ( preg_match( $farmer->_matchRegExp, $url, $matches ) === 1 ) {
+			if ( array_key_exists( $farmer->_matchOffset, $matches ) ) {
 				return $matches[$farmer->_matchOffset];
 			}
 		}
@@ -272,10 +270,10 @@ class MediaWikiFarmer {
 	 * @param string $url URL to match to a wiki
 	 * @return string|bool Wiki name on success.  false on failure
 	 */
-	protected static function _matchByURLHostname( MediaWikiFarmer $farmer, $url = null ){
-		if( is_null( $url ) )
+	protected static function _matchByURLHostname( MediaWikiFarmer $farmer, $url = null ) {
+		if ( is_null( $url ) )
 			$url = $_SERVER['REQUEST_URI'];
-			
+
 		if ( $result = parse_url( $url, PHP_URL_HOST ) ) {
 			if ( $host = $result['host'] ) {
 				if ( preg_match( $farmer->_matchRegExp, $host, $matches ) === 1 ) {
@@ -298,17 +296,16 @@ class MediaWikiFarmer {
 	 * period
 	 *
 	 */
-	protected static function _matchByServerName( MediaWikiFarmer $farmer ){
+	protected static function _matchByServerName( MediaWikiFarmer $farmer ) {
 		$serverName = $_SERVER['SERVER_NAME'];
 
-		//if string ends with the suffix specified
-		if ( substr( $serverName, -strlen( $farmer->_matchServerNameSuffix ) ) == $farmer->_matchServerNameSuffix
+		// if string ends with the suffix specified
+		if ( substr( $serverName, - strlen( $farmer->_matchServerNameSuffix ) ) == $farmer->_matchServerNameSuffix
 			&& $serverName != $farmer->_matchServerNameSuffix ) {
-			return substr( $serverName, 0, -strlen( $farmer->_matchServerNameSuffix ) - 1 );
+			return substr( $serverName, 0, - strlen( $farmer->_matchServerNameSuffix ) - 1 );
 		}
 
 		return false;
-
 	}
 
 	/**
@@ -331,10 +328,9 @@ class MediaWikiFarmer {
 	/**
 	 * Returns the database table prefix, as suitable for $wgDBprefix
 	 */
-	public function splitWikiDB( $wiki ){
+	public function splitWikiDB( $wiki ) {
 		$callback = $this->_dbFromWikiFunction;
 		return call_user_func( $callback, $this, $wiki );
-		
 	}
 
 	/**
@@ -345,8 +341,8 @@ class MediaWikiFarmer {
 	 * @param $wiki String
 	 * @return Array
 	 */
-	protected static function _prefixTable( MediaWikiFarmer $farmer, $wiki ){
-		if( $farmer->useWgConf() ){
+	protected static function _prefixTable( MediaWikiFarmer $farmer, $wiki ) {
+		if ( $farmer->useWgConf() ) {
 			global $wgConf;
 			return array( $wgConf->get( 'wgDBname', $wiki ), $wgConf->get( 'wgDBprefix', $wiki ) );
 		} else {
@@ -363,12 +359,12 @@ class MediaWikiFarmer {
 	 * @return Database object
 	 */
 	public function getDB( $type ) {
-		if( !$this->useDatabase() )
+		if ( !$this->useDatabase() )
 			throw new MWException( __METHOD__ . ' called when not using database backend.' );
 
 		try {
 			$db = wfGetDB( $type, array(), $this->_databaseName );
-		} catch( DBConnectionError $e ) {
+		} catch ( DBConnectionError $e ) {
 			throw new MWException( __METHOD__ . ": impossible to connect to {$this->_databaseName} to get farm configuration." );
 		}
 		return $db;
@@ -425,20 +421,20 @@ class MediaWikiFarmer {
 			$dbr = $this->getDB( DB_SLAVE );
 			$res = $dbr->select( 'farmer_extension', '*', array(), __METHOD__ );
 			$this->_extensions = array();
-			foreach( $res as $row ) {
+			foreach ( $res as $row ) {
 				$this->_extensions[$row->fe_name] = MediaWikiFarmer_Extension::newFromRow( $row );
 			}
 		} else {
-			if( is_readable( $this->_getExtensionFile() ) ) {
+			if ( is_readable( $this->_getExtensionFile() ) ) {
 				$contents = file_get_contents( $this->_getExtensionFile() );
 
 				$extensions = unserialize( $contents );
 
-				if( is_array( $extensions ) ) {
+				if ( is_array( $extensions ) ) {
 					$this->_extensions = $extensions;
 				}
 			} else {
-				//perhaps we should throw an error or something?
+				// perhaps we should throw an error or something?
 			}
 		}
 
@@ -458,7 +454,7 @@ class MediaWikiFarmer {
 				'fe_path' => $e->includeFiles[0],
 			), __METHOD__ );
 		} else {
-			//force reload of file
+			// force reload of file
 			$this->getExtensions( true );
 			$this->_extensions[$e->name] = $e;
 			$this->_writeExtensions();
@@ -504,11 +500,11 @@ class MediaWikiFarmer {
 			$dbr = $this->getDB( DB_SLAVE );
 			$res = $dbr->select( 'farmer_wiki', array( 'fw_name', 'fw_title', 'fw_description' ), array(), __METHOD__ );
 			$arr = array();
-			foreach( $res as $row ) {
+			foreach ( $res as $row ) {
 				$arr[$row->fw_name] = array(
 					'name' => $row->fw_name,
 					'title' => $row->fw_title,
-					'description' => $row->fw_description 
+					'description' => $row->fw_description
 				);
 			}
 			return $arr;
@@ -524,13 +520,13 @@ class MediaWikiFarmer {
 	public function updateFarmList() {
 		if ( $this->useDatabase() )
 			return;
-	
+
 		$directory = new DirectoryIterator( $this->_configDirectory . '/wikis/' );
 		$wikis = array();
 
-		foreach( $directory as $file ) {
-			if( !$file->isDot() && !$file->isDir() ) {
-				if( substr( $file->getFilename(), -7 ) == '.farmer' ) {
+		foreach ( $directory as $file ) {
+			if ( !$file->isDot() && !$file->isDir() ) {
+				if ( substr( $file->getFilename(), -7 ) == '.farmer' ) {
 					$base = substr( $file->getFileName(), 0, -7 );
 					$wikis[$base] = MediaWikiFarmer_Wiki::factory( $base );
 				}
@@ -539,7 +535,7 @@ class MediaWikiFarmer {
 
 		$farmList = array();
 
-		foreach( $wikis as $k => $v ) {
+		foreach ( $wikis as $k => $v ) {
 			$arr = array();
 			$arr['name'] = $v->name;
 			$arr['title'] = $v->title;
@@ -559,7 +555,7 @@ class MediaWikiFarmer {
 		$wikis = $this->getFarmList();
 		$dbw = wfGetDB( DB_MASTER );
 		$replacements = array();
-		foreach( $wikis as $key => $stuff ){
+		foreach ( $wikis as $key => $stuff ) {
 			$wiki = MediaWikiFarmer_Wiki::factory( $key );
 			$replacements[] = array(
 				'iw_prefix' => $wiki->name,

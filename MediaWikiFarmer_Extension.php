@@ -11,9 +11,9 @@ class MediaWikiFarmer_Extension {
 	protected $_description;
 	protected $_id;
 
-    /**
-     * List of files that need to be included for this extension to work
-     */
+	/**
+	 * List of files that need to be included for this extension to work
+	 */
 	protected $_includeFiles = array();
 
 	public static function newFromRow( $row ) {
@@ -43,7 +43,7 @@ class MediaWikiFarmer_Extension {
 	 * open them
 	 */
 	public function isValid() {
-		foreach( $this->_includeFiles as $file ) {
+		foreach ( $this->_includeFiles as $file ) {
 			$result = @fopen( $file, 'r', true );
 
 			if ( $result === false ) return false;
