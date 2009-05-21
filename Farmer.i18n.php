@@ -177,6 +177,8 @@ $messages['qqq'] = array(
 	'farmer-yes' => '{{Identical|Yes}}',
 	'farmer-no' => '{{Identical|No}}',
 	'farmer-extensions-register-name' => '{{Identical|Name}}',
+	'right-farmeradmin' => '{{doc-right|farmeradmin}}',
+	'right-createwiki' => '{{doc-right|createwiki}}',
 );
 
 /** Faeag Rotuma (Faeag Rotuma)
@@ -922,6 +924,8 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 	'farmer-log-header' => 'Dieses Logbuch zeigt die Änderung an der Wiki-Farm.',
 	'farmer-log-create' => 'erstellte das Wiki „$2“',
 	'farmer-log-delete' => 'löschte das Wiki „$2“',
+	'right-farmeradmin' => 'Wiki-Farm verwalten',
+	'right-createwiki' => 'Wikis in der Wiki-Farm erstellen',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -1065,6 +1069,8 @@ Gaž rozšyrjenje je zregistrěrowane, wše wikije mógu jo wužywaś.',
 	'farmer-log-header' => 'To jo protokol změnow, kótarež su se na wikijowem farmje cynili.',
 	'farmer-log-create' => 'jo załožył wiki "$2"',
 	'farmer-log-delete' => 'jo wulašował wiki "$2"',
+	'right-farmeradmin' => 'Wikijowu farmu zastojaś',
+	'right-createwiki' => 'Wikije we wikijowej farmje napóraś',
 );
 
 /** Ewe (Eʋegbe) */
@@ -1504,6 +1510,8 @@ Si c’est bien ce que vous voulez, cliquez sur le bouton '''Confirmer''' ci-des
 	'farmer-log-header' => 'Ce journal contient les modifications apportées à la ferme wiki.',
 	'farmer-log-create' => 'a créé le wiki « $2 »',
 	'farmer-log-delete' => 'a supprimé le wiki « $2 »',
+	'right-farmeradmin' => 'Gérer la ferme de wikis',
+	'right-createwiki' => 'Créer des wikis dans la ferme de wikis',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1658,6 +1666,8 @@ Unha vez que a extensión estea rexistrada, todos os wikis poderana usar.',
 	'farmer-log-header' => 'Este é un rexistro dos cambios feitos no wiki granxa.',
 	'farmer-log-create' => 'creou o wiki "$2"',
 	'farmer-log-delete' => 'eliminou o wiki "$2"',
+	'right-farmeradmin' => 'Xestionar o wiki granxa',
+	'right-createwiki' => 'Crear wikis no wiki granxa',
 );
 
 /** Gothic (Gothic)
@@ -1826,6 +1836,8 @@ Wänn e Erwyterig regischtriert isch, chenne alli Wiki si bruuche.',
 	'farmer-log-header' => 'Des isch e Logbuech vu dr Änderige, wu am Wiki-Hof gmacht wore sin.',
 	'farmer-log-create' => 'het s Wiki „$2“ aagleit',
 	'farmer-log-delete' => 'het s Wiki „$2“ glescht',
+	'right-farmeradmin' => 'Dr Wiki-Hof verwalte',
+	'right-createwiki' => 'Wikis uf em Wiki-Hof aalege',
 );
 
 /** Gujarati (ગુજરાતી)
@@ -2276,6 +2288,8 @@ Móžeš [[Special:Farmer|swój wiki přiměrić]].',
 	'farmer-log-header' => 'To je protokol změnow, kotrež su so na wikijowym farmje činili.',
 	'farmer-log-create' => 'je wiki "$2" załožił',
 	'farmer-log-delete' => 'je wiki "$2" zničił',
+	'right-farmeradmin' => 'Wikijowu formu zrjadować',
+	'right-createwiki' => 'Wikije we wikijowej farmje wutworić',
 );
 
 /** Hungarian (Magyar)
@@ -2788,6 +2802,8 @@ $messages['ja'] = array(
 	'farmer-log-header' => 'これはウィキファームに対してなされた変更の記録です。',
 	'farmer-log-create' => 'ウィキ「$2」を作成しました',
 	'farmer-log-delete' => 'ウィキ「$2」を削除しました',
+	'right-farmeradmin' => 'ウィキファームを管理する',
+	'right-createwiki' => 'ウィキファーム内にウィキを作成する',
 );
 
 /** Javanese (Basa Jawa)
@@ -3079,6 +3095,8 @@ Mer han die Datei nit jefonge, die enjefööch wäde mööt.',
 	'farmer-log-header' => 'Dat Logboch hee zeisch de Änderunge aan däm Shtal vull Wikis.',
 	'farmer-log-create' => 'hät dat Wiki „$2“ aanjelaat',
 	'farmer-log-delete' => 'hät dat Wiki „$2“ fottjeschmeße',
+	'right-farmeradmin' => 'Ene Shtall vull Wikis verwallde',
+	'right-createwiki' => 'Neu Wikis en der Shtall vun de Wikis erin donn',
 );
 
 /** Kurdish (Latin) (Kurdî / كوردی (Latin))
@@ -3606,6 +3624,8 @@ U moet lid zijn van de groep ''farmeradmin''.",
 	'farmer-log-header' => 'Dit is een logboek met de wijzigingen aan de wikifarm.',
 	'farmer-log-create' => 'heeft de wiki "$2" aangemaakt',
 	'farmer-log-delete' => 'heeft de wiki "$2" verwijderd',
+	'right-farmeradmin' => 'De wikifarm beheren',
+	'right-createwiki' => "Wiki's aanmaken in de wikifarm",
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -3999,6 +4019,8 @@ S’es plan çò que volètz, picatz lo boton '''Confirmar''' çaijós.",
 	'farmer-log-header' => 'Aqueste jornal conten las modificacions aportadas a la bòria wiki.',
 	'farmer-log-create' => 'a creat lo wiki « $2 »',
 	'farmer-log-delete' => 'a suprimit lo wiki « $2 »',
+	'right-farmeradmin' => 'Gerir la bòria de wikis',
+	'right-createwiki' => 'Crear de wikis dins la bòria de wikis',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
@@ -4768,6 +4790,8 @@ Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
 	'farmer-log-header' => 'Toto je záznam zmien vykonaných vo farme wiki.',
 	'farmer-log-create' => 'vytvoril wiki „$2“',
 	'farmer-log-delete' => 'zmazal wiki „$2“',
+	'right-farmeradmin' => 'Spravovať farmu wiki',
+	'right-createwiki' => 'Vytvára wiki vo wiki farme',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
