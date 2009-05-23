@@ -5612,6 +5612,8 @@ Sau khi đã đăng ký một gói mở rộng, tất cả các wiki sẽ có th
 	'farmer-log-header' => 'Đây là nhật trình các thay đổi trên mạng wiki.',
 	'farmer-log-create' => 'tạo wiki “$2”',
 	'farmer-log-delete' => 'xóa wiki “$2”',
+	'right-farmeradmin' => 'Quản lý nông trại wiki',
+	'right-createwiki' => 'Tạo wiki trong nông trại wiki',
 );
 
 /** Volapük (Volapük)
