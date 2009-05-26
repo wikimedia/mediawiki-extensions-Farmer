@@ -8,7 +8,6 @@
  *
  * @todo Extension management on per-wiki basis
  * @todo Upload prefix
- * @todo Use MediaWiki messages
  *
  */
 
@@ -19,7 +18,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Farmer',
 	'description' => 'Manage a MediaWiki farm',
 	'descriptionmsg' => 'farmer-desc',
-	'version' => '0.0.7',
+	'version' => '0.0.8',
 );
 
 /**

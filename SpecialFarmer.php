@@ -378,10 +378,10 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->addWikiMsg( 'farmer-basic-permission-visitor-text' );
 
 			$doArray = array(
-				array( 'read', wfMsg( 'farmer-basic-permission-view' ) ),
-				array( 'edit', wfMsg( 'farmer-basic-permission-edit' ) ),
-				array( 'createpage', wfMsg( 'farmer-basic-permission-createpage' ) ),
-				array( 'createtalk', wfMsg( 'farmer-basic-permission-createtalk' ) )
+				array( 'read', wfMsg( 'right-read' ) ),
+				array( 'edit', wfMsg( 'right-edit' ) ),
+				array( 'createpage', wfMsg( 'right-createpage' ) ),
+				array( 'createtalk', wfMsg( 'right-createtalk' ) )
 			);
 
 			foreach ( $doArray as $arr ) {
@@ -392,14 +392,14 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->addWikiMsg( 'farmer-basic-permission-user-text' );
 
 			$doArray = array(
-				array( 'read', wfMsg( 'farmer-basic-permission-view' ) ),
-				array( 'edit', wfMsg( 'farmer-basic-permission-edit' ) ),
-				array( 'createpage', wfMsg( 'farmer-basic-permission-createpage' ) ),
-				array( 'createtalk', wfMsg( 'farmer-basic-permission-createtalk' ) ),
-				array( 'move', wfMsg( 'farmer-basic-permission-move' ) ),
-				array( 'upload', wfMsg( 'farmer-basic-permission-upload' ) ),
-				array( 'reupload', wfMsg( 'farmer-basic-permission-reupload' ) ),
-				array( 'minoredit', wfMsg( 'farmer-basic-permission-minoredit' ) )
+				array( 'read', wfMsg( 'right-read' ) ),
+				array( 'edit', wfMsg( 'right-edit' ) ),
+				array( 'createpage', wfMsg( 'right-createpage' ) ),
+				array( 'createtalk', wfMsg( 'right-createtalk' ) ),
+				array( 'move', wfMsg( 'right-move' ) ),
+				array( 'upload', wfMsg( 'right-upload' ) ),
+				array( 'reupload', wfMsg( 'right-reupload' ) ),
+				array( 'minoredit', wfMsg( 'right-minoredit' ) )
 			);
 
 			foreach ( $doArray as $arr ) {
