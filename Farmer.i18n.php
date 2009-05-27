@@ -623,8 +623,12 @@ $messages['be-tarask'] = array(
 	'farmer-extensions-register-includefile' => 'Уключыць файл',
 	'farmer-error-exists' => 'Немагчыма стварыць вікі. Яна ўжо існуе: $1',
 	'farmer-error-noextwrite' => 'Немагчыма запісаць файл пашырэньня:',
+	'farmer-log-name' => 'Журнал вікі-фэрмы',
+	'farmer-log-header' => 'Гэта журнал зьменаў зробленых на вікі-фэрме.',
 	'farmer-log-create' => 'створаная вікі «$2»',
 	'farmer-log-delete' => 'выдаленая вікі «$2»',
+	'right-farmeradmin' => 'кіраваньне вікі-фэрмай',
+	'right-createwiki' => 'стварэньне вікі на вікі-фэрме',
 );
 
 /** Bulgarian (Български)
