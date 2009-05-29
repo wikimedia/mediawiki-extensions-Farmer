@@ -3,11 +3,11 @@
  * Internationalisation file for Farmer extension.
  *
  * @addtogroup Extensions
-*/
+ */
 
 $messages = array();
 
-# Original messages byGregory Szorc <gregory.szorc@gmail.com>
+# Original messages by Gregory Szorc <gregory.szorc@gmail.com>
 $messages['en'] = array (
 	'farmer'                                 => 'Farmer',
 	'farmer-desc'                            => 'Manage a MediaWiki farm',
@@ -51,7 +51,7 @@ Please go back and try another name.',
 	'farmer-confirmsetting-description'      => 'Description',
 	'farmer-confirmsetting-reason'           => 'Reason',
 	'farmer-description'                     => 'Description',
-	'farmer-confirmsetting-text'             => 'Your wiki, \'\'\'$1\'\'\', will be accessible via http://$1.myfarm.
+	'farmer-confirmsetting-text'             => 'Your wiki, \'\'\'$1\'\'\', will be accessible via $3.
 The project namespace will be \'\'\'$2\'\'\'.
 Links to this namespace will be of the form \'\'\'<nowiki>[[$2:Page name]]</nowiki>\'\'\'.
 If this is what you want, press the \'\'\'confirm\'\'\' button below.',
