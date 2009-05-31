@@ -294,7 +294,7 @@ $messages['ar'] = array(
 	'farmer-confirmsetting-description' => 'الوصف',
 	'farmer-confirmsetting-reason' => 'السبب',
 	'farmer-description' => 'وصف',
-	'farmer-confirmsetting-text' => "الويكي الخاص بك، '''$1'''، سيمكن الوصول إليه من خلال http://$1.myfarm.
+	'farmer-confirmsetting-text' => "الويكي الخاص بك، '''$1'''، سيمكن الوصول إليه من خلال $3.
 نطاق المشروع سيصبح '''$2'''.
 الوصلات إلى هذا النطاق ستكون من الشكل '''<nowiki>[[$2:Page name]]</nowiki>'''.
 لو أن هذا ما تريده، اضغط زر '''تأكيد''' بالأسفل.",
@@ -417,7 +417,7 @@ $messages['arz'] = array(
 	'farmer-confirmsetting-title' => 'العنوان',
 	'farmer-confirmsetting-description' => 'الوصف',
 	'farmer-description' => 'وصف',
-	'farmer-confirmsetting-text' => "الويكى الخاص بك، '''$1'''، سيمكن الوصول إليه من خلال http://$1.myfarm.
+	'farmer-confirmsetting-text' => "الويكى الخاص بك، '''$1'''، سيمكن الوصول إليه من خلال $3.
 نطاق المشروع سيصبح '''$2'''.
 الوصلات إلى هذا النطاق ستكون من الشكل '''<nowiki>[[$2:Page name]]</nowiki>'''.
 لو أن هذا ما تريده، اضغط زر '''تأكيد''' بالأسفل.",
@@ -533,7 +533,7 @@ $messages['be-tarask'] = array(
 	'farmer-confirmsetting-description' => 'Апісаньне',
 	'farmer-confirmsetting-reason' => 'Прычына',
 	'farmer-description' => 'Апісаньне',
-	'farmer-confirmsetting-text' => "Ваша вікі, '''$1''', будзе даступна па адрасу http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Ваша вікі, '''$1''', будзе даступна па адрасу $3.
 Прастора назваў праекту будзе '''$2'''.
 Спасылкі на гэту прастору назваў будуць у форме '''<nowiki>[[$2:Назва старонкі]]</nowiki>'''.
 Калі гэта тое, што Вы жадаеце, націсьніце кнопку '''пацьвердзіць''' унізе.",
@@ -652,9 +652,9 @@ $messages['bg'] = array(
 	'farmer-confirmsetting-title' => 'Заглавие',
 	'farmer-confirmsetting-description' => 'Описание',
 	'farmer-description' => 'Описание',
-	'farmer-confirmsetting-text' => "Вашето уики '''$1''' ще бъде достъпно на адрес http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Вашето уики '''$1''' ще бъде достъпно на адрес $3.
 Проектното именно пространство е '''$2'''.
-Препратките към това именно пространство ще са от вида '''<nowiki>[[$2:Page Name]]</nowiki>'''.
+Препратките към това именно пространство ще са от вида '''<nowiki>[[$2:Page name]]</nowiki>'''.
 Ако това е желанието ви, натиснете бутона '''потвърждаване''' по-долу.",
 	'farmer-button-confirm' => 'Потвърждаване',
 	'farmer-button-submit' => 'Изпращане',
@@ -1049,9 +1049,9 @@ Pšosym źi slědk a wopytaj druge mě.",
 	'farmer-confirmsetting-description' => 'Wopisanje',
 	'farmer-confirmsetting-reason' => 'Pśicyna',
 	'farmer-description' => 'Wopisanje',
-	'farmer-confirmsetting-text' => "Twój wiki - '''$1''' - buźo pśistupny pśez http://$1.mójafarma.
+	'farmer-confirmsetting-text' => "Twój wiki, '''$1''', buźo pśistupny pśez $3.
 Projektowy mjenjowy rum buźo '''$2'''.
-Wótkaze k toś tomu mjenjowemu rumoju změju formu '''<nowiki>[[$2:Mě boka]]</nowiki>'''.
+Wótkaze k toś tomu mjenjowemu rumoju změju formu '''<nowiki>[[$2:Page name]]</nowiki>'''.
 Jolic to coš, tłoc na slědujucy tłocašk '''wobkšuśiś'''.",
 	'farmer-button-confirm' => 'Wobkšuśiś',
 	'farmer-button-submit' => 'Wótpósłaś',
@@ -1823,7 +1823,7 @@ Bitte gang zrugg un versuech s mit eme andere Name",
 	'farmer-confirmsetting-description' => 'Bschryybig',
 	'farmer-confirmsetting-reason' => 'Grund',
 	'farmer-description' => 'Bschryybig',
-	'farmer-confirmsetting-text' => "Dyy Wiki – '''$1''' – wird iber http://$1.meineWikiFarm/ erreichbar syy.
+	'farmer-confirmsetting-text' => "Dyy Wiki – '''$1''' – wird iber $3 erreichbar syy.
 Dr Projektnamensruum wird '''$2''' heiße.
 Gleicher zue däm Namensruum wäre d Gstalt '''<nowiki>[[$2:Sytename]]</nowiki>''' haa.
 Wänn alles korräkt isch, no bstätig des mit eme Druck uf '''Bstätige'''.",
@@ -2025,7 +2025,7 @@ $messages['he'] = array(
 	'farmer-confirmsetting-description' => 'תיאור',
 	'farmer-confirmsetting-reason' => 'סיבה',
 	'farmer-description' => 'תיאור',
-	'farmer-confirmsetting-text' => "הוויקי שלכם , '''$1''', יהיה נגיש דרך http://$1.myfarm.
+	'farmer-confirmsetting-text' => "הוויקי שלכם , '''$1''', יהיה נגיש דרך $3.
 מרחב השם של המיזם יהיה '''$2'''.
 קישורים למרחב שם זה יהיו מהצורה  '''<nowiki>[[$2:שם העמוד]]</nowiki>'''.
 אם זהו רצונכם, לחצו על כפתור ה'''אישור''' שלהלן.",
@@ -2269,7 +2269,10 @@ Móžeš [[Special:Farmer|swój wiki přiměrić]].',
 	'farmer-confirmsetting-description' => 'Wopisanje',
 	'farmer-confirmsetting-reason' => 'Přičina',
 	'farmer-description' => 'Wopisanje',
-	'farmer-confirmsetting-text' => "Twój wiki, '''$1''', budźe přez $3 přistupny być. Projektowy mjenowy rum budźe '''$2'''. Wotkazy k tutomu mjenowemu rumej změja formu '''<nowiki>[[$2:mjeno strony]]</nowiki>'''. Jeli to je to, štož chceš, stłóč deleka tłóčatko '''potwjerdźić'''.",
+	'farmer-confirmsetting-text' => "Twój wiki, '''$1''', budźe přez $3 přistupny być.
+Projektowy mjenowy rum budźe '''$2'''.
+Wotkazy k tutomu mjenowemu rumej změja formu '''<nowiki>[[$2:Page name]]</nowiki>'''.
+Jeli to je to, štož chceš, stłóč deleka tłóčatko '''potwjerdźić'''.",
 	'farmer-button-confirm' => 'Potwjerdźić',
 	'farmer-button-submit' => 'Wotesłać',
 	'farmer-createwiki-form-title' => 'Wiki wutworić',
@@ -2379,7 +2382,10 @@ A wiki testreszabásához látogasd meg a [[Special:Farmer]] lapot.',
 	'farmer-confirmsetting-title' => 'Cím',
 	'farmer-confirmsetting-description' => 'Leírás',
 	'farmer-description' => 'Leírás',
-	'farmer-confirmsetting-text' => "A wikid, '''$1''', elérhető a http://$1.myfarm címen. A projektnévtér '''$2''' lesz. Az erre a névtérre hivatkozó linkek formája '''<nowiki>[[$2:Page Name]]</nowiki>''' lesz.  Ha ez az, amit szeretnél, akkor kattints a '''megerősítés''' gombra.",
+	'farmer-confirmsetting-text' => "A wikid, '''$1''', elérhető a $3 címen.
+A projektnévtér '''$2''' lesz.
+Az erre a névtérre hivatkozó linkek formája '''<nowiki>[[$2:Page Name]]</nowiki>''' lesz.
+Ha ez az, amit szeretnél, akkor kattints a '''megerősítés''' gombra.",
 	'farmer-button-confirm' => 'Megerősítés',
 	'farmer-button-submit' => 'Elküldés',
 	'farmer-createwiki-form-title' => 'Wiki létrehozása',
@@ -2482,7 +2488,7 @@ Per favor retorna e prova un altere nomine.",
 	'farmer-confirmsetting-description' => 'Description',
 	'farmer-confirmsetting-reason' => 'Motivo',
 	'farmer-description' => 'Description',
-	'farmer-confirmsetting-text' => "Tu wiki, '''$1''', essera accessibile via http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Tu wiki, '''$1''', essera accessibile via $3.
 Le spatio de nomines del projecto essera '''$2'''.
 Omne ligamines verso iste spatio de nomines habera le forma '''<nowiki>[[$2:Nomine de pagina]]</nowiki>'''.
 Si isto es lo que tu vole, preme le button '''confirmar''' infra.",
@@ -2637,7 +2643,7 @@ Torna indietro e prova a inserire un altro nome.",
 	'farmer-confirmsetting-title' => 'Titolo',
 	'farmer-confirmsetting-description' => 'Descrizione',
 	'farmer-description' => 'Descrizione',
-	'farmer-confirmsetting-text' => "La tua wiki, '''$1''', sarà accessibile attraverso http://$1.myfarm.
+	'farmer-confirmsetting-text' => "La tua wiki, '''$1''', sarà accessibile attraverso $3.
 Il namespace progetto sarà '''$2'''.
 I collegamenti a questo namespace saranno del tipo '''<nowiki>[[$2:Page name]]</nowiki>'''.
 Se è questo quello che vuoi, premi il pulstante '''conferma''' di seguito.",
@@ -2750,7 +2756,7 @@ $messages['ja'] = array(
 	'farmer-confirmsetting-description' => '概要',
 	'farmer-confirmsetting-reason' => '理由',
 	'farmer-description' => '概要',
-	'farmer-confirmsetting-text' => "あなたのウィキ '''$1''' は http://$1.myfarm でアクセスが可能になります。プロジェクト名前空間は '''$2''' になり、その名前空間へのリンクは '''<nowiki>[[$2:ページ名]]</nowiki>''' という形式になります。これで希望通りならば、以下の'''確認'''ボタンを押してください。",
+	'farmer-confirmsetting-text' => "あなたのウィキ '''$1''' は $3 でアクセスが可能になります。プロジェクト名前空間は '''$2''' になり、その名前空間へのリンクは '''<nowiki>[[$2:ページ名]]</nowiki>''' という形式になります。これで希望通りならば、以下の'''確認'''ボタンを押してください。",
 	'farmer-button-confirm' => '確認',
 	'farmer-button-submit' => '送信',
 	'farmer-createwiki-form-title' => 'ウィキを作成する',
@@ -3260,7 +3266,7 @@ $messages['ml'] = array(
 	'farmer-confirmsetting-title' => 'ശീര്‍ഷകം',
 	'farmer-confirmsetting-description' => 'വിവരണം',
 	'farmer-description' => 'വിവരണം',
-	'farmer-confirmsetting-text' => "താങ്കളുടെ വിക്കിയിലേക്ക് '''$1''', http://$1.myfarm എന്ന വിലാസത്തിലൂടെ എത്താവുന്നതാണ്‌.
+	'farmer-confirmsetting-text' => "താങ്കളുടെ വിക്കിയിലേക്ക് '''$1''', $3 എന്ന വിലാസത്തിലൂടെ എത്താവുന്നതാണ്‌.
 പദ്ധതിയുടെ നേംസ്പേസ് '''$2''' എന്നായിരിക്കും.
 ഈ നേംസ്പേസിലേക്കുള്ള കണ്ണികള്‍ '''<nowiki>[[$2:Page Name]]</nowiki>''' എന്ന രൂപത്തില്‍ ആയിരിക്കും.
 ഇതാണു താങ്കള്‍ക്ക് വേണ്ടതെങ്കില്‍ താഴെയുള്ള '''ഉറപ്പിക്കുക''' എന്ന ബട്ടണ്‍ അമര്‍ത്തുക.",
@@ -3365,7 +3371,10 @@ $messages['mr'] = array(
 	'farmer-confirmsetting-title' => 'शीर्षक',
 	'farmer-confirmsetting-description' => 'माहिती',
 	'farmer-description' => 'माहिती',
-	'farmer-confirmsetting-text' => "तुमचा विकि, '''$1''', तुम्ही http://$1.myfarm इथे पाहू शकता. या विकिचे प्रकल्प नामविश्व '''$2''' हे असेल. या नामविश्वाचे दुवे '''<nowiki>[[$2:लेखाचे शीर्षक]]</nowiki>''' असे असतील. जर तुम्हाला हेच अभिप्रेत असेल तर खालील '''खात्री करा''' ह्या कळीवर टिचकी मारा.",
+	'farmer-confirmsetting-text' => "तुमचा विकि, '''$1''', तुम्ही $3 इथे पाहू शकता.
+या विकिचे प्रकल्प नामविश्व '''$2''' हे असेल.
+या नामविश्वाचे दुवे '''<nowiki>[[$2:लेखाचे शीर्षक]]</nowiki>''' असे असतील.
+जर तुम्हाला हेच अभिप्रेत असेल तर खालील '''खात्री करा''' ह्या कळीवर टिचकी मारा.",
 	'farmer-button-confirm' => 'खात्री करा',
 	'farmer-button-submit' => 'पाठवा',
 	'farmer-createwiki-form-title' => 'विकि तयार करा',
@@ -3541,7 +3550,7 @@ U kunt uw [[Special:Farmer|wiki aanpassen]].',
 	'farmer-confirmsetting-description' => 'Beschrijving',
 	'farmer-confirmsetting-reason' => 'Reden',
 	'farmer-description' => 'Beschrijving',
-	'farmer-confirmsetting-text' => "Uw wiki '''$1''' wordt bereikbaar via http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Uw wiki '''$1''' wordt bereikbaar via $3.
 De projectnaamruimte wordt '''$2'''.
 Een verwijzing naar deze naamruimte wordt '''<nowiki>[[$2:Paginanaam]]</nowiki>'''.
 Als dit in orde is, druk dan op de knop '''bevestigen'''.",
@@ -3660,7 +3669,7 @@ Gå tilbake og freist med eit anna namn.",
 	'farmer-confirmsetting-description' => 'Skildring',
 	'farmer-confirmsetting-reason' => 'Grunngjeving',
 	'farmer-description' => 'Skildring',
-	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil vera tilgjengeleg gjennom http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil vera tilgjengeleg gjennom $3.
 Prosjektnamnerommet vil vera '''$2'''.
 Lenkjer til namnerommet vil vera på forma '''<nowiki>[[$2:Sidenamn]]</nowiki>'''.
 Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedanfor.",
@@ -3778,7 +3787,7 @@ Om du leser dette, har din nye wiki blitt installert korrekt. Du kan [[Special:F
 	'farmer-confirmsetting-title' => 'Tittel',
 	'farmer-confirmsetting-description' => 'Beskrivelse',
 	'farmer-description' => 'Beskrivelse',
-	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil være tilgjengelig via http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil være tilgjengelig via $3.
 Prosjektnavnerommet vil være '''$2'''.
 Lenker til dette navnerommet vil være på formen '''<nowiki>[[$2:Sidenavn]]</nowiki>'''.
 Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedenunder.",
@@ -3915,7 +3924,7 @@ Es accessible sus $1',
 	'farmer-confirmsetting-description' => 'Descripcion',
 	'farmer-confirmsetting-reason' => 'Rason',
 	'farmer-description' => 'Descripcion',
-	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible dempuèi l’adreça http://$1.monsite.
+	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible dempuèi l’adreça $3.
 Lo nom de l’espaci del projècte serà '''$2'''.
 Los ligams cap a aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''.
 S’es plan çò que volètz, picatz lo boton '''Confirmar''' çaijós.",
@@ -4071,7 +4080,7 @@ Spróbuj utworzyć wiki pod inną nazwą.",
 	'farmer-confirmsetting-title' => 'Tytuł',
 	'farmer-confirmsetting-description' => 'Opis',
 	'farmer-description' => 'Opis',
-	'farmer-confirmsetting-text' => "Wiki '''$1''' będzie dostępna pod adresem http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Wiki '''$1''' będzie dostępna pod adresem $3.
 Przestrzeń nazw projektu to '''$2'''.
 Odnośniki do stron w tej przestrzeni będą postaci '''<nowiki>[[$2:Nazwa strony]]</nowiki>'''.
 Jeśli wszystko się się zgadza, wciśnij znajdujący się poniżej przycisk '''Zapisz'''.",
@@ -4221,7 +4230,7 @@ Pode agora [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-confirmsetting-description' => 'Descrição',
 	'farmer-confirmsetting-reason' => 'Motivo',
 	'farmer-description' => 'Descrição',
-	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', estará acessível através de http://$1.myfarm.
+	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', estará acessível através de $3.
 O espaço nominal do projecto será '''$2'''.
 Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
 Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
@@ -4333,7 +4342,7 @@ Pode agora [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-confirmsetting-description' => 'Descrição',
 	'farmer-confirmsetting-reason' => 'Motivo',
 	'farmer-description' => 'Descrição',
-	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', estará acessível através de http://$1.myfarm.
+	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', estará acessível através de $3.
 O espaço nominal do projeto será '''$2'''.
 Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
 Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
@@ -4534,7 +4543,10 @@ $messages['ru'] = array(
 	'farmer-confirmsetting-description' => 'Описание',
 	'farmer-confirmsetting-reason' => 'Причина',
 	'farmer-description' => 'Описание',
-	'farmer-confirmsetting-text' => "Ваша вики '''$1''' будет доступна по http://$1.myfarm. Пространство имён проекта будет '''$2'''.  Ссылки на это пространство имён будут вида '''<nowiki>[[$2:Название страницы]]</nowiki>'''. Если это, чего вы хотите, нажмите кнопку «подтвердить» ниже.",
+	'farmer-confirmsetting-text' => "Ваша вики '''$1''' будет доступна по $3.
+Пространство имён проекта будет '''$2'''.
+Ссылки на это пространство имён будут вида '''<nowiki>[[$2:Название страницы]]</nowiki>'''.
+Если это, чего вы хотите, нажмите кнопку «подтвердить» ниже.",
 	'farmer-button-confirm' => 'Подтвердить',
 	'farmer-button-submit' => 'Отправить',
 	'farmer-createwiki-form-title' => 'Создание вики',
@@ -4901,7 +4913,7 @@ Om du läser det här, har din nya wiki blivit korrekt installerad. Du kan [[Spe
 	'farmer-confirmsetting-title' => 'Titel',
 	'farmer-confirmsetting-description' => 'Beskrivnin',
 	'farmer-description' => 'Beskrivning',
-	'farmer-confirmsetting-text' => "Din wiki, '''$1''', vill bli tillgänglig via http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Din wiki, '''$1''', vill bli tillgänglig via $3.
 Projektnamnrymden ska vara '''$2'''.
 Länkar till denna namnrymd ska vara på sättet '''<nowiki>[[$2:Sidenavn]]</nowiki>'''.
 Om detta är det du vill, tryck på knappen ''{{int:Farmer-button-confirm}}'' nedan.",
@@ -5234,7 +5246,7 @@ Bumalik po lamang at sumubok ng iba pang pangalan.",
 	'farmer-confirmsetting-title' => 'Pamagat',
 	'farmer-confirmsetting-description' => 'Paglalarawan',
 	'farmer-description' => 'Paglalarawan',
-	'farmer-confirmsetting-text' => "Ang wiki mong '''$1''' ay mapupuntahan sa pamamagitan ng http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Ang wiki mong '''$1''' ay mapupuntahan sa pamamagitan ng $3.
 Ang espasyo ng pangalan ng proyekto ay magiging '''$2'''.
 Ang mga kawing papunta sa espasyo ng pangalang ito ay magiging nasa anyong '''<nowiki>[[$2:Page name]]</nowiki>'''.
 Kung ito ang nais mo, pindutin ang pindutang '''tiyakin''' na nasa ibaba.",
@@ -5438,7 +5450,7 @@ Xin hãy quay lại và thử một tên khác.",
 	'farmer-confirmsetting-description' => 'Miêu tả',
 	'farmer-confirmsetting-reason' => 'Lý do',
 	'farmer-description' => 'Miêu tả',
-	'farmer-confirmsetting-text' => "Wiki của bạn, '''$1''', sẽ vào được thông qua trang http://$1.myfarm.
+	'farmer-confirmsetting-text' => "Wiki của bạn, '''$1''', sẽ vào được thông qua trang $3.
 Không gian tên dự án sẽ là '''$2'''.
 Liên kết đến không gian tên này sẽ có dạng '''<nowiki>[[$2:Page name]]</nowiki>'''.
 Nếu đây là điều bạn muốn, hãy nhấn nút '''xác nhận''' ở dưới.",
