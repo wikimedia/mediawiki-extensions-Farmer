@@ -3033,7 +3033,7 @@ Bes esu joot, jangk zerök un versök ene andere Name.',
 	'farmer-confirmsetting-reason' => 'Jrond',
 	'farmer-description' => 'Beschrievung',
 	'farmer-confirmsetting-text' => "Ding Wiki met däm Name '''$1''' weed övver $3 zo fenge sin.
-Dä Name för däm Projäk singAppachtemang weed doh '''$2''' sin.
+Dä Name för däm Projäk sing Appachtemang weed doh '''$2''' sin.
 Links op dat Appachtemang weede en dä Aat '''[<nowiki />[$2:Siggetittel]]''' sin.
 Wann dat dat es, wat De wells, dann klecks De dä Knopp „'''{{int:farmer-button-confirm}}'''“ unge.",
 	'farmer-button-confirm' => 'Beshtätije',
@@ -3925,9 +3925,9 @@ Es accessible sus $1',
 	'farmer-confirmsetting-reason' => 'Rason',
 	'farmer-description' => 'Descripcion',
 	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible dempuèi l’adreça $3.
-Lo nom de l’espaci del projècte serà '''$2'''.
+L’espaci de nom del projècte serà '''$2'''.
 Los ligams cap a aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''.
-S’es plan çò que volètz, picatz lo boton '''Confirmar''' çaijós.",
+S’es plan çò que volètz, cicatz sul boton '''Confirmar''' çaijós.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Sometre',
 	'farmer-createwiki-form-title' => 'Crear un Wiki',
@@ -4546,7 +4546,7 @@ $messages['ru'] = array(
 	'farmer-confirmsetting-text' => "Ваша вики '''$1''' будет доступна по $3.
 Пространство имён проекта будет '''$2'''.
 Ссылки на это пространство имён будут вида '''<nowiki>[[$2:Название страницы]]</nowiki>'''.
-Если это, чего вы хотите, нажмите кнопку «подтвердить» ниже.",
+Если это то, чего вы хотите, нажмите кнопку «подтвердить» ниже.",
 	'farmer-button-confirm' => 'Подтвердить',
 	'farmer-button-submit' => 'Отправить',
 	'farmer-createwiki-form-title' => 'Создание вики',
