@@ -5450,7 +5450,7 @@ Xin hãy quay lại và thử một tên khác.",
 	'farmer-confirmsetting-description' => 'Miêu tả',
 	'farmer-confirmsetting-reason' => 'Lý do',
 	'farmer-description' => 'Miêu tả',
-	'farmer-confirmsetting-text' => "Wiki của bạn, '''$1''', sẽ vào được thông qua trang $3.
+	'farmer-confirmsetting-text' => "Wiki của bạn, '''$1''', sẽ vào được thông qua $3.
 Không gian tên dự án sẽ là '''$2'''.
 Liên kết đến không gian tên này sẽ có dạng '''<nowiki>[[$2:Page name]]</nowiki>'''.
 Nếu đây là điều bạn muốn, hãy nhấn nút '''xác nhận''' ở dưới.",
