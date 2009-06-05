@@ -3745,6 +3745,7 @@ Når ei utviding er registrert, vil alle wikiane kunna nytta seg av ho.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Audun
  * @author Harald Khan
  * @author Jon Harald Søby
  */
@@ -3782,6 +3783,7 @@ Om du leser dette, har din nye wiki blitt installert korrekt. Du kan [[Special:F
 	'farmer-confirmsetting-name' => 'Navn',
 	'farmer-confirmsetting-title' => 'Tittel',
 	'farmer-confirmsetting-description' => 'Beskrivelse',
+	'farmer-confirmsetting-reason' => 'Grunn',
 	'farmer-description' => 'Beskrivelse',
 	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil være tilgjengelig via $3.
 Prosjektnavnerommet vil være '''$2'''.
@@ -3802,6 +3804,7 @@ Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nede
 	'farmer-createwiki-name' => 'Wikiens navn',
 	'farmer-createwiki-title' => 'Wikiens tittel',
 	'farmer-createwiki-description' => 'Beskrivelse',
+	'farmer-createwiki-reason' => 'Grunn',
 	'farmer-updatedlist' => 'Oppdatert liste',
 	'farmer-notaccessible' => 'Utilgjengelig',
 	'farmer-notaccessible-test' => 'Dette er kun tilgjengelig på farmens opphavswiki',
@@ -3809,6 +3812,9 @@ Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nede
 	'farmer-permissiondenied-text' => 'Du har ikke tillatelse til å fjerne wikier',
 	'farmer-permissiondenied-text1' => 'Du har ikke tillatelse til å gå inn på denne siden',
 	'farmer-deleting' => 'Sletter $1',
+	'farmer-delete-confirm' => 'Jeg bekrefter at jeg vil slette denne wikien',
+	'farmer-delete-confirm-wiki' => "Wiki som skal slettes: '''$1'''.",
+	'farmer-delete-reason' => 'Grunn for sletting:',
 	'farmer-delete-title' => 'Fjern wiki',
 	'farmer-delete-text' => 'Vennligst velg hvilken wiki du vil fjerne fra listen nedenunder',
 	'farmer-delete-form' => 'Velg en wiki',
@@ -3847,6 +3853,12 @@ Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nede
 	'farmer-extensions-register-includefile' => 'Inkluder fil',
 	'farmer-error-exists' => 'Kan ikke opprette wikien. Den finnes allerede: $1',
 	'farmer-error-noextwrite' => 'Kunne ikke skrive ut utvidelsesfil:',
+	'farmer-log-name' => 'Wiki farm loggen',
+	'farmer-log-header' => 'Dette er en endringslogg for wiki-farmen.',
+	'farmer-log-create' => 'opprettet wikien "$2"',
+	'farmer-log-delete' => 'slettet wikien "$2"',
+	'right-farmeradmin' => 'Administrer wiki-farmen',
+	'right-createwiki' => 'Opprett wikier på wiki-farmen',
 );
 
 /** Northern Sotho (Sesotho sa Leboa)
@@ -4612,6 +4624,13 @@ $messages['ru'] = array(
  */
 $messages['sdc'] = array(
 	'farmer-basic-permission-upload' => 'Carrigga file mùrthimediari',
+);
+
+/** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
+ * @author OC Ripper
+ */
+$messages['sh'] = array(
+	'farmer-button-submit' => 'Unesi',
 );
 
 /** Slovak (Slovenčina)
