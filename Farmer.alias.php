@@ -45,6 +45,11 @@ $aliases['mk'] = array(
 	'Farmer' => array( 'Фармер' ),
 );
 
+/** Marathi (मराठी) */
+$aliases['mr'] = array(
+	'Farmer' => array( 'शेतकरी' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Farmer' => array( 'Wikifarm' ),
