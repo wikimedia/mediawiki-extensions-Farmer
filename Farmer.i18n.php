@@ -4510,6 +4510,7 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Ferrer
  * @author Innv
  * @author Kaganer
  * @author Александр Сигачёв
@@ -4574,7 +4575,7 @@ $messages['ru'] = array(
 	'farmer-permissiondenied' => 'В разрешении отказано',
 	'farmer-permissiondenied-text' => 'У вас нет разрешения удалять вики с фермы',
 	'farmer-permissiondenied-text1' => 'У вас нет разрешения на доступ к этой странице',
-	'farmer-deleting' => 'Удаление $1',
+	'farmer-deleting' => 'Вики «$1» была удалена',
 	'farmer-delete-confirm-wiki' => "Вики для удаления: '''$1'''.",
 	'farmer-delete-reason' => 'Причина удаления:',
 	'farmer-delete-title' => 'Удаление вики',
@@ -4615,8 +4616,12 @@ $messages['ru'] = array(
 	'farmer-extensions-register-includefile' => 'Include-файл',
 	'farmer-error-exists' => 'Невозможно создать вики. Она уже существует: $1',
 	'farmer-error-noextwrite' => 'Невозможно выписать файл расширения:',
+	'farmer-log-name' => 'Журнал вики фермы',
+	'farmer-log-header' => 'Это журнал изменений в вики ферме.',
 	'farmer-log-create' => 'создана вики «$2»',
 	'farmer-log-delete' => 'удалена вики «$2»',
+	'right-farmeradmin' => 'управление вики фермой',
+	'right-createwiki' => 'создание вики в вики ферме',
 );
 
 /** Sassaresu (Sassaresu)
