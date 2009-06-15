@@ -4030,6 +4030,7 @@ $messages['os'] = array(
 $messages['pdc'] = array(
 	'farmer-about' => 'Iwwer',
 	'farmer-createwiki-form-help' => 'Hilf',
+	'farmer-delete-form-submit' => 'Lösche',
 	'farmer-mainpage' => 'Haaptblatt',
 );
 
