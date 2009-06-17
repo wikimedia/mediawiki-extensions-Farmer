@@ -1825,9 +1825,9 @@ Bitte gang zrugg un versuech s mit eme andere Name",
 	'farmer-confirmsetting-description' => 'Bschryybig',
 	'farmer-confirmsetting-reason' => 'Grund',
 	'farmer-description' => 'Bschryybig',
-	'farmer-confirmsetting-text' => "Dyy Wiki – '''$1''' – wird iber $3 erreichbar syy.
+	'farmer-confirmsetting-text' => "Dyy Wiki, '''$1''', wird iber $3 erreichbar syy.
 Dr Projektnamensruum wird '''$2''' heiße.
-Gleicher zue däm Namensruum wäre d Gstalt '''<nowiki>[[$2:Sytename]]</nowiki>''' haa.
+Gleicher zue däm Namensruum wäre d Gstalt '''<nowiki>[[$2:Page name]]</nowiki>''' haa.
 Wänn alles korräkt isch, no bstätig des mit eme Druck uf '''Bstätige'''.",
 	'farmer-button-confirm' => 'Bstätige',
 	'farmer-button-submit' => 'Abschicke',
