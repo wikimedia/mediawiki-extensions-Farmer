@@ -795,14 +795,14 @@ $messages['ca'] = array(
 	'farmercreatesitename' => 'Nom del lloc',
 	'farmercreatenextstep' => 'Següent pas',
 	'farmer-about' => 'Quant a',
-	'farmer-createwiki' => 'Crea una wiki',
+	'farmer-createwiki' => 'Crea un wiki',
 	'farmer-confirmsetting-name' => 'Nom',
 	'farmer-confirmsetting-title' => 'Títol',
 	'farmer-confirmsetting-description' => 'Descripció',
-	'farmer-confirmsetting-reason' => 'Raó',
+	'farmer-confirmsetting-reason' => 'Motiu',
 	'farmer-description' => 'Descripció',
 	'farmer-button-submit' => 'Tramet',
-	'farmer-createwiki-form-title' => 'Crea una wiki',
+	'farmer-createwiki-form-title' => 'Crea un wiki',
 	'farmer-createwiki-description' => 'Descripció',
 	'farmer-createwiki-reason' => 'Motiu',
 	'farmer-delete-form-submit' => 'Elimina',
@@ -1661,10 +1661,10 @@ Por favor volva atrás e ténteo con outro nome.",
 	'farmer-confirmsetting-description' => 'Descrición',
 	'farmer-confirmsetting-reason' => 'Motivo',
 	'farmer-description' => 'Descrición',
-	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', será accesible desde $3.
-O espazo de nomes do proxecto será '''$2'''.
-As ligazóns cara a este espazo de nomes serán da seginte forma: '''<nowiki>[[$2:Nome da páxina]]</nowiki>'''.
-Se isto é o que quere, prema no botón '''Confirmar''' de embaixo.",
+	'farmer-confirmsetting-text' => "O seu wiki, '''\$1''', será accesible desde \$3.
+O espazo de nomes do proxecto será '''\$2'''.
+As ligazóns cara a este espazo de nomes serán da seginte forma: '''<nowiki>[[\$2:Nome da páxina]]</nowiki>'''.
+Se isto é o que quere, prema no botón \"'''Confirmar'''\" de embaixo.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Enviar',
 	'farmer-createwiki-form-title' => 'Crear un wiki',
@@ -3747,6 +3747,7 @@ Når ei utviding er registrert, vil alle wikiane kunna nytta seg av ho.',
  * @author Audun
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'farmer' => 'Farmer',
@@ -3787,7 +3788,7 @@ Om du leser dette, har din nye wiki blitt installert korrekt. Du kan [[Special:F
 	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil være tilgjengelig via $3.
 Prosjektnavnerommet vil være '''$2'''.
 Lenker til dette navnerommet vil være på formen '''<nowiki>[[$2:Sidenavn]]</nowiki>'''.
-Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nedenunder.",
+Om dette er det du vil, trykk på '''bekreft'''-knappen nedenfor.",
 	'farmer-button-confirm' => 'Bekreft',
 	'farmer-button-submit' => 'Lagre',
 	'farmer-createwiki-form-title' => 'Opprett en wiki',
@@ -3810,7 +3811,7 @@ Om dette er det du vil, trykk på knappen ''{{int:Farmer-button-confirm}}'' nede
 	'farmer-permissiondenied' => 'Tilgang nektet',
 	'farmer-permissiondenied-text' => 'Du har ikke tillatelse til å fjerne wikier',
 	'farmer-permissiondenied-text1' => 'Du har ikke tillatelse til å gå inn på denne siden',
-	'farmer-deleting' => 'Sletter $1',
+	'farmer-deleting' => 'Wikien «$1» har blitt slettet',
 	'farmer-delete-confirm' => 'Jeg bekrefter at jeg vil slette denne wikien',
 	'farmer-delete-confirm-wiki' => "Wiki som skal slettes: '''$1'''.",
 	'farmer-delete-reason' => 'Grunn for sletting:',
@@ -4029,9 +4030,15 @@ $messages['os'] = array(
  */
 $messages['pdc'] = array(
 	'farmer-about' => 'Iwwer',
+	'farmer-confirmsetting-name' => 'Naame',
+	'farmer-confirmsetting-reason' => 'Grund',
 	'farmer-createwiki-form-help' => 'Hilf',
+	'farmer-createwiki-user' => 'Yuuser-Naame',
+	'farmer-createwiki-reason' => 'Grund',
 	'farmer-delete-form-submit' => 'Lösche',
 	'farmer-mainpage' => 'Haaptblatt',
+	'farmer-yes' => 'Ya',
+	'farmer-extensions-register-name' => 'Naame',
 );
 
 /** Plautdietsch (Plautdietsch)
@@ -4576,6 +4583,7 @@ $messages['ru'] = array(
 	'farmer-permissiondenied-text' => 'У вас нет разрешения удалять вики с фермы',
 	'farmer-permissiondenied-text1' => 'У вас нет разрешения на доступ к этой странице',
 	'farmer-deleting' => 'Вики «$1» была удалена',
+	'farmer-delete-confirm' => 'Я подтверждаю, что я хочу удалить эту вики',
 	'farmer-delete-confirm-wiki' => "Вики для удаления: '''$1'''.",
 	'farmer-delete-reason' => 'Причина удаления:',
 	'farmer-delete-title' => 'Удаление вики',
