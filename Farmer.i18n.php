@@ -2712,6 +2712,7 @@ Una volta che l'estensione sarà stata registrata, tutte le wiki potranno usarla
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author Fryed-peach
  * @author Hosiryuhosi
  * @author JtFuruhata
@@ -2752,7 +2753,9 @@ $messages['ja'] = array(
 	'farmer-confirmsetting-description' => '概要',
 	'farmer-confirmsetting-reason' => '理由',
 	'farmer-description' => '概要',
-	'farmer-confirmsetting-text' => "あなたのウィキ '''$1''' は $3 でアクセスが可能になります。プロジェクト名前空間は '''$2''' になり、その名前空間へのリンクは '''<nowiki>[[$2:ページ名]]</nowiki>''' という形式になります。これで希望通りならば、以下の'''確認'''ボタンを押してください。",
+	'farmer-confirmsetting-text' => "あなたのウィキ '''$1''' は $3 にてアクセスが可能になります。
+プロジェクト名前空間は '''$2''' になり、その名前空間へのリンクは '''<nowiki>[[$2:ページ名]]</nowiki>''' という形式になります。
+これで希望通りならば、以下の'''確認'''ボタンを押してください。",
 	'farmer-button-confirm' => '確認',
 	'farmer-button-submit' => '送信',
 	'farmer-createwiki-form-title' => 'ウィキを作成する',
@@ -2780,7 +2783,7 @@ $messages['ja'] = array(
 	'farmer-delete-confirm-wiki' => "削除するウィキ: '''$1'''",
 	'farmer-delete-reason' => '削除の理由:',
 	'farmer-delete-title' => 'ウィキを削除する',
-	'farmer-delete-text' => '削除したいウィキを以下のリストから選んでください',
+	'farmer-delete-text' => '削除したいウィキを以下の一覧から選んでください',
 	'farmer-delete-form' => 'ウィキを選択する',
 	'farmer-delete-form-submit' => '削除',
 	'farmer-listofwikis' => 'ウィキ一覧',
@@ -3932,10 +3935,10 @@ Es accessible sus $1',
 	'farmer-confirmsetting-description' => 'Descripcion',
 	'farmer-confirmsetting-reason' => 'Rason',
 	'farmer-description' => 'Descripcion',
-	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible dempuèi l’adreça $3.
+	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible via $3.
 L’espaci de nom del projècte serà '''$2'''.
 Los ligams cap a aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''.
-S’es plan çò que volètz, cicatz sul boton '''Confirmar''' çaijós.",
+S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Sometre',
 	'farmer-createwiki-form-title' => 'Crear un Wiki',
