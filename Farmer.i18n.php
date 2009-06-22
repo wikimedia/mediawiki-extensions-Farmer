@@ -3935,9 +3935,9 @@ Es accessible sus $1',
 	'farmer-confirmsetting-description' => 'Descripcion',
 	'farmer-confirmsetting-reason' => 'Rason',
 	'farmer-description' => 'Descripcion',
-	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible via $3.
+	'farmer-confirmsetting-text' => "Vòstre wiki, '''$1''', serà accessible dempuèi l'adreça $3.
 L’espaci de nom del projècte serà '''$2'''.
-Los ligams cap a aqueste espaci auràn la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''.
+Los ligams cap a aqueste espaci de noms seràn de la forma de '''<nowiki>[[$2:Nom de la pagina]]</nowiki>'''.
 S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Sometre',
