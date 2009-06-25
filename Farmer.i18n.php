@@ -2567,13 +2567,22 @@ Quando un extension es registrate, tote le wikis potera usar lo.',
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author Irwangatot
  * @author Rex
  */
 $messages['id'] = array(
+	'farmer-confirmsetting-name' => 'Nama',
 	'farmer-confirmsetting-title' => 'Judul',
+	'farmer-confirmsetting-description' => 'Keterangan',
+	'farmer-confirmsetting-reason' => 'Alasan',
+	'farmer-description' => 'Keterangan',
+	'farmer-button-submit' => 'Kirim',
 	'farmer-createwiki-user' => 'Nama pengguna',
+	'farmer-createwiki-description' => 'Keterangan',
+	'farmer-createwiki-reason' => 'Alasan',
 	'farmer-basic-title1' => 'Judul',
+	'farmer-basic-description' => 'Keterangan',
 	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Tidak',
 	'farmer-extensions-register-name' => 'Nama',
