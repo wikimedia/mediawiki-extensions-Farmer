@@ -189,7 +189,6 @@ $messages['rtm'] = array(
  */
 $messages['krl'] = array(
 	'farmer-mainpage' => 'Piälehyt',
-	'farmer-basic-permission-upload' => 'Panna fajlit',
 );
 
 /** Niuean (ko e vagahau Niuē)
@@ -200,13 +199,6 @@ $messages['niu'] = array(
 	'farmer-createwiki-user' => 'Matahigoa he tagata',
 	'farmer-delete-form-submit' => 'Tamate',
 	'farmer-mainpage' => 'Matapatu Lau',
-);
-
-/** Goanese Konkani (Latin) (कोंकणी/Konknni  (Latin))
- * @author Deepak D'Souza
- */
-$messages['gom-latn'] = array(
-	'farmer-basic-permission-upload' => 'fileo dhadd',
 );
 
 /** Afrikaans (Afrikaans)
@@ -780,7 +772,6 @@ Dostupan je na $1',
 	'farmer-mainpage' => 'Početna stranica',
 	'farmer-basic-title1' => 'Naslov',
 	'farmer-basic-permission' => 'Dopuštenja',
-	'farmer-basic-permission-upload' => 'Postavi datoteke',
 	'farmer-yes' => 'Da',
 	'farmer-no' => 'Ne',
 	'farmer-extensions-register-name' => 'Ime',
@@ -818,7 +809,6 @@ $messages['ca'] = array(
  */
 $messages['ch'] = array(
 	'farmer-mainpage' => 'Fanhaluman',
-	'farmer-basic-permission-upload' => "Na'kåtga hulu' atkibu",
 );
 
 /** Czech (Česky)
@@ -1164,8 +1154,6 @@ $messages['el'] = array(
 	'farmer-basic-title' => 'Βασικοί Παράμετροι',
 	'farmer-basic-title1' => 'Τίτλος',
 	'farmer-basic-description' => 'Περιγραφή',
-	'farmer-basic-permission-createpage' => 'Δημιουργήστε νέες σελίδες',
-	'farmer-basic-permission-createtalk' => 'Δημιουργήστε σελίδες συζήτησης',
 	'farmer-yes' => 'Ναι',
 	'farmer-no' => 'Όχι',
 	'farmer-extensions-register-name' => 'Όνομα',
@@ -1233,13 +1221,6 @@ Vi povas [[Special:Farmer|agordi vian vikion]].',
 	'farmer-basic-description-text' => 'Faru la priskribon de via vikio suben',
 	'farmer-basic-permission' => 'Permesoj',
 	'farmer-basic-permission-visitor' => 'Permesoj por Ĉiu Vizitanto',
-	'farmer-basic-permission-view' => 'Vidi ĉiujn paĝojn',
-	'farmer-basic-permission-edit' => 'Redakti ĉiujn paĝojn',
-	'farmer-basic-permission-createpage' => 'Krei novajn paĝojn',
-	'farmer-basic-permission-createtalk' => 'Krei diskuto-paĝojn',
-	'farmer-basic-permission-move' => 'Movi paĝojn',
-	'farmer-basic-permission-upload' => 'Alŝuti dosierojn',
-	'farmer-basic-permission-minoredit' => 'Permesigi etajn redaktojn',
 	'farmer-yes' => 'Jes',
 	'farmer-no' => 'Ne',
 	'farmer-basic-permission-user' => 'Rajtoj por Ensalutitaj Uzantoj',
@@ -1331,13 +1312,6 @@ Esto se mostrará en la lista wiki.',
 	'farmer-basic-permission-text' => 'Usando el formulario de abajo, es posible alterar los permisos para los usuarios de este wiki.',
 	'farmer-basic-permission-visitor' => 'Permisos para todo visitante',
 	'farmer-basic-permission-visitor-text' => 'Los siguientes permisos serán aplicados a toda persona que visite este wiki',
-	'farmer-basic-permission-view' => 'Ver todas las páginas',
-	'farmer-basic-permission-edit' => 'Editar todas las páginas',
-	'farmer-basic-permission-createpage' => 'Crear nuevas páginas',
-	'farmer-basic-permission-createtalk' => 'Crear páginas de discusión',
-	'farmer-basic-permission-move' => 'Mover páginas',
-	'farmer-basic-permission-upload' => 'Subir archivos',
-	'farmer-basic-permission-minoredit' => 'Permitir ediciones menores',
 	'farmer-yes' => 'Sí',
 	'farmer-no' => 'No',
 	'farmer-basic-permission-user' => 'Permisos para usuarios que han iniciado sesión',
@@ -1453,13 +1427,6 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-basic-description' => 'Kuvaus',
 	'farmer-basic-description-text' => 'Lisää kuvaus wikistäsi alle',
 	'farmer-basic-permission' => 'Käyttöoikeudet',
-	'farmer-basic-permission-view' => 'Näytä kaikki sivut',
-	'farmer-basic-permission-edit' => 'Muokkaa kaikkia sivuja',
-	'farmer-basic-permission-createpage' => 'Luo uusia sivuja',
-	'farmer-basic-permission-createtalk' => 'Luo keskustelusivuja',
-	'farmer-basic-permission-move' => 'Siirrä sivuja',
-	'farmer-basic-permission-upload' => 'Tallenna tiedostoja',
-	'farmer-basic-permission-minoredit' => 'Salli pienet muokkaukset',
 	'farmer-yes' => 'Kyllä',
 	'farmer-no' => 'Ei',
 	'farmer-defaultskin' => 'Oletusulkoasu',
@@ -1612,7 +1579,6 @@ $messages['fy'] = array(
 	'farmer-delete-form-submit' => 'Wiskje',
 	'farmer-mainpage' => 'Haadside',
 	'farmer-basic-description' => 'Beskriuwing',
-	'farmer-basic-permission-upload' => 'Triemmen oplade',
 	'farmer-yes' => 'Ja',
 );
 
@@ -1972,7 +1938,6 @@ $messages['hak'] = array(
 $messages['haw'] = array(
 	'farmer-about' => 'E pili ana',
 	'farmer-mainpage' => 'Papa kinohi',
-	'farmer-basic-permission-upload' => 'Ho‘ouka i nā waihona',
 	'farmer-extensions-register-name' => 'Inoa',
 );
 
@@ -2172,14 +2137,6 @@ $messages['hi'] = array(
 	'farmer-basic-permission-text' => 'नीचे दिये फ़ार्म का इस्तेमाल करके इस विकिपर सदस्योंको मिलनेवाली अनुमतियाँ बदली जा सकती हैं।',
 	'farmer-basic-permission-visitor' => 'सभी भेंट देने वालोंके लिये अनुमति',
 	'farmer-basic-permission-visitor-text' => 'नीचे दी हुई अनुमतियाँ सभी भेंट देनेवालोंको दी जायेगी',
-	'farmer-basic-permission-view' => 'सभी पन्ने देखें',
-	'farmer-basic-permission-edit' => 'सभी पन्ने संपादित करें',
-	'farmer-basic-permission-createpage' => 'नये पन्ने बनायें',
-	'farmer-basic-permission-createtalk' => 'वार्ता पृष्ठ बनायें',
-	'farmer-basic-permission-move' => 'पन्ने स्थानांतरित करें',
-	'farmer-basic-permission-upload' => 'फ़ाईल अपलोड करें',
-	'farmer-basic-permission-reupload' => 'फ़ाईल फिरसे अपलोड करें (पुराना अवतरण हटायें)',
-	'farmer-basic-permission-minoredit' => 'छोटे बदलाव करने दें',
 	'farmer-yes' => 'हां',
 	'farmer-no' => 'नहीं',
 	'farmer-basic-permission-user' => 'लॉग इन किये हुए सदस्योंके लिये अनुमति',
@@ -2213,7 +2170,6 @@ $messages['hil'] = array(
 	'farmer-createwiki-user' => 'Ngalan sang Manog-gamit',
 	'farmer-delete-form-submit' => 'Panason',
 	'farmer-mainpage' => 'Mayor nga Panid',
-	'farmer-basic-permission-upload' => 'Mag karga mga files',
 );
 
 /** Croatian (Hrvatski)
@@ -2895,9 +2851,6 @@ Iku bisa diaksès ing $1',
 	'farmer-basic-title1-text' => 'Wiki panjenengan ora duwé irah-irahan. Wènèhana SAIKI',
 	'farmer-basic-description' => 'Dèskripsi',
 	'farmer-basic-permission' => 'Kabèh idin',
-	'farmer-basic-permission-edit' => 'Sunting kabèh kaca',
-	'farmer-basic-permission-createpage' => 'Nggawé kaca-kaca anyar',
-	'farmer-basic-permission-upload' => 'Ngunggahaké berkas-berkas',
 	'farmer-yes' => 'Iya',
 	'farmer-no' => 'Ora',
 	'farmer-defaultskin' => 'Kulit Baku',
@@ -2970,13 +2923,6 @@ $messages['km'] = array(
 	'farmer-basic-title1-text' => 'វិគីរបស់លោកអ្នកមិនទាន់មានចំណងជើងទេ។ សូមដាក់ចំណងជើងឱ្យវាពេលនេះ!',
 	'farmer-basic-description' => 'ការពិពណ៌នា',
 	'farmer-basic-permission' => 'ការអនុញ្ញាត',
-	'farmer-basic-permission-view' => 'មើលគ្រប់ទំព័រ',
-	'farmer-basic-permission-edit' => 'កែប្រែគ្រប់ទំព័រ',
-	'farmer-basic-permission-createpage' => 'បង្កើតទំព័រថ្មីៗ',
-	'farmer-basic-permission-createtalk' => 'បង្កើតទំព័រពិភាក្សា',
-	'farmer-basic-permission-move' => 'ប្តូរទីតាំងទំព័រ',
-	'farmer-basic-permission-upload' => 'ផ្ទុកឯកសារឡើង',
-	'farmer-basic-permission-minoredit' => 'អនុញ្ញាតកំណែប្រែតិចតួច',
 	'farmer-yes' => 'បាទ/ចាស',
 	'farmer-no' => 'ទេ',
 	'farmer-setpermission' => 'កំណត់​សិទ្ធិ',
@@ -3132,13 +3078,6 @@ Mer han die Datei nit jefonge, die enjefööch wäde mööt.',
 	'right-createwiki' => 'Neu Wikis en der Shtall vun de Wikis erin donn',
 );
 
-/** Kurdish (Latin) (Kurdî / كوردی (Latin))
- * @author Bangin
- */
-$messages['ku-latn'] = array(
-	'farmer-basic-permission-upload' => "Wêneyan ya data'yan barbike",
-);
-
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -3242,7 +3181,6 @@ $messages['mhr'] = array(
 	'farmer-createwiki-user' => 'Пайдаланышын лӱмжӧ',
 	'farmer-delete-form-submit' => 'Шӧраш',
 	'farmer-mainpage' => 'Тӱҥ лаштык',
-	'farmer-basic-permission-upload' => 'Файлым пурташ',
 );
 
 /** Malayalam (മലയാളം)
@@ -3502,12 +3440,6 @@ $messages['nah'] = array(
 	'farmer-listofwikis' => 'Mochi huiqui',
 	'farmer-mainpage' => 'Calīxatl',
 	'farmer-basic-title1' => 'Tōcāitl',
-	'farmer-basic-permission-view' => 'Tiquinttāz mochi zāzanilli',
-	'farmer-basic-permission-edit' => 'Tiquimpatlāz mochi zāzanilli',
-	'farmer-basic-permission-createpage' => 'Tiquinchīhuāz mochi zāzanilli',
-	'farmer-basic-permission-createtalk' => 'Tiquinchīhuāz tēixnāmiquiliztli zāzanilli',
-	'farmer-basic-permission-move' => 'Tiquimpatlāz zāzanilli',
-	'farmer-basic-permission-upload' => 'Tiquinquetzāz tlahcuilōlli',
 	'farmer-yes' => 'Quēmah',
 	'farmer-no' => 'Ahmo',
 	'farmer-extensions-register-name' => 'Tōcāitl',
@@ -3901,12 +3833,6 @@ $messages['nso'] = array(
 	'farmer-delete-form-submit' => 'Phumula',
 	'farmer-listofwikis' => 'Lenano la di-Wiki',
 	'farmer-basic-title1' => 'Thaetlele',
-	'farmer-basic-permission-view' => 'Nyakorela matlakala ka moka',
-	'farmer-basic-permission-edit' => 'Fetola matlakala ka moka',
-	'farmer-basic-permission-createpage' => 'Hloma letlakala le lempsha',
-	'farmer-basic-permission-createtalk' => 'Hloma matlakala a dipoledišano',
-	'farmer-basic-permission-move' => 'Huduša matlakala',
-	'farmer-basic-permission-minoredit' => 'Dumella diphetogo tše nnyenyane',
 	'farmer-yes' => 'Ee',
 	'farmer-no' => 'Aowa',
 	'farmer-extensions-register-name' => 'Leina',
@@ -4219,8 +4145,6 @@ $messages['ps'] = array(
 	'farmer-basic-title1' => 'سرليک',
 	'farmer-basic-title1-text' => 'ستاسو ويکي هېڅ يو سرليک هم نه لري. يو ورته وټاکۍ',
 	'farmer-basic-description' => 'څرګندونه',
-	'farmer-basic-permission-view' => 'ټول مخونه ښکاره کول',
-	'farmer-basic-permission-upload' => 'دوتنې پورته کول',
 	'farmer-yes' => 'هو',
 	'farmer-no' => 'نه',
 	'farmer-extensions-register-name' => 'نوم',
@@ -4496,14 +4420,6 @@ $messages['ro'] = array(
 	'farmer-basic-permission' => 'Permisiuni',
 	'farmer-basic-permission-visitor' => 'Permisiuni pentru fiecare utilizator',
 	'farmer-basic-permission-visitor-text' => 'Următoarele permisiuni vor fi aplicate fiecărui utilizator care vizitează acest wiki',
-	'farmer-basic-permission-view' => 'Vizualizează toate paginile',
-	'farmer-basic-permission-edit' => 'Modifică toate paginile',
-	'farmer-basic-permission-createpage' => 'Creează pagini noi',
-	'farmer-basic-permission-createtalk' => 'Creează pagini de discuţie',
-	'farmer-basic-permission-move' => 'Mută pagini',
-	'farmer-basic-permission-upload' => 'Încarcă fişiere',
-	'farmer-basic-permission-reupload' => 'Reîncarcă fişiere (suprascrie fişierele existente)',
-	'farmer-basic-permission-minoredit' => 'Permite modificări minore',
 	'farmer-yes' => 'Da',
 	'farmer-no' => 'Nu',
 	'farmer-basic-permission-user' => 'Permisiuni pentru utilizatori autentificaţi',
@@ -4652,13 +4568,6 @@ $messages['ru'] = array(
 	'farmer-log-delete' => 'удалена вики «$2»',
 	'right-farmeradmin' => 'управление вики-фермой',
 	'right-createwiki' => 'создание вики на вики-ферме',
-);
-
-/** Sassaresu (Sassaresu)
- * @author Felis
- */
-$messages['sdc'] = array(
-	'farmer-basic-permission-upload' => 'Carrigga file mùrthimediari',
 );
 
 /** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
@@ -4863,14 +4772,6 @@ $messages['sr-ec'] = array(
 	'farmer-basic-permission-text' => 'Користећи форму испод, могуће је изменити права приступа корисника овог Викија',
 	'farmer-basic-permission-visitor' => 'Права приступа за сваког посетиоца',
 	'farmer-basic-permission-visitor-text' => 'Следећа права приступа ће имати свака особа која посети ову Вики',
-	'farmer-basic-permission-view' => 'Види све стране',
-	'farmer-basic-permission-edit' => 'Измени све стране',
-	'farmer-basic-permission-createpage' => 'Направи нове стране',
-	'farmer-basic-permission-createtalk' => 'Направи стране за разговор',
-	'farmer-basic-permission-move' => 'Премести стране',
-	'farmer-basic-permission-upload' => 'Пошаљи фајлове',
-	'farmer-basic-permission-reupload' => 'Пошањи фајлове поново (препиши садржај старих)',
-	'farmer-basic-permission-minoredit' => 'Омогући мале измене',
 	'farmer-yes' => 'Да',
 	'farmer-no' => 'Не',
 	'farmer-basic-permission-user' => 'Права приступа за улоговане кориснике',
@@ -5108,13 +5009,6 @@ $messages['te'] = array(
 	'farmer-basic-permission-text' => 'ఈ వికీలోని వాడుకర్ల అనుమతులను ఈ క్రింది ఫారం ఉపయోగించి మార్చవచ్చు.',
 	'farmer-basic-permission-visitor' => 'ప్రతీ సందర్శకునికి అనుమతులు',
 	'farmer-basic-permission-visitor-text' => 'ఈ వికీని సందర్శించే ప్రతీ వ్యక్తికీ ఈ క్రింది అనుమతులు వర్తిస్తాయి',
-	'farmer-basic-permission-view' => 'అన్ని పేజీలను చూడండి',
-	'farmer-basic-permission-edit' => 'అన్ని పేజీలు మార్చడం',
-	'farmer-basic-permission-createpage' => 'కొత్త పేజీలు సృష్టించడం',
-	'farmer-basic-permission-createtalk' => 'చర్చాపేజీలు సృష్టించడం',
-	'farmer-basic-permission-move' => 'పేజీలు తరలించడం',
-	'farmer-basic-permission-upload' => 'ఫైళ్ళు ఎగుమతి చేయడం',
-	'farmer-basic-permission-minoredit' => 'చిన్న మార్పులు అనుమతించడం',
 	'farmer-yes' => 'అవును',
 	'farmer-no' => 'కాదు',
 	'farmer-basic-permission-user' => 'ప్రవేశించిన వాడుకరులకు అనుమతులు',
@@ -5216,14 +5110,6 @@ $messages['tg-cyrl'] = array(
 	'farmer-basic-permission-text' => 'Бо истифодаи форми зер, тағйир додани иҷозаҳои корбарон дар ин вики мумкин аст.',
 	'farmer-basic-permission-visitor' => 'Иҷозаҳо барои Ҳар Ташрифовар',
 	'farmer-basic-permission-visitor-text' => 'Иҷозаҳои зер ба ҳар шахсе, ки ба ин вики ташриф меоварад шомил хоҳад шуд',
-	'farmer-basic-permission-view' => 'Нигаристани ҳамаи саҳифаҳо',
-	'farmer-basic-permission-edit' => 'Вироиши ҳамаи саҳифаҳо',
-	'farmer-basic-permission-createpage' => 'Эҷоди саҳифаҳои ҷадид',
-	'farmer-basic-permission-createtalk' => 'Эҷоди саҳифаҳои баҳс',
-	'farmer-basic-permission-move' => 'Кӯчонидани саҳифаҳо',
-	'farmer-basic-permission-upload' => 'Фиристодани парвандаҳо',
-	'farmer-basic-permission-reupload' => 'Дубора боргузорӣ кардани парвандаҳо (аз рӯи боргузории вуҷуддошта навиштан)',
-	'farmer-basic-permission-minoredit' => 'Ба вироишоти хурд иҷоза шавад',
 	'farmer-yes' => 'Бале',
 	'farmer-no' => 'Не',
 	'farmer-basic-permission-user' => 'Иҷозаҳо барои Корбарони Вурудшуда',
@@ -5387,9 +5273,6 @@ $messages['tr'] = array(
 	'farmer-listofwikis' => 'Wikilerin listesi',
 	'farmer-mainpage' => 'Ana sayfa',
 	'farmer-basic-title1' => 'Başlık',
-	'farmer-basic-permission-view' => 'Bütün sayfaları izle',
-	'farmer-basic-permission-edit' => 'Bütün sayfaları değiştir',
-	'farmer-basic-permission-upload' => 'Dosya yükle',
 	'farmer-yes' => 'Evet',
 	'farmer-no' => 'Hayır',
 	'farmer-extensions-register-name' => 'İsim',
@@ -5445,10 +5328,6 @@ $messages['vep'] = array(
 	'farmer-basic-title1-text' => "Teiden wikil ei ole pälkirjutest. Tehkat se <b>nügüd'</b>",
 	'farmer-basic-description' => 'Ümbrikirjutand',
 	'farmer-basic-permission' => 'Oiktused',
-	'farmer-basic-permission-view' => 'Nähta kaik lehtpoled',
-	'farmer-basic-permission-edit' => 'Redaktiruida kaik lehtpoled',
-	'farmer-basic-permission-createpage' => 'Säta uzid lehtpolid',
-	'farmer-basic-permission-upload' => 'Jügutoitta failad',
 	'farmer-yes' => 'Ka',
 	'farmer-no' => 'Ei',
 	'farmer-basic-permission-user' => 'Registriruidud kävutajiden oiktused',
@@ -5635,14 +5514,6 @@ Atos pajonon su vükalised.',
 	'farmer-basic-description' => 'Bepenam',
 	'farmer-basic-description-text' => 'Penolös bepenami vüka olik dono',
 	'farmer-basic-permission' => 'Däls',
-	'farmer-basic-permission-view' => 'Logön padis valik',
-	'farmer-basic-permission-edit' => 'Redakön padis valik',
-	'farmer-basic-permission-createpage' => 'Jafön padis nulik',
-	'farmer-basic-permission-createtalk' => 'Jafön bespikapadis',
-	'farmer-basic-permission-move' => 'Topätükön padis',
-	'farmer-basic-permission-upload' => 'Löpükön ragivis',
-	'farmer-basic-permission-reupload' => 'Dönulöpükön ragivis (sui ragiv ya dabinöl)',
-	'farmer-basic-permission-minoredit' => 'Dälön redakamis pülik',
 	'farmer-yes' => 'Si',
 	'farmer-no' => 'Nö',
 	'farmer-extensions-register-name' => 'Nem',
@@ -5674,11 +5545,6 @@ $messages['zh-hans'] = array(
 	'farmer-delete-form-submit' => '删除',
 	'farmer-mainpage' => '首页',
 	'farmer-basic-title1' => '标题',
-	'farmer-basic-permission-view' => '查看所有页面',
-	'farmer-basic-permission-edit' => '编辑所有页面',
-	'farmer-basic-permission-createpage' => '建立新页面',
-	'farmer-basic-permission-createtalk' => '建立讨论页',
-	'farmer-basic-permission-upload' => '上传文件',
 	'farmer-yes' => '是',
 	'farmer-no' => '否',
 	'farmer-defaultskin' => '默认皮肤',
@@ -5716,11 +5582,6 @@ $messages['zh-hant'] = array(
 	'farmer-mainpage' => '首頁',
 	'farmer-basic-title1' => '標題',
 	'farmer-basic-description' => '描述',
-	'farmer-basic-permission-view' => '檢視所有頁面',
-	'farmer-basic-permission-edit' => '編輯所有頁面',
-	'farmer-basic-permission-createpage' => '建立新頁面',
-	'farmer-basic-permission-createtalk' => '建立討論頁面',
-	'farmer-basic-permission-upload' => '上載檔案',
 	'farmer-yes' => '是',
 	'farmer-no' => '否',
 	'farmer-defaultskin' => '預設外觀',
