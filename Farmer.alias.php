@@ -35,6 +35,11 @@ $aliases['ia'] = array(
 	'Farmer' => array( 'Fermero' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'Farmer' => array( 'Petani' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'Farmer' => array( 'ウィキファーム管理' ),
