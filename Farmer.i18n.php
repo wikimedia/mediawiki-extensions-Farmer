@@ -368,6 +368,13 @@ $messages['ar'] = array(
 	'farmer-log-delete' => 'حذف الويكي "$2"',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'farmer-mainpage' => 'ܦܐܬܐ ܪܫܝܬܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  */
@@ -2805,13 +2812,14 @@ $messages['ja'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Pras
  */
 $messages['jv'] = array(
 	'farmercreatesitename' => 'Jeneng situs',
 	'farmercreatenextstep' => 'Tahap sabanjuré',
-	'farmernewwikimainpage' => '== Sugeng rawuh ing Wiki Panjenengan ==
-Menawa panjenengan maca iki, wiki anyar panjenengan wis diinstalasi sacara bener.
-Kanggo nata wiki panjenengan, mangga nuwèni [[Special:Farmer]].',
+	'farmernewwikimainpage' => '== Sugeng rawuh ing wiki panjenengan ==
+Yèn panjenengan maca iki, wiki anyar panjenengan wis dipasang kanthi bener.
+Panjenengan bisa [[Special:Farmer|nata wiki panjenengan]].',
 	'farmer-about' => 'Perkara',
 	'farmer-list-wiki' => 'Daftar Wiki',
 	'farmer-createwiki' => 'Nggawé sawijining Wiki',
@@ -2842,7 +2850,7 @@ Iku bisa diaksès ing $1',
 	'farmer-notaccessible' => 'Ora bisa diaksès',
 	'farmer-permissiondenied' => 'Idin ditolak',
 	'farmer-permissiondenied-text1' => 'Panjenengan ora duwé idin kanggo ngaksès kaca iki',
-	'farmer-deleting' => 'Mbusak $1',
+	'farmer-deleting' => 'Wiki "$1" wis dibusak',
 	'farmer-delete-title' => 'Busak Wiki',
 	'farmer-delete-form' => 'Pilihen sawijining wiki',
 	'farmer-delete-form-submit' => 'Busak',
@@ -4192,7 +4200,7 @@ Pode agora [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-confirmsetting-reason' => 'Motivo',
 	'farmer-description' => 'Descrição',
 	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', estará acessível através de $3.
-O espaço nominal do projecto será '''$2'''.
+O espaço nominal do projeto será '''$2'''.
 Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
 Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-button-confirm' => 'Confirmar',
