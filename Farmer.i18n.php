@@ -3398,6 +3398,13 @@ $messages['mr'] = array(
 	'farmer-error-noextwrite' => 'एक्स्टेंशन संचिका लिहू शकलेलो नाही:',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Aurora
+ */
+$messages['ms'] = array(
+	'farmer-yes' => 'Yes',
+);
+
 /** Maltese (Malti)
  * @author Roderick Mallia
  */
