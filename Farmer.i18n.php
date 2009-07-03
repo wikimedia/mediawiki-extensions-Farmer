@@ -2071,6 +2071,8 @@ $messages['he'] = array(
 	'farmer-log-header' => 'זהו יומן השינויים שנערכו בחוות אתרי הוויקי.',
 	'farmer-log-create' => 'יצר את אתר הוויקי "$2"',
 	'farmer-log-delete' => 'מחק את אתר הוויקי "$2"',
+	'right-farmeradmin' => 'ניהול חוות אתרי הוויקי',
+	'right-createwiki' => 'יצירת אתרי וויקי בחוות אתרי הוויקי',
 );
 
 /** Hindi (हिन्दी)
