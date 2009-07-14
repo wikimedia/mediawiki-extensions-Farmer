@@ -1141,22 +1141,27 @@ $messages['ee'] = array(
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
+ * @author Omnipaedista
  */
 $messages['el'] = array(
 	'farmercreatenextstep' => 'Επόμενο βήμα',
+	'farmer-about' => 'Σχετικά',
 	'farmer-createwiki' => 'Δημιουργήστε ένα Wiki',
 	'farmer-createwiki-text' => '[[$1|Δημιουργήστε]] ένα νέο wiki τώρα!',
 	'farmer-administration-delete' => 'Διαγράψτε ένα Wiki',
 	'farmer-confirmsetting-name' => 'Όνομα',
 	'farmer-confirmsetting-title' => 'Τίτλος',
 	'farmer-confirmsetting-description' => 'Περιγραφή',
+	'farmer-confirmsetting-reason' => 'Αιτιολογία',
 	'farmer-description' => 'Περιγραφή',
 	'farmer-button-confirm' => 'Επιβεβαίωση',
 	'farmer-button-submit' => 'Υποβολή',
 	'farmer-createwiki-form-title' => 'Δημιουργήστε ένα Wiki',
+	'farmer-createwiki-form-help' => 'Βοήθεια',
 	'farmer-createwiki-user' => 'Όνομα χρήστη',
 	'farmer-createwiki-description' => 'Περιγραφή',
 	'farmer-delete-form' => 'Επιλέξτε ένα wiki',
+	'farmer-delete-form-submit' => 'Διαγραφή',
 	'farmer-mainpage' => 'Κύρια Σελίδα',
 	'farmer-basic-title' => 'Βασικοί Παράμετροι',
 	'farmer-basic-title1' => 'Τίτλος',
@@ -1382,6 +1387,38 @@ $messages['eu'] = array(
 	'farmernewwikimainpage' => '== Ongietorria zure wikira ==
 Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
 [[Special:Farmer|Zure wikia aldatu]] ahal duzu.',
+	'farmer-list-wiki' => 'Wikien zerrenda',
+	'farmer-createwiki' => 'Wiki bat sortu',
+	'farmer-createwiki-text' => '[[$1|Sortu]] wiki berria orain!',
+	'farmer-administration-delete' => 'Wikia ezabatu',
+	'farmer-administer-thiswiki' => 'Wiki hau kudeatu',
+	'farmer-wikicreated' => 'Wiki sortua',
+	'farmer-wikiexists' => 'Wikia existitzen da',
+	'farmer-confirmsetting-name' => 'Izena',
+	'farmer-confirmsetting-title' => 'Izenburua',
+	'farmer-confirmsetting-description' => 'Deskribapena',
+	'farmer-confirmsetting-reason' => 'Arrazoia',
+	'farmer-description' => 'Deskribapena',
+	'farmer-button-confirm' => 'Baieztatu',
+	'farmer-createwiki-form-title' => 'Wiki bat sortu',
+	'farmer-createwiki-form-help' => 'Laguntza',
+	'farmer-createwiki-user' => 'Lankide izena',
+	'farmer-createwiki-name' => 'Wikiaren izena',
+	'farmer-createwiki-title' => 'Wikiaren izenburua',
+	'farmer-createwiki-description' => 'Deskribapena',
+	'farmer-createwiki-reason' => 'Arrazoia',
+	'farmer-delete-title' => 'Wikia ezabatu',
+	'farmer-delete-form' => 'Wikia aukeratu',
+	'farmer-delete-form-submit' => 'Ezabatu',
+	'farmer-listofwikis' => 'Wikien zerrenda',
+	'farmer-mainpage' => 'Azala',
+	'farmer-basic-title1' => 'Izenburua',
+	'farmer-basic-description' => 'Deskribapena',
+	'farmer-basic-permission' => 'Baimenak',
+	'farmer-yes' => 'Bai',
+	'farmer-no' => 'Ez',
+	'farmer-setpermission' => 'Baimenak esleitu',
+	'farmer-extensions-register-name' => 'Izena',
 );
 
 /** Finnish (Suomi)
@@ -3404,6 +3441,8 @@ $messages['mr'] = array(
  * @author Aurora
  */
 $messages['ms'] = array(
+	'farmer-confirmsetting-reason' => 'Sebab',
+	'farmer-createwiki-reason' => 'Sebab',
 	'farmer-yes' => 'Yes',
 );
 
@@ -4003,6 +4042,7 @@ $messages['pdc'] = array(
 	'farmer-delete-form-submit' => 'Lösche',
 	'farmer-mainpage' => 'Haaptblatt',
 	'farmer-yes' => 'Ya',
+	'farmer-no' => 'Nee',
 	'farmer-extensions-register-name' => 'Naame',
 );
 
