@@ -45,6 +45,11 @@ $aliases['ja'] = array(
 	'Farmer' => array( 'ウィキファーム管理' ),
 );
 
+/** Ripoarisch (Ripoarisch) */
+$aliases['ksh'] = array(
+	'Farmer' => array( 'StallVollWikis', 'WikiStall' ),
+);
+
 /** Macedonian (Македонски) */
 $aliases['mk'] = array(
 	'Farmer' => array( 'Фармер' ),
@@ -58,6 +63,11 @@ $aliases['mr'] = array(
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'Farmer' => array( 'Wikifarm' ),
+);
+
+/** Slovak (Slovenčina) */
+$aliases['sk'] = array(
+	'Farmer' => array( 'Farma' ),
 );
 
 /** Tagalog (Tagalog) */
