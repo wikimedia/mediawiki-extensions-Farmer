@@ -1377,6 +1377,7 @@ $messages['et'] = array(
 
 /** Basque (Euskara)
  * @author An13sa
+ * @author Kobazulo
  * @author Theklan
  */
 $messages['eu'] = array(
@@ -1402,6 +1403,7 @@ Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
 	'farmer-confirmsetting-reason' => 'Arrazoia',
 	'farmer-description' => 'Deskribapena',
 	'farmer-button-confirm' => 'Baieztatu',
+	'farmer-button-submit' => 'Bidali',
 	'farmer-createwiki-form-title' => 'Wiki bat sortu',
 	'farmer-createwiki-form-help' => 'Laguntza',
 	'farmer-createwiki-user' => 'Lankide izena',
