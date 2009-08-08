@@ -4193,6 +4193,7 @@ $messages['ps'] = array(
 	'farmer-confirmsetting-title' => 'سرليک',
 	'farmer-description' => 'څرګندونه',
 	'farmer-createwiki-form-title' => 'يو ويکي جوړول',
+	'farmer-createwiki-form-help' => 'لارښود',
 	'farmer-createwiki-user' => 'کارن-نوم',
 	'farmer-createwiki-description' => 'څرګندونه',
 	'farmer-permissiondenied' => 'د اجازې غوښتنه مو رد شوه',
