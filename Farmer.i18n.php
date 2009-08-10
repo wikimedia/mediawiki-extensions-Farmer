@@ -246,6 +246,7 @@ $messages['an'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'farmer' => 'مزارع',
@@ -366,6 +367,8 @@ $messages['ar'] = array(
 	'farmer-log-header' => 'هذا سجل بالتغييرات المعمولة لمزرعة الويكي.',
 	'farmer-log-create' => 'أنشأ الويكي "$2"',
 	'farmer-log-delete' => 'حذف الويكي "$2"',
+	'right-farmeradmin' => 'أدر مزرعة الويكي',
+	'right-createwiki' => 'أنشئ ويكيات في مزرعة الويكي',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
@@ -1429,6 +1432,7 @@ Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
+ * @author Silvonen
  * @author Str4nd
  */
 $messages['fi'] = array(
@@ -1447,9 +1451,11 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-administration' => 'Pellon ylläpito',
 	'farmer-administration-extension' => 'Laajennokset',
 	'farmer-administration-extension-text' => '[[$1|Valitse]] käytettävät laajennokset.',
+	'farmer-admimistration-listupdate-text' => '[[$1|Päivitä]] sivuston {{SITENAME}} wikiluettelo',
 	'farmer-administration-delete' => 'Poista wiki',
 	'farmer-notavailable' => 'Ei saatavilla',
 	'farmer-wikicreated' => 'Wiki luotu',
+	'farmer-wikiexists' => 'Wiki on olemassa',
 	'farmer-confirmsetting' => 'Vahvista wikin asetukset',
 	'farmer-confirmsetting-name' => 'Nimi',
 	'farmer-confirmsetting-title' => 'Otsikko',
@@ -1468,7 +1474,11 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-createwiki-reason' => 'Syy',
 	'farmer-updatedlist' => 'Päivitetty lista',
 	'farmer-permissiondenied' => 'Käyttö estetty',
+	'farmer-deleting' => 'Wiki ”$1” on poistettu',
+	'farmer-delete-confirm-wiki' => "Poistettava wiki: '''$1'''.",
+	'farmer-delete-reason' => 'Poiston syy:',
 	'farmer-delete-title' => 'Poista wiki',
+	'farmer-delete-text' => 'Valitse poistettava wiki alla olevasta listasta',
 	'farmer-delete-form' => 'Valitse wiki',
 	'farmer-delete-form-submit' => 'Poista',
 	'farmer-listofwikis' => 'Lista wikeistä',
@@ -1491,6 +1501,8 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-extensions-register-name' => 'Nimi',
 	'farmer-extensions-register-includefile' => 'Sisällytä tiedosto',
 	'farmer-error-exists' => 'Wikiä ei voitu luoda.  Se on jo olemassa: $1',
+	'right-farmeradmin' => 'Hallinnoida wikifarmia',
+	'right-createwiki' => 'Luoda wikejä wikifarmiin',
 );
 
 /** French (Français)
@@ -4446,6 +4458,8 @@ Você deve ser membro do grupo "farmeradmin"',
 	'farmer-log-header' => 'Esse é um registro das mudanças feitas à "farm" de wikis',
 	'farmer-log-create' => 'criou o wiki "$2"',
 	'farmer-log-delete' => 'eliminou o wiki "$2"',
+	'right-farmeradmin' => 'Gerenciar uma "farm" de wikis',
+	'right-createwiki' => 'Criar wikis em uma "farm" de wikis',
 );
 
 /** Tarifit (Tarifit)
@@ -4458,9 +4472,12 @@ $messages['rif'] = array(
 );
 
 /** Romanian (Română)
+ * @author Firilacroco
  * @author KlaudiuMihaila
  */
 $messages['ro'] = array(
+	'farmer' => 'Fermier',
+	'farmercreatesitename' => 'Numele site-ului',
 	'farmercreatenextstep' => 'Pasul următor',
 	'farmer-about' => 'Despre',
 	'farmer-list-wiki' => 'Listă de wiki',
@@ -4469,13 +4486,17 @@ $messages['ro'] = array(
 	'farmer-administration-extension' => 'Administrează extensiile',
 	'farmer-administration-extension-text' => '[[$1|Administrează]] extensiile instalate.',
 	'farmer-administration-delete' => 'Şterge wiki',
+	'farmer-notavailable' => 'Nu este disponibil',
 	'farmer-wikicreated' => 'Wiki creat',
 	'farmer-wikiexists' => 'Wiki există',
+	'farmer-confirmsetting' => 'Confirmaţi setările wiki',
 	'farmer-confirmsetting-name' => 'Nume',
 	'farmer-confirmsetting-title' => 'Titlu',
 	'farmer-confirmsetting-description' => 'Descriere',
+	'farmer-confirmsetting-reason' => 'Motiv',
 	'farmer-description' => 'Descriere',
 	'farmer-button-confirm' => 'Confirmă',
+	'farmer-button-submit' => 'Trimite',
 	'farmer-createwiki-form-title' => 'Creează wiki',
 	'farmer-createwiki-form-help' => 'Ajutor',
 	'farmer-createwiki-user' => 'Nume de utilizator',
@@ -4497,6 +4518,7 @@ $messages['ro'] = array(
 	'farmer-no' => 'Nu',
 	'farmer-basic-permission-user' => 'Permisiuni pentru utilizatori autentificaţi',
 	'farmer-basic-permission-user-text' => 'Următoarele permisiuni vor fi aplicate fiecărei persoane care se autentifică în acest wiki',
+	'farmer-defaultskin' => 'Stil implicit',
 	'farmer-extensions' => 'Extensii active',
 	'farmer-extensions-button' => 'Setează exteniile active',
 	'farmer-extensions-invalid' => 'Extensie incorectă',
@@ -4505,6 +4527,7 @@ $messages['ro'] = array(
 	'farmer-extensions-register' => 'Înregistrează extensie',
 	'farmer-extensions-register-name' => 'Nume',
 	'farmer-extensions-register-includefile' => 'Include fişier',
+	'farmer-log-name' => 'Jurnal wiki fermă',
 );
 
 /** Tarandíne (Tarandíne)
@@ -4868,6 +4891,111 @@ $messages['sr-ec'] = array(
 	'farmer-extensions-register-text4' => 'Тренутне путање за укључивање су:',
 	'farmer-extensions-register-name' => 'Име',
 	'farmer-extensions-register-includefile' => 'Укључи фајл',
+);
+
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'farmer' => 'Farmer',
+	'farmer-desc' => 'Upravljajte MedijaViki farmom',
+	'farmercantcreatewikis' => 'Ne možete da napravite Viki zato što nemate createwikis prava pristupa',
+	'farmercreatesitename' => 'Ime sajta',
+	'farmercreatenextstep' => 'Sledeći korak',
+	'farmernewwikimainpage' => '== Dobro došli na Vaš Viki ==
+Ako ovo čitate, Vaš Viki je ispravno instaliran.
+Možete da [[Special:Farmer|podesite Vaš viki]].',
+	'farmer-about' => 'O...',
+	'farmer-about-text' => 'MedijaViki Farmer Vam omogućava da upravljate farmom MedijaViki Vikija.',
+	'farmer-list-wiki' => 'Spisak Vikija',
+	'farmer-list-wiki-text' => '[[$1|Spisak]] svih Vikija na {{SITENAME}}',
+	'farmer-createwiki' => 'Napravite Viki',
+	'farmer-createwiki-text' => '[[$1|Napravite]] novi Viki sada!',
+	'farmer-administration' => 'Administracija farme',
+	'farmer-administration-extension' => 'Podešavajte ekstenzije',
+	'farmer-administration-extension-text' => '[[$1|Podešavajte]] instalirane ekstenzije.',
+	'farmer-admimistration-listupdate' => 'Ažuriranje spiska farme',
+	'farmer-admimistration-listupdate-text' => '[[$1|Ažurirajte]] spisak Vikija na {{SITENAME}}',
+	'farmer-administration-delete' => 'Obrišite Viki',
+	'farmer-administration-delete-text' => '[[$1|Obrišite]] Viki iz farme',
+	'farmer-administer-thiswiki' => 'Administrirajte ovaj Viki',
+	'farmer-administer-thiswiki-text' => '[[$1|Administrirajte]] promene nad ovim Vikijem',
+	'farmer-notavailable' => 'Nedostupno',
+	'farmer-notavailable-text' => 'Ova pogodnost je dostupna samo na glavnom Vikiju',
+	'farmer-wikicreated' => 'Viki je napravljen',
+	'farmer-wikicreated-text' => 'Vaš Viki je napravljen.
+Dostupan je na $1',
+	'farmer-default' => 'Po podrazumevanim podešavanjim, niko osim vas nema prava pristupa na ovom Vikiju.
+Možete da promenite prava pristupa preko $1',
+	'farmer-wikiexists' => 'Viki postoji',
+	'farmer-wikiexists-text' => "Viki koga pokušavate da napravite, '''$1''', već postoji.
+Molimo Vas da se vratite i pokušate sa drugim imenom.",
+	'farmer-confirmsetting' => 'Potvrdi podešavanja Vikija',
+	'farmer-confirmsetting-name' => 'Ime',
+	'farmer-confirmsetting-title' => 'Naslov',
+	'farmer-confirmsetting-description' => 'Opis',
+	'farmer-confirmsetting-reason' => 'Razlog',
+	'farmer-description' => 'Opis',
+	'farmer-button-confirm' => 'Potrvdi',
+	'farmer-button-submit' => 'Prihvati',
+	'farmer-createwiki-form-title' => 'Napravite Viki',
+	'farmer-createwiki-form-text1' => 'Koristite formu ispod da biste napravili novi Viki',
+	'farmer-createwiki-form-help' => 'Pomoć',
+	'farmer-createwiki-form-text4' => '; Opis: Opis Vikija.
+Ovde treba da bude opis Vikija.
+Ovo će biti prikazano u spisku Vikija.',
+	'farmer-createwiki-user' => 'Korisničko ime',
+	'farmer-createwiki-name' => 'Viki ime',
+	'farmer-createwiki-title' => 'Viki naslov',
+	'farmer-createwiki-description' => 'Opis',
+	'farmer-createwiki-reason' => 'Razlog',
+	'farmer-updatedlist' => 'Osevžen spisak',
+	'farmer-notaccessible' => 'Nedostupno',
+	'farmer-notaccessible-test' => 'Ova pogodnost je dostupna samo na glavnom Vikiju farme',
+	'farmer-permissiondenied' => 'Prava pristupa odbijena',
+	'farmer-permissiondenied-text' => 'Nemate potrebna prava da biste iz farme izbrisali ovaj Viki',
+	'farmer-permissiondenied-text1' => 'Nemate prava pristupa ovoj strani',
+	'farmer-delete-confirm' => 'Potvrđujem da želim da obrišem ovaj Viki',
+	'farmer-delete-confirm-wiki' => "Viki koji će biti obrisan: '''$1'''.",
+	'farmer-delete-reason' => 'Razlog brisanja:',
+	'farmer-delete-title' => 'Brisanje Vikija',
+	'farmer-delete-text' => 'Molimo vas da sa spiska ispod izaberete Viki koga želite da obrišete',
+	'farmer-delete-form' => 'Izaberi Viki',
+	'farmer-delete-form-submit' => 'Obriši',
+	'farmer-listofwikis' => 'Spisak Vikija',
+	'farmer-mainpage' => 'Glavna strana',
+	'farmer-basic-title' => 'Osnovni parametri',
+	'farmer-basic-title1' => 'Naslov',
+	'farmer-basic-title1-text' => 'Vaš Viki nema naslov. Postavite jedan <b>sada</b>',
+	'farmer-basic-description' => 'Opis',
+	'farmer-basic-description-text' => 'Postavlja opis Vašeg Vikija ispod',
+	'farmer-basic-permission' => 'Prava pristupa',
+	'farmer-basic-permission-text' => 'Koristeći formu ispod, moguće je izmeniti prava pristupa korisnika ovog Vikija',
+	'farmer-basic-permission-visitor' => 'Prava pristupa za svakog posetioca',
+	'farmer-basic-permission-visitor-text' => 'Sledeća prava pristupa će imati svaka osoba koja poseti ovu Viki',
+	'farmer-yes' => 'Da',
+	'farmer-no' => 'Ne',
+	'farmer-basic-permission-user' => 'Prava pristupa za ulogovane korisnike',
+	'farmer-basic-permission-user-text' => 'Sledeća prava pristupa će imati svaki ulogovani korisnik na ovaj Viki',
+	'farmer-setpermission' => 'Podesi prava pristupa',
+	'farmer-defaultskin' => 'Podrazumevana koža',
+	'farmer-defaultskin-button' => 'Podesi podrazumevanu kožu',
+	'farmer-extensions' => 'Aktivne ekstenzije',
+	'farmer-extensions-button' => 'Podesi aktivne ekstenzije',
+	'farmer-extensions-extension-denied' => 'Nemate dozvolu potrebnu da biste koristili ovu pogodnost.
+Morate biti člank farmeradmin grupe.',
+	'farmer-extensions-invalid' => 'Neispravna ekstenzija',
+	'farmer-extensions-invalid-text' => 'Nismo mogli da dodamo ekstenziju zato što fajl označen za uključivanje nije pronađen',
+	'farmer-extensions-available' => 'Raspoložive ekstenzije',
+	'farmer-extensions-noavailable' => 'Ni jedna ekstenzija nije registrovana',
+	'farmer-extensions-register' => 'Registruj ekstenziju',
+	'farmer-extensions-register-text1' => 'Koristite formu ispod da biste registrovali novu ekstenziju sa farmom.
+Kad ekstenziju jedanput registrujete, svi Vikiji će moći da je koriste.',
+	'farmer-extensions-register-text2' => "Za parametar ''Uključivanja fajla'', dodajte ime, kao što biste to uradili u LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Ako ime fajl sadrži '''\$root''', ta promenljiva će biti zamenjena sa glavnim direktorijumom MedijaVikija",
+	'farmer-extensions-register-text4' => 'Trenutne putanje za uključivanje su:',
+	'farmer-extensions-register-name' => 'Ime',
+	'farmer-extensions-register-includefile' => 'Uključi fajl',
 );
 
 /** Swati (SiSwati)
