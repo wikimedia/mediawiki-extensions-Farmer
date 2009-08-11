@@ -1451,6 +1451,7 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-administration' => 'Pellon ylläpito',
 	'farmer-administration-extension' => 'Laajennokset',
 	'farmer-administration-extension-text' => '[[$1|Valitse]] käytettävät laajennokset.',
+	'farmer-admimistration-listupdate' => 'Farmiluettelon päivitys',
 	'farmer-admimistration-listupdate-text' => '[[$1|Päivitä]] sivuston {{SITENAME}} wikiluettelo',
 	'farmer-administration-delete' => 'Poista wiki',
 	'farmer-notavailable' => 'Ei saatavilla',
@@ -1483,6 +1484,7 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-delete-form-submit' => 'Poista',
 	'farmer-listofwikis' => 'Lista wikeistä',
 	'farmer-mainpage' => 'Etusivu',
+	'farmer-basic-title' => 'Perusarvot',
 	'farmer-basic-title1' => 'Otsikko',
 	'farmer-basic-title1-text' => 'Wikilläsi ei ole otsikkoa.  Aseta se <b>nyt</b>',
 	'farmer-basic-description' => 'Kuvaus',
@@ -1501,6 +1503,8 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-extensions-register-name' => 'Nimi',
 	'farmer-extensions-register-includefile' => 'Sisällytä tiedosto',
 	'farmer-error-exists' => 'Wikiä ei voitu luoda.  Se on jo olemassa: $1',
+	'farmer-log-create' => 'luotiin wiki ”$2”',
+	'farmer-log-delete' => 'poistettiin wiki ”$2”',
 	'right-farmeradmin' => 'Hallinnoida wikifarmia',
 	'right-createwiki' => 'Luoda wikejä wikifarmiin',
 );
@@ -2998,6 +3002,14 @@ $messages['km'] = array(
 	'farmer-extensions-button' => 'កំណត់​ផ្នែកបន្ថែម​សកម្ម',
 	'farmer-extensions-register-name' => 'ឈ្មោះ',
 	'farmer-error-exists' => 'មិនអាចបង្កើតវិគីបានទេ។ វាមានរួចជាស្រេចហើយ៖$1',
+);
+
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'farmer-yes' => 'ಹೌದು',
+	'farmer-no' => 'ಇಲ್ಲ',
 );
 
 /** Krio (Krio)
