@@ -1149,8 +1149,10 @@ $messages['ee'] = array(
  * @author Omnipaedista
  */
 $messages['el'] = array(
+	'farmer' => 'Αγρότης',
 	'farmercreatenextstep' => 'Επόμενο βήμα',
 	'farmer-about' => 'Σχετικά',
+	'farmer-list-wiki' => 'Κατάλογος των βίκι',
 	'farmer-createwiki' => 'Δημιουργήστε ένα Wiki',
 	'farmer-createwiki-text' => '[[$1|Δημιουργήστε]] ένα νέο wiki τώρα!',
 	'farmer-administration-delete' => 'Διαγράψτε ένα Wiki',
@@ -1164,7 +1166,10 @@ $messages['el'] = array(
 	'farmer-createwiki-form-title' => 'Δημιουργήστε ένα Wiki',
 	'farmer-createwiki-form-help' => 'Βοήθεια',
 	'farmer-createwiki-user' => 'Όνομα χρήστη',
+	'farmer-createwiki-name' => 'Ονομασία ιστοτόπου',
+	'farmer-createwiki-title' => 'Τίτλος του βίκι',
 	'farmer-createwiki-description' => 'Περιγραφή',
+	'farmer-createwiki-reason' => 'Αιτιολογία',
 	'farmer-delete-form' => 'Επιλέξτε ένα wiki',
 	'farmer-delete-form-submit' => 'Διαγραφή',
 	'farmer-mainpage' => 'Κύρια Σελίδα',
@@ -3363,6 +3368,13 @@ $messages['ml'] = array(
 എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്തതിനു ശെഷം ഈ വിക്കിപാടത്തുള്ള എല്ലാ വിക്കികള്‍ക്കും അതുപയോഗിക്കാം.',
 	'farmer-extensions-register-name' => 'പേര്‌',
 	'farmer-error-exists' => 'വിക്കി സൃഷ്ടിക്കുന്നതിനു കഴിഞ്ഞില്ല. അതു ഇപ്പോഴെ നിലവിലുണ്ട്: $1',
+);
+
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'farmer-yes' => 'Тийм',
 );
 
 /** Marathi (मराठी)
