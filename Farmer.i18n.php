@@ -1150,12 +1150,17 @@ $messages['ee'] = array(
  */
 $messages['el'] = array(
 	'farmer' => 'Αγρότης',
+	'farmercreatesitename' => 'Ονομασία ιστοτόπου',
 	'farmercreatenextstep' => 'Επόμενο βήμα',
 	'farmer-about' => 'Σχετικά',
 	'farmer-list-wiki' => 'Κατάλογος των βίκι',
 	'farmer-createwiki' => 'Δημιουργήστε ένα Wiki',
 	'farmer-createwiki-text' => '[[$1|Δημιουργήστε]] ένα νέο wiki τώρα!',
 	'farmer-administration-delete' => 'Διαγράψτε ένα Wiki',
+	'farmer-administer-thiswiki' => 'Διαχείριση του Wiki',
+	'farmer-notavailable' => 'Μη διαθέσιμος',
+	'farmer-wikicreated' => 'Το Wiki δημιουργήθηκε',
+	'farmer-wikiexists' => 'Το Wiki υπάρχει',
 	'farmer-confirmsetting-name' => 'Όνομα',
 	'farmer-confirmsetting-title' => 'Τίτλος',
 	'farmer-confirmsetting-description' => 'Περιγραφή',
@@ -1170,8 +1175,13 @@ $messages['el'] = array(
 	'farmer-createwiki-title' => 'Τίτλος του βίκι',
 	'farmer-createwiki-description' => 'Περιγραφή',
 	'farmer-createwiki-reason' => 'Αιτιολογία',
+	'farmer-notaccessible' => 'Μη διαθέσιμος',
+	'farmer-permissiondenied' => 'Δεν έγινε αποδεκτή η παροχή άδειας',
+	'farmer-delete-confirm-wiki' => "Wiki προς διαγραφή: '''$1'''.",
+	'farmer-delete-title' => 'Διαγραφή του Wiki',
 	'farmer-delete-form' => 'Επιλέξτε ένα wiki',
 	'farmer-delete-form-submit' => 'Διαγραφή',
+	'farmer-listofwikis' => 'Λίστα των Wiki',
 	'farmer-mainpage' => 'Κύρια Σελίδα',
 	'farmer-basic-title' => 'Βασικοί Παράμετροι',
 	'farmer-basic-title1' => 'Τίτλος',
@@ -1179,6 +1189,8 @@ $messages['el'] = array(
 	'farmer-yes' => 'Ναι',
 	'farmer-no' => 'Όχι',
 	'farmer-extensions-register-name' => 'Όνομα',
+	'farmer-extensions-register-includefile' => 'Συμπερίληψη αρχείου',
+	'farmer-error-exists' => 'Αδύνατη η δημιουργία του Wiki. Υπάρχει ήδη: $1',
 );
 
 /** Esperanto (Esperanto)
@@ -1269,6 +1281,7 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
  * @author Sanbec
  */
 $messages['es'] = array(
+	'farmer' => 'Agricultor',
 	'farmercantcreatewikis' => 'Eres incapaz de crear wikis porque no tienes privilegios createwikis',
 	'farmercreatesitename' => 'Nombre del sitio',
 	'farmercreatenextstep' => 'Próximo paso',
@@ -1635,10 +1648,28 @@ Si c’est bien ce que vous voulez, cliquez sur le bouton '''Confirmer''' ci-des
 );
 
 /** Franco-Provençal (Arpetan)
+ * @author Cedric31
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
 	'farmercreateurl' => 'l’adrèce',
+	'farmer-confirmsetting-name' => 'Nom',
+	'farmer-confirmsetting-title' => 'Titro',
+	'farmer-confirmsetting-description' => 'Dèscripcion',
+	'farmer-confirmsetting-reason' => 'Rêson',
+	'farmer-description' => 'Dèscripcion',
+	'farmer-button-confirm' => 'Confirmar',
+	'farmer-button-submit' => 'Sometre',
+	'farmer-createwiki-form-title' => 'Crèar un Wiki',
+	'farmer-createwiki-form-help' => 'Éde',
+	'farmer-createwiki-user' => 'Nom d’utilisator',
+	'farmer-createwiki-name' => 'Nom du Wiki',
+	'farmer-createwiki-title' => 'Titro du Wiki',
+	'farmer-createwiki-description' => 'Dèscripcion',
+	'farmer-createwiki-reason' => 'Rêson',
+	'farmer-basic-title1' => 'Titro',
+	'farmer-yes' => 'Ouè',
+	'farmer-no' => 'Nan',
 );
 
 /** Western Frisian (Frysk)
@@ -4512,6 +4543,8 @@ $messages['ro'] = array(
 	'farmer-administration-delete' => 'Şterge wiki',
 	'farmer-notavailable' => 'Nu este disponibil',
 	'farmer-wikicreated' => 'Wiki creat',
+	'farmer-wikicreated-text' => 'Wiki-ul a fost creat.
+Este accesibil la $1',
 	'farmer-wikiexists' => 'Wiki există',
 	'farmer-confirmsetting' => 'Confirmaţi setările wiki',
 	'farmer-confirmsetting-name' => 'Nume',
@@ -4527,7 +4560,13 @@ $messages['ro'] = array(
 	'farmer-createwiki-name' => 'Nume wiki',
 	'farmer-createwiki-title' => 'Titlu wiki',
 	'farmer-createwiki-description' => 'Descriere',
+	'farmer-createwiki-reason' => 'Motiv',
+	'farmer-notaccessible' => 'Inaccesibil',
 	'farmer-permissiondenied' => 'Permisiune refuzată',
+	'farmer-deleting' => 'Wiki-ul "$1" a fost şters',
+	'farmer-delete-confirm' => 'Confirm că vreau să şterg acest wiki',
+	'farmer-delete-confirm-wiki' => "Wiki de şters: '''$1'''.",
+	'farmer-delete-reason' => 'Motiv pentru ştergere:',
 	'farmer-delete-title' => 'Şterge wiki',
 	'farmer-delete-form-submit' => 'Şterge',
 	'farmer-listofwikis' => 'Listă de wiki',
@@ -4552,6 +4591,8 @@ $messages['ro'] = array(
 	'farmer-extensions-register-name' => 'Nume',
 	'farmer-extensions-register-includefile' => 'Include fişier',
 	'farmer-log-name' => 'Jurnal wiki fermă',
+	'farmer-log-create' => 'creat wiki "$2"',
+	'farmer-log-delete' => 'şters wiki "$2"',
 );
 
 /** Tarandíne (Tarandíne)
