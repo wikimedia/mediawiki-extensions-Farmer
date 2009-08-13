@@ -871,6 +871,7 @@ $messages['da'] = array(
 /** German (Deutsch)
  * @author Als-Holder
  * @author ChrisiPK
+ * @author Imre
  * @author Jan Luca
  * @author Leithian
  * @author Melancholie
@@ -891,7 +892,7 @@ $messages['de'] = array(
 Wenn du diesen Text liest, hast du dein neues Wiki korrekt installiert.
 Du kannst es nach deinen Wünschen [[Special:Farmer|anpassen]].',
 	'farmer-about' => 'Über',
-	'farmer-about-text' => 'MediaWiki-Farmer ermöglicht es dir mehre MediaWikis zu verwalten.',
+	'farmer-about-text' => 'MediaWiki-Farmer ermöglicht es dir mehrere MediaWikis zu verwalten.',
 	'farmer-list-wiki' => 'Liste Wikis auf',
 	'farmer-list-wiki-text' => '[[$1|Liste]] aller Wikis auf {{SITENAME}}',
 	'farmer-createwiki' => 'Ein Wiki anlegen',
@@ -962,7 +963,7 @@ Dieser Text beschreibt das Wiki und wird auf der Liste der Wikis angezeigt.',
 	'farmer-mainpage' => 'Hauptseite',
 	'farmer-basic-title' => 'Grundsätzliche Parameter',
 	'farmer-basic-title1' => 'Titel',
-	'farmer-basic-title1-text' => 'Dein Wiki hat keinen Titel. Bitte setze ihn <b>jetzt</b>',
+	'farmer-basic-title1-text' => 'Dein Wiki hat keinen Titel. Bitte trage ihn <b>jetzt</b> ein',
 	'farmer-basic-description' => 'Beschreibung',
 	'farmer-basic-description-text' => 'Füge unten die Beschreibung deines Wikis ein',
 	'farmer-basic-permission' => 'Rechte',
@@ -1003,11 +1004,36 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 
 /** German (formal address) (Deutsch (Sie-Form))
  * @author ChrisiPK
+ * @author Imre
  * @author MichaelFrey
  */
 $messages['de-formal'] = array(
+	'farmercantcreatewikis' => 'Sie können kein Wiki anlegen, da Ihnen das Recht („createwikis“) dazu fehlt.',
+	'farmernewwikimainpage' => '== Willkommen in Ihrem Wiki ==
+
+Wenn Sie diesen Text lesen, haben Sie Ihr neues Wiki korrekt installiert.
+Sie können es nach Ihren Wünschen [[Special:Farmer|anpassen]].',
+	'farmer-about-text' => 'MediaWiki-Farmer ermöglicht es Ihnen mehrere MediaWikis zu verwalten.',
+	'farmer-wikicreated-text' => 'Ihr Wiki wurde erstellt.
+Es befindet sich hier: $1',
 	'farmer-default' => 'Am Anfang hat keiner außer ihnen irgendwelche Rechte in diesem Wiki.
 Mittels $1 können Sie die Benutzerrechte verwalten',
+	'farmer-wikiexists-text' => "Das Wiki – '''$1''' –, das Sie versuchen anzulegen, existiert bereits.
+Bitte kehren Sie zurück und versuchen Sie es mit einem anderen Namen",
+	'farmer-confirmsetting-text' => "Ihr Wiki – '''$1''' – wird über $3 erreichbar sein.
+Der Projektnamensraum wird '''$2''' heißen.
+Links zu diesem Namensraum werden die Form '''<nowiki>[[$2:Seitenname]]</nowiki>''' haben.
+Wenn alles korrekt ist, so bestätigen Sie dies mit einem Klick auf '''Bestätigen'''.",
+	'farmer-createwiki-form-text2' => "; Wikiname: Der Name des Wikis.
+Es darf nur die Buchstaben A–Z und Zahlen enthalten.
+Der Wikiname wird als Teil der URL zum Wiki verwendet.
+Wenn Sie zum Beispiel '''Name''' angeben, wird die URL zum Wiki <nowiki>http://</nowiki>'''name'''.example.com/ heißen.",
+	'farmer-permissiondenied-text' => 'Es ist Ihnen nicht gestattet, ein Wiki von der Farm zu löschen',
+	'farmer-permissiondenied-text1' => 'Es ist Ihnen nicht gestattet, auf diese Seite zuzugreifen',
+	'farmer-delete-text' => 'Bitte wählen Sie das Wiki, das Sie löschen möchten, aus der Liste aus',
+	'farmer-basic-title1-text' => 'Ihr Wiki hat keinen Titel. Bitte tragen Sie ihn <b>jetzt</b> ein',
+	'farmer-basic-description-text' => 'Fügen Sie unten die Beschreibung Ihres Wikis ein',
+	'farmer-extensions-extension-denied' => 'Es ist Ihnen nicht gestattet, dieses Feature zu benutzen, denn dafür müssten Sie der Admingruppe dieser Farm angehören',
 	'farmer-extensions-register-text1' => 'Verwenden Sie die untenstehende Maske, um eine neue Erweiterung für die Farm zu registrieren.
 Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 	'farmer-extensions-register-text2' => "Geben Sie den Namen der PHP-Datei im ''Include file''-Parameter so an, wie Sie ihn in LocalSettings.php angeben würden.",
