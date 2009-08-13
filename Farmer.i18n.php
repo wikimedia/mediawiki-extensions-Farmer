@@ -791,10 +791,13 @@ Dostupan je na $1',
 
 /** Catalan (Català)
  * @author Jordi Roqué
+ * @author Paucabot
  * @author SMP
  * @author Solde
  */
 $messages['ca'] = array(
+	'farmer' => 'Granger',
+	'farmer-desc' => 'Gestioneu una granja de MediaWikis',
 	'farmercreatesitename' => 'Nom del lloc',
 	'farmercreatenextstep' => 'Següent pas',
 	'farmer-about' => 'Quant a',
