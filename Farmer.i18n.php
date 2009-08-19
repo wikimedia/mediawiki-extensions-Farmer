@@ -206,13 +206,16 @@ $messages['niu'] = array(
  * @author Naudefj
  */
 $messages['af'] = array(
+	'farmer-about' => 'Omtrent',
 	'farmer-confirmsetting' => 'Bevestig Wiki Opstelling',
 	'farmer-confirmsetting-name' => 'Naam',
 	'farmer-confirmsetting-title' => 'Titel',
+	'farmer-confirmsetting-reason' => 'Rede',
 	'farmer-description' => 'Beskrywing',
 	'farmer-button-confirm' => 'Bevestig',
 	'farmer-createwiki-form-help' => 'Hulp',
 	'farmer-createwiki-user' => 'Gebruikersnaam',
+	'farmer-createwiki-reason' => 'Rede',
 	'farmer-delete-form-submit' => 'Skrap',
 	'farmer-mainpage' => 'Tuisblad',
 	'farmer-basic-title1' => 'Titel',
@@ -1254,6 +1257,7 @@ Vi povas [[Special:Farmer|agordi vian vikion]].',
 	'farmer-confirmsetting-name' => 'Nomo',
 	'farmer-confirmsetting-title' => 'Titolo',
 	'farmer-confirmsetting-description' => 'Priskribo',
+	'farmer-confirmsetting-reason' => 'Kialo',
 	'farmer-description' => 'Priskribo',
 	'farmer-button-confirm' => 'Konfirmi',
 	'farmer-button-submit' => 'Ek',
@@ -1301,6 +1305,7 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 	'farmer-extensions-register-name' => 'Nomo',
 	'farmer-extensions-register-includefile' => 'Inkluzivi dosieron',
 	'farmer-error-exists' => 'Ne povas krei vikion. Ĝi jam ekzistas: $1',
+	'farmer-log-name' => 'Protokolo pri vikia farmo',
 );
 
 /** Spanish (Español)
@@ -3084,8 +3089,10 @@ $messages['km'] = array(
  * @author Nayvik
  */
 $messages['kn'] = array(
+	'farmer-confirmsetting-name' => 'ಹೆಸರು',
 	'farmer-yes' => 'ಹೌದು',
 	'farmer-no' => 'ಇಲ್ಲ',
+	'farmer-extensions-register-name' => 'ಹೆಸರು',
 );
 
 /** Krio (Krio)
@@ -4016,7 +4023,7 @@ $messages['oc'] = array(
 	'farmer-desc' => 'Administra mantun wiki',
 	'farmercantcreatewikis' => 'Podètz pas crear de wikis perque avètz pas l’abilitacion « createwikis » necessària per aquò.',
 	'farmercreateurl' => "L'adreça",
-	'farmercreatesitename' => 'Nom del sit',
+	'farmercreatesitename' => 'Nom del site',
 	'farmercreatenextstep' => 'Etapa seguenta',
 	'farmernewwikimainpage' => '== Benvenguda dins vòstre Wiki ==
 Se legissètz aqueste messatge, aquò indica que vòstre wiki es estat installat corrèctament.
@@ -4024,20 +4031,20 @@ Podètz [[Special:Farmer|individualizar vòstre wiki]].',
 	'farmer-about' => 'A prepaus',
 	'farmer-about-text' => 'L’extension MediaWiki Farmer vos permet, en permanéncia, d’organizar un ensemble de wikis eissit del logicial MediaWiki.',
 	'farmer-list-wiki' => 'Lista dels wikis',
-	'farmer-list-wiki-text' => '[[$1|Lista]] totes los wikis sus aqueste sit.',
+	'farmer-list-wiki-text' => '[[$1|Lista]] totes los wikis sus aqueste site.',
 	'farmer-createwiki' => 'Crear un Wiki',
 	'farmer-createwiki-text' => '[[$1|Crear]] ara un wiki novèl.',
 	'farmer-administration' => 'Administracion generala',
 	'farmer-administration-extension' => 'Organizar las extensions',
 	'farmer-administration-extension-text' => '[[$1|Organiza]] las extensions installadas.',
 	'farmer-admimistration-listupdate' => 'Mesa a jorn de la lista dels Wikis',
-	'farmer-admimistration-listupdate-text' => '[[$1|Mesa a jorn]] de la lista dels wikis sus aqueste sit.',
+	'farmer-admimistration-listupdate-text' => '[[$1|Mesa a jorn]] de la lista dels wikis sus aqueste site.',
 	'farmer-administration-delete' => 'Suprimir un Wiki',
-	'farmer-administration-delete-text' => '[[$1|Suprimir]] un wiki dempuèi aqueste sit d’administracion generala',
+	'farmer-administration-delete-text' => '[[$1|Suprimir]] un wiki dempuèi aqueste site d’administracion generala',
 	'farmer-administer-thiswiki' => 'Administrar aqueste Wiki',
 	'farmer-administer-thiswiki-text' => '[[$1|Administrar]] los cambiaments sus aqueste wiki.',
 	'farmer-notavailable' => 'Pas disponible',
-	'farmer-notavailable-text' => 'Aqueste programa es pas disponible que sul sit principal',
+	'farmer-notavailable-text' => 'Aqueste programa es pas disponible que sul site principal',
 	'farmer-wikicreated' => 'Wiki creat',
 	'farmer-wikicreated-text' => 'Vòstre wiki es estat creat.
 Es accessible sus $1',
@@ -4071,7 +4078,7 @@ S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
 	'farmer-notaccessible' => 'Pas accessible',
 	'farmer-notaccessible-test' => "Aqueste programa es disponible unicament sul wiki principal d'aquest ensemble de projèctes.",
 	'farmer-permissiondenied' => 'Permission refusada',
-	'farmer-permissiondenied-text' => 'Avètz pas la permission de suprimir un wiki dempuèi lo sit d’administracion general.',
+	'farmer-permissiondenied-text' => 'Avètz pas la permission de suprimir un wiki dempuèi lo site d’administracion generala.',
 	'farmer-permissiondenied-text1' => 'Vos es pas permes d’accedir a aquesta pagina.',
 	'farmer-deleting' => 'Lo wiki « $1 » es estat suprimit',
 	'farmer-delete-confirm' => 'Confirmi que vòli suprimir aqueste wiki',
@@ -5136,7 +5143,9 @@ $messages['su'] = array(
 	'farmer-createwiki' => 'Jieun hiji Wiki',
 	'farmer-confirmsetting-name' => 'Ngaran',
 	'farmer-confirmsetting-title' => 'Judul',
+	'farmer-confirmsetting-reason' => 'Alesan',
 	'farmer-createwiki-user' => 'Landihan',
+	'farmer-createwiki-reason' => 'Alesan',
 	'farmer-basic-title1' => 'Judul',
 	'farmer-basic-description' => 'Pedaran',
 );
