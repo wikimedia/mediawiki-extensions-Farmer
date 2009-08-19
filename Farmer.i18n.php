@@ -5272,6 +5272,7 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Kiranmayee
  * @author Veeven
  * @author వైజాసత్య
  */
@@ -5281,7 +5282,7 @@ $messages['te'] = array(
 	'farmercreatesitename' => 'సైటు పేరు',
 	'farmercreatenextstep' => 'తర్వాతి మెట్టు',
 	'farmernewwikimainpage' => '== మీ వికీకి స్వాగతం ==
-మీరిది చదువుతున్నారంటే, మీ కొత్త వికీ సరిగ్గానే స్థాపనమయ్యింది.  వికీని మీకు నచ్చినట్టు మలచుకోడానికి, [[Special:Farmer]]ని సందర్శించండి.',
+మీరిది చదువుతున్నారంటే, మీ కొత్త వికీ సరిగ్గానే స్థాపనమయ్యింది.  వికీని మీకు నచ్చినట్టు మలచుకోడానికి, [[Special:Farmer| మీ వికీని మలచుకో౦డి]]ని సందర్శించండి.',
 	'farmer-about' => 'గురించి',
 	'farmer-list-wiki' => 'వికీల యొక్క జాబితా',
 	'farmer-list-wiki-text' => '{{SITENAME}}లోని అన్ని వికీల [[$1|జాబితా]]',
@@ -5320,7 +5321,7 @@ $messages['te'] = array(
 	'farmer-notaccessible' => 'అందుబాటులో లేదు',
 	'farmer-permissiondenied' => 'అనుమతి నిరాకరించారు',
 	'farmer-permissiondenied-text1' => 'ఈ పేజీని చూడడానికి మీకు అనుమతి లేదు',
-	'farmer-deleting' => '$1ని తొలగిస్తున్నాం',
+	'farmer-deleting' => 'వికీ "$1" ని తొలగి౦చాము',
 	'farmer-delete-title' => 'వికీ తొలగింపు',
 	'farmer-delete-text' => 'మీరు తొలగించాలనుకుంటున్న వికీని ఈ క్రింది జాబితానుండి ఎంచుకోండి',
 	'farmer-delete-form' => 'ఓ వికీని ఎంచుకోండి',
