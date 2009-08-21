@@ -213,6 +213,7 @@ $messages['af'] = array(
 	'farmer-confirmsetting-reason' => 'Rede',
 	'farmer-description' => 'Beskrywing',
 	'farmer-button-confirm' => 'Bevestig',
+	'farmer-button-submit' => 'Dien in',
 	'farmer-createwiki-form-help' => 'Hulp',
 	'farmer-createwiki-user' => 'Gebruikersnaam',
 	'farmer-createwiki-reason' => 'Rede',
