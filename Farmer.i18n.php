@@ -206,7 +206,8 @@ $messages['niu'] = array(
  * @author Naudefj
  */
 $messages['af'] = array(
-	'farmer-about' => 'Omtrent',
+	'farmer-about' => 'Aangaande',
+	'farmer-createwiki' => "Skep 'n wiki",
 	'farmer-confirmsetting' => 'Bevestig Wiki Opstelling',
 	'farmer-confirmsetting-name' => 'Naam',
 	'farmer-confirmsetting-title' => 'Titel',
@@ -214,6 +215,7 @@ $messages['af'] = array(
 	'farmer-description' => 'Beskrywing',
 	'farmer-button-confirm' => 'Bevestig',
 	'farmer-button-submit' => 'Dien in',
+	'farmer-createwiki-form-title' => "Skep 'n wiki",
 	'farmer-createwiki-form-help' => 'Hulp',
 	'farmer-createwiki-user' => 'Gebruikersnaam',
 	'farmer-createwiki-reason' => 'Rede',
