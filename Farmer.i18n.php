@@ -207,10 +207,12 @@ $messages['niu'] = array(
  */
 $messages['af'] = array(
 	'farmer-about' => 'Aangaande',
+	'farmer-list-wiki' => "Lys van wiki's",
 	'farmer-createwiki' => "Skep 'n wiki",
 	'farmer-confirmsetting' => 'Bevestig Wiki Opstelling',
 	'farmer-confirmsetting-name' => 'Naam',
 	'farmer-confirmsetting-title' => 'Titel',
+	'farmer-confirmsetting-description' => 'Beskrywing',
 	'farmer-confirmsetting-reason' => 'Rede',
 	'farmer-description' => 'Beskrywing',
 	'farmer-button-confirm' => 'Bevestig',
@@ -218,8 +220,11 @@ $messages['af'] = array(
 	'farmer-createwiki-form-title' => "Skep 'n wiki",
 	'farmer-createwiki-form-help' => 'Hulp',
 	'farmer-createwiki-user' => 'Gebruikersnaam',
+	'farmer-createwiki-description' => 'Beskrywing',
 	'farmer-createwiki-reason' => 'Rede',
+	'farmer-permissiondenied' => 'Geen toegang',
 	'farmer-delete-form-submit' => 'Skrap',
+	'farmer-listofwikis' => "Lys van wiki's",
 	'farmer-mainpage' => 'Tuisblad',
 	'farmer-basic-title1' => 'Titel',
 	'farmer-basic-description' => 'Beskrywing',
@@ -4912,7 +4917,7 @@ Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
 	'right-createwiki' => 'Vytvára wiki vo wiki farme',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
@@ -5019,7 +5024,7 @@ $messages['sr-ec'] = array(
 	'farmer-extensions-register-includefile' => 'Укључи фајл',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
