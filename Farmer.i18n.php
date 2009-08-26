@@ -1410,11 +1410,12 @@ Esto se mostrará en la lista wiki.',
 );
 
 /** Estonian (Eesti)
+ * @author Pikne
  * @author Silvar
  */
 $messages['et'] = array(
 	'farmer-createwiki-user' => 'Kasutajanimi',
-	'farmer-createwiki-name' => 'Wiki nimi',
+	'farmer-createwiki-name' => 'Viki nimi',
 	'farmer-createwiki-title' => 'Wiki pealkiri',
 	'farmer-createwiki-description' => 'Kirjeldus',
 	'farmer-createwiki-reason' => 'Põhjus',
@@ -5853,6 +5854,14 @@ Atos pajonon su vükalised.',
 	'farmer-no' => 'Nö',
 	'farmer-extensions-register-name' => 'Nem',
 	'farmer-error-exists' => 'Vük no kanon pajafön bi ya dabinon: $1',
+);
+
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'farmer-confirmsetting-reason' => 'אורזאַך',
+	'farmer-createwiki-reason' => 'אורזאַך',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
