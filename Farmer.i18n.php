@@ -5862,6 +5862,7 @@ Atos pajonon su vükalised.',
 $messages['yi'] = array(
 	'farmer-confirmsetting-reason' => 'אורזאַך',
 	'farmer-createwiki-reason' => 'אורזאַך',
+	'farmer-delete-form-submit' => 'אויסמעקן',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
