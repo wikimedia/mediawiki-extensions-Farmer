@@ -1197,6 +1197,7 @@ $messages['el'] = array(
 	'farmer-createwiki' => 'Δημιουργήστε ένα Wiki',
 	'farmer-createwiki-text' => '[[$1|Δημιουργήστε]] ένα νέο wiki τώρα!',
 	'farmer-administration-extension' => 'Διαχείριση επεκτάσεων',
+	'farmer-admimistration-listupdate' => 'Ενημέρωση της λίστας των βίκι',
 	'farmer-administration-delete' => 'Διαγράψτε ένα Wiki',
 	'farmer-administer-thiswiki' => 'Διαχείριση του Wiki',
 	'farmer-notavailable' => 'Μη διαθέσιμος',
@@ -1234,11 +1235,16 @@ $messages['el'] = array(
 	'farmer-no' => 'Όχι',
 	'farmer-setpermission' => 'Ρύθμιση αδειών',
 	'farmer-defaultskin' => 'Προκαθορισμένη εμφάνιση',
+	'farmer-defaultskin-button' => 'Ρύθμιση προεπιλεγμένης πρόσοψης',
 	'farmer-extensions' => 'Ενεργές επεκτάσεις',
+	'farmer-extensions-button' => 'Πύθμιση ενεργών επεκτάσεων',
 	'farmer-extensions-invalid' => 'Μη έγκυρη επέκταση',
+	'farmer-extensions-available' => 'Διαθέσιμες επεκτάσεις',
+	'farmer-extensions-register' => 'Εγγραφή μίας επέκτασης',
 	'farmer-extensions-register-name' => 'Όνομα',
 	'farmer-extensions-register-includefile' => 'Συμπερίληψη αρχείου',
 	'farmer-error-exists' => 'Αδύνατη η δημιουργία του Wiki. Υπάρχει ήδη: $1',
+	'farmer-log-name' => 'Αρχείο της βικι-φάρμας',
 );
 
 /** Esperanto (Esperanto)
@@ -2224,12 +2230,13 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
+ * @author आलोक
  */
 $messages['hi'] = array(
 	'farmer' => 'फ़ार्मर',
 	'farmer-desc' => 'एक मीडियाविकि फ़ार्म बनायें',
 	'farmercantcreatewikis' => 'आप विकि बना नहीं सकते हैं क्योंकी इसके लिये आवश्यक अधिकार आपके पास नहीं हैं',
-	'farmercreatesitename' => 'साईट का नाम',
+	'farmercreatesitename' => 'स्थल का नाम',
 	'farmercreatenextstep' => 'अगला स्टेप',
 	'farmernewwikimainpage' => '== आपके विकिमें स्वागत ==
 अगर आप यह पढ पा रहें हैं, तो आपका नया विकि शुरू हो चुका हैं। आपका विकि आपकी पसंदोंके अनुसार बदलने के लिये, कृपया [[Special:Farmer]] यहां जायें।',
