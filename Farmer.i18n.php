@@ -1214,6 +1214,7 @@ $messages['el'] = array(
 	'farmer-administration-extension' => 'Διαχείριση επεκτάσεων',
 	'farmer-admimistration-listupdate' => 'Ενημέρωση της λίστας των βίκι',
 	'farmer-administration-delete' => 'Διαγράψτε ένα Wiki',
+	'farmer-administration-delete-text' => '[[$1|Διαγραφή]] ενός βίκι από τη φάρμα',
 	'farmer-administer-thiswiki' => 'Διαχείριση του Wiki',
 	'farmer-notavailable' => 'Μη διαθέσιμος',
 	'farmer-wikicreated' => 'Το Wiki δημιουργήθηκε',
