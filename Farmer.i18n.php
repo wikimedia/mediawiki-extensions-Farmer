@@ -1907,6 +1907,7 @@ $messages['grc'] = array(
 	'farmer-confirmsetting-name' => 'Ὄνομα',
 	'farmer-confirmsetting-title' => 'Ἐπιγραφή',
 	'farmer-confirmsetting-description' => 'Περιγραφή',
+	'farmer-confirmsetting-reason' => 'Αἰτία',
 	'farmer-description' => 'Περιγραφή',
 	'farmer-button-confirm' => 'Κυροῦν',
 	'farmer-button-submit' => 'Ὑποβάλλειν',
@@ -1914,6 +1915,7 @@ $messages['grc'] = array(
 	'farmer-createwiki-form-help' => 'Βοήθεια',
 	'farmer-createwiki-user' => 'Ὄνομα χρωμένου',
 	'farmer-createwiki-description' => 'Περιγραφή',
+	'farmer-createwiki-reason' => 'Αἰτία',
 	'farmer-delete-form-submit' => 'Σβεννύναι',
 	'farmer-mainpage' => 'Κυρία Δέλτος',
 	'farmer-basic-title1' => 'Ἐπιγραφή',
@@ -2477,6 +2479,7 @@ Jeli to je to, štož chceš, stłóč deleka tłóčatko '''potwjerdźić'''.",
 /** Hungarian (Magyar)
  * @author Dani
  * @author Dorgan
+ * @author Glanthor Reviol
  */
 $messages['hu'] = array(
 	'farmer' => 'Farmer',
@@ -2537,6 +2540,7 @@ Ha ez az, amit szeretnél, akkor kattints a '''megerősítés''' gombra.",
 	'farmer-permissiondenied-text' => 'Nincsen jogod wikit törölni a farmról',
 	'farmer-permissiondenied-text1' => 'Nincs jogod az oldal megtekintéséhez',
 	'farmer-deleting' => '$1 törlése',
+	'farmer-delete-reason' => 'A törlés oka:',
 	'farmer-delete-title' => 'Wiki törlése',
 	'farmer-delete-text' => 'Válaszd ki a listából azt a wikit, amelyet törölni szeretnél',
 	'farmer-delete-form' => 'Wiki kiválasztása',
