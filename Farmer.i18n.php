@@ -5698,10 +5698,24 @@ $messages['uk'] = array(
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
+	'farmer' => 'Fermer',
 	'farmercreatesitename' => 'Saitan nimi',
 	'farmercreatenextstep' => "Jäl'ghine haškuz",
+	'farmer-about' => 'Informacii',
+	'farmer-list-wiki' => 'Wikiden nimikirjutez',
+	'farmer-createwiki' => 'Säta wiki',
+	'farmer-administration' => 'Ferman administracii',
+	'farmer-administration-delete' => 'Čuta wiki poiš',
+	'farmer-administer-thiswiki' => 'Administriruida nece wiki',
+	'farmer-notavailable' => 'Mugošt ei ole',
+	'farmer-wikicreated' => 'Wiki om sätud',
+	'farmer-wikiexists' => 'Mugoi wiki om jo olemas',
 	'farmer-confirmsetting-name' => 'Nimi',
 	'farmer-confirmsetting-title' => 'Pälkirjutez',
+	'farmer-confirmsetting-description' => 'Ümbrikirjutamine',
+	'farmer-confirmsetting-reason' => 'Sü',
+	'farmer-description' => 'Ümbrikirjutamine',
+	'farmer-button-confirm' => 'Vahvištoitta',
 	'farmer-button-submit' => 'Oigeta',
 	'farmer-createwiki-form-title' => 'Säta wiki',
 	'farmer-createwiki-form-text1' => "Kävutagat form alahan, miše säta uz' wiki.",
@@ -5710,9 +5724,10 @@ $messages['vep'] = array(
 	'farmer-createwiki-name' => 'Wikin nimi',
 	'farmer-createwiki-title' => 'Wikin pälkirjutez',
 	'farmer-createwiki-description' => 'Ümbrikirjutand',
+	'farmer-createwiki-reason' => 'Sü',
 	'farmer-updatedlist' => 'Udištadud nimikirjutez',
 	'farmer-notaccessible' => 'Ei voi nähta',
-	'farmer-deleting' => 'Čudam $1',
+	'farmer-deleting' => '"$1"-wiki om čutud poiš',
 	'farmer-delete-title' => 'Čuta wiki poiš',
 	'farmer-delete-form' => 'Valita wiki',
 	'farmer-delete-form-submit' => 'Čuta poiš',
@@ -5728,6 +5743,9 @@ $messages['vep'] = array(
 	'farmer-basic-permission-user' => 'Registriruidud kävutajiden oiktused',
 	'farmer-extensions-invalid' => 'Vär liža',
 	'farmer-extensions-register-name' => 'Nimi',
+	'farmer-extensions-register-includefile' => 'Mülütada fail',
+	'farmer-log-delete' => '"$2"-wiki om heittud poiš',
+	'right-createwiki' => 'Säta wiki wiki-fermas',
 );
 
 /** Vietnamese (Tiếng Việt)
