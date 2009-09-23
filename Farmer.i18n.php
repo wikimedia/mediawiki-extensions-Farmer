@@ -5939,9 +5939,12 @@ Atos pajonon su vükalised.',
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'farmer-confirmsetting-name' => 'נאָמען',
 	'farmer-confirmsetting-reason' => 'אורזאַך',
+	'farmer-createwiki-form-help' => 'הילף',
 	'farmer-createwiki-reason' => 'אורזאַך',
 	'farmer-delete-form-submit' => 'אויסמעקן',
+	'farmer-extensions-register-name' => 'נאָמען',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
