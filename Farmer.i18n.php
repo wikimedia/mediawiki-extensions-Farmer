@@ -3356,6 +3356,9 @@ Dir kënnt [[Special:Farmer|är Wiki elo astellen]].',
 	'farmer-createwiki-form-title' => 'Eng Wiki ufänken',
 	'farmer-createwiki-form-text1' => 'Benotzt de Formulaire hei ënnendrënner fir eng nei Wiki opzemaachen.',
 	'farmer-createwiki-form-help' => 'Hëllef',
+	'farmer-createwiki-form-text4' => '; Beschreiwung: Beschreiwung vun der Wiki.
+Dëst ass eng Textbeschreiwung vun der Wiki.
+Dësen Text gëtt an der wikilëscht gewisen.',
 	'farmer-createwiki-user' => 'Benotzernumm',
 	'farmer-createwiki-name' => 'Numm vun der Wiki',
 	'farmer-createwiki-title' => 'Titel vun der Wiki',
