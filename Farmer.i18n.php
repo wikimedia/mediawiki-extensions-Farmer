@@ -253,6 +253,7 @@ $messages['an'] = array(
 	'farmer-confirmsetting-name' => 'Nombre',
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Nimbiar',
+	'farmer-delete-form-submit' => 'Borrar',
 	'farmer-extensions-register-name' => 'Nombre',
 );
 
