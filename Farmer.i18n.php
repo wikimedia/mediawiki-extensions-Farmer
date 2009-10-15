@@ -5952,10 +5952,13 @@ Atos pajonon su vükalised.',
  */
 $messages['yi'] = array(
 	'farmer-confirmsetting-name' => 'נאָמען',
+	'farmer-confirmsetting-title' => 'טיטל',
 	'farmer-confirmsetting-reason' => 'אורזאַך',
 	'farmer-createwiki-form-help' => 'הילף',
+	'farmer-createwiki-user' => 'באַניצער נאָמען',
 	'farmer-createwiki-reason' => 'אורזאַך',
 	'farmer-delete-form-submit' => 'אויסמעקן',
+	'farmer-basic-title1' => 'טיטל',
 	'farmer-extensions-register-name' => 'נאָמען',
 );
 
