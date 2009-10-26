@@ -1353,6 +1353,7 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
  * @author Imre
  * @author Jatrobat
  * @author Sanbec
+ * @author Translationista
  */
 $messages['es'] = array(
 	'farmer' => 'Agricultor',
@@ -1367,8 +1368,10 @@ Puedes [[Special:Farmer|personalizar tu wiki]].',
 	'farmer-list-wiki-text' => '[[$1|listar]] todos los wikis en {{SITENAME}}',
 	'farmer-createwiki' => 'Crear un wiki',
 	'farmer-createwiki-text' => '[[$1|Crear]] un nuevo wiki ahora!',
+	'farmer-administration' => 'Administración de la granja',
 	'farmer-administration-extension' => 'Administrar extensiones',
 	'farmer-administration-extension-text' => '[[$1|Administrar]] extensiones instaladas.',
+	'farmer-admimistration-listupdate' => 'Actualización del listado de la granja',
 	'farmer-admimistration-listupdate-text' => '[[$1|Actualizar]] lista de wikis en {{SITENAME}}',
 	'farmer-administration-delete' => 'Borrar un wiki',
 	'farmer-administer-thiswiki' => 'Administrar este wiki',
@@ -1417,6 +1420,7 @@ Esto se mostrará en la lista wiki.',
 	'farmer-basic-title' => 'Parámetros básicos',
 	'farmer-basic-title1' => 'Título',
 	'farmer-basic-description' => 'Descripción',
+	'farmer-basic-description-text' => 'Establece la descripción de tu wiki abajo',
 	'farmer-basic-permission' => 'Permisos',
 	'farmer-basic-permission-text' => 'Usando el formulario de abajo, es posible alterar los permisos para los usuarios de este wiki.',
 	'farmer-basic-permission-visitor' => 'Permisos para todo visitante',
