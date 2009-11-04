@@ -734,13 +734,35 @@ $messages['bn'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Fohanno
  * @author Fulup
  */
 $messages['br'] = array(
+	'farmercreatesitename' => "Anv al lec'hienn",
 	'farmer-about' => 'Diwar-benn',
 	'farmer-list-wiki' => 'Roll ar wikioù',
 	'farmer-createwiki' => 'Krouiñ ur wiki',
+	'farmer-administration-delete' => 'dilemel ur wiki',
+	'farmer-confirmsetting-name' => 'Anv',
+	'farmer-confirmsetting-title' => 'Titl',
+	'farmer-confirmsetting-description' => 'Deskrivadur',
+	'farmer-confirmsetting-reason' => 'Abeg',
+	'farmer-description' => 'Deskrivadur',
+	'farmer-button-confirm' => 'Kadarnaat',
 	'farmer-createwiki-form-help' => 'Skoazell',
+	'farmer-createwiki-user' => 'Anv implijer',
+	'farmer-createwiki-name' => 'Anv ar wiki',
+	'farmer-createwiki-title' => 'Titl ar wiki',
+	'farmer-createwiki-description' => 'Deskrivadur',
+	'farmer-createwiki-reason' => 'Abeg',
+	'farmer-updatedlist' => 'Roll hizivaet',
+	'farmer-basic-title1' => 'Titl',
+	'farmer-yes' => 'Ya',
+	'farmer-no' => 'Ket',
+	'farmer-extensions' => 'Astennoù oberiant',
+	'farmer-extensions-register-name' => 'Anv',
+	'farmer-log-create' => 'en deus krouet ar wiki « $2 »',
+	'farmer-log-delete' => 'en deus dilamet ar wiki « $2 »',
 );
 
 /** Bosnian (Bosanski)
