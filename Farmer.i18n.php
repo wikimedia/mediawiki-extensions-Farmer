@@ -1289,6 +1289,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Amikeco
+ * @author Michawiki
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -1337,7 +1338,7 @@ Vi povas [[Special:Farmer|agordi vian vikion]].',
 	'farmer-notaccessible' => 'Ne atingebla',
 	'farmer-permissiondenied' => 'Permeso neita',
 	'farmer-permissiondenied-text1' => 'Vi ne havas rajtojn por vidi tiun ĉi paĝon',
-	'farmer-deleting' => 'Forigante $1',
+	'farmer-deleting' => 'Viki "$1" estas forigita',
 	'farmer-delete-title' => 'Forigi vikion',
 	'farmer-delete-form' => 'Elektu vikion',
 	'farmer-delete-form-submit' => 'Forigi',
