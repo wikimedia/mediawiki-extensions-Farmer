@@ -4457,6 +4457,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (Português)
+ * @author Hamilton Abreu
  * @author Malafaya
  * @author Waldir
  */
@@ -4487,7 +4488,8 @@ Pode agora [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-notavailable' => 'Não disponível',
 	'farmer-notavailable-text' => 'Esta funcionalidade só está disponível no wiki principal',
 	'farmer-wikicreated' => 'Wiki criado',
-	'farmer-wikicreated-text' => 'O seu wiki foi criado. Este está acessível em $1',
+	'farmer-wikicreated-text' => 'A sua wiki foi criada.
+Está acessível em $1',
 	'farmer-default' => 'Por defeito, ninguém tem permissões neste wiki à excepção de você. Pode alterar os privilégios dos utilizadores em $1',
 	'farmer-wikiexists' => 'O wiki existe',
 	'farmer-wikiexists-text' => "O wiki que está a tentar criar, '''$1''', já existe. Por favor, volte atrás e introduza um outro nome.",
@@ -4497,8 +4499,8 @@ Pode agora [[Special:Farmer|personalizar o seu wiki]].',
 	'farmer-confirmsetting-description' => 'Descrição',
 	'farmer-confirmsetting-reason' => 'Motivo',
 	'farmer-description' => 'Descrição',
-	'farmer-confirmsetting-text' => "O seu wiki, '''$1''', estará acessível através de $3.
-O espaço nominal do projeto será '''$2'''.
+	'farmer-confirmsetting-text' => "A sua wiki, '''$1''', estará acessível através de $3.
+O espaço nominal do projecto será '''$2'''.
 Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
 Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-button-confirm' => 'Confirmar',
@@ -4515,7 +4517,7 @@ Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-createwiki-description' => 'Descrição',
 	'farmer-createwiki-reason' => 'Motivo',
 	'farmer-updatedlist' => 'Lista actualizada',
-	'farmer-notaccessible' => 'Não acessível',
+	'farmer-notaccessible' => 'Inacessível',
 	'farmer-notaccessible-test' => 'Esta funcionalidade só está disponível no wiki pai da "farm"',
 	'farmer-permissiondenied' => 'Permissão negada',
 	'farmer-permissiondenied-text' => 'Não tem permissão para apagar um wiki da "farm"',
