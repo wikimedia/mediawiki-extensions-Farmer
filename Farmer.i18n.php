@@ -271,7 +271,7 @@ $messages['ar'] = array(
 	'farmernewwikimainpage' => '== مرحبا في الويكي الخاص بك ==
 لو أنك تقرأ هذا، فالويكي الجديد الخاص بك تم تنصيبه بشكل صحيح.
 يمكنك [[Special:Farmer|تخصيص الويكي الخاص بك]].',
-	'farmer-about' => 'حول',
+	'farmer-about' => 'عن',
 	'farmer-about-text' => 'مزارع ميدياويكي يسمح لك بإدارة مزرعة من ويكيات ميدياويكي.',
 	'farmer-list-wiki' => 'قائمة الويكيات',
 	'farmer-list-wiki-text' => '[[$1|عرض]] كل الويكيات في {{SITENAME}}',
