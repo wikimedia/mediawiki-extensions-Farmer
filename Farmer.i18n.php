@@ -761,6 +761,7 @@ $messages['br'] = array(
 	'farmer-createwiki-reason' => 'Abeg',
 	'farmer-updatedlist' => 'Roll hizivaet',
 	'farmer-delete-confirm-wiki' => "Wiki da zilemel : '''$1'''.",
+	'farmer-listofwikis' => 'Roll ar Wikioù',
 	'farmer-mainpage' => 'Pajenn degemer',
 	'farmer-basic-title1' => 'Titl',
 	'farmer-basic-title1-text' => "N'eus titl ebet gant ho wiki. Lakait unan <b>bremañ</b>",
@@ -2754,11 +2755,16 @@ Quando un extension es registrate, tote le wikis potera usar lo.',
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Farras
  * @author Irwangatot
  * @author Rex
  */
 $messages['id'] = array(
+	'farmer' => 'Farmer',
+	'farmer-desc' => 'Kelola sebuah farm MediaWiki',
+	'farmercantcreatewikis' => 'Anda tidak bisa membuat wiki karena Anda tidak memiliki izin createwikis',
 	'farmercreatesitename' => 'Nama situs',
+	'farmercreatenextstep' => 'Tahap selanjutnya',
 	'farmernewwikimainpage' => '== Selamat datang di wiki anda ==
 Jika anda membaca ini, wiki baru anda telah di pasang dengan benar.
 Anda dapat melakukan [[Special:Farmer|penyesuaian wiki anda]].',
@@ -2768,42 +2774,111 @@ Anda dapat melakukan [[Special:Farmer|penyesuaian wiki anda]].',
 	'farmer-list-wiki-text' => '[[$1|Daftar]] semua wiki pada {{SITENAME}}',
 	'farmer-createwiki' => 'Buat wiki',
 	'farmer-createwiki-text' => '[[$1|Buat]] wiki baru sekarang!',
+	'farmer-administration' => 'Administrasi farm',
 	'farmer-administration-extension' => 'Pengaturan ekstensi',
+	'farmer-administration-extension-text' => '[[$1|Kelola]] ekstensi yang dipasang.',
+	'farmer-admimistration-listupdate' => 'Pembaruan daftar farm',
+	'farmer-admimistration-listupdate-text' => '[[$1|Perbarui]] daftar wiki di {{SITENAME}}',
 	'farmer-administration-delete' => 'Hapus wiki',
+	'farmer-administration-delete-text' => '[[$1|Hapus]] wiki dari farm',
+	'farmer-administer-thiswiki' => 'Urus wiki ini',
+	'farmer-administer-thiswiki-text' => '[[$1|Kelola]] perubahan terhadap wiki ini',
+	'farmer-notavailable' => 'Tidak tersedia',
+	'farmer-notavailable-text' => 'Fitur ini hanya tersedia di wiki utama',
 	'farmer-wikicreated' => 'Wiki dibuat',
+	'farmer-wikicreated-text' => 'Wiki Anda telah dibuat.
+Dapat diakses di $1',
+	'farmer-default' => 'Biasanya, tak seorang pun memiliki izin di wiki ini kecuali Anda.
+Anda dapat mengubah izin pengguna melalui $1',
+	'farmer-wikiexists' => 'Wiki sudah ada',
+	'farmer-wikiexists-text' => 'Wiki yang akan Anda buat, "$1", sudah ada.
+Silakan kembali dan coba nama yang lain.',
+	'farmer-confirmsetting' => 'Konfirmasi pengaturan wiki',
 	'farmer-confirmsetting-name' => 'Nama',
 	'farmer-confirmsetting-title' => 'Judul',
 	'farmer-confirmsetting-description' => 'Keterangan',
 	'farmer-confirmsetting-reason' => 'Alasan',
 	'farmer-description' => 'Keterangan',
+	'farmer-confirmsetting-text' => "Wiki Anda, '''$1''', akan dapat diakses melalui $3.
+Ruang nama proyek adalah '''$2'''.
+pranala ke ruang nama ini akan berupa '''<nowiki>[[$2:Nama halaman]]</nowiki>'''.
+Bila ini yang Anda inginkan, tekan tombol '''konfirmasi''' di bawah.",
 	'farmer-button-confirm' => 'Konfirmasi',
 	'farmer-button-submit' => 'Kirim',
 	'farmer-createwiki-form-title' => 'Buat wiki',
+	'farmer-createwiki-form-text1' => 'Gunakan formulir di bawah untuk membuat wiki baru.',
 	'farmer-createwiki-form-help' => 'Bantuan',
+	'farmer-createwiki-form-text2' => "; Nama wiki: Nama wiki.
+Hanya berisi huruf dan angka.
+Nama wiki akan digunakan sebagai bagian dair URL untuk mengidentifikasi wiki Anda.
+Contohnya, bila Anda memasukkan \"judul\", maka wiki Anda dapat diakses melalui <nowiki>http://</nowiki>'''judul'''.domainku.",
+	'farmer-createwiki-form-text3' => '; Judul wiki: Judul wiki.
+Akan digunakan di judul setiap halaman di wiki Anda.
+Juga akan menjadi ruang nama proyek dan prefiks interwiki.',
+	'farmer-createwiki-form-text4' => '; Deskripsi: Deskripsi wiki.
+Ini adalah teks deskripsi tentang wiki.
+Ini akan ditampilkan di daftar wiki.',
 	'farmer-createwiki-user' => 'Nama pengguna',
 	'farmer-createwiki-name' => 'Nama wiki',
 	'farmer-createwiki-title' => 'Judul wiki',
 	'farmer-createwiki-description' => 'Keterangan',
 	'farmer-createwiki-reason' => 'Alasan',
 	'farmer-updatedlist' => 'Perbaharui daftar',
+	'farmer-notaccessible' => 'Tidak dapat diakses',
+	'farmer-notaccessible-test' => 'Fitur ini hanya tersedia di wiki induk di farm',
 	'farmer-permissiondenied' => 'Hak ases ditolak',
+	'farmer-permissiondenied-text' => 'Anda tidak memiliki izin untuk menghapus wiki dari farm',
+	'farmer-permissiondenied-text1' => 'Anda tidak punya izin untuk mengakses halaman ini',
+	'farmer-deleting' => 'Wiki "$1" telah dihapus',
+	'farmer-delete-confirm' => 'Saya mengkonfirmasi bahwa saya ingin menghapus wiki ini',
 	'farmer-delete-confirm-wiki' => "Wiki untuk dihapus: '''$1'''.",
+	'farmer-delete-reason' => 'Alasan penghapusan:',
 	'farmer-delete-title' => 'Hapus wiki',
+	'farmer-delete-text' => 'Pilih wiki dari daftar di bawah yang ingin Anda hapus',
+	'farmer-delete-form' => 'Pilih wiki',
 	'farmer-delete-form-submit' => 'Hapus',
 	'farmer-listofwikis' => 'Daftar wiki',
 	'farmer-mainpage' => 'Halaman Utama',
+	'farmer-basic-title' => 'Parameter dasar',
 	'farmer-basic-title1' => 'Judul',
+	'farmer-basic-title1-text' => 'Wiki Anda tak memiliki judul. Buat satu <b>sekarang</b>',
 	'farmer-basic-description' => 'Keterangan',
+	'farmer-basic-description-text' => 'Buat deskripsi wiki Anda di bawah',
 	'farmer-basic-permission' => 'Hak',
+	'farmer-basic-permission-text' => 'Gunakan formulir di bawah, bisa untuk mengubah izin pengguna wiki ini.',
+	'farmer-basic-permission-visitor' => 'Izin untuk setiap pengunjung',
+	'farmer-basic-permission-visitor-text' => 'Izin berikut akan diberlakukan pada setiap orang yang mengunjungi wiki ini',
 	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Tidak',
+	'farmer-basic-permission-user' => 'Izin untuk pengguna yang masuk log',
+	'farmer-basic-permission-user-text' => 'Izin berikut akan diberlakukan pada setiap orang yang masuk log ke wiki ini',
+	'farmer-setpermission' => 'Atur izin',
 	'farmer-defaultskin' => 'Kulit baku',
 	'farmer-defaultskin-button' => 'Buat kulit baku',
+	'farmer-extensions' => 'Ekstensi aktif',
+	'farmer-extensions-button' => 'Atur ekstensi aktif',
+	'farmer-extensions-extension-denied' => 'Anda tidak memiliki izin untuk menggunakan fitur ini.
+Anda harus menjadi anggota grup farmeradmin',
+	'farmer-extensions-invalid' => 'Ekstensi salah',
+	'farmer-extensions-invalid-text' => 'Kami tidak dapat menambahkan ekstensi karena berkas yang dipilih untuk dimasukkan tidak ditemukan',
+	'farmer-extensions-available' => 'Ekstensi yang tersedia',
+	'farmer-extensions-noavailable' => 'Tidak ada ekstensi yang didaftarkan',
+	'farmer-extensions-register' => 'Daftarkan ekstensi',
+	'farmer-extensions-register-text1' => 'Gunakan formulir di bawah untuk mendaftarkan ekstensi baru dengan farm.
+Setelah ekstensi tersebut terdaftar, semua wiki dapat menggunakannya.',
+	'farmer-extensions-register-text2' => 'Untuk parameter "Masukkan berkas", masukkan nama berkas PHP seperti di LocalSettings.php.',
+	'farmer-extensions-register-text3' => "Bila nama berkas berisi '''\$root''', variabel tersebut akan digantikan dengan direktori root MediaWiki.",
+	'farmer-extensions-register-text4' => 'Jalur masuk terbaru adalah:',
 	'farmer-extensions-register-name' => 'Nama',
 	'farmer-extensions-register-includefile' => 'Termasuk berkas',
 	'farmer-error-exists' => 'Tidak dapat membuat wiki. telah ada : $1',
+	'farmer-error-noextwrite' => 'Tidak bisa menghapus berkas ekstensi:',
+	'farmer-log-name' => 'Log farm wiki',
+	'farmer-log-header' => 'Ini adalah log perubahan yang dibuat di farm wiki.',
 	'farmer-log-create' => 'buat wiki "$2"',
 	'farmer-log-delete' => 'hapus wiki "$2"',
+	'right-farmeradmin' => 'Kelola farm wiki',
+	'right-createwiki' => 'Buat wiki di farm wiki',
 );
 
 /** Ido (Ido)
