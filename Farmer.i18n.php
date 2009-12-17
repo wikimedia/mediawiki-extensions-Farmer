@@ -742,8 +742,12 @@ $messages['br'] = array(
 	'farmer-about' => 'Diwar-benn',
 	'farmer-list-wiki' => 'Roll ar wikioù',
 	'farmer-createwiki' => 'Krouiñ ur wiki',
+	'farmer-createwiki-text' => '[[$1|Krouiñ]] ur wiki nevez bremañ !',
+	'farmer-administration-extension' => 'Merañ an astennoù',
 	'farmer-administration-delete' => 'dilemel ur wiki',
+	'farmer-administer-thiswiki' => 'Merañ ar wiki-mañ',
 	'farmer-notavailable' => "N'eo ket da gaout",
+	'farmer-wikicreated' => 'Krouet eo ar wiki',
 	'farmer-confirmsetting' => 'Kadarnaat arventennoù ar wiki',
 	'farmer-confirmsetting-name' => 'Anv',
 	'farmer-confirmsetting-title' => 'Titl',
@@ -751,6 +755,7 @@ $messages['br'] = array(
 	'farmer-confirmsetting-reason' => 'Abeg',
 	'farmer-description' => 'Deskrivadur',
 	'farmer-button-confirm' => 'Kadarnaat',
+	'farmer-button-submit' => 'Kas',
 	'farmer-createwiki-form-title' => 'Krouiñ ur wiki',
 	'farmer-createwiki-form-text1' => 'Implijout ar furmskrid amañ dindan da grouiñ ur wiki nevez.',
 	'farmer-createwiki-form-help' => 'Skoazell',
@@ -760,16 +765,27 @@ $messages['br'] = array(
 	'farmer-createwiki-description' => 'Deskrivadur',
 	'farmer-createwiki-reason' => 'Abeg',
 	'farmer-updatedlist' => 'Roll hizivaet',
+	'farmer-permissiondenied' => "Aotre nac'het",
+	'farmer-deleting' => 'Ar wiki « $1 » zo bet dilamet',
 	'farmer-delete-confirm-wiki' => "Wiki da zilemel : '''$1'''.",
+	'farmer-delete-title' => 'Dilemel ur wiki',
+	'farmer-delete-form' => 'Diuzañ ur wiki',
+	'farmer-delete-form-submit' => 'Dilemel',
 	'farmer-listofwikis' => 'Roll ar Wikioù',
 	'farmer-mainpage' => 'Pajenn degemer',
+	'farmer-basic-title' => 'Arventennoù diazez',
 	'farmer-basic-title1' => 'Titl',
 	'farmer-basic-title1-text' => "N'eus titl ebet gant ho wiki. Lakait unan <b>bremañ</b>",
+	'farmer-basic-description' => 'Deskrivadur',
 	'farmer-basic-permission' => 'Aotreoù',
 	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Ket',
+	'farmer-setpermission' => 'Lakaat an aotreoù',
 	'farmer-extensions' => 'Astennoù oberiant',
+	'farmer-extensions-available' => 'Astennoù da gaout',
 	'farmer-extensions-register-name' => 'Anv',
+	'farmer-extensions-register-includefile' => 'Enklozañ ur restr',
+	'farmer-error-exists' => "Ne c'haller ket krouiñ ar wiki. Bez' ez eus anezhañ dija : $1",
 	'farmer-log-create' => 'en deus krouet ar wiki « $2 »',
 	'farmer-log-delete' => 'en deus dilamet ar wiki « $2 »',
 );
@@ -5353,6 +5369,7 @@ $messages['su'] = array(
  * @author Jon Harald Søby
  * @author Lejonel
  * @author M.M.S.
+ * @author Per
  */
 $messages['sv'] = array(
 	'farmer' => 'Farmer',
@@ -5388,6 +5405,7 @@ Om du läser det här, har din nya wiki blivit korrekt installerad. Du kan [[Spe
 	'farmer-confirmsetting-name' => 'Namn',
 	'farmer-confirmsetting-title' => 'Titel',
 	'farmer-confirmsetting-description' => 'Beskrivnin',
+	'farmer-confirmsetting-reason' => 'Anledning',
 	'farmer-description' => 'Beskrivning',
 	'farmer-confirmsetting-text' => "Din wiki, '''$1''', vill bli tillgänglig via $3.
 Projektnamnrymden ska vara '''$2'''.
@@ -5407,6 +5425,7 @@ Kommer bli använd i titeln på varje sida på din wiki. Kommer också användas
 	'farmer-createwiki-name' => 'Wikins namn',
 	'farmer-createwiki-title' => 'Wikins titel',
 	'farmer-createwiki-description' => 'Beskrivning',
+	'farmer-createwiki-reason' => 'Anledning',
 	'farmer-updatedlist' => 'Uppdaterad lista',
 	'farmer-notaccessible' => 'Otillgänglig',
 	'farmer-notaccessible-test' => 'Detta är endast tillgängligt på farmens upphovswiki',
@@ -5414,6 +5433,9 @@ Kommer bli använd i titeln på varje sida på din wiki. Kommer också användas
 	'farmer-permissiondenied-text' => 'Du har inte tillåtelse att ta bort wikier',
 	'farmer-permissiondenied-text1' => 'Du har inte tillåtelse att gå in på denna sida',
 	'farmer-deleting' => 'Tar bort $1',
+	'farmer-delete-confirm' => 'Jag bekräftar att jag vill radera denna wiki',
+	'farmer-delete-confirm-wiki' => 'Wiki att radera: "$1"',
+	'farmer-delete-reason' => 'Anledning till radering:',
 	'farmer-delete-title' => 'Ta bort Wiki',
 	'farmer-delete-text' => 'Var god välj vilken wiki du vill ta bort från listan nedan',
 	'farmer-delete-form' => 'Välj en wiki',
@@ -5453,6 +5475,8 @@ Du måste vara medlem av användargruppen farmeradmin',
 	'farmer-extensions-register-includefile' => 'Inkludera fil',
 	'farmer-error-exists' => 'Kan inte skapa wikin.  Den existerar redan: $1',
 	'farmer-error-noextwrite' => 'Kunde inte skriva ut programtilläggsfil:',
+	'farmer-log-create' => 'skapat wikin "$2"',
+	'farmer-log-delete' => 'raderat wikin "$2"',
 );
 
 /** Silesian (Ślůnski)
@@ -6082,6 +6106,7 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
+ * @author PhiLiP
  * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
@@ -6093,12 +6118,14 @@ $messages['zh-hans'] = array(
 	'farmer-wikicreated' => 'Wiki已被建立',
 	'farmer-wikiexists' => 'Wiki存在',
 	'farmer-confirmsetting-title' => '标题',
+	'farmer-confirmsetting-reason' => '原因',
 	'farmer-button-confirm' => '确认',
 	'farmer-button-submit' => '提交',
 	'farmer-createwiki-form-help' => '帮助',
 	'farmer-createwiki-user' => '用户名',
 	'farmer-createwiki-name' => 'Wiki名称',
 	'farmer-createwiki-title' => 'Wiki标题',
+	'farmer-createwiki-reason' => '原因',
 	'farmer-updatedlist' => '已更新的列表',
 	'farmer-delete-title' => '删除Wiki',
 	'farmer-delete-form' => '选择一个Wiki',
