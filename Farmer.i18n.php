@@ -5862,8 +5862,10 @@ $messages['ug-latn'] = array(
 
 /** Ukrainian (Українська)
  * @author AS
+ * @author Prima klasy4na
  */
 $messages['uk'] = array(
+	'farmer-confirmsetting-reason' => 'Причина',
 	'farmer-basic-title1' => 'Заголовок',
 );
 
