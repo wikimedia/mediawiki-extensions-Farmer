@@ -405,7 +405,7 @@ $messages['arz'] = array(
 لو أنك تقرأ هذا، فالويكى الجديد الخاص بك تم تنصيبه بشكل صحيح.
 يمكنك [[Special:Farmer|تخصيص الويكى الخاص بك]].',
 	'farmer-about' => 'حول',
-	'farmer-about-text' => 'مزارع ميدياويكى يسمح لك بإدارة مزرعة من ويكيات ميدياويكي.',
+	'farmer-about-text' => 'مزارع ميدياويكى يسمح لك بإدارة مزرعة من ويكيات ميدياويكى.',
 	'farmer-list-wiki' => 'قائمة الويكيات',
 	'farmer-list-wiki-text' => '[[$1|عرض]] كل الويكيات فى {{SITENAME}}',
 	'farmer-createwiki' => 'إنشاء ويكي',
@@ -443,16 +443,16 @@ $messages['arz'] = array(
 	'farmer-createwiki-form-title' => 'إنشاء ويكي',
 	'farmer-createwiki-form-text1' => 'استخدم الاستمارة بالأسفل لإنشاء ويكى جديدة.',
 	'farmer-createwiki-form-help' => 'مساعدة',
-	'farmer-createwiki-form-text2' => "; اسم الويكي: الاسم الخاص بالويكي.
+	'farmer-createwiki-form-text2' => "; اسم الويكي: الاسم الخاص بالويكى.
 يحتوى فقط على حروف وأرقام.
 اسم الويكى سيستخدم كجزء من المسار للتعرف على الويكى الخاصة بك.
 على سبيل المثال، لو أنك أدخلت '''title'''، فسيصبح الويكى الخاص بك متاحا للوصول إليها من خلال <nowiki>http://</nowiki>'''title'''.mydomain.",
-	'farmer-createwiki-form-text3' => '; عنوان الويكي: العنوان الخاص بالويكي.
+	'farmer-createwiki-form-text3' => '; عنوان الويكي: العنوان الخاص بالويكى.
 سيستخدم فى عنوان كل صفحة فى الويكى الخاصة بك.
-سيصبح أيضا نطاق المشروع وبادئة الإنترويكي.',
-	'farmer-createwiki-form-text4' => '; الوصف: وصف الويكي.
-هذا نص لوصف الويكي.
-هذا سيعرض فى قائمة الويكي.',
+سيصبح أيضا نطاق المشروع وبادئة الإنترويكى.',
+	'farmer-createwiki-form-text4' => '; الوصف: وصف الويكى.
+هذا نص لوصف الويكى.
+هذا سيعرض فى قائمة الويكى.',
 	'farmer-createwiki-user' => 'اسم المستخدم',
 	'farmer-createwiki-name' => 'اسم الويكي',
 	'farmer-createwiki-title' => 'عنوان الويكي',
@@ -463,7 +463,7 @@ $messages['arz'] = array(
 	'farmer-permissiondenied' => 'السماح مرفوض',
 	'farmer-permissiondenied-text' => 'أنت لا تمتلك السماح لحذف ويكى من المزرعة',
 	'farmer-permissiondenied-text1' => 'أنت لا تمتلك السماح لرؤية هذه الصفحة',
-	'farmer-deleting' => 'حذف $1',
+	'farmer-deleting' => 'الويكى "$1" تم حذفه',
 	'farmer-delete-title' => 'حذف الويكي',
 	'farmer-delete-text' => 'من فضلك اختر الويكى من القائمة بالأسفل الذى ترغب فى حذفه',
 	'farmer-delete-form' => 'اختر ويكي',
@@ -476,7 +476,7 @@ $messages['arz'] = array(
 	'farmer-basic-description' => 'وصف',
 	'farmer-basic-description-text' => 'ضع وصف الويكى الخاصة بك بالأسفل',
 	'farmer-basic-permission' => 'سماحات',
-	'farmer-basic-permission-text' => 'باستخدام الاستمارة بالأسفل، من الممكن تعديل السماحات لمستخدمى هذا الويكي.',
+	'farmer-basic-permission-text' => 'باستخدام الاستمارة بالأسفل، من الممكن تعديل السماحات لمستخدمى هذا الويكى.',
 	'farmer-basic-permission-visitor' => 'السماحات لكل زائر',
 	'farmer-basic-permission-visitor-text' => 'السماحات التالية سيتم تطبيقها على كل شخص يزور هذه الويكي',
 	'farmer-yes' => 'نعم',
@@ -498,11 +498,11 @@ $messages['arz'] = array(
 	'farmer-extensions-register-text1' => 'استخدم الاستمارة بالأسفل لتسجيل امتداد جديد للمزرعة.
 متى تم تسجيل امتداد ما، كل الويكيات ستصبح قادرة على استخدامه.',
 	'farmer-extensions-register-text2' => "لمحدد ''Include File''، أدخل اسم ملف PHP كما كنت ستفعل فى LocalSettings.php.",
-	'farmer-extensions-register-text3' => "لو أن اسم الملف يحتوى على '''\$root'''، هذا المتغير سيتم استبداله بمجلد الجذر للميدياويكي.",
+	'farmer-extensions-register-text3' => "لو أن اسم الملف يحتوى على '''\$root'''، هذا المتغير سيتم استبداله بمجلد الجذر للميدياويكى.",
 	'farmer-extensions-register-text4' => 'مسارات التضمين الحالية هي:',
 	'farmer-extensions-register-name' => 'الاسم',
 	'farmer-extensions-register-includefile' => 'ضمن الملف',
-	'farmer-error-exists' => 'لم يمكن إنشاء الويكي.  هو موجود بالفعل: $1',
+	'farmer-error-exists' => 'لم يمكن إنشاء الويكى.  هو موجود بالفعل: $1',
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
 );
 
@@ -3296,6 +3296,8 @@ $messages['km'] = array(
  */
 $messages['kn'] = array(
 	'farmer-confirmsetting-name' => 'ಹೆಸರು',
+	'farmer-confirmsetting-reason' => 'ಕಾರಣ',
+	'farmer-createwiki-reason' => 'ಕಾರಣ',
 	'farmer-yes' => 'ಹೌದು',
 	'farmer-no' => 'ಇಲ್ಲ',
 	'farmer-extensions-register-name' => 'ಹೆಸರು',
@@ -6125,6 +6127,7 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
+ * @author Liangent
  * @author PhiLiP
  * @author Wmr89502270
  */
@@ -6137,20 +6140,25 @@ $messages['zh-hans'] = array(
 	'farmer-wikicreated' => 'Wiki已被建立',
 	'farmer-wikiexists' => 'Wiki存在',
 	'farmer-confirmsetting-title' => '标题',
+	'farmer-confirmsetting-description' => '描述：$1',
 	'farmer-confirmsetting-reason' => '原因',
+	'farmer-description' => '描述',
 	'farmer-button-confirm' => '确认',
 	'farmer-button-submit' => '提交',
 	'farmer-createwiki-form-help' => '帮助',
 	'farmer-createwiki-user' => '用户名',
 	'farmer-createwiki-name' => 'Wiki名称',
 	'farmer-createwiki-title' => 'Wiki标题',
+	'farmer-createwiki-description' => '描述',
 	'farmer-createwiki-reason' => '原因',
 	'farmer-updatedlist' => '已更新的列表',
+	'farmer-deleting' => '正在删除"$1"',
 	'farmer-delete-title' => '删除Wiki',
 	'farmer-delete-form' => '选择一个Wiki',
 	'farmer-delete-form-submit' => '删除',
 	'farmer-mainpage' => '首页',
 	'farmer-basic-title1' => '标题',
+	'farmer-basic-description' => '描述',
 	'farmer-yes' => '是',
 	'farmer-no' => '否',
 	'farmer-defaultskin' => '默认皮肤',
@@ -6161,6 +6169,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
+ * @author Liangent
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
@@ -6171,7 +6180,9 @@ $messages['zh-hant'] = array(
 	'farmer-createwiki' => '建立一個wiki',
 	'farmer-wikicreated' => '已建立wiki',
 	'farmer-wikiexists' => 'Wiki存在',
+	'farmer-confirmsetting-title' => '標題',
 	'farmer-confirmsetting-description' => '描述：$1',
+	'farmer-confirmsetting-reason' => '原因',
 	'farmer-description' => '描述',
 	'farmer-button-confirm' => '確認',
 	'farmer-button-submit' => '提交',
@@ -6180,6 +6191,7 @@ $messages['zh-hant'] = array(
 	'farmer-createwiki-name' => 'Wiki名稱',
 	'farmer-createwiki-title' => 'Wiki標題',
 	'farmer-createwiki-description' => '描述',
+	'farmer-createwiki-reason' => '原因',
 	'farmer-updatedlist' => '已更新的清單',
 	'farmer-deleting' => '正在刪除"$1"',
 	'farmer-delete-title' => '刪除wiki',
