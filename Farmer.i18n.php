@@ -1581,9 +1581,11 @@ Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
  * @author Nike
  * @author Silvonen
  * @author Str4nd
+ * @author ZeiP
  */
 $messages['fi'] = array(
 	'farmer' => 'Wikipelto',
+	'farmer-desc' => 'Hallitse MediaWiki-farmia',
 	'farmercantcreatewikis' => 'Et voi luoda uusia wikejä, koska sivulla ei ole <tt>createwikis</tt>-oikeutta.',
 	'farmercreatesitename' => 'Sivuston nimi',
 	'farmercreatenextstep' => 'Seuraava askel',
@@ -1601,28 +1603,57 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-admimistration-listupdate' => 'Farmiluettelon päivitys',
 	'farmer-admimistration-listupdate-text' => '[[$1|Päivitä]] sivuston {{SITENAME}} wikiluettelo',
 	'farmer-administration-delete' => 'Poista wiki',
+	'farmer-administration-delete-text' => '[[$1|Poista]] wiki farmista',
+	'farmer-administer-thiswiki' => 'Hallinnoi tätä wikiä',
+	'farmer-administer-thiswiki-text' => '[[$1|Hallinnoi]] muutoksia tähän wikiin',
 	'farmer-notavailable' => 'Ei saatavilla',
+	'farmer-notavailable-text' => 'Tämä ominaisuus on käytettävissä vain pääasiallisessa wikissä',
 	'farmer-wikicreated' => 'Wiki luotu',
+	'farmer-wikicreated-text' => 'Wikisi on luotu.
+Se on käytettävissä osoitteessa $1',
+	'farmer-default' => 'Oletusarvoisesti kenelläkään sinun lisäksesi ei ole oikeuksia tähän wikiin.
+Voit muuttaa käyttäjäoikeuksia sivulla $1',
 	'farmer-wikiexists' => 'Wiki on olemassa',
+	'farmer-wikiexists-text' => 'Wiki, jota yrität luoda (”$1”) on jo olemassa.
+Palaa takaisin ja kokeile toista nimeä.',
 	'farmer-confirmsetting' => 'Vahvista wikin asetukset',
 	'farmer-confirmsetting-name' => 'Nimi',
 	'farmer-confirmsetting-title' => 'Otsikko',
 	'farmer-confirmsetting-description' => 'Kuvaus',
 	'farmer-confirmsetting-reason' => 'Syy',
 	'farmer-description' => 'Kuvaus',
+	'farmer-confirmsetting-text' => "Wikisi ”$1” tulee olemaan käytettävissä osoitteessa $3.
+Projektin nimiavaruus tulee olemaan '''$2'''.
+Linkit tähän nimiavaruuteen tulevat olemaan muotoa '''<nowiki>[[$2:Page name]]</nowiki>'''.
+Jos tämä on oikein, valitse '''vahvista'''-nappi alla.",
 	'farmer-button-confirm' => 'Vahvista',
 	'farmer-button-submit' => 'Lähetä',
 	'farmer-createwiki-form-title' => 'Luo wiki',
 	'farmer-createwiki-form-text1' => 'Luo uusi wiki alla olevalla lomakkeella.',
 	'farmer-createwiki-form-help' => 'Ohje',
+	'farmer-createwiki-form-text2' => "; Wikin nimi
+Sisältää vain kirjaimia ja numeroita.
+Wikin nimeä käytetään osana URL-osoitetta tunnistamaan wikisi.
+Esimerkiksi, jos syötät ”'''nimi'''”, wikisi tulee olemaan käytössä osoitteessa <nowiki>http://</nowiki>'''nimi'''.domain.",
+	'farmer-createwiki-form-text3' => '; Wikin otsikko.
+Tulee olemaan käytössä wikisi jokaisen sivun otsikossa.
+On myös projektin nimiavaruudena ja interwiki-etuliitteenä.',
+	'farmer-createwiki-form-text4' => '; Kuvaus: Wikin kuvaus.
+Tämä on tekstikuvaus wikistä.
+Se näytetään wikilistassa.',
 	'farmer-createwiki-user' => 'Käyttäjätunnus',
 	'farmer-createwiki-name' => 'Wikin nimi',
 	'farmer-createwiki-title' => 'Wikin otsikko',
 	'farmer-createwiki-description' => 'Kuvaus',
 	'farmer-createwiki-reason' => 'Syy',
 	'farmer-updatedlist' => 'Päivitetty lista',
+	'farmer-notaccessible' => 'Ei pääsyä',
+	'farmer-notaccessible-test' => 'Tämä ominaisuus on käytössä vain farmin isä-wikissä',
 	'farmer-permissiondenied' => 'Käyttö estetty',
+	'farmer-permissiondenied-text' => 'Sinulla ei ole oikeuksia poistaa wikiä farmista',
+	'farmer-permissiondenied-text1' => 'Sinulla ei ole käyttöoikeuksia tähän sivuun',
 	'farmer-deleting' => 'Wiki ”$1” on poistettu',
+	'farmer-delete-confirm' => 'Vahvistan että haluan poistaa tämän wikin',
 	'farmer-delete-confirm-wiki' => "Poistettava wiki: '''$1'''.",
 	'farmer-delete-reason' => 'Poiston syy:',
 	'farmer-delete-title' => 'Poista wiki',
@@ -1637,19 +1668,36 @@ Jos luet tätä, uusi wikisi on asennettu onnistuneesti. Voit halutessasi [[Spec
 	'farmer-basic-description' => 'Kuvaus',
 	'farmer-basic-description-text' => 'Lisää kuvaus wikistäsi alle',
 	'farmer-basic-permission' => 'Käyttöoikeudet',
+	'farmer-basic-permission-text' => 'Alla olevaa lomaketta käyttäen on mahdollista muokata tämän wikin käyttäjien käyttöoikeuksia.',
+	'farmer-basic-permission-visitor' => 'Jokaisen vierailijan oikeudet',
+	'farmer-basic-permission-visitor-text' => 'Seuraavat oikeudet annetaan jokaiselle tässä wikissä vierailevalle käyttäjälle',
 	'farmer-yes' => 'Kyllä',
 	'farmer-no' => 'Ei',
+	'farmer-basic-permission-user' => 'Sisäänkirjautuneiden käyttäjien käyttöoikeudet',
+	'farmer-basic-permission-user-text' => 'Seuraavat käyttöoikeudet annetaan jokaiselle sisäänkirjautuneelle käyttäjälle',
+	'farmer-setpermission' => 'Aseta käyttöoikeudet',
 	'farmer-defaultskin' => 'Oletusulkoasu',
 	'farmer-defaultskin-button' => 'Aseta oletusulkoasu',
 	'farmer-extensions' => 'Käytössä olevat laajennukset',
 	'farmer-extensions-button' => 'Muuta käytössä olevia laajennuksia',
+	'farmer-extensions-extension-denied' => 'Sinulla ei ole oikeuksia tämän toiminnon käyttämiseen.
+Sinun tulee olla farmeradmin-ryhmän jäsen',
 	'farmer-extensions-invalid' => 'Virheellinen laajennus',
+	'farmer-extensions-invalid-text' => 'Laajennuksen lisääminen epäonnistui koska sisällytettäväksi valittua tiedostoa ei löytynyt',
 	'farmer-extensions-available' => 'Saatavilla olevat laajennukset',
 	'farmer-extensions-noavailable' => 'Yhtään laajennusta ei ole rekisteröity',
 	'farmer-extensions-register' => 'Rekisteröi laajennus',
+	'farmer-extensions-register-text1' => 'Käytä alla olevaa lomaketta rekisteröidäksesi uuden laajennuksen farmiin.
+Kun laajennus on rekisteröity, kaikki wikit voivat käyttää sitä.',
+	'farmer-extensions-register-text2' => "'''Sisällytä tiedosto''' -parametrin arvoksi anna PHP-tiedoston nimi kuin antaisit sen LocalSettings.php:ssä.",
+	'farmer-extensions-register-text3' => "Jos tiedostonimi sisältää '''\$root'''-merkkijonon, se korvataan MediaWikin juurihakemistolla.",
+	'farmer-extensions-register-text4' => 'Nykyiset sisällytyspolut ovat:',
 	'farmer-extensions-register-name' => 'Nimi',
 	'farmer-extensions-register-includefile' => 'Sisällytä tiedosto',
 	'farmer-error-exists' => 'Wikiä ei voitu luoda.  Se on jo olemassa: $1',
+	'farmer-error-noextwrite' => 'Laajennustiedoston kirjoittaminen epäonnistui:',
+	'farmer-log-name' => 'Wiki-farmin loki',
+	'farmer-log-header' => 'Tämä on loki wiki-farmiin tehdyistä muutoksista.',
 	'farmer-log-create' => 'luotiin wiki ”$2”',
 	'farmer-log-delete' => 'poistettiin wiki ”$2”',
 	'right-farmeradmin' => 'Hallinnoida wikifarmia',
@@ -3553,6 +3601,131 @@ $messages['mhr'] = array(
 	'farmer-createwiki-user' => 'Пайдаланышын лӱмжӧ',
 	'farmer-delete-form-submit' => 'Шӧраш',
 	'farmer-mainpage' => 'Тӱҥ лаштык',
+);
+
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'farmer' => 'Фармер',
+	'farmer-desc' => 'Раководење со МедијаВики фарма',
+	'farmercantcreatewikis' => 'Не можете да создавате викија бидејќи немате таква привилегија',
+	'farmercreatesitename' => 'Име на веб-страницата',
+	'farmercreatenextstep' => 'Следен чекор',
+	'farmernewwikimainpage' => '== Добредојдовте на вашето вики ==
+Ако го гледате ова, значи дека вашето вики е правилно инсталирано.
+Сега можете да го [[Special:Farmer|прилагодите викито]].',
+	'farmer-about' => 'За Фармер',
+	'farmer-about-text' => 'МедијаВики Фармер ви овозможува да раководите со фарма на МедијаВики викија.',
+	'farmer-list-wiki' => 'Листа на викија',
+	'farmer-list-wiki-text' => '[[$1|Листа]] на сите викија на {{SITENAME}}',
+	'farmer-createwiki' => 'Создај вики',
+	'farmer-createwiki-text' => '[[$1|Создајте]] ново вики!',
+	'farmer-administration' => 'Администрирање на фармата',
+	'farmer-administration-extension' => 'Раководење со проширувања',
+	'farmer-administration-extension-text' => '[[$1|Раководете]] со инсталираните проширувања.',
+	'farmer-admimistration-listupdate' => 'Ажурирање на листата на фарми',
+	'farmer-admimistration-listupdate-text' => '[[$1|Ажурирајте]] ја листата на викија на {{SITENAME}}',
+	'farmer-administration-delete' => 'Избриши вики',
+	'farmer-administration-delete-text' => '[[$1|ИЗбришете]] вики од фармата',
+	'farmer-administer-thiswiki' => 'Администрирање на ова вики',
+	'farmer-administer-thiswiki-text' => '[[$1|Администрирање]] на промените на ова вики',
+	'farmer-notavailable' => 'Недостапно',
+	'farmer-notavailable-text' => 'Оваа можност е достапна само на главното вики',
+	'farmer-wikicreated' => 'Викито е создадено',
+	'farmer-wikicreated-text' => 'Вашето вики е создадено.
+Достапно е на $1',
+	'farmer-default' => 'По основно, никој освен вас нема дозволи на ова вики.
+Можете да ги измените корисничките привилегии преку $1',
+	'farmer-wikiexists' => 'Викито постои',
+	'farmer-wikiexists-text' => "Викито кое сакате да го создадете, '''$1''', веќе постои.
+Вратете се и изберете друго име.",
+	'farmer-confirmsetting' => 'Потврди вики-нагодувања',
+	'farmer-confirmsetting-name' => 'Име',
+	'farmer-confirmsetting-title' => 'Наслов',
+	'farmer-confirmsetting-description' => 'Опис',
+	'farmer-confirmsetting-reason' => 'Причина',
+	'farmer-description' => 'Опис',
+	'farmer-confirmsetting-text' => "Вашето вики, '''$1''', ќе биде достапно преку $3.
+Именскиот простор на проектот ќе биде '''$2'''.
+Врските до овој именски простор ќе бидат од обликот '''<nowiki>[[$2:Page name]]</nowiki>'''.
+Ако ова испадна како што сакавте, притиснете на копчето '''потврди''' подолу.",
+	'farmer-button-confirm' => 'Потврди',
+	'farmer-button-submit' => 'Испрати',
+	'farmer-createwiki-form-title' => 'Создај вики',
+	'farmer-createwiki-form-text1' => 'Образецот подолу служи за создавање на ново вики.',
+	'farmer-createwiki-form-help' => 'Помош',
+	'farmer-createwiki-form-text2' => "; Име на викито: Името на викито.
+Содржи само букви и бројки.
+Името на викито ќе се користи како дел од URL-адресата, за распознавање на вашето вики.
+На пример, ако внесете '''title''', тогаш вашето вики ќе биде достапно преку <nowiki>http://</nowiki>'''title'''.mydomain.",
+	'farmer-createwiki-form-text3' => '; Наслов на викито: Насловот за викито.
+Ќе се користи во насловот на секоја страница на вашето вики.
+Ова ќе биде и именски простор на проектот, како и интервики префикс.',
+	'farmer-createwiki-form-text4' => '; Опис: Опис на викито.
+Ова е текстуален опис на викито.
+Ова ќе се прикаже во листата на викија.',
+	'farmer-createwiki-user' => 'Корисничко име',
+	'farmer-createwiki-name' => 'Име на викито',
+	'farmer-createwiki-title' => 'Наслов на викито',
+	'farmer-createwiki-description' => 'Опис',
+	'farmer-createwiki-reason' => 'Причина',
+	'farmer-updatedlist' => 'Ажурирана листа',
+	'farmer-notaccessible' => 'Недостапно',
+	'farmer-notaccessible-test' => 'Оваа можност е достапна само на матичното вики на фармата',
+	'farmer-permissiondenied' => 'Дозволата е одбиена',
+	'farmer-permissiondenied-text' => 'Немате дозвола за бришење на вики од фармата',
+	'farmer-permissiondenied-text1' => 'Немате дозвола да ја отворите таа страница',
+	'farmer-deleting' => 'Викито „$1“ е избришано',
+	'farmer-delete-confirm' => 'Потврдувам дека сакам да го избришам ова вики',
+	'farmer-delete-confirm-wiki' => "Вики за бришење: '''$1'''.",
+	'farmer-delete-reason' => 'Причина за бришењето:',
+	'farmer-delete-title' => 'Избриши вики',
+	'farmer-delete-text' => 'Од листата подолу одберете го викито кое сакате да го избришете',
+	'farmer-delete-form' => 'Одберете вики',
+	'farmer-delete-form-submit' => 'Избриши',
+	'farmer-listofwikis' => 'Листа на викија',
+	'farmer-mainpage' => 'Главна страница',
+	'farmer-basic-title' => 'Основни параметри',
+	'farmer-basic-title1' => 'Наслов',
+	'farmer-basic-title1-text' => 'Вашето вики нема наслов. Дајте му наслов <b>сега</b>',
+	'farmer-basic-description' => 'Опис',
+	'farmer-basic-description-text' => 'Подолу дајте опис на вашето вики',
+	'farmer-basic-permission' => 'Дозволи',
+	'farmer-basic-permission-text' => 'Со образецот подолу може да се менуваат дозволите на корисниците на ова вики.',
+	'farmer-basic-permission-visitor' => 'Дозволи за секој посетител',
+	'farmer-basic-permission-visitor-text' => 'Следните дозволи ќе бидат доделени на секој што ќе го посети ова вики',
+	'farmer-yes' => 'Да',
+	'farmer-no' => 'Не',
+	'farmer-basic-permission-user' => 'Дозволи за најавени корисници',
+	'farmer-basic-permission-user-text' => 'Следните дозволи ќе бидат доделени на секој што ќе се најави на ова вики',
+	'farmer-setpermission' => 'Постави дозволи',
+	'farmer-defaultskin' => 'Матичен изглед',
+	'farmer-defaultskin-button' => 'Постави матичен изглед',
+	'farmer-extensions' => 'Активни проширувања',
+	'farmer-extensions-button' => 'Постави активни проширувања',
+	'farmer-extensions-extension-denied' => 'Немате дозвола да ја користите оваа можност.
+Мора да бидете член во групата farmeradmin (администратори на фармата)',
+	'farmer-extensions-invalid' => 'Неважечко проширување',
+	'farmer-extensions-invalid-text' => 'Не можевме да го додадеме проширувањето бидејќи одбраната податотека за вклучување не е најдена',
+	'farmer-extensions-available' => 'Достапни проширувања',
+	'farmer-extensions-noavailable' => 'Нема регистрирани проширувања',
+	'farmer-extensions-register' => 'Регистрирај проширување',
+	'farmer-extensions-register-text1' => 'Образецвот подолу служи за регистрирање на ново проширување на фармата.
+Откако ќе го регистрирате проширувањето, сите викија ќе можат да го користат.',
+	'farmer-extensions-register-text2' => "За параметарот ''Вклучи податотека'', внесете го името на PHP-податотеката како што се прави во LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Ако името на податотеката содржи '''\$root''', тогаш таа променлица ќе биде заменета со основниот директориум на МедијаВики.",
+	'farmer-extensions-register-text4' => 'Следните патишта за вклучување се:',
+	'farmer-extensions-register-name' => 'Име',
+	'farmer-extensions-register-includefile' => 'Вклучи ја податотеката',
+	'farmer-error-exists' => 'Не може да се создаде викито. Тоа веќе постои: $1',
+	'farmer-error-noextwrite' => 'Не можам да ја испишам податотеката на проширувањето:',
+	'farmer-log-name' => 'Дневник на вики-фармата',
+	'farmer-log-header' => 'Ова е дневник на промените направени во вики-фармата.',
+	'farmer-log-create' => 'создадено викито „$2“',
+	'farmer-log-delete' => 'избришано викито „$2“',
+	'right-farmeradmin' => 'Раководење со вики-фармата',
+	'right-createwiki' => 'Создавање на викија на вики-фармата',
 );
 
 /** Malayalam (മലയാളം)
@@ -5784,6 +5957,21 @@ Dar holati sabt şudani afzuna, hamai vikiho qobili istifoda az on xohand şud.'
 $messages['th'] = array(
 	'farmer-button-confirm' => 'ยืนยัน',
 	'farmer-delete-form-submit' => 'ลบ',
+);
+
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'farmer-confirmsetting-name' => 'At',
+	'farmer-confirmsetting-description' => 'Düşündiriş',
+	'farmer-description' => 'Düşündiriş',
+	'farmer-button-submit' => 'Tabşyr',
+	'farmer-createwiki-user' => 'Ulanyjy ady:',
+	'farmer-createwiki-description' => 'Düşündiriş',
+	'farmer-delete-form-submit' => 'Öçür',
+	'farmer-basic-description' => 'Düşündiriş',
+	'farmer-extensions-register-name' => 'At',
 );
 
 /** Tagalog (Tagalog)
