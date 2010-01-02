@@ -736,6 +736,7 @@ $messages['bn'] = array(
 /** Breton (Brezhoneg)
  * @author Fohanno
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'farmercreatesitename' => "Anv al lec'hienn",
@@ -746,8 +747,11 @@ $messages['br'] = array(
 	'farmer-administration-extension' => 'Merañ an astennoù',
 	'farmer-administration-delete' => 'dilemel ur wiki',
 	'farmer-administer-thiswiki' => 'Merañ ar wiki-mañ',
+	'farmer-administer-thiswiki-text' => "[[$1|Merañ]] ar c'hemmoù war ar wiki-se.",
 	'farmer-notavailable' => "N'eo ket da gaout",
 	'farmer-wikicreated' => 'Krouet eo ar wiki',
+	'farmer-wikicreated-text' => "Krouet eo bet ho wiki.
+Kavout a reoc'h anezhañ amañ : $1",
 	'farmer-wikiexists' => "Bez' ez eus eus ar wiki",
 	'farmer-confirmsetting' => 'Kadarnaat arventennoù ar wiki',
 	'farmer-confirmsetting-name' => 'Anv',
@@ -769,6 +773,7 @@ $messages['br'] = array(
 	'farmer-permissiondenied' => "Aotre nac'het",
 	'farmer-deleting' => 'Ar wiki « $1 » zo bet dilamet',
 	'farmer-delete-confirm-wiki' => "Wiki da zilemel : '''$1'''.",
+	'farmer-delete-reason' => 'Abeg an dilamadur :',
 	'farmer-delete-title' => 'Dilemel ur wiki',
 	'farmer-delete-form' => 'Diuzañ ur wiki',
 	'farmer-delete-form-submit' => 'Dilemel',
@@ -782,6 +787,8 @@ $messages['br'] = array(
 	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Ket',
 	'farmer-setpermission' => 'Lakaat an aotreoù',
+	'farmer-defaultskin' => 'Neuz dre ziouer',
+	'farmer-defaultskin-button' => 'Lakaat an neuz dre ziouer',
 	'farmer-extensions' => 'Astennoù oberiant',
 	'farmer-extensions-invalid' => 'Astenn direizh',
 	'farmer-extensions-available' => 'Astennoù da gaout',
