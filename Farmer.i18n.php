@@ -5073,6 +5073,7 @@ $messages['roa-tara'] = array(
 	'farmer-delete-form-submit' => 'Scangille',
 	'farmer-basic-title1' => 'Titele',
 	'farmer-basic-description' => 'Descrizione',
+	'farmer-extensions-register-name' => 'Nome',
 );
 
 /** Russian (Русский)
