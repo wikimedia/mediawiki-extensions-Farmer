@@ -3507,6 +3507,7 @@ Mer han die Datei nit jefonge, die enjefööch wäde mööt.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
@@ -3523,7 +3524,7 @@ Dir kënnt [[Special:Farmer|är Wiki elo astellen]].',
 	'farmer-list-wiki-text' => '[[$1|Lëscht]] vun alle Wikien op {{SITENAME}}',
 	'farmer-createwiki' => 'Eng Wiki ufänken',
 	'farmer-createwiki-text' => '[[$1|Maacht]] elo eng nei Wiki!',
-	'farmer-administration' => 'Gestioun dëser Lëscht vu Wikien',
+	'farmer-administration' => 'Allgemeng Gestioun',
 	'farmer-administration-extension' => 'Erweiderungen organiséieren',
 	'farmer-administration-extension-text' => '[[$1|Organiséiert]] déi installeiert Erweiderungen.',
 	'farmer-admimistration-listupdate' => 'Aktualisatioun vun der Lëscht vun de Wikien',
