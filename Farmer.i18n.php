@@ -3833,7 +3833,7 @@ $messages['ml'] = array(
 	'farmer-extensions' => 'സജീവമായ എക്സ്റ്റെന്‍ഷനുകള്‍',
 	'farmer-extensions-button' => 'സജീവമായ എക്സ്റ്റെന്‍ഷനുകള്‍ ക്രമീകരിക്കുക',
 	'farmer-extensions-extension-denied' => 'ഈ സവിശേഷത ഉപയോഗിക്കുവാനുള്ള അനുമതി താങ്കള്‍ക്കില്ല.
-താങ്കള്‍ അതിനു  farmeradmin ഗ്രൂപ്പിലെ അം‌ഗമായിരിക്കണം',
+താങ്കള്‍ അതിനു  farmeradmin സംഘത്തിലെ അം‌ഗമായിരിക്കണം',
 	'farmer-extensions-invalid' => 'അസാധുവായ എക്സ്റ്റെന്‍ഷന്‍',
 	'farmer-extensions-available' => 'ലഭ്യമായ എക്സ്റ്റെന്‍ഷനുകള്‍',
 	'farmer-extensions-noavailable' => 'എക്സ്റ്റെഷനുകള്‍ ഒന്നും രജിസ്റ്റര്‍ ചെയ്തിട്ടില്ല',
