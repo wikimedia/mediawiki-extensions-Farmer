@@ -6199,8 +6199,12 @@ $messages['ug-latn'] = array(
  * @author Prima klasy4na
  */
 $messages['uk'] = array(
+	'farmer-confirmsetting-description' => 'Опис',
 	'farmer-confirmsetting-reason' => 'Причина',
+	'farmer-description' => 'Опис',
+	'farmer-createwiki-description' => 'Опис',
 	'farmer-basic-title1' => 'Заголовок',
+	'farmer-basic-description' => 'Опис',
 );
 
 /** Veps (Vepsan kel')
