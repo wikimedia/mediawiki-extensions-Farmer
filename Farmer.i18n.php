@@ -4723,6 +4723,28 @@ Po zarejestrowaniu wszystkie wiki będą mogły korzystać z tego rozszerzenia.'
 	'right-createwiki' => 'Tworzenie nowych wiki na farmie wiki',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'farmer' => 'Fator',
+	'farmer-desc' => 'Gestiss na fatorìa MediaWiki',
+	'farmercantcreatewikis' => "It peule pa creé dle wiki përchè it l'has pa ël privilegi createwiki",
+	'farmercreatesitename' => 'Nòm dël sit',
+	'farmercreatenextstep' => "Pass d'apress",
+	'farmernewwikimainpage' => "== Bin ëvnù a toa wiki ==
+S'it të stas lesend sòn sì, toa neuva wiki a l'é stàita anstalà da bin.
+Ti it peule [[Special:Farmer|përsonalisé toa wiki]].",
+	'farmer-about' => 'A propòsit',
+	'farmer-about-text' => 'Fator mediaWiki at përmëtt ëd gëstì na fatorìa ëd wiki MediaWiki.',
+	'farmer-list-wiki' => 'Lista ëd wiki',
+	'farmer-list-wiki-text' => '[[$1|Lista]] tute wiki an dzora {{SITENAME}}',
+	'farmer-createwiki' => 'Crea na wiki',
+	'farmer-createwiki-text' => '[[$1|Crea]] na neuva wiki adess!',
+	'farmer-administration' => 'Aministrassion fatorìa',
+	'farmer-administration-extension-text' => '[[$1|Gëstiss]] estension anstalà.',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
