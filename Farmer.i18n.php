@@ -754,6 +754,7 @@ Gallout a rit [[Special:Farmer|personelaat ho wiki]].",
 	'farmer-administration-extension' => 'Merañ an astennoù',
 	'farmer-administration-extension-text' => '[[$1|Merañ]] an astennoù staliet.',
 	'farmer-administration-delete' => 'dilemel ur wiki',
+	'farmer-administration-delete-text' => '[[$1|Dilemel]] ur wiki eus ar feurm',
 	'farmer-administer-thiswiki' => 'Merañ ar wiki-mañ',
 	'farmer-administer-thiswiki-text' => "[[$1|Merañ]] ar c'hemmoù war ar wiki-se.",
 	'farmer-notavailable' => "N'eo ket da gaout",
@@ -780,6 +781,8 @@ Kavout a reoc'h anezhañ amañ : $1",
 	'farmer-updatedlist' => 'Roll hizivaet',
 	'farmer-notaccessible' => "Ne c'haller ket mont dezhañ",
 	'farmer-permissiondenied' => "Aotre nac'het",
+	'farmer-permissiondenied-text' => "N'oc'h ket aotreet da zilemel ur wiki eus ar feurm",
+	'farmer-permissiondenied-text1' => "N'oc'h ket aotreet da vont d'ar bajenn-mañ",
 	'farmer-deleting' => 'Ar wiki « $1 » zo bet dilamet',
 	'farmer-delete-confirm-wiki' => "Wiki da zilemel : '''$1'''.",
 	'farmer-delete-reason' => 'Abeg an dilamadur :',
@@ -795,8 +798,10 @@ Kavout a reoc'h anezhañ amañ : $1",
 	'farmer-basic-description-text' => 'Lakaat deskrivadur ho wiki amañ dindan',
 	'farmer-basic-permission' => 'Aotreoù',
 	'farmer-basic-permission-visitor' => 'Aotreoù evit pep gweladenner',
+	'farmer-basic-permission-visitor-text' => 'An aotreoù-mañ a vo arloet ouzh kement den a weladenn ar wiki-mañ',
 	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Ket',
+	'farmer-basic-permission-user' => 'Aotreoù evit an implijerien kevreet',
 	'farmer-setpermission' => 'Lakaat an aotreoù',
 	'farmer-defaultskin' => 'Neuz dre ziouer',
 	'farmer-defaultskin-button' => 'Lakaat an neuz dre ziouer',
@@ -808,8 +813,10 @@ Kavout a reoc'h anezhañ amañ : $1",
 	'farmer-extensions-register-includefile' => 'Enklozañ ur restr',
 	'farmer-error-exists' => "Ne c'haller ket krouiñ ar wiki. Bez' ez eus anezhañ dija : $1",
 	'farmer-log-name' => 'Deizlevr ar feurm wiki',
+	'farmer-log-header' => "Hemañ zo un deizlevr eus ar c'hemmoù degaset d'ar feurm wiki.",
 	'farmer-log-create' => 'en deus krouet ar wiki « $2 »',
 	'farmer-log-delete' => 'en deus dilamet ar wiki « $2 »',
+	'right-farmeradmin' => 'Merañ ar feurm wikioù',
 	'right-createwiki' => 'Krouiñ wikioù er feurm wiki',
 );
 
@@ -4724,25 +4731,26 @@ Po zarejestrowaniu wszystkie wiki będą mogły korzystać z tego rozszerzenia.'
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'farmer' => 'Fator',
+	'farmer' => 'Mansé',
 	'farmer-desc' => 'Gestiss na fatorìa MediaWiki',
 	'farmercantcreatewikis' => "It peule pa creé dle wiki përchè it l'has pa ël privilegi createwiki",
 	'farmercreatesitename' => 'Nòm dël sit',
-	'farmercreatenextstep' => "Pass d'apress",
-	'farmernewwikimainpage' => "== Bin ëvnù a toa wiki ==
-S'it të stas lesend sòn sì, toa neuva wiki a l'é stàita anstalà da bin.
-Ti it peule [[Special:Farmer|përsonalisé toa wiki]].",
+	'farmercreatenextstep' => 'Pass apress',
+	'farmernewwikimainpage' => "== Bin ëvnù an soa wiki ==
+S'a l'é an camin ch'a les sòn, soa neuva wiki a l'é stàita anstalà da bin.
+A peul [[Special:Farmer|përsonalisé toa wiki]].",
 	'farmer-about' => 'A propòsit',
-	'farmer-about-text' => 'Fator mediaWiki at përmëtt ëd gëstì na fatorìa ëd wiki MediaWiki.',
+	'farmer-about-text' => 'Mansé mediaWiki a-j përmët ëd gestì na fatorìa ëd wiki MediaWiki.',
 	'farmer-list-wiki' => 'Lista ëd wiki',
-	'farmer-list-wiki-text' => '[[$1|Lista]] tute wiki an dzora {{SITENAME}}',
+	'farmer-list-wiki-text' => '[[$1|Listé]] tute le wiki dzora a {{SITENAME}}',
 	'farmer-createwiki' => 'Crea na wiki',
 	'farmer-createwiki-text' => '[[$1|Crea]] na neuva wiki adess!',
 	'farmer-administration' => 'Aministrassion fatorìa',
-	'farmer-administration-extension-text' => '[[$1|Gëstiss]] estension anstalà.',
+	'farmer-administration-extension-text' => "[[$1|Organisé]] j'estension anstalà.",
 );
 
 /** Pashto (پښتو)
