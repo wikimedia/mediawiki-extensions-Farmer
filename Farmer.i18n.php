@@ -4751,7 +4751,30 @@ A peul [[Special:Farmer|përsonalisé toa wiki]].",
 	'farmer-createwiki' => 'Crea na wiki',
 	'farmer-createwiki-text' => '[[$1|Crea]] na neuva wiki adess!',
 	'farmer-administration' => 'Aministrassion fatorìa',
+	'farmer-administration-extension' => 'Gëstiss estension',
 	'farmer-administration-extension-text' => "[[$1|Organisé]] j'estension anstalà.",
+	'farmer-admimistration-listupdate' => 'Modìfica lista fatorìa',
+	'farmer-admimistration-listupdate-text' => '[[$1|Modìfica]] lista ëd wiki dzora {{SITENAME}}',
+	'farmer-administration-delete' => 'Scansela na wiki',
+	'farmer-administration-delete-text' => '[[$1|Scansela]] na wiki da la fatorìa',
+	'farmer-administer-thiswiki' => 'Aministra sta wiki-sì',
+	'farmer-administer-thiswiki-text' => '[[$1|Aministra]] cambe a sta wki-sì',
+	'farmer-notavailable' => 'Pa disponìbil',
+	'farmer-notavailable-text' => "Sta possibilità-sì a l'é mach disponìbila an dzora a la wiki prinsipal",
+	'farmer-wikicreated' => 'Wiki creà',
+	'farmer-wikicreated-text' => "Toa wiki a l'é stàita creà.
+A l'é acessibla a $1",
+	'farmer-default' => "Për default, pa gnun a l'ha ij përmess su sta wiki-sì an gavand ëd ti.
+It peule cangé ij privilegi utent con $1",
+	'farmer-wikiexists' => 'La wiki a esist',
+	'farmer-wikiexists-text' => "La wiki ch'it të stas provand a creé, '''$1''', a esist già.
+Për piasì va andré e preuva n'àutr nòm.",
+	'farmer-confirmsetting' => 'Conferma ampostassion dla wiki',
+	'farmer-confirmsetting-name' => 'Nòm',
+	'farmer-confirmsetting-title' => 'Tìtol',
+	'farmer-confirmsetting-description' => 'Descrission',
+	'farmer-confirmsetting-reason' => 'Rason',
+	'farmer-description' => 'Descrission',
 );
 
 /** Pashto (پښتو)
