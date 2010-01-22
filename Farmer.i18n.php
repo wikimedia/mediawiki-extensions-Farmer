@@ -4751,30 +4751,65 @@ A peul [[Special:Farmer|përsonalisé toa wiki]].",
 	'farmer-createwiki' => 'Crea na wiki',
 	'farmer-createwiki-text' => '[[$1|Crea]] na neuva wiki adess!',
 	'farmer-administration' => 'Aministrassion fatorìa',
-	'farmer-administration-extension' => 'Gëstiss estension',
+	'farmer-administration-extension' => "Organisé j'estension",
 	'farmer-administration-extension-text' => "[[$1|Organisé]] j'estension anstalà.",
-	'farmer-admimistration-listupdate' => 'Modìfica lista fatorìa',
-	'farmer-admimistration-listupdate-text' => '[[$1|Modìfica]] lista ëd wiki dzora {{SITENAME}}',
-	'farmer-administration-delete' => 'Scansela na wiki',
-	'farmer-administration-delete-text' => '[[$1|Scansela]] na wiki da la fatorìa',
+	'farmer-admimistration-listupdate' => 'Agiorné la lista dle fatorìe',
+	'farmer-admimistration-listupdate-text' => '[[$1|Modifiché]] la lista dle wiki dzora {{SITENAME}}',
+	'farmer-administration-delete' => 'Scancelé na wiki',
+	'farmer-administration-delete-text' => '[[$1|Scancelé]] na wiki da la fatorìa',
 	'farmer-administer-thiswiki' => 'Aministra sta wiki-sì',
-	'farmer-administer-thiswiki-text' => '[[$1|Aministra]] cambe a sta wki-sì',
+	'farmer-administer-thiswiki-text' => '[[$1|Aministré]] ij cangiament su sta wiki',
 	'farmer-notavailable' => 'Pa disponìbil',
-	'farmer-notavailable-text' => "Sta possibilità-sì a l'é mach disponìbila an dzora a la wiki prinsipal",
+	'farmer-notavailable-text' => "Sta possibilità-sì a l'é mach disponìbil dzora a la wiki prinsipal",
 	'farmer-wikicreated' => 'Wiki creà',
-	'farmer-wikicreated-text' => "Toa wiki a l'é stàita creà.
-A l'é acessibla a $1",
-	'farmer-default' => "Për default, pa gnun a l'ha ij përmess su sta wiki-sì an gavand ëd ti.
-It peule cangé ij privilegi utent con $1",
+	'farmer-wikicreated-text' => "Soa wiki a l'é stàita creà.
+A l'é acessìbil a $1",
+	'farmer-default' => "Për sòlit, gnun a l'ha ij përmess su sta wiki-sì gavà che chiel.
+A peule cangé ij privilegi dj'utent con $1",
 	'farmer-wikiexists' => 'La wiki a esist',
-	'farmer-wikiexists-text' => "La wiki ch'it të stas provand a creé, '''$1''', a esist già.
-Për piasì va andré e preuva n'àutr nòm.",
+	'farmer-wikiexists-text' => "La wiki '''$1''', ch'a vorìa creé, a esist già.
+Për piasì, ch'a torna andré e ch'a preuva con n'àutr nòm.",
 	'farmer-confirmsetting' => 'Conferma ampostassion dla wiki',
 	'farmer-confirmsetting-name' => 'Nòm',
 	'farmer-confirmsetting-title' => 'Tìtol',
 	'farmer-confirmsetting-description' => 'Descrission',
 	'farmer-confirmsetting-reason' => 'Rason',
 	'farmer-description' => 'Descrission',
+	'farmer-confirmsetting-text' => "Soa wiki, '''$1''', a sarà acessìbil via $3.
+Lë spassi nominal dël proget a sarà '''$2'''.
+Colegament a sto spassi nominal-sì a saran ëd la forma '''<nowiki>[[$2:Nòm pàgina]]</nowiki>'''.
+Se sòn a l'é lòn ch'a veul, ch'a sgnaca ël boton '''conferma''' sì-sota.",
+	'farmer-button-confirm' => 'Conferma',
+	'farmer-button-submit' => 'Spediss',
+	'farmer-createwiki-form-title' => 'Crea na wiki',
+	'farmer-createwiki-form-text1' => 'Dovré ël formolari sì-sota për creé na neuva wiki.',
+	'farmer-createwiki-form-help' => 'Agiut',
+	'farmer-createwiki-form-text2' => "; Nòm wiki: Ël nòm ëd la wiki.
+A conten mach litre e nùmer.
+Ël nom ëd la wiki a sarà dovrà com part ëd l'adrëssa dl'aragnà për identifiché soa wiki.
+Për esempi, s'a bat '''tìtol''', soa wiki a sarà acessìbil ansima a <nowiki>http://</nowiki>'''tìtol'''.mydomain.",
+	'farmer-createwiki-form-text3' => '; Tìtol ëd la wiki: Tìtol ëd la wiki.
+A sarà dovrà ant ël tìtol ëd minca pàgina dzora a soa wiki.
+A sarà ëdcò lë spassi nominal dël proget e ël prefiss antërwiki.',
+	'farmer-createwiki-form-text4' => "; Descrission: Descission ëd la wiki.
+Cost-sì a l'é un test ëd descrission ëd la wiki.
+Sòn a sarà visualisà ant la lista dle wiki.",
+	'farmer-createwiki-user' => 'Nòm utent',
+	'farmer-createwiki-name' => 'Nòm dla wiki',
+	'farmer-createwiki-title' => 'Tìtol dla wiki',
+	'farmer-createwiki-description' => 'Descrission',
+	'farmer-createwiki-reason' => 'Rason',
+	'farmer-updatedlist' => 'Lista modificà',
+	'farmer-notaccessible' => 'Pa acessìbil',
+	'farmer-notaccessible-test' => "Sta possibilità-sì a l'é mach disponìbil ant la wiki mare ant la fatorìa",
+	'farmer-permissiondenied' => 'Përmess negà',
+	'farmer-permissiondenied-text' => "A l'ha pa ij përmess dë scancelé na wiki da la fatorìa",
+	'farmer-permissiondenied-text1' => "It l'has pa ij përmess për vëdde sta pàgina-sì",
+	'farmer-deleting' => 'La wiki "$1" a l\'é stàita scancelà',
+	'farmer-delete-confirm' => 'I confermo che mi i veuj scancelé costa wiki',
+	'farmer-delete-confirm-wiki' => "Wiki da scancelé: '''$1'''.",
+	'farmer-delete-reason' => 'Rason për la scancelassion:',
+	'farmer-delete-title' => 'Scancelé na wiki',
 );
 
 /** Pashto (پښتو)
