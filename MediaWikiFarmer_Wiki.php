@@ -558,6 +558,10 @@ class MediaWikiFarmer_Wiki {
 
 	protected function _deleteInterwiki() {
 		$db = $this->getDatabase();
-		$db->delete( 'interwiki', array( 'iw_prefix' => strtolower( $this->_title ) ), __METHOD__ );
+		if ( $db->tableExists ( 'interwiki' ) ) {
+			$db->delete( 'interwiki', array( 'iw_prefix' => strtolower( $this->_title ) ), __METHOD__ );
+		} else {
+			wfDebug( __METHOD__ . ": Table 'interwiki' does not exists\n" );
+		}
 	}
 }
