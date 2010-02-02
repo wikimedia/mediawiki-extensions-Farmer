@@ -4340,7 +4340,7 @@ Om du leser dette, har din nye wiki blitt installert korrekt. Du kan [[Special:F
 	'farmer-confirmsetting-name' => 'Navn',
 	'farmer-confirmsetting-title' => 'Tittel',
 	'farmer-confirmsetting-description' => 'Beskrivelse',
-	'farmer-confirmsetting-reason' => 'Grunn',
+	'farmer-confirmsetting-reason' => 'Årsak',
 	'farmer-description' => 'Beskrivelse',
 	'farmer-confirmsetting-text' => "Wikien din, '''$1''', vil være tilgjengelig via $3.
 Prosjektnavnerommet vil være '''$2'''.
@@ -4361,7 +4361,7 @@ Om dette er det du vil, trykk på '''bekreft'''-knappen nedenfor.",
 	'farmer-createwiki-name' => 'Wikiens navn',
 	'farmer-createwiki-title' => 'Wikiens tittel',
 	'farmer-createwiki-description' => 'Beskrivelse',
-	'farmer-createwiki-reason' => 'Grunn',
+	'farmer-createwiki-reason' => 'Årsak',
 	'farmer-updatedlist' => 'Oppdatert liste',
 	'farmer-notaccessible' => 'Utilgjengelig',
 	'farmer-notaccessible-test' => 'Dette er kun tilgjengelig på farmens opphavswiki',
