@@ -16,7 +16,6 @@ $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Farmer',
 	'author' => array( 'Gregory Szorc <gregory.szorc@case.edu>', 'Alexandre Emsenhuber' ),
 	'url' => 'http://www.mediawiki.org/wiki/Extension:Farmer',
-	'description' => 'Manage a MediaWiki farm',
 	'descriptionmsg' => 'farmer-desc',
 	'version' => '0.0.8',
 );
