@@ -3975,6 +3975,7 @@ $messages['ml'] = array(
  * @author Chinneeb
  */
 $messages['mn'] = array(
+	'farmer-mainpage' => 'Нүүр хуудас',
 	'farmer-yes' => 'Тийм',
 );
 
