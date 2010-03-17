@@ -50,7 +50,7 @@ $aliases['ja'] = array(
 	'Farmer' => array( 'ウィキファーム管理' ),
 );
 
-/** Ripoarisch (Ripoarisch) */
+/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
 	'Farmer' => array( 'StallVollWikis', 'WikiStall' ),
 );
