@@ -6442,6 +6442,7 @@ $messages['uk'] = array(
 	'farmer-confirmsetting-reason' => 'Причина',
 	'farmer-description' => 'Опис',
 	'farmer-createwiki-description' => 'Опис',
+	'farmer-createwiki-reason' => 'Причина',
 	'farmer-basic-title1' => 'Заголовок',
 	'farmer-basic-description' => 'Опис',
 );
