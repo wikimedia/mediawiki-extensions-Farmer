@@ -3483,6 +3483,7 @@ $messages['kn'] = array(
 	'farmer-confirmsetting-name' => 'ಹೆಸರು',
 	'farmer-confirmsetting-reason' => 'ಕಾರಣ',
 	'farmer-createwiki-reason' => 'ಕಾರಣ',
+	'farmer-mainpage' => 'ಮುಖ್ಯ ಪುಟ',
 	'farmer-yes' => 'ಹೌದು',
 	'farmer-no' => 'ಇಲ್ಲ',
 	'farmer-extensions-register-name' => 'ಹೆಸರು',
