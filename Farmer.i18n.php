@@ -2414,10 +2414,10 @@ $messages['he'] = array(
 	'farmer-createwiki-form-title' => 'יצירת ויקי',
 	'farmer-createwiki-form-text1' => 'השתמשו בטופס שלהלן ליצירת ויקי חדש.',
 	'farmer-createwiki-form-help' => 'עזרה',
-	'farmer-createwiki-form-text2' => "; שם הוויקי: השם של הוויקי.
+	'farmer-createwiki-form-text2' => "; שם אתר הוויקי: השם של אתר הוויקי.
 מכיל אותיות ומספרים בלבד.
-שם הוויקי ישמש כחלק מהכתובת ה־URL של הוויקי שלכם.
-לדוגמה, במידה ותזינו '''title''', אזי ניתן יהיה לגשת אל הוויקי שלכם דרך <nowiki>http://</nowiki>'''title'''.mydomain.",
+שם אתר הוויקי ישמש כחלק מהכתובת ה־URL של אתר הוויקי שלכם.
+למשל, אם תזינו '''title''', ניתן יהיה לגשת אל אתר הוויקי שלכם דרך <nowiki>http://</nowiki>'''title'''.mydomain.",
 	'farmer-createwiki-form-text3' => '; כותרת הוויקי: הכותרת של הוויקי.
 ישמש בכותרת של כל דף בוויקי שלכם.
 כמו כן, ישמש כמרחב השם של המיזם וכקידומת הבינוויקי.',
