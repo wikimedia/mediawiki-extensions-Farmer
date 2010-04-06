@@ -5008,7 +5008,7 @@ $messages['pt'] = array(
 	'farmer' => 'Farmer',
 	'farmer-desc' => 'Administre uma fazenda MediaWiki',
 	'farmercantcreatewikis' => 'Não pode criar wikis porque não possui o privilégio "createwikis"',
-	'farmercreatesitename' => 'Nome do sítio',
+	'farmercreatesitename' => 'Nome do site',
 	'farmercreatenextstep' => 'Próximo passo',
 	'farmernewwikimainpage' => '== Bem-vindo à sua Wiki ==
 Se está a ler isto, a sua nova wiki foi correctamente instalada.
@@ -5046,7 +5046,7 @@ Por favor, volte atrás e introduza outro nome.",
 	'farmer-description' => 'Descrição',
 	'farmer-confirmsetting-text' => "A sua wiki, '''$1''', estará acessível em $3.
 O espaço nominal do projecto será '''$2'''.
-Ligações para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
+Links para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
 Se é isto que pretende, clique o botão '''confirmar''' abaixo.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Submeter',
@@ -5054,7 +5054,7 @@ Se é isto que pretende, clique o botão '''confirmar''' abaixo.",
 	'farmer-createwiki-form-text1' => 'Utilize o formulário abaixo para criar uma nova wiki.',
 	'farmer-createwiki-form-help' => 'Ajuda',
 	'farmer-createwiki-form-text2' => "; Nome da wiki: Contém apenas letras e números. O nome da wiki será usado como parte da URL para identificar a sua wiki. Por exemplo, se introduzir '''titulo''', então a sua wiki será acedida através de <nowiki>http://</nowiki>'''titulo'''.meudominio.",
-	'farmer-createwiki-form-text3' => '; Título da wiki: Será usado no título de cada página na sua wiki. Será também o espaço nominal de projecto e o prefixo interwikis.',
+	'farmer-createwiki-form-text3' => '; Título da wiki: Será usado no título de cada página na sua wiki. Será também o espaço nominal de projecto e o prefixo de interwikis.',
 	'farmer-createwiki-form-text4' => '; Descrição: Descrição da wiki. Esta é uma descrição textual da wiki, própria do MediaWiki Farmer. Será mostrada na lista das wikis.',
 	'farmer-createwiki-user' => 'Nome de utilizador',
 	'farmer-createwiki-name' => 'Nome da wiki',
