@@ -1536,11 +1536,13 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
  * @author Crazymadlover
  * @author Imre
  * @author Jatrobat
+ * @author Pertile
  * @author Sanbec
  * @author Translationista
  */
 $messages['es'] = array(
 	'farmer' => 'Agricultor',
+	'farmer-desc' => 'Gestionar una granja MediaWiki',
 	'farmercantcreatewikis' => 'Eres incapaz de crear wikis porque no tienes privilegios createwikis',
 	'farmercreatesitename' => 'Nombre del sitio',
 	'farmercreatenextstep' => 'Próximo paso',
@@ -1548,6 +1550,7 @@ $messages['es'] = array(
 Si estás leyendo esto, tu nuevo wiki ha sido instalado correctamente.
 Puedes [[Special:Farmer|personalizar tu wiki]].',
 	'farmer-about' => 'Acerca de',
+	'farmer-about-text' => 'MediaWiki Farmer permite administrar una granja de wikis MediaWiki',
 	'farmer-list-wiki' => 'Lista de wikis',
 	'farmer-list-wiki-text' => '[[$1|listar]] todos los wikis en {{SITENAME}}',
 	'farmer-createwiki' => 'Crear un wiki',
@@ -1558,6 +1561,7 @@ Puedes [[Special:Farmer|personalizar tu wiki]].',
 	'farmer-admimistration-listupdate' => 'Actualización del listado de la granja',
 	'farmer-admimistration-listupdate-text' => '[[$1|Actualizar]] lista de wikis en {{SITENAME}}',
 	'farmer-administration-delete' => 'Borrar un wiki',
+	'farmer-administration-delete-text' => '[[$1|Eliminar]] una wiki de la granja',
 	'farmer-administer-thiswiki' => 'Administrar este wiki',
 	'farmer-administer-thiswiki-text' => '[[$1|Administrar]] cambios a este wiki',
 	'farmer-notavailable' => 'No disponible',
@@ -1568,17 +1572,30 @@ Es accesible en $1',
 	'farmer-default' => 'Por defecto, nadie tiene permisos en este wiki excepto tú.
 Puedes cambiar los privilegios de usuario a través de $1',
 	'farmer-wikiexists' => 'El wiki existe',
+	'farmer-wikiexists-text' => "La wiki que está intentando crear, '''$1''', ya existe.
+Por favor vuelva atrás e intente con otro nombre.",
 	'farmer-confirmsetting' => 'Confirmar configuraciones de wiki',
 	'farmer-confirmsetting-name' => 'Nombre',
 	'farmer-confirmsetting-title' => 'Título',
 	'farmer-confirmsetting-description' => 'Descripción',
 	'farmer-confirmsetting-reason' => 'Razón',
 	'farmer-description' => 'Descripción',
+	'farmer-confirmsetting-text' => "Su wiki, '''$1''', será accesible a través de $3.
+El espacio de nombres del proyecto será '''$2'''.
+Los enlaces al espacio de nombre deberán tener la forma '''<nowiki>[[$2:Nombre de la página]]</nowiki>'''.
+Si esto es lo que desea hacer, oprima el botón '''confirmar''' que se encuentra debajo.",
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Enviar',
 	'farmer-createwiki-form-title' => 'Crear un wiki',
 	'farmer-createwiki-form-text1' => 'Usar el formulario de abajo para crear un nuevo wiki.',
 	'farmer-createwiki-form-help' => 'Ayuda',
+	'farmer-createwiki-form-text2' => "; Nombre Wiki: el nombre de la Wiki.
+Contiene únicamente letras y números.
+El nombre wiki será utilizado como parte de la URL para identificar a su wiki.
+Por ejemplo, si ingresa '''título''', entonces su wiki será accedida a través de <nowiki>http://</nowiki>'''título'''.midominio.",
+	'farmer-createwiki-form-text3' => '; Título Wiki: el título de la wiki.
+Será utilizado en el título de cada página de su wiki.
+También será el espacio de nombres del proyecto y el prefijo interwiki.',
 	'farmer-createwiki-form-text4' => '; Descripción: Descripción del wiki.
 Este es un texto descriptivo acerca del wiki.
 Esto se mostrará en la lista wiki.',
@@ -1589,7 +1606,9 @@ Esto se mostrará en la lista wiki.',
 	'farmer-createwiki-reason' => 'Razón',
 	'farmer-updatedlist' => 'Lista actualizada',
 	'farmer-notaccessible' => 'No accesible',
+	'farmer-notaccessible-test' => 'Esta característica está únicamente disponible en la wiki padre en la granja',
 	'farmer-permissiondenied' => 'Permiso denegado',
+	'farmer-permissiondenied-text' => 'No cuenta con los permisos para eliminar una wiki de la granja',
 	'farmer-permissiondenied-text1' => 'No tiene permiso para acceder a esta página',
 	'farmer-deleting' => 'El wiki "$1" ha sido borrado',
 	'farmer-delete-confirm' => 'Confirmo que deseo borrar este wiki',
@@ -1619,17 +1638,28 @@ Esto se mostrará en la lista wiki.',
 	'farmer-defaultskin-button' => 'Configurar piel por defecto',
 	'farmer-extensions' => 'Extensiones activas',
 	'farmer-extensions-button' => 'Configurar extensiones activas',
+	'farmer-extensions-extension-denied' => 'No tiene los permisos para utilizar esta característica.
+Debe ser un miembro del grupo farmeradmin',
 	'farmer-extensions-invalid' => 'Extensión inválida',
 	'farmer-extensions-invalid-text' => 'No se ha podido añadir la extensión porque el archivo seleccionado para incluir no se ha podido encontrar',
 	'farmer-extensions-available' => 'Extensiones disponibles',
 	'farmer-extensions-noavailable' => 'Ninguna extensión está registrada',
 	'farmer-extensions-register' => 'Registrar extensión',
+	'farmer-extensions-register-text1' => 'Utilice el formulario que se halla a continuación para registrar una nueva extensión en la granja.
+Una vez que la extensión ha sido registrada, todas las wikis podrán utilizarla.',
+	'farmer-extensions-register-text2' => "Para el parámetro ''Incluir archivo'', ingrese el nombre del archivo PHP tal como lo haría en LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Si el nombre del archivo contiene '''\$root''', dicha variable será reemplazada con el directorio raíz del MedaWiki.",
 	'farmer-extensions-register-text4' => 'Las actuales rutas incluídas son:',
 	'farmer-extensions-register-name' => 'Nombre',
 	'farmer-extensions-register-includefile' => 'Incluir archivo',
 	'farmer-error-exists' => 'No se puede crear wiki. Ya existe: $1',
+	'farmer-error-noextwrite' => 'No se ha podido escribir el archivo de extensión:',
+	'farmer-log-name' => 'Registro de la granja de wikis',
+	'farmer-log-header' => 'Este es un registro de los cambios hechos a la granja de wikis.',
 	'farmer-log-create' => 'Creado el wiki "$2"',
 	'farmer-log-delete' => 'Borrado el wiki "$2"',
+	'right-farmeradmin' => 'Gestionar la granja de wikis',
+	'right-createwiki' => 'Crear wikis en la granja wiki',
 );
 
 /** Estonian (Eesti)
@@ -3872,102 +3902,102 @@ $messages['mk'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'farmer' => 'കാര്യസ്ഥന്‍',
+	'farmer' => 'കാര്യസ്ഥൻ',
 	'farmer-desc' => 'മീഡിയാവിക്കി പാടം പരിപാലിക്കുക',
-	'farmercantcreatewikis' => 'വിക്കി സൃഷ്ടിക്കുവാനുള്ള അവകാശം താങ്കള്‍ക്ക് നല്‍കിയിട്ടില്ലാത്തതിനാല്‍ വിക്കി സൃഷ്ടിക്കുവാന്‍ താങ്കള്‍ക്ക് സാധിക്കില്ല',
+	'farmercantcreatewikis' => 'വിക്കി സൃഷ്ടിക്കുവാനുള്ള അവകാശം താങ്കൾക്ക് നൽകിയിട്ടില്ലാത്തതിനാൽ വിക്കി സൃഷ്ടിക്കുവാൻ താങ്കൾക്ക് സാധിക്കില്ല',
 	'farmercreatesitename' => 'സൈറ്റിന്റെ പേര്‌',
 	'farmercreatenextstep' => 'അടുത്ത ഘട്ടം',
 	'farmernewwikimainpage' => '== താങ്കളുടെ വിക്കിയിലേക്ക് സ്വാഗതം ==
-താങ്കള്‍ക്ക് ഇതു വായിക്കുവാന്‍ സാധിക്കുന്നുണ്ടെങ്കില്‍ താങ്കളുടെ പുതിയ വിക്കി വിജയകരമായി ഇന്‍സ്റ്റാള്‍ ചെയ്തിരിക്കുന്നു. താങ്കൾക്ക് താങ്കളുടെ വിക്കി [[Special:Farmer|ക്രമീകരിച്ചെടുക്കാവുന്നതാണ്]].',
+താങ്കൾക്ക് ഇതു വായിക്കുവാൻ സാധിക്കുന്നുണ്ടെങ്കിൽ താങ്കളുടെ പുതിയ വിക്കി വിജയകരമായി ഇൻസ്റ്റാൾ ചെയ്തിരിക്കുന്നു. താങ്കൾക്ക് താങ്കളുടെ വിക്കി [[Special:Farmer|ക്രമീകരിച്ചെടുക്കാവുന്നതാണ്]].',
 	'farmer-about' => 'വിവരണം',
-	'farmer-about-text' => 'മീഡിയാവിക്കി കാര്യസ്ഥന്‍ എന്ന പദവി മീഡിയാവിക്കി വിക്കികളുടെ പാടം പരിപാലിക്കുന്നതിനു താങ്കളെ സഹായിക്കും.',
+	'farmer-about-text' => 'മീഡിയാവിക്കി കാര്യസ്ഥൻ എന്ന പദവി മീഡിയാവിക്കി വിക്കികളുടെ പാടം പരിപാലിക്കുന്നതിനു താങ്കളെ സഹായിക്കും.',
 	'farmer-list-wiki' => 'വിക്കികളുടെ പട്ടിക',
 	'farmer-list-wiki-text' => '{{SITENAME}} സം‌രംഭത്തിലുള്ള [[$1|വിക്കികളുടെ പട്ടിക]]',
 	'farmer-createwiki' => 'ഒരു വിക്കി സൃഷ്ടിക്കുക',
 	'farmer-createwiki-text' => 'പുതിയൊരു വിക്കി [[$1|സൃഷ്ടിക്കുക]]!',
-	'farmer-administration' => 'പാടത്തിന്റെ കാര്യനിര്‍‌വഹണം',
-	'farmer-administration-extension' => 'എക്സ്റ്റെന്‍ഷന്‍ പരിപാലിക്കുക',
-	'farmer-administration-extension-text' => 'ഇന്‍സ്റ്റാള്‍ ചെയ്ത എക്സ്റ്റന്‍ഷനുകള്‍  [[$1|പരിപാലിക്കുക]].',
-	'farmer-admimistration-listupdate' => 'വിക്കിപാടത്തിന്റെ പട്ടികയുടെ പുതുക്കല്‍',
-	'farmer-admimistration-listupdate-text' => '{{SITENAME}} സം‌രംഭത്തില്‍ വിക്കികളുടെ [[$1|പട്ടിക]] പുതുക്കുക',
+	'farmer-administration' => 'പാടത്തിന്റെ കാര്യനിർ‌വഹണം',
+	'farmer-administration-extension' => 'എക്സ്റ്റെൻഷൻ പരിപാലിക്കുക',
+	'farmer-administration-extension-text' => 'ഇൻസ്റ്റാൾ ചെയ്ത എക്സ്റ്റൻഷനുകൾ  [[$1|പരിപാലിക്കുക]].',
+	'farmer-admimistration-listupdate' => 'വിക്കിപാടത്തിന്റെ പട്ടികയുടെ പുതുക്കൽ',
+	'farmer-admimistration-listupdate-text' => '{{SITENAME}} സം‌രംഭത്തിൽ വിക്കികളുടെ [[$1|പട്ടിക]] പുതുക്കുക',
 	'farmer-administration-delete' => 'വിക്കി മായ്ക്കുക',
 	'farmer-administration-delete-text' => 'പാടത്തു നിന്നു ഒരു വിക്കി [[$1|ഒഴിവാക്കുക]]',
 	'farmer-administer-thiswiki' => 'ഈ വിക്കിയെ പരിപാലിക്കുക',
-	'farmer-administer-thiswiki-text' => 'ഈ വിക്കിയിലെ മാറ്റങ്ങള്‍ [[$1|നിരീക്ഷിക്കുക]]',
+	'farmer-administer-thiswiki-text' => 'ഈ വിക്കിയിലെ മാറ്റങ്ങൾ [[$1|നിരീക്ഷിക്കുക]]',
 	'farmer-notavailable' => 'ലഭ്യമല്ല',
-	'farmer-notavailable-text' => 'ഈ സവിശേഷത പ്രധാനവിക്കിയില്‍ മാത്രമേ ലഭ്യമുള്ളൂ',
+	'farmer-notavailable-text' => 'ഈ സവിശേഷത പ്രധാനവിക്കിയിൽ മാത്രമേ ലഭ്യമുള്ളൂ',
 	'farmer-wikicreated' => 'വിക്കി സൃഷ്ടിക്കപ്പെട്ടിരിക്കുന്നു',
 	'farmer-wikicreated-text' => 'താങ്കളുടെ വിക്കി സൃഷ്ടിക്കപ്പെട്ടിരിക്കുന്നു.
-അത് $1 എന്ന വിലാസത്തില്‍ ലഭ്യമാണ്‌.',
-	'farmer-default' => 'ഈ വിക്കിയില്‍ സ്വതവെ താങ്കള്‍ക്ക് മാത്രമേ പ്രത്യേകാവകാശങ്ങള്‍ ഉള്ളൂ. ഉപയോക്താക്കളുടെ അവകാശങ്ങള്‍ $1 എന്ന താളിലൂടെ താങ്കള്‍ക്ക് മാറ്റാവുന്നതാണ്‌.',
+അത് $1 എന്ന വിലാസത്തിൽ ലഭ്യമാണ്‌.',
+	'farmer-default' => 'ഈ വിക്കിയിൽ സ്വതവെ താങ്കൾക്ക് മാത്രമേ പ്രത്യേകാവകാശങ്ങൾ ഉള്ളൂ. ഉപയോക്താക്കളുടെ അവകാശങ്ങൾ $1 എന്ന താളിലൂടെ താങ്കൾക്ക് മാറ്റാവുന്നതാണ്‌.',
 	'farmer-wikiexists' => 'വിക്കി നിലവിലുണ്ട്',
-	'farmer-wikiexists-text' => "താങ്കള്‍ സൃഷ്ടിക്കുവാന്‍ ശ്രമിക്കുന്ന '''$1''' എന്ന വിക്കി നിലവിലുണ്ട്. ദയവായി തിരിച്ചു പോയി മറ്റൊരു പേരു തിരഞ്ഞെടുക്കൂ.",
-	'farmer-confirmsetting' => 'വിക്കിയുടെ ക്രമീകരണങ്ങള്‍ സ്ഥിരീകരിക്കുക',
+	'farmer-wikiexists-text' => "താങ്കൾ സൃഷ്ടിക്കുവാൻ ശ്രമിക്കുന്ന '''$1''' എന്ന വിക്കി നിലവിലുണ്ട്. ദയവായി തിരിച്ചു പോയി മറ്റൊരു പേരു തിരഞ്ഞെടുക്കൂ.",
+	'farmer-confirmsetting' => 'വിക്കിയുടെ ക്രമീകരണങ്ങൾ സ്ഥിരീകരിക്കുക',
 	'farmer-confirmsetting-name' => 'പേര്',
-	'farmer-confirmsetting-title' => 'ശീര്‍ഷകം',
+	'farmer-confirmsetting-title' => 'ശീർഷകം',
 	'farmer-confirmsetting-description' => 'വിവരണം',
 	'farmer-description' => 'വിവരണം',
 	'farmer-confirmsetting-text' => "താങ്കളുടെ വിക്കിയിലേക്ക് '''$1''', $3 എന്ന വിലാസത്തിലൂടെ എത്താവുന്നതാണ്‌.
 പദ്ധതിയുടെ നാമമേഖല '''$2''' എന്നായിരിക്കും.
-ഈ നാമമേഖലയിലേക്കുള്ള കണ്ണികള്‍ '''<nowiki>[[$2:Page Name]]</nowiki>''' എന്ന രൂപത്തില്‍ ആയിരിക്കും.
-ഇതാണു താങ്കള്‍ക്ക് വേണ്ടതെങ്കില്‍ താഴെയുള്ള '''സ്ഥിരീകരിക്കുക''' എന്ന ബട്ടണ്‍ അമര്‍ത്തുക.",
+ഈ നാമമേഖലയിലേക്കുള്ള കണ്ണികൾ '''<nowiki>[[$2:Page Name]]</nowiki>''' എന്ന രൂപത്തിൽ ആയിരിക്കും.
+ഇതാണു താങ്കൾക്ക് വേണ്ടതെങ്കിൽ താഴെയുള്ള '''സ്ഥിരീകരിക്കുക''' എന്ന ബട്ടൺ അമർത്തുക.",
 	'farmer-button-confirm' => 'സ്ഥിരീകരിക്കുക',
-	'farmer-button-submit' => 'സമര്‍പ്പിക്കുക',
+	'farmer-button-submit' => 'സമർപ്പിക്കുക',
 	'farmer-createwiki-form-title' => 'ഒരു വിക്കി സൃഷ്ടിക്കുക',
-	'farmer-createwiki-form-text1' => 'പുതിയൊരു വിക്കി ഉണ്ടാക്കാന്‍ താഴെയുള്ള ഫോം ഉപയോഗിക്കുക',
+	'farmer-createwiki-form-text1' => 'പുതിയൊരു വിക്കി ഉണ്ടാക്കാൻ താഴെയുള്ള ഫോം ഉപയോഗിക്കുക',
 	'farmer-createwiki-form-help' => 'സഹായം',
 	'farmer-createwiki-form-text2' => "; Wiki name: വിക്കിയുടെ പേര്‌.
 അക്ഷരങ്ങളും അക്കങ്ങളും മാത്രമേ പാടുള്ളൂ.
-താങ്കളൂടെ വിക്കിയെ തിരിച്ചറിയുവാന്‍ സഹായിക്കുന്ന URL-ല്‍ ഈ പേര്‌ ആയിരിക്കും കാണുക.
-ഉദാഹരണത്തിനു താങ്കള്‍ '''title''' എന്നു ചേര്‍ത്താല്‍, താങ്കളുടെ വിക്കിയിലേക്ക്  <nowiki>http://</nowiki>'''title'''.mydomain എന്ന വിലാസത്തിലൂടെ ആവും എത്തിപ്പെടാവുന്നത്.",
+താങ്കളൂടെ വിക്കിയെ തിരിച്ചറിയുവാൻ സഹായിക്കുന്ന URL-ൽ ഈ പേര്‌ ആയിരിക്കും കാണുക.
+ഉദാഹരണത്തിനു താങ്കൾ '''title''' എന്നു ചേർത്താൽ, താങ്കളുടെ വിക്കിയിലേക്ക്  <nowiki>http://</nowiki>'''title'''.mydomain എന്ന വിലാസത്തിലൂടെ ആവും എത്തിപ്പെടാവുന്നത്.",
 	'farmer-createwiki-form-text3' => '; Wiki name: വിക്കിയുടെ തലക്കെട്ട്
-വിക്കിയിലെ ഓരോ താളിന്റേയും ശീര്‍ഷകത്തില്‍ ഈ തലക്കെട്ടായിരിക്കും ഉപയോഗിക്കുക.
-അതു തന്നെ ആയിരിക്കും പദ്ധതിയുടെ നാമമേഖലയും ഇന്റര്‍‌വിക്കി പൂര്‍വ്വപ്രത്യയവും.',
+വിക്കിയിലെ ഓരോ താളിന്റേയും ശീർഷകത്തിൽ ഈ തലക്കെട്ടായിരിക്കും ഉപയോഗിക്കുക.
+അതു തന്നെ ആയിരിക്കും പദ്ധതിയുടെ നാമമേഖലയും ഇന്റർ‌വിക്കി പൂർവ്വപ്രത്യയവും.',
 	'farmer-createwiki-form-text4' => '; Description: വിക്കിയെക്കുറിച്ചുള്ള വിവരണം.
 വിക്കിയെക്കുറിച്ചുള്ള വിവരണം.
-വിക്കികളുടെ പട്ടികയില്‍ ഈ വിവരണം ആയിരിക്കും പ്രദര്‍ശിപ്പിക്കുക.',
+വിക്കികളുടെ പട്ടികയിൽ ഈ വിവരണം ആയിരിക്കും പ്രദർശിപ്പിക്കുക.',
 	'farmer-createwiki-user' => 'ഉപയോക്തൃനാമം',
 	'farmer-createwiki-name' => 'വിക്കിയുടെ പേര്‌',
 	'farmer-createwiki-title' => 'വിക്കിയുടെ തലക്കെട്ട്',
 	'farmer-createwiki-description' => 'വിവരണം',
 	'farmer-updatedlist' => 'പുതുക്കിയ പട്ടിക',
-	'farmer-notaccessible' => 'എത്തിപ്പെടാന്‍ പറ്റിയില്ല',
+	'farmer-notaccessible' => 'എത്തിപ്പെടാൻ പറ്റിയില്ല',
 	'farmer-notaccessible-test' => 'ഈ സവിശേഷത വിക്കിപാടത്തുള്ള പേരന്റ് വിക്കിക്കു മാത്രമേ ബാധകമാവൂ.',
 	'farmer-permissiondenied' => 'പ്രവേശനം നിഷേധിച്ചിരിക്കുന്നു',
-	'farmer-permissiondenied-text' => 'പാടത്തു നിന്നു ഒരു വിക്കി ഒഴിവാക്കാനുള്ള അനുവാദം താങ്കള്‍ക്കില്ല',
-	'farmer-permissiondenied-text1' => 'ഈ താളില്‍ പ്രവേശിക്കുവാന്‍ താങ്കള്‍ക്ക് അനുമതിയില്ല',
+	'farmer-permissiondenied-text' => 'പാടത്തു നിന്നു ഒരു വിക്കി ഒഴിവാക്കാനുള്ള അനുവാദം താങ്കൾക്കില്ല',
+	'farmer-permissiondenied-text1' => 'ഈ താളിൽ പ്രവേശിക്കുവാൻ താങ്കൾക്ക് അനുമതിയില്ല',
 	'farmer-deleting' => '"$1" മായ്ച്ചുകൊണ്ടിരിക്കുന്നു',
 	'farmer-delete-title' => 'വിക്കി മായ്ക്കുക',
-	'farmer-delete-text' => 'താങ്കള്‍ ഒഴിവാക്കാന്‍ ഉദ്ദേശിക്കുന്ന വിക്കി താഴെയുള്ള പട്ടികയില്‍ നിന്നു തിരഞ്ഞെടുക്കുക',
+	'farmer-delete-text' => 'താങ്കൾ ഒഴിവാക്കാൻ ഉദ്ദേശിക്കുന്ന വിക്കി താഴെയുള്ള പട്ടികയിൽ നിന്നു തിരഞ്ഞെടുക്കുക',
 	'farmer-delete-form' => 'ഒരു വിക്കി തിരഞ്ഞെടുക്കുക',
 	'farmer-delete-form-submit' => 'മായ്ക്കുക',
 	'farmer-listofwikis' => 'വിക്കികളുടെ പട്ടിക',
-	'farmer-mainpage' => 'പ്രധാന താള്‍',
-	'farmer-basic-title1' => 'ശീര്‍ഷകം',
-	'farmer-basic-title1-text' => 'താങ്കളുടെ വിക്കിക്ക് ഒരു തലക്കെട്ടില്ല. ഇപ്പോള്‍ ഒന്ന് ഉണ്ടാക്കൂ.',
+	'farmer-mainpage' => 'പ്രധാന താൾ',
+	'farmer-basic-title1' => 'ശീർഷകം',
+	'farmer-basic-title1-text' => 'താങ്കളുടെ വിക്കിക്ക് ഒരു തലക്കെട്ടില്ല. ഇപ്പോൾ ഒന്ന് ഉണ്ടാക്കൂ.',
 	'farmer-basic-description' => 'വിവരണം',
-	'farmer-basic-description-text' => 'താങ്കളുടെ വിക്കിയെ കുറിച്ചുള്ള വിവരണം താഴെ ചേര്‍ക്കൂ',
-	'farmer-basic-permission' => 'അനുമതികള്‍',
-	'farmer-basic-permission-text' => 'ഈ വിക്കിയിലെ ഉപയോക്താക്കളുടെ അവകാശങ്ങളില്‍ മാറ്റം വരുത്താന്‍ താങ്കള്‍ക്ക്  താഴെയുള്ള ഫോം ഉപയോഗികാവുന്നതാണ്‌.',
-	'farmer-basic-permission-visitor' => 'എല്ലാ സന്ദര്‍ശകര്‍ക്കുമുള്ള അവകാശങ്ങള്‍',
-	'farmer-basic-permission-visitor-text' => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന അവകാശങ്ങള്‍ വിക്കിയിലെ ഓരോ ഉപയോക്താവിനും ബാധകമായിരിക്കും.',
+	'farmer-basic-description-text' => 'താങ്കളുടെ വിക്കിയെ കുറിച്ചുള്ള വിവരണം താഴെ ചേർക്കൂ',
+	'farmer-basic-permission' => 'അനുമതികൾ',
+	'farmer-basic-permission-text' => 'ഈ വിക്കിയിലെ ഉപയോക്താക്കളുടെ അവകാശങ്ങളിൽ മാറ്റം വരുത്താൻ താങ്കൾക്ക്  താഴെയുള്ള ഫോം ഉപയോഗികാവുന്നതാണ്‌.',
+	'farmer-basic-permission-visitor' => 'എല്ലാ സന്ദർശകർക്കുമുള്ള അവകാശങ്ങൾ',
+	'farmer-basic-permission-visitor-text' => 'താഴെ പ്രദർശിപ്പിച്ചിരിക്കുന്ന അവകാശങ്ങൾ വിക്കിയിലെ ഓരോ ഉപയോക്താവിനും ബാധകമായിരിക്കും.',
 	'farmer-yes' => 'ശരി',
 	'farmer-no' => 'അല്ല',
-	'farmer-basic-permission-user' => 'ലോഗിന്‍ ചെയ്ത ഉപയോക്താക്കള്‍ക്കുള്ള അവകാശങ്ങള്‍',
-	'farmer-basic-permission-user-text' => 'താഴെ പ്രദര്‍ശിപ്പിച്ചിരിക്കുന്ന അവകാശങ്ങള്‍ വിക്കിയില്‍ ലോഗിന്‍ ചെയ്യുന്ന ഓരോ ഉപയോക്താവിനും ബാധകമായിരിക്കും',
-	'farmer-setpermission' => 'അവകാശങ്ങള്‍ ക്രമീകരിക്കുക',
+	'farmer-basic-permission-user' => 'ലോഗിൻ ചെയ്ത ഉപയോക്താക്കൾക്കുള്ള അവകാശങ്ങൾ',
+	'farmer-basic-permission-user-text' => 'താഴെ പ്രദർശിപ്പിച്ചിരിക്കുന്ന അവകാശങ്ങൾ വിക്കിയിൽ ലോഗിൻ ചെയ്യുന്ന ഓരോ ഉപയോക്താവിനും ബാധകമായിരിക്കും',
+	'farmer-setpermission' => 'അവകാശങ്ങൾ ക്രമീകരിക്കുക',
 	'farmer-defaultskin' => 'സ്വതവേയുള്ള രൂപം',
-	'farmer-defaultskin-button' => 'സ്വതവെ പ്രദര്‍ശിപ്പിക്കേണ്ട രൂപം സജ്ജീകരിക്കുക',
-	'farmer-extensions' => 'സജീവമായ എക്സ്റ്റെന്‍ഷനുകള്‍',
-	'farmer-extensions-button' => 'സജീവമായ എക്സ്റ്റെന്‍ഷനുകള്‍ ക്രമീകരിക്കുക',
-	'farmer-extensions-extension-denied' => 'ഈ സവിശേഷത ഉപയോഗിക്കുവാനുള്ള അനുമതി താങ്കള്‍ക്കില്ല.
-താങ്കള്‍ അതിനു  farmeradmin സംഘത്തിലെ അം‌ഗമായിരിക്കണം',
-	'farmer-extensions-invalid' => 'അസാധുവായ എക്സ്റ്റെന്‍ഷന്‍',
-	'farmer-extensions-available' => 'ലഭ്യമായ എക്സ്റ്റെന്‍ഷനുകള്‍',
-	'farmer-extensions-noavailable' => 'എക്സ്റ്റെഷനുകള്‍ ഒന്നും രജിസ്റ്റര്‍ ചെയ്തിട്ടില്ല',
-	'farmer-extensions-register' => 'എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്യുക',
-	'farmer-extensions-register-text1' => 'ഈ വിക്കി പാടത്ത് പുതിയൊരു എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്യുവാന്‍ താഴെയുള്ള ഫോം ഉപയോഗിക്കുക.
-എക്സ്റ്റെന്‍ഷന്‍ രെജിസ്റ്റര്‍ ചെയ്തതിനു ശെഷം ഈ വിക്കിപാടത്തുള്ള എല്ലാ വിക്കികള്‍ക്കും അതുപയോഗിക്കാം.',
+	'farmer-defaultskin-button' => 'സ്വതവെ പ്രദർശിപ്പിക്കേണ്ട രൂപം സജ്ജീകരിക്കുക',
+	'farmer-extensions' => 'സജീവമായ എക്സ്റ്റെൻഷനുകൾ',
+	'farmer-extensions-button' => 'സജീവമായ എക്സ്റ്റെൻഷനുകൾ ക്രമീകരിക്കുക',
+	'farmer-extensions-extension-denied' => 'ഈ സവിശേഷത ഉപയോഗിക്കുവാനുള്ള അനുമതി താങ്കൾക്കില്ല.
+താങ്കൾ അതിനു  farmeradmin സംഘത്തിലെ അം‌ഗമായിരിക്കണം',
+	'farmer-extensions-invalid' => 'അസാധുവായ എക്സ്റ്റെൻഷൻ',
+	'farmer-extensions-available' => 'ലഭ്യമായ എക്സ്റ്റെൻഷനുകൾ',
+	'farmer-extensions-noavailable' => 'എക്സ്റ്റെഷനുകൾ ഒന്നും രജിസ്റ്റർ ചെയ്തിട്ടില്ല',
+	'farmer-extensions-register' => 'എക്സ്റ്റെൻഷൻ രെജിസ്റ്റർ ചെയ്യുക',
+	'farmer-extensions-register-text1' => 'ഈ വിക്കി പാടത്ത് പുതിയൊരു എക്സ്റ്റെൻഷൻ രെജിസ്റ്റർ ചെയ്യുവാൻ താഴെയുള്ള ഫോം ഉപയോഗിക്കുക.
+എക്സ്റ്റെൻഷൻ രെജിസ്റ്റർ ചെയ്തതിനു ശെഷം ഈ വിക്കിപാടത്തുള്ള എല്ലാ വിക്കികൾക്കും അതുപയോഗിക്കാം.',
 	'farmer-extensions-register-name' => 'പേര്‌',
 	'farmer-error-exists' => 'വിക്കി സൃഷ്ടിക്കുന്നതിനു കഴിഞ്ഞില്ല. അതു ഇപ്പോഴെ നിലവിലുണ്ട്: $1',
 );
