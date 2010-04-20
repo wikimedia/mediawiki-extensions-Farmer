@@ -708,7 +708,7 @@ $messages['be-tarask'] = array(
 	'farmer-extensions-register-text1' => 'Выкарыстоўвайце форму ніжэй для рэгістрацыі новага пашырэньня на фэрме.
 Пасьля таго, як пашырэньне будзе зарэгістраванае, усе вікі змогуць яго выкарыстоўваць.',
 	'farmer-extensions-register-text2' => "Увядзіце назву PHP-файла для парамэтру ''Include file'', так як у LocalSettings.php.",
-	'farmer-extensions-register-text3' => "Калі назва файла ўтрымлівае '''\$root''', то гэта пераменная будзе замененая на карэнную дырэкторыю MediaWiki.",
+	'farmer-extensions-register-text3' => "Калі назва файла ўтрымлівае '''\$root''', то гэтая зьменная будзе замененая на карэнную дырэкторыю MediaWiki.",
 	'farmer-extensions-register-text4' => 'Існуючыя шляхі для ўключэньня:',
 	'farmer-extensions-register-name' => 'Назва',
 	'farmer-extensions-register-includefile' => 'Уключыць файл',
