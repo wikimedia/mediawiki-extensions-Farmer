@@ -3511,9 +3511,11 @@ $messages['km'] = array(
  */
 $messages['kn'] = array(
 	'farmer-confirmsetting-name' => 'ಹೆಸರು',
+	'farmer-confirmsetting-title' => 'ಶೀರ್ಷಿಕೆ',
 	'farmer-confirmsetting-reason' => 'ಕಾರಣ',
 	'farmer-createwiki-reason' => 'ಕಾರಣ',
 	'farmer-mainpage' => 'ಮುಖ್ಯ ಪುಟ',
+	'farmer-basic-title1' => 'ಶೀರ್ಷಿಕೆ',
 	'farmer-yes' => 'ಹೌದು',
 	'farmer-no' => 'ಇಲ್ಲ',
 	'farmer-extensions-register-name' => 'ಹೆಸರು',
