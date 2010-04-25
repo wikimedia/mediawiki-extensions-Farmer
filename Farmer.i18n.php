@@ -1447,6 +1447,15 @@ $messages['el'] = array(
 	'farmer-log-name' => 'Αρχείο της βικι-φάρμας',
 );
 
+/** British English (British English)
+ * @author Reedy
+ */
+$messages['en-gb'] = array(
+	'farmernewwikimainpage' => '== Welcome to your wiki ==
+If you are reading this, your new wiki has been installed correctly.
+You can [[Special:Farmer|customise your wiki]].',
+);
+
 /** Esperanto (Esperanto)
  * @author Amikeco
  * @author Michawiki
@@ -3541,7 +3550,7 @@ $messages['krj'] = array(
 	'farmer-mainpage' => 'Pono nga Pahina',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
