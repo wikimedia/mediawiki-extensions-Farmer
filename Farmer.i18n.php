@@ -4127,10 +4127,11 @@ $messages['ms'] = array(
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
-	'farmer-createwiki-user' => 'Isem l-utent',
+	'farmer-createwiki-user' => 'Isem tal-utent',
 );
 
 /** Mirandese (Mirandés)
