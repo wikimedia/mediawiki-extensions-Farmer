@@ -4156,6 +4156,9 @@ $messages['mwl'] = array(
  */
 $messages['myv'] = array(
 	'farmer' => 'Хермер',
+	'farmercreatenextstep' => 'Омбоце эскелькс',
+	'farmer-list-wiki' => 'Викитнеде списка',
+	'farmer-createwiki' => 'Шкамс вики',
 	'farmer-notavailable' => 'Кедь маласо арась',
 	'farmer-confirmsetting-name' => 'Лемезэ',
 	'farmer-confirmsetting-title' => 'Коняксозо',
