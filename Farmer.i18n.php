@@ -324,6 +324,41 @@ Sodra' n uitbreiding geregistreer is, sal alle wikis in staat te wees om dit te 
 	'right-createwiki' => 'Skep wikis in die wiki plaas',
 );
 
+/** Gheg Albanian (Gegë)
+ * @author Mdupont
+ */
+$messages['aln'] = array(
+	'farmer-yes' => 'Po',
+	'farmer-no' => 'Jo',
+	'farmer-basic-permission-user' => 'Lejet për përdoruesit e regjistruar',
+	'farmer-basic-permission-user-text' => 'Lejet e mëposhtme do të zbatohet për çdo person që është regjistruar në këtë wiki',
+	'farmer-setpermission' => 'leje Set',
+	'farmer-defaultskin' => 'Default lëkurës',
+	'farmer-defaultskin-button' => 'lëkurës Set default',
+	'farmer-extensions' => 'Active extensions',
+	'farmer-extensions-button' => 'Set extensions aktiv',
+	'farmer-extensions-extension-denied' => 'Ju nuk keni leje për të përdorni këtë funksion. Ju duhet të jetë një anëtar i grupit farmeradmin',
+	'farmer-extensions-invalid' => 'zgjerimin e pavlefshme',
+	'farmer-extensions-invalid-text' => 'Ne nuk mund te shtohet zgjerimi për shkak file e zgjedhur për përfshirjen nuk mund të gjendet',
+	'farmer-extensions-available' => 'extensions në dispozicion',
+	'farmer-extensions-noavailable' => 'Nuk extensions janë të regjistruar',
+	'farmer-extensions-register' => 'zgjatje Regjistrohu',
+	'farmer-extensions-register-text1' => 'Përdorni formularin e mëposhtëm për të regjistruar një shtyrje të re me të fermës. Pasi një zgjatje është e regjistruar, të gjitha wikis do të jetë në gjendje ta përdorin atë.',
+	'farmer-extensions-register-text2' => "Për Përfshij skedarin''''parametër, shkruani emrin e PHP fotografi si ju do në LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Nëse emri i përmban'''rrënjë \$''', që ndryshueshme do të zëvendësohet me MediaWiki root directory.",
+	'farmer-extensions-register-text4' => 'Përfshijnë aktuale shtigjet janë:',
+	'farmer-extensions-register-name' => 'Emër',
+	'farmer-extensions-register-includefile' => 'Përfshij fotografi',
+	'farmer-error-exists' => 'Nuk mund te krijohet wiki. Ajo ekziston: $1',
+	'farmer-error-noextwrite' => 'Në pamundësi për të shkruar nga zgjerim file:',
+	'farmer-log-name' => 'Wiki log fermë',
+	'farmer-log-header' => 'Ky është një regjistër për ndryshimet e bëra në fermë wiki.',
+	'farmer-log-create' => 'krijoi wiki "$2"',
+	'farmer-log-delete' => 'fshihet wiki "$2"',
+	'right-farmeradmin' => 'Manage fermë wiki',
+	'right-createwiki' => 'Krijo wikis në fermë wiki',
+);
+
 /** Amharic (አማርኛ)
  * @author Codex Sinaiticus
  */
