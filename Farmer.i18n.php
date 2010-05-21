@@ -3158,6 +3158,14 @@ Setelah ekstensi tersebut terdaftar, semua wiki dapat menggunakannya.',
 	'right-createwiki' => 'Buat wiki di farm wiki',
 );
 
+/** Igbo (Igbo) */
+$messages['ig'] = array(
+	'farmer-about' => 'Abwátà',
+	'farmer-confirmsetting-reason' => 'Mgbaghaputa',
+	'farmer-createwiki-reason' => 'Mgbaghaputa',
+	'farmer-delete-form-submit' => 'Gbakashia',
+);
+
 /** Ido (Ido)
  * @author Malafaya
  */
@@ -4773,6 +4781,7 @@ $messages['pdc'] = array(
 	'farmer-list-wiki-text' => '[[$1|Lischt]] vun alle Wikis uff {{SITENAME}}',
 	'farmer-administration' => 'Administration vun de Bauerei',
 	'farmer-confirmsetting-name' => 'Naame',
+	'farmer-confirmsetting-title' => 'Titel',
 	'farmer-confirmsetting-reason' => 'Grund',
 	'farmer-createwiki-form-help' => 'Hilf',
 	'farmer-createwiki-user' => 'Yuuser-Naame',
@@ -4781,6 +4790,7 @@ $messages['pdc'] = array(
 	'farmer-delete-form-submit' => 'Lösche',
 	'farmer-listofwikis' => 'Lischt vun Wikis',
 	'farmer-mainpage' => 'Haaptblatt',
+	'farmer-basic-title1' => 'Titel',
 	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Nee',
 	'farmer-extensions-register-name' => 'Naame',
