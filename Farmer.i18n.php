@@ -376,9 +376,13 @@ $messages['am'] = array(
  */
 $messages['an'] = array(
 	'farmer-confirmsetting-name' => 'Nombre',
+	'farmer-confirmsetting-reason' => 'Razón',
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Nimbiar',
+	'farmer-createwiki-reason' => 'Razón',
 	'farmer-delete-form-submit' => 'Borrar',
+	'farmer-yes' => 'Sí',
+	'farmer-no' => 'No',
 	'farmer-extensions-register-name' => 'Nombre',
 );
 
@@ -873,6 +877,7 @@ $messages['br'] = array(
 Mard emaoc'h o lenn ar gerioù-mañ eo bet staliet mat ho wiki nevez.
 Gallout a rit [[Special:Farmer|personelaat ho wiki]].",
 	'farmer-about' => 'Diwar-benn',
+	'farmer-about-text' => 'An astenn MediaWiki Farmer a aotre aozañ ur strobad a wikioù o tont eus ar meziant MediaWiki.',
 	'farmer-list-wiki' => 'Roll ar wikioù',
 	'farmer-list-wiki-text' => "[[$1|Rollañ]] an holl wikioù war al lec'hienn-mañ.",
 	'farmer-createwiki' => 'Krouiñ ur wiki',
@@ -880,6 +885,7 @@ Gallout a rit [[Special:Farmer|personelaat ho wiki]].",
 	'farmer-administration' => 'Meradur ar feurm',
 	'farmer-administration-extension' => 'Merañ an astennoù',
 	'farmer-administration-extension-text' => '[[$1|Merañ]] an astennoù staliet.',
+	'farmer-admimistration-listupdate' => 'Hizivadenn roll ar Wikioù',
 	'farmer-admimistration-listupdate-text' => "[[$1|Hizivat]] roll an holl wikioù war al lec'hienn-mañ.",
 	'farmer-administration-delete' => 'dilemel ur wiki',
 	'farmer-administration-delete-text' => '[[$1|Dilemel]] ur wiki eus ar feurm',
@@ -901,11 +907,25 @@ Mar plij kit war gil hag adklaskit gant un anv all.",
 	'farmer-confirmsetting-description' => 'Deskrivadur',
 	'farmer-confirmsetting-reason' => 'Abeg',
 	'farmer-description' => 'Deskrivadur',
+	'farmer-confirmsetting-text' => "Ho wiki, '''$1''', a vo kavet war $3.
+Esaouenn anv ar raktres a vo '''$2'''.
+Al liammoù davet an esaouenn anv-mañ o do ar stumm '''<nowiki>[[$2:Anv ar bajenn]]</nowiki>'''.
+Ma 'z eo ar pezh a fell deoc'h, klikit war ar bouton '''Kadarnaat''' amañ da heul.",
 	'farmer-button-confirm' => 'Kadarnaat',
 	'farmer-button-submit' => 'Kas',
 	'farmer-createwiki-form-title' => 'Krouiñ ur wiki',
 	'farmer-createwiki-form-text1' => 'Implijout ar furmskrid amañ dindan da grouiñ ur wiki nevez.',
 	'farmer-createwiki-form-help' => 'Skoazell',
+	'farmer-createwiki-form-text2' => "; Anv ar Wiki : Anv ar wiki.
+N'en deus nemet lizherennoù ha niveroù.
+Implijet e vo anv ar wiki evel ul lodenn eus an URL a-benn anavezout ho wiki.
+Da skouer, ma lakait '''titl''', neuze e vo kavet ho wiki war <nowiki>http://</nowiki>'''titl'''.madomani.",
+	'farmer-createwiki-form-text3' => '; Titl ar Wiki : Titl ar wiki.
+Implijet e vo e titl pep pajenn ho wiki.
+Esaouenn anv ar raktres e vo ivez hag ar rakverk etrewiki.',
+	'farmer-createwiki-form-text4' => '; Deskrivadur : Deskrivadur ar wiki.
+Un destenn deskrivañ ar wiki eo.
+Diskouezet e vo e roll ar wikioù.',
 	'farmer-createwiki-user' => 'Anv implijer',
 	'farmer-createwiki-name' => 'Anv ar wiki',
 	'farmer-createwiki-title' => 'Titl ar wiki',
@@ -913,6 +933,7 @@ Mar plij kit war gil hag adklaskit gant un anv all.",
 	'farmer-createwiki-reason' => 'Abeg',
 	'farmer-updatedlist' => 'Roll hizivaet',
 	'farmer-notaccessible' => "Ne c'haller ket mont dezhañ",
+	'farmer-notaccessible-test' => 'Ne gaver ar programm-mañ nemet war wiki pennañ an hollad-mañ a raktresoù.',
 	'farmer-permissiondenied' => "Aotre nac'het",
 	'farmer-permissiondenied-text' => "N'oc'h ket aotreet da zilemel ur wiki eus ar feurm",
 	'farmer-permissiondenied-text1' => "N'oc'h ket aotreet da vont d'ar bajenn-mañ",
@@ -938,15 +959,22 @@ Mar plij kit war gil hag adklaskit gant un anv all.",
 	'farmer-yes' => 'Ya',
 	'farmer-no' => 'Ket',
 	'farmer-basic-permission-user' => 'Aotreoù evit an implijerien kevreet',
+	'farmer-basic-permission-user-text' => 'An aotreoù-mañ a vo arloet ouzh kement den hag a zo enrollet war ar wiki-mañ',
 	'farmer-setpermission' => 'Lakaat an aotreoù',
 	'farmer-defaultskin' => 'Neuz dre ziouer',
 	'farmer-defaultskin-button' => 'Lakaat an neuz dre ziouer',
 	'farmer-extensions' => 'Astennoù oberiant',
 	'farmer-extensions-button' => 'Kefluniañ an astennoù oberiat',
+	'farmer-extensions-extension-denied' => "N'hoc'h eus ket an aotre da implijout an arc'hweladur-mañ. Ret eo deoc'h bezañ ezel eus merourien ar velestradurezh lieswiki",
 	'farmer-extensions-invalid' => 'Astenn direizh',
+	'farmer-extensions-invalid-text' => "Ne c'hellomp ket ouzhpennañ an astenn-mañ dre ma ne gaver ket ar restr diuzet evit an enklozadur.",
 	'farmer-extensions-available' => 'Astennoù da gaout',
 	'farmer-extensions-noavailable' => "N'eus astenn marilhet ebet",
 	'farmer-extensions-register' => 'Marilhañ un astenn',
+	'farmer-extensions-register-text1' => "Implijit ar furmskrid da-heul evit enrollañ un astenn nevez gant an arc'hweladur-se.
+Ur wech enrollet an astenn e c'hello an holl wikioù implijout anezhi.",
+	'farmer-extensions-register-text2' => 'Evit an arventenn "Enklozañ ur restr", roit anv ar restr PHP hoc\'h eus c\'hoant e LocalSettings.php.',
+	'farmer-extensions-register-text3' => "Ma 'z eus '''\$root''' e anv ar restr, e vo erlec'hiet ar varienn e kavlec'h gwrizienn MediaWiki.",
 	'farmer-extensions-register-text4' => 'Hentad a-vremañ ar restroù include a zo :',
 	'farmer-extensions-register-name' => 'Anv',
 	'farmer-extensions-register-includefile' => 'Enklozañ ur restr',
