@@ -17,6 +17,7 @@ class SpecialFarmer extends SpecialPage {
 	 */
 	public function __construct() {
 		parent::__construct( 'Farmer' );
+		wfLoadExtensionMessages( 'MediaWikiFarmer' );
 	}
 
 	/**
