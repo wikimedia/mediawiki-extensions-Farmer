@@ -561,7 +561,7 @@ class SpecialFarmer extends SpecialPage {
 			<td align=\"left\"><input type=\"text\" size=\"50\" name=\"include\" value=\"\" /></td>
 		</tr>
 		<tr>
-			<td>&nbsp;</td>
+			<td>&#160;</td>
 			<td align=\"right\"><input type=\"submit\" name=\"submit\" value=\"" . wfMsgHtml( 'farmer-button-submit' ) . "\" /></td>
 		</tr>
 	</table>
@@ -582,7 +582,7 @@ class SpecialFarmer extends SpecialPage {
 			$input .= 'checked="checked" ';
 		}
 
-		$input .= ' />' . wfMsgHtml( 'farmer-yes' ) . '&nbsp;&nbsp;';
+		$input .= ' />' . wfMsgHtml( 'farmer-yes' ) . '&#160;&#160;';
 
 		$wgOut->addHTML( $input );
 
