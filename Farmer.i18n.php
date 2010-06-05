@@ -5764,7 +5764,7 @@ $messages['sr-ec'] = array(
 	'farmer-permissiondenied' => 'Права приступа одбијена',
 	'farmer-permissiondenied-text' => 'Немате потребна права да бисте из фарме избрисали овај Вики',
 	'farmer-permissiondenied-text1' => 'Немате права приступа овој страни',
-	'farmer-deleting' => 'Брисање $1',
+	'farmer-deleting' => 'Вики "$1" је обрисан',
 	'farmer-delete-confirm' => 'Потврђујем да желим да обришем овај Вики',
 	'farmer-delete-confirm-wiki' => "Вики који ће бити обрисан: '''$1'''.",
 	'farmer-delete-reason' => 'Разлог брисања:',
@@ -5806,6 +5806,8 @@ $messages['sr-ec'] = array(
 	'farmer-extensions-register-text4' => 'Тренутне путање за укључивање су:',
 	'farmer-extensions-register-name' => 'Име',
 	'farmer-extensions-register-includefile' => 'Укључи фајл',
+	'farmer-log-create' => 'направљен вики "$2"',
+	'farmer-log-delete' => 'обрисан вики "$2"',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
