@@ -7,8 +7,6 @@
 
 /**
  * This class exposes functionality for a MediaWiki farm
- *
- * @addtogroup Extension
  */
 class MediaWikiFarmer {
 
