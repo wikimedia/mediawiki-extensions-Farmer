@@ -5879,6 +5879,7 @@ Ovo će biti prikazano u spisku Vikija.',
 	'farmer-permissiondenied' => 'Prava pristupa odbijena',
 	'farmer-permissiondenied-text' => 'Nemate potrebna prava da biste iz farme izbrisali ovaj Viki',
 	'farmer-permissiondenied-text1' => 'Nemate prava pristupa ovoj strani',
+	'farmer-deleting' => 'Viki "$1" je obrisan',
 	'farmer-delete-confirm' => 'Potvrđujem da želim da obrišem ovaj Viki',
 	'farmer-delete-confirm-wiki' => "Viki koji će biti obrisan: '''$1'''.",
 	'farmer-delete-reason' => 'Razlog brisanja:',
@@ -5920,6 +5921,8 @@ Kad ekstenziju jedanput registrujete, svi Vikiji će moći da je koriste.',
 	'farmer-extensions-register-text4' => 'Trenutne putanje za uključivanje su:',
 	'farmer-extensions-register-name' => 'Ime',
 	'farmer-extensions-register-includefile' => 'Uključi fajl',
+	'farmer-log-create' => 'napravljen viki "$2"',
+	'farmer-log-delete' => 'obrisan viki "$2"',
 );
 
 /** Swati (SiSwati)
