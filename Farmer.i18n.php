@@ -3874,7 +3874,7 @@ $messages['mk'] = array(
 	'farmer' => 'Фармер',
 	'farmer-desc' => 'Раководење со МедијаВики фарма',
 	'farmercantcreatewikis' => 'Не можете да создавате викија бидејќи немате таква привилегија',
-	'farmercreatesitename' => 'Име на веб-страницата',
+	'farmercreatesitename' => 'Име на мрежното место',
 	'farmercreatenextstep' => 'Следен чекор',
 	'farmernewwikimainpage' => '== Добредојдовте на вашето вики ==
 Ако го гледате ова, значи дека вашето вики е правилно инсталирано.
