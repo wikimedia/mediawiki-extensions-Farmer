@@ -5588,6 +5588,21 @@ $messages['ru'] = array(
 	'right-createwiki' => 'создание вики на вики-ферме',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'farmer-confirmsetting-name' => 'Мено',
+	'farmer-confirmsetting-title' => 'Назва',
+	'farmer-confirmsetting-description' => 'Попис',
+	'farmer-confirmsetting-reason' => 'Причіна',
+	'farmer-description' => 'Попис',
+	'farmer-createwiki-user' => 'Мено хоснователя:',
+	'farmer-createwiki-name' => 'Вікі мено',
+	'farmer-createwiki-description' => 'Попис',
+	'farmer-createwiki-reason' => 'Причіна',
+);
+
 /** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
  * @author OC Ripper
  */
