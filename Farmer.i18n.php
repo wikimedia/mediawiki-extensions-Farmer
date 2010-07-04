@@ -4871,7 +4871,7 @@ Możesz [[Special:Farmer|dostosować wiki do swoich potrzeb]].',
 	'farmer-administer-thiswiki' => 'Zarządzaj tą Wiki',
 	'farmer-administer-thiswiki-text' => '[[$1|Rejestr zarządzania]] tą wiki',
 	'farmer-notavailable' => 'Niedostępne',
-	'farmer-notavailable-text' => 'Ta funkcjonalność dostępna jest tylko na głównej wiki',
+	'farmer-notavailable-text' => 'Ta funkcja dostępna jest tylko na głównej wiki',
 	'farmer-wikicreated' => 'Wiki została utworzona',
 	'farmer-wikicreated-text' => 'Twoja wiki została utworzona.
 Dostępna jest pod adresem $1',
@@ -4912,7 +4912,7 @@ Opis będzie wyświetlany w spisie wiki.',
 	'farmer-createwiki-reason' => 'Powód',
 	'farmer-updatedlist' => 'Zaktualizowany spis',
 	'farmer-notaccessible' => 'Niedostępna',
-	'farmer-notaccessible-test' => 'Funkcjonalność jest dostępna tylko w macierzystej wiki na farmie',
+	'farmer-notaccessible-test' => 'Funkcja jest dostępna tylko w macierzystej wiki na farmie',
 	'farmer-permissiondenied' => 'Dostęp zabroniony',
 	'farmer-permissiondenied-text' => 'Nie masz uprawnień do usunięcia wiki z farmy',
 	'farmer-permissiondenied-text1' => 'Nie masz uprawnień do dostępu do tej strony',
@@ -4944,7 +4944,7 @@ Opis będzie wyświetlany w spisie wiki.',
 	'farmer-defaultskin-button' => 'Ustaw domyślną skórkę',
 	'farmer-extensions' => 'Aktywne rozszerzenia',
 	'farmer-extensions-button' => 'Ustaw aktywne rozszerzenia',
-	'farmer-extensions-extension-denied' => 'Nie masz uprawnień by użyć tej funkcjonalności.
+	'farmer-extensions-extension-denied' => 'Nie masz uprawnień by użyć tej funkcji.
 Musisz być członkiem grupy farmeradmin',
 	'farmer-extensions-invalid' => 'Niesprawne rozszerzenie',
 	'farmer-extensions-invalid-text' => 'Nie można dodać rozszerzenia ponieważ wskazany do włączenia plik nie został odnaleziony',
@@ -6853,6 +6853,12 @@ Atos pajonon su vükalised.',
 	'farmer-no' => 'Nö',
 	'farmer-extensions-register-name' => 'Nem',
 	'farmer-error-exists' => 'Vük no kanon pajafön bi ya dabinon: $1',
+);
+
+/** Wu (吴语) */
+$messages['wuu'] = array(
+	'farmer-confirmsetting-reason' => '理由：',
+	'farmer-createwiki-reason' => '理由：',
 );
 
 /** Yiddish (ייִדיש)
