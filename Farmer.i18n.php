@@ -895,8 +895,8 @@ Gallout a rit [[Special:Farmer|personelaat ho wiki]].",
 	'farmer-notavailable' => "N'eo ket da gaout",
 	'farmer-notavailable-text' => "An arc'hwel-mañ zo da gaout er wiki pennañ hepken",
 	'farmer-wikicreated' => 'Krouet eo ar wiki',
-	'farmer-wikicreated-text' => "Krouet eo bet ho wiki.
-Kavout a reoc'h anezhañ amañ : $1",
+	'farmer-wikicreated-text' => 'Krouet eo bet ho wiki.
+Kavout a rit anezhañ amañ : $1',
 	'farmer-default' => "Den ebet nemedoc'h n'en deus aotreoù war ar wiki-mañ.
 Gallout a rit cheñch aotreoù an implijerien dre $1",
 	'farmer-wikiexists' => "Bez' ez eus eus ar wiki",
