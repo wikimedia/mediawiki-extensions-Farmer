@@ -25,7 +25,7 @@ $wgExtensionCredits['specialpage'][] = array(
  */
 $wgFarmerSettings = array(
 	// Path to the directory that holds settings for wikis
-	'configDirectory'           =>  realpath( dirname( __FILE__ ) ) . '/configs/',
+	'configDirectory'           =>  dirname( __FILE__ ) . '/configs/',
 
 	// Or use a database
 	'databaseName'              => null,
