@@ -2450,6 +2450,13 @@ $messages['gv'] = array(
 	'farmer-extensions-register-includefile' => 'Goaill stiagh y coadan',
 );
 
+/** Hausa (هَوُسَ) */
+$messages['ha'] = array(
+	'farmer-confirmsetting-reason' => 'Dalili',
+	'farmer-createwiki-reason' => 'Dalili',
+	'farmer-delete-form-submit' => 'Soke',
+);
+
 /** Hakka (Hak-kâ-fa)
  * @author Hakka
  */
