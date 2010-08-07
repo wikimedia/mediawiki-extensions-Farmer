@@ -1103,6 +1103,15 @@ $messages['ch'] = array(
 	'farmer-mainpage' => 'Fanhaluman',
 );
 
+/** Sorani (کوردی) */
+$messages['ckb'] = array(
+	'farmer-confirmsetting-reason' => 'هۆکار',
+	'farmer-button-confirm' => 'پشتدار بکەرەوە',
+	'farmer-button-submit' => 'ناردن',
+	'farmer-createwiki-reason' => 'هۆکار',
+	'farmer-delete-form-submit' => 'سڕینەوە',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
