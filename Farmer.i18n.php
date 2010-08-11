@@ -1134,6 +1134,7 @@ $messages['cs'] = array(
 $messages['cu'] = array(
 	'farmer-createwiki-form-help' => 'по́мощь',
 	'farmer-delete-form-submit' => 'поничьжє́ниѥ',
+	'farmer-no' => 'нѣ́тъ',
 );
 
 /** Danish (Dansk)
