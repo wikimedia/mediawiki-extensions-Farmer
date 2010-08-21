@@ -141,9 +141,10 @@ Once an extension is registered, all wikis will be able to use it.',
  * @author Meno25
  * @author Nike
  * @author Purodha
+ * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'farmer-desc' => 'Shown in [[Special:Version]] as a short description of this extension. Do not translate links.',
+	'farmer-desc' => '{{desc}}',
 	'farmercreateurl' => '{{optional}}',
 	'farmernewwikimainpage' => 'Do not translate or change links.',
 	'farmer-about' => '{{Identical|About}}',
@@ -5739,6 +5740,14 @@ Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
 	'farmer-log-delete' => 'zmazal wiki „$2“',
 	'right-farmeradmin' => 'Spravovať farmu wiki',
 	'right-createwiki' => 'Vytvára wiki vo wiki farme',
+);
+
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'farmer-confirmsetting-reason' => 'Razlog',
+	'farmer-createwiki-reason' => 'Razlog',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
