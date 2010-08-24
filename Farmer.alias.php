@@ -15,83 +15,70 @@ $aliases['en'] = array(
 	'Farmer' => array( 'Farmer' ),
 );
 
-/** Afrikaans (Afrikaans) */
 $aliases['af'] = array(
-	'Farmer' => array( 'Boer' ),
+	'Farmer'   => array( 'Boer' ),
 );
 
-/** Arabic (العربية) */
 $aliases['ar'] = array(
-	'Farmer' => array( 'مزارع' ),
+	'Farmer'   => array( 'مزارع' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
 $aliases['arz'] = array(
-	'Farmer' => array( 'فلاح' ),
+	'Farmer'   => array( 'فلاح' ),
 );
 
-/** Gujarati (ગુજરાતી) */
 $aliases['gu'] = array(
-	'Farmer' => array( 'ખેડુત' ),
+	'Farmer'   => array( 'ખેડુત' ),
 );
 
-/** Interlingua (Interlingua) */
 $aliases['ia'] = array(
-	'Farmer' => array( 'Fermero' ),
+	'Farmer'   => array( 'Fermero' ),
 );
 
-/** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
-	'Farmer' => array( 'Petani' ),
+	'Farmer'   => array( 'Petani' ),
 );
 
-/** Japanese (日本語) */
 $aliases['ja'] = array(
-	'Farmer' => array( 'ウィキファーム管理' ),
+	'Farmer'   => array( 'ウィキファーム管理' ),
 );
 
-/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
-	'Farmer' => array( 'StallVollWikis', 'WikiStall' ),
+	'Farmer'   => array( 'StallVollWikis', 'WikiStall' ),
 );
 
-/** Macedonian (Македонски) */
+$aliases['lad'] = array(
+	'Farmer'   => array( 'Agricultor' ),
+);
+
 $aliases['mk'] = array(
-	'Farmer' => array( 'Фармер' ),
+	'Farmer'   => array( 'Фармер' ),
 );
 
-/** Marathi (मराठी) */
 $aliases['mr'] = array(
-	'Farmer' => array( 'शेतकरी' ),
+	'Farmer'   => array( 'शेतकरी' ),
 );
 
-/** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'Farmer' => array( 'Wikifarm' ),
+	'Farmer'   => array( 'Wikifarm' ),
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
-	'Farmer' => array( 'Bonde' ),
+	'Farmer'   => array( 'Bonde' ),
 );
 
-/** Romanian (Română) */
 $aliases['ro'] = array(
-	'Farmer' => array( 'Fermier' ),
+	'Farmer'   => array( 'Fermier' ),
 );
 
-/** Slovak (Slovenčina) */
 $aliases['sk'] = array(
-	'Farmer' => array( 'Farma' ),
+	'Farmer'   => array( 'Farma' ),
 );
 
-/** Tagalog (Tagalog) */
 $aliases['tl'] = array(
-	'Farmer' => array( 'Magsasaka' ),
+	'Farmer'   => array( 'Magsasaka' ),
 );
 
-/** Turkish (Türkçe) */
 $aliases['tr'] = array(
-	'Farmer' => array( 'Çiftçi' ),
+	'Farmer'   => array( 'Çiftçi' ),
 );
-
