@@ -378,11 +378,16 @@ $messages['am'] = array(
  */
 $messages['an'] = array(
 	'farmer-confirmsetting-name' => 'Nombre',
+	'farmer-confirmsetting-description' => 'Descripción',
 	'farmer-confirmsetting-reason' => 'Razón',
+	'farmer-description' => 'Descripción',
 	'farmer-button-confirm' => 'Confirmar',
 	'farmer-button-submit' => 'Ninviar',
+	'farmer-createwiki-form-help' => 'Aduya',
+	'farmer-createwiki-description' => 'Descripción',
 	'farmer-createwiki-reason' => 'Razón',
 	'farmer-delete-form-submit' => 'Borrar',
+	'farmer-basic-description' => 'Descripción',
 	'farmer-yes' => 'Sí',
 	'farmer-no' => 'No',
 	'farmer-extensions-register-name' => 'Nombre',
@@ -4022,7 +4027,7 @@ $messages['ml'] = array(
 	'farmercreatesitename' => 'സൈറ്റിന്റെ പേര്‌',
 	'farmercreatenextstep' => 'അടുത്ത ഘട്ടം',
 	'farmernewwikimainpage' => '== താങ്കളുടെ വിക്കിയിലേക്ക് സ്വാഗതം ==
-താങ്കൾക്ക് ഇതു വായിക്കുവാൻ സാധിക്കുന്നുണ്ടെങ്കിൽ താങ്കളുടെ പുതിയ വിക്കി വിജയകരമായി ഇൻസ്റ്റാൾ ചെയ്തിരിക്കുന്നു. താങ്കൾക്ക് താങ്കളുടെ വിക്കി [[Special:Farmer|ക്രമീകരിച്ചെടുക്കാവുന്നതാണ്]].',
+താങ്കൾക്ക് ഇതു വായിക്കുവാൻ സാധിക്കുന്നുണ്ടെങ്കിൽ താങ്കളുടെ പുതിയ വിക്കി വിജയകരമായി ഇൻസ്റ്റോൾ ചെയ്തിരിക്കുന്നു. താങ്കൾക്ക് താങ്കളുടെ വിക്കി [[Special:Farmer|ക്രമീകരിച്ചെടുക്കാവുന്നതാണ്]].',
 	'farmer-about' => 'വിവരണം',
 	'farmer-about-text' => 'മീഡിയാവിക്കി കാര്യസ്ഥൻ എന്ന പദവി മീഡിയാവിക്കി വിക്കികളുടെ പാടം പരിപാലിക്കുന്നതിനു താങ്കളെ സഹായിക്കും.',
 	'farmer-list-wiki' => 'വിക്കികളുടെ പട്ടിക',
@@ -4031,7 +4036,7 @@ $messages['ml'] = array(
 	'farmer-createwiki-text' => 'പുതിയൊരു വിക്കി [[$1|സൃഷ്ടിക്കുക]]!',
 	'farmer-administration' => 'പാടത്തിന്റെ കാര്യനിർ‌വഹണം',
 	'farmer-administration-extension' => 'എക്സ്റ്റെൻഷൻ പരിപാലിക്കുക',
-	'farmer-administration-extension-text' => 'ഇൻസ്റ്റാൾ ചെയ്ത എക്സ്റ്റൻഷനുകൾ  [[$1|പരിപാലിക്കുക]].',
+	'farmer-administration-extension-text' => 'ഇൻസ്റ്റോൾ ചെയ്ത എക്സ്റ്റൻഷനുകൾ  [[$1|പരിപാലിക്കുക]].',
 	'farmer-admimistration-listupdate' => 'വിക്കിപാടത്തിന്റെ പട്ടികയുടെ പുതുക്കൽ',
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}} സം‌രംഭത്തിൽ വിക്കികളുടെ [[$1|പട്ടിക]] പുതുക്കുക',
 	'farmer-administration-delete' => 'വിക്കി മായ്ക്കുക',
@@ -5748,6 +5753,8 @@ Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
 $messages['sl'] = array(
 	'farmer-confirmsetting-reason' => 'Razlog',
 	'farmer-createwiki-reason' => 'Razlog',
+	'farmer-yes' => 'Da',
+	'farmer-no' => 'Ne',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
