@@ -5759,6 +5759,7 @@ $messages['sl'] = array(
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Sasa Stefanovic
+ * @author Жељко Тодоровић
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -5842,7 +5843,7 @@ $messages['sr-ec'] = array(
 	'farmer-yes' => 'Да',
 	'farmer-no' => 'Не',
 	'farmer-basic-permission-user' => 'Права приступа за улоговане кориснике',
-	'farmer-basic-permission-user-text' => 'Следећа права приступа ће имати сваки улоговани корисник на овај Вики',
+	'farmer-basic-permission-user-text' => 'Следећа права приступа ће имати сваки пријављени корисник на овој вики',
 	'farmer-setpermission' => 'Подеси права приступа',
 	'farmer-defaultskin' => 'Подразумевана кожа',
 	'farmer-defaultskin-button' => 'Подеси подразумевану кожу',
