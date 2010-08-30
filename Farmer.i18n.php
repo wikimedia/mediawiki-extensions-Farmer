@@ -3872,6 +3872,7 @@ Dir musst dofir Member vum Grupp vun den Administrateure sinn.',
 	'farmer-log-name' => 'Logbuch vun dëser Lëscht vu Wikien',
 	'farmer-log-create' => 'huet d\'Wiki "$2" ugeluecht',
 	'farmer-log-delete' => 'huet d\'Wiki "$2" geläscht',
+	'right-farmeradmin' => 'Wiki-Farm geréieren',
 );
 
 /** Lithuanian (Lietuvių)
@@ -5854,7 +5855,7 @@ $messages['sr-ec'] = array(
 	'farmer-extensions-invalid' => 'Неисправна екстензија',
 	'farmer-extensions-invalid-text' => 'Нисмо могли да додамо екстензију зато што фајл означен за укључивање није пронађен',
 	'farmer-extensions-available' => 'Расположиве екстензије',
-	'farmer-extensions-noavailable' => 'Ни једна екстензија није регистрована',
+	'farmer-extensions-noavailable' => 'Ниједна екстензија није регистрована',
 	'farmer-extensions-register' => 'Региструј екстензију',
 	'farmer-extensions-register-text1' => 'Користите форму испод да бисте регистровали нову екстензију са фармом.
 Кад екстензију једанпут региструјете, сви Викији ће моћи да је користе.',
@@ -5869,6 +5870,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
+ * @author Жељко Тодоровић
  */
 $messages['sr-el'] = array(
 	'farmer' => 'Farmer',
@@ -5962,7 +5964,7 @@ Morate biti člank farmeradmin grupe.',
 	'farmer-extensions-invalid' => 'Neispravna ekstenzija',
 	'farmer-extensions-invalid-text' => 'Nismo mogli da dodamo ekstenziju zato što fajl označen za uključivanje nije pronađen',
 	'farmer-extensions-available' => 'Raspoložive ekstenzije',
-	'farmer-extensions-noavailable' => 'Ni jedna ekstenzija nije registrovana',
+	'farmer-extensions-noavailable' => 'Nijedna ekstenzija nije registrovana',
 	'farmer-extensions-register' => 'Registruj ekstenziju',
 	'farmer-extensions-register-text1' => 'Koristite formu ispod da biste registrovali novu ekstenziju sa farmom.
 Kad ekstenziju jedanput registrujete, svi Vikiji će moći da je koriste.',
