@@ -1131,7 +1131,23 @@ $messages['cs'] = array(
 	'farmer-createwiki' => 'Vytvořit wiki',
 	'farmer-createwiki-text' => '[[$1|Vytvořte]] novou wiki teď!',
 	'farmer-administration' => 'Správa farmy',
+	'farmer-confirmsetting-name' => 'Název',
+	'farmer-confirmsetting-title' => 'Název',
+	'farmer-confirmsetting-description' => 'Popis',
+	'farmer-confirmsetting-reason' => 'Důvod',
+	'farmer-description' => 'Popis',
+	'farmer-button-confirm' => 'Potvrdit',
+	'farmer-button-submit' => 'Odeslat',
+	'farmer-createwiki-form-help' => 'Nápověda',
 	'farmer-createwiki-user' => 'Uživatelské jméno',
+	'farmer-createwiki-description' => 'Popis',
+	'farmer-createwiki-reason' => 'Důvod',
+	'farmer-delete-form-submit' => 'Smazat',
+	'farmer-basic-title1' => 'Název',
+	'farmer-basic-description' => 'Popis',
+	'farmer-yes' => 'Ano',
+	'farmer-no' => 'Ne',
+	'farmer-extensions-register-name' => 'Název',
 );
 
 /** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
