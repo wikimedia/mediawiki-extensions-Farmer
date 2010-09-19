@@ -363,7 +363,7 @@ class MediaWikiFarmer {
 		try {
 			$db = wfGetDB( $type, array(), $this->_databaseName );
 		} catch ( DBConnectionError $e ) {
-			throw new MWException( __METHOD__ . ": impossible to connect to {$this->_databaseName} to get farm configuration." );
+			throw new MWException( __METHOD__ . ": impossible to connect to {$this->_databaseName} to get farm configuration: " . $e->getMessage() );
 		}
 		return $db;
 	}
