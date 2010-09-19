@@ -5303,6 +5303,7 @@ Uma vez registada, todas as wikis podem usar a extensão.',
 /** Brazilian Portuguese (Português do Brasil)
  * @author Crazymadlover
  * @author Eduardo.mps
+ * @author Giro720
  */
 $messages['pt-br'] = array(
 	'farmer' => 'Farmer',
@@ -5388,8 +5389,8 @@ Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-basic-permission-user' => 'Permissões para Utilizadores Autenticados',
 	'farmer-basic-permission-user-text' => 'As seguintes permissões serão aplicadas a todas as pessoas que se autentiquem neste wiki',
 	'farmer-setpermission' => 'Aplicar Permissões',
-	'farmer-defaultskin' => 'Aparência (skin) Padrão',
-	'farmer-defaultskin-button' => 'Escolher Aparência (skin) Padrão',
+	'farmer-defaultskin' => 'Tema padrão',
+	'farmer-defaultskin-button' => 'Configurar tema padrão',
 	'farmer-extensions' => 'Extensões Ativas',
 	'farmer-extensions-button' => 'Aplicar Extensões Ativas',
 	'farmer-extensions-extension-denied' => 'Você não tem permissão para usar esta funcionalidade.
