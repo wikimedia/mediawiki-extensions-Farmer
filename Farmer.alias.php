@@ -6,79 +6,104 @@
  * @ingroup Extensions
  */
 
-$aliases = array();
-
 /** English
  * @author IAlex
  */
-$aliases['en'] = array(
+$specialPageAliases['en'] = array(
 	'Farmer' => array( 'Farmer' ),
 );
 
-$aliases['af'] = array(
-	'Farmer'   => array( 'Boer' ),
+/** Afrikaans (Afrikaans) */
+$specialPageAliases['af'] = array(
+	'Farmer' => array( 'Boer' ),
 );
 
-$aliases['ar'] = array(
-	'Farmer'   => array( 'مزارع' ),
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'Farmer' => array( 'مزارع' ),
 );
 
-$aliases['arz'] = array(
-	'Farmer'   => array( 'فلاح' ),
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'Farmer' => array( 'فلاح' ),
 );
 
-$aliases['gu'] = array(
-	'Farmer'   => array( 'ખેડુત' ),
+/** Gujarati (ગુજરાતી) */
+$specialPageAliases['gu'] = array(
+	'Farmer' => array( 'ખેડુત' ),
 );
 
-$aliases['ia'] = array(
-	'Farmer'   => array( 'Fermero' ),
+/** Interlingua (Interlingua) */
+$specialPageAliases['ia'] = array(
+	'Farmer' => array( 'Fermero' ),
 );
 
-$aliases['id'] = array(
-	'Farmer'   => array( 'Petani' ),
+/** Indonesian (Bahasa Indonesia) */
+$specialPageAliases['id'] = array(
+	'Farmer' => array( 'Petani' ),
 );
 
-$aliases['ja'] = array(
-	'Farmer'   => array( 'ウィキファーム管理' ),
+/** Japanese (日本語) */
+$specialPageAliases['ja'] = array(
+	'Farmer' => array( 'ウィキファーム管理' ),
 );
 
-$aliases['ksh'] = array(
-	'Farmer'   => array( 'StallVollWikis', 'WikiStall' ),
+/** Colognian (Ripoarisch) */
+$specialPageAliases['ksh'] = array(
+	'Farmer' => array( 'StallVollWikis', 'WikiStall' ),
 );
 
-$aliases['lad'] = array(
-	'Farmer'   => array( 'Agricultor' ),
+/** Ladino (Ladino) */
+$specialPageAliases['lad'] = array(
+	'Farmer' => array( 'Agricultor' ),
 );
 
-$aliases['mk'] = array(
-	'Farmer'   => array( 'Фармер' ),
+/** Macedonian (Македонски) */
+$specialPageAliases['mk'] = array(
+	'Farmer' => array( 'Фармер' ),
 );
 
-$aliases['mr'] = array(
-	'Farmer'   => array( 'शेतकरी' ),
+/** Marathi (मराठी) */
+$specialPageAliases['mr'] = array(
+	'Farmer' => array( 'शेतकरी' ),
 );
 
-$aliases['nl'] = array(
-	'Farmer'   => array( 'Wikifarm' ),
+/** Erzya (Эрзянь) */
+$specialPageAliases['myv'] = array(
+	'Farmer' => array( 'Фермер' ),
 );
 
-$aliases['no'] = array(
-	'Farmer'   => array( 'Bonde' ),
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'Farmer' => array( 'Wikifarm' ),
 );
 
-$aliases['ro'] = array(
-	'Farmer'   => array( 'Fermier' ),
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+$specialPageAliases['no'] = array(
+	'Farmer' => array( 'Bonde' ),
 );
 
-$aliases['sk'] = array(
-	'Farmer'   => array( 'Farma' ),
+/** Romanian (Română) */
+$specialPageAliases['ro'] = array(
+	'Farmer' => array( 'Fermier' ),
 );
 
-$aliases['tl'] = array(
-	'Farmer'   => array( 'Magsasaka' ),
+/** Slovak (Slovenčina) */
+$specialPageAliases['sk'] = array(
+	'Farmer' => array( 'Farma' ),
 );
 
-$aliases['tr'] = array(
-	'Farmer'   => array( 'Çiftçi' ),
+/** Tagalog (Tagalog) */
+$specialPageAliases['tl'] = array(
+	'Farmer' => array( 'Magsasaka' ),
 );
+
+/** Turkish (Türkçe) */
+$specialPageAliases['tr'] = array(
+	'Farmer' => array( 'Çiftçi' ),
+);
+
+/**
+ * For backwards compatibility with MediaWiki 1.15 and earlier.
+ */
+$aliases =& $specialPageAliases;
