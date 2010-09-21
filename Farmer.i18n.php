@@ -5633,7 +5633,7 @@ $messages['ru'] = array(
 	'right-createwiki' => 'создание вики на вики-ферме',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
