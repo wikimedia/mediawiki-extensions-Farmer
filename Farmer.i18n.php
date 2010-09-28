@@ -3877,6 +3877,7 @@ Dësen Text gëtt an der wikilëscht gewisen.',
 	'farmer-basic-permission-user' => 'Rechter fir ageloggte Benotzer',
 	'farmer-basic-permission-user-text' => 'Dës Rechter kréien all déi Persounen déi op dëser Wiki ageloggt sinn',
 	'farmer-setpermission' => 'Rechter configuréieren',
+	'farmer-defaultskin' => 'Standard Ausgesinn (skin)',
 	'farmer-extensions' => 'Aktiv Erweiderungen',
 	'farmer-extensions-button' => 'Aktiv Erweiderungen astellen',
 	'farmer-extensions-extension-denied' => 'Dir kënnt dës Fonctionalitéit net benotzen.
