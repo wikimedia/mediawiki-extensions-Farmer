@@ -6150,10 +6150,23 @@ $messages['szl'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author TRYPPN
  * @author Trengarasu
  */
 $messages['ta'] = array(
+	'farmercreatesitename' => 'தளத்தின் பெயர்',
+	'farmercreatenextstep' => 'அடுத்த செயல்',
+	'farmer-about' => 'விவரம்',
+	'farmer-confirmsetting-name' => 'பெயர்',
+	'farmer-confirmsetting-title' => 'தலைப்பு',
+	'farmer-confirmsetting-description' => 'விளக்கம்',
+	'farmer-confirmsetting-reason' => 'காரணம்',
+	'farmer-description' => 'விளக்கம்',
+	'farmer-createwiki-form-help' => 'உதவி',
 	'farmer-createwiki-user' => 'பயனர் பெயர்',
+	'farmer-createwiki-description' => 'விளக்கம்',
+	'farmer-createwiki-reason' => 'காரணம்',
+	'farmer-extensions-register-name' => 'பெயர்',
 );
 
 /** Telugu (తెలుగు)
