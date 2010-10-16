@@ -4146,8 +4146,11 @@ $messages['ml'] = array(
  * @author Chinneeb
  */
 $messages['mn'] = array(
+	'farmer-confirmsetting-reason' => 'Шалтгаан',
+	'farmer-createwiki-reason' => 'Шалтгаан',
 	'farmer-mainpage' => 'Нүүр хуудас',
 	'farmer-yes' => 'Тийм',
+	'farmer-no' => 'Үгүй',
 );
 
 /** Marathi (मराठी)
