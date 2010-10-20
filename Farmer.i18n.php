@@ -6702,14 +6702,36 @@ $messages['ug-latn'] = array(
  * @author Тест
  */
 $messages['uk'] = array(
+	'farmercreatesitename' => 'Назва сайту',
+	'farmer-list-wiki' => 'Список вікі',
+	'farmer-createwiki' => 'Створити вікі',
+	'farmer-notavailable' => 'Не доступно',
+	'farmer-wikicreated' => 'Вікі створена',
+	'farmer-wikiexists' => 'Вікі існує',
+	'farmer-confirmsetting-name' => 'Назва',
+	'farmer-confirmsetting-title' => 'Заголовок',
 	'farmer-confirmsetting-description' => 'Опис',
 	'farmer-confirmsetting-reason' => 'Причина',
 	'farmer-description' => 'Опис',
+	'farmer-button-confirm' => 'Підтвердити',
+	'farmer-button-submit' => 'Надіслати',
+	'farmer-createwiki-form-title' => 'Створити вікі',
+	'farmer-createwiki-form-help' => 'Довідка',
 	'farmer-createwiki-user' => "Ім'я користувача",
+	'farmer-createwiki-name' => 'Назва вікі',
+	'farmer-createwiki-title' => 'Заголовок вікі',
 	'farmer-createwiki-description' => 'Опис',
 	'farmer-createwiki-reason' => 'Причина',
+	'farmer-updatedlist' => 'Оновлений список',
+	'farmer-delete-form' => 'Виберіть вікі',
+	'farmer-listofwikis' => 'Список вікі',
+	'farmer-mainpage' => 'Головна сторінка',
+	'farmer-basic-title' => 'Основні параметри',
 	'farmer-basic-title1' => 'Заголовок',
 	'farmer-basic-description' => 'Опис',
+	'farmer-yes' => 'Так',
+	'farmer-no' => 'Ні',
+	'farmer-extensions-register-name' => 'Назва',
 );
 
 /** Urdu (اردو) */
