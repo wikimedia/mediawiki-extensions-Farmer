@@ -642,6 +642,16 @@ $messages['arz'] = array(
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
 );
 
+/** Belarusian (Беларуская)
+ * @author Тест
+ */
+$messages['be'] = array(
+	'farmer-confirmsetting-reason' => 'Прычына',
+	'farmer-button-confirm' => 'Пацвердзіць',
+	'farmer-createwiki-form-help' => 'Даведка',
+	'farmer-createwiki-reason' => 'Прычына',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
@@ -6703,11 +6713,15 @@ $messages['ug-latn'] = array(
  */
 $messages['uk'] = array(
 	'farmercreatesitename' => 'Назва сайту',
+	'farmercreatenextstep' => 'Наступний крок',
 	'farmer-list-wiki' => 'Список вікі',
+	'farmer-list-wiki-text' => '[[$1|Список]] усіх вікі на сайті {{SITENAME}}',
 	'farmer-createwiki' => 'Створити вікі',
 	'farmer-notavailable' => 'Не доступно',
+	'farmer-notavailable-text' => 'Ця функція доступна тільки на головній вікі',
 	'farmer-wikicreated' => 'Вікі створена',
 	'farmer-wikiexists' => 'Вікі існує',
+	'farmer-confirmsetting' => 'Підтвердьте налаштування вікі',
 	'farmer-confirmsetting-name' => 'Назва',
 	'farmer-confirmsetting-title' => 'Заголовок',
 	'farmer-confirmsetting-description' => 'Опис',
@@ -6723,14 +6737,24 @@ $messages['uk'] = array(
 	'farmer-createwiki-description' => 'Опис',
 	'farmer-createwiki-reason' => 'Причина',
 	'farmer-updatedlist' => 'Оновлений список',
+	'farmer-notaccessible' => 'Не доступна',
+	'farmer-permissiondenied' => 'Доступ заборонено',
+	'farmer-permissiondenied-text1' => 'Ви не маєте дозволу на доступ до цієї сторінки',
+	'farmer-delete-reason' => 'Причина вилучення:',
 	'farmer-delete-form' => 'Виберіть вікі',
+	'farmer-delete-form-submit' => 'Вилучити',
 	'farmer-listofwikis' => 'Список вікі',
 	'farmer-mainpage' => 'Головна сторінка',
 	'farmer-basic-title' => 'Основні параметри',
 	'farmer-basic-title1' => 'Заголовок',
 	'farmer-basic-description' => 'Опис',
+	'farmer-basic-permission' => 'Права',
 	'farmer-yes' => 'Так',
 	'farmer-no' => 'Ні',
+	'farmer-defaultskin' => 'Оформлення за умовчанням',
+	'farmer-defaultskin-button' => 'Встановити стандартне оформлення',
+	'farmer-extensions' => 'Активні розширення',
+	'farmer-extensions-available' => 'Доступні розширення',
 	'farmer-extensions-register-name' => 'Назва',
 );
 
