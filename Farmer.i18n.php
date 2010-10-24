@@ -1156,18 +1156,38 @@ $messages['ckb'] = array(
 );
 
 /** Czech (Česky)
+ * @author Jkjk
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
+	'farmer' => 'Farmář',
 	'farmer-desc' => 'Správa farmy MediaWiki',
+	'farmercantcreatewikis' => 'Nemůžete vytvářet wiki, protože nemáte oprávnění createwikis',
 	'farmercreatesitename' => 'Název lokality',
 	'farmercreatenextstep' => 'Další krok',
 	'farmer-about' => 'O stránce',
+	'farmer-about-text' => 'MediaWiki Farmář vám umožní spravovat farmu MediaWiki wiki.',
 	'farmer-list-wiki' => 'Seznam wiki',
 	'farmer-list-wiki-text' => '[[$1|Seznam]] všech wiki na {{GRAMMAR:local|{{SITENAME}}}}',
 	'farmer-createwiki' => 'Vytvořit wiki',
 	'farmer-createwiki-text' => '[[$1|Vytvořte]] novou wiki teď!',
 	'farmer-administration' => 'Správa farmy',
+	'farmer-administration-extension' => 'Spravovat rozšíření',
+	'farmer-admimistration-listupdate' => 'Aktualizace seznamu farem',
+	'farmer-admimistration-listupdate-text' => '[[$1|Aktualizovat]] seznam wiki na {{SITENAME}}',
+	'farmer-administration-delete' => 'Smazat wiki',
+	'farmer-administration-delete-text' => '[[$1|Smazat]] wiki z farmy',
+	'farmer-administer-thiswiki' => 'Spravovat tuto wiki',
+	'farmer-administer-thiswiki-text' => '[[$1|Spravovat]] změny v této wiki',
+	'farmer-notavailable' => 'Nedostupné',
+	'farmer-notavailable-text' => 'Tato fuknce je dostupná jen na hlavní wiki',
+	'farmer-wikicreated' => 'Wiki vytvořena',
+	'farmer-wikicreated-text' => 'Vaše wiki byla vytvořena.
+Je dostupná na $1',
+	'farmer-default' => 'Ve výchozím nastavení, nikdo kromě vás nemá privilegia na wiki.
+Můžete změnit privilegia uživatelů na $1',
+	'farmer-wikiexists' => 'Wiki existuje',
+	'farmer-confirmsetting' => 'Potvrdit nastavení wiki',
 	'farmer-confirmsetting-name' => 'Název',
 	'farmer-confirmsetting-title' => 'Název',
 	'farmer-confirmsetting-description' => 'Popis',
@@ -1175,10 +1195,23 @@ $messages['cs'] = array(
 	'farmer-description' => 'Popis',
 	'farmer-button-confirm' => 'Potvrdit',
 	'farmer-button-submit' => 'Odeslat',
+	'farmer-createwiki-form-title' => 'Vytvořit wiki',
+	'farmer-createwiki-form-text1' => 'Na vytvoření nové wiki použijte následující formulář.',
 	'farmer-createwiki-form-help' => 'Nápověda',
+	'farmer-createwiki-form-text4' => '; Popis: Popis wiki
+Toto je textový popis wiki.
+Tento text bude zobrazen v seznamu wiki.',
 	'farmer-createwiki-user' => 'Uživatelské jméno',
+	'farmer-createwiki-name' => 'Název wiki',
+	'farmer-createwiki-title' => 'Titulek wiki',
 	'farmer-createwiki-description' => 'Popis',
 	'farmer-createwiki-reason' => 'Důvod',
+	'farmer-updatedlist' => 'Aktualizovaný seznam',
+	'farmer-notaccessible' => 'Nepřístupná',
+	'farmer-notaccessible-test' => 'Tato funkce je dostupná jen na rodičovské wiki na farmě',
+	'farmer-permissiondenied' => 'Nedostatečné oprávnění',
+	'farmer-permissiondenied-text' => 'Nemáte oprávnění smazat wiki z farmy',
+	'farmer-permissiondenied-text1' => 'Nemáte oprávnění k přístupu na tuto stránku',
 	'farmer-delete-form-submit' => 'Smazat',
 	'farmer-basic-title1' => 'Název',
 	'farmer-basic-description' => 'Popis',
@@ -1678,6 +1711,8 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 	'farmer-extensions-register-includefile' => 'Inkluzivi dosieron',
 	'farmer-error-exists' => 'Ne povas krei vikion. Ĝi jam ekzistas: $1',
 	'farmer-log-name' => 'Protokolo pri vikia farmo',
+	'farmer-log-create' => 'kreis la vikion "$2"',
+	'farmer-log-delete' => 'forigis la vikion "$2"',
 );
 
 /** Spanish (Español)
@@ -2104,7 +2139,7 @@ Si c’est bien ce que vous voulez, cliquez sur le bouton '''Confirmer''' ci-des
 	'farmer-basic-title1-text' => "Votre wiki ne dispose pas de titre. Indiquez en un '''maintenant'''",
 	'farmer-basic-description' => 'Description',
 	'farmer-basic-description-text' => 'Indiquez dans le cadre ci-dessous la description de votre wiki.',
-	'farmer-basic-permission' => 'Habilitations',
+	'farmer-basic-permission' => 'Autorisations',
 	'farmer-basic-permission-text' => 'En utilisant le formulaire ci-dessous, il est possible de changer les habilitations des utilisateurs de ce wiki.',
 	'farmer-basic-permission-visitor' => 'Habilitations pour chaque visiteur',
 	'farmer-basic-permission-visitor-text' => 'Les habilitations suivantes seront applicables pour toutes les personnes qui visiteront ce wiki.',
@@ -4143,7 +4178,7 @@ $messages['ml'] = array(
 	'farmer-permissiondenied' => 'പ്രവേശനം നിഷേധിച്ചിരിക്കുന്നു',
 	'farmer-permissiondenied-text' => 'പാടത്തു നിന്നു ഒരു വിക്കി ഒഴിവാക്കാനുള്ള അനുവാദം താങ്കൾക്കില്ല',
 	'farmer-permissiondenied-text1' => 'ഈ താളിൽ പ്രവേശിക്കുവാൻ താങ്കൾക്ക് അനുമതിയില്ല',
-	'farmer-deleting' => '"$1" മായ്ച്ചുകൊണ്ടിരിക്കുന്നു',
+	'farmer-deleting' => '"$1" എന്ന വിക്കി മായ്ച്ചിരിക്കുന്നു',
 	'farmer-delete-title' => 'വിക്കി മായ്ക്കുക',
 	'farmer-delete-text' => 'താങ്കൾ ഒഴിവാക്കാൻ ഉദ്ദേശിക്കുന്ന വിക്കി താഴെയുള്ള പട്ടികയിൽ നിന്നു തിരഞ്ഞെടുക്കുക',
 	'farmer-delete-form' => 'ഒരു വിക്കി തിരഞ്ഞെടുക്കുക',
@@ -4184,6 +4219,8 @@ $messages['ml'] = array(
  */
 $messages['mn'] = array(
 	'farmer-confirmsetting-reason' => 'Шалтгаан',
+	'farmer-button-submit' => 'Явуулах',
+	'farmer-createwiki-user' => 'Хэрэглэгчийн нэр',
 	'farmer-createwiki-reason' => 'Шалтгаан',
 	'farmer-mainpage' => 'Нүүр хуудас',
 	'farmer-yes' => 'Тийм',
