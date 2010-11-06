@@ -209,7 +209,7 @@ class SpecialFarmer extends SpecialPage {
 					'farmer-createwiki-reason' => Xml::input( 'wpReason', 20, $reason ),
 				), 'farmer-button-submit'
 			) . "\n" .
-			Xml::hidden( 'token', $token ) . "\n" .
+			Html::hidden( 'token', $token ) . "\n" .
 			Xml::closeElement( 'form' )
 		);
 	}
@@ -258,7 +258,7 @@ class SpecialFarmer extends SpecialPage {
 							'farmer-delete-reason' => Xml::input( 'wpReason', false, $wgRequest->getVal( 'wpReason' ) ),
 							'farmer-delete-confirm' => Xml::check( 'wpConfirm' )
 						), 'farmer-delete-form-submit' ) . "\n" .
-					Xml::hidden( 'wpWiki', $wiki ) . "\n" .
+					Html::hidden( 'wpWiki', $wiki ) . "\n" .
 					Xml::closeElement( 'form' )
 				);
 			}
