@@ -4960,6 +4960,13 @@ $messages['pdt'] = array(
 	'farmer-createwiki-user' => 'Bruckernome',
 );
 
+/** Pfälzisch (Pfälzisch)
+ * @author Xqt
+ */
+$messages['pfl'] = array(
+	'farmer-delete-form-submit' => 'Lesche',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Equadus
