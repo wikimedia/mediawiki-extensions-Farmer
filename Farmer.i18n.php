@@ -2068,6 +2068,7 @@ Kun laajennus on rekisteröity, kaikki wikit voivat käyttää sitä.',
  * @author Dereckson
  * @author Grondin
  * @author IAlex
+ * @author Peter17
  * @author PieRRoMaN
  * @author Urhixidur
  * @author Verdy p
@@ -2122,7 +2123,7 @@ Si c’est bien ce que vous voulez, cliquez sur le bouton '''Confirmer''' ci-des
 	'farmer-createwiki-form-text2' => "; Nom du Wiki : Le nom du Wiki.  Il ne contient que des lettres et des chiffres. Le nom du wiki sera utilisé comme une partie de l'adresse afin de l'identifier. À titre d'exemple, si vous entrez '''titre''', votre wiki sera accessible sur <nowiki>http://</nowiki>'''titre'''.mondomaine.",
 	'farmer-createwiki-form-text3' => '; Titre du Wiki : Le titre du wiki.  Il sera utilisé dans le titre de chaque page de votre wiki. Il prendra le nom de l’espace « Project » ainsi que le préfixe interwiki.',
 	'farmer-createwiki-form-text4' => '; Description : Description du wiki. Ceci consiste en un texte décrivant le wiki. Il sera affiché dans la liste des wikis.',
-	'farmer-createwiki-user' => 'Nom de l’utilisateur',
+	'farmer-createwiki-user' => 'Nom d’utilisateur',
 	'farmer-createwiki-name' => 'Nom du Wiki',
 	'farmer-createwiki-title' => 'Titre du Wiki',
 	'farmer-createwiki-description' => 'Description',
@@ -3469,6 +3470,7 @@ Una volta che l'estensione sarà stata registrata, tutte le wiki potranno usarla
  * @author Fryed-peach
  * @author Hosiryuhosi
  * @author JtFuruhata
+ * @author 青子守歌
  */
 $messages['ja'] = array(
 	'farmer' => 'ウィキファーム管理',
@@ -3528,7 +3530,7 @@ $messages['ja'] = array(
 	'farmer-updatedlist' => '更新済みの一覧',
 	'farmer-notaccessible' => 'アクセス不可',
 	'farmer-notaccessible-test' => 'この機能はファームの親ウィキでのみ利用可能です',
-	'farmer-permissiondenied' => '不許可',
+	'farmer-permissiondenied' => '許可されていません',
 	'farmer-permissiondenied-text' => 'あなたはファームからウィキを削除する許可がありません。',
 	'farmer-permissiondenied-text1' => 'あなたはこのページにアクセスする許可がありません',
 	'farmer-deleting' => 'ウィキ「$1」は削除されました',
