@@ -1934,6 +1934,35 @@ Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
 	'farmer-extensions-register-name' => 'Izena',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'farmer-about' => 'درباره',
+	'farmer-list-wiki' => 'فهرست ویکی‌های',
+	'farmer-notavailable' => 'در دسترس نیست',
+	'farmer-wikicreated' => 'ویکی ایجاد شد',
+	'farmer-confirmsetting-name' => 'نام',
+	'farmer-confirmsetting-title' => 'عنوان',
+	'farmer-confirmsetting-description' => 'توضیحات',
+	'farmer-confirmsetting-reason' => 'دلیل:',
+	'farmer-description' => 'توضیحات',
+	'farmer-createwiki-form-title' => 'ایجاد یک ویکی',
+	'farmer-createwiki-form-help' => 'راهنما',
+	'farmer-createwiki-user' => 'نام کاربری',
+	'farmer-createwiki-name' => 'نام ویکی',
+	'farmer-createwiki-title' => 'عنوان ویکی',
+	'farmer-createwiki-description' => 'توضیحات',
+	'farmer-delete-title' => 'حذف ویکی',
+	'farmer-delete-form-submit' => 'حذف',
+	'farmer-listofwikis' => 'فهرست ویکی‌های',
+	'farmer-mainpage' => 'صفحهٔ اصلی',
+	'farmer-basic-title1' => 'عنوان',
+	'farmer-yes' => 'بله',
+	'farmer-no' => 'خیر',
+	'farmer-extensions-register-name' => 'نام',
+);
+
 /** Finnish (Suomi)
  * @author Cimon Avaro
  * @author Crt
