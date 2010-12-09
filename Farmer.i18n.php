@@ -1261,6 +1261,7 @@ $messages['da'] = array(
  * @author ChrisiPK
  * @author Imre
  * @author Jan Luca
+ * @author Kghbln
  * @author Leithian
  * @author Melancholie
  * @author MichaelFrey
@@ -1315,7 +1316,7 @@ Der Projektnamensraum wird '''$2''' heißen.
 Links zu diesem Namensraum werden die Form '''<nowiki>[[$2:Seitenname]]</nowiki>''' haben.
 Wenn alles korrekt ist, so bestätige dies mit einem Klick auf '''Bestätigen'''.",
 	'farmer-button-confirm' => 'Bestätigen',
-	'farmer-button-submit' => 'Absenden',
+	'farmer-button-submit' => 'Speichern',
 	'farmer-createwiki-form-title' => 'Ein Wiki erstellen',
 	'farmer-createwiki-form-text1' => 'Benutze das folgende Formular, um ein neues Wiki anzulegen.',
 	'farmer-createwiki-form-help' => 'Hilfe',
