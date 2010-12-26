@@ -5660,6 +5660,7 @@ $messages['roa-tara'] = array(
  * @author Ferrer
  * @author Innv
  * @author Kaganer
+ * @author Putnik
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -5690,7 +5691,8 @@ $messages['ru'] = array(
 	'farmer-notavailable-text' => 'Эта возможность доступна только на главной вики',
 	'farmer-wikicreated' => 'Вики создана',
 	'farmer-wikicreated-text' => 'Ваша вики была создана. Она доступна по $1',
-	'farmer-default' => 'По умолчанию, никто кроме вас на этой вики не имеет прав. Вы можете поменять права участников с помощью $1',
+	'farmer-default' => 'По умолчанию, никто, кроме вас, в этой вики не имеет прав.
+Вы можете поменять права участников с помощью $1',
 	'farmer-wikiexists' => 'Вики существует',
 	'farmer-wikiexists-text' => "Вики '''$1''', которую вы попытались создать, уже существует. Пожалуйста, вернитесь и попробуйте другое имя.",
 	'farmer-confirmsetting' => 'Подтвердить настройки вики',
