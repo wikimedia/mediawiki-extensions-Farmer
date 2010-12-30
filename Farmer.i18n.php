@@ -4129,7 +4129,7 @@ $messages['mk'] = array(
 	'farmer-extensions-extension-denied' => 'Немате дозвола да ја користите оваа можност.
 Мора да бидете член во групата farmeradmin (администратори на фармата)',
 	'farmer-extensions-invalid' => 'Неважечки додаток',
-	'farmer-extensions-invalid-text' => 'Не можевме да го додадеме проширувањето бидејќи одбраната податотека за вклучување не е најдена',
+	'farmer-extensions-invalid-text' => 'Не можевме да го додадеме додатокот бидејќи одбраната податотека за вклучување не е најдена',
 	'farmer-extensions-available' => 'Достапни додатоци',
 	'farmer-extensions-noavailable' => 'Нема регистрирани додатоци',
 	'farmer-extensions-register' => 'Регистрирај додаток',
@@ -4141,7 +4141,7 @@ $messages['mk'] = array(
 	'farmer-extensions-register-name' => 'Име',
 	'farmer-extensions-register-includefile' => 'Вклучи ја податотеката',
 	'farmer-error-exists' => 'Не може да се создаде викито. Тоа веќе постои: $1',
-	'farmer-error-noextwrite' => 'Не можам да ја испишам податотеката на проширувањето:',
+	'farmer-error-noextwrite' => 'Не можам да ја испишам податотеката на додатокот:',
 	'farmer-log-name' => 'Дневник на вики-фармата',
 	'farmer-log-header' => 'Ова е дневник на промените направени во вики-фармата.',
 	'farmer-log-create' => 'создадено викито „$2“',
