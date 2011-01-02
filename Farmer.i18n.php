@@ -5935,6 +5935,7 @@ $messages['sl'] = array(
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -5948,7 +5949,7 @@ $messages['sr-ec'] = array(
 	'farmernewwikimainpage' => '== Добро дошли на Ваш Вики ==
 Ако ово читате, Ваш Вики је исправно инсталиран.
 Можете да [[Special:Farmer|подесите Ваш вики]].',
-	'farmer-about' => 'О...',
+	'farmer-about' => 'О додатку',
 	'farmer-about-text' => 'МедијаВики Фармер Вам омогућава да управљате фармом МедијаВики Викија.',
 	'farmer-list-wiki' => 'Списак Викија',
 	'farmer-list-wiki-text' => '[[$1|Списак]] свих Викија на {{SITENAME}}',
