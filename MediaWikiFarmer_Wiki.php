@@ -412,7 +412,7 @@ class MediaWikiFarmer_Wiki {
 		$user = $farmer->dbAdminUser;
 		$password = $farmer->dbAdminPassword;
 		$class = 'Database' . ucfirst( $wgDBtype );
-		$object = new $class( $wgDBserver, $user, $password, $db, false, 0, $prefix );
+		$object = new $class( $wgDBserver, $user, $password, $db, 0, $prefix );
 		if ( $selectDB )
 			$this->_db = $object;
 		return $object;
