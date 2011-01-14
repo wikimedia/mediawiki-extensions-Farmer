@@ -5934,7 +5934,7 @@ $messages['sl'] = array(
 	'farmer-no' => 'Ne',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -6008,7 +6008,7 @@ $messages['sr-ec'] = array(
 	'farmer-delete-form' => 'Изабери Вики',
 	'farmer-delete-form-submit' => 'Обриши',
 	'farmer-listofwikis' => 'Списак Викија',
-	'farmer-mainpage' => 'Насловна страна',
+	'farmer-mainpage' => 'Главна страна',
 	'farmer-basic-title' => 'Основни параметри',
 	'farmer-basic-title1' => 'Наслов',
 	'farmer-basic-title1-text' => 'Ваш Вики нема наслов. Поставите један <b>сада</b>',
