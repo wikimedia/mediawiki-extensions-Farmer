@@ -679,7 +679,7 @@ $messages['be'] = array(
 	'farmer-createwiki-reason' => 'Прычына',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -1391,7 +1391,7 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 	'right-createwiki' => 'Wikis in der Wiki-Farm erstellen',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author ChrisiPK
  * @author Imre
  * @author MichaelFrey
@@ -5001,7 +5001,7 @@ $messages['pdt'] = array(
 	'farmer-createwiki-user' => 'Bruckernome',
 );
 
-/** Pfälzisch (Pfälzisch)
+/** Pälzisch (Pälzisch)
  * @author Xqt
  */
 $messages['pfl'] = array(
@@ -6045,7 +6045,7 @@ $messages['sr-ec'] = array(
 	'farmer-log-delete' => 'обрисан вики "$2"',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  * @author Жељко Тодоровић
  */
