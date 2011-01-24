@@ -682,6 +682,7 @@ $messages['be'] = array(
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Zedlik
  */
 $messages['be-tarask'] = array(
 	'farmer' => 'Фэрмэр',
@@ -717,7 +718,7 @@ $messages['be-tarask'] = array(
 	'farmer-wikiexists' => 'Вікі існуе',
 	'farmer-wikiexists-text' => "Вікі '''$1''', якую Вы спрабуеце стварыць, ужо існуе.
 Калі ласка, вярніцеся і паспрабуйце іншую назву.",
-	'farmer-confirmsetting' => 'Пацьвердзіць устаноўкі вікі',
+	'farmer-confirmsetting' => 'Пацьвердзіць налады вікі',
 	'farmer-confirmsetting-name' => 'Назва',
 	'farmer-confirmsetting-title' => 'Назва',
 	'farmer-confirmsetting-description' => 'Апісаньне',
