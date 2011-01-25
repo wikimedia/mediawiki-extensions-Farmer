@@ -1143,9 +1143,12 @@ $messages['ca'] = array(
 	'farmer-extensions-register-name' => 'Nom',
 );
 
-/** Chechen (Нохчийн) */
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
 $messages['ce'] = array(
 	'farmer-confirmsetting-reason' => 'Бахьан',
+	'farmer-createwiki-form-help' => 'Нисвохаам',
 	'farmer-createwiki-reason' => 'Бахьан',
 );
 
