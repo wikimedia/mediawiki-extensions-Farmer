@@ -6041,8 +6041,8 @@ $messages['sr-ec'] = array(
 	'farmer-defaultskin-button' => 'Подеси подразумевану кожу',
 	'farmer-extensions' => 'Активне екстензије',
 	'farmer-extensions-button' => 'Подеси активне екстензије',
-	'farmer-extensions-extension-denied' => 'Немате дозволу потребну да бисте користили ову погодност.
-Морате бити чланк farmeradmin групе.',
+	'farmer-extensions-extension-denied' => 'Немате дозволу да користите ову могућност.
+Морате бити члан farmeradmin групе.',
 	'farmer-extensions-invalid' => 'Неисправна екстензија',
 	'farmer-extensions-invalid-text' => 'Нисмо могли да додамо екстензију зато што фајл означен за укључивање није пронађен',
 	'farmer-extensions-available' => 'Расположиве екстензије',
