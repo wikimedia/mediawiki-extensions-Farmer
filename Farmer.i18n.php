@@ -1150,6 +1150,7 @@ $messages['ce'] = array(
 	'farmer-confirmsetting-reason' => 'Бахьан',
 	'farmer-createwiki-form-help' => 'Нисвохаам',
 	'farmer-createwiki-reason' => 'Бахьан',
+	'farmer-yes' => 'Хlаъ',
 );
 
 /** Chamorro (Chamoru)
