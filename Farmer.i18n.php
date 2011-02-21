@@ -901,9 +901,11 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Ehsanulhb
  * @author Zaheen
  */
 $messages['bn'] = array(
+	'farmer-button-confirm' => 'নিশ্চিত করুন',
 	'farmer-delete-form-submit' => 'মুছে ফেলা হোক',
 );
 
