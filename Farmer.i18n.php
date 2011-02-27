@@ -1923,7 +1923,7 @@ Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
 	'farmer-button-submit' => 'Bidali',
 	'farmer-createwiki-form-title' => 'Wiki bat sortu',
 	'farmer-createwiki-form-help' => 'Laguntza',
-	'farmer-createwiki-user' => 'Lankide izena',
+	'farmer-createwiki-user' => 'Erabiltzaile izena',
 	'farmer-createwiki-name' => 'Wikiaren izena',
 	'farmer-createwiki-title' => 'Wikiaren izenburua',
 	'farmer-createwiki-description' => 'Deskribapena',
