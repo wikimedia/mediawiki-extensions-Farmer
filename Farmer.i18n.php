@@ -905,8 +905,12 @@ $messages['bg'] = array(
  * @author Zaheen
  */
 $messages['bn'] = array(
+	'farmer-confirmsetting-description' => 'বিবরণ',
+	'farmer-description' => 'বিবরণ',
 	'farmer-button-confirm' => 'নিশ্চিত করুন',
+	'farmer-createwiki-description' => 'বিবরণ',
 	'farmer-delete-form-submit' => 'মুছে ফেলা হোক',
+	'farmer-basic-description' => 'বিবরণ',
 );
 
 /** Breton (Brezhoneg)
