@@ -4970,10 +4970,11 @@ S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Jose77
+ * @author Psubhashish
  */
 $messages['or'] = array(
-	'farmer-createwiki-form-help' => 'ସାହାଜ୍ଯ',
-	'farmer-mainpage' => 'ପ୍ରଧାନ ପ୍ରୁଷ୍ଟ୍ଆ',
+	'farmer-createwiki-form-help' => 'ସାହାଜ୍ୟ',
+	'farmer-mainpage' => 'ମୂଳ ଫରଦ',
 );
 
 /** Ossetic (Иронау)
