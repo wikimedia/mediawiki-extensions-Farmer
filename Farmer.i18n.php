@@ -4158,7 +4158,7 @@ $messages['mk'] = array(
 Откако ќе го регистрирате додатокот, сите викија ќе можат да го користат.',
 	'farmer-extensions-register-text2' => "За параметарот ''Вклучи податотека'', внесете го името на PHP-податотеката како што се прави во LocalSettings.php.",
 	'farmer-extensions-register-text3' => "Ако името на податотеката содржи '''\$root''', тогаш таа променлица ќе биде заменета со основниот директориум на МедијаВики.",
-	'farmer-extensions-register-text4' => 'Следните патишта за вклучување се:',
+	'farmer-extensions-register-text4' => 'Постојните патеки за вклучување се:',
 	'farmer-extensions-register-name' => 'Име',
 	'farmer-extensions-register-includefile' => 'Вклучи ја податотеката',
 	'farmer-error-exists' => 'Не може да се создаде викито. Тоа веќе постои: $1',
