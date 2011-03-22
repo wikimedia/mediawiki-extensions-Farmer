@@ -4036,6 +4036,13 @@ $messages['lt'] = array(
 	'farmer-delete-form-submit' => 'Ištrinti',
 );
 
+/** Latgalian (Latgaļu)
+ * @author Dark Eagle
+ */
+$messages['ltg'] = array(
+	'farmer-about' => 'Ap',
+);
+
 /** Eastern Mari (Олык Марий)
  * @author Сай
  */
