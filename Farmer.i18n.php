@@ -3973,6 +3973,8 @@ Dir kënnt [[Special:Farmer|är Wiki elo astellen]].',
 	'farmer-notavailable' => 'Net disponibel',
 	'farmer-notavailable-text' => 'Dëse Programm ass nëmmen op der Haapt-Wiki disponibel',
 	'farmer-wikicreated' => 'Wiki gemaach',
+	'farmer-wikicreated-text' => 'Är Wiki gouf elo ugeluecht.
+Se ass op $1 disponibel.',
 	'farmer-wikiexists' => "D'Wiki gëtt et",
 	'farmer-confirmsetting' => "Confirméiert d'Astellunge vun der Wiki",
 	'farmer-confirmsetting-name' => 'Numm',
@@ -4409,12 +4411,13 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aurora
  */
 $messages['ms'] = array(
 	'farmer-confirmsetting-reason' => 'Sebab',
 	'farmer-createwiki-reason' => 'Sebab',
-	'farmer-yes' => 'Yes',
+	'farmer-yes' => 'Ya',
 );
 
 /** Maltese (Malti)
