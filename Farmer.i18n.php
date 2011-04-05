@@ -2572,6 +2572,7 @@ $messages['gu'] = array(
 
 /** Manx (Gaelg)
  * @author MacTire02
+ * @author Shimmin Beg
  */
 $messages['gv'] = array(
 	'farmer' => 'Eirinagh',
@@ -2591,6 +2592,7 @@ $messages['gv'] = array(
 	'farmer-confirmsetting-name' => 'Ennym',
 	'farmer-confirmsetting-title' => 'Ard-ennym',
 	'farmer-confirmsetting-description' => 'Tuarastyl',
+	'farmer-confirmsetting-reason' => 'Fa:',
 	'farmer-description' => 'Tuarastyl',
 	'farmer-button-submit' => 'Cur roish',
 	'farmer-createwiki-form-title' => 'Croo Wiki',
@@ -2599,6 +2601,7 @@ $messages['gv'] = array(
 	'farmer-createwiki-name' => 'Ennym y Wiki',
 	'farmer-createwiki-title' => 'Ard-ennym y Wiki',
 	'farmer-createwiki-description' => 'Tuarastyl',
+	'farmer-createwiki-reason' => 'Fa:',
 	'farmer-deleting' => 'Va\'n wiki "$1" scrysst magh',
 	'farmer-delete-title' => 'Scryss Wiki',
 	'farmer-delete-form' => 'Gow wiki myr reih',
