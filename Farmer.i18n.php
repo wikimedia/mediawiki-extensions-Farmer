@@ -5400,7 +5400,7 @@ O espaço nominal do projecto será '''$2'''.
 Links para este espaço nominal terão o formato '''<nowiki>[[$2:Nome da página]]</nowiki>'''.
 Se é isto que pretende, clique o botão '''confirmar''' abaixo.",
 	'farmer-button-confirm' => 'Confirmar',
-	'farmer-button-submit' => 'Submeter',
+	'farmer-button-submit' => 'Enviar',
 	'farmer-createwiki-form-title' => 'Criar uma wiki',
 	'farmer-createwiki-form-text1' => 'Utilize o formulário abaixo para criar uma nova wiki.',
 	'farmer-createwiki-form-help' => 'Ajuda',
