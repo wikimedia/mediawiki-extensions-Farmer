@@ -464,7 +464,7 @@ class MediaWikiFarmer_Wiki {
 	protected function _createMainPageForWiki() {
 		$db = $this->getDatabase();
 
-		$titleobj = Title::newFromText( wfMsgNoDB( 'mainpage' ) );
+		$titleobj = Title::newFromText( wfMessage( 'mainpage' )->inContentLanguage()->useDatabase( false )->plain() );
 		$article = new Article( $titleobj );
 		$newid = $article->insertOn( $db );
 		$revision = new Revision( array(

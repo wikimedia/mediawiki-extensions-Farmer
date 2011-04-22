@@ -130,7 +130,7 @@ class SpecialFarmer extends SpecialPage {
 				$log->addEntry( 'create', $this->getTitle(), $reason, array( $name ) );
 
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-wikicreated' );
-				$wgOut->addWikiMsg( 'farmer-wikicreated-text', $wikiObj->getUrl( wfUrlencode( wfMsgNoDB( 'mainpage' ) ) ) );
+				$wgOut->addWikiMsg( 'farmer-wikicreated-text', $wikiObj->getUrl( wfUrlencode( wfMessage( 'mainpage' )->inContentLanguage()->useDatabase( false )->plain() ) ) );
 				$wgOut->addWikiMsg( 'farmer-default', '[[' . $title . ':Special:Farmer|Special:Farmer]]' );
 				return;
 			}
