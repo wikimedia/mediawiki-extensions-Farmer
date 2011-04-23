@@ -443,7 +443,7 @@ $messages['ar'] = array(
 الوصلات إلى هذا النطاق ستكون من الشكل '''<nowiki>[[$2:Page name]]</nowiki>'''.
 لو أن هذا ما تريده، اضغط زر '''تأكيد''' بالأسفل.",
 	'farmer-button-confirm' => 'تأكيد',
-	'farmer-button-submit' => 'تنفيذ',
+	'farmer-button-submit' => 'أرسل',
 	'farmer-createwiki-form-title' => 'إنشاء ويكي',
 	'farmer-createwiki-form-text1' => 'استخدم الاستمارة بالأسفل لإنشاء ويكي جديدة.',
 	'farmer-createwiki-form-help' => 'مساعدة',
@@ -5336,7 +5336,7 @@ $messages['ps'] = array(
 	'farmer-createwiki-description' => 'څرګندونه',
 	'farmer-createwiki-reason' => 'سبب',
 	'farmer-permissiondenied' => 'د اجازې غوښتنه مو رد شوه',
-	'farmer-permissiondenied-text1' => 'تاسې همدې مخ ته د لاسرسۍ اجازه نه لرۍ',
+	'farmer-permissiondenied-text1' => 'تاسې همدې مخ ته د لاسرسۍ پرېښله نلرۍ',
 	'farmer-deleting' => 'د "$1" ويکي ړنګ شوی',
 	'farmer-delete-title' => 'ويکي ړنګول',
 	'farmer-delete-form' => 'يو ويکي وټاکۍ',
