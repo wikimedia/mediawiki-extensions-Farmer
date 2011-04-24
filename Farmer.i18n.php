@@ -4419,8 +4419,10 @@ $messages['mr'] = array(
  * @author Aurora
  */
 $messages['ms'] = array(
+	'farmer-confirmsetting-title' => 'Tajuk',
 	'farmer-confirmsetting-reason' => 'Sebab',
 	'farmer-createwiki-reason' => 'Sebab',
+	'farmer-basic-title1' => 'Tajuk',
 	'farmer-yes' => 'Ya',
 );
 
