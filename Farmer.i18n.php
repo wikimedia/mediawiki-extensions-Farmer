@@ -669,6 +669,28 @@ $messages['arz'] = array(
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'farmer-list-wiki' => 'Vikilərin siyahısı',
+	'farmer-confirmsetting-name' => 'Ad',
+	'farmer-confirmsetting-title' => 'Başlıq',
+	'farmer-button-confirm' => 'Təsdiq et',
+	'farmer-button-submit' => 'Yolla',
+	'farmer-createwiki-form-help' => 'Kömək',
+	'farmer-createwiki-user' => 'İstifadəçi adı',
+	'farmer-createwiki-name' => 'Viki adı',
+	'farmer-createwiki-reason' => 'Səbəb',
+	'farmer-delete-form-submit' => 'Sil',
+	'farmer-listofwikis' => 'Vikilərin siyahısı',
+	'farmer-mainpage' => 'Ana Səhifə',
+	'farmer-basic-title1' => 'Başlıq',
+	'farmer-yes' => 'Bəli',
+	'farmer-no' => 'Xeyr',
+	'farmer-extensions-register-name' => 'Ad',
+);
+
 /** Belarusian (Беларуская)
  * @author Тест
  */
@@ -4456,8 +4478,10 @@ $messages['myv'] = array(
 	'farmer-confirmsetting-description' => 'Чарькодевтемгакс',
 	'farmer-description' => 'Чарькодевтемгакс',
 	'farmer-button-confirm' => 'Кемекстамс',
+	'farmer-createwiki-user' => 'Совицянь лем',
 	'farmer-createwiki-description' => 'Чарькодевтемгакс',
 	'farmer-delete-form-submit' => 'Нардамс',
+	'farmer-mainpage' => 'Прякслопа',
 	'farmer-basic-title1' => 'Конякс',
 	'farmer-basic-description' => 'Чарькодевтемгакс',
 	'farmer-yes' => 'Истя',
@@ -5975,6 +5999,17 @@ Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
  * @author Dbc334
  */
 $messages['sl'] = array(
+	'farmer' => 'Kmetovalec',
+	'farmer-desc' => 'Upravljanje kmetije MediaWiki',
+	'farmercreatesitename' => 'Ime strani',
+	'farmercreatenextstep' => 'Naslednji korak',
+	'farmer-about-text' => 'Kmetovalec MediaWiki vam omogoča upravljati kmetijo wikijev MediaWiki.',
+	'farmer-list-wiki' => 'Seznam wikijev',
+	'farmer-list-wiki-text' => '[[$1|Seznam]] vseh wikijev na {{SITENAME}}',
+	'farmer-createwiki' => 'Ustvari wiki',
+	'farmer-createwiki-text' => '[[$1|Ustvari]] nov wiki zdaj!',
+	'farmer-administration' => 'Uprava kmetije',
+	'farmer-administration-extension' => 'Upravljaj razširitve',
 	'farmer-confirmsetting-reason' => 'Razlog',
 	'farmer-createwiki-reason' => 'Razlog',
 	'farmer-yes' => 'Da',
