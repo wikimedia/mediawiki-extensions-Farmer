@@ -2261,7 +2261,7 @@ Si c’est bien ce que vous voulez, cliquez sur le bouton '''Confirmer''' ci-des
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
-	'farmercreateurl' => 'l’adrèce',
+	'farmercreateurl' => 'adrèce URL',
 	'farmer-confirmsetting-name' => 'Nom',
 	'farmer-confirmsetting-title' => 'Titro',
 	'farmer-confirmsetting-description' => 'Dèscripcion',
@@ -5022,8 +5022,8 @@ S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
  * @author Psubhashish
  */
 $messages['or'] = array(
-	'farmer-createwiki-form-help' => 'ସାହାଜ୍ୟ',
-	'farmer-mainpage' => 'ମୂଳ ଫରଦ',
+	'farmer-createwiki-form-help' => 'ସାହାଯ୍ୟ',
+	'farmer-mainpage' => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
 );
 
 /** Ossetic (Иронау)
