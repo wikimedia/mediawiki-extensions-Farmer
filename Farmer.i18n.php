@@ -924,15 +924,69 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Ehsanulhb
+ * @author Wikitanvir
  * @author Zaheen
  */
 $messages['bn'] = array(
+	'farmercreatesitename' => 'সাইটের নাম',
+	'farmercreatenextstep' => 'পরবর্তী ধাপ',
+	'farmer-about' => 'বৃত্তান্ত',
+	'farmer-list-wiki' => 'উইকিসমূহের তালিকা',
+	'farmer-createwiki' => 'নতুন একটি উইকি তৈরি করুন',
+	'farmer-createwiki-text' => 'এখনই একটি নতুন উইকি [[$1|তৈরি করুন]]!',
+	'farmer-administration-delete' => 'একটি উইকি অপসারণ করুন',
+	'farmer-wikicreated-text' => 'আপনার উইকি তৈরি করা হয়েছে।
+এটি পাওয়া যাবে $1-এ',
+	'farmer-wikiexists' => 'উইকি ইতিমধ্যেই রয়েছে',
+	'farmer-confirmsetting' => 'উইকি সেটিংস নিশ্চিত করুন',
+	'farmer-confirmsetting-name' => 'নাম',
+	'farmer-confirmsetting-title' => 'শিরোনাম',
 	'farmer-confirmsetting-description' => 'বিবরণ',
+	'farmer-confirmsetting-reason' => 'কারণ',
 	'farmer-description' => 'বিবরণ',
 	'farmer-button-confirm' => 'নিশ্চিত করুন',
+	'farmer-button-submit' => 'জমা দাও',
+	'farmer-createwiki-form-title' => 'নতুন একটি উইকি তৈরি করুন',
+	'farmer-createwiki-form-text1' => 'নতুন উইকি তৈরি করতে নিচের ফর্মটি ব্যবহার করুন।',
+	'farmer-createwiki-form-help' => 'সাহায্য',
+	'farmer-createwiki-user' => 'ব্যবহারকারী নাম',
+	'farmer-createwiki-name' => 'উইকির নাম',
+	'farmer-createwiki-title' => 'উইকির শিরোনাম',
 	'farmer-createwiki-description' => 'বিবরণ',
+	'farmer-createwiki-reason' => 'কারণ',
+	'farmer-updatedlist' => 'হালনাগাদকৃত তালিকা',
+	'farmer-notaccessible' => 'প্রবেশযোগ্য নয়',
+	'farmer-permissiondenied' => 'অনুমতি প্রত্যাখ্যাত হয়েছে।',
+	'farmer-deleting' => '"$1" উইকিটি অপসারিত হয়েছে',
+	'farmer-delete-confirm' => 'আমি নিশ্চিত করছি যে আমি এই উইকিটি অপসারণ করতে চাই',
+	'farmer-delete-confirm-wiki' => "যে উইকিটি অপসারণ করা হবে: '''$1'''।",
+	'farmer-delete-reason' => 'অপসারণের কারণ:',
+	'farmer-delete-title' => 'উইকিটি অপসারণ করুন',
+	'farmer-delete-form' => 'একটি উইকি নির্বাচন করুন',
 	'farmer-delete-form-submit' => 'মুছে ফেলা হোক',
+	'farmer-listofwikis' => 'উইকিসমূহের তালিকা',
+	'farmer-mainpage' => 'প্রধান পাতা',
+	'farmer-basic-title' => 'প্রাথমিক প্যারামিটারসমূহ',
+	'farmer-basic-title1' => 'শিরোনাম',
 	'farmer-basic-description' => 'বিবরণ',
+	'farmer-basic-description-text' => 'আপনার উইকির বিবরণ নিচে ঠিক করুন',
+	'farmer-basic-permission' => 'অধিকারসমূহ',
+	'farmer-basic-permission-visitor' => 'সকল প্রদর্শনকারীর জন্য অনুমতি',
+	'farmer-yes' => 'হ্যাঁ',
+	'farmer-no' => 'না',
+	'farmer-basic-permission-user' => 'প্রবেশকৃত ব্যবহারকারী জন্য অনুমতি',
+	'farmer-setpermission' => 'অনুমতি নির্ধারণ',
+	'farmer-defaultskin' => 'প্রাথমিক স্কিন',
+	'farmer-defaultskin-button' => 'প্রাথমিক স্কিন নির্বাচন',
+	'farmer-extensions' => 'সক্রিয় এক্সটেনশনসমূহ',
+	'farmer-extensions-button' => 'সক্রিয় এক্সটেনশনসমূহ ঠিক করুন',
+	'farmer-extensions-register-name' => 'নাম',
+	'farmer-extensions-register-includefile' => 'যোগকৃত ফাইল',
+	'farmer-error-exists' => 'উইকি তৈরি করা সম্ভব নয়। এটি ইতিমধ্যেই রয়েছে: $1',
+	'farmer-log-name' => 'উইকি ফার্ম লগ',
+	'farmer-log-create' => '"$2" উইকি তৈরি করা হয়েছে',
+	'farmer-log-delete' => '"$2" উইকি অপসারণ করা হয়েছে',
+	'right-farmeradmin' => 'উইকি ফার্ম ব্যবস্থাপনা',
 );
 
 /** Breton (Brezhoneg)
@@ -4080,6 +4134,17 @@ $messages['ltg'] = array(
 	'farmer-about' => 'Ap',
 );
 
+/** Latvian (Latviešu)
+ * @author GreenZeb
+ */
+$messages['lv'] = array(
+	'farmer-createwiki-user' => 'Lietotājvārds',
+	'farmer-createwiki-name' => 'Viki vārds',
+	'farmer-createwiki-title' => 'Viki nosaukums',
+	'farmer-createwiki-description' => 'Apraksts',
+	'farmer-createwiki-reason' => 'Iemesls',
+);
+
 /** Eastern Mari (Олык Марий)
  * @author Сай
  */
@@ -6508,8 +6573,10 @@ $messages['te'] = array(
  */
 $messages['tet'] = array(
 	'farmer-about' => 'Kona-ba',
+	'farmer-confirmsetting-name' => 'Naran',
 	'farmer-confirmsetting-title' => 'Títulu',
 	'farmer-createwiki-form-help' => 'Ajuda',
+	'farmer-createwiki-user' => "Naran uza-na'in",
 	'farmer-deleting' => 'Halakon ona wiki $1',
 	'farmer-delete-form-submit' => 'Halakon',
 	'farmer-mainpage' => 'Pájina Mahuluk',
