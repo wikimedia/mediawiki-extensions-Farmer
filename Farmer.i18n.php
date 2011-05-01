@@ -1018,7 +1018,7 @@ Gallout a rit [[Special:Farmer|personelaat ho wiki]].",
 	'farmer-administration-delete-text' => '[[$1|Dilemel]] ur wiki eus ar feurm',
 	'farmer-administer-thiswiki' => 'Merañ ar wiki-mañ',
 	'farmer-administer-thiswiki-text' => "[[$1|Merañ]] ar c'hemmoù war ar wiki-se.",
-	'farmer-notavailable' => "N'eo ket da gaout",
+	'farmer-notavailable' => "N'eo ket hegerz",
 	'farmer-notavailable-text' => "An arc'hwel-mañ zo da gaout er wiki pennañ hepken",
 	'farmer-wikicreated' => 'Krouet eo ar wiki',
 	'farmer-wikicreated-text' => 'Krouet eo bet ho wiki.
