@@ -6443,6 +6443,7 @@ $messages['su'] = array(
  * @author Lejonel
  * @author M.M.S.
  * @author Per
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'farmer' => 'Farmer',
@@ -6505,7 +6506,7 @@ Kommer bli använd i titeln på varje sida på din wiki. Kommer också användas
 	'farmer-permissiondenied' => 'Tillgång nekad',
 	'farmer-permissiondenied-text' => 'Du har inte tillåtelse att ta bort wikier',
 	'farmer-permissiondenied-text1' => 'Du har inte tillåtelse att gå in på denna sida',
-	'farmer-deleting' => 'Tar bort $1',
+	'farmer-deleting' => 'Wikin "$1" har raderats',
 	'farmer-delete-confirm' => 'Jag bekräftar att jag vill radera denna wiki',
 	'farmer-delete-confirm-wiki' => 'Wiki att radera: "$1"',
 	'farmer-delete-reason' => 'Anledning till radering:',
