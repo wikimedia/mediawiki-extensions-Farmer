@@ -1329,7 +1329,7 @@ Tento text bude zobrazen v seznamu wiki.',
  * @author ОйЛ
  */
 $messages['cu'] = array(
-	'farmer-createwiki-form-help' => 'по́мощь',
+	'farmer-createwiki-form-help' => 'помощь',
 	'farmer-delete-form-submit' => 'поничьжє́ниѥ',
 	'farmer-no' => 'нѣ́тъ',
 );
@@ -4502,6 +4502,7 @@ $messages['mr'] = array(
 	'farmer-extensions-register-includefile' => 'संचिका मिळवा',
 	'farmer-error-exists' => 'विकि तयार करू शकत नाही. तो अगोदरच अस्तित्वात आहे: $1',
 	'farmer-error-noextwrite' => 'एक्स्टेंशन संचिका लिहू शकलेलो नाही:',
+	'right-farmeradmin' => 'विकीशेताचे व्यवस्थापन करा',
 );
 
 /** Malay (Bahasa Melayu)
