@@ -4023,6 +4023,35 @@ Wann dat jemaat es, dann künne alle Wikis se bruche.',
 	'right-createwiki' => 'Neu Wikis en der Shtall vun de Wikis erin donn',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'farmer-about' => 'Der barê',
+	'farmer-list-wiki' => 'Lîsteya wîkîyan',
+	'farmer-wikicreated' => 'Wîkî hate afirandin',
+	'farmer-confirmsetting-name' => 'Nav',
+	'farmer-confirmsetting-title' => 'Sernav',
+	'farmer-confirmsetting-reason' => 'Sedem',
+	'farmer-button-submit' => 'Tomar bike',
+	'farmer-createwiki-form-title' => 'Wîkîyekî biafirîne',
+	'farmer-createwiki-form-help' => 'Alîkarî',
+	'farmer-createwiki-user' => 'Navê bikarhêner',
+	'farmer-createwiki-name' => 'Navê wîkîyê',
+	'farmer-createwiki-title' => 'Sernavê wîkîyê',
+	'farmer-createwiki-reason' => 'Sedem',
+	'farmer-delete-reason' => 'Sedema jêbirinê:',
+	'farmer-delete-title' => 'Wîkîyê jê bibe',
+	'farmer-delete-form' => 'Wîkîyekî hilbijêre',
+	'farmer-delete-form-submit' => 'Jê bibe',
+	'farmer-listofwikis' => 'Lîsteya wîkîyan',
+	'farmer-mainpage' => 'Destpêk',
+	'farmer-basic-title1' => 'Sernav',
+	'farmer-yes' => 'Erê',
+	'farmer-no' => 'Na',
+	'farmer-extensions-register-name' => 'Nav',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
