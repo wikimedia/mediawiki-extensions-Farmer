@@ -8,9 +8,7 @@
 
 $specialPageAliases = array();
 
-/** English
- * @author IAlex
- */
+/** English (English) */
 $specialPageAliases['en'] = array(
 	'Farmer' => array( 'Farmer' ),
 );
@@ -33,6 +31,11 @@ $specialPageAliases['arz'] = array(
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
 	'Farmer' => array( 'ખેડુત' ),
+);
+
+/** Haitian (Kreyòl ayisyen) */
+$specialPageAliases['ht'] = array(
+	'Farmer' => array( 'Kiltivatè' ),
 );
 
 /** Interlingua (Interlingua) */
