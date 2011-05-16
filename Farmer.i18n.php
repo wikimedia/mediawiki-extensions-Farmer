@@ -7282,7 +7282,7 @@ Nếu đây là điều bạn muốn, hãy nhấn nút '''xác nhận''' ở dư
 	'farmer-createwiki-form-title' => 'Tạo một Wiki',
 	'farmer-createwiki-form-text1' => 'Sử dụng mẫu dưới đây để tạo một wiki mới.',
 	'farmer-createwiki-form-help' => 'Trợ giúp',
-	'farmer-createwiki-form-text2' => "Ví dụ, nếu bạn gõ vào '''tựa đề''', wiki của bạn sẽ truy cập được thông qua <nowiki>http://</nowiki>'''title'''.tênmiền.",
+	'farmer-createwiki-form-text2' => "Ví dụ, nếu bạn gõ vào '''tựa đề''', wiki của bạn sẽ truy cập được thông qua <nowiki>http://</nowiki>'''tựa đề'''.tênmiền.",
 	'farmer-createwiki-form-text3' => '; Tựa đề Wiki: Tựa đề của wiki.
 Sẽ được dùng tại tựa đề của mỗi trang trong wiki của bạn.
 Cũng sẽ là không gian tên dự án và tiền tốc liên wiki.',
