@@ -4735,6 +4735,7 @@ $messages['myv'] = array(
 
 /** Nahuatl (Nāhuatl)
  * @author Fluence
+ * @author Ricardo gs
  */
 $messages['nah'] = array(
 	'farmer-confirmsetting-name' => 'Tōcāitl',
@@ -4742,7 +4743,7 @@ $messages['nah'] = array(
 	'farmer-createwiki-form-title' => 'Ticchīhuāz cē huiqui',
 	'farmer-createwiki-user' => 'Tlatequitiltilīltōcāitl',
 	'farmer-createwiki-name' => 'Huiqui tōcāitl',
-	'farmer-deleting' => 'Mopolocah $1',
+	'farmer-deleting' => 'In huiqui "$1" ōmopoloh',
 	'farmer-delete-title' => 'Ticpolōz huiqui',
 	'farmer-delete-form-submit' => 'Ticpolōz',
 	'farmer-listofwikis' => 'Mochi huiqui',
