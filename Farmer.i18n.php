@@ -7499,6 +7499,7 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
+ * @author Hydra
  * @author Liangent
  * @author PhiLiP
  * @author Wmr89502270
@@ -7575,10 +7576,13 @@ $messages['zh-hans'] = array(
 	'farmer-basic-description' => '描述',
 	'farmer-basic-description-text' => '在下面设置你的wiki的描述',
 	'farmer-basic-permission' => '权限',
+	'farmer-basic-permission-text' => '使用下面的表格，它是可以修改此维基的用户的权限。',
 	'farmer-basic-permission-visitor' => '用于每个访问者的权限',
+	'farmer-basic-permission-visitor-text' => '下列权限将应用于每个用户访问此维基的人',
 	'farmer-yes' => '是',
 	'farmer-no' => '否',
 	'farmer-basic-permission-user' => '用于已登录用户的权限',
+	'farmer-basic-permission-user-text' => '下列权限将应用于已登录到此维基的每一个人',
 	'farmer-setpermission' => '设置权限',
 	'farmer-defaultskin' => '默认皮肤',
 	'farmer-defaultskin-button' => '设为默认皮肤',
@@ -7587,6 +7591,7 @@ $messages['zh-hans'] = array(
 	'farmer-extensions-extension-denied' => '你没有使用这个功能的权限。
 你必须是farmeradmin组的成员',
 	'farmer-extensions-invalid' => '无效的扩展',
+	'farmer-extensions-invalid-text' => '我们不能添加的扩展是因为找不到包含选定的文件',
 	'farmer-extensions-available' => '可用的扩展',
 	'farmer-extensions-noavailable' => '没有注册扩展',
 	'farmer-extensions-register' => '注册扩展',
