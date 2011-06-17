@@ -52,7 +52,7 @@ class MediaWikiFarmer_Wiki {
 		if ( in_array( $k, array( 'name', 'title', 'description', 'creator', 'extensions' ) ) ) {
 			$property = '_' . $k;
 			$this->$property = $v;
-		} else if ( substr( $k, 0, 2 ) == 'wg' ) {
+		} elseif ( substr( $k, 0, 2 ) == 'wg' ) {
 			$this->_variables[$k] = $v;
 		}
 	}
