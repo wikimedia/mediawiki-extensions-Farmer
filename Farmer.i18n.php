@@ -5584,6 +5584,7 @@ Na vira che n'estension a l'é registrà, tute le wiki a podran dovrela.",
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
+	'farmer' => 'بزګر',
 	'farmercreatesitename' => 'د ويبځي نوم',
 	'farmercreatenextstep' => 'بل ګام',
 	'farmer-about' => 'په اړه',
