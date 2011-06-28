@@ -4734,6 +4734,13 @@ $messages['myv'] = array(
 	'farmer-extensions-register-name' => 'Лемезэ',
 );
 
+/** Mazanderani (مازِرونی)
+ * @author محک
+ */
+$messages['mzn'] = array(
+	'farmer-about' => 'درباره',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  * @author Ricardo gs
