@@ -5644,7 +5644,7 @@ $messages['ps'] = array(
 $messages['pt'] = array(
 	'farmer' => 'Farmer',
 	'farmer-desc' => 'Administre uma fazenda MediaWiki',
-	'farmercantcreatewikis' => 'Não pode criar wikis porque não possui o privilégio "createwikis"',
+	'farmercantcreatewikis' => 'Não pode criar wikis porque não tem o privilégio "createwikis"',
 	'farmercreatesitename' => 'Nome do site',
 	'farmercreatenextstep' => 'Próximo passo',
 	'farmernewwikimainpage' => '== Bem-vindo à sua Wiki ==
@@ -5732,8 +5732,8 @@ Se é isto que pretende, clique o botão '''confirmar''' abaixo.",
 	'farmer-defaultskin-button' => 'Configurar tema por omissão',
 	'farmer-extensions' => 'Extensões activas',
 	'farmer-extensions-button' => 'Configurar extensões activas',
-	'farmer-extensions-extension-denied' => 'Não possui permissão para usar esta funcionalidade.
-Deverá ser membro do grupo "farmeradmin"',
+	'farmer-extensions-extension-denied' => 'Não tem permissão para usar esta funcionalidade.
+Tem de ser membro do grupo "farmeradmin"',
 	'farmer-extensions-invalid' => 'Extensão inválida',
 	'farmer-extensions-invalid-text' => 'Não foi possível adicionar a extensão porque o ficheiro seleccionado para inclusão não foi encontrado',
 	'farmer-extensions-available' => 'Extensões disponíveis',
