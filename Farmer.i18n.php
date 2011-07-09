@@ -7517,6 +7517,7 @@ $messages['yi'] = array(
  * @author Liangent
  * @author PhiLiP
  * @author Wmr89502270
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'farmer' => '农场',
@@ -7555,9 +7556,9 @@ $messages['zh-hans'] = array(
 	'farmer-confirmsetting' => '确认wiki设置',
 	'farmer-confirmsetting-name' => '名字',
 	'farmer-confirmsetting-title' => '标题',
-	'farmer-confirmsetting-description' => '描述',
+	'farmer-confirmsetting-description' => '说明',
 	'farmer-confirmsetting-reason' => '原因',
-	'farmer-description' => '描述',
+	'farmer-description' => '说明',
 	'farmer-button-confirm' => '确认',
 	'farmer-button-submit' => '提交',
 	'farmer-createwiki-form-title' => '创建一个wiki',
@@ -7566,7 +7567,7 @@ $messages['zh-hans'] = array(
 	'farmer-createwiki-user' => '用户名',
 	'farmer-createwiki-name' => 'Wiki名称',
 	'farmer-createwiki-title' => 'Wiki标题',
-	'farmer-createwiki-description' => '描述',
+	'farmer-createwiki-description' => '说明',
 	'farmer-createwiki-reason' => '原因',
 	'farmer-updatedlist' => '已更新的列表',
 	'farmer-notaccessible' => '不可访问',
@@ -7587,7 +7588,7 @@ $messages['zh-hans'] = array(
 	'farmer-basic-title' => '基本参数',
 	'farmer-basic-title1' => '标题',
 	'farmer-basic-title1-text' => '你的wiki没有一个标题。<b>现在</b>设置一个',
-	'farmer-basic-description' => '描述',
+	'farmer-basic-description' => '说明',
 	'farmer-basic-description-text' => '在下面设置你的wiki的描述',
 	'farmer-basic-permission' => '权限',
 	'farmer-basic-permission-text' => '使用下面的表格，它是可以修改此维基的用户的权限。',
