@@ -4694,8 +4694,8 @@ Sila kembali dan cuba nama lain.",
 	'farmer-log-header' => 'Ini ialah log perubahan yang dibuat pada ladang wiki.',
 	'farmer-log-create' => 'mencipta wiki "$2"',
 	'farmer-log-delete' => 'menghapuskan wiki "$2"',
-	'right-farmeradmin' => 'Uruskan ladang wiki',
-	'right-createwiki' => 'Cipta wiki di ladang wiki',
+	'right-farmeradmin' => 'Menguruskan ladang wiki',
+	'right-createwiki' => 'Mencipta wiki di ladang wiki',
 );
 
 /** Maltese (Malti)
