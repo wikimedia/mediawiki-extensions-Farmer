@@ -4642,11 +4642,25 @@ Sila kembali dan cuba nama lain.",
 	'farmer-confirmsetting-description' => 'Keterangan',
 	'farmer-confirmsetting-reason' => 'Sebab',
 	'farmer-description' => 'Keterangan',
+	'farmer-confirmsetting-text' => "Wiki anda, '''$1''', akan boleh diakses melalui $3.
+Ruang nama projeknya ialah '''$2'''.
+Pautan kepada ruang nama ini akan berbentuk '''<nowiki>[[$2:Nama laman]]</nowiki>'''.
+Jika inilah yang anda kehendaki, tekan butang '''sahkan''' di bawah.",
 	'farmer-button-confirm' => 'Sahkan',
 	'farmer-button-submit' => 'Hantar',
 	'farmer-createwiki-form-title' => 'Cipta wiki baru',
 	'farmer-createwiki-form-text1' => 'Gunakan borang di bawah untuk mencipta wiki baru.',
 	'farmer-createwiki-form-help' => 'Bantuan',
+	'farmer-createwiki-form-text2' => "; Nama wiki:
+Hanya mengandungi huruf dan angka.
+Nama wiki akan digunakan sebagai sebahagian URL untuk mengenal pasti wiki anda.
+Contoh, jika anda isikan '''title''', wiki anda akan diakses melalui <nowiki>http://</nowiki>'''title'''.mydomain.",
+	'farmer-createwiki-form-text3' => '; Tajuk wiki:
+Akan digunakan dalam tajuk setiap laman dalam wiki anda.
+Juga akan dijadikan ruang nama projek dan awalan antara wiki.',
+	'farmer-createwiki-form-text4' => '; Keterangan:
+Ini ialah keterangan wiki dalam bentuk teks.
+Ini akan dipaparkan dalam senarai wiki.',
 	'farmer-createwiki-user' => 'Nama pengguna',
 	'farmer-createwiki-name' => 'Nama wiki',
 	'farmer-createwiki-title' => 'Tajuk wiki',
@@ -4657,6 +4671,9 @@ Sila kembali dan cuba nama lain.",
 	'farmer-notaccessible-test' => 'Ciri ini hanya terdapat pada wiki induk di ladang',
 	'farmer-permissiondenied' => 'Kebenaran ditolak',
 	'farmer-permissiondenied-text' => 'Anda tiada kebenaran untuk menghapuskan wiki di ladang ini',
+	'farmer-permissiondenied-text1' => 'Anda tiada kebenaran untuk mengakses laman ini',
+	'farmer-deleting' => 'Wiki "$1" telah dihapuskan',
+	'farmer-delete-confirm' => 'Saya mengesahkan bahawa saya mahu menghapuskan wiki ini',
 	'farmer-delete-confirm-wiki' => "Wiki untuk dihapuskan: ''' $1 '''.",
 	'farmer-delete-reason' => 'Sebab penghapusan:',
 	'farmer-delete-title' => 'Hapuskan wiki',
@@ -4683,9 +4700,18 @@ Sila kembali dan cuba nama lain.",
 	'farmer-defaultskin-button' => 'Tetapkan kulit utama',
 	'farmer-extensions' => 'Sambungan aktif',
 	'farmer-extensions-button' => 'Tetapkan sambungan aktif',
+	'farmer-extensions-extension-denied' => 'Anda tidak dibenarkan menggunakan ciri ini.
+Anda mesti menjadi ahli kumpulan farmeradmin',
 	'farmer-extensions-invalid' => 'Sambungan tidak sah',
+	'farmer-extensions-invalid-text' => 'Sambungan ini tidak boleh ditambahkan kerana fail yang dipilih untuk dimasukkan tidak dapat ditemui',
 	'farmer-extensions-available' => 'Sambungan yang sedia ada',
+	'farmer-extensions-noavailable' => 'Tiada sambungan berdaftar',
 	'farmer-extensions-register' => 'Daftarkan sambungan',
+	'farmer-extensions-register-text1' => 'Gunakan borang di bawah untuk mendaftarkan sambungan baru dengan ladang.
+Setelah sambungan didaftarkan, semua wiki boleh menggunakannya.',
+	'farmer-extensions-register-text2' => "Untuk parameter ''Sertakan fail'', isikan nama fail PHP seperti mana yang anda lakukan di LocalSettings.php.",
+	'farmer-extensions-register-text3' => "Jika nama fail mengandungi '''\$root''', pembolehubah itu akan digantikan dengan direktori akar MediaWiki.",
+	'farmer-extensions-register-text4' => 'Laluan sertakan semasa ialah:',
 	'farmer-extensions-register-name' => 'Nama',
 	'farmer-extensions-register-includefile' => 'Sertakan fail',
 	'farmer-error-exists' => 'Wiki tidak dapat dicipta. Ia sudah wujud: $1',
