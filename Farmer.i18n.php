@@ -3506,12 +3506,14 @@ Setelah ekstensi tersebut terdaftar, semua wiki dapat menggunakannya.',
 	'right-createwiki' => 'Buat wiki di farm wiki',
 );
 
-/** Igbo (Igbo) */
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
 $messages['ig'] = array(
 	'farmer-about' => 'Abwátà',
 	'farmer-confirmsetting-reason' => 'Mgbaghaputa',
 	'farmer-createwiki-reason' => 'Mgbaghaputa',
-	'farmer-delete-form-submit' => 'Gbakashia',
+	'farmer-delete-form-submit' => 'Kàcha',
 );
 
 /** Ido (Ido)
