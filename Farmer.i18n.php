@@ -5312,7 +5312,7 @@ $messages['or'] = array(
 	'farmer-mainpage' => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
