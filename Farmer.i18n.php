@@ -671,13 +671,14 @@ $messages['arz'] = array(
 
 /** Azerbaijani (Azərbaycanca)
  * @author Cekli829
+ * @author Wertuose
  */
 $messages['az'] = array(
 	'farmer-list-wiki' => 'Vikilərin siyahısı',
 	'farmer-confirmsetting-name' => 'Ad',
 	'farmer-confirmsetting-title' => 'Başlıq',
 	'farmer-button-confirm' => 'Təsdiq et',
-	'farmer-button-submit' => 'Yolla',
+	'farmer-button-submit' => 'Təsdiq et',
 	'farmer-createwiki-form-help' => 'Kömək',
 	'farmer-createwiki-user' => 'İstifadəçi adı',
 	'farmer-createwiki-name' => 'Viki adı',
