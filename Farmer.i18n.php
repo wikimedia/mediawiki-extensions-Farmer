@@ -6610,7 +6610,7 @@ Om du läser det här, har din nya wiki blivit korrekt installerad. Du kan [[Spe
 	'farmer-confirmsetting' => 'Bekräfta wiki-inställningar',
 	'farmer-confirmsetting-name' => 'Namn',
 	'farmer-confirmsetting-title' => 'Titel',
-	'farmer-confirmsetting-description' => 'Beskrivnin',
+	'farmer-confirmsetting-description' => 'Beskrivning',
 	'farmer-confirmsetting-reason' => 'Anledning',
 	'farmer-description' => 'Beskrivning',
 	'farmer-confirmsetting-text' => "Din wiki, '''$1''', vill bli tillgänglig via $3.
