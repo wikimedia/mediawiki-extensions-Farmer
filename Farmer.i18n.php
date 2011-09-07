@@ -1829,6 +1829,7 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 
 /** Spanish (Español)
  * @author Crazymadlover
+ * @author Fitoschido
  * @author Imre
  * @author Jatrobat
  * @author Pertile
@@ -1873,7 +1874,7 @@ Por favor vuelva atrás e intente con otro nombre.",
 	'farmer-confirmsetting-name' => 'Nombre',
 	'farmer-confirmsetting-title' => 'Título',
 	'farmer-confirmsetting-description' => 'Descripción',
-	'farmer-confirmsetting-reason' => 'Razón',
+	'farmer-confirmsetting-reason' => 'Motivo',
 	'farmer-description' => 'Descripción',
 	'farmer-confirmsetting-text' => "Su wiki, '''$1''', será accesible a través de $3.
 El espacio de nombres del proyecto será '''$2'''.
@@ -1898,7 +1899,7 @@ Esto se mostrará en la lista wiki.',
 	'farmer-createwiki-name' => 'Nombre de wiki',
 	'farmer-createwiki-title' => 'Título de wiki',
 	'farmer-createwiki-description' => 'Descripción',
-	'farmer-createwiki-reason' => 'Razón',
+	'farmer-createwiki-reason' => 'Motivo',
 	'farmer-updatedlist' => 'Lista actualizada',
 	'farmer-notaccessible' => 'No accesible',
 	'farmer-notaccessible-test' => 'Esta característica está únicamente disponible en la wiki padre en la granja',
