@@ -5310,8 +5310,10 @@ S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
  * @author Psubhashish
  */
 $messages['or'] = array(
-	'farmer-createwiki-form-help' => 'ସାହାଯ୍ୟ',
+	'farmer-confirmsetting-title' => 'ଶିରୋନାମା',
+	'farmer-createwiki-form-help' => 'ସହଯୋଗ',
 	'farmer-mainpage' => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
+	'farmer-basic-title1' => 'ଶିରୋନାମା',
 );
 
 /** Ossetic (Ирон)
