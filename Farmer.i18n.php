@@ -6302,6 +6302,7 @@ $messages['sl'] = array(
 	'farmer-administration' => 'Uprava kmetije',
 	'farmer-administration-extension' => 'Upravljaj razširitve',
 	'farmer-confirmsetting-reason' => 'Razlog',
+	'farmer-createwiki-user' => 'Uporabniško ime',
 	'farmer-createwiki-reason' => 'Razlog',
 	'farmer-yes' => 'Da',
 	'farmer-no' => 'Ne',
