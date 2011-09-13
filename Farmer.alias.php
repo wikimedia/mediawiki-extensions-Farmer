@@ -28,6 +28,11 @@ $specialPageAliases['arz'] = array(
 	'Farmer' => array( 'فلاح' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$specialPageAliases['frp'] = array(
+	'Farmer' => array( 'Grangiér' ),
+);
+
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
 	'Farmer' => array( 'ખેડુત' ),
@@ -78,6 +83,11 @@ $specialPageAliases['myv'] = array(
 	'Farmer' => array( 'Фермер' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$specialPageAliases['nds-nl'] = array(
+	'Farmer' => array( 'WikiBoerderieje' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'Farmer' => array( 'Wikifarm' ),
@@ -106,6 +116,11 @@ $specialPageAliases['tl'] = array(
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'Farmer' => array( 'Çiftçi' ),
+);
+
+/** Traditional Chinese (‪中文(繁體)‬) */
+$specialPageAliases['zh-hant'] = array(
+	'Farmer' => array( '農場' ),
 );
 
 /**
