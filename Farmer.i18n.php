@@ -2477,7 +2477,7 @@ Tamén será o espazo de nomes e o prefixo do interwiki do proxecto.',
 	'farmer-createwiki-form-text4' => '; Descrición: descrición do wiki.
 Este é un texto descritivo sobre o wiki.
 Isto será amosado na lista dos wikis.',
-	'farmer-createwiki-user' => 'Nome do usuario',
+	'farmer-createwiki-user' => 'Nome de usuario',
 	'farmer-createwiki-name' => 'Nome do wiki',
 	'farmer-createwiki-title' => 'Título do wiki',
 	'farmer-createwiki-description' => 'Descrición',
