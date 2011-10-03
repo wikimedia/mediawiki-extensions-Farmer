@@ -2422,7 +2422,7 @@ $messages['gl'] = array(
 	'farmer' => 'Granxeiro',
 	'farmer-desc' => 'Xestionar unha granxa MediaWiki',
 	'farmercantcreatewikis' => 'Non pode crear wikis porque non ten os privilexios de creación de wikis',
-	'farmercreatesitename' => 'Nome do sitio web',
+	'farmercreatesitename' => 'Nome do sitio',
 	'farmercreatenextstep' => 'Seguinte paso',
 	'farmernewwikimainpage' => '== Dámoslle a benvida ao seu wiki ==
 Se está a ler isto, o seu novo wiki foi instalado correctamente.
@@ -6075,7 +6075,7 @@ $messages['ru'] = array(
 	'farmer-createwiki-form-text2' => "; Имя вики: Это название вашей вики. Может содержать только латинские буквы и цифры. Имя вики будет использоваться как часть URL-адреса. Например, если вы введёте '''title''', то ваша вики будет доступна по  <nowiki>http://</nowiki>'''title'''.mydomain.",
 	'farmer-createwiki-form-text3' => '; Заголовок вики: Заголовок вики будет использовать в названии каждой страницы вашей вики, кроме того, такое значение будут иметь пространство имён проекта и интервики-приставка.',
 	'farmer-createwiki-form-text4' => '; Описание: Описание вики — это текстовое описание, которое будет показываться в списке вики.',
-	'farmer-createwiki-user' => 'Умя участника',
+	'farmer-createwiki-user' => 'Имя участника',
 	'farmer-createwiki-name' => 'Имя вики',
 	'farmer-createwiki-title' => 'Заголовок вики',
 	'farmer-createwiki-description' => 'Описание',
