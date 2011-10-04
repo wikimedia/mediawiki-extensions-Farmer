@@ -6308,7 +6308,7 @@ $messages['sl'] = array(
 	'farmer-no' => 'Ne',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -6383,7 +6383,7 @@ $messages['sr-ec'] = array(
 	'farmer-notaccessible-test' => 'Ова могућност је доступна само надређеној викији на фарми',
 	'farmer-permissiondenied' => 'Приступ је одбијен.',
 	'farmer-permissiondenied-text' => 'Немате дозволу за брисање викија с фарме',
-	'farmer-permissiondenied-text1' => 'Немате права приступа овој страници',
+	'farmer-permissiondenied-text1' => 'Немате дозволу да приступите овој страници',
 	'farmer-deleting' => '„$1“ викија је обрисана.',
 	'farmer-delete-confirm' => 'Потврђујем да желим да обришем ову викију',
 	'farmer-delete-confirm-wiki' => "Викија за брисање: '''$1'''.",
