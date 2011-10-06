@@ -4774,6 +4774,7 @@ $messages['myv'] = array(
  */
 $messages['mzn'] = array(
 	'farmer-about' => 'درباره',
+	'farmer-createwiki-form-help' => 'راهنما',
 );
 
 /** Nahuatl (Nāhuatl)
