@@ -6310,6 +6310,7 @@ $messages['sl'] = array(
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+ * @author Nikola Smolenski
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Жељко Тодоровић
@@ -6339,7 +6340,7 @@ $messages['sr-ec'] = array(
 	'farmer-administration-delete' => 'Обриши викију',
 	'farmer-administration-delete-text' => '[[$1|Обришите]] викију с фарме',
 	'farmer-administer-thiswiki' => 'Управљај овом викијом',
-	'farmer-administer-thiswiki-text' => '[[$1|Управљај]] изменама ове викије',
+	'farmer-administer-thiswiki-text' => '[[$1|Управљај]] изменама овог викија',
 	'farmer-notavailable' => 'Недоступно',
 	'farmer-notavailable-text' => 'Ова могућност је доступна само на главној викији',
 	'farmer-wikicreated' => 'Викија је направљена.',
@@ -6390,7 +6391,7 @@ $messages['sr-ec'] = array(
 	'farmer-delete-confirm' => 'Потврђујем да желим да обришем ову викију',
 	'farmer-delete-confirm-wiki' => "Викија за брисање: '''$1'''.",
 	'farmer-delete-reason' => 'Разлог брисања:',
-	'farmer-delete-title' => 'Брисање викије',
+	'farmer-delete-title' => 'Брисање викија',
 	'farmer-delete-text' => 'Изаберите викију коју желите да обришете са списка испод',
 	'farmer-delete-form' => 'Изаберите викију',
 	'farmer-delete-form-submit' => 'Обриши',
@@ -6400,7 +6401,7 @@ $messages['sr-ec'] = array(
 	'farmer-basic-title1' => 'Наслов',
 	'farmer-basic-title1-text' => 'Ваша викија нема наслов. Поставите га <b>одмах</b>',
 	'farmer-basic-description' => 'Опис',
-	'farmer-basic-description-text' => 'Поставите опис викије испод',
+	'farmer-basic-description-text' => 'Поставите опис вашег викија испод',
 	'farmer-basic-permission' => 'Дозволе',
 	'farmer-basic-permission-text' => 'Могуће је изменити дозволе корисника користећи образац испод.',
 	'farmer-basic-permission-visitor' => 'Дозволе сваког посетиоца',
@@ -6408,7 +6409,7 @@ $messages['sr-ec'] = array(
 	'farmer-yes' => 'Да',
 	'farmer-no' => 'Не',
 	'farmer-basic-permission-user' => 'Дозволе пријављених корисника',
-	'farmer-basic-permission-user-text' => 'Следеће дозволе биће примењене на сваког пријављеног корисника ове викије',
+	'farmer-basic-permission-user-text' => 'Следеће дозволе биће примењене на сваког пријављеног корисника овог викија',
 	'farmer-setpermission' => 'Подеси дозволе',
 	'farmer-defaultskin' => 'Подразумевана пресвлака',
 	'farmer-defaultskin-button' => 'Подеси подразумевану пресвлаку',
@@ -6422,7 +6423,7 @@ $messages['sr-ec'] = array(
 	'farmer-extensions-noavailable' => 'Ниједно проширење није уписано.',
 	'farmer-extensions-register' => 'Упиши проширење',
 	'farmer-extensions-register-text1' => 'Користите образац испод да бисте уписали ново проширење у фарму.
-Када се проширење упише, све викије ће моћи да га користе.',
+Када се проширење упише, сви викији ће моћи да га користе.',
 	'farmer-extensions-register-text2' => "За параметар ''Укључивање датотека'', додајте назив PHP датотеке, као LocalSettings.php.",
 	'farmer-extensions-register-text3' => "Ако назив датотеке садржи '''\$root''', та променљива биће замењена с основном фасциклом Медијавикија.",
 	'farmer-extensions-register-text4' => 'Путање за укључивање:',
