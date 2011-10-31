@@ -1496,6 +1496,7 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author ChrisiPK
  * @author Imre
+ * @author Kghbln
  * @author MichaelFrey
  */
 $messages['de-formal'] = array(
@@ -1520,7 +1521,7 @@ Es darf nur die Buchstaben A–Z und Zahlen enthalten.
 Der Wikiname wird als Teil der URL zum Wiki verwendet.
 Wenn Sie zum Beispiel '''Name''' angeben, wird die URL zum Wiki <nowiki>http://</nowiki>'''name'''.example.com/ heißen.",
 	'farmer-permissiondenied-text' => 'Es ist Ihnen nicht gestattet, ein Wiki von der Farm zu löschen',
-	'farmer-permissiondenied-text1' => 'Es ist Ihnen nicht gestattet, auf diese Seite zuzugreifen',
+	'farmer-permissiondenied-text1' => 'Sie haben nicht die erforderliche Berechtigung, um diese Seite aufrufen zu können.',
 	'farmer-delete-text' => 'Bitte wählen Sie das Wiki, das Sie löschen möchten, aus der Liste aus',
 	'farmer-basic-title1-text' => 'Ihr Wiki hat keinen Titel. Bitte tragen Sie ihn <b>jetzt</b> ein',
 	'farmer-basic-description-text' => 'Fügen Sie unten die Beschreibung Ihres Wikis ein',
@@ -6401,7 +6402,7 @@ $messages['sr-ec'] = array(
 	'farmer-basic-title1' => 'Наслов',
 	'farmer-basic-title1-text' => 'Ваша викија нема наслов. Поставите га <b>одмах</b>',
 	'farmer-basic-description' => 'Опис',
-	'farmer-basic-description-text' => 'Поставите опис вашег викија испод',
+	'farmer-basic-description-text' => 'Испод поставите опис вашег викија',
 	'farmer-basic-permission' => 'Дозволе',
 	'farmer-basic-permission-text' => 'Могуће је изменити дозволе корисника користећи образац испод.',
 	'farmer-basic-permission-visitor' => 'Дозволе сваког посетиоца',
