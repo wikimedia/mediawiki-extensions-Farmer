@@ -2452,7 +2452,7 @@ Pode [[Special:Farmer|personalizar o seu wiki]].',
 Pode modificar os privilexios de usuario mediante $1',
 	'farmer-wikiexists' => 'O wiki existe',
 	'farmer-wikiexists-text' => "O wiki que está intentando crear, '''$1''', xa existe.
-Por favor volva atrás e ténteo con outro nome.",
+Volva atrás e inténteo con outro nome.",
 	'farmer-confirmsetting' => 'Confirmar as configuracións do wiki',
 	'farmer-confirmsetting-name' => 'Nome',
 	'farmer-confirmsetting-title' => 'Título',
@@ -2468,16 +2468,16 @@ Se isto é o que quere, prema no botón \"'''Confirmar'''\" de embaixo.",
 	'farmer-createwiki-form-title' => 'Crear un wiki',
 	'farmer-createwiki-form-text1' => 'Use el formulario de embaixo para crear un novo wiki.',
 	'farmer-createwiki-form-help' => 'Axuda',
-	'farmer-createwiki-form-text2' => "; Nome do wiki: o nome do wiki.
+	'farmer-createwiki-form-text2' => "; Nome do wiki: O nome do wiki.
 Contén só letras e números.
 O nome do wiki será usado como parte da URL para identificar o seu wiki.
-Por exemplo, se introduce '''título''', poderá acceder ao seu wiki desde <nowiki>http://</nowiki>'''título'''.mydomain.",
-	'farmer-createwiki-form-text3' => '; Título do wiki: título do wiki.
+Por exemplo, se introduce '''título''', poderá acceder ao seu wiki desde <nowiki>http://</nowiki>'''título'''.dominio.",
+	'farmer-createwiki-form-text3' => '; Título do wiki: Título do wiki.
 Será usado no título de cada páxina no seu wiki.
 Tamén será o espazo de nomes e o prefixo do interwiki do proxecto.',
-	'farmer-createwiki-form-text4' => '; Descrición: descrición do wiki.
+	'farmer-createwiki-form-text4' => '; Descrición: Descrición do wiki.
 Este é un texto descritivo sobre o wiki.
-Isto será amosado na lista dos wikis.',
+Isto aparecerá na lista dos wikis.',
 	'farmer-createwiki-user' => 'Nome de usuario',
 	'farmer-createwiki-name' => 'Nome do wiki',
 	'farmer-createwiki-title' => 'Título do wiki',
@@ -2501,7 +2501,7 @@ Isto será amosado na lista dos wikis.',
 	'farmer-mainpage' => 'Portada',
 	'farmer-basic-title' => 'Parámetros básicos',
 	'farmer-basic-title1' => 'Título',
-	'farmer-basic-title1-text' => 'O seu wiki non ten un título. Elixa un AGORA',
+	'farmer-basic-title1-text' => 'O seu wiki non ten un título. Elixa un <b>agora</b>',
 	'farmer-basic-description' => 'Descrición',
 	'farmer-basic-description-text' => 'Poña a descrición do seu wiki embaixo',
 	'farmer-basic-permission' => 'Permisos',
