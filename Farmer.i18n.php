@@ -4091,7 +4091,7 @@ Wann dat jemaat es, dann künne alle Wikis se bruche.',
 	'right-createwiki' => 'Neu Wikis en der Shtall vun de Wikis erin donn',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -6169,7 +6169,7 @@ $messages['scn'] = array(
 	'farmer-extensions-register-name' => 'Nomu',
 );
 
-/** Serbo-Croatian (Srpskohrvatski / Српскохрватски)
+/** Serbo-Croatian (Srpskohrvatski)
  * @author OC Ripper
  */
 $messages['sh'] = array(
@@ -6441,7 +6441,7 @@ $messages['sr-ec'] = array(
 	'right-createwiki' => 'прављење викија на фарми',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  * @author Жељко Тодоровић
  */
@@ -6819,7 +6819,7 @@ $messages['tet'] = array(
 	'farmer-extensions-register-name' => 'Naran',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -6912,7 +6912,7 @@ $messages['tg-cyrl'] = array(
 	'farmer-error-noextwrite' => 'Қобили навиштани парвандаи афзуна нест:',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -7214,14 +7214,14 @@ $messages['tr'] = array(
 	'farmer-extensions-register-includefile' => 'Dosyayı dahil et',
 );
 
-/** ئۇيغۇرچە (ئۇيغۇرچە)
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
  * @author Alfredie
  */
 $messages['ug-arab'] = array(
 	'farmer-createwiki-user' => 'ئىشلەتكۇچى ئىسمى',
 );
 
-/** Uighur (Latin) (ئۇيغۇرچە / Uyghurche‎ (Latin))
+/** Uyghur (Latin script) (Uyghurche‎)
  * @author Jose77
  */
 $messages['ug-latn'] = array(
