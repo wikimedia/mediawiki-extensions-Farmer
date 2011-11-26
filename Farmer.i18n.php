@@ -4636,7 +4636,7 @@ Anda boleh [[Special:Farmer|mengubah suai wiki anda]].',
 	'farmer-wikicreated' => 'Wiki dicipta',
 	'farmer-wikicreated-text' => 'Wiki anda telah dicipta.
 Ia boleh dicapai di $1',
-	'farmer-default' => 'Mengikut tetapan tersedia, tiada siapa yang mendapat kebenaran di wiki ini selain anda.
+	'farmer-default' => 'Mengikut tetapan asali, tiada sesiapa yang mendapat kebenaran di wiki ini selain anda.
 Anda boleh mengubah kebenaran pengguna melalui $1',
 	'farmer-wikiexists' => 'Wiki wujud',
 	'farmer-wikiexists-text' => "Wiki yang anda cuba cipta itu, '''$1''', sudah wujud.
