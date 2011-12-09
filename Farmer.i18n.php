@@ -924,6 +924,7 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Bellayet
  * @author Ehsanulhb
  * @author Wikitanvir
  * @author Zaheen
@@ -931,7 +932,7 @@ $messages['bg'] = array(
 $messages['bn'] = array(
 	'farmercreatesitename' => 'সাইটের নাম',
 	'farmercreatenextstep' => 'পরবর্তী ধাপ',
-	'farmer-about' => 'বৃত্তান্ত',
+	'farmer-about' => 'পরিচিতি',
 	'farmer-list-wiki' => 'উইকিসমূহের তালিকা',
 	'farmer-createwiki' => 'নতুন একটি উইকি তৈরি করুন',
 	'farmer-createwiki-text' => 'এখনই একটি নতুন উইকি [[$1|তৈরি করুন]]!',
