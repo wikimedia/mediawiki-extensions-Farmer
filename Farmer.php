@@ -15,7 +15,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'Farmer',
 	'author' => array( 'Gregory Szorc <gregory.szorc@case.edu>', 'Alexandre Emsenhuber' ),
-	'url' => 'http://www.mediawiki.org/wiki/Extension:Farmer',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Farmer',
 	'descriptionmsg' => 'farmer-desc',
 	'version' => '0.0.8',
 );
