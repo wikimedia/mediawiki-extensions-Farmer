@@ -5309,12 +5309,14 @@ S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Jnanaranjan Sahu
  * @author Jose77
  * @author Psubhashish
  */
 $messages['or'] = array(
 	'farmer-confirmsetting-title' => 'ଶିରୋନାମା',
 	'farmer-createwiki-form-help' => 'ସହଯୋଗ',
+	'farmer-createwiki-user' => 'ବ୍ୟବହାରକାରୀ ନାମ',
 	'farmer-mainpage' => 'ପ୍ରଧାନ ପୃଷ୍ଠା',
 	'farmer-basic-title1' => 'ଶିରୋନାମା',
 );
@@ -6450,6 +6452,7 @@ $messages['sr-el'] = array(
 	'farmer' => 'Farmer',
 	'farmer-desc' => 'Upravljajte MedijaViki farmom',
 	'farmercantcreatewikis' => 'Ne možete da napravite Viki zato što nemate createwikis prava pristupa',
+	'farmercreateurl' => 'Adresa',
 	'farmercreatesitename' => 'Ime sajta',
 	'farmercreatenextstep' => 'Sledeći korak',
 	'farmernewwikimainpage' => '== Dobro došli na Vaš Viki ==
@@ -6486,11 +6489,22 @@ Molimo Vas da se vratite i pokušate sa drugim imenom.",
 	'farmer-confirmsetting-description' => 'Opis',
 	'farmer-confirmsetting-reason' => 'Razlog',
 	'farmer-description' => 'Opis',
+	'farmer-confirmsetting-text' => "Vaša vikija, '''$1''', biće dostupna na $3.
+Imenski prostor projekta biće '''$2'''.
+Veze ka ovom imenskom prostoru biće u obrascu '''<nowiki>[[$2:Page name]]</nowiki>'''.
+Ako to želite, kliknite na dugme „potvrdi“ ispod.",
 	'farmer-button-confirm' => 'Potrvdi',
 	'farmer-button-submit' => 'Prihvati',
 	'farmer-createwiki-form-title' => 'Napravite Viki',
 	'farmer-createwiki-form-text1' => 'Koristite formu ispod da biste napravili novi Viki',
 	'farmer-createwiki-form-help' => 'Pomoć',
+	'farmer-createwiki-form-text2' => "; Naziv vikije.
+Sadrži samo slova i brojeve.
+Naziv vikije biće korišćen kao deo URL adrese.
+Na primer, ako unesete '''title''', vaša vikija biće dostupna na adresi <nowiki>http://</nowiki>'''title'''.mydomain.",
+	'farmer-createwiki-form-text3' => '; Naslov vikije.
+Ova vrednost biće prikazana na svakoj stranici vikije.
+Koristiće se za imenski prostor projekta, kao i za međuviki prefiks.',
 	'farmer-createwiki-form-text4' => '; Opis: Opis Vikija.
 Ovde treba da bude opis Vikija.
 Ovo će biti prikazano u spisku Vikija.',
@@ -6547,8 +6561,14 @@ Kad ekstenziju jedanput registrujete, svi Vikiji će moći da je koriste.',
 	'farmer-extensions-register-text4' => 'Trenutne putanje za uključivanje su:',
 	'farmer-extensions-register-name' => 'Ime',
 	'farmer-extensions-register-includefile' => 'Uključi fajl',
+	'farmer-error-exists' => 'Vikija nije napravljena. Ona već postoji: $1',
+	'farmer-error-noextwrite' => 'Pisanje datoteke proširenja nije uspelo:',
+	'farmer-log-name' => 'Izveštaj farme',
+	'farmer-log-header' => 'Ovo je spisak izmena farme.',
 	'farmer-log-create' => 'napravljen viki "$2"',
 	'farmer-log-delete' => 'obrisan viki "$2"',
+	'right-farmeradmin' => 'upravljanje farmom vikije',
+	'right-createwiki' => 'pravljenje vikija na farmi',
 );
 
 /** Swati (SiSwati)
@@ -7742,10 +7762,13 @@ $messages['zh-hant'] = array(
 	'farmer-basic-description' => '描述',
 	'farmer-basic-description-text' => '在下面設定你的 wiki 的描述',
 	'farmer-basic-permission' => '權限',
+	'farmer-basic-permission-text' => '使用下面的表格，它是可以修改此維基的用戶的權限。',
 	'farmer-basic-permission-visitor' => '用於每個訪問者的權限',
+	'farmer-basic-permission-visitor-text' => '下列權限將應用於每個用戶訪問此維基的人',
 	'farmer-yes' => '是',
 	'farmer-no' => '否',
 	'farmer-basic-permission-user' => '用於已登入用戶的權限',
+	'farmer-basic-permission-user-text' => '下列權限將應用於已登錄到此維基的每一個人',
 	'farmer-setpermission' => '設定權限',
 	'farmer-defaultskin' => '預設外觀',
 	'farmer-defaultskin-button' => '設為預設外觀',
@@ -7754,6 +7777,7 @@ $messages['zh-hant'] = array(
 	'farmer-extensions-extension-denied' => '你沒有使用這個功能的權限。
 你必須是 farmeradmin 群組的成員',
 	'farmer-extensions-invalid' => '無效的擴充套件',
+	'farmer-extensions-invalid-text' => '我們不能添加的擴展是因為找不到包含選定的文件',
 	'farmer-extensions-available' => '可用的擴充套件',
 	'farmer-extensions-noavailable' => '沒有註冊的擴充套件',
 	'farmer-extensions-register' => '註冊擴充套件',
