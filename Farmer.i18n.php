@@ -5058,7 +5058,7 @@ Når ei utviding er registrert, vil alle wikiane kunna nytta seg av ho.',
  * @author Jon Harald Søby
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'farmer' => 'Farmer',
 	'farmer-desc' => 'Hold en MediaWiki-farm ved like',
 	'farmercantcreatewikis' => 'Du kan ikke opprette wikier fordi du ikke har de riktige rettighetene',
