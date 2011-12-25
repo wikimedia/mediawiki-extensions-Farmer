@@ -28,6 +28,11 @@ $specialPageAliases['arz'] = array(
 	'Farmer' => array( 'فلاح' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'Farmer' => array( 'کشاورز' ),
+);
+
 /** Franco-Provençal (Arpetan) */
 $specialPageAliases['frp'] = array(
 	'Farmer' => array( 'Grangiér' ),
@@ -83,6 +88,11 @@ $specialPageAliases['myv'] = array(
 	'Farmer' => array( 'Фермер' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'Farmer' => array( 'Bonde' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'Farmer' => array( 'WikiBoerderieje' ),
@@ -91,11 +101,6 @@ $specialPageAliases['nds-nl'] = array(
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'Farmer' => array( 'Wikifarm' ),
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'Farmer' => array( 'Bonde' ),
 );
 
 /** Romanian (Română) */
@@ -122,8 +127,3 @@ $specialPageAliases['tr'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'Farmer' => array( '農場' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
