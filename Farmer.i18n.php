@@ -7567,6 +7567,7 @@ $messages['yi'] = array(
 	'farmer-delete-form' => 'אויסקלויבן א וויקי',
 	'farmer-delete-form-submit' => 'אויסמעקן',
 	'farmer-basic-title1' => 'טיטל',
+	'farmer-no' => 'ניין',
 	'farmer-extensions-register-name' => 'נאָמען',
 );
 
