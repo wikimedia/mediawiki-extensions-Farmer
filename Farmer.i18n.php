@@ -5314,6 +5314,11 @@ S’es plan çò que volètz, clicatz sul boton '''Confirmar''' çaijós.",
  * @author Psubhashish
  */
 $messages['or'] = array(
+	'farmercreatesitename' => 'ସାଇଟ ନାମ',
+	'farmercreatenextstep' => 'ପର ସୋପାନ',
+	'farmer-about' => 'ବିଷୟରେ',
+	'farmer-list-wiki' => 'ଉଇକିଗୁଡିକର ତାଲିକା',
+	'farmer-createwiki' => 'ଗୋଟିଏ ଉଇକି ତିଆରି କରିବେ',
 	'farmer-confirmsetting-title' => 'ଶିରୋନାମା',
 	'farmer-createwiki-form-help' => 'ସହଯୋଗ',
 	'farmer-createwiki-user' => 'ବ୍ୟବହାରକାରୀ ନାମ',
