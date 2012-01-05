@@ -6329,13 +6329,13 @@ $messages['sl'] = array(
 $messages['sr-ec'] = array(
 	'farmer' => 'Фармер',
 	'farmer-desc' => 'Управљање фармом Медијавикија',
-	'farmercantcreatewikis' => 'Немате createwikis дозволу да правите викије.',
+	'farmercantcreatewikis' => 'Не можете да направите вики јер немате дозволу за то',
 	'farmercreateurl' => 'Адреса',
 	'farmercreatesitename' => 'Назив сајта',
 	'farmercreatenextstep' => 'Следећи корак',
 	'farmernewwikimainpage' => '== Добро дошли на своју викију ==
-Ако ово читате, ваша викија је инсталирана.
-Можете да је подесите [[Special:Farmer|овде]].',
+Ако ово читате, ваш вики је инсталиран.
+Можете да га подесите [[Special:Farmer|овде]].',
 	'farmer-about' => 'О проширењу',
 	'farmer-about-text' => 'Ово проширење вам омогућава да управљате фармом викија.',
 	'farmer-list-wiki' => 'Списак викија',
