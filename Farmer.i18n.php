@@ -7579,6 +7579,7 @@ $messages['yi'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gzdavidwong
  * @author Hydra
+ * @author Hzy980512
  * @author Liangent
  * @author PhiLiP
  * @author Wmr89502270
@@ -7624,11 +7625,25 @@ $messages['zh-hans'] = array(
 	'farmer-confirmsetting-description' => '说明',
 	'farmer-confirmsetting-reason' => '原因',
 	'farmer-description' => '说明',
+	'farmer-confirmsetting-text' => "您的维基'''$1'''将可以从$3进入。
+项目名字空间将为'''$2'''。
+链接至改名字空间的格式将为'''<nowiki>[[$2:页面名称]]</nowiki>'''。
+确认无误后，请点击“确认”按钮。",
 	'farmer-button-confirm' => '确认',
 	'farmer-button-submit' => '提交',
 	'farmer-createwiki-form-title' => '创建一个wiki',
 	'farmer-createwiki-form-text1' => '使用下面的表单来创建一个新的wiki。',
 	'farmer-createwiki-form-help' => '帮助',
+	'farmer-createwiki-form-text2' => "; 维基名称：该维基的名称。
+只包含字母和数字。
+维基名称将作为子域名的一部分来指向您的维基。
+例如，输入'''title'''作为名称，您的维基将需要使用<nowiki>http://</nowiki>'''title'''.mydomain来进入。",
+	'farmer-createwiki-form-text3' => '; 维基标题：该维基的标题。
+它将显示于您维基中的所有页面。
+并且也会用作项目名字空间以及跨维基前缀。',
+	'farmer-createwiki-form-text4' => '; 描述：该维基的描述。
+描述该维基的文字。
+将显示于维基列表中。',
 	'farmer-createwiki-user' => '用户名',
 	'farmer-createwiki-name' => 'Wiki名称',
 	'farmer-createwiki-title' => 'Wiki标题',
@@ -7677,6 +7692,7 @@ $messages['zh-hans'] = array(
 	'farmer-extensions-register' => '注册扩展',
 	'farmer-extensions-register-text1' => '使用下面的表单来为农场注册一个新的扩展。
 一旦一个扩展被注册，所有的wiki都可以使用它。',
+	'farmer-extensions-register-text3' => "若文件名包含'''\$root'''，则那个变量将用于代替MediaWiki的根目录。",
 	'farmer-extensions-register-text4' => '目前的包含路径是：',
 	'farmer-extensions-register-name' => '名称',
 	'farmer-extensions-register-includefile' => '包括文件',
