@@ -7561,6 +7561,7 @@ $messages['wuu'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'farmer-about' => 'וועגן',
 	'farmer-confirmsetting-name' => 'נאָמען',
 	'farmer-confirmsetting-title' => 'טיטל',
 	'farmer-confirmsetting-description' => 'באַשרייַבונג',
