@@ -4931,6 +4931,13 @@ $messages['nds'] = array(
 	'farmer-extensions-register-name' => 'Naam',
 );
 
+/** Nepali (नेपाली)
+ * @author RajeshPandey
+ */
+$messages['ne'] = array(
+	'farmer-createwiki-user' => 'प्रयोगकर्ता नाम',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
