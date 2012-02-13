@@ -1532,6 +1532,13 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 	'farmer-extensions-register-text2' => "Geben Sie den Namen der PHP-Datei im ''Include file''-Parameter so an, wie Sie ihn in LocalSettings.php angeben würden.",
 );
 
+/** Zazaki (Zazaki)
+ * @author Mirzali
+ */
+$messages['diq'] = array(
+	'farmer-mainpage' => 'Pela Seri',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -6394,8 +6401,8 @@ $messages['sr-ec'] = array(
 Овде би требало да буде опис викије.
 Ово ће бити приказано у списку викија.',
 	'farmer-createwiki-user' => 'Корисничко име',
-	'farmer-createwiki-name' => 'Назив викије',
-	'farmer-createwiki-title' => 'Наслов викије',
+	'farmer-createwiki-name' => 'Назив викија',
+	'farmer-createwiki-title' => 'Наслов викија',
 	'farmer-createwiki-description' => 'Опис',
 	'farmer-createwiki-reason' => 'Разлог',
 	'farmer-updatedlist' => 'Ажуриран списак',
