@@ -6458,7 +6458,7 @@ $messages['sr-ec'] = array(
 	'farmer-log-name' => 'Извештај фарме',
 	'farmer-log-header' => 'Ово је списак измена фарме.',
 	'farmer-log-create' => '{{GENDER:|је направио|је направила|направи}} „$2“ викију',
-	'farmer-log-delete' => '{{GENDER:|је обрисао|је обрисала|обриса}} „$2“ викију',
+	'farmer-log-delete' => '{{GENDER:|је обрисао|је обрисала|је обрисао}} вики „$2“',
 	'right-farmeradmin' => 'управљање фармом викије',
 	'right-createwiki' => 'прављење викија на фарми',
 );
