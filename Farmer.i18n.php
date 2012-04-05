@@ -2589,6 +2589,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  * @author J. 'mach' wust
  */
@@ -2635,7 +2636,7 @@ Bitte gang zrugg un versuech s mit eme andere Name",
 	'farmer-description' => 'Bschryybig',
 	'farmer-confirmsetting-text' => "Dyy Wiki, '''$1''', wird iber $3 erreichbar syy.
 Dr Projektnamensruum wird '''$2''' heiße.
-Gleicher zue däm Namensruum wäre d Gstalt '''<nowiki>[[$2:Page name]]</nowiki>''' haa.
+Links zue däm Namensruum wäre d Gstalt '''<nowiki>[[$2:Page name]]</nowiki>''' haa.
 Wänn alles korräkt isch, no bstätig des mit eme Druck uf '''Bstätige'''.",
 	'farmer-button-confirm' => 'Bstätige',
 	'farmer-button-submit' => 'Abschicke',
@@ -6458,7 +6459,7 @@ $messages['sr-ec'] = array(
 	'farmer-log-name' => 'Извештај фарме',
 	'farmer-log-header' => 'Ово је списак измена фарме.',
 	'farmer-log-create' => '{{GENDER:|је направио|је направила|направи}} „$2“ викију',
-	'farmer-log-delete' => '{{GENDER:|је обрисао|је обрисала|је обрисао}} вики „$2“',
+	'farmer-log-delete' => '{{GENDER:|је обрисао|је обрисала|обриса}} вики „$2“',
 	'right-farmeradmin' => 'управљање фармом викије',
 	'right-createwiki' => 'прављење викија на фарми',
 );
