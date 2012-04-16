@@ -5389,10 +5389,13 @@ $messages['pdt'] = array(
 );
 
 /** Pälzisch (Pälzisch)
+ * @author Manuae
  * @author Xqt
  */
 $messages['pfl'] = array(
 	'farmer-delete-form-submit' => 'Lesche',
+	'farmer-yes' => 'Ja',
+	'farmer-no' => 'Nä',
 );
 
 /** Polish (Polski)
