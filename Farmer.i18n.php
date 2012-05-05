@@ -3676,6 +3676,7 @@ Una volta che l'estensione sarà stata registrata, tutte le wiki potranno usarla
  * @author Fryed-peach
  * @author Hosiryuhosi
  * @author JtFuruhata
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
@@ -3785,8 +3786,8 @@ $messages['ja'] = array(
 	'farmer-log-header' => 'これはウィキファームに対してなされた変更の記録です。',
 	'farmer-log-create' => 'ウィキ「$2」を作成しました',
 	'farmer-log-delete' => 'ウィキ「$2」を削除しました',
-	'right-farmeradmin' => 'ウィキファームを管理する',
-	'right-createwiki' => 'ウィキファーム内にウィキを作成する',
+	'right-farmeradmin' => 'ウィキファームを管理',
+	'right-createwiki' => 'ウィキファーム内にウィキを作成',
 );
 
 /** Javanese (Basa Jawa)
@@ -5821,6 +5822,7 @@ Uma vez registada, todas as wikis podem usar a extensão.',
  * @author Crazymadlover
  * @author Eduardo.mps
  * @author Giro720
+ * @author Jaideraf
  */
 $messages['pt-br'] = array(
 	'farmer' => 'Farmer',
@@ -5882,7 +5884,7 @@ Se é isto que pretende, pressione o botão '''confirmar''' abaixo.",
 	'farmer-permissiondenied' => 'Permissão negada',
 	'farmer-permissiondenied-text' => 'Não tem permissão para apagar um wiki da "farm"',
 	'farmer-permissiondenied-text1' => 'Não tem permissão para acessar esta página',
-	'farmer-deleting' => 'A wiki "$1" foi removida',
+	'farmer-deleting' => 'O wiki "$1" foi removido',
 	'farmer-delete-confirm' => 'Eu confirmo que pretendo eliminar este wiki',
 	'farmer-delete-confirm-wiki' => "Wiki a apagar: '''$1'''.",
 	'farmer-delete-reason' => 'Motivo da eliminação:',
