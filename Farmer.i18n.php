@@ -1536,7 +1536,9 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'farmer-confirmsetting-name' => 'Name',
 	'farmer-mainpage' => 'Pela Seri',
+	'farmer-extensions-register-name' => 'Name',
 );
 
 /** Lower Sorbian (Dolnoserbski)
