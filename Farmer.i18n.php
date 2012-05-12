@@ -2388,7 +2388,7 @@ $messages['frp'] = array(
 	'farmer-basic-permission-visitor' => 'Pèrmissions por châque visitor',
 	'farmer-yes' => 'Ouè',
 	'farmer-no' => 'Nan',
-	'farmer-basic-permission-user' => 'Pèrmissions por los utilisators encartâs',
+	'farmer-basic-permission-user' => 'Pèrmissions por los usanciérs encartâs',
 	'farmer-setpermission' => 'Dèfenir les pèrmissions',
 	'farmer-defaultskin' => 'Habelyâjo per dèfôt',
 	'farmer-defaultskin-button' => 'Dèfenir l’habelyâjo per dèfôt',
@@ -4325,7 +4325,7 @@ $messages['mk'] = array(
 На пример, ако внесете '''title''', тогаш вашето вики ќе биде достапно преку <nowiki>http://</nowiki>'''title'''.mydomain.",
 	'farmer-createwiki-form-text3' => '; Наслов на викито: Насловот за викито.
 Ќе се користи во насловот на секоја страница на вашето вики.
-Ова ќе биде и именски простор на проектот, како и интервики префикс.',
+Ова ќе биде и именски простор на проектот, како и меѓувики-префикс.',
 	'farmer-createwiki-form-text4' => '; Опис: Опис на викито.
 Ова е текстуален опис на викито.
 Ова ќе се прикаже во списокот на викија.',
@@ -5068,6 +5068,7 @@ U moet lid zijn van de groep ''farmeradmin''.",
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'farmer' => 'Handsam wikisamling',
@@ -6960,7 +6961,7 @@ $messages['tg-cyrl'] = array(
 	'farmer-error-noextwrite' => 'Қобили навиштани парвандаи афзуна нест:',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -7269,7 +7270,7 @@ $messages['ug-arab'] = array(
 	'farmer-createwiki-user' => 'ئىشلەتكۇچى ئىسمى',
 );
 
-/** Uyghur (Latin script) (Uyghurche‎)
+/** Uyghur (Latin script) (Uyghurche)
  * @author Jose77
  */
 $messages['ug-latn'] = array(
@@ -7334,7 +7335,7 @@ $messages['ur'] = array(
 	'farmer-createwiki-reason' => 'وجہ',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
