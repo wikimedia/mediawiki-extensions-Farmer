@@ -1533,11 +1533,18 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Mirzali
  */
 $messages['diq'] = array(
 	'farmer-confirmsetting-name' => 'Name',
+	'farmer-createwiki-form-help' => 'Peşti',
+	'farmer-delete-form-submit' => 'Besterne',
+	'farmer-listofwikis' => 'Listey wikiyan',
 	'farmer-mainpage' => 'Pela Seri',
+	'farmer-basic-title1' => 'Sername',
+	'farmer-yes' => 'E',
+	'farmer-no' => 'Nê',
 	'farmer-extensions-register-name' => 'Name',
 );
 
@@ -6467,7 +6474,7 @@ $messages['sr-ec'] = array(
 	'farmer-log-name' => 'Извештај фарме',
 	'farmer-log-header' => 'Ово је списак измена фарме.',
 	'farmer-log-create' => '{{GENDER:|је направио|је направила|направи}} „$2“ викију',
-	'farmer-log-delete' => '{{GENDER:|је обрисао|је обрисала|обриса}} вики „$2“',
+	'farmer-log-delete' => '{{GENDER:|је обрисао|је обрисала|је обрисао}} вики „$2“',
 	'right-farmeradmin' => 'управљање фармом викије',
 	'right-createwiki' => 'прављење викија на фарми',
 );
