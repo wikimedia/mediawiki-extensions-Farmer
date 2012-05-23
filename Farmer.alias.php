@@ -68,6 +68,11 @@ $specialPageAliases['ksh'] = array(
 	'Farmer' => array( 'StallVollWikis', 'WikiStall' ),
 );
 
+/** Cornish (Kernowek) */
+$specialPageAliases['kw'] = array(
+	'Farmer' => array( 'Tiek' ),
+);
+
 /** Ladino (Ladino) */
 $specialPageAliases['lad'] = array(
 	'Farmer' => array( 'Agricultor' ),
@@ -121,6 +126,11 @@ $specialPageAliases['tl'] = array(
 /** Turkish (Türkçe) */
 $specialPageAliases['tr'] = array(
 	'Farmer' => array( 'Çiftçi' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$specialPageAliases['zh-hans'] = array(
+	'Farmer' => array( '农场' ),
 );
 
 /** Traditional Chinese (‪中文(繁體)‬) */
