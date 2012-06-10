@@ -394,6 +394,7 @@ $messages['an'] = array(
 );
 
 /** Arabic (العربية)
+ * @author Bassem JARKAS
  * @author Meno25
  * @author OsamaK
  */
@@ -513,7 +514,7 @@ $messages['ar'] = array(
 	'farmer-error-exists' => 'لم يمكن إنشاء الويكي.  هو موجود بالفعل: $1',
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
 	'farmer-log-name' => 'سجل مزرعة الويكي',
-	'farmer-log-header' => 'هذا سجل بالتغييرات المعمولة لمزرعة الويكي.',
+	'farmer-log-header' => 'هذا سجل بالتغييرات التي أجريت لمزرعة الويكي.',
 	'farmer-log-create' => 'أنشأ الويكي "$2"',
 	'farmer-log-delete' => 'حذف الويكي "$2"',
 	'right-farmeradmin' => 'أدر مزرعة الويكي',
@@ -3733,7 +3734,9 @@ $messages['ja'] = array(
 	'farmer-createwiki-form-text1' => '新しいウィキを作成するには以下のフォームを使ってください。',
 	'farmer-createwiki-form-help' => 'ヘルプ',
 	'farmer-createwiki-form-text2' => "; ウィキ名: ウィキの名前。
-文字と数字のみから成る。ウィキ名はあなたのウィキを識別するURLの一部として使われます。例えば、'''title''' と入力すると、あなたのウィキは <nowiki>http://</nowiki>'''title'''.mydomain というような形式でアクセスされます。",
+英数字のみで構成されます。
+ウィキ名は、あなたのウィキを識別する URL の一部として使用されます。
+例えば、'''title''' と入力すると、あなたのウィキは <nowiki>http://</nowiki>'''title'''.mydomain という形式でアクセスされます。",
 	'farmer-createwiki-form-text3' => '; ウィキタイトル: ウィキのタイトル。
 あなたのウィキのすべてのページのタイトルで使われます。また、プロジェクト名前空間とインターウィキ接頭辞にもなります。',
 	'farmer-createwiki-form-text4' => '; 概要: ウィキの概要。
@@ -3773,8 +3776,8 @@ $messages['ja'] = array(
 	'farmer-basic-permission-user' => 'ログイン利用者への許可',
 	'farmer-basic-permission-user-text' => '以下の許可はこのウィキにログインしているすべての人に適用されます',
 	'farmer-setpermission' => '許可を設定',
-	'farmer-defaultskin' => 'デフォルトのスキン',
-	'farmer-defaultskin-button' => 'デフォルトのスキンを設定',
+	'farmer-defaultskin' => '既定の外装',
+	'farmer-defaultskin-button' => '既定の外装を設定',
 	'farmer-extensions' => '利用する拡張機能',
 	'farmer-extensions-button' => '利用する拡張機能を設定',
 	'farmer-extensions-extension-denied' => 'あなたにはこの機能を使う許可がありません。ウィキファームの管理者グループ (farmeradmin) の一員である必要があります',
