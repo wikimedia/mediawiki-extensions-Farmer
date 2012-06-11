@@ -28,12 +28,17 @@ $specialPageAliases['arz'] = array(
 	'Farmer' => array( 'فلاح' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'Farmer' => array( 'Reçber' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'Farmer' => array( 'کشاورز' ),
 );
 
-/** Franco-Provençal (Arpetan) */
+/** Franco-Provençal (arpetan) */
 $specialPageAliases['frp'] = array(
 	'Farmer' => array( 'Grangiér' ),
 );
@@ -48,7 +53,7 @@ $specialPageAliases['ht'] = array(
 	'Farmer' => array( 'Kiltivatè' ),
 );
 
-/** Interlingua (Interlingua) */
+/** Interlingua (interlingua) */
 $specialPageAliases['ia'] = array(
 	'Farmer' => array( 'Fermero' ),
 );
@@ -63,12 +68,17 @@ $specialPageAliases['ja'] = array(
 	'Farmer' => array( 'ウィキファーム管理' ),
 );
 
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'Farmer' => array( '농부' ),
+);
+
 /** Colognian (Ripoarisch) */
 $specialPageAliases['ksh'] = array(
 	'Farmer' => array( 'StallVollWikis', 'WikiStall' ),
 );
 
-/** Cornish (Kernowek) */
+/** Cornish (kernowek) */
 $specialPageAliases['kw'] = array(
 	'Farmer' => array( 'Tiek' ),
 );
@@ -78,7 +88,7 @@ $specialPageAliases['lad'] = array(
 	'Farmer' => array( 'Agricultor' ),
 );
 
-/** Macedonian (Македонски) */
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'Farmer' => array( 'Фармер' ),
 );
@@ -93,7 +103,7 @@ $specialPageAliases['myv'] = array(
 	'Farmer' => array( 'Фермер' ),
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $specialPageAliases['nb'] = array(
 	'Farmer' => array( 'Bonde' ),
 );
@@ -108,12 +118,12 @@ $specialPageAliases['nl'] = array(
 	'Farmer' => array( 'Wikifarm' ),
 );
 
-/** Romanian (Română) */
+/** Romanian (română) */
 $specialPageAliases['ro'] = array(
 	'Farmer' => array( 'Fermier' ),
 );
 
-/** Slovak (Slovenčina) */
+/** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'Farmer' => array( 'Farma' ),
 );
@@ -128,12 +138,12 @@ $specialPageAliases['tr'] = array(
 	'Farmer' => array( 'Çiftçi' ),
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文（简体）‬) */
 $specialPageAliases['zh-hans'] = array(
 	'Farmer' => array( '农场' ),
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $specialPageAliases['zh-hant'] = array(
 	'Farmer' => array( '農場' ),
 );
