@@ -670,7 +670,7 @@ $messages['arz'] = array(
 	'farmer-error-noextwrite' => 'غير قادر على كتابة ملف الامتداد:',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  * @author Wertuose
  */
@@ -693,7 +693,7 @@ $messages['az'] = array(
 	'farmer-extensions-register-name' => 'Ad',
 );
 
-/** Belarusian (Беларуская)
+/** Belarusian (беларуская)
  * @author Тест
  */
 $messages['be'] = array(
@@ -830,7 +830,7 @@ $messages['be-tarask'] = array(
 	'right-createwiki' => 'стварэньне вікі на вікі-фэрме',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author Borislav
  * @author DCLXVI
  */
@@ -992,7 +992,7 @@ $messages['bn'] = array(
 	'right-farmeradmin' => 'উইকি ফার্ম ব্যবস্থাপনা',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fohanno
  * @author Fulup
  * @author Y-M D
@@ -1118,7 +1118,7 @@ Ur wech enrollet an astenn e c'hello an holl wikioù implijout anezhi.",
 	'right-createwiki' => 'Krouiñ wikioù er feurm wiki',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -1212,7 +1212,7 @@ Morate biti član grupe farmeradmin',
 	'right-createwiki' => 'Pravljenje wikija u wiki farmi',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Jordi Roqué
  * @author Paucabot
  * @author SMP
@@ -1259,7 +1259,7 @@ $messages['ch'] = array(
 	'farmer-mainpage' => 'Fanhaluman',
 );
 
-/** Sorani (کوردی) */
+/** Sorani Kurdish (کوردی) */
 $messages['ckb'] = array(
 	'farmer-confirmsetting-reason' => 'هۆکار',
 	'farmer-button-confirm' => 'پشتدار بکەرەوە',
@@ -1268,7 +1268,7 @@ $messages['ckb'] = array(
 	'farmer-delete-form-submit' => 'سڕینەوە',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Jkjk
  * @author Matěj Grabovský
  */
@@ -1342,7 +1342,7 @@ $messages['cu'] = array(
 	'farmer-no' => 'нѣ́тъ',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Jon Harald Søby
  */
 $messages['da'] = array(
@@ -1674,7 +1674,7 @@ Gaž rozšyrjenje je zregistrěrowane, wše wikije mógu jo wužywaś.',
 	'right-createwiki' => 'Wikije we wikijowej farmje napóraś',
 );
 
-/** Ewe (Eʋegbe) */
+/** Ewe (eʋegbe) */
 $messages['ee'] = array(
 	'farmer-list-wiki' => 'Wikiwo ƒe xexlẽme',
 	'farmer-createwiki-form-help' => 'Kpekpeɖeŋu',
@@ -1846,7 +1846,7 @@ Vi nepre estu membro de la ''farmeradmin'' grupo.",
 	'farmer-log-delete' => 'forigis la vikion "$2"',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Fitoschido
  * @author Imre
@@ -1977,7 +1977,7 @@ Una vez que la extensión ha sido registrada, todas las wikis podrán utilizarla
 	'right-createwiki' => 'Crear wikis en la granja wiki',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Pikne
  * @author Silvar
  */
@@ -2007,7 +2007,7 @@ $messages['et'] = array(
 	'farmer-basic-title1' => 'Pealkiri',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  * @author Theklan
@@ -2086,7 +2086,7 @@ $messages['fa'] = array(
 	'farmer-extensions-register-name' => 'نام',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
@@ -2215,7 +2215,7 @@ Kun laajennus on rekisteröity, kaikki wikit voivat käyttää sitä.',
 	'right-createwiki' => 'Luoda wikejä wikifarmiin',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Dereckson
  * @author Grondin
@@ -2336,7 +2336,7 @@ Si c’est bien ce que vous voulez, cliquez sur le bouton '''Confirmer''' ci-des
 	'right-createwiki' => 'Créer des wikis dans la ferme de wikis',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author Cedric31
  * @author ChrisPtDe
  */
@@ -3038,7 +3038,7 @@ $messages['hil'] = array(
 	'farmer-mainpage' => 'Mayor nga Panid',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  */
 $messages['hr'] = array(
@@ -3160,7 +3160,7 @@ Jeli to je to, štož chceš, stłóč deleka tłóčatko '''potwjerdźić'''.",
 	'right-createwiki' => 'Wikije we wikijowej farmje wutworić',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Dorgan
  * @author Glanthor Reviol
@@ -3275,7 +3275,7 @@ Ha ez az, amit szeretnél, akkor kattints a '''megerősítés''' gombra.",
 	'right-createwiki' => 'wikik létrehozása a wikifarmon',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -3547,7 +3547,7 @@ $messages['io'] = array(
 	'farmer-yes' => 'Yes',
 );
 
-/** Icelandic (Íslenska)
+/** Icelandic (íslenska)
  * @author S.Örvarr.S
  */
 $messages['is'] = array(
@@ -3555,7 +3555,7 @@ $messages['is'] = array(
 	'farmer-createwiki-user' => 'Notandanafn',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Darth Kule
  * @author Pietrodn
  */
@@ -4242,21 +4242,21 @@ Dir musst dofir Member vum Grupp vun den Administrateure sinn.',
 	'right-farmeradmin' => 'Wiki-Farm geréieren',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Tomasdd
  */
 $messages['lt'] = array(
 	'farmer-delete-form-submit' => 'Ištrinti',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
 	'farmer-about' => 'Ap',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author GreenZeb
  */
 $messages['lv'] = array(
@@ -4277,7 +4277,7 @@ $messages['mhr'] = array(
 	'farmer-mainpage' => 'Тӱҥ лаштык',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -4507,7 +4507,7 @@ $messages['ml'] = array(
 	'farmer-error-exists' => 'വിക്കി സൃഷ്ടിക്കുന്നതിനു കഴിഞ്ഞില്ല. അതു ഇപ്പോഴെ നിലവിലുണ്ട്: $1',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -5074,7 +5074,7 @@ U moet lid zijn van de groep ''farmeradmin''.",
 	'right-createwiki' => "Wiki's aanmaken in de wikifarm",
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -5222,7 +5222,7 @@ $messages['nso'] = array(
 	'farmer-extensions-register-name' => 'Leina',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -5422,7 +5422,7 @@ $messages['pfl'] = array(
 	'farmer-no' => 'Nä',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Equadus
  * @author Leinad
@@ -5721,7 +5721,7 @@ $messages['ps'] = array(
 	'farmer-extensions-register-name' => 'نوم',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  * @author Waldir
@@ -5841,7 +5841,7 @@ Uma vez registada, todas as wikis podem usar a extensão.',
 	'right-createwiki' => 'Criar wikis na fazenda',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Crazymadlover
  * @author Eduardo.mps
  * @author Giro720
@@ -5967,7 +5967,7 @@ $messages['rif'] = array(
 	'farmer-mainpage' => 'Tasbtirt Tamzwarut',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author KlaudiuMihaila
  * @author Stelistcristi
@@ -6051,7 +6051,7 @@ Puteţi schimba privilegile utilizatorilor prin $1',
 	'farmer-log-delete' => 'șters wiki "$2"',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -6072,7 +6072,7 @@ $messages['roa-tara'] = array(
 	'farmer-extensions-register-name' => 'Nome',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Innv
  * @author Kaganer
@@ -6205,7 +6205,7 @@ $messages['rue'] = array(
 	'farmer-createwiki-reason' => 'Причіна',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
@@ -6220,14 +6220,14 @@ $messages['scn'] = array(
 	'farmer-extensions-register-name' => 'Nomu',
 );
 
-/** Serbo-Croatian (Srpskohrvatski)
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
  * @author OC Ripper
  */
 $messages['sh'] = array(
 	'farmer-button-submit' => 'Unesi',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -6340,7 +6340,7 @@ Ak je toto čo chcete, stlačte tlačidlo '''Potvrdiť''' dolu.",
 	'right-createwiki' => 'Vytvára wiki vo wiki farme',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -6362,7 +6362,7 @@ $messages['sl'] = array(
 	'farmer-no' => 'Ne',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Sasa Stefanovic
@@ -6492,7 +6492,7 @@ $messages['sr-ec'] = array(
 	'right-createwiki' => 'прављење викија на фарми',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Жељко Тодоровић
  */
@@ -6648,7 +6648,7 @@ $messages['su'] = array(
 	'farmer-basic-description' => 'Pedaran',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Jon Harald Søby
  * @author Lejonel
  * @author M.M.S.
@@ -6870,7 +6870,7 @@ $messages['te'] = array(
 	'farmer-error-noextwrite' => 'పొడగింత ఫైలుని వ్రాయలేకున్నాం:',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -6888,7 +6888,7 @@ $messages['tet'] = array(
 	'farmer-extensions-register-name' => 'Naran',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -6981,7 +6981,7 @@ $messages['tg-cyrl'] = array(
 	'farmer-error-noextwrite' => 'Қобили навиштани парвандаи афзуна нест:',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -7297,7 +7297,7 @@ $messages['ug-latn'] = array(
 	'farmer-createwiki-user' => 'Ishletkuchi ismi',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Prima klasy4na
  * @author Тест
@@ -7620,7 +7620,7 @@ $messages['yi'] = array(
 	'farmer-extensions-register-name' => 'נאָמען',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Gzdavidwong
  * @author Hydra
  * @author Hzy980512
@@ -7750,7 +7750,7 @@ $messages['zh-hans'] = array(
 	'right-createwiki' => '在wiki农场中创建wiki',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Alexsh
  * @author Liangent
  * @author Mark85296341
