@@ -28,6 +28,11 @@ $specialPageAliases['arz'] = array(
 	'Farmer' => array( 'فلاح' ),
 );
 
+/** Assamese (অসমীয়া) */
+$specialPageAliases['as'] = array(
+	'Farmer' => array( 'খেতিয়ক' ),
+);
+
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
 	'Farmer' => array( 'Reçber' ),
