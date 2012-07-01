@@ -373,7 +373,7 @@ $messages['am'] = array(
 	'farmer-extensions-register-name' => 'ስም',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -703,7 +703,7 @@ $messages['be'] = array(
 	'farmer-createwiki-reason' => 'Прычына',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Zedlik
@@ -1333,7 +1333,7 @@ Tento text bude zobrazen v seznamu wiki.',
 	'farmer-extensions-register-name' => 'Název',
 );
 
-/** Church Slavic (Словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
@@ -1549,7 +1549,7 @@ $messages['diq'] = array(
 	'farmer-extensions-register-name' => 'Name',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -2432,7 +2432,7 @@ $messages['fy'] = array(
 	'farmer-yes' => 'Ja',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  * @author Xosé
@@ -3047,7 +3047,7 @@ $messages['hr'] = array(
 	'farmer-no' => 'Ne',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -6190,7 +6190,7 @@ $messages['ru'] = array(
 	'right-createwiki' => 'создание вики на вики-ферме',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -6763,7 +6763,7 @@ Du måste vara medlem av användargruppen farmeradmin',
 	'farmer-log-delete' => 'raderat wikin "$2"',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Herr Kriss
  */
 $messages['szl'] = array(
