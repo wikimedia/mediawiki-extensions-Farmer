@@ -50,7 +50,7 @@ $specialPageAliases['frp'] = array(
 
 /** Gujarati (ગુજરાતી) */
 $specialPageAliases['gu'] = array(
-	'Farmer' => array( 'ખેડુત' ),
+	'Farmer' => array( 'ખેડૂત' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */
