@@ -1242,7 +1242,7 @@ $messages['ca'] = array(
 	'farmer-extensions-register-name' => 'Nom',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -4312,7 +4312,7 @@ $messages['lv'] = array(
 	'farmer-createwiki-reason' => 'Iemesls',
 );
 
-/** Eastern Mari (Олык Марий)
+/** Eastern Mari (олык марий)
  * @author Сай
  */
 $messages['mhr'] = array(
@@ -4811,7 +4811,7 @@ $messages['mwl'] = array(
 	'farmer-mainpage' => 'Páigina Percipal',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  * @author Sura
  */
@@ -4866,11 +4866,11 @@ $messages['nah'] = array(
 	'farmer-extensions-register-name' => 'Tōcāitl',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Audun
  * @author Harald Khan
- * @author Jon Harald Søby
  * @author Nghtwlkr
+ * @author Njardarlogar
  */
 $messages['nb'] = array(
 	'farmer' => 'Farmer',
@@ -7400,7 +7400,7 @@ $messages['ur'] = array(
 	'farmer-createwiki-reason' => 'وجہ',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(

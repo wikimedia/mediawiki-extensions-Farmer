@@ -103,7 +103,7 @@ $specialPageAliases['mr'] = array(
 	'Farmer' => array( 'शेतकरी' ),
 );
 
-/** Erzya (Эрзянь) */
+/** Erzya (эрзянь) */
 $specialPageAliases['myv'] = array(
 	'Farmer' => array( 'Фермер' ),
 );
