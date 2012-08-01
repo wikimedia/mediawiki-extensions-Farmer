@@ -1538,7 +1538,9 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'farmer-wikicreated' => 'Wikiy vıraziyê',
 	'farmer-confirmsetting-name' => 'Name',
+	'farmer-confirmsetting-title' => 'Sername',
 	'farmer-createwiki-form-help' => 'Peşti',
 	'farmer-delete-form-submit' => 'Besterne',
 	'farmer-listofwikis' => 'Listey wikiyan',
@@ -1546,6 +1548,8 @@ $messages['diq'] = array(
 	'farmer-basic-title1' => 'Sername',
 	'farmer-yes' => 'E',
 	'farmer-no' => 'Nê',
+	'farmer-defaultskin' => 'Asayışo hesıbyayê',
+	'farmer-defaultskin-button' => 'Hesıbyayê asayışi mor ke',
 	'farmer-extensions-register-name' => 'Name',
 );
 
