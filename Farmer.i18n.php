@@ -7268,6 +7268,13 @@ Kapag naipatala na ang isang karugtong, magagamit na ito ng lahat ng mga wiki.',
 	'right-createwiki' => 'Lumikha ng mga wiki sa loob ng sakahan ng wiki',
 );
 
+/** толышә зывон (толышә зывон)
+ * @author Erdemaslancan
+ */
+$messages['tly'] = array(
+	'farmer-createwiki-form-help' => 'Арајиш',
+);
+
 /** Turkish (Türkçe)
  * @author Karduelis
  * @author Mach
