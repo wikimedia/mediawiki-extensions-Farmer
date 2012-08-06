@@ -7150,6 +7150,7 @@ $messages['tl'] = array(
 	'farmer' => 'Magsasaka (tagapaglinang)',
 	'farmer-desc' => 'Pamahalaan ang isang linangan o "bukid" ng MediaWiki',
 	'farmercantcreatewikis' => 'Hindi mo nakayanang lumikha ng mga wiki kasi wala kang pribilehiyong lumikha ng mga wiki',
+	'farmercreateurl' => 'URL',
 	'farmercreatesitename' => 'Pangalan ng sityo',
 	'farmercreatenextstep' => 'Susunod na hakbang',
 	'farmernewwikimainpage' => '== Maligayang pagdating sa iyong wiki ==
