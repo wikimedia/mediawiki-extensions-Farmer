@@ -1269,6 +1269,7 @@ $messages['ckb'] = array(
 );
 
 /** Czech (česky)
+ * @author Chmee2
  * @author Jkjk
  * @author Matěj Grabovský
  */
@@ -1325,11 +1326,22 @@ Tento text bude zobrazen v seznamu wiki.',
 	'farmer-permissiondenied' => 'Nedostatečné oprávnění',
 	'farmer-permissiondenied-text' => 'Nemáte oprávnění smazat wiki z farmy',
 	'farmer-permissiondenied-text1' => 'Nemáte oprávnění k přístupu na tuto stránku',
+	'farmer-delete-form' => 'Zvolte wiki',
 	'farmer-delete-form-submit' => 'Smazat',
+	'farmer-listofwikis' => 'Seznam wiki',
+	'farmer-mainpage' => 'Hlavní strana',
+	'farmer-basic-title' => 'Základní nastavení',
 	'farmer-basic-title1' => 'Název',
+	'farmer-basic-title1-text' => 'Vaše wiki nemá název. Nastavte ho <b>nyní</b>',
 	'farmer-basic-description' => 'Popis',
+	'farmer-basic-permission' => 'Svolení',
 	'farmer-yes' => 'Ano',
 	'farmer-no' => 'Ne',
+	'farmer-defaultskin' => 'Základní skin',
+	'farmer-defaultskin-button' => 'Nastavit základní skin',
+	'farmer-extensions' => 'Aktivní extenze',
+	'farmer-extensions-button' => 'Nastavit aktivní extenze',
+	'farmer-extensions-invalid' => 'Neplatná extenze',
 	'farmer-extensions-register-name' => 'Název',
 );
 
@@ -2065,10 +2077,18 @@ Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'farmercreatesitename' => 'نام تارنما',
+	'farmercreatenextstep' => 'گام بعدی',
+	'farmernewwikimainpage' => '== به ویکی خودتان خوش آمدید ==
+اگر شما در حال خواندن این متن هستید، به این معناست که ویکی جدیدتان به درستی نصب شده است.
+شما می‌توانید [[Special:Farmer|ویکی‌تان را شخصی سازی کنید]].',
 	'farmer-about' => 'درباره',
 	'farmer-list-wiki' => 'فهرست ویکی‌های',
+	'farmer-createwiki' => 'ایجاد یک ویکی',
+	'farmer-administration-delete' => 'حذف یک ویکی',
 	'farmer-notavailable' => 'در دسترس نیست',
 	'farmer-wikicreated' => 'ویکی ایجاد شد',
+	'farmer-wikiexists' => 'ویکی وجود دارد',
 	'farmer-confirmsetting-name' => 'نام',
 	'farmer-confirmsetting-title' => 'عنوان',
 	'farmer-confirmsetting-description' => 'توضیحات',
@@ -2080,6 +2100,7 @@ $messages['fa'] = array(
 	'farmer-createwiki-name' => 'نام ویکی',
 	'farmer-createwiki-title' => 'عنوان ویکی',
 	'farmer-createwiki-description' => 'توضیحات',
+	'farmer-createwiki-reason' => 'دلیل',
 	'farmer-delete-title' => 'حذف ویکی',
 	'farmer-delete-form-submit' => 'حذف',
 	'farmer-listofwikis' => 'فهرست ویکی‌های',
@@ -6274,6 +6295,33 @@ $messages['scn'] = array(
  */
 $messages['sh'] = array(
 	'farmer-button-submit' => 'Unesi',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'farmercreatesitename' => 'අඩවි නාමය',
+	'farmer-about' => 'පිළිබඳ',
+	'farmer-confirmsetting-name' => 'නම',
+	'farmer-confirmsetting-title' => 'මාතෘකාව',
+	'farmer-confirmsetting-description' => 'විස්තරය',
+	'farmer-confirmsetting-reason' => 'හේතුව',
+	'farmer-description' => 'විස්තරය',
+	'farmer-button-confirm' => 'තහවුරු කරන්න',
+	'farmer-button-submit' => 'යොමන්න',
+	'farmer-createwiki-form-help' => 'උදව්',
+	'farmer-createwiki-user' => 'පරිශීලක නාමය',
+	'farmer-createwiki-description' => 'විස්තරය',
+	'farmer-createwiki-reason' => 'හේතුව',
+	'farmer-delete-form-submit' => 'මකන්න',
+	'farmer-mainpage' => 'මුල් පිටුව',
+	'farmer-basic-title1' => 'මාතෘකාව',
+	'farmer-basic-description' => 'විස්තරය',
+	'farmer-basic-permission' => 'අවසර',
+	'farmer-yes' => 'ඔව්',
+	'farmer-no' => 'නැත',
+	'farmer-extensions-register-name' => 'නම',
 );
 
 /** Slovak (slovenčina)
