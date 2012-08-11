@@ -1701,6 +1701,7 @@ $messages['ee'] = array(
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
+ * @author Geraki
  * @author Omnipaedista
  */
 $messages['el'] = array(
@@ -1709,7 +1710,7 @@ $messages['el'] = array(
 	'farmercreatesitename' => 'Ονομασία ιστοτόπου',
 	'farmercreatenextstep' => 'Επόμενο βήμα',
 	'farmer-about' => 'Σχετικά',
-	'farmer-list-wiki' => 'Κατάλογος των βίκι',
+	'farmer-list-wiki' => 'Κατάλογος των wiki',
 	'farmer-createwiki' => 'Δημιουργήστε ένα Wiki',
 	'farmer-createwiki-text' => '[[$1|Δημιουργήστε]] ένα νέο wiki τώρα!',
 	'farmer-administration' => 'Γενική διαχείριση',
@@ -2958,6 +2959,7 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
+ * @author Siddhartha Ghai
  * @author आलोक
  */
 $messages['hi'] = array(
@@ -2995,8 +2997,8 @@ $messages['hi'] = array(
 	'farmer-confirmsetting' => 'विकि सेटींग निश्चित करें',
 	'farmer-confirmsetting-name' => 'नाम',
 	'farmer-confirmsetting-title' => 'शीर्षक',
-	'farmer-confirmsetting-description' => 'ज़ानकारी',
-	'farmer-description' => 'ज़ानकारी',
+	'farmer-confirmsetting-description' => 'जानकारी',
+	'farmer-description' => 'जानकारी',
 	'farmer-button-confirm' => 'निश्चित करें',
 	'farmer-button-submit' => 'भेजें',
 	'farmer-createwiki-form-title' => 'विकि बनायें',
@@ -3005,7 +3007,7 @@ $messages['hi'] = array(
 	'farmer-createwiki-user' => 'सदस्यनाम',
 	'farmer-createwiki-name' => 'विकि नाम',
 	'farmer-createwiki-title' => 'विकि शीर्षक',
-	'farmer-createwiki-description' => 'ज़ानकारी',
+	'farmer-createwiki-description' => 'जानकारी',
 	'farmer-updatedlist' => 'अपडेटेड सूची',
 	'farmer-notaccessible' => 'उपलब्ध नहीं',
 	'farmer-notaccessible-test' => 'यह फ़ीचर सिर्फ फ़ार्मके मुख्य विकिपर ही उपलब्ध हैं',
@@ -3022,13 +3024,13 @@ $messages['hi'] = array(
 	'farmer-basic-title' => 'बेसिक पैरेमीटर्स',
 	'farmer-basic-title1' => 'शीर्षक',
 	'farmer-basic-title1-text' => 'आपके विकिको शीर्षक नहीं दिया हुआ हैं। अभी दें',
-	'farmer-basic-description' => 'ज़ानकारी',
-	'farmer-basic-description-text' => 'आपके विकिके बारे में ज़ानकारी नीचे दें',
+	'farmer-basic-description' => 'जानकारी',
+	'farmer-basic-description-text' => 'आपके विकि के बारे में जानकारी नीचे दें',
 	'farmer-basic-permission' => 'अनुमति',
 	'farmer-basic-permission-text' => 'नीचे दिये फ़ार्म का इस्तेमाल करके इस विकिपर सदस्योंको मिलनेवाली अनुमतियाँ बदली जा सकती हैं।',
 	'farmer-basic-permission-visitor' => 'सभी भेंट देने वालोंके लिये अनुमति',
 	'farmer-basic-permission-visitor-text' => 'नीचे दी हुई अनुमतियाँ सभी भेंट देनेवालोंको दी जायेगी',
-	'farmer-yes' => 'हां',
+	'farmer-yes' => 'हाँ',
 	'farmer-no' => 'नहीं',
 	'farmer-basic-permission-user' => 'लॉग इन किये हुए सदस्योंके लिये अनुमति',
 	'farmer-basic-permission-user-text' => 'नीचे दी गई अनुमतियाँ विकि पर लॉग इन करने वाले सभी सदस्योंको दी जायेगी',
@@ -3581,6 +3583,7 @@ $messages['is'] = array(
 );
 
 /** Italian (italiano)
+ * @author Beta16
  * @author Darth Kule
  * @author Pietrodn
  */
@@ -3653,7 +3656,7 @@ Sarà mostrato nell'elenco delle wiki.",
 	'farmer-notaccessible-test' => 'Questa funzione è disponibile solo per la wiki genitore nella fattoria',
 	'farmer-permissiondenied' => 'Permesso negato',
 	'farmer-permissiondenied-text' => 'Non hai il permesso di eliminare una wiki dalla fattoria',
-	'farmer-permissiondenied-text1' => 'Non hai il permesso di accedere a questa pagina',
+	'farmer-permissiondenied-text1' => 'Non si dispone dei permessi necessari per accedere a questa pagina.',
 	'farmer-deleting' => 'Il sito "$1" è stato cancellato',
 	'farmer-delete-confirm' => 'Confermo di voler cancellare questo sito wiki',
 	'farmer-delete-confirm-wiki' => "Sito wiki da cancellare: '''$1'''.",
