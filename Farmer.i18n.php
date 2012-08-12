@@ -6333,8 +6333,19 @@ $messages['sh'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'farmer' => 'ගොවියා',
 	'farmercreatesitename' => 'අඩවි නාමය',
+	'farmercreatenextstep' => 'මීළඟ අදියර',
 	'farmer-about' => 'පිළිබඳ',
+	'farmer-list-wiki' => 'විකියන් ලැයිස්තුව',
+	'farmer-createwiki' => 'විකියක් තනන්න',
+	'farmer-administration-extension' => 'විස්තීර්ණ කළමනාකරණය කරන්න',
+	'farmer-administration-delete' => 'විකියක් මකන්න',
+	'farmer-administer-thiswiki' => 'මෙම විකිය පරිපාලනය කරන්න',
+	'farmer-notavailable' => 'ලබාගත නොහැක',
+	'farmer-wikicreated' => 'විකිය තැනිණි',
+	'farmer-wikiexists' => 'විකිය පවතියි',
+	'farmer-confirmsetting' => 'විකි සැකසුම් තහවුරු කරන්න',
 	'farmer-confirmsetting-name' => 'නම',
 	'farmer-confirmsetting-title' => 'මාතෘකාව',
 	'farmer-confirmsetting-description' => 'විස්තරය',
@@ -6342,18 +6353,38 @@ $messages['si'] = array(
 	'farmer-description' => 'විස්තරය',
 	'farmer-button-confirm' => 'තහවුරු කරන්න',
 	'farmer-button-submit' => 'යොමන්න',
+	'farmer-createwiki-form-title' => 'විකියක් තනන්න',
 	'farmer-createwiki-form-help' => 'උදව්',
 	'farmer-createwiki-user' => 'පරිශීලක නාමය',
+	'farmer-createwiki-name' => 'විකි නාමය',
+	'farmer-createwiki-title' => 'විකි ශීර්ෂය',
 	'farmer-createwiki-description' => 'විස්තරය',
 	'farmer-createwiki-reason' => 'හේතුව',
+	'farmer-updatedlist' => 'යාවත්කාලීන කෙරූ ලැයිස්තුව',
+	'farmer-notaccessible' => 'ප්‍රවේශ විය නොහැක',
+	'farmer-permissiondenied' => 'අවසරය ලබා නොදේ',
+	'farmer-delete-confirm-wiki' => "මැකීමට ඇති විකිය: '''$1'''.",
+	'farmer-delete-reason' => 'මැකීමට හේතුව:',
+	'farmer-delete-title' => 'විකිය මකන්න',
+	'farmer-delete-form' => 'විකියක් තෝරාගන්න',
 	'farmer-delete-form-submit' => 'මකන්න',
+	'farmer-listofwikis' => 'විකියන් ලැයිස්තුව',
 	'farmer-mainpage' => 'මුල් පිටුව',
+	'farmer-basic-title' => 'මූලික පරාමිතීන්',
 	'farmer-basic-title1' => 'මාතෘකාව',
 	'farmer-basic-description' => 'විස්තරය',
 	'farmer-basic-permission' => 'අවසර',
 	'farmer-yes' => 'ඔව්',
 	'farmer-no' => 'නැත',
+	'farmer-setpermission' => 'අවසර සකසන්න',
+	'farmer-extensions' => 'සක්‍රිය විස්තීරණ',
+	'farmer-extensions-button' => 'සක්‍රිය විස්තීරණ සකසන්න',
+	'farmer-extensions-invalid' => 'වලංගු නොවන විස්තීරණය',
+	'farmer-extensions-available' => 'ලබාගත හැකි විස්තීරණ',
+	'farmer-extensions-noavailable' => 'කිසිදු විස්තීරණයක් ලියාපදිංචි කර නොමැත',
+	'farmer-extensions-register' => 'විස්තීරණය ලියාපදිංචි කරන්න',
 	'farmer-extensions-register-name' => 'නම',
+	'farmer-extensions-register-includefile' => 'ගොනුව අඩංගු කරන්න',
 );
 
 /** Slovak (slovenčina)
@@ -6901,6 +6932,7 @@ $messages['szl'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author Shanmugamp7
  * @author TRYPPN
  * @author Trengarasu
@@ -6909,6 +6941,7 @@ $messages['ta'] = array(
 	'farmercreatesitename' => 'தளத்தின் பெயர்',
 	'farmercreatenextstep' => 'அடுத்த செயல்',
 	'farmer-about' => 'விவரம்',
+	'farmer-createwiki' => 'விக்கி ஒன்றை உருவாக்கவும்',
 	'farmer-administration-extension' => 'நீட்சிகளை நிர்வகி',
 	'farmer-administration-extension-text' => 'நிறுவப்பட்ட நீட்சிகளை [[$1|நிர்வகி]]',
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}} ல் அனைத்து விக்கிகளின் பட்டியலையும் [[$1|புதுப்பி]]',
@@ -6941,6 +6974,7 @@ $messages['ta'] = array(
 	'farmer-updatedlist' => 'புதுப்பிக்கப்பட்ட பட்டியல்',
 	'farmer-notaccessible' => 'அணுக இயலாது',
 	'farmer-permissiondenied' => 'அனுமதி மறுக்கப்பட்டது',
+	'farmer-permissiondenied-text1' => 'இப்பக்கத்தை அணுக உங்களுக்கு  அனுமதி இல்லை',
 	'farmer-deleting' => "விக்கி '' $1 '' நீக்கப்பட்டது",
 	'farmer-delete-confirm' => 'நான் இந்த விக்கியை நீக்க விரும்புகிறேன் என்பதை உறுதிப்படுத்துகிறேன்',
 	'farmer-delete-confirm-wiki' => "நீக்கப்படவேண்டிய விக்கி: '''$1'''.",
