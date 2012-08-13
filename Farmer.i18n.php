@@ -466,7 +466,7 @@ $messages['ar'] = array(
 	'farmer-updatedlist' => 'قائمة محدثة',
 	'farmer-notaccessible' => 'لا يمكن الوصول إليه',
 	'farmer-notaccessible-test' => 'هذه الخاصية متوفرة فقط في الويكي الأساسي في المزرعة',
-	'farmer-permissiondenied' => 'السماح مرفوض',
+	'farmer-permissiondenied' => 'الإذن مرفوض',
 	'farmer-permissiondenied-text' => 'أنت لا تمتلك السماح لحذف ويكي من المزرعة',
 	'farmer-permissiondenied-text1' => 'أنت لا تمتلك السماح لرؤية هذه الصفحة',
 	'farmer-deleting' => 'الويكي "$1" تم حذفه',
@@ -1995,6 +1995,7 @@ Una vez que la extensión ha sido registrada, todas las wikis podrán utilizarla
 );
 
 /** Estonian (eesti)
+ * @author Avjoska
  * @author Pikne
  * @author Silvar
  */
@@ -2022,6 +2023,7 @@ $messages['et'] = array(
 	'farmer-mainpage' => 'Esileht',
 	'farmer-basic-title' => 'Põhi parametrid',
 	'farmer-basic-title1' => 'Pealkiri',
+	'farmer-extensions-register-name' => 'Nimi',
 );
 
 /** Basque (euskara)
@@ -4025,6 +4027,13 @@ $messages['kn'] = array(
 	'farmer-extensions-register-name' => 'ಹೆಸರು',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'farmer-createwiki-user' => '사용자 이름',
+);
+
 /** Krio (Krio)
  * @author Jose77
  */
@@ -4856,9 +4865,13 @@ Setelah sambungan didaftarkan, semua wiki boleh menggunakannya.',
 /** Maltese (Malti)
  * @author Chrisportelli
  * @author Roderick Mallia
+ * @author පසිඳු කාවින්ද
  */
 $messages['mt'] = array(
 	'farmer-createwiki-user' => 'Isem tal-utent',
+	'farmer-yes' => 'Iva',
+	'farmer-no' => 'Le',
+	'farmer-extensions-register-name' => 'Isem',
 );
 
 /** Mirandese (Mirandés)
