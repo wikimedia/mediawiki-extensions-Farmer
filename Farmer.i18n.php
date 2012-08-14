@@ -6171,6 +6171,7 @@ Puteţi schimba privilegile utilizatorilor prin $1',
  */
 $messages['roa-tara'] = array(
 	'farmercreatesitename' => "Nome d'u site",
+	'farmer-about' => 'Sus a',
 	'farmer-list-wiki' => 'Elenghe de le Uicchi',
 	'farmer-notavailable' => 'Non disponibbile',
 	'farmer-wikicreated' => 'Uicchi ccrejate',
@@ -6179,11 +6180,22 @@ $messages['roa-tara'] = array(
 	'farmer-confirmsetting-description' => 'Descrizione',
 	'farmer-description' => 'Descrizione',
 	'farmer-createwiki-form-help' => 'Ajiute',
+	'farmer-createwiki-user' => 'Nome utende',
+	'farmer-createwiki-name' => "Nome d'a Uicchi",
+	'farmer-createwiki-title' => "Titole d'a Uicchi",
 	'farmer-createwiki-description' => 'Descrizione',
 	'farmer-createwiki-reason' => 'Mutive',
+	'farmer-delete-confirm-wiki' => "Uicchi da scangellà: '''$1'''.",
+	'farmer-delete-title' => "Scangelle 'a Uicchi",
+	'farmer-delete-form' => "Scacchie 'an Uicchi",
 	'farmer-delete-form-submit' => 'Scangille',
+	'farmer-listofwikis' => 'Elenghe de le Uicchi',
+	'farmer-mainpage' => 'Pàgene Prengepàle',
+	'farmer-basic-title' => 'Parametre de base',
 	'farmer-basic-title1' => 'Titele',
 	'farmer-basic-description' => 'Descrizione',
+	'farmer-yes' => 'Sine',
+	'farmer-no' => 'None',
 	'farmer-extensions-register-name' => 'Nome',
 );
 
@@ -6949,22 +6961,30 @@ $messages['szl'] = array(
  * @author Shanmugamp7
  * @author TRYPPN
  * @author Trengarasu
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
+	'farmer-desc' => 'ஒரு மீடியாவிக்கிப் பண்ணையை முகாமிக்கவும்',
 	'farmercreatesitename' => 'தளத்தின் பெயர்',
 	'farmercreatenextstep' => 'அடுத்த செயல்',
 	'farmer-about' => 'விவரம்',
+	'farmer-list-wiki' => 'விக்கிகளின் பட்டியல்',
 	'farmer-createwiki' => 'விக்கி ஒன்றை உருவாக்கவும்',
+	'farmer-createwiki-text' => 'இப்போதே ஒரு புதிய விக்கியை [[$1|உருவாக்கவும்]]!',
+	'farmer-administration' => 'பண்ணை மேலாண்மை',
 	'farmer-administration-extension' => 'நீட்சிகளை நிர்வகி',
 	'farmer-administration-extension-text' => 'நிறுவப்பட்ட நீட்சிகளை [[$1|நிர்வகி]]',
 	'farmer-admimistration-listupdate-text' => '{{SITENAME}} ல் அனைத்து விக்கிகளின் பட்டியலையும் [[$1|புதுப்பி]]',
 	'farmer-administration-delete' => 'ஒரு விக்கியை நீக்கு',
+	'farmer-administration-delete-text' => 'பண்ணையிலிருந்து ஒரு விக்கியை [[$1|நீக்கவும்]]',
 	'farmer-administer-thiswiki' => 'இந்த விக்கியை நிர்வகி',
 	'farmer-notavailable' => 'கிடைக்கப்பெறவில்லை',
+	'farmer-notavailable-text' => 'முதன்மை விக்கியில் மட்டுமே இவ்வசதி கிடைக்கும்',
 	'farmer-wikicreated' => 'விக்கி உருவாக்கப்பட்டுவிட்டது',
 	'farmer-wikicreated-text' => 'உங்கள் விக்கி உருவாக்கப்பட்டுள்ளது.
 அதை $1ல் அணுகலாம்',
 	'farmer-wikiexists' => 'விக்கி உள்ளது',
+	'farmer-confirmsetting' => 'விக்கி அமைப்புகளை உறுதி செய்யவும்',
 	'farmer-confirmsetting-name' => 'பெயர்',
 	'farmer-confirmsetting-title' => 'தலைப்பு',
 	'farmer-confirmsetting-description' => 'விளக்கம்',
@@ -6979,6 +6999,9 @@ $messages['ta'] = array(
 எழுத்துகள் மற்றும் எண்களை மட்டும் கொண்டிருக்கும்.
 விக்கி பெயர் உங்கள் விக்கியை அறிந்து கொள்வதற்காக இணைய முகவரியின் ஒரு பகுதியாக உபயோகிக்கப்படும்.
 எடுத்துக்காட்டாக, நீங்கள் '''title''' என உள்ளிட்டால், உங்கள் விக்கி <nowiki>http://</nowiki>'''title'''.mydomain ல் அணுகப்படும்.",
+	'farmer-createwiki-form-text4' => '; விவரணம்: விக்கியின் விவரணம்.
+இது விக்கியைப் பற்றிய ஒரு உரை விவரணம்.
+இது விக்கிப் பட்டியலில் காட்டப்படும்.',
 	'farmer-createwiki-user' => 'பயனர் பெயர்',
 	'farmer-createwiki-name' => 'விக்கி பெயர்',
 	'farmer-createwiki-title' => 'விக்கி தலைப்பு',
@@ -6986,6 +7009,7 @@ $messages['ta'] = array(
 	'farmer-createwiki-reason' => 'காரணம்',
 	'farmer-updatedlist' => 'புதுப்பிக்கப்பட்ட பட்டியல்',
 	'farmer-notaccessible' => 'அணுக இயலாது',
+	'farmer-notaccessible-test' => 'பண்ணையின் தாய் விக்கியில் மட்டுமே இவ்வசதி கிடைக்கும்',
 	'farmer-permissiondenied' => 'அனுமதி மறுக்கப்பட்டது',
 	'farmer-permissiondenied-text1' => 'இப்பக்கத்தை அணுக உங்களுக்கு  அனுமதி இல்லை',
 	'farmer-deleting' => "விக்கி '' $1 '' நீக்கப்பட்டது",
@@ -7019,7 +7043,16 @@ $messages['ta'] = array(
 	'farmer-extensions-extension-denied' => 'இந்த அம்சத்தை பயன்படுத்த உங்களுக்கு அனுமதி இல்லை.
 நீங்கள் விவசாயிநிர்வாகி  குழுவின் உறுப்பினராக இருக்க வேண்டும்.',
 	'farmer-extensions-invalid' => 'செல்லாத நீட்சி',
+	'farmer-extensions-available' => 'கிடைக்கும் நீட்சிகள்',
+	'farmer-extensions-noavailable' => 'எந்தவொரு நீட்சியும் பதிவு செய்யப்படவில்லை',
+	'farmer-extensions-register' => 'நீட்சியைப் பதிவு செய்யவும்',
 	'farmer-extensions-register-name' => 'பெயர்',
+	'farmer-error-exists' => 'விக்கியை உருவாக்க முடியவில்லை. அது ஏற்கனவே உள்ளது: $1',
+	'farmer-log-name' => 'விக்கிப் பண்ணைப் பதிவு',
+	'farmer-log-create' => 'விக்கி "$2" உருவாக்கப்பட்டது',
+	'farmer-log-delete' => 'விக்கி "$2" அழிக்கப்பட்டது',
+	'right-farmeradmin' => 'விக்கிப் பண்ணையை முகாமிக்கவும்',
+	'right-createwiki' => 'விக்கிப் பண்ணையில் விக்கிகளை உருவாக்கவும்',
 );
 
 /** Telugu (తెలుగు)
