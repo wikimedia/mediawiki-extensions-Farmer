@@ -1326,6 +1326,12 @@ Tento text bude zobrazen v seznamu wiki.',
 	'farmer-permissiondenied' => 'Nedostatečné oprávnění',
 	'farmer-permissiondenied-text' => 'Nemáte oprávnění smazat wiki z farmy',
 	'farmer-permissiondenied-text1' => 'Nemáte oprávnění k přístupu na tuto stránku',
+	'farmer-deleting' => 'Wiki „$1“ byla smazána',
+	'farmer-delete-confirm' => 'Jsem si jistý, že chci smazat tuhle wiki',
+	'farmer-delete-confirm-wiki' => "Wiki ke smazání: '''$1'''.",
+	'farmer-delete-reason' => 'Důvod smazání:',
+	'farmer-delete-title' => 'Smazat wiki',
+	'farmer-delete-text' => 'Ze seznamu níže vyber wiki, kterou chceš smazat',
 	'farmer-delete-form' => 'Zvolte wiki',
 	'farmer-delete-form-submit' => 'Smazat',
 	'farmer-listofwikis' => 'Seznam wiki',
@@ -1334,6 +1340,7 @@ Tento text bude zobrazen v seznamu wiki.',
 	'farmer-basic-title1' => 'Název',
 	'farmer-basic-title1-text' => 'Vaše wiki nemá název. Nastavte ho <b>nyní</b>',
 	'farmer-basic-description' => 'Popis',
+	'farmer-basic-description-text' => 'Vložtě níže popis Vaší wiki',
 	'farmer-basic-permission' => 'Svolení',
 	'farmer-yes' => 'Ano',
 	'farmer-no' => 'Ne',
@@ -2458,6 +2465,24 @@ $messages['fy'] = array(
 	'farmer-mainpage' => 'Haadside',
 	'farmer-basic-description' => 'Beskriuwing',
 	'farmer-yes' => 'Ja',
+);
+
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'farmer-about' => 'Maidir leis',
+	'farmer-confirmsetting-name' => 'Ainm',
+	'farmer-confirmsetting-title' => 'Teideal',
+	'farmer-confirmsetting-reason' => 'Fáth',
+	'farmer-button-confirm' => 'Deimhnigh',
+	'farmer-createwiki-form-help' => 'Cuidiú',
+	'farmer-createwiki-user' => 'Ainm úsáideora',
+	'farmer-createwiki-reason' => 'Fáth',
+	'farmer-delete-form-submit' => 'Scrios',
+	'farmer-basic-title1' => 'Teideal',
+	'farmer-no' => 'Ní',
+	'farmer-extensions-register-name' => 'Ainm',
 );
 
 /** Galician (galego)
