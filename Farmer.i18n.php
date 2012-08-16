@@ -2037,6 +2037,7 @@ $messages['et'] = array(
  * @author An13sa
  * @author Kobazulo
  * @author Theklan
+ * @author පසිඳු කාවින්ද
  */
 $messages['eu'] = array(
 	'farmer' => 'Nekazaria',
@@ -2048,6 +2049,7 @@ $messages['eu'] = array(
 	'farmernewwikimainpage' => '== Ongietorria zure wikira ==
 Hau irakurtzen bazaude zure wiki berria ondo instalatu da.
 [[Special:Farmer|Zure wikia aldatu]] ahal duzu.',
+	'farmer-about' => 'Honi buruz',
 	'farmer-list-wiki' => 'Wikien zerrenda',
 	'farmer-createwiki' => 'Wiki bat sortu',
 	'farmer-createwiki-text' => '[[$1|Sortu]] wiki berria orain!',
@@ -7899,6 +7901,7 @@ $messages['wuu'] = array(
 
 /** Yiddish (ייִדיש)
  * @author פוילישער
+ * @author පසිඳු කාවින්ද
  */
 $messages['yi'] = array(
 	'farmer-about' => 'וועגן',
@@ -7906,13 +7909,17 @@ $messages['yi'] = array(
 	'farmer-confirmsetting-title' => 'טיטל',
 	'farmer-confirmsetting-description' => 'באַשרייַבונג',
 	'farmer-confirmsetting-reason' => 'אורזאַך',
+	'farmer-button-confirm' => 'באַשטעטיקן',
 	'farmer-createwiki-form-title' => 'שאַפֿן אַ וויקי',
 	'farmer-createwiki-form-help' => 'הילף',
 	'farmer-createwiki-user' => 'באַניצער נאָמען',
+	'farmer-createwiki-description' => 'באַשרײַבונג',
 	'farmer-createwiki-reason' => 'אורזאַך',
 	'farmer-delete-form' => 'אויסקלויבן א וויקי',
 	'farmer-delete-form-submit' => 'אויסמעקן',
 	'farmer-basic-title1' => 'טיטל',
+	'farmer-basic-description' => 'באַשרײַבונג',
+	'farmer-yes' => 'יא',
 	'farmer-no' => 'ניין',
 	'farmer-extensions-register-name' => 'נאָמען',
 );
