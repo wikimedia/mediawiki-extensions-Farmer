@@ -2009,26 +2009,26 @@ Una vez que la extensión ha sido registrada, todas las wikis podrán utilizarla
 $messages['et'] = array(
 	'farmer-createwiki-user' => 'Kasutajanimi',
 	'farmer-createwiki-name' => 'Viki nimi',
-	'farmer-createwiki-title' => 'Wiki pealkiri',
+	'farmer-createwiki-title' => 'Viki pealkiri',
 	'farmer-createwiki-description' => 'Kirjeldus',
 	'farmer-createwiki-reason' => 'Põhjus',
 	'farmer-updatedlist' => 'Uuendatud nimekiri',
 	'farmer-notaccessible' => 'Pole kättesaadav',
-	'farmer-notaccessible-test' => 'See võimalus on olemas ainult serveri farmi, kesksel-vikil',
+	'farmer-notaccessible-test' => 'See funktsioon on farmis saadaval vaid emavikis',
 	'farmer-permissiondenied' => 'Õigused puuduvad',
-	'farmer-permissiondenied-text' => 'Sul pole õigusi, et kustutada wikit farmist',
-	'farmer-permissiondenied-text1' => 'Sul pole õigusi, sellele lehele ligipääsuks',
+	'farmer-permissiondenied-text' => 'Sul pole selle viki farmist kustutamise õigust',
+	'farmer-permissiondenied-text1' => 'Sul pole sellele leheküljele ligipääsu õigust.',
 	'farmer-deleting' => 'Viki "$1" on kustutatud',
 	'farmer-delete-confirm' => 'Ma kinnitan, et ma tahan seda vikit kustutada',
-	'farmer-delete-confirm-wiki' => "Kustuta Viki: '''$1'''.",
+	'farmer-delete-confirm-wiki' => "Kustutatav viki: '''$1'''.",
 	'farmer-delete-reason' => 'Põhjus selle kustutamiseks:',
-	'farmer-delete-title' => 'Kustuta Viki',
-	'farmer-delete-text' => 'Palun vali alt nimekirjast viki mida sa soovid kustutada',
+	'farmer-delete-title' => 'Kustuta viki',
+	'farmer-delete-text' => 'Palun vali alt nimekirjast viki, mida soovid kustutada',
 	'farmer-delete-form' => 'Vali viki',
 	'farmer-delete-form-submit' => 'Kustuta',
 	'farmer-listofwikis' => 'Vikide nimekiri',
 	'farmer-mainpage' => 'Esileht',
-	'farmer-basic-title' => 'Põhi parametrid',
+	'farmer-basic-title' => 'Põhiparametrid',
 	'farmer-basic-title1' => 'Pealkiri',
 	'farmer-extensions-register-name' => 'Nimi',
 );
@@ -7648,10 +7648,27 @@ $messages['uk'] = array(
 	'farmer-extensions-register-name' => 'Назва',
 );
 
-/** Urdu (اردو) */
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
 $messages['ur'] = array(
+	'farmer-confirmsetting-name' => 'نام',
+	'farmer-confirmsetting-description' => 'تفصیل',
 	'farmer-confirmsetting-reason' => 'وجہ',
+	'farmer-description' => 'تفصیل',
+	'farmer-button-confirm' => 'اس بات کی تصدیق',
+	'farmer-button-submit' => 'جمع کرائیں',
+	'farmer-createwiki-form-help' => 'مدد',
+	'farmer-createwiki-user' => 'صارف کا نام',
+	'farmer-createwiki-description' => 'تفصیل',
 	'farmer-createwiki-reason' => 'وجہ',
+	'farmer-notaccessible' => 'نہیں قابل رسائی',
+	'farmer-delete-form-submit' => 'حذف کریں',
+	'farmer-mainpage' => 'مرکزی صفحہ',
+	'farmer-basic-description' => 'تفصیل',
+	'farmer-basic-permission' => 'کی اجازت',
+	'farmer-yes' => 'جی ہاں',
+	'farmer-no' => 'نہیں',
 );
 
 /** Veps (vepsän kel’)
