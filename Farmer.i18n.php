@@ -3220,6 +3220,7 @@ Jeli to je to, štož chceš, stłóč deleka tłóčatko '''potwjerdźić'''.",
 
 /** Hungarian (magyar)
  * @author Dani
+ * @author Dj
  * @author Dorgan
  * @author Glanthor Reviol
  */
@@ -3272,7 +3273,7 @@ Ha ez az, amit szeretnél, akkor kattints a '''megerősítés''' gombra.",
 	'farmer-createwiki-form-text2' => "; Wiki neve: A wiki leendő neve.  Csak betűek és számokat tartalmazhat.  A wiki nevét azonosításra használjuk az URL részeként.  Például ha a '''nev''' szöveget adod meg, akkor a wikid a <nowiki>http://</nowiki>'''nev'''.mydomain címről lesz elérhető.",
 	'farmer-createwiki-form-text3' => '; Wiki címe: A wiki leendő címe.  Ez lesz a címe minden oldalnak a wikin, a projektnévtér és az interwiki előtag.',
 	'farmer-createwiki-form-text4' => '; Leírás: A wiki leírása.  Ez egy szöveges leírás a wikiről.  A wikilistában fog megjelenni.',
-	'farmer-createwiki-user' => 'Felhasználói név',
+	'farmer-createwiki-user' => 'Felhasználónév',
 	'farmer-createwiki-name' => 'Wiki neve',
 	'farmer-createwiki-title' => 'Wiki címe',
 	'farmer-createwiki-description' => 'Leírás',
