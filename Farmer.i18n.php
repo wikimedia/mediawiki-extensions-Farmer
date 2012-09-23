@@ -526,6 +526,7 @@ $messages['ar'] = array(
  */
 $messages['arc'] = array(
 	'farmercreatesitename' => 'ܫܡܐ ܕܕܘܟܬܐ',
+	'farmercreatenextstep' => 'ܦܣܘܥܬܐ ܕܒܬܪ',
 	'farmer-list-wiki' => 'ܡܟܬܒܘܬܐ ܕܘܝܩܝ̈ܐ',
 	'farmer-administration-delete' => 'ܫܘܦ ܘܝܩܝ',
 	'farmer-wikicreated' => 'ܘܝܩܝ ܐܬܒܪܝܬ',
@@ -7676,6 +7677,13 @@ $messages['ur'] = array(
 	'farmer-basic-permission' => 'کی اجازت',
 	'farmer-yes' => 'جی ہاں',
 	'farmer-no' => 'نہیں',
+);
+
+/** Uzbek (oʻzbekcha)
+ * @author CoderSI
+ */
+$messages['uz'] = array(
+	'farmer-mainpage' => 'Bosh sahifa',
 );
 
 /** Veps (vepsän kel’)
