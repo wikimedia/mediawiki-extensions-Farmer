@@ -108,7 +108,7 @@ $specialPageAliases['myv'] = array(
 	'Farmer' => array( 'Фермер' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'Farmer' => array( 'Bonde' ),
 );
@@ -143,12 +143,12 @@ $specialPageAliases['tr'] = array(
 	'Farmer' => array( 'Çiftçi' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'Farmer' => array( '农场' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'Farmer' => array( '農場' ),
 );
