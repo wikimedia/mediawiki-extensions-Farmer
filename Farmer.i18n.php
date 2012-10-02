@@ -704,7 +704,7 @@ $messages['be'] = array(
 	'farmer-createwiki-reason' => 'Прычына',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Zedlik
@@ -1515,7 +1515,7 @@ Sobald eine Erweiterung registriert ist, können alle Wikis sie verwenden.',
 	'right-createwiki' => 'Wikis in der Wiki-Farm erstellen',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author ChrisiPK
  * @author Imre
  * @author Kghbln
@@ -2840,7 +2840,7 @@ $messages['gv'] = array(
 	'farmer-extensions-register-includefile' => 'Goaill stiagh y coadan',
 );
 
-/** Hausa (هَوُسَ) */
+/** Hausa (Hausa) */
 $messages['ha'] = array(
 	'farmer-confirmsetting-reason' => 'Dalili',
 	'farmer-createwiki-reason' => 'Dalili',
@@ -4214,7 +4214,7 @@ Wann dat jemaat es, dann künne alle Wikis se bruche.',
 	'right-createwiki' => 'Neu Wikis en der Shtall vun de Wikis erin donn',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -4971,7 +4971,7 @@ $messages['nah'] = array(
 	'farmer-extensions-register-name' => 'Tōcāitl',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Audun
  * @author Harald Khan
  * @author Nghtwlkr
@@ -5224,7 +5224,7 @@ U moet lid zijn van de groep ''farmeradmin''.",
 	'right-createwiki' => "Wiki's aanmaken in de wikifarm",
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Gunnernett
  * @author Harald Khan
  * @author Jon Harald Søby
@@ -6582,7 +6582,7 @@ $messages['sl'] = array(
 	'farmer-no' => 'Ne',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Nikola Smolenski
  * @author Rancher
  * @author Sasa Stefanovic
@@ -6712,7 +6712,7 @@ $messages['sr-ec'] = array(
 	'right-createwiki' => 'прављење викија на фарми',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Жељко Тодоровић
  */
@@ -7956,7 +7956,7 @@ $messages['yi'] = array(
 	'farmer-extensions-register-name' => 'נאָמען',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Gzdavidwong
  * @author Hydra
  * @author Hzy980512
