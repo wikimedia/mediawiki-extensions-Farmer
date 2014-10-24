@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"farmer-description": "Beskrivelse",
+	"farmer-button-confirm": "Bekræft",
+	"farmer-createwiki-form-help": "Hjælp",
+	"farmer-createwiki-user": "Brugernavn",
+	"farmer-createwiki-description": "Beskrivelse",
+	"farmer-delete-form-submit": "Slet",
+	"farmer-mainpage": "Forside",
+	"farmer-basic-title1": "Titel",
+	"farmer-basic-description": "Beskrivelse",
+	"farmer-yes": "Ja",
+	"farmer-no": "Nej",
+	"farmer-extensions-register-name": "Navn"
+}

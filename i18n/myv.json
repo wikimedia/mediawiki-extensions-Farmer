@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Botuzhaleny-sodamo",
+			"Sura"
+		]
+	},
+	"farmer": "Хермер",
+	"farmercreatenextstep": "Омбоце эскелькс",
+	"farmer-list-wiki": "Викитнеде списка",
+	"farmer-createwiki": "Шкамс вики",
+	"farmer-notavailable": "Кедь маласо арась",
+	"farmer-confirmsetting-name": "Лемезэ",
+	"farmer-confirmsetting-title": "Коняксозо",
+	"farmer-confirmsetting-description": "Чарькодевтемгакс",
+	"farmer-description": "Чарькодевтемгакс",
+	"farmer-button-confirm": "Кемекстамс",
+	"farmer-createwiki-user": "Совицянь лем",
+	"farmer-createwiki-description": "Чарькодевтемгакс",
+	"farmer-delete-form-submit": "Нардамс",
+	"farmer-mainpage": "Прякслопа",
+	"farmer-basic-title1": "Конякс",
+	"farmer-basic-description": "Чарькодевтемгакс",
+	"farmer-yes": "Истя",
+	"farmer-no": "Арась",
+	"farmer-extensions-register-name": "Лемезэ"
+}

@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jnanaranjan Sahu",
+			"Jose77",
+			"Psubhashish"
+		]
+	},
+	"farmercreatesitename": "ସାଇଟ ନାମ",
+	"farmercreatenextstep": "ପର ସୋପାନ",
+	"farmer-about": "ବିଷୟରେ",
+	"farmer-list-wiki": "ଉଇକିଗୁଡିକର ତାଲିକା",
+	"farmer-createwiki": "ଗୋଟିଏ ଉଇକି ତିଆରି କରିବେ",
+	"farmer-wikiexists": "ଉଇକି ଆଗରୁ ଅଛି",
+	"farmer-confirmsetting": "ଉଇକି ସଜଡାକୁ ନିଶ୍ଚିତ କରନ୍ତୁ",
+	"farmer-confirmsetting-name": "ନାମ",
+	"farmer-confirmsetting-title": "ଶିରୋନାମା",
+	"farmer-confirmsetting-description": "ବିବରଣୀ",
+	"farmer-confirmsetting-reason": "କାରଣ",
+	"farmer-description": "ବିବରଣୀ",
+	"farmer-button-confirm": "ନିଶ୍ଚିତ କରନ୍ତୁ",
+	"farmer-button-submit": "ପଇଠ କରିବେ",
+	"farmer-createwiki-form-title": "ଗୋଟିଏ ଉଇକି ତିଆରି କରିବେ",
+	"farmer-createwiki-form-text1": "ତଳେ ଥିବା ସାରଣୀ ବ୍ୟବହାର କରି ନୂଆ ଉଇକିଟିଏ ତିଆରି କରନ୍ତୁ ।",
+	"farmer-createwiki-form-help": "ସହଯୋଗ",
+	"farmer-createwiki-user": "ବ୍ୟବହାରକାରୀ ନାମ",
+	"farmer-mainpage": "ପ୍ରଧାନ ପୃଷ୍ଠା",
+	"farmer-basic-title1": "ଶିରୋନାମା"
+}

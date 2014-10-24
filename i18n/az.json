@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cekli829",
+			"Wertuose"
+		]
+	},
+	"farmer-list-wiki": "Vikilərin siyahısı",
+	"farmer-confirmsetting-name": "Ad",
+	"farmer-confirmsetting-title": "Başlıq",
+	"farmer-button-confirm": "Təsdiq et",
+	"farmer-button-submit": "Təsdiq et",
+	"farmer-createwiki-form-help": "Kömək",
+	"farmer-createwiki-user": "İstifadəçi adı",
+	"farmer-createwiki-name": "Viki adı",
+	"farmer-createwiki-reason": "Səbəb",
+	"farmer-delete-form-submit": "Sil",
+	"farmer-listofwikis": "Vikilərin siyahısı",
+	"farmer-mainpage": "Ana Səhifə",
+	"farmer-basic-title1": "Başlıq",
+	"farmer-yes": "Bəli",
+	"farmer-no": "Xeyr",
+	"farmer-extensions-register-name": "Ad"
+}

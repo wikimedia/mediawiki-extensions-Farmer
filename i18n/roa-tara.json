@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"farmercreatesitename": "Nome d'u site",
+	"farmer-about": "Sus a",
+	"farmer-list-wiki": "Elenghe de le Uicchi",
+	"farmer-notavailable": "Non disponibbile",
+	"farmer-wikicreated": "Uicchi ccrejate",
+	"farmer-confirmsetting-name": "Nome",
+	"farmer-confirmsetting-title": "Titele",
+	"farmer-confirmsetting-description": "Descrizione",
+	"farmer-description": "Descrizione",
+	"farmer-createwiki-form-help": "Ajiute",
+	"farmer-createwiki-user": "Nome utende",
+	"farmer-createwiki-name": "Nome d'a Uicchi",
+	"farmer-createwiki-title": "Titole d'a Uicchi",
+	"farmer-createwiki-description": "Descrizione",
+	"farmer-createwiki-reason": "Mutive",
+	"farmer-delete-confirm-wiki": "Uicchi da scangellà: '''$1'''.",
+	"farmer-delete-title": "Scangelle 'a Uicchi",
+	"farmer-delete-form": "Scacchie 'an Uicchi",
+	"farmer-delete-form-submit": "Scangille",
+	"farmer-listofwikis": "Elenghe de le Uicchi",
+	"farmer-mainpage": "Pàgene Prengepàle",
+	"farmer-basic-title": "Parametre de base",
+	"farmer-basic-title1": "Titele",
+	"farmer-basic-description": "Descrizione",
+	"farmer-yes": "Sine",
+	"farmer-no": "None",
+	"farmer-extensions-register-name": "Nome"
+}

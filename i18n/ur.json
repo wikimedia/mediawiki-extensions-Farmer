@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"farmer-confirmsetting-name": "نام",
+	"farmer-confirmsetting-description": "تفصیل",
+	"farmer-confirmsetting-reason": "وجہ",
+	"farmer-description": "تفصیل",
+	"farmer-button-confirm": "اس بات کی تصدیق",
+	"farmer-button-submit": "جمع کرائیں",
+	"farmer-createwiki-form-help": "مدد",
+	"farmer-createwiki-user": "صارف کا نام",
+	"farmer-createwiki-description": "تفصیل",
+	"farmer-createwiki-reason": "وجہ",
+	"farmer-notaccessible": "نہیں قابل رسائی",
+	"farmer-delete-form-submit": "حذف کریں",
+	"farmer-mainpage": "مرکزی صفحہ",
+	"farmer-basic-description": "تفصیل",
+	"farmer-basic-permission": "کی اجازت",
+	"farmer-yes": "جی ہاں",
+	"farmer-no": "نہیں"
+}

@@ -17,7 +17,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => array( 'Gregory Szorc <gregory.szorc@case.edu>', 'Alexandre Emsenhuber' ),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Farmer',
 	'descriptionmsg' => 'farmer-desc',
-	'version' => '0.0.8',
+	'version' => '0.1.0',
 );
 
 /**
@@ -69,12 +69,13 @@ $wgFarmerSettings = array(
 	'perWikiStorageUrl'         => '',
 
 	// default skin
-	'defaultSkin'               => 'monobook',
+	'defaultSkin'               => 'vector',
 );
 
 $root = dirname( __FILE__ ) . '/';
 
-$wgExtensionMessagesFiles['MediaWikiFarmer'] = $root . 'Farmer.i18n.php';
+$wgMessagesDirs['MediaWikiFarmer'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['MediaWikiFarmer'] = __DIR__ . 'Farmer.i18n.php';
 
 $wgExtensionMessagesFiles['MediaWikiFarmerAlias'] = $root . 'Farmer.alias.php';
 
