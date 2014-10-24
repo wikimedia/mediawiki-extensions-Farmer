@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mohau"
+		]
+	},
+	"farmer-list-wiki": "Lenano la di-Wiki",
+	"farmer-createwiki": "Hlama Wiki",
+	"farmer-administration-delete": "Phumula Wiki",
+	"farmer-wikicreated": "Wiki e hlomilwe",
+	"farmer-confirmsetting-name": "Leina",
+	"farmer-confirmsetting-title": "Thaetlele",
+	"farmer-createwiki-form-help": "Thušo",
+	"farmer-createwiki-user": "Leina la mošomiši",
+	"farmer-createwiki-name": "Leina la Wiki",
+	"farmer-createwiki-title": "Thaetlele ya Wiki",
+	"farmer-deleting": "Phumutše $1",
+	"farmer-delete-form-submit": "Phumula",
+	"farmer-listofwikis": "Lenano la di-Wiki",
+	"farmer-basic-title1": "Thaetlele",
+	"farmer-yes": "Ee",
+	"farmer-no": "Aowa",
+	"farmer-extensions-register-name": "Leina"
+}

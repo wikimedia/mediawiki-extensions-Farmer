@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"farmer-about": "Maidir leis",
+	"farmer-confirmsetting-name": "Ainm",
+	"farmer-confirmsetting-title": "Teideal",
+	"farmer-confirmsetting-reason": "Fáth",
+	"farmer-button-confirm": "Deimhnigh",
+	"farmer-createwiki-form-help": "Cuidiú",
+	"farmer-createwiki-user": "Ainm úsáideora",
+	"farmer-createwiki-reason": "Fáth",
+	"farmer-delete-form-submit": "Scrios",
+	"farmer-basic-title1": "Teideal",
+	"farmer-no": "Ní",
+	"farmer-extensions-register-name": "Ainm"
+}

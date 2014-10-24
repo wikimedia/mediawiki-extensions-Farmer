@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Juanpabl"
+		]
+	},
+	"farmer-confirmsetting-name": "Nombre",
+	"farmer-confirmsetting-description": "Descripción",
+	"farmer-confirmsetting-reason": "Razón",
+	"farmer-description": "Descripción",
+	"farmer-button-confirm": "Confirmar",
+	"farmer-button-submit": "Ninviar",
+	"farmer-createwiki-form-help": "Aduya",
+	"farmer-createwiki-description": "Descripción",
+	"farmer-createwiki-reason": "Razón",
+	"farmer-delete-form-submit": "Borrar",
+	"farmer-basic-description": "Descripción",
+	"farmer-yes": "Sí",
+	"farmer-no": "No",
+	"farmer-extensions-register-name": "Nombre"
+}

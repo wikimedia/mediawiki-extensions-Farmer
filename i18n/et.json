@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Avjoska",
+			"Pikne",
+			"Silvar"
+		]
+	},
+	"farmer-createwiki-user": "Kasutajanimi",
+	"farmer-createwiki-name": "Viki nimi",
+	"farmer-createwiki-title": "Viki pealkiri",
+	"farmer-createwiki-description": "Kirjeldus",
+	"farmer-createwiki-reason": "Põhjus",
+	"farmer-updatedlist": "Uuendatud nimekiri",
+	"farmer-notaccessible": "Pole kättesaadav",
+	"farmer-notaccessible-test": "See funktsioon on farmis saadaval vaid emavikis",
+	"farmer-permissiondenied": "Õigused puuduvad",
+	"farmer-permissiondenied-text": "Sul pole selle viki farmist kustutamise õigust",
+	"farmer-permissiondenied-text1": "Sul pole sellele leheküljele ligipääsu õigust.",
+	"farmer-deleting": "Viki \"$1\" on kustutatud",
+	"farmer-delete-confirm": "Ma kinnitan, et ma tahan seda vikit kustutada",
+	"farmer-delete-confirm-wiki": "Kustutatav viki: '''$1'''.",
+	"farmer-delete-reason": "Põhjus selle kustutamiseks:",
+	"farmer-delete-title": "Kustuta viki",
+	"farmer-delete-text": "Palun vali alt nimekirjast viki, mida soovid kustutada",
+	"farmer-delete-form": "Vali viki",
+	"farmer-delete-form-submit": "Kustuta",
+	"farmer-listofwikis": "Vikide nimekiri",
+	"farmer-mainpage": "Esileht",
+	"farmer-basic-title": "Põhiparametrid",
+	"farmer-basic-title1": "Pealkiri",
+	"farmer-extensions-register-name": "Nimi"
+}

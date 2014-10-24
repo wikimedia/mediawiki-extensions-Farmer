@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"David1010",
+			"Malafaya"
+		]
+	},
+	"farmer": "ფერმერი",
+	"farmercreatesitename": "ვებ-გვერდის სახელი",
+	"farmercreatenextstep": "შემდეგი ნაბიჯი",
+	"farmer-confirmsetting-name": "სახელი",
+	"farmer-confirmsetting-title": "სათაური",
+	"farmer-confirmsetting-description": "აღწერა",
+	"farmer-confirmsetting-reason": "მიზეზი",
+	"farmer-description": "აღწერა",
+	"farmer-button-confirm": "დადასტურება",
+	"farmer-button-submit": "მიღება",
+	"farmer-createwiki-form-title": "ვიკის შექმნა",
+	"farmer-createwiki-form-help": "დახმარება",
+	"farmer-createwiki-user": "მომხმარებლის სახელი",
+	"farmer-createwiki-name": "ვიკი სახელი",
+	"farmer-createwiki-title": "ვიკი სათაური",
+	"farmer-createwiki-description": "აღწერა",
+	"farmer-createwiki-reason": "მიზეზი",
+	"farmer-updatedlist": "განახლებული სია",
+	"farmer-delete-title": "ვიკის წაშლა",
+	"farmer-delete-form": "აირჩიეთ ვიკი",
+	"farmer-delete-form-submit": "წაშლა",
+	"farmer-mainpage": "მთავარი გვერდი",
+	"farmer-basic-title": "ძირითადი პარამეტრები",
+	"farmer-basic-title1": "სათაური",
+	"farmer-basic-description": "აღწერა",
+	"farmer-basic-permission": "უფლებები",
+	"farmer-yes": "დიახ",
+	"farmer-no": "არა",
+	"farmer-extensions-register-name": "სახელი"
+}

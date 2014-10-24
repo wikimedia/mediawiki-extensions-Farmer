@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334"
+		]
+	},
+	"farmer": "Kmetovalec",
+	"farmer-desc": "Upravljanje kmetije MediaWiki",
+	"farmercreatesitename": "Ime strani",
+	"farmercreatenextstep": "Naslednji korak",
+	"farmer-about-text": "Kmetovalec MediaWiki vam omogoča upravljati kmetijo wikijev MediaWiki.",
+	"farmer-list-wiki": "Seznam wikijev",
+	"farmer-list-wiki-text": "[[$1|Seznam]] vseh wikijev na {{SITENAME}}",
+	"farmer-createwiki": "Ustvari wiki",
+	"farmer-createwiki-text": "[[$1|Ustvari]] nov wiki zdaj!",
+	"farmer-administration": "Uprava kmetije",
+	"farmer-administration-extension": "Upravljaj razširitve",
+	"farmer-confirmsetting-reason": "Razlog",
+	"farmer-createwiki-user": "Uporabniško ime",
+	"farmer-createwiki-reason": "Razlog",
+	"farmer-yes": "Da",
+	"farmer-no": "Ne"
+}

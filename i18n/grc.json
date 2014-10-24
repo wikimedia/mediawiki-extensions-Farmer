@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crazymadlover",
+			"Omnipaedista"
+		]
+	},
+	"farmercreatesitename": "Ὄνομα ἱστοτόπου",
+	"farmercreatenextstep": "Ἑπόμενον βῆμα",
+	"farmer-about": "Περί",
+	"farmer-createwiki": "Ποιεῖν βίκι τι",
+	"farmer-administration-delete": "Διαγράφειν βίκι τι",
+	"farmer-notavailable": "Μὴ διαθέσιμος",
+	"farmer-confirmsetting-name": "Ὄνομα",
+	"farmer-confirmsetting-title": "Ἐπιγραφή",
+	"farmer-confirmsetting-description": "Περιγραφή",
+	"farmer-confirmsetting-reason": "Αἰτία",
+	"farmer-description": "Περιγραφή",
+	"farmer-button-confirm": "Κυροῦν",
+	"farmer-button-submit": "Ὑποβάλλειν",
+	"farmer-createwiki-form-title": "Ποιεῖν βίκι τι",
+	"farmer-createwiki-form-help": "Βοήθεια",
+	"farmer-createwiki-user": "Ὄνομα χρωμένου",
+	"farmer-createwiki-description": "Περιγραφή",
+	"farmer-createwiki-reason": "Αἰτία",
+	"farmer-delete-form-submit": "Σβεννύναι",
+	"farmer-mainpage": "Κυρία Δέλτος",
+	"farmer-basic-title1": "Ἐπιγραφή",
+	"farmer-basic-description": "Περιγραφή",
+	"farmer-yes": "Ναί",
+	"farmer-no": "Οὐ",
+	"farmer-extensions-register-name": "Ὄνομα"
+}
