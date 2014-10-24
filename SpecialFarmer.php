@@ -117,7 +117,7 @@ class SpecialFarmer extends SpecialPage {
 		$title = MediaWikiFarmer_Wiki::sanitizeTitle( $wgRequest->getVal( 'wpTitle' ) );
 		$description = $wgRequest->getVal( 'wpDescription', '' );
 		$reason = $wgRequest->getVal( 'wpReason' );
-		$action = $this->getTitle( 'create' )->escapeLocalURL();
+		$action = $this->getTitle( 'create' )->getLocalURL();
 
 		// if something was POST'd
 		if ( $wgRequest->wasPosted() ) {
@@ -306,7 +306,7 @@ class SpecialFarmer extends SpecialPage {
 
 		$currentWiki = MediaWikiFarmer_Wiki::factory( $wgFarmer->getActiveWiki() );
 
-		$action = $this->getTitle( 'admin' )->escapeLocalURL();
+		$action = $this->getTitle( 'admin' )->getLocalURL();
 
 		if ( !( MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) || $currentWiki->userIsAdmin( $wgUser ) ) ) {
 			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-permissiondenied' );

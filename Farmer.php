@@ -17,7 +17,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => array( 'Gregory Szorc <gregory.szorc@case.edu>', 'Alexandre Emsenhuber' ),
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Farmer',
 	'descriptionmsg' => 'farmer-desc',
-	'version' => '0.1.0',
+	'version' => '0.1.1',
 );
 
 /**
@@ -45,7 +45,7 @@ $wgFarmerSettings = array(
 	'redirectToURL'             =>  '',
 
 	// Whether to use $wgConf to get some settings
-	'useWgConf'                 => false,
+	'useWgConf'                 => true,
 
 	// Callback function that is called when a wiki is initialized and will
 	// recieve the MediaWikiFarmer_Wiki object in first parameter
@@ -64,9 +64,9 @@ $wgFarmerSettings = array(
 	'dbAdminPassword'           =>  '',
 
 	// Per-wiki image storage, filesystem path
-	'perWikiStorageRoot'        => '',
+	'perWikiStorageRoot'        => '/images/',
 	// Url
-	'perWikiStorageUrl'         => '',
+	'perWikiStorageUrl'         => '/images/',
 
 	// default skin
 	'defaultSkin'               => 'vector',
