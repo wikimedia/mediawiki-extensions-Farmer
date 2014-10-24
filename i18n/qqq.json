@@ -10,7 +10,7 @@
 			"The Evil IP address"
 		]
 	},
-	"farmer-desc": "{{desc}}",
+	"farmer-desc": "{{desc|name=Farmer|url=http://www.mediawiki.org/wiki/Extension:Farmer}}",
 	"farmercreateurl": "{{optional}}",
 	"farmernewwikimainpage": "Do not translate or change links.",
 	"farmer-about": "{{Identical|About}}",
