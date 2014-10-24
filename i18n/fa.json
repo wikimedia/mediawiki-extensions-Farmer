@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mjbmr"
+		]
+	},
+	"farmercreatesitename": "نام تارنما",
+	"farmercreatenextstep": "گام بعدی",
+	"farmernewwikimainpage": "== به ویکی خودتان خوش آمدید ==\nاگر شما در حال خواندن این متن هستید، به این معناست که ویکی جدیدتان به درستی نصب شده است.\nشما می‌توانید [[Special:Farmer|ویکی‌تان را شخصی سازی کنید]].",
+	"farmer-about": "درباره",
+	"farmer-list-wiki": "فهرست ویکی‌های",
+	"farmer-createwiki": "ایجاد یک ویکی",
+	"farmer-administration-delete": "حذف یک ویکی",
+	"farmer-notavailable": "در دسترس نیست",
+	"farmer-wikicreated": "ویکی ایجاد شد",
+	"farmer-wikiexists": "ویکی وجود دارد",
+	"farmer-confirmsetting-name": "نام",
+	"farmer-confirmsetting-title": "عنوان",
+	"farmer-confirmsetting-description": "توضیحات",
+	"farmer-confirmsetting-reason": "دلیل:",
+	"farmer-description": "توضیحات",
+	"farmer-createwiki-form-title": "ایجاد یک ویکی",
+	"farmer-createwiki-form-help": "راهنما",
+	"farmer-createwiki-user": "نام کاربری",
+	"farmer-createwiki-name": "نام ویکی",
+	"farmer-createwiki-title": "عنوان ویکی",
+	"farmer-createwiki-description": "توضیحات",
+	"farmer-createwiki-reason": "دلیل",
+	"farmer-delete-title": "حذف ویکی",
+	"farmer-delete-form-submit": "حذف",
+	"farmer-listofwikis": "فهرست ویکی‌های",
+	"farmer-mainpage": "صفحهٔ اصلی",
+	"farmer-basic-title1": "عنوان",
+	"farmer-yes": "بله",
+	"farmer-no": "خیر",
+	"farmer-extensions-register-name": "نام"
+}

@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Basharh"
+		]
+	},
+	"farmercreatesitename": "ܫܡܐ ܕܕܘܟܬܐ",
+	"farmercreatenextstep": "ܦܣܘܥܬܐ ܕܒܬܪ",
+	"farmer-list-wiki": "ܡܟܬܒܘܬܐ ܕܘܝܩܝ̈ܐ",
+	"farmer-administration-delete": "ܫܘܦ ܘܝܩܝ",
+	"farmer-wikicreated": "ܘܝܩܝ ܐܬܒܪܝܬ",
+	"farmer-confirmsetting-name": "ܫܡܐ",
+	"farmer-confirmsetting-title": "ܟܘܢܝܐ",
+	"farmer-confirmsetting-description": "ܫܘܡܗܐ",
+	"farmer-confirmsetting-reason": "ܥܠܬܐ",
+	"farmer-description": "ܫܘܡܗܐ",
+	"farmer-button-confirm": "ܚܬܬ",
+	"farmer-button-submit": "ܫܕܪ",
+	"farmer-createwiki-form-title": "ܒܪܝ ܘܝܩܝ",
+	"farmer-createwiki-form-help": "ܥܘܕܪܢܐ",
+	"farmer-createwiki-user": "ܫܡܐ ܕܡܦܠܚܢܐ",
+	"farmer-createwiki-name": "ܫܡܐ ܕܘܝܩܝ",
+	"farmer-createwiki-title": "ܟܘܢܝܐ ܕܘܝܩܝ",
+	"farmer-createwiki-description": "ܫܘܡܗܐ",
+	"farmer-createwiki-reason": "ܥܠܬܐ",
+	"farmer-delete-reason": "ܥܠܬܐ ܕܫܝܦܐ:",
+	"farmer-delete-title": "ܫܘܦ ܘܝܩܝ",
+	"farmer-delete-form-submit": "ܫܘܦ",
+	"farmer-listofwikis": "ܡܟܬܒܘܬܐ ܕܘܝܩܝ̈ܐ",
+	"farmer-mainpage": "ܦܐܬܐ ܪܫܝܬܐ",
+	"farmer-basic-title1": "ܟܘܢܝܐ",
+	"farmer-basic-description": "ܫܘܡܗܐ",
+	"farmer-yes": "ܐܝܢ",
+	"farmer-no": "ܠܐ",
+	"farmer-extensions-register-name": "ܫܡܐ"
+}

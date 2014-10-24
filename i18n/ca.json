@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jordi Roqué",
+			"Paucabot",
+			"SMP",
+			"Solde"
+		]
+	},
+	"farmer": "Granger",
+	"farmer-desc": "Gestioneu una granja de MediaWikis",
+	"farmercreatesitename": "Nom del lloc",
+	"farmercreatenextstep": "Següent pas",
+	"farmer-about": "Quant a",
+	"farmer-createwiki": "Crea un wiki",
+	"farmer-confirmsetting-name": "Nom",
+	"farmer-confirmsetting-title": "Títol",
+	"farmer-confirmsetting-description": "Descripció",
+	"farmer-confirmsetting-reason": "Motiu",
+	"farmer-description": "Descripció",
+	"farmer-button-submit": "Tramet",
+	"farmer-createwiki-form-title": "Crea un wiki",
+	"farmer-createwiki-description": "Descripció",
+	"farmer-createwiki-reason": "Motiu",
+	"farmer-delete-form-submit": "Elimina",
+	"farmer-basic-title1": "Títol",
+	"farmer-basic-description": "Descripció",
+	"farmer-yes": "Sí",
+	"farmer-no": "No",
+	"farmer-extensions-register-name": "Nom"
+}

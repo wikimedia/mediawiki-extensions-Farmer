@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Slomox"
+		]
+	},
+	"farmer-about": "Över",
+	"farmer-createwiki": "Wiki nee opstellen",
+	"farmer-createwiki-text": "[[$1|Stell]] nu en nee Wiki op!",
+	"farmer-mainpage": "Hööftsiet",
+	"farmer-yes": "Jo",
+	"farmer-no": "Nee",
+	"farmer-extensions-register-name": "Naam"
+}

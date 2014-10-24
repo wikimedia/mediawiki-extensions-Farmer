@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fluence",
+			"Ricardo gs"
+		]
+	},
+	"farmer-confirmsetting-name": "Tōcāitl",
+	"farmer-button-submit": "Tiquihuāz",
+	"farmer-createwiki-form-title": "Ticchīhuāz cē huiqui",
+	"farmer-createwiki-user": "Tlatequitiltilīltōcāitl",
+	"farmer-createwiki-name": "Huiqui tōcāitl",
+	"farmer-deleting": "In huiqui \"$1\" ōmopoloh",
+	"farmer-delete-title": "Ticpolōz huiqui",
+	"farmer-delete-form-submit": "Ticpolōz",
+	"farmer-listofwikis": "Mochi huiqui",
+	"farmer-mainpage": "Calīxatl",
+	"farmer-basic-title1": "Tōcāitl",
+	"farmer-yes": "Quēmah",
+	"farmer-no": "Ahmo",
+	"farmer-extensions-register-name": "Tōcāitl"
+}

@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"farmer": "بزګر",
+	"farmercreatesitename": "د ويبځي نوم",
+	"farmercreatenextstep": "بل ګام",
+	"farmer-about": "په اړه",
+	"farmer-list-wiki": "د ويکي ګانو لړليک",
+	"farmer-createwiki": "يو ويکي جوړول",
+	"farmer-administration-delete": "يو ويکي ړنګول",
+	"farmer-wikicreated": "ويکي مو جوړ شو",
+	"farmer-wikicreated-text": "ستاسې ويکي جوړ شو.\nدا په $1 کې د لاسرسۍ وړ ده",
+	"farmer-wikiexists": "ويکي مو شته",
+	"farmer-confirmsetting-name": "نوم",
+	"farmer-confirmsetting-title": "سرليک",
+	"farmer-confirmsetting-reason": "سبب",
+	"farmer-description": "څرګندونه",
+	"farmer-button-submit": "سپارل",
+	"farmer-createwiki-form-title": "يو ويکي جوړول",
+	"farmer-createwiki-form-help": "لارښود",
+	"farmer-createwiki-user": "کارن-نوم",
+	"farmer-createwiki-name": "ويکي نوم",
+	"farmer-createwiki-title": "ويکي سرليک",
+	"farmer-createwiki-description": "څرګندونه",
+	"farmer-createwiki-reason": "سبب",
+	"farmer-permissiondenied": "د اجازې غوښتنه مو رد شوه",
+	"farmer-permissiondenied-text1": "تاسې همدې مخ ته د لاسرسۍ پرېښله نلرۍ",
+	"farmer-deleting": "د \"$1\" ويکي ړنګ شوی",
+	"farmer-delete-title": "ويکي ړنګول",
+	"farmer-delete-form": "يو ويکي وټاکۍ",
+	"farmer-delete-form-submit": "ړنګول",
+	"farmer-listofwikis": "د ويکي ګانو لړليک",
+	"farmer-mainpage": "لومړی مخ",
+	"farmer-basic-title1": "سرليک",
+	"farmer-basic-title1-text": "ستاسې ويکي هېڅ يو سرليک هم نه لري. يو ورته وټاکۍ",
+	"farmer-basic-description": "څرګندونه",
+	"farmer-yes": "هو",
+	"farmer-no": "نه",
+	"farmer-extensions-register-name": "نوم"
+}

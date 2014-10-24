@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan",
+			"Mirzali"
+		]
+	},
+	"farmer-wikicreated": "Wikiy vıraziyê",
+	"farmer-confirmsetting-name": "Name",
+	"farmer-confirmsetting-title": "Sername",
+	"farmer-confirmsetting-description": "Sılasnayış",
+	"farmer-confirmsetting-reason": "Sebeb",
+	"farmer-description": "Sılasnayış",
+	"farmer-createwiki-form-help": "Peşti",
+	"farmer-createwiki-description": "Sılasnayış",
+	"farmer-createwiki-reason": "Sebeb",
+	"farmer-delete-form-submit": "Besterne",
+	"farmer-listofwikis": "Listey wikiyan",
+	"farmer-mainpage": "Pela Seri",
+	"farmer-basic-title1": "Sername",
+	"farmer-basic-description": "Şınasnayış",
+	"farmer-yes": "E",
+	"farmer-no": "Nê",
+	"farmer-defaultskin": "Asayışo hesıbyayê",
+	"farmer-defaultskin-button": "Hesıbyayê asayışi mor ke",
+	"farmer-extensions-register-name": "Name"
+}

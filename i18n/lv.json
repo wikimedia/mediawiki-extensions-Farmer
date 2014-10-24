@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"GreenZeb"
+		]
+	},
+	"farmer-createwiki-user": "Lietotājvārds",
+	"farmer-createwiki-name": "Viki vārds",
+	"farmer-createwiki-title": "Viki nosaukums",
+	"farmer-createwiki-description": "Apraksts",
+	"farmer-createwiki-reason": "Iemesls"
+}
