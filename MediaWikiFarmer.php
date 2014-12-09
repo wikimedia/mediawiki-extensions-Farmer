@@ -472,7 +472,7 @@ class MediaWikiFarmer {
 		$content = serialize( $this->_extensions );
 
 		if ( file_put_contents( $file, $content, LOCK_EX ) != strlen( $content ) ) {
-			throw new MWException( wfMsgHtml( 'farmer-error-noextwrite' ) . wfMsgHtml( 'word-separator' ) . $file );
+			throw new MWException( wfMessage( 'farmer-error-noextwrite' )->escaped() . wfMessage( 'word-separator' )->escaped() . $file );
 		}
 	}
 
