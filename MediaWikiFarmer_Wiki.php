@@ -142,7 +142,7 @@ class MediaWikiFarmer_Wiki {
 			$this->createDatabase();
 			$farmer->updateFarmList();
 		} else {
-			throw new MWException( wfMsgHtml( 'farmer-error-exists', $this->_name ) );
+			throw new MWException( wfMessage( 'farmer-error-exists')->rawParams( $this->_name )->escaped() );
 		}
 	}
 
@@ -328,7 +328,7 @@ class MediaWikiFarmer_Wiki {
 			}
 			$url = $server . $articlePath;
 		} else {
-			$url = wfMsgForContent( 'farmerinterwikiurl', $this->name, '$1' );
+			$url = wfMessage( 'farmerinterwikiurl' )->rawParams( $this->name, '$1' )->inContentLanguage()->text();
 		}
 		if ( !is_null( $article ) )
 			$url = str_replace( '$1', $article, $url );
@@ -469,7 +469,7 @@ class MediaWikiFarmer_Wiki {
 		$newid = $article->insertOn( $db );
 		$revision = new Revision( array(
 			'page'	  => $newid,
-			'text'	  => wfMsgForContent( 'farmernewwikimainpage' ),
+			'text'	  => wfMessage( 'farmernewwikimainpage' )->inContentLanguage()->text(),
 			'comment'   => '',
 			'user'	  => 0,
 			'user_text' => 'MediaWiki default',

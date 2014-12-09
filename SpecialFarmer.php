@@ -162,7 +162,7 @@ class SpecialFarmer extends SpecialPage {
 				$nameaccount = htmlspecialchars( $name );
 				$nametitle = htmlspecialchars( $title );
 				$namedescript = htmlspecialchars( $description );
-				$confirmaccount = wfMsgHtml( 'farmer-button-confirm' );
+				$confirmaccount = wfMessage( 'farmer-button-confirm' )->escaped();
 				$wgOut->addHTML( "
 
 <form id=\"farmercreate2\" method=\"post\" action=\"$action\">
@@ -296,7 +296,7 @@ class SpecialFarmer extends SpecialPage {
 		$current = $wgFarmer->getActiveWiki()->name;
 
 		foreach ( $list as $wiki ) {
-			$link = ( $current == $wiki['name'] ? wfMsgForContent( 'mainpage' ) : $wiki['name'] . ':' );
+			$link = ( $current == $wiki['name'] ? wfMessage( 'mainpage' )->inContentLanguage()->text() : $wiki['name'] . ':' );
 			$wgOut->addWikiText( '; [[' . $link . '|' . $wiki['title'] . ']] : ' . $wiki['description'] );
 		}
 	}
@@ -337,7 +337,7 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->addHTML(
 				'<form method="post" name="wikiTitle" action="' . $action . '">' .
 				'<input name="wikiTitle" size="30" value="' . $wiki->title . '" />' .
-				'<input type="submit" name="submit" value="' . wfMsgHtml( 'farmer-button-submit' ) . '" />' .
+				'<input type="submit" name="submit" value="' . wfMessage( 'farmer-button-submit' )->escaped() . '" />' .
 				'</form>'
 			);
 		}
@@ -348,7 +348,7 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->addHTML(
 			'<form method="post" name="wikiDescription" action="' . $action . '">' .
 			'<textarea name="wikiDescription" rows="5" cols="30">' . htmlspecialchars( $wiki->description ) . '</textarea>' .
-			'<input type="submit" name="submit" value="' . wfMsgHtml( 'farmer-button-submit' ) . '" />' .
+			'<input type="submit" name="submit" value="' . wfMessage( 'farmer-button-submit' )->escaped() . '" />' .
 			'</form>'
 		);
 
@@ -448,7 +448,7 @@ class SpecialFarmer extends SpecialPage {
 				$wgOut->addHTML( $toAdd . "<br />\n" );
 			}
 
-			$wgOut->addHTML( '<input type="submit" name="submitDefaultSkin" value="' . wfMsgHtml( 'farmer-defaultskin-button' ) . '" />' );
+			$wgOut->addHTML( '<input type="submit" name="submitDefaultSkin" value="' . wfMessage( 'farmer-defaultskin-button' )->escaped() . '" />' );
 			$wgOut->addHTML( '</form>' );
 		}
 
@@ -484,7 +484,7 @@ class SpecialFarmer extends SpecialPage {
 				$wgOut->addHTML( $toAdd );
 			}
 
-			$wgOut->addHTML( '<input type="submit" name="submitExtension" value="' . wfMsgHtml( 'farmer-extensions-button' ) . '" />' );
+			$wgOut->addHTML( '<input type="submit" name="submitExtension" value="' . wfMessage( 'farmer-extensions-button' )->escaped() . '" />' );
 			$wgOut->addHTML( '</form>' );
 		}
 	}
@@ -549,20 +549,20 @@ class SpecialFarmer extends SpecialPage {
 <form id=\"registerExtension\" method=\"post\">
 	<table>
 		<tr>
-			<td align=\"right\">" . wfMsgHtml( 'farmer-extensions-register-name' ) . "</td>
+			<td align=\"right\">" . wfMessage( 'farmer-extensions-register-name' )->escaped() . "</td>
 			<td align=\"left\"><input type=\"text\" size=\"20\" name=\"name\" value=\"\" /></td>
 		</tr>
 		<tr>
-			<td align=\"right\">" . wfMsgHtml( 'farmer-description' ) . "</td>
+			<td align=\"right\">" . wfMessage( 'farmer-description' )->escaped() . "</td>
 			<td align=\"left\"><input type=\"text\" size=\"50\" name=\"description\" value=\"\" /></td>
 		</tr>
 		<tr>
-			<td align=\"right\">" . wfMsgHtml( 'farmer-extensions-register-includefile' ) . "</td>
+			<td align=\"right\">" . wfMessage( 'farmer-extensions-register-includefile' )->escaped() . "</td>
 			<td align=\"left\"><input type=\"text\" size=\"50\" name=\"include\" value=\"\" /></td>
 		</tr>
 		<tr>
 			<td>&#160;</td>
-			<td align=\"right\"><input type=\"submit\" name=\"submit\" value=\"" . wfMsgHtml( 'farmer-button-submit' ) . "\" /></td>
+			<td align=\"right\"><input type=\"submit\" name=\"submit\" value=\"" . wfMessage( 'farmer-button-submit' )->escaped() . "\" /></td>
 		</tr>
 	</table>
 </form>" );
@@ -582,7 +582,7 @@ class SpecialFarmer extends SpecialPage {
 			$input .= 'checked="checked" ';
 		}
 
-		$input .= ' />' . wfMsgHtml( 'farmer-yes' ) . '&#160;&#160;';
+		$input .= ' />' . wfMessage( 'farmer-yes' )->escaped() . '&#160;&#160;';
 
 		$wgOut->addHTML( $input );
 
@@ -592,7 +592,7 @@ class SpecialFarmer extends SpecialPage {
 			$input .= 'checked="checked" ';
 		}
 
-		$input .= ' />' . wfMsgHtml( 'farmer-no' );
+		$input .= ' />' . wfMessage( 'farmer-no' )->escaped();
 
 		$wgOut->addHTML( $input . '</p>' );
 	}
