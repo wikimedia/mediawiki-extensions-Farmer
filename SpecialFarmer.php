@@ -148,13 +148,13 @@ class SpecialFarmer extends SpecialPage {
 
 				$wgOut->addHtml( Xml::openElement( 'table', array( 'class' => 'wikitable' ) ) . "\n" .
 					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
-						wfMsgExt( 'farmer-confirmsetting-name', 'parseinline' ) ) . Xml::element( 'td', array(), $name ) ) . "\n" .
+						wfMessage( 'farmer-confirmsetting-name' )->parse() ) . Xml::element( 'td', array(), $name ) ) . "\n" .
 					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
-						wfMsgExt( 'farmer-confirmsetting-title', 'parseinline' ) ) . Xml::element( 'td', array(), $title ) ) . "\n" .
+						wfMessage( 'farmer-confirmsetting-title' )->parse() ) . Xml::element( 'td', array(), $title ) ) . "\n" .
 					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
-						wfMsgExt( 'farmer-confirmsetting-description', 'parseinline' ) ) . Xml::element( 'td', array(), $description ) ) . "\n" .
+						wfMessage( 'farmer-confirmsetting-description' )->parse() ) . Xml::element( 'td', array(), $description ) ) . "\n" .
 					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
-						wfMsgExt( 'farmer-confirmsetting-reason', 'parseinline' ) ) . Xml::element( 'td', array(), $reason ) ) . "\n" .
+						wfMessage( 'farmer-confirmsetting-reason' )->parse() ) . Xml::element( 'td', array(), $reason ) ) . "\n" .
 					Xml::closeElement( 'table' )
 				);
 				$wgOut->addWikiMsg( 'farmer-confirmsetting-text', $name, $title, $url );
@@ -192,9 +192,9 @@ class SpecialFarmer extends SpecialPage {
 			'farmer-createwiki-form-text4'
 		);
 
-		$formURL = wfMsgHTML( 'farmercreateurl' );
-		$formSitename = wfMsgHTML( 'farmercreatesitename' );
-		$formNextStep = wfMsgHTML( 'farmercreatenextstep' );
+		$formURL = wfMessage( 'farmercreateurl' )->escaped();
+		$formSitename = wfMessage( 'farmercreatesitename' )->escaped();
+		$formNextStep = wfMessage( 'farmercreatenextstep' )->escaped();
 
 		$token = htmlspecialchars( $wgUser->editToken() );
 
@@ -270,7 +270,7 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->wrapWikiMsg( "== $1 ==\n$2", 'farmer-delete-title', 'farmer-delete-text' );
 
 		$select = new XmlSelect( 'wpWiki', false, $wgRequest->getVal( 'wpWiki' ) );
-		$select->addOption( wfMsg( 'farmer-delete-form' ), '-1' );
+		$select->addOption( wfMessage( 'farmer-delete-form' )->text(), '-1' );
 		foreach ( $list as $wiki ) {
 			if ( $wiki['name'] != $wgFarmer->getDefaultWiki() ) {
 				$name = $wiki['name'];
@@ -282,7 +282,7 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->addHTML(
 			Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'deleteWiki' ) ) . "\n" .
 			$select->getHTML() . "\n" .
-			Xml::submitButton( wfMsg( 'farmer-delete-form-submit' ) ) . "\n" .
+			Xml::submitButton( wfMessage( 'farmer-delete-form-submit' )->text() ) . "\n" .
 			Xml::closeElement( 'form' )
 		);
 	}
@@ -378,10 +378,10 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->addWikiMsg( 'farmer-basic-permission-visitor-text' );
 
 			$doArray = array(
-				array( 'read', wfMsg( 'right-read' ) ),
-				array( 'edit', wfMsg( 'right-edit' ) ),
-				array( 'createpage', wfMsg( 'right-createpage' ) ),
-				array( 'createtalk', wfMsg( 'right-createtalk' ) )
+				array( 'read', wfMessage( 'right-read' )->text() ),
+				array( 'edit', wfMessage( 'right-edit' )->text() ),
+				array( 'createpage', wfMessage( 'right-createpage' )->text() ),
+				array( 'createtalk', wfMessage( 'right-createtalk' )->text() )
 			);
 
 			foreach ( $doArray as $arr ) {
@@ -392,21 +392,22 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->addWikiMsg( 'farmer-basic-permission-user-text' );
 
 			$doArray = array(
-				array( 'read', wfMsg( 'right-read' ) ),
-				array( 'edit', wfMsg( 'right-edit' ) ),
-				array( 'createpage', wfMsg( 'right-createpage' ) ),
-				array( 'createtalk', wfMsg( 'right-createtalk' ) ),
-				array( 'move', wfMsg( 'right-move' ) ),
-				array( 'upload', wfMsg( 'right-upload' ) ),
-				array( 'reupload', wfMsg( 'right-reupload' ) ),
-				array( 'minoredit', wfMsg( 'right-minoredit' ) )
+				array( 'read', wfMessage( 'right-read' )->text() ),
+				array( 'edit', wfMessage( 'right-edit' )->text() ),
+				array( 'createpage', wfMessage( 'right-createpage' )->text() ),
+				array( 'createtalk', wfMessage( 'right-createtalk' )->text() ),
+				array( 'move', wfMessage( 'right-move' )->text() ),
+				array( 'upload', wfMessage( 'right-upload' )->text() ),
+				array( 'reupload', wfMessage( 'right-reupload' )->text() ),
+				array( 'minoredit', wfMessage( 'right-minoredit' )->text() )
 			);
 
 			foreach ( $doArray as $arr ) {
 				$this->_doPermissionInput( $wgOut, $wiki, 'user', $arr[0], $arr[1] );
 			}
 
-			$wgOut->addHTML( '<input type="submit" name="setPermissions" value="' . wfMsg( 'farmer-setpermission' ) . '" />' );
+			$wgOut->addHTML( '<input type="submit" name="setPermissions" value="' .
+				wfMessage( 'farmer-setpermission' )->text() . '" />' );
 			$wgOut->addHTML( "</form>\n\n\n" );
 		}
 
@@ -574,7 +575,9 @@ class SpecialFarmer extends SpecialPage {
 	protected function _doPermissionInput( $wgOut, &$wiki, $group, $permission, $description ) {
 		$value = $wiki->getPermission( $group, $permission );
 
-		$wgOut->addHTML( '<p>' . $description . wfMsgExt( 'colon-separator', array( 'escapenoentities' ) ) );
+		$wgOut->addHTML( '<p>' . $description .
+			Sanitizer::escapeHtmlAllowEntities( wfMessage( 'colon-separator' )->text() ) );
+		wfMessage( 'eh' )->escaped()
 
 		$input = "<input type=\"radio\" name=\"permission[$group][$permission]\" value=\"1\" ";
 
