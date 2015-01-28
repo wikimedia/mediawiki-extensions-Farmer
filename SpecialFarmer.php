@@ -577,7 +577,7 @@ class SpecialFarmer extends SpecialPage {
 
 		$wgOut->addHTML( '<p>' . $description .
 			Sanitizer::escapeHtmlAllowEntities( wfMessage( 'colon-separator' )->text() ) );
-		wfMessage( 'eh' )->escaped()
+		wfMessage( 'eh' )->escaped();
 
 		$input = "<input type=\"radio\" name=\"permission[$group][$permission]\" value=\"1\" ";
 
