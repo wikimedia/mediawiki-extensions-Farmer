@@ -18,6 +18,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Farmer',
 	'descriptionmsg' => 'farmer-desc',
 	'version' => '0.1.2',
+	'license-name' => 'GPL-2.0+',
 );
 
 /**
