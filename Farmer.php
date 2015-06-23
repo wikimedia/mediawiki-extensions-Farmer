@@ -86,7 +86,6 @@ $wgAutoloadClasses['MediaWikiFarmer_Wiki'] = $root . 'MediaWikiFarmer_Wiki.php';
 $wgAutoloadClasses['SpecialFarmer'] = $root . 'SpecialFarmer.php';
 
 $wgSpecialPages['Farmer'] = 'SpecialFarmer';
-$wgSpecialPageGroups['Farmer'] = 'wiki';
 
 # New permissions
 $wgAvailableRights[] = 'farmeradmin';

@@ -599,4 +599,8 @@ class SpecialFarmer extends SpecialPage {
 
 		$wgOut->addHTML( $input . '</p>' );
 	}
+
+	protected function getGroupName() {
+		return 'wiki';
+	}
 }
