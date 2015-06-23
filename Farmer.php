@@ -74,7 +74,6 @@ $wgFarmerSettings = array(
 );
 
 $wgMessagesDirs['MediaWikiFarmer'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['MediaWikiFarmer'] = __DIR__ . '/Farmer.i18n.php';
 
 $wgExtensionMessagesFiles['MediaWikiFarmerAlias'] = __DIR__ . '/Farmer.alias.php';
 
