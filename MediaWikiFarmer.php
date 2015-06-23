@@ -10,6 +10,8 @@
  */
 class MediaWikiFarmer {
 
+	// @codingStandardsIgnoreStart
+
 	protected $_parameters = array();
 
 	/** Database name to use, null means use file storage */
@@ -62,6 +64,8 @@ class MediaWikiFarmer {
 	/** Instance of this class */
 	protected static $_instance = null;
 
+	// @codingStandardsIgnoreEnd
+
 	public static function getInstance() {
 		return self::$_instance;
 	}
@@ -111,7 +115,7 @@ class MediaWikiFarmer {
 
 		if ( $this->_useDatabase ) {
 			global $IP;
-			require_once( "$IP/includes/GlobalFunctions.php" );
+			require_once ( "$IP/includes/GlobalFunctions.php" );
 		} else {
 			if ( !is_dir( $this->_configDirectory ) ) {
 				throw new MWException( 'configDirectory not found: ' . $this->_configDirectory );
@@ -179,7 +183,9 @@ class MediaWikiFarmer {
 			return $this->_doWiki( $wiki );
 
 		} else {
-			throw new MWException( 'Function to map wiki name in farm not found: ' . print_r( $this->_matchFunction, true ) );
+			throw new MWException(
+				'Function to map wiki name in farm not found: ' . print_r( $this->_matchFunction, true )
+			);
 		}
 	}
 
@@ -188,7 +194,10 @@ class MediaWikiFarmer {
 	 *
 	 * @param string $wiki Wiki to load
 	 */
+	// @codingStandardsIgnoreStart
 	protected function _doWiki( $wiki ) {
+	// @codingStandardsIgnoreEnd
+
 		$wiki = MediaWikiFarmer_Wiki::factory( $wiki );
 		$this->_activeWiki = $wiki;
 
@@ -202,7 +211,9 @@ class MediaWikiFarmer {
 				$wiki->save();
 
 				if ( !$wiki->exists() ) {
-					throw new MWException( 'MediaWikiFarmer could not write the default wiki configuration file.' );
+					throw new MWException(
+						'MediaWikiFarmer could not write the default wiki configuration file.'
+					);
 				} else {
 					$this->updateFarmList();
 					$wiki->initialize();
@@ -214,7 +225,9 @@ class MediaWikiFarmer {
 				if ( is_callable( $this->_onUnknownWikiFunction ) ) {
 					call_user_func( $this->_onUnknownWikiFunction, $this, $wiki );
 				} else {
-					throw new MWException( 'Could not call function: ' . print_r( $this->_onUnknownFunction, true ) );
+					throw new MWException(
+						'Could not call function: ' . print_r( $this->_onUnknownFunction, true )
+					);
 				}
 			}
 		} else {
@@ -244,7 +257,9 @@ class MediaWikiFarmer {
 	 * want to use the default wiki, as specified by the 'defaultWiki'
 	 * parameter.
 	 */
+	// @codingStandardsIgnoreStart
 	protected static function _matchByURLRegExp( MediaWikiFarmer $farmer, $url = null ) {
+	// @codingStandardsIgnoreEnd
 		if ( is_null( $url ) )
 			$url = $_SERVER['REQUEST_URI'];
 
@@ -268,7 +283,9 @@ class MediaWikiFarmer {
 	 * @param string $url URL to match to a wiki
 	 * @return string|bool Wiki name on success.  false on failure
 	 */
+	// @codingStandardsIgnoreStart
 	protected static function _matchByURLHostname( MediaWikiFarmer $farmer, $url = null ) {
+	// @codingStandardsIgnoreEnd
 		if ( is_null( $url ) )
 			$url = $_SERVER['REQUEST_URI'];
 
@@ -294,11 +311,16 @@ class MediaWikiFarmer {
 	 * period
 	 *
 	 */
+	// @codingStandardsIgnoreStart
 	protected static function _matchByServerName( MediaWikiFarmer $farmer ) {
+	// @codingStandardsIgnoreEnd
 		$serverName = $_SERVER['SERVER_NAME'];
 
 		// if string ends with the suffix specified
-		if ( substr( $serverName, - strlen( $farmer->_matchServerNameSuffix ) ) == $farmer->_matchServerNameSuffix
+		if ( substr( $serverName, - strlen(
+					$farmer->_matchServerNameSuffix
+				)
+			) == $farmer->_matchServerNameSuffix
 			&& $serverName != $farmer->_matchServerNameSuffix ) {
 			return substr( $serverName, 0, - strlen( $farmer->_matchServerNameSuffix ) - 1 );
 		}
@@ -313,7 +335,9 @@ class MediaWikiFarmer {
 	 *
 	 * @param string $wiki Unknown wiki that was accessed
 	 */
+	// @codingStandardsIgnoreStart
 	protected static function _redirectTo( MediaWikiFarmer $farmer, $wiki ) {
+	// @codingStandardsIgnoreEnd
 		$urlTo = str_replace( '$1', $wiki->name, $farmer->_redirectToURL );
 
 		header( 'Location: ' . $urlTo );
@@ -339,7 +363,9 @@ class MediaWikiFarmer {
 	 * @param $wiki String
 	 * @return Array
 	 */
+	// @codingStandardsIgnoreStart
 	protected static function _prefixTable( MediaWikiFarmer $farmer, $wiki ) {
+	// @codingStandardsIgnoreEnd
 		if ( $farmer->useWgConf() ) {
 			global $wgConf;
 			return array( $wgConf->get( 'wgDBname', $wiki ), $wgConf->get( 'wgDBprefix', $wiki ) );
@@ -363,7 +389,10 @@ class MediaWikiFarmer {
 		try {
 			$db = wfGetDB( $type, array(), $this->_databaseName );
 		} catch ( DBConnectionError $e ) {
-			throw new MWException( __METHOD__ . ": impossible to connect to {$this->_databaseName} to get farm configuration: " . $e->getMessage() );
+			throw new MWException(
+				__METHOD__ . ": impossible to connect to {$this->_databaseName} to get farm configuration: " .
+					$e->getMessage()
+			);
 		}
 		return $db;
 	}
@@ -401,7 +430,9 @@ class MediaWikiFarmer {
 	 *
 	 * @return String
 	 */
+	// @codingStandardsIgnoreStart
 	protected function _getExtensionFile() {
+	// @codingStandardsIgnoreEnd
 		return $this->_configDirectory . '/extensions';
 	}
 
@@ -463,7 +494,9 @@ class MediaWikiFarmer {
 	 * Writes out extension definitions to file
 	 * No utility when using database
 	 */
+	// @codingStandardsIgnoreStart
 	protected function _writeExtensions() {
+	// @codingStandardsIgnoreEnd
 		if ( $this->useDatabase() )
 			return false;
 
@@ -472,7 +505,9 @@ class MediaWikiFarmer {
 		$content = serialize( $this->_extensions );
 
 		if ( file_put_contents( $file, $content, LOCK_EX ) != strlen( $content ) ) {
-			throw new MWException( wfMessage( 'farmer-error-noextwrite' )->escaped() . wfMessage( 'word-separator' )->escaped() . $file );
+			throw new MWException( wfMessage(
+				'farmer-error-noextwrite'
+			)->escaped() . wfMessage( 'word-separator' )->escaped() . $file );
 		}
 	}
 
@@ -484,7 +519,9 @@ class MediaWikiFarmer {
 	 *
 	 * @retrun String
 	 */
+	// @codingStandardsIgnoreStart
 	protected function _getFarmListFile() {
+	// @codingStandardsIgnoreEnd
 		return $this->_configDirectory . '/farmlist';
 	}
 
@@ -496,7 +533,9 @@ class MediaWikiFarmer {
 	public function getFarmList() {
 		if ( $this->useDatabase() ) {
 			$dbr = $this->getDB( DB_SLAVE );
-			$res = $dbr->select( 'farmer_wiki', array( 'fw_name', 'fw_title', 'fw_description' ), array(), __METHOD__ );
+			$res = $dbr->select( 'farmer_wiki', array(
+				'fw_name', 'fw_title', 'fw_description'
+			), array(), __METHOD__ );
 			$arr = array();
 			foreach ( $res as $row ) {
 				$arr[$row->fw_name] = array(

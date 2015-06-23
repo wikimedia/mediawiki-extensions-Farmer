@@ -57,8 +57,8 @@ $wgFarmerSettings = array(
 
 	// Get DB name and table prefix for a wiki
 	'dbFromWikiFunction'        => array( 'MediaWikiFarmer', '_prefixTable' ),
-    'dbTablePrefixSeparator'    =>  '',
-    'dbTablePrefix'             =>  '',
+	'dbTablePrefixSeparator'    =>  '',
+	'dbTablePrefix'             =>  '',
 
 	// user name and password for MySQL admin user
 	'dbAdminUser'               =>  'root',

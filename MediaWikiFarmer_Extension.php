@@ -6,6 +6,7 @@
  *
  * @author Gregory Szorc <gregory.szorc@gmail.com>
  */
+// @codingStandardsIgnoreStart
 class MediaWikiFarmer_Extension {
 	protected $_name;
 	protected $_description;
@@ -15,6 +16,7 @@ class MediaWikiFarmer_Extension {
 	 * List of files that need to be included for this extension to work
 	 */
 	protected $_includeFiles = array();
+// @codingStandardsIgnoreEnd
 
 	public static function newFromRow( $row ) {
 		$ext = new self( $row->fe_name, $row->fe_description, $row->fe_path );
@@ -44,7 +46,7 @@ class MediaWikiFarmer_Extension {
 	 */
 	public function isValid() {
 		foreach ( $this->_includeFiles as $file ) {
-			$result = @fopen( $file, 'r', true );
+			$result = fopen( $file, 'r', true );
 
 			if ( $result === false ) return false;
 
