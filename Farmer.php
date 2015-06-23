@@ -77,6 +77,7 @@ $wgMessagesDirs['MediaWikiFarmer'] = __DIR__ . '/i18n';
 
 $wgExtensionMessagesFiles['MediaWikiFarmerAlias'] = __DIR__ . '/Farmer.alias.php';
 
+$wgAutoloadClasses['FarmerUpdaterHooks'] = __DIR__ . '/FarmerUpdater.hooks.php';
 $wgAutoloadClasses['MediaWikiFarmer'] = __DIR__ . '/MediaWikiFarmer.php';
 $wgAutoloadClasses['MediaWikiFarmer_Extension'] = __DIR__ . '/MediaWikiFarmer_Extension.php';
 $wgAutoloadClasses['MediaWikiFarmer_Wiki'] = __DIR__ . '/MediaWikiFarmer_Wiki.php';
@@ -99,3 +100,5 @@ $wgLogNames['farmer'] = 'farmer-log-name';
 $wgLogHeaders['farmer'] = 'farmer-log-header';
 $wgLogActions['farmer/create'] = 'farmer-log-create';
 $wgLogActions['farmer/delete'] = 'farmer-log-delete';
+
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'FarmerUpdaterHooks::addSchemaUpdates';
