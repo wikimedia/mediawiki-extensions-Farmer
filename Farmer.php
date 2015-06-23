@@ -73,17 +73,15 @@ $wgFarmerSettings = array(
 	'defaultSkin'               => 'vector',
 );
 
-$root = dirname( __FILE__ ) . '/';
-
 $wgMessagesDirs['MediaWikiFarmer'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['MediaWikiFarmer'] = __DIR__ . 'Farmer.i18n.php';
+$wgExtensionMessagesFiles['MediaWikiFarmer'] = __DIR__ . '/Farmer.i18n.php';
 
-$wgExtensionMessagesFiles['MediaWikiFarmerAlias'] = $root . 'Farmer.alias.php';
+$wgExtensionMessagesFiles['MediaWikiFarmerAlias'] = __DIR__ . '/Farmer.alias.php';
 
-$wgAutoloadClasses['MediaWikiFarmer'] = $root . 'MediaWikiFarmer.php';
-$wgAutoloadClasses['MediaWikiFarmer_Extension'] = $root . 'MediaWikiFarmer_Extension.php';
-$wgAutoloadClasses['MediaWikiFarmer_Wiki'] = $root . 'MediaWikiFarmer_Wiki.php';
-$wgAutoloadClasses['SpecialFarmer'] = $root . 'SpecialFarmer.php';
+$wgAutoloadClasses['MediaWikiFarmer'] = __DIR__ . '/MediaWikiFarmer.php';
+$wgAutoloadClasses['MediaWikiFarmer_Extension'] = __DIR__ . '/MediaWikiFarmer_Extension.php';
+$wgAutoloadClasses['MediaWikiFarmer_Wiki'] = __DIR__ . '/MediaWikiFarmer_Wiki.php';
+$wgAutoloadClasses['SpecialFarmer'] = __DIR__ . '/SpecialFarmer.php';
 
 $wgSpecialPages['Farmer'] = 'SpecialFarmer';
 
