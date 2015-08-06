@@ -404,7 +404,7 @@ class SpecialFarmer extends SpecialPage {
 		);
 
 		# Permissions stuff
-		if ( wfRunHooks( 'FarmerAdminPermissions', array( $wgFarmer ) ) ) {
+		if ( Hooks::run( 'FarmerAdminPermissions', array( $wgFarmer ) ) ) {
 
 			# Import
 			if ( $wgRequest->wasPosted() && $permissions = $wgRequest->getArray( 'permission' ) ) {
@@ -463,7 +463,7 @@ class SpecialFarmer extends SpecialPage {
 		}
 
 		# Default skin
-		if ( wfRunHooks( 'FarmerAdminSkin', array( $wgFarmer ) ) ) {
+		if ( Hooks::run( 'FarmerAdminSkin', array( $wgFarmer ) ) ) {
 
 			# Import
 			if ( $wgRequest->wasPosted() && $newSkin = $wgRequest->getVal( 'defaultSkin' ) ) {
@@ -507,7 +507,7 @@ class SpecialFarmer extends SpecialPage {
 		}
 
 		# Manage active extensions
-		if ( wfRunHooks( 'FarmerAdminExtensions', array( $wgFarmer ) ) ) {
+		if ( Hooks::run( 'FarmerAdminExtensions', array( $wgFarmer ) ) ) {
 
 			$extensions = $wgFarmer->getExtensions();
 
@@ -555,7 +555,7 @@ class SpecialFarmer extends SpecialPage {
 	// @codingStandardsIgnoreEnd
 		global $wgOut, $wgUser, $wgRequest;
 
-		if ( !wfRunHooks( 'FarmerManageExtensions', array( $wgFarmer ) ) ) {
+		if ( !Hooks::run( 'FarmerManageExtensions', array( $wgFarmer ) ) ) {
 			return;
 		}
 
