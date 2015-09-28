@@ -114,10 +114,10 @@ class MediaWikiFarmer {
 		$this->_useDatabase = ( $this->_databaseName !== null );
 
 		if ( $this->_useDatabase ) {
-			// @codingStandardsIgnoreStart
+			// @codingStandardsIgnoreStart Ignore global not starting with wg.
 			global $IP;
-			require_once ( "$IP/includes/GlobalFunctions.php" );
 			// @codingStandardsIgnoreEnd
+			require_once "$IP/includes/GlobalFunctions.php";
 		} else {
 			if ( !is_dir( $this->_configDirectory ) ) {
 				throw new MWException( 'configDirectory not found: ' . $this->_configDirectory );
