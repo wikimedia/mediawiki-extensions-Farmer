@@ -212,8 +212,9 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	public function delete() {
-		if ( !$this->exists() )
+		if ( !$this->exists() ) {
 			return;
+		}
 
 		$farmer = MediaWikiFarmer::getInstance();
 
@@ -303,7 +304,8 @@ class MediaWikiFarmer_Wiki {
 			}
 		}
 
-		if ( $callback = $farmer->initCallback() ) {
+		$callback = $farmer->initCallback();
+		if ( $callback ) {
 			if ( is_callable( $callback ) ) {
 				call_user_func( $callback, $this );
 			} else {
@@ -353,8 +355,9 @@ class MediaWikiFarmer_Wiki {
 				$this->name, '$1'
 			)->inContentLanguage()->text();
 		}
-		if ( !is_null( $article ) )
+		if ( !is_null( $article ) ) {
 			$url = str_replace( '$1', $article, $url );
+		}
 		return $url;
 	}
 
@@ -427,8 +430,9 @@ class MediaWikiFarmer_Wiki {
 		global $wgDBserver, $wgDBtype;
 		$farmer = MediaWikiFarmer::getInstance();
 		if ( $selectDB ) {
-			if ( isset( $this->_db ) && is_object( $this->_db ) )
+			if ( isset( $this->_db ) && is_object( $this->_db ) ) {
 				return $this->_db;
+			}
 			list( $db, $prefix ) = $farmer->splitWikiDB( $this->name );
 		} else {
 			$db = false;
@@ -438,8 +442,9 @@ class MediaWikiFarmer_Wiki {
 		$password = $farmer->dbAdminPassword;
 		$class = 'Database' . ucfirst( $wgDBtype );
 		$object = new $class( $wgDBserver, $user, $password, $db, 0, $prefix );
-		if ( $selectDB )
+		if ( $selectDB ) {
 			$this->_db = $object;
+		}
 		return $object;
 	}
 
@@ -576,7 +581,7 @@ class MediaWikiFarmer_Wiki {
 
 		$prefix = $db->getProperty( 'mTablePrefix' );
 
-		while ( $row = $result->fetchRow() ) {
+		foreach ( $result as $row ) {
 			if ( $prefix == '' || strpos( $row[0], $prefix ) === 0 ) {
 				$query = 'DROP TABLE `' . $row[0] . '`';
 				$db->query( $query, __METHOD__ );

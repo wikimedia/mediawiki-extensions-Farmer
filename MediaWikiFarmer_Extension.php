@@ -48,7 +48,9 @@ class MediaWikiFarmer_Extension {
 		foreach ( $this->_includeFiles as $file ) {
 			$result = fopen( $file, 'r', true );
 
-			if ( $result === false ) return false;
+			if ( $result === false ) {
+				return false;
+			}
 
 			fclose( $result );
 		}

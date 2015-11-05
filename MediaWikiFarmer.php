@@ -169,8 +169,9 @@ class MediaWikiFarmer {
 				// then use it to get the wiki
 				if ( $wgCommandLineMode && defined( 'MW_DB' ) ) {
 					$wiki = MW_DB;
-					if ( defined( 'MW_PREFIX' ) && MW_PREFIX )
+					if ( defined( 'MW_PREFIX' ) && MW_PREFIX ) {
 						$wiki .= '-' . MW_PREFIX;
+					}
 				} else {
 					$wiki = $this->_defaultWiki;
 				}
@@ -262,8 +263,9 @@ class MediaWikiFarmer {
 	// @codingStandardsIgnoreStart
 	protected static function _matchByURLRegExp( MediaWikiFarmer $farmer, $url = null ) {
 	// @codingStandardsIgnoreEnd
-		if ( is_null( $url ) )
+		if ( is_null( $url ) ) {
 			$url = $_SERVER['REQUEST_URI'];
+		}
 
 		if ( preg_match( $farmer->_matchRegExp, $url, $matches ) === 1 ) {
 			if ( array_key_exists( $farmer->_matchOffset, $matches ) ) {
@@ -288,11 +290,14 @@ class MediaWikiFarmer {
 	// @codingStandardsIgnoreStart
 	protected static function _matchByURLHostname( MediaWikiFarmer $farmer, $url = null ) {
 	// @codingStandardsIgnoreEnd
-		if ( is_null( $url ) )
+		if ( is_null( $url ) ) {
 			$url = $_SERVER['REQUEST_URI'];
+		}
 
-		if ( $result = parse_url( $url, PHP_URL_HOST ) ) {
-			if ( $host = $result['host'] ) {
+		$result = parse_url( $url, PHP_URL_HOST );
+		if ( $result ) {
+			$host = $result['host'];
+			if ( $host ) {
 				if ( preg_match( $farmer->_matchRegExp, $host, $matches ) === 1 ) {
 					if ( array_key_exists( $farmer->_matchOffset, $matches ) ) {
 						return $matches[$farmer->_matchOffset];
@@ -385,8 +390,9 @@ class MediaWikiFarmer {
 	 * @return Database object
 	 */
 	public function getDB( $type ) {
-		if ( !$this->useDatabase() )
+		if ( !$this->useDatabase() ) {
 			throw new MWException( __METHOD__ . ' called when not using database backend.' );
+		}
 
 		try {
 			$db = wfGetDB( $type, array(), $this->_databaseName );
@@ -499,8 +505,9 @@ class MediaWikiFarmer {
 	// @codingStandardsIgnoreStart
 	protected function _writeExtensions() {
 	// @codingStandardsIgnoreEnd
-		if ( $this->useDatabase() )
+		if ( $this->useDatabase() ) {
 			return false;
+		}
 
 		$file = $this->_getExtensionFile();
 
@@ -557,8 +564,9 @@ class MediaWikiFarmer {
 	 * No utility when using database
 	 */
 	public function updateFarmList() {
-		if ( $this->useDatabase() )
+		if ( $this->useDatabase() ) {
 			return;
+		}
 
 		$directory = new DirectoryIterator( $this->_configDirectory . '/wikis/' );
 		$wikis = array();

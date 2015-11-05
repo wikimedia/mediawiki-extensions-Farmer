@@ -277,28 +277,36 @@ class SpecialFarmer extends SpecialPage {
 			return;
 		}
 
-		if ( $wgRequest->wasPosted() && ( $wiki = $wgRequest->getVal( 'wpWiki' ) ) && $wiki != '-1' ) {
-			if ( $wgRequest->getCheck( 'wpConfirm' ) ) {
-				$wgOut->wrapWikiMsg( '<div class="successbox">$1</div>', array( 'farmer-deleting', $wiki ) );
+		if ( $wgRequest->wasPosted() ) {
+			$wiki = $wgRequest->getVal( 'wpWiki' );
+			if ( $wiki && $wiki != '-1' ) {
+				if ( $wgRequest->getCheck( 'wpConfirm' ) ) {
+					$wgOut->wrapWikiMsg( '<div class="successbox">$1</div>', array( 'farmer-deleting', $wiki ) );
 
-				$log = new LogPage( 'farmer' );
-				$log->addEntry( 'delete', $this->getTitle(), $wgRequest->getVal( 'wpReason' ), array( $wiki ) );
+					$log = new LogPage( 'farmer' );
+					$log->addEntry(
+						'delete',
+						$this->getTitle(),
+						$wgRequest->getVal( 'wpReason' ),
+						array( $wiki )
+					);
 
-				$deleteWiki = MediaWikiFarmer_Wiki::factory( $wiki );
-				$deleteWiki->deleteWiki();
-			} else {
-				$wgOut->addWikiMsg( 'farmer-delete-confirm-wiki', $wiki );
-				$wgOut->addHTML(
-					Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'deleteWiki' ) ) . "\n" .
-					Xml::buildForm( array(
+					$deleteWiki = MediaWikiFarmer_Wiki::factory( $wiki );
+					$deleteWiki->deleteWiki();
+				} else {
+					$wgOut->addWikiMsg( 'farmer-delete-confirm-wiki', $wiki );
+					$wgOut->addHTML(
+						Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'deleteWiki' ) ) . "\n" .
+						Xml::buildForm( array(
 							'farmer-delete-reason' => Xml::input( 'wpReason', false, $wgRequest->getVal( 'wpReason' ) ),
 							'farmer-delete-confirm' => Xml::check( 'wpConfirm' )
 						), 'farmer-delete-form-submit' ) . "\n" .
-					Html::Hidden( 'wpWiki', $wiki ) . "\n" .
-					Xml::closeElement( 'form' )
-				);
+						Html::Hidden( 'wpWiki', $wiki ) . "\n" .
+						Xml::closeElement( 'form' )
+					);
+				}
+				return;
 			}
-			return;
 		}
 
 		$list = $wgFarmer->getFarmList();
@@ -363,13 +371,15 @@ class SpecialFarmer extends SpecialPage {
 
 		$wiki = $wgFarmer->getActiveWiki();
 
-		if ( $title = $wgRequest->getVal( 'wikiTitle' ) ) {
+		$title = $wgRequest->getVal( 'wikiTitle' );
+		if ( $title ) {
 			$wiki->title = MediaWikiFarmer_Wiki::sanitizeTitle( $title );
 			$wiki->save();
 			$wgFarmer->updateFarmList();
 		}
 
-		if ( $description = $wgRequest->getVal( 'wikiDescription' ) ) {
+		$description = $wgRequest->getVal( 'wikiDescription' );
+		if ( $description ) {
 			$wiki->description = $description;
 			$wiki->save();
 			$wgFarmer->updateFarmList();
@@ -407,16 +417,19 @@ class SpecialFarmer extends SpecialPage {
 		if ( Hooks::run( 'FarmerAdminPermissions', array( $wgFarmer ) ) ) {
 
 			# Import
-			if ( $wgRequest->wasPosted() && $permissions = $wgRequest->getArray( 'permission' ) ) {
-				foreach ( $permissions['*'] as $k => $v ) {
-					$wiki->setPermissionForAll( $k, $v );
-				}
+			if ( $wgRequest->wasPosted() ) {
+				$permissions = $wgRequest->getArray( 'permission' );
+				if ( $permissions ) {
+					foreach ( $permissions['*'] as $k => $v ) {
+						$wiki->setPermissionForAll( $k, $v );
+					}
 
-				foreach ( $permissions['user'] as $k => $v ) {
-					$wiki->setPermissionForUsers( $k, $v );
-				}
+					foreach ( $permissions['user'] as $k => $v ) {
+						$wiki->setPermissionForUsers( $k, $v );
+					}
 
-				$wiki->save();
+					$wiki->save();
+				}
 			}
 
 			# Form
@@ -466,9 +479,12 @@ class SpecialFarmer extends SpecialPage {
 		if ( Hooks::run( 'FarmerAdminSkin', array( $wgFarmer ) ) ) {
 
 			# Import
-			if ( $wgRequest->wasPosted() && $newSkin = $wgRequest->getVal( 'defaultSkin' ) ) {
-				$wiki->wgDefaultSkin = $newSkin;
-				$wiki->save();
+			if ( $wgRequest->wasPosted() ) {
+				$newSkin = $wgRequest->getVal( 'defaultSkin' );
+				if ( $newSkin ) {
+					$wiki->wgDefaultSkin = $newSkin;
+					$wiki->save();
+				}
 			}
 
 			# Form
