@@ -228,7 +228,7 @@ class SpecialFarmer extends SpecialPage {
 		$formSitename = wfMessage( 'farmercreatesitename' )->escaped();
 		$formNextStep = wfMessage( 'farmercreatenextstep' )->escaped();
 
-		$token = htmlspecialchars( $wgUser->editToken() );
+		$token = htmlspecialchars( $wgUser->getEditToken() );
 
 		$wgOut->addHTML(
 			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $action ) ) . "\n" .
