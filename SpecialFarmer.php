@@ -252,7 +252,7 @@ class SpecialFarmer extends SpecialPage {
 		global $wgUser, $wgOut;
 
 		if ( !MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) ) {
-			$wgOut->permissionRequired( 'farmeradmin' );
+			throw new PermissionsError( 'farmeradmin' );
 			return;
 		}
 
