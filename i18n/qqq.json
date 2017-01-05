@@ -11,7 +11,7 @@
 		]
 	},
 	"farmer": "Farmer",
-	"farmer-desc": "{{desc|name=Farmer|url=http://www.mediawiki.org/wiki/Extension:Farmer}}",
+	"farmer-desc": "{{desc|name=Farmer|url=https://www.mediawiki.org/wiki/Extension:Farmer}}",
 	"farmercantcreatewikis": "You are unable to create wikis because you do not have the createwikis privilege",
 	"farmercreateurl": "{{optional}}",
 	"farmercreatesitename": "Site name",
