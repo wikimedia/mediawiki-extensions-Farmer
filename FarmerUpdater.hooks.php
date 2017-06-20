@@ -10,7 +10,6 @@ class FarmerUpdaterHooks {
 	 */
 	public static function addSchemaUpdates( DatabaseUpdater $updater ) {
 		if ( $updater->getDB()->getType() == 'mysql' || $updater->getDB()->getType() == 'sqlite' ) {
-
 			$updater->addExtensionTable( 'farmer_wiki', __DIR__ . "/farmer.sql" );
 			$updater->addExtensionTable( 'farmer_extension', __DIR__ . "/farmer.sql" );
 			$updater->addExtensionTable( 'farmer_wiki_extension', __DIR__ . "/farmer.sql" );

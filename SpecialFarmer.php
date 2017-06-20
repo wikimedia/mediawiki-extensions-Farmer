@@ -69,7 +69,6 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->wrapWikiMsg( '* $1', [ 'farmer-list-wiki-text', 'Special:Farmer/list' ] );
 
 		if ( $wgFarmer->getActiveWiki()->isDefaultWiki() ) {
-
 			if ( MediaWikiFarmer::userCanCreateWiki( $wgUser ) ) {
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-createwiki' );
 				$wgOut->wrapWikiMsg( '* $1', [ 'farmer-createwiki-text', 'Special:Farmer/create' ] );
@@ -415,7 +414,6 @@ class SpecialFarmer extends SpecialPage {
 
 		# Permissions stuff
 		if ( Hooks::run( 'FarmerAdminPermissions', [ $wgFarmer ] ) ) {
-
 			# Import
 			if ( $wgRequest->wasPosted() ) {
 				$permissions = $wgRequest->getArray( 'permission' );
@@ -477,7 +475,6 @@ class SpecialFarmer extends SpecialPage {
 
 		# Default skin
 		if ( Hooks::run( 'FarmerAdminSkin', [ $wgFarmer ] ) ) {
-
 			# Import
 			if ( $wgRequest->wasPosted() ) {
 				$newSkin = $wgRequest->getVal( 'defaultSkin' );
@@ -524,7 +521,6 @@ class SpecialFarmer extends SpecialPage {
 
 		# Manage active extensions
 		if ( Hooks::run( 'FarmerAdminExtensions', [ $wgFarmer ] ) ) {
-
 			$extensions = $wgFarmer->getExtensions();
 
 			// if we post a list of new extensions, wipe the old list from the wiki

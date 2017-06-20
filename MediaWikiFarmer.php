@@ -207,7 +207,6 @@ class MediaWikiFarmer {
 		if ( !$wiki->exists() ) {
 			// if the default wiki doesn't exist (probably first-time user)
 			if ( $wiki->isDefaultWiki() ) {
-
 				global $wgSitename;
 				$wiki->title = $wgSitename;
 
