@@ -6,149 +6,149 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'Farmer' => array( 'Farmer' ),
-);
+$specialPageAliases['en'] = [
+	'Farmer' => [ 'Farmer' ],
+];
 
 /** Afrikaans (Afrikaans) */
-$specialPageAliases['af'] = array(
-	'Farmer' => array( 'Boer' ),
-);
+$specialPageAliases['af'] = [
+	'Farmer' => [ 'Boer' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'Farmer' => array( 'مزارع' ),
-);
+$specialPageAliases['ar'] = [
+	'Farmer' => [ 'مزارع' ],
+];
 
 /** Egyptian Spoken Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'Farmer' => array( 'فلاح' ),
-);
+$specialPageAliases['arz'] = [
+	'Farmer' => [ 'فلاح' ],
+];
 
 /** Assamese (অসমীয়া) */
-$specialPageAliases['as'] = array(
-	'Farmer' => array( 'খেতিয়ক' ),
-);
+$specialPageAliases['as'] = [
+	'Farmer' => [ 'খেতিয়ক' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'Farmer' => array( 'Resber' ),
-);
+$specialPageAliases['diq'] = [
+	'Farmer' => [ 'Resber' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'Farmer' => array( 'کشاورز' ),
-);
+$specialPageAliases['fa'] = [
+	'Farmer' => [ 'کشاورز' ],
+];
 
 /** Franco-Provençal (arpetan) */
-$specialPageAliases['frp'] = array(
-	'Farmer' => array( 'Grangiér' ),
-);
+$specialPageAliases['frp'] = [
+	'Farmer' => [ 'Grangiér' ],
+];
 
 /** Gujarati (ગુજરાતી) */
-$specialPageAliases['gu'] = array(
-	'Farmer' => array( 'ખેડૂત' ),
-);
+$specialPageAliases['gu'] = [
+	'Farmer' => [ 'ખેડૂત' ],
+];
 
 /** Haitian (Kreyòl ayisyen) */
-$specialPageAliases['ht'] = array(
-	'Farmer' => array( 'Kiltivatè' ),
-);
+$specialPageAliases['ht'] = [
+	'Farmer' => [ 'Kiltivatè' ],
+];
 
 /** Interlingua (interlingua) */
-$specialPageAliases['ia'] = array(
-	'Farmer' => array( 'Fermero' ),
-);
+$specialPageAliases['ia'] = [
+	'Farmer' => [ 'Fermero' ],
+];
 
 /** Indonesian (Bahasa Indonesia) */
-$specialPageAliases['id'] = array(
-	'Farmer' => array( 'Petani' ),
-);
+$specialPageAliases['id'] = [
+	'Farmer' => [ 'Petani' ],
+];
 
 /** Japanese (日本語) */
-$specialPageAliases['ja'] = array(
-	'Farmer' => array( 'ウィキファーム管理' ),
-);
+$specialPageAliases['ja'] = [
+	'Farmer' => [ 'ウィキファーム管理' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'Farmer' => array( '농부' ),
-);
+$specialPageAliases['ko'] = [
+	'Farmer' => [ '농부' ],
+];
 
 /** Colognian (Ripoarisch) */
-$specialPageAliases['ksh'] = array(
-	'Farmer' => array( 'StallVollWikis', 'WikiStall' ),
-);
+$specialPageAliases['ksh'] = [
+	'Farmer' => [ 'StallVollWikis', 'WikiStall' ],
+];
 
 /** Cornish (kernowek) */
-$specialPageAliases['kw'] = array(
-	'Farmer' => array( 'Tiek' ),
-);
+$specialPageAliases['kw'] = [
+	'Farmer' => [ 'Tiek' ],
+];
 
 /** Ladino (Ladino) */
-$specialPageAliases['lad'] = array(
-	'Farmer' => array( 'Agricultor' ),
-);
+$specialPageAliases['lad'] = [
+	'Farmer' => [ 'Agricultor' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'Farmer' => array( 'Фармер' ),
-);
+$specialPageAliases['mk'] = [
+	'Farmer' => [ 'Фармер' ],
+];
 
 /** Marathi (मराठी) */
-$specialPageAliases['mr'] = array(
-	'Farmer' => array( 'शेतकरी' ),
-);
+$specialPageAliases['mr'] = [
+	'Farmer' => [ 'शेतकरी' ],
+];
 
 /** Erzya (эрзянь) */
-$specialPageAliases['myv'] = array(
-	'Farmer' => array( 'Фермер' ),
-);
+$specialPageAliases['myv'] = [
+	'Farmer' => [ 'Фермер' ],
+];
 
 /** Norwegian Bokmål (norsk (bokmål)‎) */
-$specialPageAliases['nb'] = array(
-	'Farmer' => array( 'Bonde' ),
-);
+$specialPageAliases['nb'] = [
+	'Farmer' => [ 'Bonde' ],
+];
 
 /** Nedersaksisch (Nedersaksisch) */
-$specialPageAliases['nds-nl'] = array(
-	'Farmer' => array( 'WikiBoerderieje' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'Farmer' => [ 'WikiBoerderieje' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'Farmer' => array( 'Wikifarm' ),
-);
+$specialPageAliases['nl'] = [
+	'Farmer' => [ 'Wikifarm' ],
+];
 
 /** Romanian (română) */
-$specialPageAliases['ro'] = array(
-	'Farmer' => array( 'Fermier' ),
-);
+$specialPageAliases['ro'] = [
+	'Farmer' => [ 'Fermier' ],
+];
 
 /** Slovak (slovenčina) */
-$specialPageAliases['sk'] = array(
-	'Farmer' => array( 'Farma' ),
-);
+$specialPageAliases['sk'] = [
+	'Farmer' => [ 'Farma' ],
+];
 
 /** Tagalog (Tagalog) */
-$specialPageAliases['tl'] = array(
-	'Farmer' => array( 'Magsasaka' ),
-);
+$specialPageAliases['tl'] = [
+	'Farmer' => [ 'Magsasaka' ],
+];
 
 /** Turkish (Türkçe) */
-$specialPageAliases['tr'] = array(
-	'Farmer' => array( 'Çiftçi' ),
-);
+$specialPageAliases['tr'] = [
+	'Farmer' => [ 'Çiftçi' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'Farmer' => array( '农场' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'Farmer' => [ '农场' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'Farmer' => array( '農場' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'Farmer' => [ '農場' ],
+];

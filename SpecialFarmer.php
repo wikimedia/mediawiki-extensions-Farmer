@@ -66,34 +66,34 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->addWikiMsg( 'farmer-about-text' );
 
 		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-list-wiki' );
-		$wgOut->wrapWikiMsg( '* $1', array( 'farmer-list-wiki-text', 'Special:Farmer/list' ) );
+		$wgOut->wrapWikiMsg( '* $1', [ 'farmer-list-wiki-text', 'Special:Farmer/list' ] );
 
 		if ( $wgFarmer->getActiveWiki()->isDefaultWiki() ) {
 
 			if ( MediaWikiFarmer::userCanCreateWiki( $wgUser ) ) {
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-createwiki' );
-				$wgOut->wrapWikiMsg( '* $1', array( 'farmer-createwiki-text', 'Special:Farmer/create' ) );
+				$wgOut->wrapWikiMsg( '* $1', [ 'farmer-createwiki-text', 'Special:Farmer/create' ] );
 			}
 
 			// if the user is a farmer admin, give them a menu of cool admin tools
 			if ( MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) ) {
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-administration' );
 				$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-administration-extension' );
-				$wgOut->wrapWikiMsg( '* $1', array(
+				$wgOut->wrapWikiMsg( '* $1', [
 						'farmer-administration-extension-text', 'Special:Farmer/manageExtensions'
-					)
+					]
 				);
 
 				$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-admimistration-listupdate' );
-				$wgOut->wrapWikiMsg( '* $1', array(
+				$wgOut->wrapWikiMsg( '* $1', [
 						'farmer-admimistration-listupdate-text', 'Special:Farmer/updateList'
-					)
+					]
 				);
 
 				$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-administration-delete' );
-				$wgOut->wrapWikiMsg( '* $1', array(
+				$wgOut->wrapWikiMsg( '* $1', [
 						'farmer-administration-delete-text', 'Special:Farmer/delete'
-					)
+					]
 				);
 			}
 		}
@@ -102,9 +102,9 @@ class SpecialFarmer extends SpecialPage {
 
 		if ( MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) || $wiki->userIsAdmin( $wgUser ) ) {
 			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-administer-thiswiki' );
-			$wgOut->wrapWikiMsg( '* $1', array(
+			$wgOut->wrapWikiMsg( '* $1', [
 					'farmer-administer-thiswiki-text', 'Special:Farmer/admin'
-				)
+				]
 			);
 		}
 	}
@@ -144,7 +144,7 @@ class SpecialFarmer extends SpecialPage {
 				$wikiObj->create();
 
 				$log = new LogPage( 'farmer' );
-				$log->addEntry( 'create', $this->getTitle(), $reason, array( $name ) );
+				$log->addEntry( 'create', $this->getTitle(), $reason, [ $name ] );
 
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-wikicreated' );
 				$wgOut->addWikiMsg( 'farmer-wikicreated-text', $wikiObj->getUrl( wfUrlencode(
@@ -160,9 +160,9 @@ class SpecialFarmer extends SpecialPage {
 				$wiki = new MediaWikiFarmer_Wiki( $name );
 
 				if ( $wiki->exists() || $wiki->databaseExists() ) {
-					$wgOut->wrapWikiMsg( "== $1 ==\n\n$2", 'farmer-wikiexists', array(
+					$wgOut->wrapWikiMsg( "== $1 ==\n\n$2", 'farmer-wikiexists', [
 							'farmer-wikiexists-text', $name
-						)
+						]
 					);
 					return;
 				}
@@ -170,23 +170,23 @@ class SpecialFarmer extends SpecialPage {
 				$url = $wiki->getUrl( '' );
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-confirmsetting' );
 
-				$wgOut->addHtml( Xml::openElement( 'table', array( 'class' => 'wikitable' ) ) . "\n" .
-					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+				$wgOut->addHtml( Xml::openElement( 'table', [ 'class' => 'wikitable' ] ) . "\n" .
+					Xml::tags( 'tr', [], Xml::tags( 'th', [],
 						wfMessage(
 							'farmer-confirmsetting-name'
-						)->parse() ) . Xml::element( 'td', array(), $name ) ) . "\n" .
-					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+						)->parse() ) . Xml::element( 'td', [], $name ) ) . "\n" .
+					Xml::tags( 'tr', [], Xml::tags( 'th', [],
 						wfMessage(
 							'farmer-confirmsetting-title'
-						)->parse() ) . Xml::element( 'td', array(), $title ) ) . "\n" .
-					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+						)->parse() ) . Xml::element( 'td', [], $title ) ) . "\n" .
+					Xml::tags( 'tr', [], Xml::tags( 'th', [],
 						wfMessage(
 							'farmer-confirmsetting-description'
-						)->parse() ) . Xml::element( 'td', array(), $description ) ) . "\n" .
-					Xml::tags( 'tr', array(), Xml::tags( 'th', array(),
+						)->parse() ) . Xml::element( 'td', [], $description ) ) . "\n" .
+					Xml::tags( 'tr', [], Xml::tags( 'th', [],
 						wfMessage(
 							'farmer-confirmsetting-reason'
-						)->parse() ) . Xml::element( 'td', array(), $reason ) ) . "\n" .
+						)->parse() ) . Xml::element( 'td', [], $reason ) ) . "\n" .
 					Xml::closeElement( 'table' )
 				);
 				$wgOut->addWikiMsg( 'farmer-confirmsetting-text', $name, $title, $url );
@@ -231,15 +231,15 @@ class SpecialFarmer extends SpecialPage {
 		$token = htmlspecialchars( $wgUser->getEditToken() );
 
 		$wgOut->addHTML(
-			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $action ) ) . "\n" .
+			Xml::openElement( 'form', [ 'method' => 'post', 'action' => $action ] ) . "\n" .
 			Xml::buildForm(
-				array(
-					'farmer-createwiki-user' => Xml::element( 'b', array(), $wgUser->getName() ),
+				[
+					'farmer-createwiki-user' => Xml::element( 'b', [], $wgUser->getName() ),
 					'farmer-createwiki-name' => Xml::input( 'wpName', 20, $name ),
 					'farmer-createwiki-title' => Xml::input( 'wpTitle', 20, $title ),
 					'farmer-createwiki-description' => Xml::textarea( 'wpDescription', $description ),
 					'farmer-createwiki-reason' => Xml::input( 'wpReason', 20, $reason ),
-				), 'farmer-button-submit'
+				], 'farmer-button-submit'
 			) . "\n" .
 			Html::Hidden( 'token', $token ) . "\n" .
 			Xml::closeElement( 'form' )
@@ -281,14 +281,14 @@ class SpecialFarmer extends SpecialPage {
 			$wiki = $wgRequest->getVal( 'wpWiki' );
 			if ( $wiki && $wiki != '-1' ) {
 				if ( $wgRequest->getCheck( 'wpConfirm' ) ) {
-					$wgOut->wrapWikiMsg( '<div class="successbox">$1</div>', array( 'farmer-deleting', $wiki ) );
+					$wgOut->wrapWikiMsg( '<div class="successbox">$1</div>', [ 'farmer-deleting', $wiki ] );
 
 					$log = new LogPage( 'farmer' );
 					$log->addEntry(
 						'delete',
 						$this->getTitle(),
 						$wgRequest->getVal( 'wpReason' ),
-						array( $wiki )
+						[ $wiki ]
 					);
 
 					$deleteWiki = MediaWikiFarmer_Wiki::factory( $wiki );
@@ -296,11 +296,11 @@ class SpecialFarmer extends SpecialPage {
 				} else {
 					$wgOut->addWikiMsg( 'farmer-delete-confirm-wiki', $wiki );
 					$wgOut->addHTML(
-						Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'deleteWiki' ) ) . "\n" .
-						Xml::buildForm( array(
+						Xml::openElement( 'form', [ 'method' => 'post', 'name' => 'deleteWiki' ] ) . "\n" .
+						Xml::buildForm( [
 							'farmer-delete-reason' => Xml::input( 'wpReason', false, $wgRequest->getVal( 'wpReason' ) ),
 							'farmer-delete-confirm' => Xml::check( 'wpConfirm' )
-						), 'farmer-delete-form-submit' ) . "\n" .
+						], 'farmer-delete-form-submit' ) . "\n" .
 						Html::Hidden( 'wpWiki', $wiki ) . "\n" .
 						Xml::closeElement( 'form' )
 					);
@@ -324,7 +324,7 @@ class SpecialFarmer extends SpecialPage {
 		}
 
 		$wgOut->addHTML(
-			Xml::openElement( 'form', array( 'method' => 'post', 'name' => 'deleteWiki' ) ) . "\n" .
+			Xml::openElement( 'form', [ 'method' => 'post', 'name' => 'deleteWiki' ] ) . "\n" .
 			$select->getHTML() . "\n" .
 			Xml::submitButton( wfMessage( 'farmer-delete-form-submit' )->text() ) . "\n" .
 			Xml::closeElement( 'form' )
@@ -414,7 +414,7 @@ class SpecialFarmer extends SpecialPage {
 		);
 
 		# Permissions stuff
-		if ( Hooks::run( 'FarmerAdminPermissions', array( $wgFarmer ) ) ) {
+		if ( Hooks::run( 'FarmerAdminPermissions', [ $wgFarmer ] ) ) {
 
 			# Import
 			if ( $wgRequest->wasPosted() ) {
@@ -441,12 +441,12 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-basic-permission-visitor' );
 			$wgOut->addWikiMsg( 'farmer-basic-permission-visitor-text' );
 
-			$doArray = array(
-				array( 'read', wfMessage( 'right-read' )->text() ),
-				array( 'edit', wfMessage( 'right-edit' )->text() ),
-				array( 'createpage', wfMessage( 'right-createpage' )->text() ),
-				array( 'createtalk', wfMessage( 'right-createtalk' )->text() )
-			);
+			$doArray = [
+				[ 'read', wfMessage( 'right-read' )->text() ],
+				[ 'edit', wfMessage( 'right-edit' )->text() ],
+				[ 'createpage', wfMessage( 'right-createpage' )->text() ],
+				[ 'createtalk', wfMessage( 'right-createtalk' )->text() ]
+			];
 
 			foreach ( $doArray as $arr ) {
 				$this->_doPermissionInput( $wgOut, $wiki, '*', $arr[0], $arr[1] );
@@ -455,16 +455,16 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-basic-permission-user' );
 			$wgOut->addWikiMsg( 'farmer-basic-permission-user-text' );
 
-			$doArray = array(
-				array( 'read', wfMessage( 'right-read' )->text() ),
-				array( 'edit', wfMessage( 'right-edit' )->text() ),
-				array( 'createpage', wfMessage( 'right-createpage' )->text() ),
-				array( 'createtalk', wfMessage( 'right-createtalk' )->text() ),
-				array( 'move', wfMessage( 'right-move' )->text() ),
-				array( 'upload', wfMessage( 'right-upload' )->text() ),
-				array( 'reupload', wfMessage( 'right-reupload' )->text() ),
-				array( 'minoredit', wfMessage( 'right-minoredit' )->text() )
-			);
+			$doArray = [
+				[ 'read', wfMessage( 'right-read' )->text() ],
+				[ 'edit', wfMessage( 'right-edit' )->text() ],
+				[ 'createpage', wfMessage( 'right-createpage' )->text() ],
+				[ 'createtalk', wfMessage( 'right-createtalk' )->text() ],
+				[ 'move', wfMessage( 'right-move' )->text() ],
+				[ 'upload', wfMessage( 'right-upload' )->text() ],
+				[ 'reupload', wfMessage( 'right-reupload' )->text() ],
+				[ 'minoredit', wfMessage( 'right-minoredit' )->text() ]
+			];
 
 			foreach ( $doArray as $arr ) {
 				$this->_doPermissionInput( $wgOut, $wiki, 'user', $arr[0], $arr[1] );
@@ -476,7 +476,7 @@ class SpecialFarmer extends SpecialPage {
 		}
 
 		# Default skin
-		if ( Hooks::run( 'FarmerAdminSkin', array( $wgFarmer ) ) ) {
+		if ( Hooks::run( 'FarmerAdminSkin', [ $wgFarmer ] ) ) {
 
 			# Import
 			if ( $wgRequest->wasPosted() ) {
@@ -523,13 +523,13 @@ class SpecialFarmer extends SpecialPage {
 		}
 
 		# Manage active extensions
-		if ( Hooks::run( 'FarmerAdminExtensions', array( $wgFarmer ) ) ) {
+		if ( Hooks::run( 'FarmerAdminExtensions', [ $wgFarmer ] ) ) {
 
 			$extensions = $wgFarmer->getExtensions();
 
 			// if we post a list of new extensions, wipe the old list from the wiki
 			if ( $wgRequest->wasPosted() && $wgRequest->getCheck( 'submitExtension' ) ) {
-				$wiki->extensions = array();
+				$wiki->extensions = [];
 
 				// go through all posted extensions and add the appropriate ones
 				foreach ( (array)$wgRequest->getArray( 'extension' ) as $k => $e ) {
@@ -571,7 +571,7 @@ class SpecialFarmer extends SpecialPage {
 	// @codingStandardsIgnoreEnd
 		global $wgOut, $wgUser, $wgRequest;
 
-		if ( !Hooks::run( 'FarmerManageExtensions', array( $wgFarmer ) ) ) {
+		if ( !Hooks::run( 'FarmerManageExtensions', [ $wgFarmer ] ) ) {
 			return;
 		}
 

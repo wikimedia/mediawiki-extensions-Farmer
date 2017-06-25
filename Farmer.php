@@ -11,20 +11,20 @@
  *
  */
 
-$wgExtensionCredits['specialpage'][] = array(
+$wgExtensionCredits['specialpage'][] = [
 	'path' => __FILE__,
 	'name' => 'Farmer',
-	'author' => array( 'Gregory Szorc <gregory.szorc@case.edu>', 'Alexandre Emsenhuber' ),
+	'author' => [ 'Gregory Szorc <gregory.szorc@case.edu>', 'Alexandre Emsenhuber' ],
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Farmer',
 	'descriptionmsg' => 'farmer-desc',
 	'version' => '0.1.2',
 	'license-name' => 'GPL-2.0+',
-);
+];
 
 /**
  * Extension's configuration
  */
-$wgFarmerSettings = array(
+$wgFarmerSettings = [
 	// Path to the directory that holds settings for wikis
 	'configDirectory'           =>  __DIR__ . '/configs/',
 
@@ -35,13 +35,13 @@ $wgFarmerSettings = array(
 	'defaultWiki'               =>  '',
 
 	// Function used to identify the wiki to use
-	'wikiIdentifierFunction'    =>  array( 'MediaWikiFarmer', '_matchByURLHostname' ),
+	'wikiIdentifierFunction'    =>  [ 'MediaWikiFarmer', '_matchByURLHostname' ],
 	'matchRegExp'               =>  '',
 	'matchOffset'               =>  null,
 	'matchServerNameSuffix'     =>   '',
 
 	// Function to call for unknown wiki
-	'onUnknownWiki'             =>  array( 'MediaWikiFarmer', '_redirectTo' ),
+	'onUnknownWiki'             =>  [ 'MediaWikiFarmer', '_redirectTo' ],
 	// If onUnknownWiki calls MediaWikiFarmer::_redirectTo (default), url to redirect to
 	'redirectToURL'             =>  '',
 
@@ -56,7 +56,7 @@ $wgFarmerSettings = array(
 	'newDbSourceFile'           =>  "$IP/maintenance/tables.sql",
 
 	// Get DB name and table prefix for a wiki
-	'dbFromWikiFunction'        => array( 'MediaWikiFarmer', '_prefixTable' ),
+	'dbFromWikiFunction'        => [ 'MediaWikiFarmer', '_prefixTable' ],
 	'dbTablePrefixSeparator'    =>  '',
 	'dbTablePrefix'             =>  '',
 
@@ -71,7 +71,7 @@ $wgFarmerSettings = array(
 
 	// default skin
 	'defaultSkin'               => 'vector',
-);
+];
 
 $wgMessagesDirs['MediaWikiFarmer'] = __DIR__ . '/i18n';
 

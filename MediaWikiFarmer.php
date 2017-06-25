@@ -12,7 +12,7 @@ class MediaWikiFarmer {
 
 	// @codingStandardsIgnoreStart
 
-	protected $_parameters = array();
+	protected $_parameters = [];
 
 	/** Database name to use, null means use file storage */
 	protected $_databaseName;
@@ -53,7 +53,7 @@ class MediaWikiFarmer {
 	protected $_defaultSkin;
 
 	/** Extensions available to Farmer */
-	protected $_extensions = array();
+	protected $_extensions = [];
 
 	protected $_sharedGroups = false;
 	protected $_extensionsLoaded = false;
@@ -375,11 +375,11 @@ class MediaWikiFarmer {
 	// @codingStandardsIgnoreEnd
 		if ( $farmer->useWgConf() ) {
 			global $wgConf;
-			return array( $wgConf->get( 'wgDBname', $wiki ), $wgConf->get( 'wgDBprefix', $wiki ) );
+			return [ $wgConf->get( 'wgDBname', $wiki ), $wgConf->get( 'wgDBprefix', $wiki ) ];
 		} else {
 			global $wgDBname;
 			$prefix = $farmer->_dbTablePrefix . $wiki . $farmer->_dbTablePrefixSeparator;
-			return array( $wgDBname, $prefix );
+			return [ $wgDBname, $prefix ];
 		}
 	}
 
@@ -395,7 +395,7 @@ class MediaWikiFarmer {
 		}
 
 		try {
-			$db = wfGetDB( $type, array(), $this->_databaseName );
+			$db = wfGetDB( $type, [], $this->_databaseName );
 		} catch ( DBConnectionError $e ) {
 			throw new MWException(
 				__METHOD__ . ": impossible to connect to {$this->_databaseName} to get farm configuration: " .
@@ -456,8 +456,8 @@ class MediaWikiFarmer {
 
 		if ( $this->useDatabase() ) {
 			$dbr = $this->getDB( DB_SLAVE );
-			$res = $dbr->select( 'farmer_extension', '*', array(), __METHOD__ );
-			$this->_extensions = array();
+			$res = $dbr->select( 'farmer_extension', '*', [], __METHOD__ );
+			$this->_extensions = [];
 			foreach ( $res as $row ) {
 				$this->_extensions[$row->fe_name] = MediaWikiFarmer_Extension::newFromRow( $row );
 			}
@@ -485,11 +485,11 @@ class MediaWikiFarmer {
 	public function registerExtension( MediaWikiFarmer_Extension $e ) {
 		if ( $this->useDatabase() ) {
 			$dbw = $this->getDB( DB_MASTER );
-			$dbw->insert( 'farmer_extension', array(
+			$dbw->insert( 'farmer_extension', [
 				'fe_name' => $e->name,
 				'fe_description' => $e->description,
 				'fe_path' => $e->includeFiles[0],
-			), __METHOD__ );
+			], __METHOD__ );
 		} else {
 			// force reload of file
 			$this->getExtensions( true );
@@ -542,16 +542,16 @@ class MediaWikiFarmer {
 	public function getFarmList() {
 		if ( $this->useDatabase() ) {
 			$dbr = $this->getDB( DB_SLAVE );
-			$res = $dbr->select( 'farmer_wiki', array(
+			$res = $dbr->select( 'farmer_wiki', [
 				'fw_name', 'fw_title', 'fw_description'
-			), array(), __METHOD__ );
-			$arr = array();
+			], [], __METHOD__ );
+			$arr = [];
 			foreach ( $res as $row ) {
-				$arr[$row->fw_name] = array(
+				$arr[$row->fw_name] = [
 					'name' => $row->fw_name,
 					'title' => $row->fw_title,
 					'description' => $row->fw_description
-				);
+				];
 			}
 			return $arr;
 		} else {
@@ -569,7 +569,7 @@ class MediaWikiFarmer {
 		}
 
 		$directory = new DirectoryIterator( $this->_configDirectory . '/wikis/' );
-		$wikis = array();
+		$wikis = [];
 
 		foreach ( $directory as $file ) {
 			if ( !$file->isDot() && !$file->isDir() ) {
@@ -580,10 +580,10 @@ class MediaWikiFarmer {
 			}
 		}
 
-		$farmList = array();
+		$farmList = [];
 
 		foreach ( $wikis as $k => $v ) {
-			$arr = array();
+			$arr = [];
 			$arr['name'] = $v->name;
 			$arr['title'] = $v->title;
 			$arr['description'] = $v->description;
@@ -601,14 +601,14 @@ class MediaWikiFarmer {
 	public function updateInterwikiTable() {
 		$wikis = $this->getFarmList();
 		$dbw = wfGetDB( DB_MASTER );
-		$replacements = array();
+		$replacements = [];
 		foreach ( $wikis as $key => $stuff ) {
 			$wiki = MediaWikiFarmer_Wiki::factory( $key );
-			$replacements[] = array(
+			$replacements[] = [
 				'iw_prefix' => $wiki->name,
 				'iw_url' => $wiki->getUrl(),
 				'iw_local' => 1,
-			);
+			];
 		}
 		$dbw->replace( 'interwiki', 'iw_prefix', $replacements, __METHOD__ );
 	}

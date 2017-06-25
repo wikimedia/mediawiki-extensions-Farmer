@@ -20,13 +20,13 @@ class MediaWikiFarmer_Wiki {
 	protected $_creator;
 
 	/** Extensions to load for this wiki */
-	protected $_extensions = array();
+	protected $_extensions = [];
 
 	/** Global variables set for this wiki */
-	protected $_variables = array();
+	protected $_variables = [];
 
 	/** Permissions are so funky, we give them their own variable */
-	protected $_permissions = array( '*' => array(), 'user' => array() );
+	protected $_permissions = [ '*' => [], 'user' => [] ];
 
 	/** DB object */
 	protected $_db;
@@ -35,7 +35,7 @@ class MediaWikiFarmer_Wiki {
 	/**
 	 * Creates a wiki instance from a wiki name
 	 */
-	public function __construct( $wiki, $variables = array() ) {
+	public function __construct( $wiki, $variables = [] ) {
 		$this->_name = $wiki;
 		$this->_variables = $variables;
 	}
@@ -51,7 +51,7 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	public function __set( $k, $v ) {
-		if ( in_array( $k, array( 'name', 'title', 'description', 'creator', 'extensions' ) ) ) {
+		if ( in_array( $k, [ 'name', 'title', 'description', 'creator', 'extensions' ] ) ) {
 			$property = '_' . $k;
 			$this->$property = $v;
 		} elseif ( substr( $k, 0, 2 ) == 'wg' ) {
@@ -66,12 +66,12 @@ class MediaWikiFarmer_Wiki {
 		return $this->_name;
 	}
 
-	public static function factory( $wiki, $variables = array() ) {
+	public static function factory( $wiki, $variables = [] ) {
 		$farmer = MediaWikiFarmer::getInstance();
 
 		if ( $farmer->useDatabase() ) {
 			$dbr = $farmer->getDB( DB_SLAVE );
-			$row = $dbr->selectRow( 'farmer_wiki', '*', array( 'fw_name' => $wiki ), __METHOD__ );
+			$row = $dbr->selectRow( 'farmer_wiki', '*', [ 'fw_name' => $wiki ], __METHOD__ );
 			if ( $row === false ) {
 				return new MediaWikiFarmer_Wiki( $wiki, $variables );
 			} else {
@@ -98,7 +98,7 @@ class MediaWikiFarmer_Wiki {
 	 * Create a new wiki from settings
 	 */
 	public static function newFromParams(
-			$name, $title, $description, $creator, $variables = array()
+			$name, $title, $description, $creator, $variables = []
 		) {
 		$wiki = self::factory( $name, $variables );
 
@@ -119,14 +119,14 @@ class MediaWikiFarmer_Wiki {
 
 		$dbr = MediaWikiFarmer::getInstance()->getDB( DB_SLAVE );
 		$res = $dbr->select(
-			array( 'farmer_extension', 'farmer_wiki_extension' ),
+			[ 'farmer_extension', 'farmer_wiki_extension' ],
 			'*',
-			array( 'fwe_wiki' => $row->fw_id ),
+			[ 'fwe_wiki' => $row->fw_id ],
 			__METHOD__,
-			array(),
-			array( 'farmer_wiki_extension' => array( 'LEFT JOIN', 'fwe_extension = fe_id' ) )
+			[],
+			[ 'farmer_wiki_extension' => [ 'LEFT JOIN', 'fwe_extension = fe_id' ] ]
 		);
-		$wiki->_extensions = array();
+		$wiki->_extensions = [];
 		foreach ( $res as $row ) {
 			$wiki->_extensions[$row->fe_name] = MediaWikiFarmer_Extension::newFromRow( $row );
 		}
@@ -163,7 +163,7 @@ class MediaWikiFarmer_Wiki {
 
 		if ( $farmer->useDatabase() ) {
 			return (bool)$farmer->getDB( DB_SLAVE )->selectField(
-					'farmer_wiki', 1, array( 'fw_name' => $this->_name ), __METHOD__
+					'farmer_wiki', 1, [ 'fw_name' => $this->_name ], __METHOD__
 				);
 		} else {
 			return file_exists( self::_getWikiConfigFile( $this->_name ) );
@@ -175,30 +175,30 @@ class MediaWikiFarmer_Wiki {
 
 		if ( $farmer->useDatabase() ) {
 			$dbw = $farmer->getDB( DB_MASTER );
-			$new = array(
+			$new = [
 				'fw_name' => $this->_name,
 				'fw_title' => $this->_title,
 				'fw_description' => $this->_description,
 				'fw_creator' => $this->_creator,
 				'fw_parameters' => serialize( $this->_variables ),
 				'fw_permissions' => serialize( $this->_permissions ),
-			);
+			];
 
-			$curId = $dbw->selectField( 'farmer_wiki', 'fw_id', array(
-					'fw_name' => $this->_name ), __METHOD__
+			$curId = $dbw->selectField( 'farmer_wiki', 'fw_id', [
+					'fw_name' => $this->_name ], __METHOD__
 			);
 			if ( $curId == null ) {
 				$dbw->insert( 'farmer_wiki', $new, __METHOD__ );
 				$curId = $dbw->insertId();
 			} else {
-				$dbw->update( 'farmer_wiki', $new, array( 'fw_id' => $curId ), __METHOD__ );
+				$dbw->update( 'farmer_wiki', $new, [ 'fw_id' => $curId ], __METHOD__ );
 			}
 
-			$insert = array();
+			$insert = [];
 			foreach ( $this->_extensions as $ext ) {
-				$insert[] = array( 'fwe_wiki' => $curId, 'fwe_extension' => $ext->id );
+				$insert[] = [ 'fwe_wiki' => $curId, 'fwe_extension' => $ext->id ];
 			}
-			$dbw->delete( 'farmer_wiki_extension', array( 'fwe_wiki' => $curId ), __METHOD__ );
+			$dbw->delete( 'farmer_wiki_extension', [ 'fwe_wiki' => $curId ], __METHOD__ );
 			$dbw->insert( 'farmer_wiki_extension', $insert, __METHOD__ );
 
 			return true;
@@ -220,11 +220,11 @@ class MediaWikiFarmer_Wiki {
 
 		if ( $farmer->useDatabase() ) {
 			$dbw = $farmer->getDB( DB_MASTER );
-			$dbw->deleteJoin( 'farmer_wiki_extension', 'farmer_wiki', 'fwe_wiki', 'fw_id', array(
+			$dbw->deleteJoin( 'farmer_wiki_extension', 'farmer_wiki', 'fwe_wiki', 'fw_id', [
 					'fw_name' => $this->_name
-				), __METHOD__
+				], __METHOD__
 			);
-			$dbw->delete( 'farmer_wiki', array( 'fw_name' => $this->_name ), __METHOD__ );
+			$dbw->delete( 'farmer_wiki', [ 'fw_name' => $this->_name ], __METHOD__ );
 		} else {
 			unlink( self::_getWikiConfigFile( $this->_name ) );
 		}
@@ -297,7 +297,7 @@ class MediaWikiFarmer_Wiki {
 		if ( $farmer->sharingGroups() ) {
 			$group = '[farmer][' . $this->_name . '][admin]';
 
-			$grantToWikiAdmins = array( 'read', 'edit' );
+			$grantToWikiAdmins = [ 'read', 'edit' ];
 
 			foreach ( $grantToWikiAdmins as $v ) {
 				$wgGroupPermissions[$group][$v] = true;
@@ -371,7 +371,7 @@ class MediaWikiFarmer_Wiki {
 
 	public function setPermission( $group, $permission, $value ) {
 		if ( !array_key_exists( $group, $this->_permissions ) ) {
-			$this->_permissions[$group] = array();
+			$this->_permissions[$group] = [];
 		}
 
 		$this->_permissions[$group][$permission] = $value ? true : false;
@@ -470,7 +470,7 @@ class MediaWikiFarmer_Wiki {
 
 		// FIXME! Hacky
 		$oldShared = $wgSharedTables;
-		$wgSharedTables = array();
+		$wgSharedTables = [];
 
 		$farmer = MediaWikiFarmer::getInstance();
 		$db = false;
@@ -503,23 +503,23 @@ class MediaWikiFarmer_Wiki {
 		)->inContentLanguage()->useDatabase( false )->plain() );
 		$article = new Article( $titleobj );
 		$newid = $article->insertOn( $db );
-		$revision = new Revision( array(
+		$revision = new Revision( [
 			'page'	  => $newid,
 			'text'	  => wfMessage( 'farmernewwikimainpage' )->inContentLanguage()->text(),
 			'comment'   => '',
 			'user'	  => 0,
 			'user_text' => 'MediaWiki default',
-		) );
+		] );
 		$revid = $revision->insertOn( $db );
 		$article->updateRevisionOn( $db, $revision );
 
 		// site_stats table entry
-		$db->insert( 'site_stats', array(
+		$db->insert( 'site_stats', [
 			'ss_row_id' => 1,
 			'ss_total_views' => 0,
 			'ss_total_edits' => 0,
 			'ss_good_articles' => 0
-		) );
+		] );
 	}
 
 	/**
@@ -533,13 +533,13 @@ class MediaWikiFarmer_Wiki {
 		$db = $this->getDatabase();
 		$db->insert(
 			'interwiki',
-			array(
+			[
 				'iw_prefix' => strtolower( $this->title ),
 				'iw_url' => $this->getUrl(),
 				'iw_local' => 1,
-			),
+			],
 			__METHOD__,
-			array( 'IGNORE' )
+			[ 'IGNORE' ]
 		);
 	}
 
@@ -554,10 +554,10 @@ class MediaWikiFarmer_Wiki {
 			} else {
 				$userId = User::idFromName( $this->creator );
 				if ( $userId ) {
-					$insert = array(
-						array( 'ug_user' => $userId, 'ug_group' => 'sysop' ),
-						array( 'ug_user' => $userId, 'ug_group' => 'bureaucrat' ),
-					);
+					$insert = [
+						[ 'ug_user' => $userId, 'ug_group' => 'sysop' ],
+						[ 'ug_user' => $userId, 'ug_group' => 'bureaucrat' ],
+					];
 					$db = $this->getDatabase();
 					$db->insert( 'user_groups', $insert, __METHOD__ );
 				}
@@ -605,7 +605,7 @@ class MediaWikiFarmer_Wiki {
 	// @codingStandardsIgnoreEnd
 		$db = $this->getDatabase();
 		if ( $db->tableExists( 'interwiki' ) ) {
-			$db->delete( 'interwiki', array( 'iw_prefix' => strtolower( $this->_title ) ), __METHOD__ );
+			$db->delete( 'interwiki', [ 'iw_prefix' => strtolower( $this->_title ) ], __METHOD__ );
 		} else {
 			wfDebug( __METHOD__ . ": Table 'interwiki' does not exists\n" );
 		}

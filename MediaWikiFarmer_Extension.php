@@ -15,7 +15,7 @@ class MediaWikiFarmer_Extension {
 	/**
 	 * List of files that need to be included for this extension to work
 	 */
-	protected $_includeFiles = array();
+	protected $_includeFiles = [];
 // @codingStandardsIgnoreEnd
 
 	public static function newFromRow( $row ) {
