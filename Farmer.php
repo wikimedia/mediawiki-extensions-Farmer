@@ -26,24 +26,24 @@ $wgExtensionCredits['specialpage'][] = [
  */
 $wgFarmerSettings = [
 	// Path to the directory that holds settings for wikis
-	'configDirectory'           =>  __DIR__ . '/configs/',
+	'configDirectory'           => __DIR__ . '/configs/',
 
 	// Or use a database
 	'databaseName'              => null,
 
 	// Default wiki
-	'defaultWiki'               =>  '',
+	'defaultWiki'               => '',
 
 	// Function used to identify the wiki to use
-	'wikiIdentifierFunction'    =>  [ 'MediaWikiFarmer', '_matchByURLHostname' ],
-	'matchRegExp'               =>  '',
-	'matchOffset'               =>  null,
-	'matchServerNameSuffix'     =>   '',
+	'wikiIdentifierFunction'    => [ 'MediaWikiFarmer', '_matchByURLHostname' ],
+	'matchRegExp'               => '',
+	'matchOffset'               => null,
+	'matchServerNameSuffix'     => '',
 
 	// Function to call for unknown wiki
-	'onUnknownWiki'             =>  [ 'MediaWikiFarmer', '_redirectTo' ],
+	'onUnknownWiki'             => [ 'MediaWikiFarmer', '_redirectTo' ],
 	// If onUnknownWiki calls MediaWikiFarmer::_redirectTo (default), url to redirect to
-	'redirectToURL'             =>  '',
+	'redirectToURL'             => '',
 
 	// Whether to use $wgConf to get some settings
 	'useWgConf'                 => true,
@@ -53,16 +53,16 @@ $wgFarmerSettings = [
 	'initCallback'              => null,
 
 	// File used to create tables for new wikis
-	'newDbSourceFile'           =>  "$IP/maintenance/tables.sql",
+	'newDbSourceFile'           => "$IP/maintenance/tables.sql",
 
 	// Get DB name and table prefix for a wiki
 	'dbFromWikiFunction'        => [ 'MediaWikiFarmer', '_prefixTable' ],
-	'dbTablePrefixSeparator'    =>  '',
-	'dbTablePrefix'             =>  '',
+	'dbTablePrefixSeparator'    => '',
+	'dbTablePrefix'             => '',
 
 	// user name and password for MySQL admin user
-	'dbAdminUser'               =>  'root',
-	'dbAdminPassword'           =>  '',
+	'dbAdminUser'               => 'root',
+	'dbAdminPassword'           => '',
 
 	// Per-wiki image storage, filesystem path
 	'perWikiStorageRoot'        => '/images/',
