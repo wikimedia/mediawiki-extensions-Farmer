@@ -70,7 +70,7 @@ class MediaWikiFarmer_Wiki {
 		$farmer = MediaWikiFarmer::getInstance();
 
 		if ( $farmer->useDatabase() ) {
-			$dbr = $farmer->getDB( DB_SLAVE );
+			$dbr = $farmer->getDB( DB_REPLICA );
 			$row = $dbr->selectRow( 'farmer_wiki', '*', [ 'fw_name' => $wiki ], __METHOD__ );
 			if ( $row === false ) {
 				return new MediaWikiFarmer_Wiki( $wiki, $variables );
@@ -117,7 +117,7 @@ class MediaWikiFarmer_Wiki {
 		$wiki->_variables = unserialize( $row->fw_parameters );
 		$wiki->_permissions = unserialize( $row->fw_permissions );
 
-		$dbr = MediaWikiFarmer::getInstance()->getDB( DB_SLAVE );
+		$dbr = MediaWikiFarmer::getInstance()->getDB( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'farmer_extension', 'farmer_wiki_extension' ],
 			'*',
@@ -162,7 +162,7 @@ class MediaWikiFarmer_Wiki {
 		$farmer = MediaWikiFarmer::getInstance();
 
 		if ( $farmer->useDatabase() ) {
-			return (bool)$farmer->getDB( DB_SLAVE )->selectField(
+			return (bool)$farmer->getDB( DB_REPLICA )->selectField(
 					'farmer_wiki', 1, [ 'fw_name' => $this->_name ], __METHOD__
 				);
 		} else {

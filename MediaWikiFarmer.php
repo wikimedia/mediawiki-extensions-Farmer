@@ -454,7 +454,7 @@ class MediaWikiFarmer {
 		}
 
 		if ( $this->useDatabase() ) {
-			$dbr = $this->getDB( DB_SLAVE );
+			$dbr = $this->getDB( DB_REPLICA );
 			$res = $dbr->select( 'farmer_extension', '*', [], __METHOD__ );
 			$this->_extensions = [];
 			foreach ( $res as $row ) {
@@ -540,7 +540,7 @@ class MediaWikiFarmer {
 	 */
 	public function getFarmList() {
 		if ( $this->useDatabase() ) {
-			$dbr = $this->getDB( DB_SLAVE );
+			$dbr = $this->getDB( DB_REPLICA );
 			$res = $dbr->select( 'farmer_wiki', [
 				'fw_name', 'fw_title', 'fw_description'
 			], [], __METHOD__ );
