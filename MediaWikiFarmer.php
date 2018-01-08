@@ -183,7 +183,7 @@ class MediaWikiFarmer {
 			$wiki = strtolower( preg_replace( '/[^[:alnum:_\-]]/', '', $wiki ) );
 
 			// now we have a valid wiki name
-			return $this->_doWiki( $wiki );
+			$this->_doWiki( $wiki );
 
 		} else {
 			throw new MWException(
