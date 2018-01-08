@@ -12,15 +12,13 @@
  * @todo Move presentation text into MW messages
  */
 class SpecialFarmer extends SpecialPage {
-	/**
-	 * Class constructor
-	 */
 	public function __construct() {
 		parent::__construct( 'Farmer' );
 	}
 
 	/**
 	 * Executes special page
+	 * @param string|null $par
 	 */
 	public function execute( $par ) {
 		global $wgRequest;
@@ -56,6 +54,7 @@ class SpecialFarmer extends SpecialPage {
 
 	/**
 	 * Displays the main page
+	 * @param MediaWikiFarmer $wgFarmer
 	 */
 	// @codingStandardsIgnoreStart
 	protected function _executeMainPage( $wgFarmer ) {
@@ -110,6 +109,8 @@ class SpecialFarmer extends SpecialPage {
 
 	/**
 	 * Displays form to create wiki
+	 * @param MediaWikiFarmer $wgFarmer
+	 * @param string $wiki
 	 */
 	// @codingStandardsIgnoreStart
 	protected function _executeCreate( $wgFarmer, $wiki ) {
@@ -561,6 +562,7 @@ class SpecialFarmer extends SpecialPage {
 
 	/**
 	 * Handles page to manage extensions
+	 * @param MediaWikiFarmer $wgFarmer
 	 */
 	// @codingStandardsIgnoreStart
 	protected function _executeManageExtensions( $wgFarmer ) {
@@ -646,6 +648,11 @@ class SpecialFarmer extends SpecialPage {
 
 	/**
 	 * Creates form element representing an individual permission
+	 * @param OutputPage $wgOut
+	 * @param string &$wiki
+	 * @param string $group
+	 * @param string $permission
+	 * @param string $description
 	 */
 	// @codingStandardsIgnoreStart
 	protected function _doPermissionInput( $wgOut, &$wiki, $group, $permission, $description ) {

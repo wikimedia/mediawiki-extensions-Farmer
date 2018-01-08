@@ -33,6 +33,8 @@ class MediaWikiFarmer_Extension {
 	/**
 	 * Magic method so we can access variables directly without accessor
 	 * functions
+	 * @param string $key
+	 * @return mixed
 	 */
 	public function __get( $key ) {
 		$property = '_' . $key;
@@ -43,6 +45,7 @@ class MediaWikiFarmer_Extension {
 	/**
 	 * Sees if extension is valid by looking at included files and attempting to
 	 * open them
+	 * @return bool
 	 */
 	public function isValid() {
 		foreach ( $this->_includeFiles as $file ) {

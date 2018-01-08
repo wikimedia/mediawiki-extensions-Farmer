@@ -71,9 +71,7 @@ class MediaWikiFarmer {
 	}
 
 	/**
-	 * Constructor
-	 *
-	 * @param $params Array of parameters to control behavior
+	 * @param array $params Array of parameters to control behavior
 	 *
 	 * @todo Load up special page
 	 */
@@ -141,6 +139,7 @@ class MediaWikiFarmer {
 
 	/**
 	 * Get the active wiki for this MediaWikiFarmer instance
+	 * @return MediaWikiFarmer_Wiki
 	 */
 	public function getActiveWiki() {
 		return $this->_activeWiki;
@@ -355,6 +354,8 @@ class MediaWikiFarmer {
 
 	/**
 	 * Returns the database table prefix, as suitable for $wgDBprefix
+	 * @param string $wiki
+	 * @return array
 	 */
 	public function splitWikiDB( $wiki ) {
 		$callback = $this->_dbFromWikiFunction;
@@ -365,9 +366,9 @@ class MediaWikiFarmer {
 	 * Default callback function to get an database name and prefix for a wiki
 	 * in the farm
 	 *
-	 * @param $farmer MediaWikiFarmer
-	 * @param $wiki String
-	 * @return Array
+	 * @param MediaWikiFarmer $farmer
+	 * @param string $wiki
+	 * @return array
 	 */
 	// @codingStandardsIgnoreStart
 	protected static function _prefixTable( MediaWikiFarmer $farmer, $wiki ) {
@@ -385,8 +386,8 @@ class MediaWikiFarmer {
 	/**
 	 * Get a database object
 	 *
-	 * @param $type integer: either DB_SLAVE for DB_MASTER
-	 * @return Database object
+	 * @param int $type Either DB_REPLICA for DB_MASTER
+	 * @return \Wikimedia\Rdbms\IDatabase
 	 */
 	public function getDB( $type ) {
 		if ( !$this->useDatabase() ) {
@@ -410,8 +411,8 @@ class MediaWikiFarmer {
 	/**
 	 * Determines whether the user can create a wiki
 	 *
-	 * @param $user User object
-	 * @param $wiki String: wiki name (optional)
+	 * @param User $user User object
+	 * @param string $wiki wiki name (optional)
 	 *
 	 * @return bool
 	 */
@@ -422,8 +423,8 @@ class MediaWikiFarmer {
 	/**
 	 * Determines whether manage the wiki farm
 	 *
-	 * @param $user User object
-	 * @return Boolean
+	 * @param User $user User object
+	 * @return bool
 	 */
 	public static function userIsFarmerAdmin( $user ) {
 		return $user->isAllowed( 'farmeradmin' );
@@ -446,7 +447,8 @@ class MediaWikiFarmer {
 	/**
 	 * Gets extensions objects
 	 *
-	 * @return Array
+	 * @param bool $forceReload
+	 * @return array
 	 */
 	public function getExtensions( $forceReload = false ) {
 		if ( $this->_extensionsLoaded && !$forceReload ) {
@@ -480,6 +482,7 @@ class MediaWikiFarmer {
 
 	/**
 	 * Register an extension so that it's available for all wikis in the farm
+	 * @param MediaWikiFarmer_Extension $e
 	 */
 	public function registerExtension( MediaWikiFarmer_Extension $e ) {
 		if ( $this->useDatabase() ) {

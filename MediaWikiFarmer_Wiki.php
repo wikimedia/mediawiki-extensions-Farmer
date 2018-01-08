@@ -34,6 +34,8 @@ class MediaWikiFarmer_Wiki {
 
 	/**
 	 * Creates a wiki instance from a wiki name
+	 * @param string $wiki
+	 * @param array $variables
 	 */
 	public function __construct( $wiki, $variables = [] ) {
 		$this->_name = $wiki;
@@ -61,6 +63,7 @@ class MediaWikiFarmer_Wiki {
 
 	/**
 	 * How to represent this object as a string
+	 * @return string
 	 */
 	public function __toString() {
 		return $this->_name;
@@ -96,6 +99,12 @@ class MediaWikiFarmer_Wiki {
 
 	/**
 	 * Create a new wiki from settings
+	 * @param string $name
+	 * @param string $title
+	 * @param string $description
+	 * @param string $creator
+	 * @param array $variables
+	 * @return MediaWikiFarmer
 	 */
 	public static function newFromParams(
 			$name, $title, $description, $creator, $variables = []
@@ -157,6 +166,7 @@ class MediaWikiFarmer_Wiki {
 	 *
 	 * Simply looks for file presence.  We don't have to clear the stat cache
 	 * because if a file doesn't exist, this isn't stored in the stat cache
+	 * @return bool
 	 */
 	public function exists() {
 		$farmer = MediaWikiFarmer::getInstance();
@@ -424,7 +434,8 @@ class MediaWikiFarmer_Wiki {
 	/**
 	 * Obtain a database connection suitable for interfacing with wiki $name
 	 *
-	 * @param $selectDB whether to select the database
+	 * @param bool $selectDB whether to select the database
+	 * @return \Wikimedia\Rdbms\IDatabase
 	 */
 	public function getDatabase( $selectDB = true ) {
 		global $wgDBserver, $wgDBtype;
