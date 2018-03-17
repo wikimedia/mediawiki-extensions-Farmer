@@ -528,7 +528,7 @@ class MediaWikiFarmer {
 	/**
 	 * Get the file to store the list of wikis in the farm
 	 *
-	 * @retrun String
+	 * @return String
 	 */
 	// @codingStandardsIgnoreStart
 	protected function _getFarmListFile() {
