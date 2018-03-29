@@ -4,7 +4,7 @@
  * manage a MediaWiki farm
  *
  * @author Gregory Szorc <gregory.szorc@gmail.com>
- * @licence GNU General Public Licence 2.0 or later
+ * @license GNU General Public Licence 2.0 or later
  *
  * @todo Extension management on per-wiki basis
  * @todo Upload prefix
