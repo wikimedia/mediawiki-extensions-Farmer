@@ -412,7 +412,7 @@ class MediaWikiFarmer {
 	 * Determines whether the user can create a wiki
 	 *
 	 * @param User $user User object
-	 * @param string $wiki wiki name (optional)
+	 * @param string|null $wiki wiki name (optional)
 	 *
 	 * @return bool
 	 */
