@@ -113,6 +113,8 @@
 	"farmer-log-header": "?",
 	"farmer-log-create": "?",
 	"farmer-log-delete": "?",
+	"action-farmeradmin": "{{doc-action|farmeradmin}}",
 	"right-farmeradmin": "{{doc-right|farmeradmin}}",
+	"action-createwiki": "{{doc-action|createwiki}}",
 	"right-createwiki": "{{doc-right|createwiki}}"
 }
