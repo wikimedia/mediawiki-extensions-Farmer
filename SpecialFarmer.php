@@ -132,7 +132,7 @@ class SpecialFarmer extends SpecialPage {
 		$title = MediaWikiFarmer_Wiki::sanitizeTitle( $wgRequest->getVal( 'wpTitle' ) );
 		$description = $wgRequest->getVal( 'wpDescription', '' );
 		$reason = $wgRequest->getVal( 'wpReason' );
-		$action = $this->getTitle( 'create' )->getLocalURL();
+		$action = $this->getPageTitle( 'create' )->getLocalURL();
 
 		// if something was POST'd
 		if ( $wgRequest->wasPosted() ) {
@@ -144,7 +144,7 @@ class SpecialFarmer extends SpecialPage {
 				$wikiObj->create();
 
 				$log = new LogPage( 'farmer' );
-				$log->addEntry( 'create', $this->getTitle(), $reason, [ $name ] );
+				$log->addEntry( 'create', $this->getPageTitle(), $reason, [ $name ] );
 
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-wikicreated' );
 				$wgOut->addWikiMsg( 'farmer-wikicreated-text', $wikiObj->getUrl( wfUrlencode(
@@ -259,7 +259,7 @@ class SpecialFarmer extends SpecialPage {
 		$wgFarmer->updateFarmList();
 		$wgFarmer->updateInterwikiTable();
 		$wgOut->wrapWikiMsg( '<div class="successbox">$1</div><br clear="all" />', 'farmer-updatedlist' );
-		$wgOut->returnToMain( null, $this->getTitle() );
+		$wgOut->returnToMain( null, $this->getPageTitle() );
 	}
 
 	// @codingStandardsIgnoreStart
@@ -286,7 +286,7 @@ class SpecialFarmer extends SpecialPage {
 					$log = new LogPage( 'farmer' );
 					$log->addEntry(
 						'delete',
-						$this->getTitle(),
+						$this->getPageTitle(),
 						$wgRequest->getVal( 'wpReason' ),
 						[ $wiki ]
 					);
@@ -356,7 +356,7 @@ class SpecialFarmer extends SpecialPage {
 
 		$currentWiki = MediaWikiFarmer_Wiki::factory( $wgFarmer->getActiveWiki() );
 
-		$action = $this->getTitle( 'admin' )->getLocalURL();
+		$action = $this->getPageTitle( 'admin' )->getLocalURL();
 
 		if ( !(
 				MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) || $currentWiki->userIsAdmin( $wgUser )
