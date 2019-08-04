@@ -345,7 +345,9 @@ class SpecialFarmer extends SpecialPage {
 			$link = ( $current == $wiki['name'] ? wfMessage(
 				'mainpage'
 			)->inContentLanguage()->text() : $wiki['name'] . ':' );
-			$wgOut->addWikiText( '; [[' . $link . '|' . $wiki['title'] . ']] : ' . $wiki['description'] );
+			$this->outputWikiText(
+				$wgOut, '; [[' . $link . '|' . $wiki['title'] . ']] : ' . $wiki['description']
+			);
 		}
 	}
 
@@ -605,7 +607,7 @@ class SpecialFarmer extends SpecialPage {
 			$wgOut->addWikiMsg( 'farmer-extensions-noavailable' );
 		} else {
 			foreach ( $wgFarmer->getExtensions() as $extension ) {
-				$wgOut->addWikiText( '; ' . htmlspecialchars(
+				$this->outputWikiText( $wgOut, '; ' . htmlspecialchars(
 					$extension->name
 				) . ' : ' . htmlspecialchars( $extension->description ) );
 			}
@@ -618,7 +620,7 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->addWikiMsg( 'farmer-extensions-register-text4' );
 
 		foreach ( explode( PATH_SEPARATOR, get_include_path() ) as $path ) {
-			$wgOut->addWikiText( '*' . $path );
+			$this->outputWikiText( $wgOut, '*' . $path );
 		}
 
 		$wgOut->addHTML( "
@@ -682,6 +684,15 @@ class SpecialFarmer extends SpecialPage {
 		$input .= ' />' . wfMessage( 'farmer-no' )->escaped();
 
 		$wgOut->addHTML( $input . '</p>' );
+	}
+
+	protected function outputWikiText( $out, $text ) {
+		if ( method_exists( $out, 'addWikiTextAsInterface' ) ) {
+			// MW 1.32+
+			$out->addWikiTextAsInterface( $text . "\n" );
+		} else {
+			$out->addWikiText( $text . "\n" );
+		}
 	}
 
 	protected function getGroupName() {
