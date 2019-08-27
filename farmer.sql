@@ -13,7 +13,7 @@ CREATE TABLE /*_*/farmer_wiki (
 	fw_permissions BLOB
 ) /*$wgDBTableOptions*/;
 
--- Store information about each extension availabe in the farm
+-- Store information about each extension available in the farm
 CREATE TABLE /*_*/farmer_extension (
 	fe_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	fe_name VARCHAR(255) UNIQUE,
