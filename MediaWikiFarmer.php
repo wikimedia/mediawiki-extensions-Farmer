@@ -261,7 +261,7 @@ class MediaWikiFarmer {
 	// @codingStandardsIgnoreStart
 	protected static function _matchByURLRegExp( MediaWikiFarmer $farmer, $url = null ) {
 	// @codingStandardsIgnoreEnd
-		if ( is_null( $url ) ) {
+		if ( $url === null ) {
 			$url = $_SERVER['REQUEST_URI'];
 		}
 
@@ -288,7 +288,7 @@ class MediaWikiFarmer {
 	// @codingStandardsIgnoreStart
 	protected static function _matchByURLHostname( MediaWikiFarmer $farmer, $url = null ) {
 	// @codingStandardsIgnoreEnd
-		if ( is_null( $url ) ) {
+		if ( $url === null ) {
 			$url = $_SERVER['REQUEST_URI'];
 		}
 

@@ -352,7 +352,7 @@ class MediaWikiFarmer_Wiki {
 			$articlePath = $wgConf->get( 'wgArticlePath', $this->name );
 			if ( !$articlePath ) {
 				$usePathInfo = $wgConf->get( 'wgUsePathInfo', $this->name );
-				if ( is_null( $usePathInfo ) ) {
+				if ( $usePathInfo === null ) {
 					global $wgUsePathInfo;
 					$usePathInfo = $wgUsePathInfo;
 				}
@@ -365,7 +365,7 @@ class MediaWikiFarmer_Wiki {
 				$this->name, '$1'
 			)->inContentLanguage()->text();
 		}
-		if ( !is_null( $article ) ) {
+		if ( $article !== null ) {
 			$url = str_replace( '$1', $article, $url );
 		}
 		return $url;
