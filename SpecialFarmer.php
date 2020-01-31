@@ -144,7 +144,7 @@ class SpecialFarmer extends SpecialPage {
 				$wikiObj->create();
 
 				$log = new LogPage( 'farmer' );
-				$log->addEntry( 'create', $this->getPageTitle(), $reason, [ $name ] );
+				$log->addEntry( 'create', $this->getPageTitle(), $reason, [ $name ], $wgUser );
 
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-wikicreated' );
 				$wgOut->addWikiMsg( 'farmer-wikicreated-text', $wikiObj->getUrl( wfUrlencode(
@@ -288,7 +288,8 @@ class SpecialFarmer extends SpecialPage {
 						'delete',
 						$this->getPageTitle(),
 						$wgRequest->getVal( 'wpReason' ),
-						[ $wiki ]
+						[ $wiki ],
+						$wgUser
 					);
 
 					$deleteWiki = MediaWikiFarmer_Wiki::factory( $wiki );
