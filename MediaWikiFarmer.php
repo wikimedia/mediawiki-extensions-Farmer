@@ -322,12 +322,12 @@ class MediaWikiFarmer {
 		$serverName = $_SERVER['SERVER_NAME'];
 
 		// if string ends with the suffix specified
-		if ( substr( $serverName, - strlen(
+		if ( substr( $serverName, -strlen(
 					$farmer->_matchServerNameSuffix
 				)
 			) == $farmer->_matchServerNameSuffix
 			&& $serverName != $farmer->_matchServerNameSuffix ) {
-			return substr( $serverName, 0, - strlen( $farmer->_matchServerNameSuffix ) - 1 );
+			return substr( $serverName, 0, -strlen( $farmer->_matchServerNameSuffix ) - 1 );
 		}
 
 		return false;
@@ -539,7 +539,7 @@ class MediaWikiFarmer {
 	/**
 	 * Get the list of wikis in the farm
 	 *
-	 * @return Array
+	 * @return array
 	 */
 	public function getFarmList() {
 		if ( $this->useDatabase() ) {
