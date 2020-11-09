@@ -1,5 +1,7 @@
 <?php
 
+use Wikimedia\Rdbms\IMaintainableDatabase;
+
 /**
  * Represents a configuration for a specific wiki
  * Created on Jul 20, 2006
@@ -8,26 +10,28 @@
  */
 class MediaWikiFarmer_Wiki {
 
-	/** Name of wiki */
+	/** @var string Name of wiki */
 	protected $_name;
 
+	/** @var string */
 	protected $_title;
 
+	/** @var string */
 	protected $_description;
 
-	/** Username of person who created wiki */
+	/** @var string Username of person who created wiki */
 	protected $_creator;
 
-	/** Extensions to load for this wiki */
+	/** @var MediaWikiFarmer_Extension[] Extensions to load for this wiki */
 	protected $_extensions = [];
 
-	/** Global variables set for this wiki */
+	/** @var array Global variables set for this wiki */
 	protected $_variables = [];
 
-	/** Permissions are so funky, we give them their own variable */
+	/** @var array[] Permissions are so funky, we give them their own variable */
 	protected $_permissions = [ '*' => [], 'user' => [] ];
 
-	/** DB object */
+	/** @var IMaintainableDatabase */
 	protected $_db;
 
 	/**
@@ -440,7 +444,7 @@ class MediaWikiFarmer_Wiki {
 	 * Obtain a database connection suitable for interfacing with wiki $name
 	 *
 	 * @param bool $selectDB whether to select the database
-	 * @return \Wikimedia\Rdbms\IDatabase
+	 * @return IMaintainableDatabase
 	 */
 	public function getDatabase( $selectDB = true ) {
 		global $wgDBserver, $wgDBtype;

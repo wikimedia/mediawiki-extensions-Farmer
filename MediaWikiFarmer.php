@@ -10,56 +10,72 @@
  */
 class MediaWikiFarmer {
 
+	/** @var array */
 	protected $_parameters = [];
 
-	/** Database name to use, null means use file storage */
+	/** @var string|null Database name to use, null means use file storage */
 	protected $_databaseName;
+	/** @var bool */
 	protected $useDatabase;
 
-	/** Directory where config files are stored */
+	/** @var string Directory where config files are stored */
 	protected $_configDirectory;
+	/** @var string */
 	protected $_storageRoot;
+	/** @var string */
 	protected $_storageUrl;
 
-	/** Parameter to call_user_func which will return a wiki name from the environment */
+	/** @var callable|null Parameter to call_user_func which will return a wiki name from the environment */
 	protected $_matchFunction;
 
-	/** Regular expression to be used by internal matchByURL* functions */
+	/** @var string Regular expression to be used by internal matchByURL* functions */
 	protected $_matchRegExp;
 
-	/** Array key to return from match in matchByURL* functions */
+	/** @var int Array key to return from match in matchByURL* functions */
 	protected $_matchOffset;
 
-	/** Whether to use $wgConf */
+	/** @var bool Whether to use $wgConf */
 	protected $_useWgConf;
 
-	/** Callback to call when a wiki is initialized */
+	/** @var callable|null Callback to call when a wiki is initialized */
 	protected $_initCallback;
 
 	/** Database settings */
+	/** @var callable */
 	protected $_dbFromWikiFunction;
+	/** @var string */
 	protected $_dbTablePrefixSeparator;
+	/** @var string */
 	protected $_dbTablePrefix;
+	/** @var string */
 	protected $_dbAdminUser;
+	/** @var string */
 	protected $_dbAdminPassword;
 
 	/** Other */
+	/** @var string */
 	protected $_defaultWiki;
+	/** @var callable|null */
 	protected $_onUnknownWikiFunction;
+	/** @var string */
 	protected $_redirectToURL;
+	/** @var string */
 	protected $_dbSourceFile;
+	/** @var string */
 	protected $_defaultSkin;
 
-	/** Extensions available to Farmer */
+	/** @var MediaWikiFarmer_Extension[] Extensions available to Farmer */
 	protected $_extensions = [];
 
+	/** @var bool */
 	protected $_sharedGroups = false;
+	/** @var bool */
 	protected $_extensionsLoaded = false;
 
-	/** Instance of MediaWikiFarmer_Wiki */
+	/** @var MediaWikiFarmer_Wiki|null */
 	protected $_activeWiki = null;
 
-	/** Instance of this class */
+	/** @var self|null */
 	protected static $_instance = null;
 
 	public static function getInstance() {

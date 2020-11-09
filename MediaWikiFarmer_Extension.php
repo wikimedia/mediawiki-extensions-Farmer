@@ -13,6 +13,7 @@ class MediaWikiFarmer_Extension {
 
 	/**
 	 * List of files that need to be included for this extension to work
+	 * @var string[]
 	 */
 	protected $_includeFiles = [];
 
