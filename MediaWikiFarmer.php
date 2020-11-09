@@ -10,8 +10,6 @@
  */
 class MediaWikiFarmer {
 
-	// @codingStandardsIgnoreStart
-
 	protected $_parameters = [];
 
 	/** Database name to use, null means use file storage */
@@ -26,10 +24,10 @@ class MediaWikiFarmer {
 	/** Parameter to call_user_func which will return a wiki name from the environment */
 	protected $_matchFunction;
 
-	/** Regular expression to be used by internal _matchByURL* functions */
+	/** Regular expression to be used by internal matchByURL* functions */
 	protected $_matchRegExp;
 
-	/** Array key to return from match in _matchByURL* functions */
+	/** Array key to return from match in matchByURL* functions */
 	protected $_matchOffset;
 
 	/** Whether to use $wgConf */
@@ -63,8 +61,6 @@ class MediaWikiFarmer {
 
 	/** Instance of this class */
 	protected static $_instance = null;
-
-	// @codingStandardsIgnoreEnd
 
 	public static function getInstance() {
 		return self::$_instance;
@@ -112,9 +108,7 @@ class MediaWikiFarmer {
 		$this->_useDatabase = ( $this->_databaseName !== null );
 
 		if ( $this->_useDatabase ) {
-			// @codingStandardsIgnoreStart Ignore global not starting with wg.
 			global $IP;
-			// @codingStandardsIgnoreEnd
 			require_once "$IP/includes/GlobalFunctions.php";
 		} else {
 			if ( !is_dir( $this->_configDirectory ) ) {
@@ -182,7 +176,7 @@ class MediaWikiFarmer {
 			$wiki = strtolower( preg_replace( '/[^[:alnum:_\-]]/', '', $wiki ) );
 
 			// now we have a valid wiki name
-			$this->_doWiki( $wiki );
+			$this->doWiki( $wiki );
 
 		} else {
 			throw new MWException(
@@ -196,10 +190,7 @@ class MediaWikiFarmer {
 	 *
 	 * @param string $wiki Wiki to load
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _doWiki( $wiki ) {
-	// @codingStandardsIgnoreEnd
-
+	private function doWiki( $wiki ) {
 		$wiki = MediaWikiFarmer_Wiki::factory( $wiki );
 		$this->_activeWiki = $wiki;
 
@@ -258,9 +249,7 @@ class MediaWikiFarmer {
 	 * want to use the default wiki, as specified by the 'defaultWiki'
 	 * parameter.
 	 */
-	// @codingStandardsIgnoreStart
-	protected static function _matchByURLRegExp( MediaWikiFarmer $farmer, $url = null ) {
-	// @codingStandardsIgnoreEnd
+	private static function matchByURLRegExp( MediaWikiFarmer $farmer, $url = null ) {
 		if ( $url === null ) {
 			$url = $_SERVER['REQUEST_URI'];
 		}
@@ -285,9 +274,7 @@ class MediaWikiFarmer {
 	 * @param string $url URL to match to a wiki
 	 * @return string|bool Wiki name on success.  false on failure
 	 */
-	// @codingStandardsIgnoreStart
-	protected static function _matchByURLHostname( MediaWikiFarmer $farmer, $url = null ) {
-	// @codingStandardsIgnoreEnd
+	private static function matchByURLHostname( MediaWikiFarmer $farmer, $url = null ) {
 		if ( $url === null ) {
 			$url = $_SERVER['REQUEST_URI'];
 		}
@@ -316,9 +303,7 @@ class MediaWikiFarmer {
 	 * period
 	 *
 	 */
-	// @codingStandardsIgnoreStart
-	protected static function _matchByServerName( MediaWikiFarmer $farmer ) {
-	// @codingStandardsIgnoreEnd
+	private static function matchByServerName( MediaWikiFarmer $farmer ) {
 		$serverName = $_SERVER['SERVER_NAME'];
 
 		// if string ends with the suffix specified
@@ -340,9 +325,7 @@ class MediaWikiFarmer {
 	 *
 	 * @param string $wiki Unknown wiki that was accessed
 	 */
-	// @codingStandardsIgnoreStart
-	protected static function _redirectTo( MediaWikiFarmer $farmer, $wiki ) {
-	// @codingStandardsIgnoreEnd
+	private static function redirectTo( MediaWikiFarmer $farmer, $wiki ) {
 		$urlTo = str_replace( '$1', $wiki->name, $farmer->_redirectToURL );
 
 		header( 'Location: ' . $urlTo );
@@ -370,9 +353,7 @@ class MediaWikiFarmer {
 	 * @param string $wiki
 	 * @return array
 	 */
-	// @codingStandardsIgnoreStart
-	protected static function _prefixTable( MediaWikiFarmer $farmer, $wiki ) {
-	// @codingStandardsIgnoreEnd
+	private static function prefixTable( MediaWikiFarmer $farmer, $wiki ) {
 		if ( $farmer->useWgConf() ) {
 			global $wgConf;
 			return [ $wgConf->get( 'wgDBname', $wiki ), $wgConf->get( 'wgDBprefix', $wiki ) ];
@@ -438,9 +419,7 @@ class MediaWikiFarmer {
 	 *
 	 * @return String
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _getExtensionFile() {
-	// @codingStandardsIgnoreEnd
+	private function getExtensionFile() {
 		return $this->_configDirectory . '/extensions';
 	}
 
@@ -463,8 +442,8 @@ class MediaWikiFarmer {
 				$this->_extensions[$row->fe_name] = MediaWikiFarmer_Extension::newFromRow( $row );
 			}
 		} else {
-			if ( is_readable( $this->_getExtensionFile() ) ) {
-				$contents = file_get_contents( $this->_getExtensionFile() );
+			if ( is_readable( $this->getExtensionFile() ) ) {
+				$contents = file_get_contents( $this->getExtensionFile() );
 
 				$extensions = unserialize( $contents );
 
@@ -496,7 +475,7 @@ class MediaWikiFarmer {
 			// force reload of file
 			$this->getExtensions( true );
 			$this->_extensions[$e->name] = $e;
-			$this->_writeExtensions();
+			$this->writeExtensions();
 		}
 	}
 
@@ -504,14 +483,12 @@ class MediaWikiFarmer {
 	 * Writes out extension definitions to file
 	 * No utility when using database
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _writeExtensions() {
-	// @codingStandardsIgnoreEnd
+	private function writeExtensions() {
 		if ( $this->useDatabase() ) {
 			return false;
 		}
 
-		$file = $this->_getExtensionFile();
+		$file = $this->getExtensionFile();
 
 		$content = serialize( $this->_extensions );
 
@@ -530,9 +507,7 @@ class MediaWikiFarmer {
 	 *
 	 * @return String
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _getFarmListFile() {
-	// @codingStandardsIgnoreEnd
+	private function getFarmListFile() {
 		return $this->_configDirectory . '/farmlist';
 	}
 
@@ -557,7 +532,7 @@ class MediaWikiFarmer {
 			}
 			return $arr;
 		} else {
-			return unserialize( file_get_contents( $this->_getFarmListFile() ) );
+			return unserialize( file_get_contents( $this->getFarmListFile() ) );
 		}
 	}
 
@@ -594,7 +569,7 @@ class MediaWikiFarmer {
 
 		}
 
-		file_put_contents( $this->_getFarmListFile(), serialize( $farmList ), LOCK_EX );
+		file_put_contents( $this->getFarmListFile(), serialize( $farmList ), LOCK_EX );
 	}
 
 	/**

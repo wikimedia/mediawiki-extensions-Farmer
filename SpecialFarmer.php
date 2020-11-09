@@ -32,23 +32,23 @@ class SpecialFarmer extends SpecialPage {
 
 		if ( count( $arr ) && $arr[0] ) {
 			if ( $arr[0] == 'create' ) {
-				$this->_executeCreate( $wgFarmer, isset( $arr[1] ) ? $arr[1] : null );
+				$this->executeCreate( $wgFarmer, isset( $arr[1] ) ? $arr[1] : null );
 			} elseif ( $arr[0] == 'manageExtensions' ) {
-				$this->_executeManageExtensions( $wgFarmer );
+				$this->executeManageExtensions( $wgFarmer );
 			} elseif ( $arr[0] == 'updateList' ) {
-				$this->_executeUpdateList( $wgFarmer );
+				$this->executeUpdateList( $wgFarmer );
 			} elseif ( $arr[0] == 'list' ) {
-				$this->_executeList( $wgFarmer );
+				$this->executeList( $wgFarmer );
 			} elseif ( $arr[0] == 'admin' ) {
-				$this->_executeAdminister( $wgFarmer );
+				$this->executeAdminister( $wgFarmer );
 			} elseif ( $arr[0] == 'delete' ) {
-				$this->_executeDelete( $wgFarmer );
+				$this->executeDelete( $wgFarmer );
 			}
 		} else {
 			// no parameters were given
 			// display the main page
 
-			$this->_executeMainPage( $wgFarmer );
+			$this->executeMainPage( $wgFarmer );
 		}
 	}
 
@@ -56,9 +56,7 @@ class SpecialFarmer extends SpecialPage {
 	 * Displays the main page
 	 * @param MediaWikiFarmer $wgFarmer
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _executeMainPage( $wgFarmer ) {
-	// @codingStandardsIgnoreEnd
+	private function executeMainPage( $wgFarmer ) {
 		global $wgOut, $wgUser;
 
 		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-about' );
@@ -112,9 +110,7 @@ class SpecialFarmer extends SpecialPage {
 	 * @param MediaWikiFarmer $wgFarmer
 	 * @param string $wiki
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _executeCreate( $wgFarmer, $wiki ) {
-	// @codingStandardsIgnoreEnd
+	private function executeCreate( $wgFarmer, $wiki ) {
 		global $wgOut, $wgUser, $wgRequest;
 
 		if ( !$wgFarmer->getActiveWiki()->isDefaultWiki() ) {
@@ -246,9 +242,7 @@ class SpecialFarmer extends SpecialPage {
 		);
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _executeUpdateList( $wgFarmer ) {
-	// @codingStandardsIgnoreEnd
+	private function executeUpdateList( $wgFarmer ) {
 		global $wgUser, $wgOut;
 
 		if ( !MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) ) {
@@ -261,9 +255,7 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->returnToMain( null, $this->getPageTitle() );
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _executeDelete( $wgFarmer ) {
-	// @codingStandardsIgnoreEnd
+	private function executeDelete( $wgFarmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
 		if ( !$wgFarmer->getActiveWiki()->isDefaultWiki() ) {
@@ -331,9 +323,7 @@ class SpecialFarmer extends SpecialPage {
 		);
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _executeList( $wgFarmer ) {
-	// @codingStandardsIgnoreEnd
+	private function executeList( $wgFarmer ) {
 		global $wgOut;
 
 		$list = $wgFarmer->getFarmList();
@@ -351,9 +341,7 @@ class SpecialFarmer extends SpecialPage {
 		}
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _executeAdminister( $wgFarmer ) {
-	// @codingStandardsIgnoreEnd
+	private function executeAdminister( $wgFarmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
 		$currentWiki = MediaWikiFarmer_Wiki::factory( $wgFarmer->getActiveWiki() );
@@ -450,7 +438,7 @@ class SpecialFarmer extends SpecialPage {
 			];
 
 			foreach ( $doArray as $arr ) {
-				$this->_doPermissionInput( $wgOut, $wiki, '*', $arr[0], $arr[1] );
+				$this->doPermissionInput( $wgOut, $wiki, '*', $arr[0], $arr[1] );
 			}
 
 			$wgOut->wrapWikiMsg( '=== $1 ===', 'farmer-basic-permission-user' );
@@ -468,7 +456,7 @@ class SpecialFarmer extends SpecialPage {
 			];
 
 			foreach ( $doArray as $arr ) {
-				$this->_doPermissionInput( $wgOut, $wiki, 'user', $arr[0], $arr[1] );
+				$this->doPermissionInput( $wgOut, $wiki, 'user', $arr[0], $arr[1] );
 			}
 
 			$wgOut->addHTML( '<input type="submit" name="setPermissions" value="' .
@@ -566,9 +554,7 @@ class SpecialFarmer extends SpecialPage {
 	 * Handles page to manage extensions
 	 * @param MediaWikiFarmer $wgFarmer
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _executeManageExtensions( $wgFarmer ) {
-	// @codingStandardsIgnoreEnd
+	private function executeManageExtensions( $wgFarmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
 		if ( !Hooks::run( 'FarmerManageExtensions', [ $wgFarmer ] ) ) {
@@ -656,9 +642,7 @@ class SpecialFarmer extends SpecialPage {
 	 * @param string $permission
 	 * @param string $description
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _doPermissionInput( $wgOut, &$wiki, $group, $permission, $description ) {
-	// @codingStandardsIgnoreEnd
+	private function doPermissionInput( $wgOut, &$wiki, $group, $permission, $description ) {
 		$value = $wiki->getPermission( $group, $permission );
 
 		$wgOut->addHTML( '<p>' . $description .

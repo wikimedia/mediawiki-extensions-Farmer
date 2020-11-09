@@ -6,7 +6,6 @@
  *
  * @author Gregory Szorc <gregory.szorc@gmail.com>
  */
-// @codingStandardsIgnoreStart
 class MediaWikiFarmer_Wiki {
 
 	/** Name of wiki */
@@ -30,7 +29,6 @@ class MediaWikiFarmer_Wiki {
 
 	/** DB object */
 	protected $_db;
-// @codingStandardsIgnoreEnd
 
 	/**
 	 * Creates a wiki instance from a wiki name
@@ -81,7 +79,7 @@ class MediaWikiFarmer_Wiki {
 				return self::newFromRow( $row );
 			}
 		} else {
-			$file = self::_getWikiConfigFile( $wiki );
+			$file = self::getWikiConfigFile( $wiki );
 
 			if ( is_readable( $file ) ) {
 				$content = file_get_contents( $file );
@@ -176,7 +174,7 @@ class MediaWikiFarmer_Wiki {
 					'farmer_wiki', 1, [ 'fw_name' => $this->_name ], __METHOD__
 				);
 		} else {
-			return file_exists( self::_getWikiConfigFile( $this->_name ) );
+			return file_exists( self::getWikiConfigFile( $this->_name ) );
 		}
 	}
 
@@ -215,7 +213,7 @@ class MediaWikiFarmer_Wiki {
 		} else {
 			$content = serialize( $this );
 			return ( file_put_contents(
-					self::_getWikiConfigFile( $this->_name ), $content, LOCK_EX
+					self::getWikiConfigFile( $this->_name ), $content, LOCK_EX
 				) == strlen( $content )
 			);
 		}
@@ -236,7 +234,7 @@ class MediaWikiFarmer_Wiki {
 			);
 			$dbw->delete( 'farmer_wiki', [ 'fw_name' => $this->_name ], __METHOD__ );
 		} else {
-			unlink( self::_getWikiConfigFile( $this->_name ) );
+			unlink( self::getWikiConfigFile( $this->_name ) );
 		}
 	}
 
@@ -324,17 +322,13 @@ class MediaWikiFarmer_Wiki {
 		}
 	}
 
-	// @codingStandardsIgnoreStart
-	protected static function _getWikiConfigPath() {
-	// @codingStandardsIgnoreEnd
+	private static function getWikiConfigPath() {
 		$farmer = MediaWikiFarmer::getInstance();
 		return $farmer->getConfigPath() . '/wikis/';
 	}
 
-	// @codingStandardsIgnoreStart
-	protected static function _getWikiConfigFile( $wiki ) {
-	// @codingStandardsIgnoreEnd
-		return self::_getWikiConfigPath() . $wiki . '.farmer';
+	private static function getWikiConfigFile( $wiki ) {
+		return self::getWikiConfigPath() . $wiki . '.farmer';
 	}
 
 	public static function sanitizeName( $name ) {
@@ -465,18 +459,16 @@ class MediaWikiFarmer_Wiki {
 	 * @todo Error check to make sure tables don't exist
 	 */
 	public function createDatabase() {
-		$this->_createTablesForWiki();
-		$this->_createMainPageForWiki();
-		$this->_populateInterwiki();
-		$this->_populateUserGroups();
+		$this->createTablesForWiki();
+		$this->createMainPageForWiki();
+		$this->populateInterwiki();
+		$this->populateUserGroups();
 	}
 
 	/**
 	 * Creates the tables for a specified wiki
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _createTablesForWiki() {
-	// @codingStandardsIgnoreEnd
+	private function createTablesForWiki() {
 		global $wgSharedTables;
 
 		// FIXME! Hacky
@@ -504,9 +496,7 @@ class MediaWikiFarmer_Wiki {
 		$wgSharedTables = $oldShared;
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _createMainPageForWiki() {
-	// @codingStandardsIgnoreEnd
+	private function createMainPageForWiki() {
 		$db = $this->getDatabase();
 
 		$titleobj = Title::newFromText( wfMessage(
@@ -538,9 +528,7 @@ class MediaWikiFarmer_Wiki {
 	 *
 	 * @todo Finish implementing
 	 */
-	// @codingStandardsIgnoreStart
-	protected function _populateInterwiki() {
-	// @codingStandardsIgnoreEnd
+	private function populateInterwiki() {
 		$db = $this->getDatabase();
 		$db->insert(
 			'interwiki',
@@ -554,9 +542,7 @@ class MediaWikiFarmer_Wiki {
 		);
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _populateUserGroups() {
-	// @codingStandardsIgnoreEnd
+	private function populateUserGroups() {
 		if ( $this->creator ) {
 			if ( MediaWikiFarmer::getInstance()->sharingGroups() ) {
 				$user = User::newFromname( $this->creator );
@@ -577,16 +563,14 @@ class MediaWikiFarmer_Wiki {
 	}
 
 	public function deleteWiki() {
-		$this->_deleteWikiTables();
-		$this->_deleteWikiGroups();
-		$this->_deleteInterWiki();
+		$this->deleteWikiTables();
+		$this->deleteWikiGroups();
+		$this->deleteInterwiki();
 		$this->delete();
 		MediaWikiFarmer::getInstance()->updateFarmList();
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _deleteWikiTables() {
-	// @codingStandardsIgnoreEnd
+	private function deleteWikiTables() {
 		$db = $this->getDatabase();
 		$result = $db->query( 'SHOW TABLES', __METHOD__ );
 
@@ -600,9 +584,7 @@ class MediaWikiFarmer_Wiki {
 		}
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _deleteWikiGroups() {
-	// @codingStandardsIgnoreEnd
+	private function deleteWikiGroups() {
 		if ( MediaWikiFarmer::getInstance()->sharingGroups() ) {
 			$db = $this->getDatabase();
 			$query = 'DELETE FROM ' . $db->tableName( 'user_groups' ) . ' WHERE ug_group LIKE ';
@@ -611,9 +593,7 @@ class MediaWikiFarmer_Wiki {
 		}
 	}
 
-	// @codingStandardsIgnoreStart
-	protected function _deleteInterwiki() {
-	// @codingStandardsIgnoreEnd
+	private function deleteInterwiki() {
 		$db = $this->getDatabase();
 		if ( $db->tableExists( 'interwiki' ) ) {
 			$db->delete( 'interwiki', [ 'iw_prefix' => strtolower( $this->_title ) ], __METHOD__ );

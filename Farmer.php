@@ -35,14 +35,14 @@ $wgFarmerSettings = [
 	'defaultWiki'               => '',
 
 	// Function used to identify the wiki to use
-	'wikiIdentifierFunction'    => [ 'MediaWikiFarmer', '_matchByURLHostname' ],
+	'wikiIdentifierFunction'    => [ 'MediaWikiFarmer', 'matchByURLHostname' ],
 	'matchRegExp'               => '',
 	'matchOffset'               => null,
 	'matchServerNameSuffix'     => '',
 
 	// Function to call for unknown wiki
-	'onUnknownWiki'             => [ 'MediaWikiFarmer', '_redirectTo' ],
-	// If onUnknownWiki calls MediaWikiFarmer::_redirectTo (default), url to redirect to
+	'onUnknownWiki'             => [ 'MediaWikiFarmer', 'redirectTo' ],
+	// If onUnknownWiki calls MediaWikiFarmer::redirectTo (default), url to redirect to
 	'redirectToURL'             => '',
 
 	// Whether to use $wgConf to get some settings
@@ -56,7 +56,7 @@ $wgFarmerSettings = [
 	'newDbSourceFile'           => "$IP/maintenance/tables.sql",
 
 	// Get DB name and table prefix for a wiki
-	'dbFromWikiFunction'        => [ 'MediaWikiFarmer', '_prefixTable' ],
+	'dbFromWikiFunction'        => [ 'MediaWikiFarmer', 'prefixTable' ],
 	'dbTablePrefixSeparator'    => '',
 	'dbTablePrefix'             => '',
 
