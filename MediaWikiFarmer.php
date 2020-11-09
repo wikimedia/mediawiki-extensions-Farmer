@@ -241,9 +241,8 @@ class MediaWikiFarmer {
 	 * against the URL.  From the matches array, the defaultWikiIdentifierOffset
 	 * key from that array is returned.  False is returns upon failure to match
 	 *
-	 * @param $farmer MediaWikiFarmer
-	 * @param string $url URL that was accessed.  Probably $_SERVER
-	 * ['REQUEST_URI']
+	 * @param MediaWikiFarmer $farmer
+	 * @param string|null $url URL that was accessed. Probably $_SERVER['REQUEST_URI']
 	 *
 	 * @return string Wiki identifier.  Return null, false, or nothing if you
 	 * want to use the default wiki, as specified by the 'defaultWiki'
@@ -271,7 +270,8 @@ class MediaWikiFarmer {
 	 * matchRegExp parameter.  If it matches, we return the matchOffset key from
 	 * the matching array, if that key exists.  Else we return false
 	 *
-	 * @param string $url URL to match to a wiki
+	 * @param MediaWikiFarmer $farmer
+	 * @param string|null $url URL to match to a wiki
 	 * @return string|bool Wiki name on success.  false on failure
 	 */
 	private static function matchByURLHostname( MediaWikiFarmer $farmer, $url = null ) {
@@ -302,6 +302,8 @@ class MediaWikiFarmer {
 	 * Will look at the server name and return everything before the first
 	 * period
 	 *
+	 * @param MediaWikiFarmer $farmer
+	 * @return string|false
 	 */
 	private static function matchByServerName( MediaWikiFarmer $farmer ) {
 		$serverName = $_SERVER['SERVER_NAME'];
@@ -323,6 +325,7 @@ class MediaWikiFarmer {
 	 *
 	 * This function is called by default when an unknown wiki is accessed.
 	 *
+	 * @param MediaWikiFarmer $farmer
 	 * @param string $wiki Unknown wiki that was accessed
 	 */
 	private static function redirectTo( MediaWikiFarmer $farmer, $wiki ) {
@@ -417,7 +420,7 @@ class MediaWikiFarmer {
 	/**
 	 * Gets file holding extensions definitions
 	 *
-	 * @return String
+	 * @return string
 	 */
 	private function getExtensionFile() {
 		return $this->_configDirectory . '/extensions';
@@ -485,7 +488,7 @@ class MediaWikiFarmer {
 	 */
 	private function writeExtensions() {
 		if ( $this->useDatabase() ) {
-			return false;
+			return;
 		}
 
 		$file = $this->getExtensionFile();
@@ -505,7 +508,7 @@ class MediaWikiFarmer {
 	/**
 	 * Get the file to store the list of wikis in the farm
 	 *
-	 * @return String
+	 * @return string
 	 */
 	private function getFarmListFile() {
 		return $this->_configDirectory . '/farmlist';

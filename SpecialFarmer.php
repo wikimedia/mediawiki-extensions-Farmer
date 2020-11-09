@@ -242,6 +242,9 @@ class SpecialFarmer extends SpecialPage {
 		);
 	}
 
+	/**
+	 * @param MediaWikiFarmer $wgFarmer
+	 */
 	private function executeUpdateList( $wgFarmer ) {
 		global $wgUser, $wgOut;
 
@@ -255,6 +258,9 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->returnToMain( null, $this->getPageTitle() );
 	}
 
+	/**
+	 * @param MediaWikiFarmer $wgFarmer
+	 */
 	private function executeDelete( $wgFarmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
@@ -323,6 +329,9 @@ class SpecialFarmer extends SpecialPage {
 		);
 	}
 
+	/**
+	 * @param MediaWikiFarmer $wgFarmer
+	 */
 	private function executeList( $wgFarmer ) {
 		global $wgOut;
 
@@ -341,6 +350,9 @@ class SpecialFarmer extends SpecialPage {
 		}
 	}
 
+	/**
+	 * @param MediaWikiFarmer $wgFarmer
+	 */
 	private function executeAdminister( $wgFarmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
@@ -485,9 +497,8 @@ class SpecialFarmer extends SpecialPage {
 			}
 
 			$skins = Skin::getSkinNames();
-			global $wgSkipSkins;
 
-			foreach ( $wgSkipSkins as $skin ) {
+			foreach ( $this->getConfig()->get( 'SkipSkins' ) as $skin ) {
 				if ( array_key_exists( $skin, $skins ) ) {
 					unset( $skins[$skin] );
 				}
@@ -670,6 +681,10 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->addHTML( $input . '</p>' );
 	}
 
+	/**
+	 * @param OutputPage $out
+	 * @param string $text
+	 */
 	protected function outputWikiText( $out, $text ) {
 		if ( method_exists( $out, 'addWikiTextAsInterface' ) ) {
 			// MW 1.32+
@@ -679,6 +694,9 @@ class SpecialFarmer extends SpecialPage {
 		}
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'wiki';
 	}

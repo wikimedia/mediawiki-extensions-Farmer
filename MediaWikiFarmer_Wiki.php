@@ -322,11 +322,19 @@ class MediaWikiFarmer_Wiki {
 		}
 	}
 
+	/**
+	 * @return string
+	 */
 	private static function getWikiConfigPath() {
 		$farmer = MediaWikiFarmer::getInstance();
 		return $farmer->getConfigPath() . '/wikis/';
 	}
 
+	/**
+	 * @param string $wiki
+	 *
+	 * @return string
+	 */
 	private static function getWikiConfigFile( $wiki ) {
 		return self::getWikiConfigPath() . $wiki . '.farmer';
 	}
