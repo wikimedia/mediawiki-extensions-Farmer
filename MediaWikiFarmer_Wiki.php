@@ -258,6 +258,7 @@ class MediaWikiFarmer_Wiki {
 		}
 
 		// we need to bring some global variables into scope so we can load extensions properly
+		// phpcs:disable MediaWiki.VariableAnalysis.MisleadingGlobalNames
 		extract( $GLOBALS, EXTR_REFS );
 
 		// register all the extensions
@@ -311,6 +312,7 @@ class MediaWikiFarmer_Wiki {
 				$wgGroupPermissions[$group][$v] = true;
 			}
 		}
+		// phpcs:enable
 
 		$callback = $farmer->initCallback();
 		if ( $callback ) {

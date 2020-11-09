@@ -22,7 +22,7 @@ class SpecialFarmer extends SpecialPage {
 	 */
 	public function execute( $par ) {
 		global $wgRequest;
-		$wgFarmer = MediaWikiFarmer::getInstance();
+		$farmer = MediaWikiFarmer::getInstance();
 
 		$this->setHeaders();
 
@@ -32,31 +32,31 @@ class SpecialFarmer extends SpecialPage {
 
 		if ( count( $arr ) && $arr[0] ) {
 			if ( $arr[0] == 'create' ) {
-				$this->executeCreate( $wgFarmer, isset( $arr[1] ) ? $arr[1] : null );
+				$this->executeCreate( $farmer, isset( $arr[1] ) ? $arr[1] : null );
 			} elseif ( $arr[0] == 'manageExtensions' ) {
-				$this->executeManageExtensions( $wgFarmer );
+				$this->executeManageExtensions( $farmer );
 			} elseif ( $arr[0] == 'updateList' ) {
-				$this->executeUpdateList( $wgFarmer );
+				$this->executeUpdateList( $farmer );
 			} elseif ( $arr[0] == 'list' ) {
-				$this->executeList( $wgFarmer );
+				$this->executeList( $farmer );
 			} elseif ( $arr[0] == 'admin' ) {
-				$this->executeAdminister( $wgFarmer );
+				$this->executeAdminister( $farmer );
 			} elseif ( $arr[0] == 'delete' ) {
-				$this->executeDelete( $wgFarmer );
+				$this->executeDelete( $farmer );
 			}
 		} else {
 			// no parameters were given
 			// display the main page
 
-			$this->executeMainPage( $wgFarmer );
+			$this->executeMainPage( $farmer );
 		}
 	}
 
 	/**
 	 * Displays the main page
-	 * @param MediaWikiFarmer $wgFarmer
+	 * @param MediaWikiFarmer $farmer
 	 */
-	private function executeMainPage( $wgFarmer ) {
+	private function executeMainPage( $farmer ) {
 		global $wgOut, $wgUser;
 
 		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-about' );
@@ -65,7 +65,7 @@ class SpecialFarmer extends SpecialPage {
 		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-list-wiki' );
 		$wgOut->wrapWikiMsg( '* $1', [ 'farmer-list-wiki-text', 'Special:Farmer/list' ] );
 
-		if ( $wgFarmer->getActiveWiki()->isDefaultWiki() ) {
+		if ( $farmer->getActiveWiki()->isDefaultWiki() ) {
 			if ( MediaWikiFarmer::userCanCreateWiki( $wgUser ) ) {
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-createwiki' );
 				$wgOut->wrapWikiMsg( '* $1', [ 'farmer-createwiki-text', 'Special:Farmer/create' ] );
@@ -94,7 +94,7 @@ class SpecialFarmer extends SpecialPage {
 			}
 		}
 
-		$wiki = $wgFarmer->getActiveWiki();
+		$wiki = $farmer->getActiveWiki();
 
 		if ( MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) || $wiki->userIsAdmin( $wgUser ) ) {
 			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-administer-thiswiki' );
@@ -107,13 +107,13 @@ class SpecialFarmer extends SpecialPage {
 
 	/**
 	 * Displays form to create wiki
-	 * @param MediaWikiFarmer $wgFarmer
+	 * @param MediaWikiFarmer $farmer
 	 * @param string $wiki
 	 */
-	private function executeCreate( $wgFarmer, $wiki ) {
+	private function executeCreate( $farmer, $wiki ) {
 		global $wgOut, $wgUser, $wgRequest;
 
-		if ( !$wgFarmer->getActiveWiki()->isDefaultWiki() ) {
+		if ( !$farmer->getActiveWiki()->isDefaultWiki() ) {
 			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-notavailable' );
 			$wgOut->addWikiMsg( 'farmer-notavailable-text' );
 			return;
@@ -243,28 +243,28 @@ class SpecialFarmer extends SpecialPage {
 	}
 
 	/**
-	 * @param MediaWikiFarmer $wgFarmer
+	 * @param MediaWikiFarmer $farmer
 	 */
-	private function executeUpdateList( $wgFarmer ) {
+	private function executeUpdateList( $farmer ) {
 		global $wgUser, $wgOut;
 
 		if ( !MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) ) {
 			throw new PermissionsError( 'farmeradmin' );
 		}
 
-		$wgFarmer->updateFarmList();
-		$wgFarmer->updateInterwikiTable();
+		$farmer->updateFarmList();
+		$farmer->updateInterwikiTable();
 		$wgOut->wrapWikiMsg( '<div class="successbox">$1</div><br clear="all" />', 'farmer-updatedlist' );
 		$wgOut->returnToMain( null, $this->getPageTitle() );
 	}
 
 	/**
-	 * @param MediaWikiFarmer $wgFarmer
+	 * @param MediaWikiFarmer $farmer
 	 */
-	private function executeDelete( $wgFarmer ) {
+	private function executeDelete( $farmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
-		if ( !$wgFarmer->getActiveWiki()->isDefaultWiki() ) {
+		if ( !$farmer->getActiveWiki()->isDefaultWiki() ) {
 			$wgOut->wrapWikiMsg( "== $1 ==\n$2", 'farmer-notaccessible', 'farmer-notaccessible-test' );
 			return;
 		}
@@ -307,14 +307,14 @@ class SpecialFarmer extends SpecialPage {
 			}
 		}
 
-		$list = $wgFarmer->getFarmList();
+		$list = $farmer->getFarmList();
 
 		$wgOut->wrapWikiMsg( "== $1 ==\n$2", 'farmer-delete-title', 'farmer-delete-text' );
 
 		$select = new XmlSelect( 'wpWiki', false, $wgRequest->getVal( 'wpWiki' ) );
 		$select->addOption( wfMessage( 'farmer-delete-form' )->text(), '-1' );
 		foreach ( $list as $wiki ) {
-			if ( $wiki['name'] != $wgFarmer->getDefaultWiki() ) {
+			if ( $wiki['name'] != $farmer->getDefaultWiki() ) {
 				$name = $wiki['name'];
 				$title = $wiki['title'];
 				$select->addOption( "$name - $title", $name );
@@ -330,15 +330,15 @@ class SpecialFarmer extends SpecialPage {
 	}
 
 	/**
-	 * @param MediaWikiFarmer $wgFarmer
+	 * @param MediaWikiFarmer $farmer
 	 */
-	private function executeList( $wgFarmer ) {
+	private function executeList( $farmer ) {
 		global $wgOut;
 
-		$list = $wgFarmer->getFarmList();
+		$list = $farmer->getFarmList();
 
 		$wgOut->wrapWikiMsg( "== $1 ==", 'farmer-listofwikis' );
-		$current = $wgFarmer->getActiveWiki()->name;
+		$current = $farmer->getActiveWiki()->name;
 
 		foreach ( $list as $wiki ) {
 			$link = ( $current == $wiki['name'] ? wfMessage(
@@ -351,12 +351,12 @@ class SpecialFarmer extends SpecialPage {
 	}
 
 	/**
-	 * @param MediaWikiFarmer $wgFarmer
+	 * @param MediaWikiFarmer $farmer
 	 */
-	private function executeAdminister( $wgFarmer ) {
+	private function executeAdminister( $farmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
-		$currentWiki = MediaWikiFarmer_Wiki::factory( $wgFarmer->getActiveWiki() );
+		$currentWiki = MediaWikiFarmer_Wiki::factory( $farmer->getActiveWiki() );
 
 		$action = $this->getPageTitle( 'admin' )->getLocalURL();
 
@@ -371,20 +371,20 @@ class SpecialFarmer extends SpecialPage {
 
 		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-basic-title' );
 
-		$wiki = $wgFarmer->getActiveWiki();
+		$wiki = $farmer->getActiveWiki();
 
 		$title = $wgRequest->getVal( 'wikiTitle' );
 		if ( $title ) {
 			$wiki->title = MediaWikiFarmer_Wiki::sanitizeTitle( $title );
 			$wiki->save();
-			$wgFarmer->updateFarmList();
+			$farmer->updateFarmList();
 		}
 
 		$description = $wgRequest->getVal( 'wikiDescription' );
 		if ( $description ) {
 			$wiki->description = $description;
 			$wiki->save();
-			$wgFarmer->updateFarmList();
+			$farmer->updateFarmList();
 		}
 
 		if ( !$wiki->title ) {
@@ -416,7 +416,7 @@ class SpecialFarmer extends SpecialPage {
 		);
 
 		# Permissions stuff
-		if ( Hooks::run( 'FarmerAdminPermissions', [ $wgFarmer ] ) ) {
+		if ( Hooks::run( 'FarmerAdminPermissions', [ $farmer ] ) ) {
 			# Import
 			if ( $wgRequest->wasPosted() ) {
 				$permissions = $wgRequest->getArray( 'permission' );
@@ -477,7 +477,7 @@ class SpecialFarmer extends SpecialPage {
 		}
 
 		# Default skin
-		if ( Hooks::run( 'FarmerAdminSkin', [ $wgFarmer ] ) ) {
+		if ( Hooks::run( 'FarmerAdminSkin', [ $farmer ] ) ) {
 			# Import
 			if ( $wgRequest->wasPosted() ) {
 				$newSkin = $wgRequest->getVal( 'defaultSkin' );
@@ -490,7 +490,7 @@ class SpecialFarmer extends SpecialPage {
 			# Form
 			$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-defaultskin' );
 
-			$defaultSkin = $wgFarmer->getActiveWiki()->wgDefaultSkin;
+			$defaultSkin = $farmer->getActiveWiki()->wgDefaultSkin;
 
 			if ( !$defaultSkin ) {
 				$defaultSkin = 'MonoBook';
@@ -522,8 +522,8 @@ class SpecialFarmer extends SpecialPage {
 		}
 
 		# Manage active extensions
-		if ( Hooks::run( 'FarmerAdminExtensions', [ $wgFarmer ] ) ) {
-			$extensions = $wgFarmer->getExtensions();
+		if ( Hooks::run( 'FarmerAdminExtensions', [ $farmer ] ) ) {
+			$extensions = $farmer->getExtensions();
 
 			// if we post a list of new extensions, wipe the old list from the wiki
 			if ( $wgRequest->wasPosted() && $wgRequest->getCheck( 'submitExtension' ) ) {
@@ -563,12 +563,12 @@ class SpecialFarmer extends SpecialPage {
 
 	/**
 	 * Handles page to manage extensions
-	 * @param MediaWikiFarmer $wgFarmer
+	 * @param MediaWikiFarmer $farmer
 	 */
-	private function executeManageExtensions( $wgFarmer ) {
+	private function executeManageExtensions( $farmer ) {
 		global $wgOut, $wgUser, $wgRequest;
 
-		if ( !Hooks::run( 'FarmerManageExtensions', [ $wgFarmer ] ) ) {
+		if ( !Hooks::run( 'FarmerManageExtensions', [ $farmer ] ) ) {
 			return;
 		}
 
@@ -592,18 +592,18 @@ class SpecialFarmer extends SpecialPage {
 				$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-extensions-invalid' );
 				$wgOut->addWikiMsg( 'farmer-extensions-invalid-text' );
 			} else {
-				$wgFarmer->registerExtension( $extension );
+				$farmer->registerExtension( $extension );
 			}
 		}
 
 		$wgOut->wrapWikiMsg( '== $1 ==', 'farmer-extensions-available' );
 
-		$extensions = $wgFarmer->getExtensions();
+		$extensions = $farmer->getExtensions();
 
 		if ( count( $extensions ) === 0 ) {
 			$wgOut->addWikiMsg( 'farmer-extensions-noavailable' );
 		} else {
-			foreach ( $wgFarmer->getExtensions() as $extension ) {
+			foreach ( $farmer->getExtensions() as $extension ) {
 				$this->outputWikiText( $wgOut, '; ' . htmlspecialchars(
 					$extension->name
 				) . ' : ' . htmlspecialchars( $extension->description ) );
@@ -647,16 +647,16 @@ class SpecialFarmer extends SpecialPage {
 
 	/**
 	 * Creates form element representing an individual permission
-	 * @param OutputPage $wgOut
+	 * @param OutputPage $out
 	 * @param string &$wiki
 	 * @param string $group
 	 * @param string $permission
 	 * @param string $description
 	 */
-	private function doPermissionInput( $wgOut, &$wiki, $group, $permission, $description ) {
+	private function doPermissionInput( $out, &$wiki, $group, $permission, $description ) {
 		$value = $wiki->getPermission( $group, $permission );
 
-		$wgOut->addHTML( '<p>' . $description .
+		$out->addHTML( '<p>' . $description .
 			Sanitizer::escapeHtmlAllowEntities( wfMessage( 'colon-separator' )->text() ) );
 		wfMessage( 'eh' )->escaped();
 
@@ -668,7 +668,7 @@ class SpecialFarmer extends SpecialPage {
 
 		$input .= ' />' . wfMessage( 'farmer-yes' )->escaped() . '&#160;&#160;';
 
-		$wgOut->addHTML( $input );
+		$out->addHTML( $input );
 
 		$input = "<input type=\"radio\" name=\"permission[$group][$permission]\" value=\"0\" ";
 
@@ -678,7 +678,7 @@ class SpecialFarmer extends SpecialPage {
 
 		$input .= ' />' . wfMessage( 'farmer-no' )->escaped();
 
-		$wgOut->addHTML( $input . '</p>' );
+		$out->addHTML( $input . '</p>' );
 	}
 
 	/**
