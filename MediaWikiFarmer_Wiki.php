@@ -259,6 +259,7 @@ class MediaWikiFarmer_Wiki {
 
 		// we need to bring some global variables into scope so we can load extensions properly
 		// phpcs:disable MediaWiki.VariableAnalysis.MisleadingGlobalNames
+		// phpcs:ignore MediaWiki.Usage.ForbiddenFunctions
 		extract( $GLOBALS, EXTR_REFS );
 
 		// register all the extensions
