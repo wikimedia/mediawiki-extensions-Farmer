@@ -19,7 +19,6 @@
 		<exclude name="MediaWiki.VariableAnalysis.MisleadingGlobalNames.Misleading$wgTmpPath" />
 		<exclude name="MediaWiki.VariableAnalysis.MisleadingGlobalNames.Misleading$wgUploadDirectory" />
 		<exclude name="MediaWiki.VariableAnalysis.MisleadingGlobalNames.Misleading$wgUploadPath" />
-		<exclude name="Squiz.PHP.NonExecutableCode.Unreachable" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationProtected" />
 		<exclude name="MediaWiki.Commenting.FunctionComment.MissingDocumentationPublic" />
 	</rule>

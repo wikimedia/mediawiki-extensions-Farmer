@@ -253,7 +253,6 @@ class SpecialFarmer extends SpecialPage {
 
 		if ( !MediaWikiFarmer::userIsFarmerAdmin( $wgUser ) ) {
 			throw new PermissionsError( 'farmeradmin' );
-			return;
 		}
 
 		$wgFarmer->updateFarmList();
