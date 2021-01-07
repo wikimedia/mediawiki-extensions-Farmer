@@ -75,9 +75,12 @@ class MediaWikiFarmer {
 	/** @var MediaWikiFarmer_Wiki|null */
 	protected $_activeWiki = null;
 
-	/** @var self|null */
-	protected static $_instance = null;
+	/** @var self */
+	protected static $_instance;
 
+	/**
+	 * @return self
+	 */
 	public static function getInstance() {
 		return self::$_instance;
 	}
@@ -137,6 +140,10 @@ class MediaWikiFarmer {
 		}
 	}
 
+	/**
+	 * @param string $key
+	 * @return mixed
+	 */
 	public function __get( $key ) {
 		if ( array_key_exists( $key, $this->_parameters ) ) {
 			return $this->_parameters[$key];
@@ -533,7 +540,7 @@ class MediaWikiFarmer {
 	/**
 	 * Get the list of wikis in the farm
 	 *
-	 * @return array
+	 * @return array[]
 	 */
 	public function getFarmList() {
 		if ( $this->useDatabase() ) {
@@ -609,37 +616,58 @@ class MediaWikiFarmer {
 		$dbw->replace( 'interwiki', 'iw_prefix', $replacements, __METHOD__ );
 	}
 
-	# Acessors
-	# --------
-
+	/**
+	 * @return string
+	 */
 	public function getConfigPath() {
 		return $this->_configDirectory;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getStorageRoot() {
 		return $this->_storageRoot;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getStorageUrl() {
 		return $this->_storageUrl;
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getDefaultWiki() {
 		return $this->_defaultWiki;
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function sharingGroups() {
 		return $this->_sharedGroups;
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function useDatabase() {
 		return $this->_useDatabase;
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function useWgConf() {
 		return $this->_useWgConf;
 	}
 
+	/**
+	 * @return callable|null
+	 */
 	public function initCallback() {
 		return $this->_initCallback;
 	}

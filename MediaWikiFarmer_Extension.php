@@ -7,8 +7,12 @@
  * @author Gregory Szorc <gregory.szorc@gmail.com>
  */
 class MediaWikiFarmer_Extension {
+
+	/** @var string */
 	protected $_name;
+	/** @var string */
 	protected $_description;
+	/** @var int */
 	protected $_id;
 
 	/**
@@ -17,12 +21,21 @@ class MediaWikiFarmer_Extension {
 	 */
 	protected $_includeFiles = [];
 
+	/**
+	 * @param stdClass $row
+	 * @return self
+	 */
 	public static function newFromRow( $row ) {
 		$ext = new self( $row->fe_name, $row->fe_description, $row->fe_path );
 		$ext->_id = $row->fe_id;
 		return $ext;
 	}
 
+	/**
+	 * @param string $name
+	 * @param string $description
+	 * @param string $include
+	 */
 	public function __construct( $name, $description, $include ) {
 		$this->_name = $name;
 		$this->_description = $description;

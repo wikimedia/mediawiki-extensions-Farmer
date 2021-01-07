@@ -44,6 +44,10 @@ class MediaWikiFarmer_Wiki {
 		$this->_variables = $variables;
 	}
 
+	/**
+	 * @param string $key
+	 * @return mixed
+	 */
 	public function __get( $key ) {
 		if ( substr( $key, 0, 2 ) == 'wg' ) {
 			return isset( $this->_variables[$key] ) ? $this->_variables[$key] : null;
@@ -54,6 +58,10 @@ class MediaWikiFarmer_Wiki {
 		return isset( $this->$property ) ? $this->$property : null;
 	}
 
+	/**
+	 * @param string $k
+	 * @param mixed $v
+	 */
 	public function __set( $k, $v ) {
 		if ( in_array( $k, [ 'name', 'title', 'description', 'creator', 'extensions' ] ) ) {
 			$property = '_' . $k;
@@ -71,6 +79,11 @@ class MediaWikiFarmer_Wiki {
 		return $this->_name;
 	}
 
+	/**
+	 * @param string $wiki
+	 * @param array $variables
+	 * @return self
+	 */
 	public static function factory( $wiki, $variables = [] ) {
 		$farmer = MediaWikiFarmer::getInstance();
 
@@ -78,7 +91,7 @@ class MediaWikiFarmer_Wiki {
 			$dbr = $farmer->getDB( DB_REPLICA );
 			$row = $dbr->selectRow( 'farmer_wiki', '*', [ 'fw_name' => $wiki ], __METHOD__ );
 			if ( $row === false ) {
-				return new MediaWikiFarmer_Wiki( $wiki, $variables );
+				return new self( $wiki, $variables );
 			} else {
 				return self::newFromRow( $row );
 			}
@@ -88,13 +101,13 @@ class MediaWikiFarmer_Wiki {
 			if ( is_readable( $file ) ) {
 				$content = file_get_contents( $file );
 				$obj = unserialize( $content );
-				if ( $obj instanceof MediaWikiFarmer_Wiki ) {
+				if ( $obj instanceof self ) {
 					return $obj;
 				} else {
 					throw new MWException( 'Stored wiki is corrupt.' );
 				}
 			} else {
-				return new MediaWikiFarmer_Wiki( $wiki, $variables );
+				return new self( $wiki, $variables );
 			}
 		}
 	}
@@ -120,6 +133,10 @@ class MediaWikiFarmer_Wiki {
 		return $wiki;
 	}
 
+	/**
+	 * @param stdClass $row
+	 * @return self
+	 */
 	public static function newFromRow( $row ) {
 		$wiki = new self( $row->fw_name );
 		$wiki->_title = $row->fw_title;
@@ -242,6 +259,9 @@ class MediaWikiFarmer_Wiki {
 		}
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function databaseExists() {
 		try {
 			$db = $this->getDatabase();
@@ -339,21 +359,32 @@ class MediaWikiFarmer_Wiki {
 
 	/**
 	 * @param string $wiki
-	 *
 	 * @return string
 	 */
 	private static function getWikiConfigFile( $wiki ) {
 		return self::getWikiConfigPath() . $wiki . '.farmer';
 	}
 
+	/**
+	 * @param string $name
+	 * @return string
+	 */
 	public static function sanitizeName( $name ) {
 		return strtolower( preg_replace( '/[^[:alnum:]]/', '', $name ) );
 	}
 
+	/**
+	 * @param string $title
+	 * @return string
+	 */
 	public static function sanitizeTitle( $title ) {
 		return preg_replace( '/[^[:alnum:]]/', '', $title );
 	}
 
+	/**
+	 * @param string|null $article
+	 * @return string
+	 */
 	public function getUrl( $article = null ) {
 		if ( MediaWikiFarmer::getInstance()->useWgConf() ) {
 			global $wgConf;
@@ -380,6 +411,9 @@ class MediaWikiFarmer_Wiki {
 		return $url;
 	}
 
+	/**
+	 * @return bool
+	 */
 	public function isDefaultWiki() {
 		return $this->_name == MediaWikiFarmer::getInstance()->getDefaultWiki();
 	}
@@ -388,6 +422,11 @@ class MediaWikiFarmer_Wiki {
 	# Permission stuff
 	# ----------------
 
+	/**
+	 * @param string $group
+	 * @param string $permission
+	 * @param bool $value
+	 */
 	public function setPermission( $group, $permission, $value ) {
 		if ( !array_key_exists( $group, $this->_permissions ) ) {
 			$this->_permissions[$group] = [];
@@ -396,28 +435,51 @@ class MediaWikiFarmer_Wiki {
 		$this->_permissions[$group][$permission] = $value ? true : false;
 	}
 
+	/**
+	 * @param string $permission
+	 * @param bool $value
+	 */
 	public function setPermissionForAll( $permission, $value ) {
 		$this->setPermission( '*', $permission, $value );
 	}
 
+	/**
+	 * @param string $permission
+	 * @param bool $value
+	 */
 	public function setPermissionForUsers( $permission, $value ) {
 		$this->setPermission( 'user', $permission, $value );
 	}
 
+	/**
+	 * @param string $group
+	 * @param string $permission
+	 * @return bool
+	 */
 	public function getPermission( $group, $permission ) {
-		return isset(
-			$this->_permissions[$group][$permission]
-		) ? $this->_permissions[$group][$permission] : false;
+		return $this->_permissions[$group][$permission] ?? false;
 	}
 
+	/**
+	 * @param string $permission
+	 * @return bool
+	 */
 	public function getPermissionForAll( $permission ) {
 		return $this->getPermission( '*', $permission );
 	}
 
+	/**
+	 * @param string $permission
+	 * @return bool
+	 */
 	public function getPermissionForUsers( $permission ) {
 		return $this->getPermission( 'user', $permission );
 	}
 
+	/**
+	 * @param User $user
+	 * @return bool
+	 */
 	public function userIsAdmin( $user ) {
 		$adminGroup = '[farmer][' . $this->_name . '][admin]';
 
@@ -428,10 +490,17 @@ class MediaWikiFarmer_Wiki {
 	# Extension stuff
 	# ---------------
 
+	/**
+	 * @param MediaWikiFarmer_Extension $e
+	 */
 	public function addExtension( MediaWikiFarmer_Extension $e ) {
 		$this->_extensions[$e->name] = $e;
 	}
 
+	/**
+	 * @param MediaWikiFarmer_Extension $e
+	 * @return bool
+	 */
 	public function hasExtension( MediaWikiFarmer_Extension $e ) {
 		return array_key_exists( $e->name, $this->_extensions );
 	}
