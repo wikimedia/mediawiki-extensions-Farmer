@@ -648,12 +648,12 @@ class SpecialFarmer extends SpecialPage {
 	/**
 	 * Creates form element representing an individual permission
 	 * @param OutputPage $out
-	 * @param string &$wiki
+	 * @param MediaWikiFarmer_Wiki $wiki
 	 * @param string $group
 	 * @param string $permission
 	 * @param string $description
 	 */
-	private function doPermissionInput( $out, &$wiki, $group, $permission, $description ) {
+	private function doPermissionInput( $out, $wiki, $group, $permission, $description ) {
 		$value = $wiki->getPermission( $group, $permission );
 
 		$out->addHTML( '<p>' . $description .
