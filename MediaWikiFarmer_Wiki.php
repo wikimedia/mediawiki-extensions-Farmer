@@ -11,28 +11,28 @@ use Wikimedia\Rdbms\IMaintainableDatabase;
 class MediaWikiFarmer_Wiki {
 
 	/** @var string Name of wiki */
-	protected $_name;
+	private $_name;
 
 	/** @var string */
-	protected $_title;
+	private $_title;
 
 	/** @var string */
-	protected $_description;
+	private $_description;
 
 	/** @var string Username of person who created wiki */
-	protected $_creator;
+	private $_creator;
 
 	/** @var MediaWikiFarmer_Extension[] Extensions to load for this wiki */
-	protected $_extensions = [];
+	private $_extensions = [];
 
 	/** @var array Global variables set for this wiki */
-	protected $_variables = [];
+	private $_variables = [];
 
 	/** @var array[] Permissions are so funky, we give them their own variable */
-	protected $_permissions = [ '*' => [], 'user' => [] ];
+	private $_permissions = [ '*' => [], 'user' => [] ];
 
 	/** @var IMaintainableDatabase */
-	protected $_db;
+	private $_db;
 
 	/**
 	 * Creates a wiki instance from a wiki name

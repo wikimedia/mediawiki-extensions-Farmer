@@ -9,17 +9,17 @@
 class MediaWikiFarmer_Extension {
 
 	/** @var string */
-	protected $_name;
+	private $_name;
 	/** @var string */
-	protected $_description;
+	private $_description;
 	/** @var int */
-	protected $_id;
+	private $_id;
 
 	/**
 	 * List of files that need to be included for this extension to work
 	 * @var string[]
 	 */
-	protected $_includeFiles = [];
+	private $_includeFiles = [];
 
 	/**
 	 * @param stdClass $row

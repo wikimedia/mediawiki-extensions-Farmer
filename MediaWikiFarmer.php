@@ -11,72 +11,72 @@
 class MediaWikiFarmer {
 
 	/** @var array */
-	protected $_parameters = [];
+	private $_parameters = [];
 
 	/** @var string|null Database name to use, null means use file storage */
-	protected $_databaseName;
+	private $_databaseName;
 	/** @var bool */
-	protected $useDatabase;
+	private $useDatabase;
 
 	/** @var string Directory where config files are stored */
-	protected $_configDirectory;
+	private $_configDirectory;
 	/** @var string */
-	protected $_storageRoot;
+	private $_storageRoot;
 	/** @var string */
-	protected $_storageUrl;
+	private $_storageUrl;
 
 	/** @var callable|null Parameter to call_user_func which will return a wiki name from the environment */
-	protected $_matchFunction;
+	private $_matchFunction;
 
 	/** @var string Regular expression to be used by internal matchByURL* functions */
-	protected $_matchRegExp;
+	private $_matchRegExp;
 
 	/** @var int Array key to return from match in matchByURL* functions */
-	protected $_matchOffset;
+	private $_matchOffset;
 
 	/** @var bool Whether to use $wgConf */
-	protected $_useWgConf;
+	private $_useWgConf;
 
 	/** @var callable|null Callback to call when a wiki is initialized */
-	protected $_initCallback;
+	private $_initCallback;
 
 	/** Database settings */
 	/** @var callable */
-	protected $_dbFromWikiFunction;
+	private $_dbFromWikiFunction;
 	/** @var string */
-	protected $_dbTablePrefixSeparator;
+	private $_dbTablePrefixSeparator;
 	/** @var string */
-	protected $_dbTablePrefix;
+	private $_dbTablePrefix;
 	/** @var string */
-	protected $_dbAdminUser;
+	private $_dbAdminUser;
 	/** @var string */
-	protected $_dbAdminPassword;
+	private $_dbAdminPassword;
 
 	/** Other */
 	/** @var string */
-	protected $_defaultWiki;
+	private $_defaultWiki;
 	/** @var callable|null */
-	protected $_onUnknownWikiFunction;
+	private $_onUnknownWikiFunction;
 	/** @var string */
-	protected $_redirectToURL;
+	private $_redirectToURL;
 	/** @var string */
-	protected $_dbSourceFile;
+	private $_dbSourceFile;
 	/** @var string */
-	protected $_defaultSkin;
+	private $_defaultSkin;
 
 	/** @var MediaWikiFarmer_Extension[] Extensions available to Farmer */
-	protected $_extensions = [];
+	private $_extensions = [];
 
 	/** @var bool */
-	protected $_sharedGroups = false;
+	private $_sharedGroups = false;
 	/** @var bool */
-	protected $_extensionsLoaded = false;
+	private $_extensionsLoaded = false;
 
 	/** @var MediaWikiFarmer_Wiki|null */
-	protected $_activeWiki = null;
+	private $_activeWiki = null;
 
 	/** @var self */
-	protected static $_instance;
+	private static $_instance;
 
 	/**
 	 * @return self

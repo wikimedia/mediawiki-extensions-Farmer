@@ -685,7 +685,7 @@ class SpecialFarmer extends SpecialPage {
 	 * @param OutputPage $out
 	 * @param string $text
 	 */
-	protected function outputWikiText( $out, $text ) {
+	private function outputWikiText( $out, $text ) {
 		if ( method_exists( $out, 'addWikiTextAsInterface' ) ) {
 			// MW 1.32+
 			$out->addWikiTextAsInterface( $text . "\n" );
